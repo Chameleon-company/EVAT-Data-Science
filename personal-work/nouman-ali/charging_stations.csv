@@ -1,0 +1,2 @@
+ID,UsageTypeID,UsageCost,NumberOfPoints,StatusTypeID,OperatorPhone,OperatorEmail,IsPayAtLocation,UsageTypeTitle,IsOperational,Title,AddressLine1,AddressLine2,Town,StateOrProvince,Postcode,Latitude,Longitude,ConnectionID,ConnectionTypeTitle,PowerKW,CurrentType,IsFastChargeCapable
+302585,4,65c/kWh,6,50,,,False,Public - Membership Required,True,BP South Bound,Leary Road,Baldivis,,Western Australia,6171,-32.30983528619279,115.83240066607163,568719,CCS (Type 2),150,DC,True
