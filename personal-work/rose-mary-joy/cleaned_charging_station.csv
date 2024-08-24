@@ -1,0 +1,6 @@
+ID,Power (kW),Connection Type,Location,Operator
+node/11885672552,50,AC,"City Center, XYZ",ChargePoint
+node/1189771948,250,DC,"Highway 101, ABC",Tesla Supercharger
+node/1253852373,22,AC,"Shopping Mall, DEF",Blink Charging
+node/1278067243,150,DC,"Airport, GHI",Electrify America
+node/1638722815,7.2,AC,"Office Park, JKL",ChargePoint
