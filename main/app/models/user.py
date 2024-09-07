@@ -8,8 +8,11 @@ class User:
     def to_dict(self, user):
         return {
             "id": str(user["_id"]),
-            "user_name": user["user_name"],
-            "email": user["email"],
+            "username": user["username"],
+            "make": user.get("make", ""), 
+            "model": user.get("model", ""),  
+            "variant": user.get("variant", ""),  
+            "connection_type": user.get("connection_type", ""),
             "favorite_stations": user["favorite_stations"]
         }
 
@@ -19,10 +22,10 @@ class User:
     def find_by_id(self, user_id):
         return self.collection.find_one({"_id": ObjectId(user_id)})
 
-    def insert(self, user_name, email):
+    def insert(self, username, password):
         user = {
-            "user_name": user_name,
-            "email": email,
+            "username": username,
+            "password": password,
             "favorite_stations": []
         }
         result = self.collection.insert_one(user)

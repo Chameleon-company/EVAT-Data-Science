@@ -3,31 +3,28 @@ from bson import ObjectId
 
 class Station:
     def __init__(self, db):
-        self.collection = db['stations']
+        self.collection = db['charging_stations']
 
     def to_dict(self, station):
         return {
             "id": str(station["_id"]),
-            "station_name": station["station_name"],
-            "address": station["address"]
+            "cost": station["cost"],
+            "charging_points": station["charging_points"],
+            "pay_at_location": station["pay_at_location"],
+            "membership_required": station["membership_required"],
+            "access_key_required": station["access_key_required"],
+            "is_operational": station["is_operational"],
+            "latitude": station["latitude"],
+            "longitude": station["longitude"],
+            "operator": station["operator"],
+            "connection_type": station["connection_type"],
+            "current_type": station["current_type"],
+            "charging_points_flag": station["charging_points_flag"]
         }
 
-    def find_all(self):
-        return list(self.collection.find())
+    def find_all(self, page, size):
+        offset = (page - 1) * size
+        return list(self.collection.find().skip(offset).limit(size))
 
     def find_by_id(self, station_id):
         return self.collection.find_one({"_id": ObjectId(station_id)})
-    
-    def find_by_name(self, station_name):
-        return self.collection.find_one({"station_name": station_name})
-
-    def insert(self, station_name, address):
-        station = {
-            "station_name": station_name,
-            "address": address
-        }
-        result = self.collection.insert_one(station)
-        return result.inserted_id
-
-    def delete(self, station_id):
-        return self.collection.delete_one({"_id": ObjectId(station_id)})

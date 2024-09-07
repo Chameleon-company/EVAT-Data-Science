@@ -9,12 +9,13 @@ def create_app():
     app = Flask(__name__)
 
     # Set up MongoDB connection
-    client = MongoClient('mongodb://localhost:27017/')
-    db = client['evat']
+    client = MongoClient('mongodb+srv://EVAT:EVAT123@cluster0.5axoq.mongodb.net/', tls=True, tlsAllowInvalidCertificates=True)
+
+    db = client['EVAT']
 
     # Initialize the models
-    app.station_model = Station(db)
-    app.user_model = User(db)
+    app.charging_stations = Station(db)
+    app.users = User(db)
 
     # Register the controller blueprints
     app.register_blueprint(station_controller)
