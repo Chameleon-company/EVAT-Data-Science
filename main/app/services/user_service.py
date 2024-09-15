@@ -36,7 +36,6 @@ class UserService:
             raise ValueError("Station is not a favorite")
         
         station = self.charging_stations.find_by_id(station_id)
-        print(station_id)
         if not station:
             raise ValueError("Station not found")
 
