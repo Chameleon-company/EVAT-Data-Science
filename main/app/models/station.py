@@ -1,9 +1,10 @@
-from pymongo import MongoClient
+from pymongo import MongoClient, GEOSPHERE
 from bson import ObjectId
 
 class Station:
     def __init__(self, db):
         self.collection = db['charging_stations']
+        self.collection.create_index([("location", GEOSPHERE)])
 
     def to_dict(self, station):
         return {
@@ -28,3 +29,16 @@ class Station:
 
     def find_by_id(self, station_id):
         return self.collection.find_one({"_id": ObjectId(station_id)})
+
+    def find_nearest(self, user_lat, user_lng):
+        nearest_station = self.collection.find_one({
+            "location": {
+                "$near": {
+                    "$geometry": {
+                        "type": "Point",
+                        "coordinates": [user_lng, user_lat]
+                    }
+                }
+            }
+        })
+        return self.to_dict(nearest_station) if nearest_station else None
