@@ -6,6 +6,6 @@ class StationService:
         stations = self.charging_stations.find_all(page, size)
         return [self.charging_stations.to_dict(station) for station in stations]
     
-    def get_nearest_station(self, latitude, longitude):
-        station = self.charging_stations.find_nearest(latitude, longitude)
-        return station
+    def get_nearest_station(self, latitude, longitude, threshold):
+        stations = self.charging_stations.find_nearest(latitude, longitude, threshold)
+        return stations

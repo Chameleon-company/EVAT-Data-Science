@@ -30,15 +30,22 @@ class Station:
     def find_by_id(self, station_id):
         return self.collection.find_one({"_id": ObjectId(station_id)})
 
-    def find_nearest(self, user_lat, user_lng):
-        nearest_station = self.collection.find_one({
-            "location": {
-                "$near": {
-                    "$geometry": {
-                        "type": "Point",
-                        "coordinates": [user_lng, user_lat]
-                    }
-                }
+    def find_nearest(self, user_lat, user_lng, threshold):
+        nearest_stations = self.collection.find({
+            "$expr": {
+                "$lt": [
+                    {
+                        "$sqrt": {
+                            "$add": [
+                                { "$pow": [{ "$subtract": ["$longitude", user_lng] }, 2] },
+                                { "$pow": [{ "$subtract": ["$latitude", user_lat] }, 2] }
+                            ]
+                        }
+                    },
+                    threshold
+                ]
             }
         })
-        return self.to_dict(nearest_station) if nearest_station else None
+        
+        nearest_stations = [self.to_dict(station) for station in nearest_stations]
+        return nearest_stations if nearest_stations else None
