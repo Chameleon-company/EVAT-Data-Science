@@ -21,8 +21,6 @@ jobs:
       docker:
         image: docker:latest
         options: --privileged
-        ports:
-          - 2375:2375
 
     steps:
       - name: Checkout code
