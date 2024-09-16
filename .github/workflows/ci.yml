@@ -24,13 +24,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Install git
-        run: sudo apt-get install git -y
-
-      - name: Docker Info
-        run: docker info
+        uses: actions/checkout@v4
 
       - name: Log in to DockerHub
         run: echo "${{ secrets.CI_DOCKER_PASSWORD }}" | docker login --username "${{ secrets.CI_DOCKER_USERNAME }}" --password-stdin
