@@ -2,17 +2,69 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
+
+env:
+  DOCKER_HOST: tcp://localhost:2375
+  DOCKER_DRIVER: overlay2
+  CI_DOCKER_USERNAME: millynguyen
+  APP_NAME: evat-data
 
 jobs:
+  build-production:
+    runs-on: ubuntu-latest
+    services:
+      docker:
+        image: docker:latest
+        options: --privileged
+        ports:
+          - 5000:5000
 
-  build:
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Install git
+        run: sudo apt-get install git -y
+
+      - name: Docker Info
+        run: docker info
+
+      - name: Log in to DockerHub
+        run: echo "${{ secrets.CI_DOCKER_PASSWORD }}" | docker login --username "${{ secrets.CI_DOCKER_USERNAME }}" --password-stdin
+
+      - name: Build and Push Docker Image for Production
+        run: |
+          docker build -t ${{ secrets.CI_DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:${{ github.sha }}.
+          docker push ${{ secrets.CI_DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:${{ github.sha }}
+
+  deploy-production:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up SSH for Deployment
+        run: |
+          ssh-keyscan 54.206.74.135 >> ~/.ssh/known_hosts
+          echo "${{ secrets.SERVER_PROD_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: Deploy to Production
+        run: |
+          ssh -o StrictHostKeyChecking=no ubuntu@54.206.74.135 \
+          "echo '${{ secrets.CI_DOCKER_PASSWORD }}' | sudo docker login --username '${{ secrets.CI_DOCKER_USERNAME }}' --password-stdin;
+          sudo docker stop '${{ secrets.APP_NAME }}';
+          sudo docker rm '${{ secrets.APP_NAME }}';
+          sudo docker pull '${{ secrets.CI_DOCKER_USERNAME }}'/'${{ secrets.APP_NAME }}':'${{ github.sha }}';
+          sudo docker run -d all -p 5000:5000 --name '${{ secrets.APP_NAME }}' '${{ secrets.CI_DOCKER_USERNAME }}'/'${{ secrets.APP_NAME }}':'${{ github.sha }}';
+          sudo docker system prune -a -f;
+          sudo docker logout;"
