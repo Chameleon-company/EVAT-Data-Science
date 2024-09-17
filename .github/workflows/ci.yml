@@ -57,4 +57,12 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.SERVER_PROD_KEY }}
-          script: whoami
+          script: |
+            echo '${{ secrets.CI_DOCKER_PASSWORD }}' | sudo docker login --username '${{ secrets.CI_DOCKER_USERNAME }}' --password-stdin;
+            sudo docker stop '${{ secrets.APP_NAME }}';
+            sudo docker rm '${{ secrets.APP_NAME }}';
+            sudo docker pull '${{ secrets.CI_DOCKER_USERNAME }}'/'${{ secrets.APP_NAME }}':'${{ github.sha }}';
+            sudo docker run -d -p 5000:5000 --name '${{ secrets.APP_NAME }}' '${{ secrets.CI_DOCKER_USERNAME }}'/'${{ secrets.APP_NAME }}':'${{ github.sha }}';
+            sudo docker system prune -a -f;
+            sudo docker logout;
+          
