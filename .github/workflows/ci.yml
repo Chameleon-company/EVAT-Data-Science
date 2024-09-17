@@ -52,13 +52,11 @@ jobs:
         #   echo "hello done"
         #   '
       - name: Deploy to Production
-        uses: appleboy/ssh-action@v1.0.3
+        uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.SERVER_PROD_KEY }}
-          passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
             pbcopy < ~/.ssh/id_rsa
-            
             ls -la
