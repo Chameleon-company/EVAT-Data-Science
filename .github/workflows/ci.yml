@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+env:
+  APP_NAME: evat-data
+
 jobs:
   build-production:
     runs-on: ubuntu-latest
@@ -18,9 +21,9 @@ jobs:
 
       - name: Login to docker hub
         uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.CI_DOCKER_USERNAME }}
-          password: ${{ secrets.CI_DOCKER_PASSWORD }}
+        env:
+          username: ${{secrets.CI_DOCKER_USERNAME}}
+          password: ${{secrets.CI_DOCKER_PASSWORD}}
 
       - name: Build the docker image
         run: |
@@ -38,25 +41,21 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        env:
+            PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+            HOSTNAME: ${{ secrets.SSH_HOST }}
+            USER_NAME: ${{ secrets.USER_NAME }}
 
       - name: Login to docker hub
         uses: docker/login-action@v3
         with:
-          username: ${{secrets.CI_DOCKER_USERNAME}}
-          password: ${{secrets.CI_DOCKER_PASSWORD}}
-
-      - name: Create SSH directory
-        run: mkdir -p ~/.ssh
-
-      - name: Set up SSH for Deployment
-        run: |
-          ssh-keyscan 54.206.74.135 >> ~/.ssh/known_hosts
-          echo "${{ secrets.SERVER_PROD_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+          username: ${{ secrets.CI_DOCKER_USERNAME }}
+          password: ${{ secrets.CI_DOCKER_PASSWORD }}
 
       - name: Deploy to Production
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@54.206.74.135 \
+          echo "$PRIVATE_KEY" > private_key && chmod 600 private_key;
+          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME};
           "echo '${{ secrets.CI_DOCKER_PASSWORD }}' | sudo docker login --username '${{ secrets.CI_DOCKER_USERNAME }}' --password-stdin;
           sudo docker stop '${{ secrets.APP_NAME }}';
           sudo docker rm '${{ secrets.APP_NAME }}';
