@@ -49,9 +49,9 @@ jobs:
           username: ${{ secrets.CI_DOCKER_USERNAME }}
           password: ${{ secrets.CI_DOCKER_PASSWORD }}
 
-      - name: Deploy to Production
-        run: |
-          echo "$PRIVATE_KEY" > private_key && chmod 600 private_key;
-          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
+      - run: mkdir -p ~/.ssh/
+      - run: echo "{{ secrets.STAGING_KEY }}" > ~/.ssh/private.key
+      - run: chmod 600 ~/.ssh/private.key
+      - run: ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
           echo "hello done"
           '
