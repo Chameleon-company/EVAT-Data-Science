@@ -49,16 +49,18 @@ jobs:
           username: ${{ secrets.CI_DOCKER_USERNAME }}
           password: ${{ secrets.CI_DOCKER_PASSWORD }}
 
-      - name: Deploy to Production
+      # - name: Deploy to Production
         # run: |
         #   echo "$PRIVATE_KEY" > private_key && chmod 600 private_key;
         #   ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
         #   echo "hello done"
         #   '
-        run: |
-          mkdir -p ~/.ssh/;
-          echo "{{ secrets.STAGING_KEY }}" > ~/.ssh/private.key;
-          chmod 600 ~/.ssh/private.key
-          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
-          echo "hello done"
-          '
+      - name: Deploy to Production
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            ls -la
