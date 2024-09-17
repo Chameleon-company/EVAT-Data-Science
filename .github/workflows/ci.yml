@@ -36,14 +36,14 @@ jobs:
     # needs: build-production
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # - name: Checkout code
+      #   uses: actions/checkout@v3
 
-      - name: Login to docker hub
-        uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.CI_DOCKER_USERNAME }}
-          password: ${{ secrets.CI_DOCKER_PASSWORD }}
+      # - name: Login to docker hub
+      #   uses: docker/login-action@v3
+      #   with:
+      #     username: ${{ secrets.CI_DOCKER_USERNAME }}
+      #     password: ${{ secrets.CI_DOCKER_PASSWORD }}
 
       # - name: Deploy to Production
         # run: |
@@ -57,6 +57,4 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.SERVER_PROD_KEY }}
-          script: |
-            pbcopy < ~/.ssh/id_rsa
-            ls -la
+          script: whoami
