@@ -57,5 +57,8 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.USER_NAME }}
           key: ${{ secrets.SERVER_PROD_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
+            pbcopy < ~/.ssh/id_rsa
+            
             ls -la
