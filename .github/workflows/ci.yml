@@ -7,7 +7,7 @@ on:
   pull_request:
     branches:
       - main
-
+# Build and Deploy
 jobs:
   build-production:
     runs-on: ubuntu-latest
@@ -47,7 +47,7 @@ jobs:
             sudo docker stop '${{ secrets.APP_NAME }}';
             sudo docker rm '${{ secrets.APP_NAME }}';
             sudo docker pull '${{ secrets.CI_DOCKER_USERNAME }}'/'${{ secrets.APP_NAME }}':'${{ github.sha }}';
-            sudo docker run -d -p 5000:5000 --name '${{ secrets.APP_NAME }}' '${{ secrets.CI_DOCKER_USERNAME }}'/'${{ secrets.APP_NAME }}':'${{ github.sha }}';
+            sudo docker run -d -p 5000:5000 --name "${{ secrets.APP_NAME }}" -e GOOGLE_MAP_API_KEY="${{ secrets.GOOGLE_MAP_API_KEY }}" -e DATABASE_URL="${{ secrets.DATABASE_URL }}" "${{ secrets.CI_DOCKER_USERNAME }}"/"${{ secrets.APP_NAME }}":"${{ github.sha }}";
             sudo docker system prune -a -f;
             sudo docker logout;
           
