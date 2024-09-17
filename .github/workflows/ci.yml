@@ -9,29 +9,27 @@ on:
       - main
 
 env:
-  DOCKER_HOST: tcp://localhost:2375
-  DOCKER_DRIVER: overlay2
-  CI_DOCKER_USERNAME: millynguyen
   APP_NAME: evat-data
 
 jobs:
   build-production:
     runs-on: ubuntu-latest
-    services:
-      docker:
-        image: docker:latest
-        options: --privileged
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Log in to DockerHub
-        run: echo "${{ secrets.CI_DOCKER_PASSWORD }}" | docker login --username "${{ secrets.CI_DOCKER_USERNAME }}" --password-stdin
-
-      - name: Build and Push Docker Image for Production
+      - uses: actions/checkout@v3
+      - name: Login to docker hub
+        id: docker-hub
+        env:
+          username: ${{secrets.CI_DOCKER_USERNAME}}
+          password: ${{secrets.CI_DOCKER_PASSWORD}}
+      - name: Build the docker image
+        id: build-docker-image
         run: |
-          docker build -t ${{ secrets.CI_DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:${{ github.sha }}.
+          ls -la 
+          docker build . -f Dockerfile -t ${{ secrets.CI_DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:${{ github.sha }}
+      - name: Push the docker image
+        id: push-docker-image
+        run: |
           docker push ${{ secrets.CI_DOCKER_USERNAME }}/${{ secrets.APP_NAME }}:${{ github.sha }}
 
   deploy-production:
@@ -39,8 +37,12 @@ jobs:
     needs: build-production
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - name: Login to docker hub
+        id: docker-hub
+        env:
+          username: ${{secrets.CI_DOCKER_USERNAME}}
+          password: ${{secrets.CI_DOCKER_PASSWORD}}
 
       - name: Create SSH directory
         run: mkdir -p ~/.ssh
