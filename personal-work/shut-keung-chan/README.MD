@@ -45,7 +45,7 @@ Since the EV Route Planner function is contained in a Jupyter notebook (`integra
 4. In a new cell, you can now use the function:
 
 ```python
-route_map, route_data, total_distance, total_battery_consumed = integrated_ev_route_planner(
+route_map, route_data, direct_distance, total_distance, total_battery_consumed = integrated_ev_route_planner(
     origin,
     destination,
     max_range,
@@ -74,7 +74,7 @@ import requests
 5. You can now use the function in your notebook or script:
 
 ```python
-route_map, route_data, total_distance, total_battery_consumed = integrated_ev_route_planner(
+route_map, route_data, direct_distance, total_distance, total_battery_consumed = integrated_ev_route_planner(
     origin,
     destination,
     max_range,
@@ -101,6 +101,7 @@ route_map, route_data, total_distance, total_battery_consumed = integrated_ev_ro
 
 - `route_map` (folium.Map): An interactive map object showing the route and charging stops
 - `route_data` (pandas.DataFrame): A dataframe containing detailed information about each point on the route
+- `direct_distance` (float): The direct distance between the origin and the destination without any stops
 - `total_distance` (float): The total distance of the journey in kilometers
 - `total_battery_consumed` (float): The estimated total battery consumption as a percentage
 
@@ -114,14 +115,9 @@ battery_size = 100  # kWh
 openrouteservice_api_key = "your_openrouteservice_api_key"
 openchargemap_api_key = "your_openchargemap_api_key"
 
-route_map, route_data, total_distance, total_battery_consumed = integrated_ev_route_planner(
+route_map, route_data, direct_distance, total_distance, total_battery_consumed = integrated_ev_route_planner(
     origin, destination, max_range, battery_size, openrouteservice_api_key, openchargemap_api_key
 )
-
-print(f"Total distance: {total_distance:.2f} km")
-print(f"Total battery consumed: {total_battery_consumed:.2f}%")
-print("\nRoute details:")
-print(route_data)
 
 # Display the map (in Jupyter Notebook or similar environment)
 route_map
