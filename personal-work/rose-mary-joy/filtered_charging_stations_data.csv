@@ -1,0 +1,6 @@
+Model,Battery: kWh,Energy Consumption (kWh/100km),AC Charge Rate (kW),DC Charge Rate (kW)
+Audi e-tron,95,22,11,150
+Tesla Model S,100,20,16,250
+Nissan Leaf,40,15,6.6,50
+BMW i3,42.2,16,7.4,50
+Hyundai Kona Electric,64,14,11,100
