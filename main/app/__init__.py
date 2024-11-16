@@ -6,6 +6,7 @@ from app.controllers.station_controller import station_controller
 from app.controllers.user_controller import user_controller
 from dotenv import load_dotenv
 import os
+from app.swagger import api
 
 def create_app():
     app = Flask(__name__)
@@ -25,6 +26,8 @@ def create_app():
     # Initialize the models
     app.charging_stations = Station(db)
     app.users = User(db)
+
+    api.init_app(app)
 
     # Register the controller blueprints
     app.register_blueprint(station_controller)
