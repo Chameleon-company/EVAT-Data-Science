@@ -1,0 +1,153 @@
+// Use DBML to define your database structure
+// Databse Documentation Link: https://dbdocs.io/s223617689/Chameleon_EVAT?schema=public&view=relationships&table=Users
+// Database Link https://dbdiagram.io/d/EVAT1-675f6402e763df1f00025c09
+
+// Recreate the Database Definiton & Structure with the following codes
+Table Users {
+  Id int [pk, not null, unique]
+  UserFirstName varchar
+  UserSurname varchar
+  UserFullName varchar
+  UserEmailAddress varchar [unique]
+  UserPassword varchar
+  UserRole varchar
+  UserHomeAddress varchar
+  UserMobilePhoneNumber varchar
+  UserAuthenticated varchar
+  VehicleID varchar
+}
+
+Table EV {
+  Id varchar [PK, unique]
+  Manufacturer varchar
+  Model varchar
+  VehicleYear varchar
+  VehicleClass varchar
+  FuelType varchar
+  ConnectorType varchar
+  BatteryCapacityKwh float [ref: - EV.ElectricRangeKm]
+  EstBattChargeTime80perc50KW float [ref: - EV.BatteryCapacityKwh]
+  EnergyConsumptionWhkm varchar [ref: - EV.ElectricRangeKm]
+  ElectricRangeKm float
+  UserId int
+}
+
+Table ChargingSession {
+  Id int [PK]
+  SlotID int
+  UserId int
+  StationId int
+  LocationId int
+  ChargeStartTime datetime [ref: - ChargingSession.ChargeTimeHrs]
+  ChargeEndTime datetime [ref: - ChargingSession.ChargeTimeHrs]
+  ChargeTimeHrs datetime [ref: - ChargingSession.CustPayAmount]
+  KwhTotal float [ref: - ChargingSession.CustPayAmount]
+  CustPricePerKW money [ref: - ChargingSession.CustPayAmount]
+  CustPayAmount float
+  BookingDate date
+  ConnectorType varchar
+  OrderId int
+  PurchaseId int
+}
+
+Table OrderScheduling {
+  Id int [PK, unique]
+  UserId int
+  StationId int [unique]
+  SlotId int [unique]
+  ConnectorType varchar
+  BookingDate datetime [ref: - OrderScheduling.BookingTimeSlots ]
+  SlotStartTime datetime [ref: - OrderScheduling.BookingTimeSlots ]
+  SlotLength int [ref: - OrderScheduling.BookingTimeSlots ]
+  EstCost50KWCharger float [ref: - OrderScheduling.SlotLength]
+  BookingTimeSlots SET(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)
+  BookingDeposit money 
+}
+
+Table Stations {
+  Id int [PK, unique]
+  ChargingPoints int
+  Latitude float
+  Longitude float
+  OperatorID varchar
+  Address varchar
+  Amenities varchar
+  BasePrice money [ref: - Stations.EstCost50KWChargerHr ]
+  PeakPriceAdjustment money [ref: - Stations.EstCost50KWChargerHr ]
+  EstCost50KWChargerHr float 
+  SlotIDs int [unique]
+  ConnectionTypes varchar
+  PaymentTypes varchar
+  PowerOutput varchar
+  LocationName varchar
+  PostalCode varchar
+  LocationID varchar
+}
+
+Table PurchaseWholesaleElec {
+  Id int [PK, unique]
+  StationId int
+  SupplyId int
+  ExpenditureCode varchar
+  RRPperKW float [ref: > PurchaseWholesaleElec.RRPperKW24hrs]
+  RRPperKW24hrs float [ref: - PurchaseWholesaleElec.CustPricePerKW]
+  BasePrice money [ref: - PurchaseWholesaleElec.CustPricePerKW]
+  PeakPriceAdjustment money [ref: - PurchaseWholesaleElec.CustPricePerKW]
+  CustPricePerKW money
+  PurchaseDate datetime
+}
+
+Table UserPayment {
+  Id int [PK, unique]
+  BookingDeposit money [ref: - UserPayment.TransAmount]
+  PurchaseId int
+  PaymentType varchar
+  CustPayAmount money [ref: - UserPayment.TransAmount]
+  TransAmount money
+  UserId int
+  StationId int
+  PaymentDate datetime
+  ChargingId int
+  OrderId int
+}
+
+
+
+// UserPayment Relatiobships
+Ref: Users.Id - UserPayment.UserId
+Ref: PurchaseWholesaleElec.Id - UserPayment.PurchaseId
+Ref: OrderScheduling.Id - UserPayment.OrderId
+Ref: OrderScheduling.BookingDeposit - UserPayment.BookingDeposit
+Ref: Stations.PaymentTypes <> UserPayment.PaymentType
+Ref: ChargingSession.Id - UserPayment.ChargingId
+Ref: Stations.Id - UserPayment.StationId
+
+// PurchaseWholesaleElec Relationships
+Ref: Stations.Id - PurchaseWholesaleElec.StationId
+Ref: PurchaseWholesaleElec.BasePrice - Stations.BasePrice
+Ref: PurchaseWholesaleElec.PeakPriceAdjustment - Stations.PeakPriceAdjustment
+
+// Stations Relationships
+Ref: Stations.ConnectionTypes <> EV.ConnectorType
+Ref: OrderScheduling.EstCost50KWCharger - Stations.EstCost50KWChargerHr
+Ref: Stations.SlotIDs - ChargingSession.SlotID
+
+// OrderScheduling Relationships
+Ref: Stations.Id - OrderScheduling.StationId
+Ref: Users.Id - OrderScheduling.UserId
+Ref: Stations.SlotIDs - OrderScheduling.SlotId
+Ref: Stations.ConnectionTypes > OrderScheduling.ConnectorType
+Ref: OrderScheduling.Id - ChargingSession.OrderId
+
+// ChargingSession Relationships
+Ref: Users.Id - ChargingSession.UserId
+Ref: Stations.Id - ChargingSession.StationId
+Ref: PurchaseWholesaleElec.Id - ChargingSession.PurchaseId
+Ref: PurchaseWholesaleElec.CustPricePerKW - ChargingSession.CustPricePerKW
+Ref: ChargingSession.CustPayAmount - UserPayment.CustPayAmount
+
+// EV Relationships
+Ref: Users.Id - EV.UserId
+
+//Users Relationships
+Ref: EV.Id - Users.VehicleID
