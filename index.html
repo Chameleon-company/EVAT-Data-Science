@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVAT Project Showcase</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+    }
+    .hero {
+      background: linear-gradient(45deg, #004d40, #00796b);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .section {
+      padding: 2rem 1rem;
+    }
+    .student-links li {
+      padding: 0.3rem 0;
+    }
+    .student-links a {
+      color: #00796b;
+      font-weight: 500;
+    }
+    .student-links a:hover {
+      text-decoration: underline;
+    }
+    .search-box {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Electric_car_icon.png" alt="EV Logo" width="60">
+    <h1 class="mt-3">Electric Vehicle Adoption Tools (EVAT)</h1>
+    <p>Accelerating Australia's EV Future through AI, ML & Smart Applications</p>
+  </div>
+
+  <div class="container section">
+    <h2>About the Project</h2>
+    <p>The EV Adoption Tools project is dedicated to promoting the adoption of Electric Vehicles (EVs) in Australia. By building smart tools and leveraging data science, the EVAT team aims to enhance user experience, improve infrastructure planning, and make EV usage more practical and appealing.</p>
+
+    <h2>Trimester T1 2025 Goals</h2>
+    <ul>
+      <li>Develop App MVP with intuitive navigation & filters</li>
+      <li>Predict charger availability using AI (ARIMA, LSTM, XGBoost)</li>
+      <li>Identify blackspots using clustering models (DBSCAN, KMeans)</li>
+      <li>Enable real-time infrastructure monitoring with Power BI</li>
+      <li>Build AI-powered chatbot for smart recommendations</li>
+    </ul>
+
+    <h2>Deliverables Overview</h2>
+    <ul>
+      <li>Interactive charger locator & booking system</li>
+      <li>Forecasting APIs deployed with Flask & MongoDB</li>
+      <li>Interactive dashboards with real-time insights</li>
+      <li>NLP-based AI Chatbot integrated with app</li>
+    </ul>
+
+    <h2>Student Contributions</h2>
+    <input type="text" class="form-control search-box" placeholder="Search student name..." id="searchInput">
+    <ul class="list-group student-links" id="studentList">
+      <li class="list-group-item"><a href="#">Goutham Krishna Bala Murali Krishna</a></li>
+      <li class="list-group-item"><a href="#">Saad Ikram Cheema</a></li>
+      <li class="list-group-item"><a href="#">Alexander John Reid</a></li>
+      <li class="list-group-item"><a href="#">Sehar Aejaz</a></li>
+      <li class="list-group-item"><a href="#">Aakhya Saxena</a></li>
+      <li class="list-group-item"><a href="#">Ajay Rajesh</a></li>
+      <li class="list-group-item"><a href="#">Barani Shanmugasundaram</a></li>
+      <li class="list-group-item"><a href="#">Dip Nomani</a></li>
+      <li class="list-group-item"><a href="#">Ebi Benny</a></li>
+      <li class="list-group-item"><a href="#">Hann Xiang Soo</a></li>
+      <li class="list-group-item"><a href="#">Harold Parappillil Sunny</a></li>
+      <li class="list-group-item"><a href="#">Mihir Arvindbhai Dobariya</a></li>
+      <li class="list-group-item"><a href="#">Nirmal Antony Mariadoss</a></li>
+      <li class="list-group-item"><a href="#">Nouman Ali</a></li>
+      <li class="list-group-item"><a href="#">Rose Mary Joy</a></li>
+      <li class="list-group-item"><a href="#">Suraj Radhakrishnan Nair</a></li>
+      <li class="list-group-item"><a href="#">Yori Zhuang</a></li>
+    </ul>
+  </div>
+
+  <script>
+    document.getElementById("searchInput").addEventListener("keyup", function() {
+      let filter = this.value.toLowerCase();
+      let items = document.querySelectorAll("#studentList li");
+      items.forEach(item => {
+        let name = item.textContent.toLowerCase();
+        item.style.display = name.includes(filter) ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
