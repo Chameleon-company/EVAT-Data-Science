@@ -1,0 +1,675 @@
+ID,Title,Latitude,Longitude,AccessComments,WheelchairAccess,Connectors,City
+54547,Westfield Sydney - Valet Parking,-33.8694048813709,151.208287100525,Access via Valet Parking,N/A,1,Sydney
+55007,Park Hyatt Sydney,-33.8560032,151.2094239,Available for patrons only. Please see valet.,N/A,1,The Rocks
+100404,Broadway Supercharger,-33.882995,151.194332,,N/A,1,Broadway
+311308,Tesla Destination Charger,-33.883393295749826,151.1945968746586,At Parking B2 level near the exit to Bay Street.,N/A,1,Broadway
+8737,Derby Place,-33.88358,151.19153,,N/A,1,Glebe
+272614,Mirvac South Eveleigh,-33.8955812,151.1958121,,N/A,6,Eveleigh
+272689,Dorhauer Lane,-33.88847179022024,151.23760032945688,,N/A,2,Woollahra
+150024,Supa Centa Moore Park,-33.902079196334896,151.215231409333,"Lower parking, at the south lift, between the inclinator bays.",N/A,1,Kensington
+272616,NRMA - Sydney,-33.9055215,151.2128,,N/A,3,Zetland
+191062,Audi Centre Sydney ,-33.906943843362484,151.2131655272031,,N/A,1,Zetland
+190875,Kensington [Jolt],-33.907070570863254,151.22409119211284,,N/A,2,Kensington
+272634,Eastgate Bondi Junction,-33.892967,151.248028,,N/A,4,Bondi Junction
+272632,Civic Plaza 88 Christie,-33.823861,151.195326,,N/A,4,St Leonards
+272686,Raglan Street West,-33.83121718107124,151.24368057896396,,N/A,4,Mosman
+193048,Marrickville Metro,-33.90782667980605,151.17114538375472,,N/A,4,Sydney
+191164,Evie Mosman,-33.82544433087931,151.24146564876457,,N/A,2,Mosman
+272673,Leichhardt Marketplace,-33.883514,151.150017,,N/A,4,Leichhardt
+272613,TLE Electrical Artarmon,-33.81845312500111,151.18932889926964,,N/A,2,St Leonards
+272630,Royal Randwick,-33.915187,151.240972,,N/A,4,Randwick
+273427,bp pulse Sydenham,-33.916260575133784,151.17311326359567,,N/A,1,St Peters
+272694,Northbridge Plaza,-33.809374,151.208591,,N/A,4,Northbridge
+191165,Evie Lane Cove,-33.81396420883535,151.16927647670855,,N/A,4,Lane Cove
+272684,BP Ashfield,-33.87421821418127,151.12682969039508,,N/A,4,Croydon
+272641,Ashfield Mall,-33.8895642,151.1235986,,N/A,4,Ashfield
+266872,Chatswood Chase Chargefox,-33.79511781061279,151.18644036778977,"Use the entrance on Victoria Avenue, using the left lane into the car park, follow this around to the left and then continue straight. The charger is located at Level B1, Pillar G13 (near the travelators going up to Kmart) 
+
+Beware as this is in a shopping centre access isn't 24/7, hours are generally 6am - 10pm weekdays and 8am - 10pm weekends.  First 3 hours parking free. 
+
+https://www.wilsonparking.com.au/parking-locations/new-south-wales/chatswood/chatswood-chase-car-park/",N/A,1,Chatswood
+157457,Charles Street Parking/Charging,-33.91148886722056,151.11746314177572,Provided by Canterbury Bankstown council.EO brand. Best access is via Broughton St.,N/A,1,Canterbury
+157463,Canterbury Bankstown Council,-33.90764109899798,151.1039129846189,,N/A,1,Campsie
+272619,The Heffron Centre,-33.97374,151.236646,,N/A,8,Chifley
+190055,Eden Gardens,-33.78064947709375,151.13421887082995,,N/A,1,Macquarie Park
+272618,ENGIE - DFO Homebush,-33.855576,151.076681,,N/A,1,Homebush
+190053,Giffnock Avenue,-33.78254134090367,151.1230831406915,,N/A,1,Macquarie Park
+150032,Macquarie Supercharger,-33.777782,151.12275,"You *must* be Westbound on Talavera Road and take the 2nd parking entrance, halfway between the 2 traffic lights and below the logo tower with the shop signs. It's hidden until you're right on it. Follow the signs and black painted lane to Valet Parking. 150 kW, *not* 120 kW.",N/A,1,
+272627,Macquarie Centre,-33.777565954445315,151.12056384466786,,N/A,4,North Ryde
+191394,NRMA Olympic Park,-33.84605079570373,151.06985459321334,,N/A,2,Sydney Olympic Park
+190417,Richmond Tavistock No. 3 [Jolt],-33.86602668667314,151.06443969723887,,N/A,2,Sydney
+272637,Allambie Grove Business Park,-33.751303,151.2433284,,N/A,2,Frenchs Forest
+190041,Macquarie University X6A Banksia Cottage,-33.77520838069468,151.1095032126692,Use Chargefox App or RFID,N/A,1,Macquarie University
+298207,Opposite Malbara Crescent,-33.741938777072164,151.21364536627425,,N/A,1,Frenchs Forest
+298208,Blackbutts Road,-33.741938777072164,151.21364536627425,,N/A,1,Frenchs Forest
+273436,Wiley Park [bp pulse],-33.919392020719556,151.06669418522023,,N/A,2,Wiley Park
+272617,ENGIE - Roselands Shopping Centre,-33.935,151.069205,,N/A,1,Roselands
+128195,PCYC Car Park,-33.75028109544636,151.28666346345153,"This is the Northern Beaches Council Car Park, with PCYC above. EO chargers are Level 1 of car park just near entrance, Tesla and old chargepoint charger down on level 2.",N/A,3,Dee Why
+192687,Stanley St Peakhurst NSW,-33.961219,151.065897,,N/A,2, Peakhurst 
+168913,Abbott Road,-33.81195253512282,151.03587917803534,,N/A,1,Rydalmere
+191160,Bankstown [Evie],-33.93201456375411,151.03015532131081,,N/A,4,Bankstown
+308738,Tesla Supercharger Bankstown,-33.933123083981414,151.0285550577326,,N/A,1,Bankstown
+273428,bp pulse Rosehill,-33.818996055217895,151.02170364175703,,N/A,1,Rosehill
+272633,Belrose Home,-33.703118,151.212917,,N/A,4,Belrose
+272622,Pennant Hills Toyota,-33.7366211,151.0743388,,N/A,1,Pennant Hills
+190054,Hillcrest Road,-33.73724500047699,151.07106994908884,,N/A,1,
+272700,Red Rooster Guildford,-33.85283452159095,150.99575854229482,,N/A,4,Guildford
+272635,BP Caringbah,-34.03295211277035,151.12520883189632,,N/A,4,Caringbah
+130686,Tastebuds Tesla Charger,-33.6893362215631,151.224097191251,To the right of the Tastebuds cafe on the side closest to Mona Vale Road.,N/A,1,Sydney
+278525,Ampol Waitara,-33.71060645301792,151.1025062095589,,N/A,1,Waitara
+272615,ENGIE - Warriewood Square,-33.695602,151.2962878,,N/A,1,Warriewood
+157456,"Georges River Council, Carlton Depot",-33.96493620946319,151.0,Check in at front office.,N/A,1,Hurstville
+191280,Tesla Supercharger South Village,-34.033063649505685,151.07388271966875,,N/A,1,Kirrawee
+191052,Woolworths Kireawee,-34.03429800987962,151.0734299224497,,N/A,2,Kirrawee
+210903,Cherrybrook Village - Basement Carpark,-33.721132,151.04396,,N/A,1,CHERRYBROOK
+210904,Cherrybrook Village,-33.721132,151.04396,,N/A,1,CHERRYBROOK
+190757,Mona Vale [JOLT],-33.67606087720165,151.30325795651265,"Street parking, one marked parking spot",N/A,2,Mona Vale
+192929,Mona Vale library carpark [JOLT],-33.67610252225354,151.3038961163004,"In off-street carpark, enter from Park St",N/A,2,Mona Vale
+170607,Ampol Woolworths MetroGo Seven Hills,-33.767099,150.954883,"Can be accessed from Foundry Rd through back of Hungry Jack's if coming from West, or perhaps more importantly, if looking to exit onto the M2 or turn at Old Windsor Road to reach the M7.  Try out the air compressor and the squeegee while you charge. They’re immediately next to the charging bays, and the tyre hose reaches both spaces.",N/A,2,Seven Hills
+9892,Round Cnr 494-500 Old Northern Road,-33.693647,151.018619,,N/A,1,Dural
+273870,bp pulse Seven Hills,-33.76725,150.952041,,N/A,1,Seven Hills
+265390,HomeCo Castle Hill,-33.72778176586396,150.976245622693,,N/A,4,Castle Hill
+191161,Evie Cabramatta,-33.89880022738458,150.91994378105392,,N/A,4,Cabramatta
+272620,Berowra Tennis Centre,-33.621379,151.1494478,,N/A,1,Berowra
+272624,ENGIE - Greenway Wetherill Park,-33.850403,150.89840155,,N/A,1,Wetherill Park
+272688,Casula Mall,-33.947906375047246,150.90105410921717,,N/A,4,Casula
+295979,Barrenjoey Road,-33.597285174014345,151.31997898476163,,N/A,2,
+272521,BP Pulse Eastern Creek,-33.811041669720204,150.85030018744214,Pass by the car bowsers to the left of the store - charger is approximately just across the driveway at the rear corner of the store,N/A,1,Eastern Creek
+133760,Woolworths Prestons,-33.9521597232138,150.855589807906,,N/A,1,Sydney
+204317,ECQ XL,-33.78758418286377,150.854268328623,"4x Type 2 AC charge points, BYO cable",N/A,1,Eastern Creek 
+212646,Eastern Creek Quarter,-33.78477823234724,150.8530576715741,ECQ XL is gated and may be inaccessible at night,N/A,1,Eastern Creek
+273933,Chargefox,-33.770837178135245,150.84515556849738,,N/A,1,Rooty Hill
+267345,Chargefox Teachers Mutual Bank,-33.77239824531827,150.84348282464293,Accessible only during office hours,N/A,1,Rooty Hill
+191162,Coles Schofields,-33.706161447313946,150.87557080542024,"Located in the Coles underground car park - opening hours: Mon - Sat 6am - 12am | Sun 7am - 10pm - outside of these hours the chargers are not accessible. Mobile signal isnt great in this car park, I recommend having Evie's RFID, or if you move around the car park you can get enough signal to start the session.",N/A,4,Schofields
+273935,The Mount Druitt Hub,-33.767499717192706,150.82239944831394,Charge point is located in black lamp post,N/A,1,Mount Druitt
+273904,Leppington Village Shopping Centre,-33.961508128351525,150.80570305129015,,N/A,1,Leppington
+266501,Campbelltown Supercharger,-34.07151792013103,150.80730085250025,Located in the car park of Campbelltown Catholic Club,N/A,1,Campbelltown
+299879,Chargefox Charging Station,-34.07085887727317,150.80665583075495,,N/A,2,Campbelltown
+191163,"Evie Caddens Corner, Kingswood. ",-33.76884540471722,150.73565759781445,,N/A,3,Kinswoid
+274056,Ampol Foodary Penrith,-33.7430336465433,150.69296375875626,,N/A,2,Penrith
+272693,Jamisontown,-33.770379031934034,150.67371849780716,,N/A,2,Jamisontown
+190406,Supercheap auto,-33.76965243504467,150.67186991611658,,N/A,1,Jamisontown‎ 
+52844,Crowne Plaza Terrigal,-33.4484777280442,151.445479384747,"Inside hotel carpark, two spots on the left side just after the first left turn ",N/A,1,Terrigal
+297042,AmpCharge Charging Station,-33.765456662016454,150.62149884005026,,N/A,2,Glenbrook
+266538,Blaxland Supercharger,-33.74525300296909,150.61025805036633,,N/A,1,Blaxland
+266767,BP Pulse,-33.36290641211102,151.44446174596283,,N/A,2,Tumbi Umbi
+161843,Picton [NRMA],-34.16820562741403,150.61093049806357,,N/A,2,Picton
+128371,Central Coast Supercharger [Tesla],-33.309014,151.421114,,N/A,1,Tuggerah
+131610,Innovation Campus - University of Wollongong,-34.40010718082921,150.8996891900606,Turn East off Innovation Way on the North side of the Sustainable Buildings Research Centre - Building 237,N/A,3,North Wollongong
+273425,Fairy Meadow [bp pulse],-34.40299801963799,150.89157957672126,,N/A,1,Fairy Meadow
+131841,Wollongong Central - P1 Basement Car Park,-34.4233979669063,150.892280394333,Turn left after the boom gate.,N/A,2,Wollongong 
+235461,Wollongong Central - Regent St Carpark,-34.423975432207065,150.8913817469645,,N/A,4,Wollongong
+191177,Stewart Street Carpark [NRMA],-34.42839437417402,150.9002218527666,,N/A,3,Wollongong
+279180,Ampol Foodary Pheasants Nest Southbound,-34.2834466714301,150.63939668827243,,N/A,2,Pheasants Nest 
+279179,Ampol Foodary Pheasants Nest Northbound,-34.2829974272134,150.63679286992692,,N/A,2,Pheasants Nest
+131564,Figtree Grove Shopping Centre ,-34.43743163189117,150.86340370780567,Enter via the Eastern traffic lights off The Avenue,N/A,1,Figtree 
+171646,Wollongong Supercharger,-34.43797320339262,150.8633622012107,,N/A,1,Figtree
+266540,Evie Lawson,-33.72070368975226,150.4297109802278,,N/A,4,Lawson
+131563,Jax EV @ Warrawong Plaza,-34.4868830425302,150.890772967401,Western wall of JAX Tyres on the rooftop car park ,N/A,1,Warrawong
+170985,The Place @ Warrawong Plaza,-34.486377904198555,150.88795170004096,Access from South bound lane on King Street.,N/A,1,Warrawong
+272708,ENGIE - Lake Haven Centre,-33.24078932377033,151.50325247968817,,N/A,1,Lake Haven
+272496,Evie Dapto Mall,-34.49497612676224,150.79547723050382,,N/A,4,Dapto
+131881,Stockland Shellharbour Shopping Centre ( Shellharbour Square) - West,-34.563672909556324,150.83831953671825,Roof top car park ,N/A,2,Shellharbour City Centre
+131895,Stockland,-34.5636660185915,150.838163461777,,N/A,1,Shellharbour City Centre
+190407,Scenic World Carpark,-33.728024559118296,150.300728600681,"Tesla 3 phase AC 22kW by the fire stairs near exit. Appear to be set to Legacy and should work with any Type 2 car.  
+Wall outlets on corner near fire stairs on most levels of multi storey car park.",N/A,1,Katoomba
+171647,Woolworths Shell Cove,-34.588308117930936,150.86592718102042,,N/A,2,Shellharbour
+190408,Hydro Majestic Hotel,-33.67697329948779,150.281626751796,,N/A,2,Medlow Bath
+60564,Mittagong NSW Main Street,-34.4499721,150.451723,Recharger is at the rear of the building at the southern end of the car park,N/A,1,Mittagong 
+161844,Mittagong NRMA,-34.45002862260948,150.44244730477044,,N/A,2,Mittagong
+272675,Swansea,-33.0833,151.6333,,N/A,4,
+161832,Great North Trading Post,-32.990224952340206,151.1307728426591,"Ask cafe staff for access, try the burgers and coffee!",N/A,1,Laguna
+270949,RMIT - City Campus,-37.80624795114712,144.96401596254236,,N/A,2,Carlton
+41209,100 St Kilda Rd,-37.82155,144.968518,,N/A,1,Southbank
+18826,11 Nicholson Street,-37.804609,144.972702,,N/A,1,Carlton
+202147,Lorbek Luxury Cars,-37.821362270898675,144.95148061129817,,N/A,1,Port Melbourne
+308750,Tesla Supercharger South Melbourne,-37.83227022248282,144.9609633571161,,N/A,1,South Melbourne
+191055,Collingwood Library,-37.80446562888998,144.99324369474311,,N/A,4,Abbotsford
+270950,JET Charge Office,-37.82858393063794,144.93443851602245,,N/A,3,Port Melbourne
+307988,Evie Richmond Library,-37.825531454943984,144.99874510755922,,N/A,1,Richmond
+31109,650 Church Street Building 5,-37.8318863645605,144.995866953165,Tesla Store & Service Centre.,N/A,1,Melbourne
+307989,Woolworths Fishermans Bend,-37.8313475403691,144.92982685129846,,N/A,1,Fishermans Bend
+210899,Middy’s Port Melbourne,-37.82819,144.925654,Only available during store trading hours.  Trading Hours Monday to Friday 6.00am - 5.00pm Saturdays 7.00am - 12.00pm Sundays Closed.,N/A,2,Port Melbourne
+307788,Ampcharge Barkly Square,-37.776585212413124,144.9639271835984,,N/A,1,Brunswick
+270908,ENGIE - VIctoria Gardens,-37.81230000849669,145.01104431147348,,N/A,2,Richmond
+202146,GET Electric Head Office,-37.83334808033666,144.92004965602666,,N/A,1,Port Melbourne
+189748,Brunswick EV Hub,-37.77388003814904,144.961800631472,,N/A,2,Brunswick
+272533,David Street Car Park,-37.771645139851486,144.96173089792444,,N/A,1,Brunswick
+272532,RMIT Brunswick,-37.7716796666272,144.95818485880557,,N/A,1,Brunswick
+272534,Fleming Park,-37.769132479580406,144.9747860386588,,N/A,2,Brunswick East
+210900,The Parade Ascot Vale Car Park,-37.772547,144.915133,,N/A,4,Ascot Vale
+150039,Moonee Ponds,-37.765834,144.923586,,N/A,1,
+272531,Moonee Ponds Central,-37.76583087874345,144.92352649174768,,N/A,2,Moonee Ponds
+60416,St Kilda Town Hall,-37.8682677,144.9895699,Enter car park 2 hr free parking. You will need a Type 2 cable and BetterPlace swipe card or key fob.,N/A,2,St Kilda
+210952,Swinburne University - TC Building,-37.820026,145.040303,,N/A,2,Hawthorn
+270936,City of Stonnington,-37.8558376330929,145.0295635713096,,N/A,2,Malvern
+210953,Malvern Central,-37.862429,145.027453,Parking Level: 2,N/A,4,Armadale
+189747,Coburg Civic Centre / Moreland City,-37.74104152020631,144.9701497464091,,N/A,3,Coburg
+210937,Coburg Town Hall / Moreland City,-37.74066654517114,144.96967301950258,,N/A,1,Melbourne
+155292,Camberwell Supercharger,-37.828482,145.056346,,N/A,1,Camberwell
+270903,Monash Caufield,-37.87609755140018,145.0437890823424,,N/A,2,Malvern East
+210902,Bayside Gateway,-37.900527,145.00702,,N/A,2,Brighton East
+272561,Austin Tower Carpark Level B1,-37.75745813437603,145.05918510936715,,N/A,2,Heidelberg
+189745,Coburg North EV Fast Charge,-37.71893760420672,144.9615007076203,,N/A,2,Coburg North
+190043,Oak Park Sports & Aquatic Centre,-37.7234502505038,144.92111987538624,,N/A,2,Oak Park
+270994,Bayside Willansby Ave,-37.90610169777272,145.00363488616335,,N/A,4,Brighton
+272562,Woolworths Heidelberg,-37.75910544295768,145.06876762326635,,N/A,8,Heidelberg
+300148,Tesla Supercharger Brighton East,-37.907528089556905,145.01117779850802,,N/A,1,Brighton East
+308228,Toyota Altona,-37.832781169763166,144.82753568527227,,N/A,2,Altona
+189744,CB Smith Reserve,-37.70252995850394,144.9695198384195,,N/A,2,Fawkner
+210898,Hobsons Bay Civic Centre,-37.864138,144.829593,"Cannot be seen from the main road. Drive to the car park at the back of the council building, next to Altona Bowling Club.",N/A,2,Altona
+157608,Chargefox Airport West,-37.71364567547256,144.88569078594128,,N/A,5,Airport West
+272568,Chadstone Shopping Centre,-37.884974305769425,145.08243117285895,,N/A,6,
+273534,ENGIE - Chadstone,-37.884370226319035,145.08316779641655,,N/A,2,Chadstone
+307775,ENGIE - Chadstone 2,-37.88820940951108,145.08494077130194,,N/A,1,Chadstone
+300155,Tesla Supercharger Campbellfield,-37.68912458660884,144.95662465559099,,N/A,1,Campbellfield
+210897,Ampol Foodary Altona North,-37.846404,144.808531,,N/A,2,Altona North
+300147,Bridge Street,-37.94495495500977,145.00192929573643,,N/A,2,Hampton
+300149,Telsa Supercharger Box Hill,-37.837816422984424,145.1346849142019,,N/A,1,Box Hill South
+308229,Evie Glen Gala Village,-37.79308442111111,144.7896023171707,,N/A,2,Sunshine West
+302397,Miller Grove,-37.875016711913474,145.128081929617,,N/A,1,
+210896,Keilor Central,-37.726166090249,144.80818393376683,"Enter site via Taylors Rd, past the roundabout, follow around to the back centre, chargers are located behind the Coles loading dock.",N/A,4,Keilor Downs
+308596,Tesla Supercharger Oakleigh Repair Centre,-37.91568317695367,145.10327868938475,,N/A,1,Oakleigh South
+193377,Bayside Council,-37.95937215569076,145.01794753966965,,N/A,7,Sandringham
+308595,Jolt Cheltenham,-37.95675410011873,145.0413433811873,,N/A,2,Cheltenham
+189750,Uni Hill Town Centre,-37.682971406829196,145.07101659256762,,N/A,4,Bundoora
+126711,Greensborough Plaza,-37.7021622916574,145.102334661124,,N/A,2,Greensborough
+300418,Watermarc Carpark (LG),-37.70397622211952,145.10521824749753,,N/A,1,
+131201,Forest Hill Chase Shopping Centre,-37.835025723717706,145.1632775004582,NW corner of Coles. Enter via Pacific Way (west of shopping centre) and turn left into GREEN ground level covered carpark. Make another left turn inside the carpark and you’re there.   Need own cable and Chargefox RFID card!,N/A,1,Forest Hill
+190000,Brimbank Shopping Centre,-37.751176222078364,144.77432972140224,,N/A,1,Deer Park
+40740,Southland Medical Centre,-37.958611,145.057267,"Southland Medical Center is a general practitioner clinic that offers comprehensive range of medical services.
+50 Chesterville Road
+Cheltenham
+VIC 
+3192
+Australia",N/A,0,Cheltenham
+189741,Research Way - N1 Carpark,-37.90730011409977,145.13207788768955,,N/A,3,
+267315,Ampol Derrimut,-37.80519464533884,144.75198926317552,,N/A,2,Derrimut
+308594,Jolt Black Rock,-37.97570246970103,145.01742302760965,,N/A,2,Black Rock
+210901,BP Northpoint,-37.64768,144.99461,,N/A,1,Epping
+272567,Eltham Leisure Centre,-37.72302764419204,145.14217983897862,,N/A,2,Eltham
+270909,Engie - The Glen,-37.87707026526765,145.16444504069057,"In the B1 yellow carpark, at the Target/Woolworths/Aldi entrance",N/A,2,Glen Waverley 
+210926,BP pulse Diamond Creek,-37.680105,145.123078,,N/A,2,Diamond Creek
+308225,BP Pulse,-37.7557555131601,144.7410636793341,,N/A,1,Caroline Springs
+189997,Shell Coles Express Taylors Lakes,-37.69674197545634,144.78205236033568,Two 350kW Ultra-Fast Charging Stations. Located behind the car wash car parking area of the Coles Express Service Centre,N/A,2,Taylor Lakes
+189036,Watergardens Shopping Centre,-37.69870942833684,144.77527685160192,From 0700-00:00 7 days a week,N/A,1,Sydenham
+260229,Point Cook Town Centre,-37.88439995231257,144.73403564973228,,N/A,1,Point Cook
+210924,Red Rooster Vermont,-37.831965,145.213612,,N/A,4,Ringwood
+190044,Greenvale Woolworths,-37.616202335824184,144.91476338954578,,N/A,1,Roxburgh Park
+307774,Ampcharge Sandown,-37.94161999001956,145.16671110078272,,N/A,1,Sandown
+267547,Bunnings Tarneit,-37.83430858506595,144.69884313714417,BYO type 2 cable. Near the road entrance at the timber yard end of Bunnings,N/A,1,Tarneit
+189635,EastLand Shopping Centre,-37.81312694411209,145.22883198929685,,N/A,1,Melbourne
+260420,diamond creek community bank stadium,-37.673614374174896,145.16604356699168,in carpark nearest to stadium entrance,N/A,1,diamond creek
+300146,Bay Trail,-38.00841347461177,145.0848841496986,,N/A,2,Moordialloc
+210361,Bembit Bagrook Community Centre,-37.82495081827982,144.6818834275545,,N/A,2,Tarneit
+259691,Scorseby Engie,-37.91344215822404,145.21852997218298,,N/A,2,
+272592,Jolt Bayswster,-37.84108696617519,145.2666187431746,,N/A,2,
+210923,Stud Park Shopping Centre,-37.92131128415721,145.23754907301503,,N/A,4,Rowville
+273755,Civic Centre,-37.897374392712145,144.67054059560462,,N/A,3,Werribee
+308226,Ampcharge Werribee,-37.899759968148494,144.6650849021937,,N/A,1,Werribee
+272566,Devon Street Car Park,-37.79675756180921,145.27982712620957,,N/A,2,Croydon
+307773,Ampcharge Cheltenham,-37.99571529046778,145.182222569087,,N/A,1,Keysborough
+272608,Strata Equity – Hunter Werribee,-37.901930594530896,144.6625784145474,,N/A,3,Werribee
+213183,Club Trillium,-37.56509713731276,144.89381606273855,,N/A,1,Mickleham
+273431,bp pulse Dandenong North,-37.970797096657705,145.22316104545723,,N/A,1,Dandenong North
+189742,Heatherton Road,-37.97128123711468,145.2236965774951,,N/A,2,Dandenong
+274586,Ampol Kilsyth,-37.82365941817221,145.2959481777906,,N/A,2,Kilsyth South
+259692,Evie Chelsea,-38.054822504708284,145.11600913546908,,N/A,4,Chelsea
+308597,Evie Chirnside Park,-37.761143550893365,145.3120760296531,,N/A,2,Chirnside Park
+273341,bp pulse Merrifield,-37.53426998045639,144.89828573356567,,N/A,2,Mickleham
+260617,Marnong Estate,-37.53036061112412,144.88047325188313,,N/A,1,Mickleham
+308227,Lollypop Creek Community Centre,-37.909988077571576,144.61367550280465,,N/A,1,Harpley
+189033,Hungry Jacks,-37.58083462151804,144.72450043278604,,N/A,1,Sunbury
+272542,Cobblebank Village,-37.7144019574638,144.60143699904745,,N/A,2,
+210851,Cobblebank Stadium,-37.71519007650546,144.5996762637954,,N/A,3,Cobblebank
+272536,Yarra Valley Nissan,-37.754997221186045,145.3637260206866,,N/A,1,Lilydale
+189998,McDonald’s Melton South,-37.7224393461178,144.57233401223442,,N/A,4,Weir Views
+270996,Local Village Carrum Downs,-38.088427053571266,145.1825268436774,,N/A,4,Carrum Downs
+191900,CTR Whittlesea,-37.51050054135484,145.11840794982265,,N/A,2,Whittlesea
+60186,City of Casey,-38.016591,145.292402,,N/A,1,City of Casey
+210922,Lynbrook Village,-38.051153,145.256504,,N/A,4,Lynbrook
+270934,ENGIE - Bayside Centre,-38.13983274747568,145.12422212753893,,N/A,1,Frankston
+210925,Yarra Ranges Council,-37.656879,145.374241,,N/A,2,Yarra Glen
+296032,Engie Monash University,-38.15200425352916,145.13493764315962,,N/A,2,Melbourne
+300152,Evie Cranbourne Homemaker Centre,-38.08489638497555,145.27849713747787,,N/A,2,Cranbourne
+202148,St Huberts Winery,-37.69718697137555,145.40782508992731,,N/A,1,Coldstream
+300150,BP Pulse Cranbourne,-38.110286646748186,145.2640707648552,,N/A,2,Cranbourne West
+308593,Jolt Berwick Springs Hotel,-38.05976565896848,145.33777518791914,,N/A,2,Berwick
+300151,Engie Cranbourne Park,-38.10907515763703,145.28176239248455,,N/A,2,
+279191,Wallan,-37.413967109460415,144.9791065326649,,N/A,2,Wallan
+270935,ClydeStone Square,-38.09340993256419,145.34171416795755,,N/A,2,Clyde North
+295989,Evie Mornington,-38.22449869065465,145.03964281641652,,N/A,3,Mornington
+259690,Mornington Super Charger,-38.23466432711377,145.05094693515247,,N/A,1,
+308599,RACV Healsville,-37.65071911937986,145.50301488024843,,N/A,2,Healsville
+308598,Evie Healsville,-37.65406544922198,145.51428135787194,,N/A,2,Healsville
+274328,North Bellarine Aquatic Centre,-38.188088367705056,144.55520001587047,,N/A,4,Curlewis
+271062,Victoria Street,-37.42305178823792,144.562626054862,,N/A,2,Macedon
+272573,50 Learmonth Street,-38.26770792670353,144.6589785355144,,N/A,4,Queenscliff
+308264,Evie Yarra Juncion,-37.78094746065134,145.61331093083584,,N/A,2,Yarra Junction
+210929,Kilmore Library,-37.294362,144.952084,,N/A,2,Kilmore
+274075,Geelong Supercharger,-38.064796504586276,144.38238251338635,,N/A,1,Corio
+210781,Hastings,-38.30823,145.191932,,N/A,2,Hastings
+210778,Kingston Village Square,-38.24661134219002,144.54005635897056, Pull in parking,N/A,3,Ocean Grove
+210779,Sorrento ,-38.33874299773124,144.73713563519414,,N/A,4,
+210780,Rosebud RSL,-38.368575,144.905885,,N/A,3,
+273430,bp pulse Rye,-38.37130601612926,144.8277248633259,,N/A,1,Rye
+210852,High St Parking,-37.35582370879025,144.52881756976018,,N/A,2,Woodend
+307770,Geelong West Veledrome,-38.129239527848746,144.34542725752488,,N/A,1,Geelong West
+190790,Bru4U Geelong ,-38.1722195376013,144.36787923669385,business hours Tuesday to Saturday ,N/A,1,Geelong
+210928,Broadford Library,-37.20295,145.048954,,N/A,2,Broadford
+272569,RACV Solar Grovedale,-38.197594122360314,144.34487185372615,,N/A,1,Grovedale
+272570,Blue Tongue Industries,-38.197502248120415,144.34395122104382,,N/A,1,Grovedale
+307769,Evie Barabool Heights Plaza,-38.16095627974979,144.30595213669608,,N/A,2,Highton
+272572,Armstrong Creek East Community Hub,-38.231759419255376,144.36927996323692,,N/A,3,Armstrong Creek
+210777,Leisurelink Aquatic & Recreation Centre,-38.19749674302702,144.3210373885172,,N/A,4,Waurn Ponds
+174474,Armstrong Creek Shopping Centre,-38.22890721146294,144.3389741604601,"4 parking bays, 2 sockets. South side of building",N/A,1,Armstrong Creek
+272563,Deakin University Waurn Ponds,-38.19671590570452,144.29935439201148,,N/A,2,
+307764,Trentham Visitor Information Centre,-37.38857348160439,144.32539419117688,,N/A,2,Trentham
+271014,Evie Flinders,-38.474526184383976,145.01862334358879,,N/A,2,Flinders
+308263,Evie Bannockburn,-38.04790103443605,144.17035966698813,,N/A,2,Bannockburn
+307763,Evie Cowes,-38.4507421042261,145.2404278198406,,N/A,2,Cowes
+210774,Kyneton,-37.246931,144.452169,,N/A,2,Kyneton 
+271022,Evie Meredith,-37.84437816290739,144.0768346824019,,N/A,2,Meredith
+274074,Yea Supercharger,-37.21006161015167,145.4261473877039,,N/A,1,Yea
+270910,Penguin Parade Car Park,-38.505470002342136,145.14849508723148,Available betwween sunrise and 3 hours after sunset,N/A,2,Summerlands
+210772,RACV Torquay Resort,-38.34015291155737,144.31105080946827,,N/A,8,Jan Juc
+273318,Newling Reserve,-38.2451409999477,144.17299786561424,Around left side of building,N/A,1,
+270904,Wine by Sam,-37.02797706541075,145.14294410402647,,N/A,2,Seymour
+210773,Daylesford Town Hall,-37.342963,144.142175,,N/A,2,Daylesford
+273194,Hepburn Springs Bathhouse,-37.31033013058219,144.14010887525797,,N/A,2,Hepburn Springs
+210770,Shell Coles Express Warrenheip,-37.564139,143.934273,,N/A,2,Warrenheip 
+296033,Evie Warrigul,-38.16759449972774,145.95340965722312,,N/A,2,Warragul
+271065,Evie Alexandra,-37.19177622193456,145.71117802098246,,N/A,2,Alexandra
+272541,Dindi Naturals,-37.10296645372912,145.61620856939197,,N/A,1,Yarck
+307759,Ampol Foodary,-38.24620744489461,143.98330610676584,,N/A,2,Winchelsea
+157545,QUT Gardens Point,-27.476902453035308,153.0269055356573,,N/A,2,Brisbane
+157547,Secure Park Southpoint,-27.48099182955807,153.0228264563243,,N/A,1,South Brisbane
+157531,Secure Park Vulture St,-27.482560362924623,153.02377995082816,Access to this paid carpark is by online booking only.,N/A,1,Brisbane
+157551,QUT Kelvin Grove H Block,-27.4532038075587,153.01703431115823,,N/A,2,Kelvin Grove
+157548,Secure Park King St,-27.45265445273077,153.03259115103697,This carpark is meant to be for residents and visitors to the nearby shops for up to 1 hour. However there is no boom gate or other sorr of restricted entry/validation system.,N/A,1,Bowen Hills
+273437,East Brisbane [bp pulse],-27.479742,153.043682,,N/A,1,East Brisbane
+157552,QUT Kelvin Grove Stadium Carpark,-27.44955360175527,153.0170891644923,,N/A,2,Kelvin Grove
+91847,Brisbane-Fortitude Valley,-27.451699,153.040473,,N/A,1,Fortitude Valley
+157591,Wellington Road,-27.48968765181067,153.03922109290193,,N/A,1,Brisbane City
+213275,Wellington Road,-27.489725503697883,153.03922171614113,,N/A,1,Brisbane City
+272638,Gasworks Plaza,-27.4504829,153.0443855,,N/A,4,Newstead
+272642,Montague Markets,-27.4856857,153.00120821,,N/A,4,West End
+157589,Bunnings Newstead Carpark,-27.44310701845047,153.0430958229631,The Bunnings carpark has free parking for up to 2 hours. Enter via Ross St through the boom gate.,N/A,1,Brisbane
+272643,Lutwyche Market Central,-27.422167,153.034685,,N/A,4,Lutwyche
+273867,bp pulse Hamilton,-27.437537,153.07008,,N/A,1,Hamilton
+272701,Indooroopilly,-27.49838316297592,152.97362245069473,,N/A,4,Indooroopilly
+116989,North Shore Hamilton Station [QLD Electric Superhighway],-27.4443374840838,153.083977603349,,N/A,5,Hamilton
+190397,Brisbane Airport,-27.415112352398268,153.07724242473,,N/A,8,Brisbane
+272711,Bus Stop Sales - Rocklea,-27.552386663917353,153.00880127325075,,N/A,2,Rocklea
+161846,Way Street,-27.38235199860268,153.03290081653495,Lower carpark Chermside Westfield,N/A,1,Brisbane
+272676,Jindalee Home,-27.533780259789047,152.94849091743436,,N/A,4,Jindalee
+272702,The Station Oxley,-27.553059245373817,152.97525758314129,,N/A,4,Oxley
+280195,BP Pulse Ferny Grove,-27.402355423317843,152.93697981150945,,N/A,1,Brisbane
+273429,bp pulse Albany Forrest,-27.357963044567576,152.96944606011124,,N/A,2,Albany Creek
+210838,Gympie Road,-27.34180168016121,153.0107294767173,,N/A,2,
+195290,Coles Rochedale,-27.577966461570426,153.11287183851232,,N/A,1,Rochedale
+272687,Brendale Service Centre,-27.328346265392916,152.98746683129355,,N/A,4,Brendale
+272685,Springwood,-27.612304,153.124421,,N/A,4,Springwood
+273435,Logan Motorway [bp pulse],-27.640356550632916,153.0095965529904,,N/A,2,Larapinta
+272640,Birkdale Fair,-27.4915472,153.2179852,,N/A,4,Birkdale
+273434,Springwood [bp pulse],-27.622308783587712,153.12819192141268,,N/A,2,Springwood
+273222,Vicinity Centres - Grand Plaza,-27.66241706105511,153.0403591131698,,N/A,2,Browns Plains
+172836,QESH Slacks Creek (IKEA Logan),-27.637474767788774,153.13549712588133,Access is vis the IKEA carpark. They are located right near the main entrance.,N/A,3,Logan City
+273221,27 - 49 Browns Plains Road,-27.663992390175515,153.0411196361111,,N/A,1,Browns Plains
+272639,Bundamba,-27.588131,152.821959,,N/A,2,Bundamba
+190442,Ikea North Lakes,-27.242998014121355,153.01465696410696,,N/A,3,North Lakes
+169684,Orion Springfield Shopping Centre,-27.676924346409358,152.90360010448887,,N/A,2,Springfield
+193390,Springfield QESH,-27.68211786380263,152.8997425219154,,N/A,3,Springfield Central
+272672,Victoria Point,-27.5867871,153.283693717,,N/A,4,Victoria Point
+273432,bp pulse Loganholme,-27.684545775335394,153.18963641316446,,N/A,3,Loganholme
+304318,Hunter Street,-27.596393387636958,152.7462094147789,,N/A,2,
+272713,Electric Highway - Ipswich,-27.616321690924863,152.75861722481307,,N/A,3,Ipswich
+308827,Evie Beenleigh,-27.714126734730037,153.18962982741107,,N/A,1,Beenleigh
+273869,bp pulse Blacksoil,-27.579063,152.712931,,N/A,1,Blacksoil
+210837,BP Caboolture Southbound,-27.124085965644262,152.9780074043885,,N/A,1,Burpengary East
+210836,BP Caboolture North,-27.123951870528913,152.97639020698597,,N/A,2,Morayfield
+300801,Willowbank Raceway,-27.68917090278832,152.6532223508002,Located in carpark off Champions Way. ,N/A,1, Willowbank
+193706,Pimpama Sports Hub [Chargefox],-27.82474804589667,153.29197672212968,,N/A,6,Pimpama
+190350,Coles Express Coomera,-27.855202514974366,153.31010291274197,,N/A,2,Coomera
+273535,EV Charging Australia,-27.973719,152.994503,,N/A,1,Beaudesert
+172837,Paradise Country Farmstay,-27.9130134499947,153.30421447000026,,N/A,2,Gold Coast
+308826,Evie Beaudesart,-27.989984369173,152.99919697266995,,N/A,1,Beaudesart
+172362,Helensvale QESH,-27.923656750179823,153.33893758482532,,N/A,3,Helensvale
+157549,Evie Networks Coochin Creek,-26.918077062069386,152.99684374211074,Out the back behind McDonalds.,N/A,2,Caboolture
+308829,Tesla Supercharger Runaway Bay,-27.9133368394958,153.40052953561377,,N/A,1,Runaway Bay
+272709,Electric Highway - Esk,-27.239039102114774,152.42027885374284,,N/A,3,Esk
+273226,Nerang Admin,-27.98457931723788,153.33902087264016,,N/A,2,Nerang
+273224,New Broadwater Parklands,-27.960063068781317,153.41231494799337,,N/A,2,Southport
+272712,Gold Coast Sports & Leisure Centre,-28.004299394733387,153.36456618761417,,N/A,2,Carrara
+272628,Brickworks Ferry Road,-27.980749,153.409711,,N/A,4,Southport
+193389,QESH Lawes (Gatton),-27.551262926011873,152.33494320232535,,N/A,3,Lawes
+273219,Bundall Chamers,-28.001849617468316,153.41528386738196,,N/A,2,Surfers Paradise
+273223,Kurrawa Surf Club,-28.029580796113862,153.43460209485096,,N/A,2,Broadbeach
+113821,Gold Coast Supercharger,-28.035361,153.427306,,N/A,1,Gold Coast
+272671,Pacific Fair,-28.0353512,153.4274028,,N/A,4,Broadbeach
+272670,Caloundra Shopping Centre,-26.803426,153.12491,,N/A,4,Caloundra
+272629,Robina Central,-28.081588,153.381888,,N/A,2,Robina
+272707,Miami Aquatic Centre,-28.061726469417813,153.4293860165546,,N/A,2,Miami
+308828,Ampcharge Reedy Creek,-28.093761590025125,153.39130286982396,,N/A,2,Reedy Creek
+172373,Kawana Shopping World,-26.704325392220312,153.13172509725268,,N/A,1,Buddina
+172361,BWS Forest Glen,-26.6871348,153.0042754,,N/A,3,Forest Glen
+172360,Coles North Buderim,-26.6628832,153.0503206,,N/A,3,Buderim
+273426,Maroochy Plaza [bp pulse],-26.65561596418697,153.07350136591492,,N/A,1,Maroochydore
+114101,Maroochydore Supercharger,-26.654159,153.087171,,N/A,1,Maroochydore
+190396,Bilinga QESH (Coolangatte Airport),-28.16382522506754,153.514927307191,eastern side of shopping centre carpark,N/A,3,Bilinga
+190395,Coolangatta Surf Club,-28.166937408855013,153.53634874918976,,N/A,2,Coolangatta
+273868,bp pulse Nambour,-26.630979038266453,152.960453125286,,N/A,1,Nambour
+190464,Perth Cultural Centre,-31.95054936969006,115.8601032721649,Monday to Sunday: 6.30am - midnight Public Holidays: Closed (except for special events),N/A,1,Perth
+16285,Citiplace Community Centre Parking,-31.95144307350448,115.86082935333252,,N/A,1,Northbridge
+190465,State Library of Western Australia,-31.949165795484845,115.86050694534993,Monday to Thursday: 6.00am - midnight Friday to Sunday: 6.00am - midnight Sunday Public Holidays: Closed (except for special events).  Bays on left immediately as you enter after boom gate. Need 32 amp to 15 amp cable for use with 15 amp EVSEs,N/A,1,Northbridge
+16283,Roe St - City of Perth Parking,-31.94861599999999,115.85699699999998,,N/A,1,Perth
+16287,Pier Street - City of Perth Parking,-31.9537826133991,115.862819552422,,N/A,2,Perth
+16286,His Majesty's - Carpark,-31.95201699999999,115.85426200000006,,N/A,1,Perth
+190462,City of Perth Council-House,-31.956912110143783,115.86065464317664,Monday to Saturday: 6.00am - 1.00am Sunday: 7.30am - 1.00am Public Holidays: Closed (except for special events),N/A,1,Perth
+70021,Psaros Depot,-31.9465882,115.8684012,,N/A,1,East Perth 
+267111,Ampol East Perth,-31.948662865419386,115.86948347276189,,N/A,2,East Perth
+190463,Perth Convention and Exhibition Centre,-31.95535657614961,115.8529214449357,"The City of Perth Convention Centre Car Park is located directly under the Centre and is accessible via Mill Street, Mounts Bay Road and the Riverside Drive off ramp of the Mitchell Freeway. Bay 200 and 201 (turn left if entering from Mounts Bay Road/Mill St, bays are next to attendant office/pay station) Need 32 amp to 15 amp cable for use with 15 amp EVSEs",N/A,2,Perth
+156256,CPP Perth Concert Hall,-31.95857146833736,115.86358227192068,,N/A,1,Perth
+16263,Elder St - City of Perth Parking,-31.949440307195434,115.85039019584656,,N/A,2,Perth
+16670,"RAC, West Perth",-31.947956,115.84884,,N/A,3,West Perth
+16288,Goderich St Carpark - City of Perth Parking,-31.957191,115.87013200000001,,N/A,1,Perth
+156312,CPP - PCEC,-31.95537674384358,115.84790300821453,,N/A,1,
+156248,CPP Regal Place,-31.95299016062215,115.87730279047679,,N/A,1,
+16667,"East Perth Train Station, Park & Ride",-31.943921,115.876775,,N/A,1,Highgate
+16669,Mainroads WA,-31.956628,115.877066,"Behind boom gate, Ask reception for access.",N/A,1,East Perth
+156247,CPP Mayfair St,-31.9474687574798,115.84121108698467,,N/A,1,
+280253,Beatty Park Leisure Centre,-31.936258468207264,115.8497013709943,,N/A,1,North Perth
+193630,Beaufort Street Center,-31.935506742564613,115.87076797296731,,N/A,4,Perth
+306224,Perth City Supercharger,-31.953457974189973,115.83912294028778,Parking free,N/A,1,Perth
+8745,1 The Avenue,-31.937153,115.840552,,N/A,1,Leederville
+148040,Leederville Memorial Gardens,-31.94026371815405,115.83768103158661,,N/A,1,Perth
+135438,Stokes and Renk,-31.9471073397873,115.82908593542061,,N/A,1,Perth
+259795,Subiaco One Chargefox,-31.946094566198234,115.82508951776464,,N/A,1,Subiaco
+266384,Coles South Perth,-31.981184422636147,115.86248950002266,,N/A,4,
+156185,Rowland St Car Park - REV subiaco ,-31.949523738615166,115.82315269868431,,N/A,1,
+91621,Bunnings Homebase Subiaco,-31.942718738540442,115.8213074905982,,N/A,1,Perth
+156482,Gemtek - Botanical Apartments,-31.94460074534195,115.8186954975713,,N/A,2,Perth
+156483,Gemtek - Crest Apartments,-31.961098485121425,115.90120243027431,,N/A,2,Perth
+274000,Kings Park (WA EV Network),-31.966752218660034,115.8223778363822,,N/A,2,West Perth
+48375,UWA DC FC Veefil,-31.9788128701367,115.819373130798,Near exit of University Club undercover car park,N/A,2,crawley
+16299,University of Western Australia,-31.977629271750153,115.81634480917228,,N/A,2,Perth
+194383,Mineral Resources Park,-31.973892958483617,115.90811556642495,,N/A,2,Lathlain
+190356,"Department of Biodiversity, Conservation and Attractions",-31.995655950694704,115.88329363905393,Padlocked,N/A,1,Kensington
+157530,Audi Centre,-31.91527,115.819405,"Access only 16:00 to 06:30 on Monday to Friday, no restrictions on Saturday to Sunday.",N/A,1,Osborne Park‎
+16228,"Department of Biodiversity, Conservation and Attractions KMCSC",-31.996175311870495,115.88449479477242,,N/A,1,Kensington
+190352,"Department of Biodiversity, Conservation and Attractions FWF",-31.995737047605445,115.88564872339822,Behind locked fence,N/A,1,Kensington
+156186,Tang Computers,-31.90654180015615,115.82812853168308,,N/A,1,osborne park
+148115,Horizon Power Bentley Head Office,-31.995196035136118,115.89250825694853,,N/A,1,Bentley
+16671,The West Australian,-31.912390364137213,115.81142842769623,,N/A,1,Osborne Park
+156358,Morley City Hyundai,-31.90212051387122,115.90401325385636,,N/A,1,
+156359,Morley City Nissan,-31.902143395175678,115.90491020836465,,N/A,1,
+156360,Osborne Park Nissan,-31.90571781716487,115.81021062109228,,N/A,1,
+156252,Sabina Appartments ,-32.011964644149295,115.85021724873448,,N/A,1,
+156361,Osborne Park Hyundai,-31.905269149199228,115.80909029387806,,N/A,1,
+192769,Ampol Belmont,-31.937804124448533,115.93314661815691,,N/A,2,Belmont
+274102,Morley Sport and Recreation Centre,-31.89248383322912,115.89594640150904,,N/A,2,Morley
+175607,Curtin University Future Battery Industries,-32.01014423473439,115.89408682148053,Turn into Future Battery Industries from Brand Drive. ,N/A,2,Perth
+156254,"Woolworths,  Mt Pleasant ",-32.016031144615816,115.8432043135993,,N/A,2,Perth
+190339,Mercedes Perth,-31.999110470936742,115.9157275187037,,N/A,2,Bentley
+134363,McCarthy Prestige,-31.979331,115.78509,,N/A,1,Perth
+155497,Claremont Oval,-31.977032818415754,115.78304237287674,,N/A,1,
+156430,DFO Perth,-31.939845427827045,115.94895311025994,,N/A,2,Perth Airport
+307477,Melville City - City Hall,-32.03255844314117,115.83235548321863,,N/A,1,Melville City
+156251,Garden City Shopping Centre,-32.034642790058726,115.83481653094255,,N/A,1,Melville City
+157430,Kewdale Tavern,-31.982563566447936,115.9578823206225,,N/A,1,Perth
+156257,Bassendean Child Health Centre,-31.903624353028743,115.95016778457533,,N/A,1,
+267563,Ampol Melville ,-32.031412015833354,115.81520749424499,,N/A,2,Melville
+148039,Floreat Beach,-31.929295412938984,115.75608933968465,Next to surf lifesaving building,N/A,2,Perth
+148050,Primewest Gwelup,-31.87637320132322,115.79758574847699,,N/A,2,Gwelup
+16652,Melville Holden,-32.0315997664746,115.80961525440216,,N/A,1,Attadale
+307478,Melville City - LeisureFit,-32.03968803198156,115.83200365710911,,N/A,1,Melville City
+194076,Sodexo,-31.863212794659802,115.8219952419322,,N/A,1,Stirling
+116846,Albany Highway,-32.01768180025333,115.93733402246494,,N/A,0,Perth
+97236,Stockland Riverton Center,-32.0396593286931,115.904397939737,,N/A,1,Perth
+307898,Riverton Mall,-32.039141558623534,115.90778289825715,,N/A,4,Riverton
+265655,Westfield Carousel,-32.022177407350696,115.93916843857136,,N/A,1,Cannington City
+304335,All Saints College,-32.048870705546086,115.86542217360795,,N/A,1,Bull Creek
+299804,EPM,-31.97974757849547,115.97197588423592,Please adhere to entry and exit signs into driveway during working hours and days 5am-5pm Monday to Friday,N/A,1,
+155546,Sundance Apartments,-31.89732867830553,115.7595320223254,,N/A,1,
+194567,Karrinyup Shopping Mall,-31.876481125533687,115.77953901268904,Head for yellow zone A B1.,N/A,1,Stirling
+194566,Karrinup Shopping Mall,-31.876137033718443,115.7797782854434,Head for yellow zone A B1.,N/A,4,Stirling
+16214,EV Shop,-31.8608,115.805476,,N/A,2,Balcatta
+161357,Cottesloe Beach Chalets,-31.99480469222531,115.75302677350828,,N/A,1,Cottesloe
+190845,Karringup Center,-31.877115379032254,115.77668949000957,Near the Tesla supper chargers,N/A,2,Karringup
+188496,Karrinyup Centre,-31.877110016292697,115.7766884375718,"Enter via Karrinyup Road, follow signs for Fresh Market/Valet. Enter basement, take first Right. Chargers at end of aisle on Right.  B2 Red parking zone.",N/A,1,Perth
+155278,Scarborough Beach,-31.89710003597446,115.75659494675551,,N/A,1,Perth
+16268,Magic Kia / Renault,-32.04583613325877,115.80922963466207,,N/A,1,Melville
+155545,Magic Renault ,-32.04627041090647,115.80933760680762,,N/A,1,
+170276,Ross's Discount Home Center,-31.899460299819353,115.97636233048627,,N/A,2,Guildford
+156052,CD Dodd,-31.97294082811414,115.98907588052926,,N/A,2,Perth
+213653,TOCEVA Racing Biofill,-32.057442507764414,115.80080093030847,08:00 - 17:00 weekdays,N/A,1,
+16672,Murdoch University,-32.069294756142725,115.84106574515033,,N/A,1,Murdoch
+190155,Empower Solar,-32.06248946683628,115.91689053182301,,N/A,2,Canning Vale
+203222,East Fremantle Town Hall,-32.04133321797954,115.76269085240256,,N/A,1,East Fremantle
+155496,Evermore Apartments ,-32.05759769024401,115.77214028673814,,N/A,1,Fremantle
+270947,Hilton Coles,-32.06408827282525,115.78180730214649,,N/A,1,
+16266,Shacks Holden,-32.046135,115.751576,,N/A,1,Fremantle
+280715,Thornlie Square Mall,-32.05512902897771,115.96339054908071,,N/A,3,Thornlie
+156175,Swan City DC Charger,-31.886353399634253,116.00339496519044,,N/A,3,Midland
+303716,NRMA Midland ,-31.8962683,116.01022,,N/A,2,Midland 
+308742,Livingstone Market Mall,-32.08562557744585,115.915856491348,,N/A,2,Canning Vale
+192943,The Esplanade Hotel,-32.0575550674627,115.74617563567773,,N/A,1,Fremantle
+191986,Fremantle City Destination Charger,-32.05874355340625,115.74682186589132,,N/A,3,Fremantle
+156184,Midland City Nissan,-31.891951355458772,116.01811740022458,,N/A,1,
+148058,EV Works,-31.804428385948206,115.837026652119,,N/A,2,Joondalup
+16666,City of Swan Depot,-31.869875,116.016412,Secure car park - Only authorised vehicles are allowed access. Still available to the public on request,N/A,1,Middle Swan
+148057,Wild West Hyundai,-31.795188,115.815028,,N/A,1,Joondalup
+16827,Northside Nissan ,-31.793866981825452,115.81485993488059,,N/A,1,Wanneroo
+16213,Phoenix Holden,-31.79273449405545,115.81597745418549,,N/A,1,Wanneroo
+148518,Cockburn City,-32.10025888377409,115.78420217798998,,N/A,4,Spearwood
+266022,Ampol Gosnells,-32.080050874907705,115.98798052330272,,N/A,2,Gosnells
+279254,Coogee Supercharger,-32.102866290875234,115.76244884692244,Parking lot closed at 23:30 every night.,N/A,1,
+191051,McDonalds Southern River ,-32.10072552959724,115.96427117228632,,N/A,2,Southern River 
+157431,Mondo Nougat,-31.83701675378689,116.01669764592862,,N/A,1,
+157432,Swan Settlers Market,-31.835335801510958,116.02163921400734,,N/A,1,
+74343,Success Center ,-32.130421,115.853806,,N/A,1,Cockburn 
+70034,Cockburn Gateway Shopping City,-32.1311632744087,115.85675239563,Needs to be activated with Smartcharge app.,N/A,1,Cockburn 
+176298,Stockland Harrisdale,-32.1275513,115.9276093,,N/A,2,Perth
+156173,Ellenbrook Central,-31.783066643431578,115.97051468688619,,N/A,2,
+210994,Ellenbrook Home Co,-31.7772699,115.9641624,,N/A,2,Ellenbrook
+156174,Edgecombe Brothers,-31.795210554294098,115.99853463481739,,N/A,1,Aveley
+148059,Wanneroo Civic Centre,-31.748960847062506,115.80648266974981,,N/A,1,Wanneroo
+280205,NRMA - Joondalup,-31.75771714527498,115.77154643221121,,N/A,2,Joondalup
+190067,Malvern Springs McDonalds,-31.765279789604662,115.98624964029767,,N/A,1,Malvern Springs
+155820,McDonalds Forrestdale,-32.144116800000226,115.97396209999556,,N/A,1,
+306743,Armadale Fitness and Auqatic Center,-32.13378217875158,116.00360230509733,,N/A,1,Armadale City
+155530,Lakeside Joondalup - Myer Carpark,-31.74549358265488,115.76561953721364,,N/A,1,
+155529,Reid Promenade Car Park,-31.7424275967972,115.77324685429267,,N/A,1,
+155842,Lakeside Cinema,-31.742737409688292,115.76718203734212,,N/A,1,
+305540,Autobahn Armadale,-32.14798632595281,115.98536350907739,,N/A,1,"Armadale, "
+278541,HBF Arena - Joondalup,-31.73530856799269,115.76057078337675,,N/A,1,Joondalup
+305975,Armadale City,-32.150681222892466,116.01697710197169,,N/A,4,Armadale
+149179,McDonald's Drive-Thru Armadale,-32.15002076557034,116.01893455966706,In the McDonald's car park.,N/A,1,Armadale
+190363,Mundaring Weir Hotel,-31.952209900740648,116.16705526729766,Open 8:30 AM to 6:00 PM daily,N/A,1,Mundaring
+132642,McDonald's,-31.9008869,116.163497,"EvLink station, requires BYO type 2 cable.",N/A,1,Perth
+193787,Mundaring Mall,-31.901205462212232,116.16524447173379,,N/A,1,Mundaring
+157429,Tianqi Lithium,-32.215538271732825,115.77737736526483,,N/A,2,
+175300,Byford McDonalds ,-32.20781033484258,115.9786323921769,,N/A,2,Byford
+156019,Clarkson Nissan ,-31.68809762511073,115.7161756692653,,N/A,1,
+273235,Kwinana City Centro,-32.24065444817922,115.81355718837756,,N/A,2,
+24508,Barbagallo Raceway,-31.664336864323225,115.78576639030814,,N/A,3,Joondalup
+175224,Byford Hungry Jacks,-32.222227005760224,116.009671395635,,N/A,1,Byford
+190373,Rockingham Volkswagen ,-32.27045412024325,115.75561955622425,Located behind gate,N/A,1,Rockingham
+190302,Rockingham Nissan,-32.27602954766279,115.76426627808104,Available during business hours,N/A,1,Rockingham
+209951,Butler McDonalds,-31.638378110627542,115.6942988669141,,N/A,2,Butler
+155725,Kent Street,-32.27613083950689,115.73170060698915,,N/A,1,Rockingham
+190389,Anniversary Park,-32.292626788449596,115.74664476860039,,N/A,2,Rockingham
+300856,BP Pulse Northbound ,-32.30935248843228,115.83043488599236,,N/A,1,Perth
+302585,BP South Bound,-32.30983528619279,115.83240066607163,,N/A,1,
+132448,Alkimos Shopping Center ,-31.620443448912305,115.68685197927107,,N/A,1,City of Wanneroo
+273238,Ampol Foodary Baldivis,-32.33110206204209,115.82079377764967,,N/A,2,Baldivis
+70019,Stockland baldivis ,-32.332038197451894,115.81543780164884,,N/A,2,Baldivis 
+190290,Enderslie B&B,-31.581419541887506,115.98343798965402,,N/A,1,Muchea
+190474,Millbrook Winery,-32.349268426066345,116.04988295662383,You need to drive past the main visitor's carpark up to the smaller carpark near the main building E of the lake.,N/A,2,Jarrahdale
+16300,Yanchep Central Shopping Centre,-31.549120088759476,115.63858419656778,,N/A,1,Yanchep 
+190291,Alan and Eve's Eden,-31.53857963900527,116.07373436553274,,N/A,1,Lower Chittering
+304358,NRMA Mandurah,-32.50979875144507,115.73981288369129,,N/A,2,Mandurah
+155242,Caltex North Dandalup Roadhouse,-32.522297898787784,115.9702834262232,,N/A,1,North Dandalup
+16655,Belvedere Caravan Park,-32.522026,115.73014,,N/A,1,Mandurah
+48358,RAC Electric Highway Mandurah ,-32.527664807186866,115.72121359357834,Car park near Hackett St roundabout,N/A,3,Mandurah
+190354,Silk Thai Restaurant,-32.53111567064465,115.72030282929558,,N/A,1,Mandurah
+16322,Bindoon Oval,-31.386192,116.09747300000004,,N/A,1,Bindoon
+190294,Gingin Hotel,-31.350965381790523,115.90418179823558,,N/A,1,Gingin
+16526,Mandurah Caravan Park,-32.546794,115.76944100000003,,N/A,1,Furnissdale
+190293,Granville Civic Centre,-31.34975443971156,115.90479361984762,,N/A,2,Gingin
+190292,Gravity Discovery Centre,-31.356129821303917,115.71263310610527,"Please go through deliveries entrance and take first left into staff parking. Charging port is to the left of the door, on the side of the air conditioning control panel.",N/A,1,Gingin
+202113,Mandurah Tesla Supercharger,-32.55756151687578,115.78712758765778,,N/A,1,Mandurah
+306072,Ampol Foodary North Yunderup,-32.5671631849554,115.79829772601357,,N/A,2,North Yunderup
+148048,Toodyay Shire,-31.55077625511821,116.46758905677257,,N/A,2,Toodyay
+16654,Guilderton Caravan Park,-31.350431412517,115.50134423591,,N/A,1,Guilderton
+190287,Muresk Institute,-31.74992627976492,116.68294107958945,Book with Dominique Esszig,N/A,1,Muresk
+190288,Woolworths Northam,-31.653838360245935,116.67275712306093,,N/A,1,Northam
+202103,Northam (WA EV Network),-31.652188287787432,116.67192230862833,,N/A,2,Northam
+156463,Jubilee Oval and Showgrounds ,-31.65111734318809,116.67845947514633,,N/A,1,Northam
+190286,Laurelville Manor,-31.890257051674716,116.7767352171943,,N/A,1,York
+107775,Adelaide Central Market,-34.9298933132088,138.597212856214,Level 1 - Enter the UPark car park from Grote Street - Turn left at the boom gates and follow aisle left and then straight ahead 100m to east. Look for the overhead indicator lights.,N/A,1,Adelaide
+100271,UPark on Grote Street,-34.9282342045162,138.596016168594,In car park above bus terminal. Turn right at top of ramp and go round to bays.,N/A,1,Adelaide
+107780,"Topham UPark, Adelaide",-34.9255831251237,138.597405975263,Access via Waymouth Street entry to UPark car park. Located on level 3 southern (Waymouth Street) side of car park ahead of up ramp,N/A,1,Adelaide
+107778,"Wyatt UPark, Adelaide",-34.9250025518746,138.604250972669,Go up to Level 5 and then go down eastern ramp and they are located on this mezzanine floor,N/A,1,Adelaide
+93384,Adelaide Supercharger,-34.927555,138.595225,Enter from Franklin Street.,N/A,1,Adelaide
+100220,City of Adelaide EV Hub,-34.9275656868653,138.5951846838,"Next to Adelaide Central Bus Station
+Enter from Franklin Street and exit to Grote Street as it is a one way street",N/A,2,Adelaide
+107777,"Hindmarsh Square, Adelaide",-34.9244219745177,138.604937618177,Western side on corner of Hindmarsh Square and Grenfell Street,N/A,1,Adelaide
+303446,K Park Playhouse Lane,-34.925115,138.595206,Monday to Thursday 5:00am - 12:30am Friday & weekends 5:00am - 2:00am,N/A,2,Adelaide
+107779,"Light Square, Adelaide",-34.9255343,138.5946563,,N/A,1,Adelaide
+107776,"Rundle UPark, Adelaide",-34.9229265290754,138.605967586439,Level 3 - Enter from Rundle Street,N/A,1,Adelaide
+107781,"Jerningham Street, North Adelaide",-34.9074752234107,138.605518610603,Chargefox 1300 518 038,N/A,1,North Adelaide
+210764,Osmond Terrace (Magill Rd Reserve) Parking,-34.91597917955596,138.63150307251476,Not suited to front charging cars,N/A,2,Norwood
+100337,Unley Nissan,-34.9561487480727,138.60754430294,Station round corner in Esmond St. Improved access after business hours.,N/A,1,Hyde Park
+210765,Dunstone Grove,-34.91105195616476,138.62884136182117,,N/A,2,Stepney
+210763,Webbe St Carpark,-34.92007383358501,138.63562438235135,,N/A,4,Norwood
+191905,JOLT Charge Charging Station Port Road & Mary St,-34.906046821499956,138.57331633553872,Access available both Southbound and Northbound (one each side),N/A,2,Hindmarsh
+304459,RAA Charge Brickworks,-34.9131230518513,138.56301692754607,,N/A,3,Torrensville
+311246,RAA Charge Burnside,-34.93801594919658,138.6425800415402,,N/A,1,Tusmore
+100235,Burnside Shopping Centre,-34.9423509694796,138.641946315765,"Station in underground car park, available only during shopping hours.",N/A,2,Burnside
+191906,"JOLT Charge Charging Station, Port Road and South Road",-34.90257639905725,138.56808664880919,,N/A,2,West Hindmarsh
+210766,JOLT Portrush Road Reserve,-34.8971769233329,138.63857263884665,,N/A,2,Marden
+210767,Payneham Community Centre,-34.895659138641385,138.641422,,N/A,2,
+100340,Adelaide Airport Terminal Car Park,-34.9377511939248,138.536149263382,Stations are on Level 2 next to disability parking.,N/A,2,Adelaide Airport
+100231,Office Building car park,-34.9782827782779,138.573560714722,A Chargepoint or ChargeNow card is needed to activate station.,N/A,1,Edwardstown
+210874,Enfield Community Centre,-34.873034,138.609126,,N/A,2,Enfield
+210762,Foodland Felixstow,-34.890016663252645,138.65439370244155,,N/A,2, Felixstow
+191899,Klemzig Community Hall,-34.87572488834278,138.63146894360875,Enter the Klemzig Community Hall Carpark to access the charger.,N/A,2,Klemzig
+210760,Payneham Road,-34.88922847586827,138.65557887274917,,N/A,4,Felixstow
+191896,ARC Campbelltown,-34.88522639,138.6589639,,N/A,2,Campbelltown
+191898,North East Rd & Fosters Rd Parking Lot,-34.871001175731514,138.63722023174773,,N/A,2,Greenacres
+280044,Apex Energy Australia,-34.991588982756106,138.57595688588066,,N/A,1,
+191907,"JOLT Charge Charging Station, Port Rd and Oval Ave Parking Lot",-34.88273635973035,138.5382560926223,,N/A,2,Woodville South 
+191895,JOLT Charge Charging Station,-34.88844859,138.6729899,,N/A,2,Campbelltown 
+210768,Foodland Pasadena Shopping Centre,-34.99987618391288,138.59160301217617,,N/A,2,Pasadena
+191904,JOLT Charge Charging Station,-34.993301100409724,138.55605097847615,Enter off O'Halloran Terrace,N/A,2,
+191897,Newton Road & Hambledon Road Parking Lot,-34.87927540158708,138.67345957548423,,N/A,2,Newton
+62518,Tonsley Boulevard,-35.00825619441188,138.57490811884736,,N/A,4,
+191894,Montacute Rd Parking Lot,-34.88767562172659,138.68894627441523,,N/A,2,Rostrevor 
+191903,"JOLT Charge Charging Station, Diagonal Rd & Finniss St Parking Lot",-35.01730838,138.5496564,,N/A,2,Marion
+191908,"JOLT Charge Charging Station, Port Rd & Sussex St Parking",-34.86088589620734,138.51357488992744,,N/A,2,Queenstown
+191909,"JOLT Charge Charging Station, Port Rd & Cross St",-34.85975657562122,138.51286930207573,,N/A,2,Queenstown
+100310,Summit Community Centre,-34.9237435964961,138.72494995594,In car park. A community vehicle charges here regularly. Use the Nextcharge app to activate the station.,N/A,1,Norton Summit
+191910,"JOLT Charge Charging Station, Port Rd & Webber St",-34.85632286641643,138.5108515299687,"Carpark in the centre of the road, Corner of Port Rd and Webber St.",N/A,2,Queenstown
+210849,Port Adelaide Plaza Shopping,-34.847827239879145,138.5066594793331,Charger 120 kW Behind KFC in shopping centre car park,N/A,2,
+100338,Organic Market and Cafe,-35.0055123951571,138.716045022011,Access to station is tight for large cars.,N/A,2,Stirling East
+100339,Tea Tree Plaza Transport Interchange Car Park,-34.8311586377413,138.695129156113,Follow busway off Smart Road past TAFE college to car park entrance. ,N/A,1,Modbury
+235340,JOLT Semaphore Rd,-34.839415,138.485548,,N/A,2,Semaphore 
+191911,Largs Bay Kiosk  ,-34.82513183698616,138.48644726116333,,N/A,1,Largs Bay SA
+272499,Evie Adelaide Hills,-35.00971247867212,138.75901747075886,,N/A,3,Bridgewater
+210755,Paralowie Village Shopping Centre,-34.759095035307816,138.59552632382326,,N/A,2,Paralowie
+272665,"Elizabeth City Centre, ",-34.7189959,138.6663354,,N/A,1,Elizabeth 
+191937,Elizabeth City Centre,-34.71700199965215,138.67008809690134,"Located in Car park.Two bays, Active as at 20/02/2020. Bays located at area marked as E1.",N/A,1,Elizabeth
+100229,Adelaide Hills Business Centre,-34.9494963805521,138.87688100338,In car park ,N/A,1,Woodside
+191204,Kay Brothers Winery,-35.183475,138.562114,"Two parking spaces adjacent to cellar door with a range of plugs available (BYO cables): 1 x 22kW Type 2, 2 x 15A single phase; 1 x 20A 3-phase.",N/A,3,McLaren Vale
+100221,Summit Health Centre,-35.0812612,138.8692225,In carpark,N/A,1,Mount Barker
+100239,Gawler Council Administration Centre,-34.597536084816,138.750350475311,In car park. Chargepoint card is needed to activate,N/A,1,Gawler East
+100230,Gawler Visitor Information Centre,-34.5964807070339,138.749830126762,,N/A,1,Gawler
+100225,Strathalbyn Visitor Information Centre,-35.2611352649743,138.891831636429,The Nextcharge app is needed to activate the station,N/A,1,Strathalbyn 
+190674,Tanunda [NRMA],-34.5246854548199,138.95804140891113,,N/A,2,Tanunda
+272666,Barossa Central Shopping Centre,-34.4790652,138.9615012,,N/A,1,Nurioopta
+280226,Rocland Nuriootpa,-34.4602252,138.9866954,6 stations available Info from Plugshare.,N/A,3,Nuriootpa 
+210769,Rocland Nuriootpa,-34.460098,138.987775,,N/A,3,Nuriootpa
+210791,Yankalilla Council Chambers,-35.457039,138.35117,,N/A,3,Yankalilla
+100224,Normanville Town Centre,-35.44700132829,138.318842053413,Next to public toilets. NextCharge app is needed to activate.,N/A,1,Normanville
+114487,Murray Bridge Visitor Information Centre,-35.1203280440309,139.276326843254,In car park.  Available 24/7. ,N/A,1,Murray Bridge
+191892,Murray Bridge Marketplace,-35.120564441564056,139.27705518334403,,N/A,2,Murray Bridge
+100223,Goolwa Visitor Centre,-35.502923987621,138.784103393555,From Cadell St. turn into Cutting Road at war memorial to enter car park on left. The Nextcharge app is needed to activate station,N/A,1,Goolwa
+210850,Coles Supermarket Victor Harbor,-35.53437452488197,138.6368902187569,,N/A,1,
+210784,Port Vincent Foreshore Caravan Park,-34.778476,137.863902,,N/A,1,Port Vincent
+100222,Town Centre,-35.5538980228341,138.621958494186,The Nextcharge app is needed to start the station.,N/A,1,Victor Harbor 
+100228,Barker Reserve,-35.5576774380052,138.612383008003,In car park. Bay Road entrance.  Swipe with any RFID card to activate station.,N/A,1,Victor Harbor
+100240,Fleurieu Automotive,-35.5579131000237,138.600490093231,,N/A,1,Victor Harbour
+191893,Tasco Caltex Tailem Bend Roadhouse,-35.24011,139.44043,,N/A,2,Tailem Bend
+210783,Ardrossan Town Hall,-34.422616,137.916796,,N/A,1,Ardrossan
+210788,Yorketown Playground,-35.017566,137.609652,,N/A,1,Yorketown
+190809,Tailem Bend Supercharger,-35.304008524281684,139.5011617693483,,N/A,1,Tailem Bend
+210785,Harry Butler Red Devil Memorial,-34.767943,137.597571,,N/A,2,Minlaton
+272497,Hotel REalm,-35.312198318325976,149.1333088744247,,N/A,4,
+307698,Eastlake Parade - Streetlight SL217828,-35.312486897855344,149.14620754929297,,N/A,1,Kingston
+169994,Currie Crescent,-35.31521412066143,149.1392363890359,,N/A,1,Canberra
+274073,ENGIE - Royal Australian Mint,-35.31872,149.093821,,N/A,2,Deakin
+209732,Equinox 4 Public Parking Garage,-35.3207206891817,149.0970239200201,,N/A,1,Deakin
+168556,Ikea Canberra,-35.29550797984516,149.18685336825467,,N/A,1,Pialligo
+258482,sgfleet,-35.3227262052871,149.1655969874277,6am to 10pm (gates to the area locked at night). Enter main gate and take second left into carpark. Charger is located in front of sgfleet offices.,N/A,2,Fyshwick
+113903,Canberra Supercharger,-35.294304,149.190322,,N/A,1,Majura Park
+8740,University Drive S Bruce ACT 2617,-35.24051,149.08711,,N/A,1,Canberra
+207833,Vibe Hotel,-35.309243894976746,149.1877257460651,,N/A,3,Canberra
+309473,Jamison Plaza,-35.253593432980516,149.07064139540887,,N/A,2,Macquarie
+272498,Evie Woden,-35.348299676937806,149.08890913353355,,N/A,2,Phillip
+210299,"McGrath Ev, Kia",-35.34916691861491,149.0851370518916,,N/A,1,Phillip
+190033,Stripey Sundae,-35.19209630184098,149.08502581992445,Charging provided for customers. BYO cable for type 2 (mennekes socket). 32amp single phase 7.6kw.,N/A,1,Nicholls 
+272501,Tuggeranong CSCC,-35.41502698377792,149.06342879909937,,N/A,2,Greenway
+59151,Evoenergy Visitor Carpark,-35.42275,149.072389,,N/A,2,Greenway
+297730,Ellendon Street,-35.25805966511065,149.4398991158709,,N/A,1,Bungendore
+272500,Murrumbateman Country Inn,-34.96941392055333,149.03001688933142,,N/A,2,Murrumbateman
+307990,Woolworths Yass,-34.845647791374056,148.9156385427242,,N/A,1,Yass
+296045,Tesla Superchargers Yass,-34.84380365342569,148.9141018891671,,N/A,1,Yass
+190410,Yass Soldiers Club,-34.84180413059654,148.9128633229027,,N/A,1,Yass
+190005,Banjo Paterson Park [NRMA],-34.84109672768463,148.9124467852405,,N/A,2,Yass
+190498,Bailey's Garage,-34.78231983827835,149.26678626597408,,N/A,2,Gunning
+308265,Tesla Supercharger Goulburn South,-34.77317841750358,149.69280797132302,,N/A,1,Goulburn
+296038,KFC Goulburn,-34.772316512568395,149.69267286725506,,N/A,1,Goulburn
+189983,Goulburn Visitor Information Centre,-34.75614119383021,149.72056166468496,9-5 weekdays 10-4 weekends and public holidays (closed Christmas day),N/A,1,Goulburn
+79851,Goulburn Supercharger [Tesla],-34.755597,149.720984,,N/A,1,Goulburn
+189982,Best Western Plus Goulburn,-34.74763966952328,149.72931043349024,,N/A,1,Goulburn
+190003,Goulburn Gateway Service Station,-34.74788823042669,149.7496208332201,,N/A,4,Goulburn
+190358,Jugiong [NRMA],-34.82341194348058,148.32537254091335,,N/A,2,Jugiong
+148139,Gundagai [Chargefox],-35.002333201992585,148.11040894247571,,N/A,3,Cootamundra-Gundagai Regional Council
+79760,Gundagai Supercharger [Tesla],-35.002106,148.109934,,N/A,1,Gundagai
+272631,Evie Darwin,-12.459284,130.836153,,N/A,4,Darwin
+272636,Red Rooster ,-12.396092,130.8968483,,N/A,4,Marrara
+106815,Charles Darwin University - Car Park Orange C,-12.374576,130.869764,,N/A,3,Darwin
+125734,Hobart Central Car Park,-42.8812069603813,147.324060134641,Available during car park opening hours on weekdays only (7:45am – 6.30 pm),N/A,1,Hobart
+167436,Dunn Place Car Park,-42.881339,147.332385,,N/A,2,Hobart
+172234,TasPorts - Fishermans Market,-42.881781,147.333368,,N/A,1,Hobart
+172233,TasPorts - Hunter Street,-42.88166757453731,147.33553637293267,,N/A,1,Hobart
+272508,Audi Centre Hobart,-42.87538883111667,147.32416098548657,,N/A,1,Hobart
+125885,Macquarie Point Car Park,-42.880712589104,147.337127709596,Access road to car park is on the east side of the Hobart Brewing Company building,N/A,1,Hobart
+29484,235 Argyle Street,-42.87494,147.32169,,N/A,1,Hobart
+162794,TUU Car Park,-42.902797,147.324839,,N/A,1,Hobart
+260085,EHT - Sandy Bay,-42.903116,147.336466,Uses Chargefox app or RFID,N/A,2,
+161654,Clarence City Council car park,-42.864154,147.36897,Easiest access is via Bligh St - turn up access road next to police station.  Charger is on the left near the council building - green parking space marked.,N/A,1,Rosny Park
+274072,Electric Highway Tasmania - Kingston,-42.975674,147.311542,,N/A,2,Kingston
+271011,Kingston Town Shopping Centre,-42.980209156103385,147.30374043545635,,N/A,4,Kingston
+272535,Brighton Council Chambers,-42.75097184541446,147.27872555026147,,N/A,1,Old Beach
+173908,Evie Networks - Brighton,-42.700694,147.250937,,N/A,2,Brighton
+157595,Mood Food New Norfolk,-42.779254,147.06114,,N/A,2,New Norfolk
+132346,Huonville Council Car Park,-43.0295087004578,147.048364455859,,N/A,1,Huonville
+272600,Electric Highway Tasmania - Cygnet,-43.161979080863325,147.07772323414196,,N/A,3,Cygnet
+272606,Electric Highway Tasmania - Dunalley,-42.886808,147.81389,,N/A,2,Dunalley
+132348,Mood Food Kempton,-42.5132541040641,147.189112740537,24/7,N/A,2,Kempton
+306858,Buckland Kent St,-42.60669976786134,147.7185327664647,"Access Kent St, by turning into Buckland Rd from Tasman Hwy.",N/A,1,Buckland
+306891,Buckland Kent St,-42.60668821556477,147.71852154472168,,N/A,1,Buckland
+168484,Electric Highway Tasmania - Geeveston,-43.1634,146.92688,,N/A,2,Geeveston
+272504,Hotel Bruny,-43.321799726979194,147.2422590158638,,N/A,2,Alonnah
+272540,Stewarts Bay Lodge,-43.13907166604574,147.8548439357172,,N/A,2,Port Arthur
+126610,Mount Field Visitor Centre,-42.681838541884,146.716543290624,"Key required from Visitor Centre desk.  Cables (Type 1 and Type 2) available to borrow (or you can use your own) but the key is required to access the cabinet in any case.
+Visitor Centre is typically open during business hours, 7 days a week.
+The space in front of the charger is not reserved for EVs, but is marked ""15 minute parking only, unless charging""",N/A,1,National Park
+272607,Electric Highway Tasmania - Maydena,-42.754949,146.628993,,N/A,3,Maydena
+272574,Electric Highway Tasmania - Triabunna,-42.50810955517955,147.91002661194875,,N/A,3,Triabunna
+259710,Electric Highway Tasmania - Oatlands,-42.29898,147.37111,Chargefox - 2130,N/A,2,Oatlands
+272537,Electric Highway Tasmania - Ouse,-42.48504801756201,146.7100908639125,,N/A,3,Ouse
+272602,Rocket @ The End Of The Road,-43.43165,146.97408,,N/A,1,Southport
+272506,Tas Hydro Power Station Heritage Site,-42.12462669442656,146.74664613345436,,N/A,2,Waddamana
