@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EV Charging Chatbot</title>
+  <style>
+    body { font-family: Arial; margin: 0; padding: 0; background: #f4f4f4; }
+    #chat { max-width: 600px; margin: 40px auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .message { margin: 10px 0; }
+    .user { text-align: right; color: blue; }
+    .bot { text-align: left; color: green; }
+    input { width: 100%; padding: 10px; margin-top: 10px; border-radius: 4px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <div id="chat">
+    <h2>EV Charging Chatbot</h2>
+    <div id="messages"></div>
+    <input type="text" id="userInput" placeholder="Type a message..." />
+  </div>
+
+  <script>
+    const userInput = document.getElementById("userInput");
+    const messages = document.getElementById("messages");
+
+    userInput.addEventListener("keypress", function(e) {
+      if (e.key === "Enter" && userInput.value.trim()) {
+        const text = userInput.value;
+        appendMessage("user", text);
+        sendToBot(text);
+        userInput.value = "";
+      }
+    });
+
+    async function sendToBot(text) {
+      const res = await fetch("https://evatchatbot-production.up.railway.app/webhook", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          queryResult: {
+            intent: { displayName: "FindCharger" },
+            parameters: { "geo-city": text }
+          },
+          session: "projects/demo/sessions/abc123"
+        })
+      });
+
+      const data = await res.json();
+
+      // Display main bot message
+      appendMessage("bot", data.fulfillmentText || "No response from chatbot.");
+
+      // Show quick replies if available
+      const quickReplies = data.fulfillmentMessages?.find(
+        m => m.quickReplies && m.quickReplies.quickReplies
+      )?.quickReplies?.quickReplies || [];
+
+      quickReplies.forEach(reply => {
+        appendMessage("bot", `👉 ${reply}`);
+      });
+    }
+
+    function appendMessage(sender, text) {
+      const div = document.createElement("div");
+      div.className = "message " + sender;
+      div.textContent = text;
+      messages.appendChild(div);
+      messages.scrollTop = messages.scrollHeight;
+    }
+  </script>
+</body>
+</html>
+
