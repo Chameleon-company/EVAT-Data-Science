@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChargeBnb - Home EV Charger Sharing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e6f5e6;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #2e8b57;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .section-header {
+            color: #2e8b57;
+            margin-top: 30px;
+        }
+        .btn-green {
+            background-color: #2e8b57;
+            color: white;
+        }
+        .btn-green:hover {
+            background-color: #256c45;
+        }
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ChargeBnb</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#find">Find Charger</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#host">Become a Host</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 id="find" class="section-header"> Find a Charger Near You</h2>
+        <p>Use your location or browse the map to find nearby home chargers in priority zones.</p>
+        <div id="map"></div>
+        <button class="btn btn-green mt-3" onclick="getLocation()"> Use My Location</button>
+
+        <h2 id="host" class="section-header"> Become a Host</h2>
+        <p>List your home EV charger and earn by sharing it with nearby EV users.</p>
+        <form id="hostForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Suburb / Address</label>
+                <input type="text" class="form-control" id="address" required>
+            </div>
+            <div class="mb-3">
+                <label for="type" class="form-label">Charger Type</label>
+                <select class="form-select" id="type">
+                    <option value="Type 2">Type 2</option>
+                    <option value="Tesla">Tesla</option>
+                    <option value="CCS">CCS</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="availability" class="form-label">Availability Hours</label>
+                <input type="text" class="form-control" id="availability" placeholder="e.g. 9 AM - 6 PM">
+            </div>
+            <button type="submit" class="btn btn-green"> Register as Host</button>
+        </form>
+
+        <h2 id="about" class="section-header">About ChargeBnb</h2>
+        <p>ChargeBnb is a peer-to-peer EV charger rental platform focused on bridging infrastructure gaps in Melbourne by empowering homeowners to share their chargers. This prototype maps Priority Charging Zones (PCZs) identified through data analysis of demographics, charger scarcity, and projected EV demand.</p>
+    </div>
+
+    <footer>
+        &copy; Chameleon | ChargeBnb prototype
+    </footer>
+
+    <!-- Leaflet JS for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script>
+        const map = L.map('map').setView([-37.8136, 144.9631], 11); // Centered on Melbourne
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+        }).addTo(map);
+
+        // Example charger points 
+        const chargers = [
+            { name: "Host A", lat: -37.81, lon: 144.96, type: "Type 2" },
+            { name: "Host B", lat: -37.84, lon: 145.01, type: "Tesla" },
+        ];
+
+        chargers.forEach(c => {
+            L.marker([c.lat, c.lon])
+              .addTo(map)
+              .bindPopup(`<strong>${c.name}</strong><br>Type: ${c.type}`);
+        });
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(pos => {
+                    const lat = pos.coords.latitude;
+                    const lon = pos.coords.longitude;
+                    L.marker([lat, lon]).addTo(map).bindPopup("You are here").openPopup();
+                    map.setView([lat, lon], 13);
+                });
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        document.getElementById("hostForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Thank you for registering as a host!");
+            this.reset();
+        });
+    </script>
+</body>
+</html>

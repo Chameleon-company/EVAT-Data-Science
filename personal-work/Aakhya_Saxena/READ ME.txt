@@ -1,0 +1,118 @@
+EV Sentiment Analysis – Capstone Project
+
+This project performs sentiment analysis on Electric Vehicle (EV) user comments using a fine-tuned DistilBERT model. It includes data preprocessing, model training in Jupyter notebooks, deployment via a Flask API, and visualization through a Power BI dashboard.
+
+--------------------------------------------------------------------------------
+
+Project Structure
+
+EV-Sentiment-Analysis/
+├── Project A.ipynb             # Main notebook (model training & evaluation)
+├── Sprint 1.ipynb              # fetching comments for analysis 
+├── app.py                      # Flask app to serve the model via API
+├── saved_model/                # Fine-tuned DistilBERT model files
+├── PowerBI-Dashboard.png       # Screenshot of the Power BI dashboard
+├── README.txt                  # This file
+
+--------------------------------------------------------------------------------
+
+Requirements
+
+Install the following dependencies using pip:
+
+pip install pandas scikit-learn matplotlib seaborn torch transformers flask
+
+Versions used:
+- Python 3.8+
+- pandas 1.3+
+- scikit-learn 1.0+
+- matplotlib 3.4+
+- seaborn 0.11+
+- torch 2.0+
+- transformers 4.38+
+- flask 2.0+
+- Power BI Desktop (for dashboard)
+
+--------------------------------------------------------------------------------
+
+Power BI Dashboard
+
+The predictions were exported to .csv and imported into Power BI to build:
+- A bar chart for sentiment distribution
+- A confusion matrix visual
+- Accuracy score card
+- Table of sample predictions with confidence
+
+Model Accuracy: ~84%
+
+--------------------------------------------------------------------------------
+
+Model Info
+
+- Model: DistilBERTForSequenceClassification
+- Tokenizer: DistilBertTokenizerFast
+- Classes: ["negative", "neutral", "positive"]
+- Evaluation: Accuracy, Confusion Matrix
+
+--------------------------------------------------------------------------------
+
+Running the Notebook
+
+1. Open Project A.ipynb in Jupyter.
+2. Run all cells.
+3. Save the model:
+   model.save_pretrained("saved_model")
+   tokenizer.save_pretrained("saved_model")
+
+--------------------------------------------------------------------------------
+
+Running the Flask API
+
+1. Ensure you have a folder saved_model/ with your trained model inside:
+   saved_model/
+   ├── config.json
+   ├── pytorch_model.bin
+   ├── tokenizer_config.json
+   ├── tokenizer.json
+   ├── vocab.txt
+
+2. Run the API:
+
+python app.py
+
+3. Test the API:
+
+curl -X POST http://127.0.0.1:5000/predict \
+     -H "Content-Type: application/json" \
+     -d "{\"text\": \"Charging was fast and smooth.\"}"
+
+4. Example Output:
+
+{
+  "text": "Charging was fast and smooth.",
+  "prediction": "positive",
+  "confidence": 0.992
+}
+
+--------------------------------------------------------------------------------
+
+Troubleshooting
+
+- Make sure you use the same tokenizer used during training.
+- If you face torch errors, check your Python version (should be 3.8+).
+- Use a virtual environment to avoid conflicts.
+
+--------------------------------------------------------------------------------
+
+Author
+
+Name: Aakhya Saxena
+Course: SIT215 – Data Science Capstone
+Year: 2025
+Work Type: Individual
+
+--------------------------------------------------------------------------------
+
+License
+
+This project is for academic and educational purposes only.

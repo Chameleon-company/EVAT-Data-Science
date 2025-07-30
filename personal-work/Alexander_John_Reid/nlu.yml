@@ -1,0 +1,184 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: Nearest_Charging_Station 
+  examples: |
+    - take me to the nearest station 
+    - where is the closest charging station
+    - i need the closest station
+    - i need a charging station
+    - take me to the closest charging station
+    - im low on power i need a charging station
+
+- intent: To_Charging_Station 
+  examples: |
+    - take me to the [glenwaverly](place) station 
+    - where is the charging station in [vermount south](place)?
+    - i need the [ferntree gully](place) station
+    - i need a charging station from [boxhill](place)
+    - take me to the [mount waverly](place) charging station
+    - im low on power i need a charging station in[clayton](place)
+    - take me to the [mooroolbark](place) station
+    - where is the charging station in [sassafras](place)?
+    - i need a charging station from [upwey](place)
+    - get me to the [st kilda](place) charging station
+    - take me to the [brighton](place) station
+    - where is the charging station in [moorabbin](place)?
+    - i need a charging station from [beaconsfield](place)
+    - get me to the [sandgurst](place) charging station
+    - take me to the [skye](place) station
+    - where is the charging station in [devon meadows](place)?
+    - i need a charging station from [mornington](place)
+    - get me to the [dromana](place) charging station
+    - take me to the [drysdale](place) charging station
+    - take me to the [buckly](place) charging station
+    - take me to the [breamlea](place) charging station
+    - take me to the [werribee](place) charging station
+- lookup: place
+   data/city_names.txt
+    
+
+- intent: How_Long_To_Charge
+  examples: |
+    - how long would it take to charge an electric vehicles?
+    - what is the average time to charge my car?
+    - what is the average time to charge an electric vehicle?
+    - how long will it take to charge my car?
+
+- intent: Distence_I_Can_Go
+  examples: |
+    - how long will i travel on a full charge
+    - whats the travel distence on an electric vehicle
+    - what is the expected distence this car will go 
+    - what is the expected travel distence i can go in my electric vehicle
+
+- intent: filter_station
+  examples: |
+    - show me fast-charging stations
+    - I want the cheapest option
+    - any free charging stations?
+    - do you have Tesla superchargers?
+    - I prefer fast charging
+    - I only want ultra-fast chargers
+    - which ones are free?
+    - show only stations with pricing under $0.30/kWh
+    - I want a station that is free
+
+- intent: traffic_info
+  examples: |
+    - how's the traffic near the station?
+    - suggest the station with least traffic
+    - avoid heavy traffic routes
+    - recommend a low-traffic station
+    - which station is fastest to reach now?
+    - where's the best option considering traffic?
+
+- intent: out_of_scope
+  examples: |
+    - can you play music?
+    - what's the weather today?
+    - tell me a joke
+    - who won the game?
+
+- intent: charger_info
+  examples: |
+    - what is the information about these chargers
+    - what type of information does this charger have
+    - will my charger surpport my car.
+    - how much will this charger cost.
+    - what is the power output of the charger. 
+    - i would like info about the charging station     
+    - no i would like information about this charging station  
+
+
+
+  

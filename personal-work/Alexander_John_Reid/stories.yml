@@ -1,0 +1,75 @@
+version: "3.1"
+
+stories:
+
+- story: Neares station and direction 
+  steps:
+    - intent: Nearest_Charging_Station
+    - action: Action_Get_Nearest_Station
+    - intent: affirm 
+    - action: Get_Directions_action
+
+- story: Nearest Station and information. 
+  steps:
+    - intent: ask_for_nearest_station
+    - action: Action_Get_Nearest_Station
+    - intent: charger_info
+    - action: Action_charger_info
+    
+
+- story: To_Charging_Station 
+  steps: 
+    - intent: ask_To_Station
+    - action: Action_To_Charging_Station
+
+- story: How_Long_To_Charge
+  steps: 
+    - intent: Ask_How_Long_To_Charge
+    - action: Action_How_Long_To_Charge
+
+- story: Distence_I_Can_Go
+  steps: 
+    - intent: Distence_I_Can_Go
+    - action: Action_Distence_I_Can_Go
+
+- story: Filter by Preferences
+  steps:
+    - intent: filter_station
+    - action: Action_Filter_Stations
+
+- story: Traffic-aware Suggestion
+  steps:
+    - intent: traffic_info
+    - action: Action_Traffic_Info
+
+- story: Out of Scope
+  steps:
+    - intent: out_of_scope
+    - action: utter_default
+
+- story: Station by location
+  steps:
+    - intent: To_Charging_Station
+      entities:
+        - place: "clayton"
+    - action: Action_To_Charging_Station
+
+- story: Filter and Confirm
+  steps:
+    - intent: filter_station
+    - action: Action_Filter_Stations
+    - intent: affirm
+    - action: utter_great_choice
+
+- story: fallback story
+  steps:
+    - intent: nlu_fallback
+    - action: utter_default
+
+- story: get information
+  steps:
+    - intent: charger_info
+    - action: Action_charger_info
+
+
+  
