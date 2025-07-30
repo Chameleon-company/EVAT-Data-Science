@@ -1,0 +1,96 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - Nearest_Charging_Station
+  - To_Charging_Station
+  - How_Long_To_Charge
+  - Distence_I_Can_Go
+  - filter_station
+  - traffic_info
+  - out_of_scope
+  - nlu_fallback
+  - charger_info
+
+entities: 
+  - place
+slots:
+  location:
+      type: text
+      influence_conversation: true
+      mappings:
+        - type: from_entity
+          entity: place
+  Charger Name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+
+
+  filter_preferences:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+
+  traffic_aware:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: from_intent
+        intent: traffic_info
+        value: true
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_default:
+  - text: "Sorry, I didn't get that. Can you rephrase?"
+
+  utter_great_choice:
+  - text: "Awesome, that station fits your preferences."
+
+  utter_no_traffic_info:
+  - text: "I couldn't fetch traffic info at the moment. Try again soon."
+
+
+actions:
+  - Action_Get_Nearest_Station
+  - Action_To_Charging_Station
+  - Action_How_Long_To_Charge
+  - Action_Distence_I_Can_Go
+  - Action_Filter_Stations
+  - Action_Traffic_Info
+  - action_default_fallback
+  - Action_charger_info
+  - Get_Directions_action
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
