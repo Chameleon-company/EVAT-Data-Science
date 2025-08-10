@@ -1,0 +1,6 @@
+geopy
+pandas
+numpy
+openrouteservice
+fuzzywuzzy
+python-Levenshtein
