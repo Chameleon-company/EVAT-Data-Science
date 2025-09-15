@@ -1,0 +1,125 @@
+Suburb,Cluster,Lag_Usage,Optimal_Price
+abbotsford,0,44.39,9.9
+airport west,0,41.12,7.83
+altona,2,42.45,8.08
+altona meadows,2,44.54,6.16
+altona north,0,42.28,7.53
+armadale,0,43.34,6.36
+ascot vale,0,44.45,6.41
+ashwood chadstone,0,44.08,7.27
+berwick (north),2,43.33,7.27
+berwick (south east),2,42.78,7.37
+berwick (south west),2,40.12,6.57
+box hill,0,44.26,7.32
+brighton,0,44.21,7.98
+brighton east,0,42.35,6.87
+brunswick east,0,43.77,6.31
+brunswick (north),1,43.27,7.78
+brunswick (south),1,45.54,6.97
+brunswick west,0,44.65,7.17
+bundoora (east),0,43.5,8.79
+bundoora (north),0,42.64,6.26
+bundoora (west),0,42.88,7.27
+camberwell,0,43.56,7.73
+campbellfield coolaroo,2,44.43,7.07
+caroline springs,0,44.1,8.43
+carrum downs,2,42.0,7.63
+chelsea bonbeach,0,44.99,8.79
+chelsea heights,0,42.44,8.18
+chirnside park,0,43.33,7.47
+clarinda oakleigh south,0,41.91,10.0
+clyde north (north),0,42.76,6.41
+clyde north (south),0,43.58,7.42
+cobblebank strathtulloh,0,43.43,10.0
+coburg (east),0,45.13,6.97
+coburg north,0,43.08,8.54
+coburg (west),0,45.17,6.21
+cranbourne,0,43.99,7.63
+cranbourne east (north),0,44.55,7.12
+cranbourne east (south),0,44.18,7.17
+cranbourne north (east),0,43.54,7.12
+cranbourne north (west),0,43.52,7.58
+cranbourne south,0,42.54,6.72
+cranbourne west,0,46.15,6.97
+croydon (east),0,43.03,6.31
+croydon hills warranwood,0,43.01,7.32
+croydon south,0,44.81,6.62
+croydon (west),0,44.06,7.22
+dandenong north,0,44.18,7.68
+dandenong (north),0,43.88,7.27
+dandenong (south),0,42.35,10.0
+deer park,2,44.2,6.31
+derrimut,2,46.51,6.31
+east melbourne,1,42.01,8.94
+eltham,0,42.46,10.0
+epping (east),0,46.12,6.87
+epping (south),0,44.47,7.12
+epping (west),0,44.32,7.17
+fawkner,0,43.3,7.17
+frankston,0,42.86,6.92
+frankston north,0,43.6,6.26
+frankston south,0,43.71,6.77
+glen waverley (east),0,43.86,6.97
+glen waverley (west),0,45.09,7.02
+greensborough,0,45.84,7.73
+hampton,2,43.45,6.92
+hampton park (east),2,43.27,6.46
+hampton park (west),2,42.9,7.07
+hastings somers,0,43.32,7.27
+hawthorn east,0,41.52,6.01
+hawthorn (north),0,45.07,7.37
+hawthorn (south),0,44.34,6.36
+heidelberg rosanna,0,44.45,6.92
+heidelberg west,0,43.75,6.97
+highett (east) cheltenham,0,42.15,7.17
+highett (west) cheltenham,0,42.77,7.47
+keilor,2,43.31,5.96
+keilor downs,2,42.94,8.94
+keysborough (north),0,43.69,6.31
+keysborough (south),0,42.18,6.31
+kilsyth,0,44.42,6.57
+lilydale coldstream,2,44.37,6.62
+lynbrook lyndhurst,0,43.68,6.36
+malvern east,0,43.77,7.27
+malvern glen iris,0,42.71,6.87
+melbourne airport,1,40.91,6.21
+melbourne cbd (east),1,42.12,10.0
+melbourne cbd (north),1,43.3,7.68
+melbourne cbd (west),1,42.85,8.84
+melton south weir views,0,44.16,7.42
+mickleham yuroke,0,43.71,6.46
+mount dandenong olinda,0,42.39,6.11
+north melbourne,1,43.31,7.32
+oak park,0,44.67,6.72
+plenty yarrambat,2,43.19,9.39
+port melbourne,1,43.56,6.77
+port melbourne industrial,1,44.4,7.53
+richmond (north),1,66.1,8.08
+richmond (south) cremorne,1,63.96,7.53
+ringwood,2,43.87,6.92
+ringwood east,2,42.83,6.77
+ringwood north,2,42.79,6.72
+rowville (central),0,41.76,9.9
+rowville (north),0,42.06,9.9
+rowville (south),0,44.47,9.9
+roxburgh park (north),2,45.17,9.85
+roxburgh park (south) somerton,2,42.39,9.85
+sandringham black rock,0,44.05,9.9
+south melbourne,1,67.87,9.8
+sunbury,0,45.13,9.9
+sunbury (south),0,41.87,9.9
+sunbury (west),0,44.01,9.9
+sunshine,2,43.14,9.85
+sunshine west,2,42.75,9.85
+sydenham,0,43.84,9.9
+tarneit (central),1,66.0,9.8
+tarneit (north),1,66.92,9.8
+tarneit (south),1,63.85,9.8
+tarneit (west) mount cottrell,1,64.2,9.8
+wallan,0,44.01,9.9
+wattle glen diamond creek,2,44.55,9.85
+werribee (east),1,63.64,9.8
+werribee (south),1,65.62,9.8
+werribee (west),1,62.48,9.8
+west melbourne (residential),1,44.99,9.8
+whittlesea,0,42.66,9.9
