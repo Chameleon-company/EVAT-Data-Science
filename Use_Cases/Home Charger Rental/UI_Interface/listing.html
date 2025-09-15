@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Listing • ChargeBnb</title>
+  <meta name="color-scheme" content="light dark">
+  <style>
+:root{
+  --bg: #24e976;
+  --surface: #075b2c;
+  --card: #41805d;
+  --muted: #7aa391;
+  --text: #e9ffef;
+  --brand: #34d399;   /* green */
+  --brand-2:#a7f3d0;  /* mint */
+  --accent:#22d3ee;   /* teal accent */
+  --red:#ff6b6b;
+  --yellow:#ffd166;
+  --ring: 0 0 0 2px var(--brand) inset;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+@media (prefers-color-scheme: light){
+  :root{--bg:#f6fbf8;--surface:#ffffff;--card:#ffffff;--text:#0d1b14;--muted:#4b6b5b;--shadow:0 10px 20px rgba(2,6,23,.08)}
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:
+  radial-gradient(1200px 600px at 20% -10%,color-mix(in oklab,var(--brand),transparent 85%),transparent 40%),
+  radial-gradient(1000px 600px at 120% 0,color-mix(in oklab,var(--accent),transparent 88%),transparent 40%),
+  var(--bg);
+  color:var(--text);font:16px/1.4 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+
+/* Layout */
+header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(140%) blur(8px);background:color-mix(in oklab,var(--surface),transparent 25%);border-bottom:1px solid color-mix(in oklab,var(--muted),transparent 70%)}
+.bar{display:flex;align-items:center;gap:.75rem;max-width:1200px;margin:auto;padding:.75rem 1rem}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:700;text-decoration:none;color:var(--text)}
+.brand .logo{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#bbf7d0 60%,#fff);box-shadow:0 6px 18px rgba(52,211,153,.35)}
+
+.nav{margin-left:.5rem;display:flex;gap:.25rem}
+.nav a{color:var(--muted);text-decoration:none;padding:.4rem .8rem;border-radius:10px;border:1px solid color-mix(in oklab,var(--muted),transparent 75%);}
+.nav a[aria-current="page"]{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#002018;border:none}
+
+.tabs{margin-left:auto;display:flex;gap:.25rem;border:1px solid color-mix(in oklab,var(--muted),transparent 70%);border-radius:999px;padding:.25rem;background:color-mix(in oklab,var(--surface),transparent 8%)}
+.tab{appearance:none;border:none;background:transparent;color:var(--muted);padding:.4rem .9rem;border-radius:999px;cursor:pointer;font-weight:600}
+.tab[aria-selected="true"]{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#001018}
+
+.wrap{margin:auto;display:grid;grid-template-columns:520px 1fr;gap:1rem;padding:1rem}
+aside{position:sticky;top:64px;align-self:start;background:var(--surface);border:1px solid color-mix(in oklab,var(--muted),transparent 75%);border-radius:var(--radius);box-shadow:var(--shadow)}
+.section{padding:1rem 1rem}
+.section + .section{border-top:1px dashed color-mix(in oklab,var(--muted),transparent 70%)}
+
+main{display:grid;gap:1rem}
+
+.panel{background:var(--surface);border:1px solid color-mix(in oklab,var(--muted),transparent 75%);border-radius:var(--radius);box-shadow:var(--shadow)}
+.panel .header{padding:1rem 1.25rem;border-bottom:1px dashed color-mix(in oklab,var(--muted),transparent 70%);display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.panel .content{padding:1rem 1.25rem}
+
+.muted{color:var(--muted)}
+.grid{display:grid;gap:.75rem}
+.two{grid-template-columns:1fr 1fr}
+.three{grid-template-columns:repeat(3,1fr)}
+.four{grid-template-columns:repeat(4,1fr)}
+
+label span{display:block;font-size:.82rem;color:var(--muted);margin-bottom:.25rem}
+input,select,textarea{width:100%;padding:.7rem .8rem;border-radius:12px;background:color-mix(in oklab,var(--surface),#000 8%);border:1px solid color-mix(in oklab,var(--muted),transparent 70%);color:var(--text);outline:none}
+input:focus,select:focus,textarea:focus{box-shadow:var(--ring)}
+
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1rem;border-radius:14px;border:1px solid color-mix(in oklab,var(--muted),transparent 70%);background:color-mix(in oklab,var(--surface),#fff 2%);color:var(--text);cursor:pointer;text-decoration:none;font-weight:600}
+.btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#002027;border:none}
+.btn.ghost{background:transparent}
+.btn.icon{padding:.55rem .7rem}
+
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.card{background:var(--card);border:1px solid color-mix(in oklab,var(--muted),transparent 75%);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.card .thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#10b981,#22d3ee);display:flex;align-items:end;justify-content:space-between;padding:.5rem .6rem;color:#001018}
+.chip{background:rgba(255,255,255,.85);border-radius:999px;padding:.25rem .5rem;font-size:.75rem;color:#04252a}
+.card .body{padding:.9rem}
+
+.split{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.price{font-weight:800}
+
+.map{height:300px;border-radius:14px;background:
+  repeating-linear-gradient(45deg, color-mix(in oklab,var(--muted),transparent 80%), color-mix(in oklab,var(--muted),transparent 80%) 10px, transparent 10px, transparent 20px),
+  radial-gradient(circle at 20% 30%, rgba(52,211,153,.2), transparent 40%),
+  radial-gradient(circle at 80% 60%, rgba(34,211,238,.18), transparent 40%),
+  #072013}
+
+.inline-help{font-size:.8rem;color:var(--muted)}
+.row{display:flex;gap:.5rem;flex-wrap:wrap}
+
+.badge{font-size:.75rem;border-radius:999px;padding:.25rem .6rem;border:1px solid color-mix(in oklab,var(--muted),transparent 60%)}
+
+/* Auth modal */
+dialog{border:none;border-radius:18px;max-width:480px;width:min(92vw,480px);background:var(--surface);color:var(--text);box-shadow:var(--shadow)}
+dialog::backdrop{background:rgba(0,0,0,.35)}
+
+/* Mobile */
+@media (max-width: 980px){
+  .wrap{grid-template-columns:1fr}
+  aside{position:static}
+  .cards{grid-template-columns:1fr 1fr}
+  .panel .header{position:sticky;top:56px;background:var(--surface);z-index:2}
+}
+@media (max-width: 640px){
+  .bar{padding:.6rem .8rem}
+  .wrap{padding:.6rem}
+  .cards{grid-template-columns:1fr}
+  .two,.three,.four{grid-template-columns:1fr}
+  .map{height:210px}
+  .tabs{margin-left:0}
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="booking.html"><span class="logo" aria-hidden="true"></span> ChargeBnb</a>
+      <nav class="nav">
+        <a href="booking.html" >Booking</a>
+        <a href="listing.html" aria-current="page">Listing</a>
+        
+      </nav>
+      <!--
+      <nav class="tabs" role="tablist" aria-label="Mode">
+        <button class="tab" role="tab" aria-selected="true" id="rentTab">Rent</button>
+        <button class="tab" role="tab" aria-selected="false" id="hostTab">Host</button>
+      </nav>
+      -->
+      <button id="authBtn" class="btn icon" style="margin-left:auto">Sign in</button>
+    </div>
+  </header>
+
+<!--
+  <div class="wrap" id="rentMode" role="tabpanel" aria-labelledby="rentTab">
+    <main>
+      <section class="panel">
+        <div class="header"><strong>For Renters</strong><span class="inline-help">You’re on the Listing page.</span></div>
+          <div style="text-align:center; margin:1rem 0;">
+            <a class="btn primary" href="booking.html?mode=rent">Search & Book</a>
+          </div>
+      </section>
+    </main>
+  </div>
+-->
+  
+    <div class="panel" style="margin:1rem;">
+      <div class="header">
+        <strong>For Hosts</strong>
+        <span class="inline-help">Manage your EV charger listings and track bookings.</span>
+      </div>
+      <div class="content">
+        <p>Welcome to your Host Dashboard! This page is specifically designed for EV charger owners who want to list their chargers and manage their rentals. Here, you can:</p>
+        <ul>
+          <li><strong>Create and update listings:</strong> Add new chargers, edit existing listings, and set accurate details such as location, connector type, and power (kW).</li>
+          <li><strong>Set pricing and availability:</strong> Define your hourly rates, clean fees, and available times for weekdays and weekends.</li>
+          <li><strong>Add special notes:</strong> Include access instructions, gate codes, or any other important information for renters.</li>
+          <li><strong>Preview your listings:</strong> See exactly how your chargers will appear to potential renters before going live.</li>
+          <li><strong>Track bookings and payouts:</strong> View transaction history, monitor completed rentals, and calculate earnings.</li>
+        </ul>
+        <p style="margin-top:1rem;">If you are here to rent a charger instead, click the button below to switch to renter mode:</p>
+        <div style="text-align:center; margin:1rem 0;">
+          <a class="btn primary" href="booking.html?mode=rent">Search & Book</a>
+        </div>
+      </div>
+    </div>
+  
+
+  <div class="wrap" id="hostMode" role="tabpanel" aria-labelledby="hostTab" hidden>
+    <aside>
+      <div class="section">
+        <h3 style="margin:.25rem 0 .75rem">Your Listing</h3>
+        <label><span>Title</span><input id="hTitle" placeholder="Quiet driveway in Abbotsford"/></label>
+        <label><span>Address</span><input id="hAddress" placeholder="123 Sample St, Abbotsford"/></label>
+        <div class="grid two">
+          <label><span>Connector</span>
+            <select id="hConnector"><option>Type 2</option><option>CCS2</option><option>CHAdeMO</option></select>
+          </label>
+          <label><span>kW</span><input type="number" id="hKw" value="7" min="1" step="1"/></label>
+        </div>
+        <div class="grid two">
+          <label><span>Base $/hr</span><input type="number" id="hPrice" value="3.5" step="0.5"/></label>
+          <label><span>Clean fee $</span><input type="number" id="hFee" value="0" step="0.5"/></label>
+        </div>
+        <label><span>Notes</span><textarea id="hNotes" rows="3" placeholder="Gate code, access notes, etc."></textarea></label>
+        <button id="saveListing" class="btn primary" style="text-align:center;margin-top:.5rem">Save / Update</button>
+      </div>
+      <div class="section">
+        <h4 style="margin:0 0 .5rem">Availability</h4>
+        <div class="grid two">
+          <label><span>Weekday hours</span><input id="hWeekday" placeholder="08:00-20:00"/></label>
+          <label><span>Weekend hours</span><input id="hWeekend" placeholder="09:00-18:00"/></label>
+        </div>
+        <label><span>Blackout dates (comma separated)</span><input id="hBlackout" placeholder="2025-09-10, 2025-09-11"/></label>
+      </div>
+    </aside>
+
+    <main>
+      <section class="panel">
+        <div class="header"><strong>Preview</strong><span class="inline-help">What renters will see</span></div>
+        <div class="content">
+          <div id="hostPreview" class="cards"></div>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="header"><strong>Bookings & Payouts</strong><span class="inline-help">Transaction history</span></div>
+        <div class="content">
+          <div id="hostHistory" class="grid"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- AUTH MODAL -->
+  <dialog id="authModal">
+    <form method="dialog" class="grid" style="padding:1rem 1.25rem">
+      <h3 style="margin:0">Sign in</h3>
+      <p class="muted" style="margin:.25rem 0 .5rem">Mock authentication for demo</p>
+      <label><span>Email</span><input id="authEmail" type="email" placeholder="you@example.com" required></label>
+      <label><span>Password</span><input id="authPass" type="password" placeholder="••••••••" required></label>
+      <div class="row" style="justify-content:flex-end"><button class="btn">Cancel</button><button id="authSubmit" class="btn primary" value="confirm">Sign in</button></div>
+    </form>
+  </dialog>
+
+  <script>
+    // Shared data + utils
+    const mockListings = [
+      {id:101,title:"Driveway near Abbotsford Convent",suburb:"Abbotsford",price:9.9,connector:"Type 2",kw:7,available:true,rating:4.8,thumb:'A'},
+      {id:102,title:"CCS2 fast in Collingwood",suburb:"Collingwood",price:12.0,connector:"CCS2",kw:22,available:true,rating:4.6,thumb:'B'},
+      {id:103,title:"Covered carport Richmond",suburb:"Richmond",price:8.0,connector:"Type 2",kw:11,available:false,rating:4.4,thumb:'C'},
+      {id:104,title:"CHAdeMO near Fitzroy Gardens",suburb:"Fitzroy",price:10.0,connector:"CHAdeMO",kw:50,available:true,rating:4.7,thumb:'D'},
+      {id:105,title:"Type 2 in Hawthorn",suburb:"Hawthorn",price:7.5,connector:"Type 2",kw:7,available:true,rating:4.3,thumb:'E'},
+      {id:106,title:"CCS2 Southbank",suburb:"Southbank",price:14.0,connector:"CCS2",kw:50,available:true,rating:4.9,thumb:'F'}
+    ];
+    // With some dummy transactions:
+    const txHistory = JSON.parse(localStorage.getItem('txHistory')||`[
+      {"id":1,"listing":"Driveway near Abbotsford Convent","when":"2025-09-01T10:30:00","amount":9.9,"type":"credit"},
+      {"id":2,"listing":"CCS2 fast in Collingwood","when":"2025-09-02T14:00:00","amount":12.0,"type":"credit"},
+      {"id":3,"listing":"Covered carport Richmond","when":"2025-09-03T09:15:00","amount":8.0,"type":"debit"},
+      {"id":4,"listing":"CHAdeMO near Fitzroy Gardens","when":"2025-09-04T18:45:00","amount":10.0,"type":"credit"}
+    ]`);
+    const $ = sel => document.querySelector(sel);
+    const $$ = sel => Array.from(document.querySelectorAll(sel));
+    const money = n => new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD'}).format(n);
+    function calcQuote(listing, start, end, promo){
+      const ms = (new Date(end) - new Date(start));
+      const hours = Math.max(0, ms/36e5);
+      if(!hours) return {hours:0, total:0, breakdown:''};
+      const base = hours * listing.price;
+      const dynamic = listing.kw >= 22 ? 0.10*base : 0; // surge for higher kW
+      const service = Math.max(0.5, 0.06*base);
+      let discount = 0;
+      if((promo||'').toUpperCase()==='SAVE10') discount = Math.min(10, base*0.1);
+      const total = Math.max(0, base + dynamic + service - discount);
+      const breakdown = `Hours: ${hours.toFixed(1)} · Base ${money(base)} + PowerAdj ${money(dynamic)} + Fee ${money(service)}${discount?` − Discount ${money(discount)}`:''}`;
+      return {hours, total, breakdown};
+    }
+
+    // Auth (shared)
+    const authModal = $('#authModal');
+    const authBtn = $('#authBtn');
+    function syncAuth(){
+      const me = JSON.parse(localStorage.getItem('me')||'null');
+      authBtn.textContent = me? me.email.split('@')[0] : 'Sign in';
+    }
+    authBtn.onclick = () => authModal.showModal();
+    $('#authSubmit').onclick = () => {
+      const email = $('#authEmail').value; if(!email) return;
+      localStorage.setItem('me', JSON.stringify({email}));
+      syncAuth();
+    };
+
+    // Tabs (shared)
+    const rentTab = $('#rentTab');
+    const hostTab = $('#hostTab');
+    function setMode(mode){
+      const isRent = mode==='rent';
+      $$('#rentMode').forEach(el=> el.hidden = !isRent);
+      $$('#hostMode').forEach(el=> el.hidden = isRent);
+      rentTab.setAttribute('aria-selected', isRent);
+      hostTab.setAttribute('aria-selected', !isRent);
+      const params = new URLSearchParams(location.search);
+      params.set('mode', isRent? 'rent':'host');
+      history.replaceState(null,'',`?${params.toString()}`);
+    }
+    rentTab.onclick = () => setMode('rent');
+    hostTab.onclick = () => setMode('host');
+    function initModeFromQuery(){
+      const params = new URLSearchParams(location.search);
+      if(params.get('mode')==='host') setMode('host'); else setMode('rent');
+    }
+    syncAuth(); initModeFromQuery();
+  </script>
+
+  <script>
+    // Listing page specific
+    function renderHostPreview(l){
+        const box = $('#hostPreview');
+        box.innerHTML='';
+        const card = document.createElement('article');
+        card.className='card';
+        card.innerHTML = `
+          <div class="thumb"><span class="chip">${l.connector} • ${l.kw}kW</span><span class="chip">Preview</span></div>
+          <div class="body">
+            <div class="split"><strong>${l.title||'Untitled'}</strong><span class="price">${money(l.price||0)}/hr</span></div>
+            <div class="inline-help">${l.address||'No address set'} • Fees: ${money(l.fee||0)}</div>
+            <p class="inline-help">${l.notes||'—'}</p>
+          </div>`;
+        box.appendChild(card);
+    }
+    function hydrateHostForm(){
+      const saved = JSON.parse(localStorage.getItem('hostListing')||'null');
+      if(saved){
+        hTitle.value = saved.title; 
+        hAddress.value = saved.address; 
+        hConnector.value = saved.connector; 
+        hKw.value = saved.kw; 
+        hPrice.value = saved.price; 
+        hFee.value = saved.fee; 
+        hNotes.value = saved.notes||''; 
+        hWeekday.value = saved.weekday||''; 
+        hWeekend.value = saved.weekend||''; 
+        hBlackout.value = (saved.blackout||[]).join(', ');
+        renderHostPreview(saved);
+      } else {
+        // Show default placeholder preview
+        renderHostPreview({
+          title: 'Your first listing here',
+          address: 'Add your address',
+          connector: 'Type 2',
+          kw: 7,
+          price: 0,
+          fee: 0,
+          notes: 'Add notes here'
+        });
+      }
+    }
+
+    // Live update preview while typing
+    ['hTitle','hAddress','hConnector','hKw','hPrice','hFee','hNotes'].forEach(id => {
+      const el = document.getElementById(id);
+      el.addEventListener('input', () => {
+        renderHostPreview({
+          title: hTitle.value,
+          address: hAddress.value,
+          connector: hConnector.value,
+          kw: +hKw.value || 7,
+          price: +hPrice.value || 0,
+          fee: +hFee.value || 0,
+          notes: hNotes.value
+        });
+      });
+    });
+
+
+    $('#saveListing').onclick = () => {
+      const data = {
+        id: 999, title: hTitle.value, address:hAddress.value, connector:hConnector.value, kw:+hKw.value||7, price:+hPrice.value||0, fee:+hFee.value||0, notes:hNotes.value, weekday:hWeekday.value, weekend:hWeekend.value, blackout: hBlackout.value.split(',').map(s=>s.trim()).filter(Boolean)
+      };
+      localStorage.setItem('hostListing', JSON.stringify(data));
+      renderHostPreview(data);
+      alert('Listing saved locally (mock)');
+    };
+    function renderHostHistory(){
+      const box = $('#hostHistory');
+      box.innerHTML = txHistory.length? '' : '<div class="inline-help">No transactions yet.</div>';
+      txHistory.slice().reverse().forEach(tx=>{
+        const row = document.createElement('div');
+        row.className='split';
+        row.innerHTML = `<div>#${tx.id} • Listing ${tx.listing} • ${new Date(tx.when).toLocaleString()}</div><strong class="${tx.type==='debit'?'':'price'}">${tx.type==='debit'?'-': ''}${money(tx.amount)}</strong>`;
+        box.appendChild(row);
+      });
+    }
+    renderHostHistory(); hydrateHostForm();
+  </script>
+
+</body>
+</html>
