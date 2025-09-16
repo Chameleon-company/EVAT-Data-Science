@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking • ChargeBnb</title>
+  <meta name="color-scheme" content="light dark">
+  <!-- Leaflet map CSS/JS (CDN) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+:root{
+  --bg: #24e976;
+  --surface: #075b2c;
+  --card: #41805d;
+  --muted: #7aa391;
+  --text: #e9ffef;
+  --brand: #34d399;   /* green */
+  --brand-2:#a7f3d0;  /* mint */
+  --accent:#22d3ee;   /* teal accent */
+  --red:#ff6b6b;
+  --yellow:#ffd166;
+  --ring: 0 0 0 2px var(--brand) inset;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(205, 198, 198, 0.35);
+}
+@media (prefers-color-scheme: light){
+  :root{--bg:#f6fbf8;--surface:#ffffff;--card:#ffffff;--text:#0d1b14;--muted:#4b6b5b;--shadow:0 10px 20px rgba(2,6,23,.08)}
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:
+  radial-gradient(1200px 600px at 20% -10%,color-mix(in oklab,var(--brand),transparent 85%),transparent 40%),
+  radial-gradient(1000px 600px at 120% 0,color-mix(in oklab,var(--accent),transparent 88%),transparent 40%),
+  var(--bg);
+  color:var(--text);font:16px/1.4 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+
+/* Layout */
+header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(140%) blur(8px);background:color-mix(in oklab,var(--surface),transparent 25%);border-bottom:1px solid color-mix(in oklab,var(--muted),transparent 70%)}
+.bar{display:flex;align-items:center;gap:.75rem;max-width:1200px;margin:auto;padding:.75rem 1rem}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:700;text-decoration:none;color:var(--text)}
+.brand .logo{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#bbf7d0 60%,#fff);box-shadow:0 6px 18px rgba(52,211,153,.35)}
+
+.nav{margin-left:.5rem;display:flex;gap:.25rem}
+.nav a{color:var(--muted);text-decoration:none;padding:.4rem .8rem;border-radius:10px;border:1px solid color-mix(in oklab,var(--muted),transparent 75%);}
+.nav a[aria-current="page"]{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#002018;border:none}
+
+.tabs{margin-left:auto;display:flex;gap:.25rem;border:1px solid color-mix(in oklab,var(--muted),transparent 70%);border-radius:999px;padding:.25rem;background:color-mix(in oklab,var(--surface),transparent 8%)}
+.tab{appearance:none;border:none;background:transparent;color:var(--muted);padding:.4rem .9rem;border-radius:999px;cursor:pointer;font-weight:600}
+.tab[aria-selected="true"]{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#001018}
+
+.wrap{max-width:1200px;margin:auto;display:grid;grid-template-columns:320px 1fr;gap:1rem;padding:1rem}
+aside{position:sticky;top:64px;align-self:start;background:var(--surface);border:1px solid color-mix(in oklab,var(--muted),transparent 75%);border-radius:var(--radius);box-shadow:var(--shadow)}
+.section{padding:1rem 1rem}
+.section + .section{border-top:1px dashed color-mix(in oklab,var(--muted),transparent 70%)}
+
+main{display:grid;gap:1rem}
+
+.panel{background:var(--surface);border:1px solid color-mix(in oklab,var(--muted),transparent 75%);border-radius:var(--radius);box-shadow:var(--shadow)}
+.panel .header{padding:1rem 1.25rem;border-bottom:1px dashed color-mix(in oklab,var(--muted),transparent 70%);display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.panel .content{padding:1rem 1.25rem}
+
+.muted{color:var(--muted)}
+.grid{display:grid;gap:.75rem}
+.two{grid-template-columns:1fr 1fr}
+.three{grid-template-columns:repeat(3,1fr)}
+.four{grid-template-columns:repeat(4,1fr)}
+
+label span{display:block;font-size:.82rem;color:var(--muted);margin-bottom:.25rem}
+input,select,textarea{width:100%;padding:.7rem .8rem;border-radius:12px;background:color-mix(in oklab,var(--surface),#000 8%);border:1px solid color-mix(in oklab,var(--muted),transparent 70%);color:var(--text);outline:none}
+input:focus,select:focus,textarea:focus{box-shadow:var(--ring)}
+
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1rem;border-radius:14px;border:1px solid color-mix(in oklab,var(--muted),transparent 70%);background:color-mix(in oklab,var(--surface),#fff 2%);color:var(--text);cursor:pointer;text-decoration:none;font-weight:600}
+.btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#002027;border:none}
+.btn.ghost{background:transparent}
+.btn.icon{padding:.55rem .7rem}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:var(--card);border:1px solid color-mix(in oklab,var(--muted),transparent 75%);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.card .thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#10b981,#22d3ee);display:flex;align-items:end;justify-content:space-between;padding:.5rem .6rem;color:#001018}
+.chip{background:rgba(255,255,255,.85);border-radius:999px;padding:.25rem .5rem;font-size:.75rem;color:#04252a}
+.card .body{padding:.9rem}
+
+.split{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.price{font-weight:800}
+
+.map{height:300px;border-radius:14px;background:
+  repeating-linear-gradient(45deg, color-mix(in oklab,var(--muted),transparent 80%), color-mix(in oklab,var(--muted),transparent 80%) 10px, transparent 10px, transparent 20px),
+  radial-gradient(circle at 20% 30%, rgba(52,211,153,.2), transparent 40%),
+  radial-gradient(circle at 80% 60%, rgba(34,211,238,.18), transparent 40%),
+  #072013}
+
+.inline-help{font-size:.8rem;color:var(--muted)}
+.row{display:flex;gap:.5rem;flex-wrap:wrap}
+
+.badge{font-size:.75rem;border-radius:999px;padding:.25rem .6rem;border:1px solid color-mix(in oklab,var(--muted),transparent 60%)}
+
+/* Auth modal */
+dialog{border:none;border-radius:18px;max-width:480px;width:min(92vw,480px);background:var(--surface);color:var(--text);box-shadow:var(--shadow)}
+dialog::backdrop{background:rgba(0,0,0,.35)}
+
+/* Mobile */
+@media (max-width: 980px){
+  .wrap{grid-template-columns:1fr}
+  aside{position:static}
+  .cards{grid-template-columns:1fr 1fr}
+  .panel .header{position:sticky;top:56px;background:var(--surface);z-index:2}
+}
+@media (max-width: 640px){
+  .bar{padding:.6rem .8rem}
+  .wrap{padding:.6rem}
+  .cards{grid-template-columns:1fr}
+  .two,.three,.four{grid-template-columns:1fr}
+  .map{height:210px}
+  .tabs{margin-left:0}
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="booking.html"><span class="logo" aria-hidden="true"></span> ChargeBnb</a>
+      <nav class="nav">
+        <a href="booking.html" aria-current="page">Booking</a>
+        <a href="listing.html" >Listing</a>
+        
+      </nav>
+    
+      <button id="authBtn" class="btn icon" style="margin-left:auto">Sign in</button>
+    </div>
+  </header>
+
+  <div class="wrap" id="rentMode" role="tabpanel" aria-labelledby="rentTab">
+    <aside>
+      <div class="section">
+        <h3 style="margin:.25rem 0 .75rem">Search Chargers</h3>
+        <label><span>Location</span><input id="qLocation" placeholder="Suburb or postcode" /></label>
+        
+          <label><span>Start</span><input type="datetime-local" id="qStart"></label>
+          <label><span>End</span><input type="datetime-local" id="qEnd"></label>
+        
+        <div class="grid two">
+          <label><span>Connector</span>
+            <select id="qConnector">
+              <option value="">Any</option>
+              <option>Type 2</option>
+              <option>CCS2</option>
+              <option>CHAdeMO</option>
+            </select>
+          </label>
+          <label><span>Min kW</span><input type="number" id="qKw" min="0" step="1" placeholder="7" /></label>
+        </div>
+        <div class="grid two">
+          <label><span>Max $/hr</span><input type="number" id="qMaxPrice" min="0" step="0.5" placeholder="10"/></label>
+          <label><span>Only available</span>
+            <select id="qAvail"><option value="1">Yes</option><option value="">No</option></select>
+          </label>
+        </div>
+        <button id="applyFilters" class="btn primary" style="width:100%;margin-top:.5rem">Search</button>
+      </div>
+      <div class="section">
+        <h4 style="margin:0 0 .5rem">Your Trip</h4>
+        <div class="inline-help" id="tripSummary">Pick dates to see a quote.</div>
+      </div>
+      <div class="section">
+        <h4 style="margin:0 0 .5rem">Saved</h4>
+        <div id="savedList" class="grid"></div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="panel">
+        <div class="header">
+          <strong>Map</strong>
+          <div class="row"><span class="badge" id="countBadge">0 results</span><button class="btn ghost" id="resetBtn">Reset</button></div>
+        </div>
+        <div class="content">
+          <div id="map" style="height:300px; border-radius:14px;"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="header"><strong>Listings</strong><span class="inline-help"></span></div>
+        <div class="content">
+          <div id="cards" class="cards"></div>
+        </div>
+      </section>
+
+      <section class="panel" id="bookingPanel" hidden>
+        <div class="header"><strong>Book this Listing</strong><button id="closeBooking" class="btn ghost">Close</button></div>
+        <div class="content">
+          <div id="listingSummary" class="inline-help">Loading…</div>
+          <form id="bookingForm" class="grid two" style="margin-top:.75rem">
+            <label><span>Start</span><input type="datetime-local" name="start" required /></label>
+            <label><span>End</span><input type="datetime-local" name="end" required /></label>
+            <label><span>Vehicle</span><input name="vehicle" placeholder="e.g. Tesla Model 3"/></label>
+            <label><span>User ID</span><input type="number" name="user_id" value="1" required /></label>
+            <label class="two"><span>Promo Code</span><input name="promo" placeholder="SAVE10"/></label>
+            <div class="row">
+              <button class="btn" type="button" id="calcBtn">Calculate</button>
+              <button class="btn primary" type="submit">Continue</button>
+            </div>
+          </form>
+          <div id="quote" style="margin-top:.75rem"></div>
+          <div id="payment" class="row" hidden>
+            <a id="checkout" class="btn primary" href="#">Pay with Stripe</a>
+            <button class="btn" id="saveBooking">Save for later</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Host mode mirror for booking page: light host helpers -->
+  <div class="wrap" id="hostMode" role="tabpanel" aria-labelledby="hostTab" hidden>
+    <main>
+      <section class="panel">
+        <div class="header"><strong>Quick Host Tools</strong><span class="inline-help">Jump to Listing to edit full details</span></div>
+        <div class="content grid two">
+          <a class="btn primary" href="listing.html?mode=host">Open Listing Editor</a>
+          <a class="btn" href="dashboard.html?mode=host">View Analytics</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const map = L.map('map').setView([-37.8136, 144.9631], 12);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map);
+
+    let markers = [];
+
+    function updateMapPins(listings){
+      // Remove existing markers
+      markers.forEach(m => map.removeLayer(m));
+      markers = [];
+
+      listings.forEach(l => {
+        if(l.lat && l.lng){
+          const marker = L.marker([l.lat, l.lng])
+            .addTo(map)
+            .bindPopup(`<strong>${l.title}</strong><br>${l.suburb}<br>${l.connector} ${l.kw}kW<br>${money(l.price)}/hr`);
+          markers.push(marker);
+        }
+      });
+
+      // Optional: fit map to markers
+      if(markers.length){
+        const group = L.featureGroup(markers);
+        map.fitBounds(group.getBounds().pad(0.2));
+      }
+    }
+
+
+    // Shared data + utils
+    const mockListings = [
+      {id:201, title:"Charger in Abbotsford", suburb:"Abbotsford", price:9.9, connector:"Ultra-fast", kw:50, available:true, rating:4.8, thumb:"A", lat:-37.8045508, lng:144.9988542},
+      {id:202, title:"Charger in Airport West", suburb:"Airport West", price:7.83, connector:"Fast", kw:22, available:false, rating:4.6, thumb:"B", lat:-37.7222576, lng:144.8834942},
+      {id:203, title:"Charger in Altona", suburb:"Altona", price:8.08, connector:"Ultra-fast", kw:50, available:false, rating:4.5, thumb:"C", lat:-37.8671503, lng:144.8294637},
+      {id:204, title:"Charger in Altona North", suburb:"Altona North", price:7.53, connector:"Ultra-fast", kw:50, available:true, rating:4.4, thumb:"D", lat:-37.8378229, lng:144.8342853},
+      {id:205, title:"Charger in Armadale", suburb:"Armadale", price:6.36, connector:"Standard", kw:7, available:true, rating:4.3, thumb:"E", lat:-37.8563442, lng:145.0193207},
+      {id:206, title:"Charger in Ascot Vale", suburb:"Ascot Vale", price:6.41, connector:"Fast", kw:22, available:true, rating:4.2, thumb:"F", lat:-37.7753252, lng:144.921825},
+      {id:207, title:"Charger in Brighton", suburb:"Brighton", price:7.98, connector:"Fast", kw:22, available:true, rating:4.1, thumb:"G", lat:-37.9081962, lng:144.9957991},
+      {id:208, title:"Charger in Brighton East", suburb:"Brighton East", price:6.87, connector:"Fast", kw:22, available:false, rating:4.0, thumb:"H", lat:-37.9171728, lng:145.0163663},
+      {id:209, title:"Charger in Brunswick East", suburb:"Brunswick East", price:6.31, connector:"Fast", kw:22, available:false, rating:4.0, thumb:"I", lat:-37.7688802, lng:144.9776825},
+      {id:210, title:"Charger in Camberwell", suburb:"Camberwell", price:7.73, connector:"Fast", kw:22, available:true, rating:4.2, thumb:"J", lat:-37.8384623, lng:145.0740767},
+      {id:211, title:"Charger in Caroline Springs", suburb:"Caroline Springs", price:8.43, connector:"Fast", kw:22, available:false, rating:4.3, thumb:"K", lat:-37.7340623, lng:144.7370017},
+      {id:212, title:"Charger in Carrum Downs", suburb:"Carrum Downs", price:7.63, connector:"Fast", kw:22, available:false, rating:4.1, thumb:"L", lat:-38.1003312, lng:145.1788657},
+      {id:213, title:"Charger in Chirnside Park", suburb:"Chirnside Park", price:7.47, connector:"Ultra-fast", kw:50, available:true, rating:4.2, thumb:"M", lat:-37.9047634, lng:144.6530424},
+      {id:214, title:"Charger in Coburg North", suburb:"Coburg North", price:8.54, connector:"Standard", kw:7, available:false, rating:4.0, thumb:"N", lat:-37.7272635, lng:144.9678538},
+      {id:215, title:"Charger in Cranbourne", suburb:"Cranbourne", price:7.63, connector:"Standard", kw:7, available:true, rating:4.2, thumb:"O", lat:-38.0997308, lng:145.2807256},
+      {id:216, title:"Charger in Cranbourne West", suburb:"Cranbourne West", price:6.97, connector:"Standard", kw:7, available:false, rating:4.1, thumb:"P", lat:-38.102241, lng:145.2517182},
+      {id:217, title:"Charger in Dandenong North", suburb:"Dandenong North", price:7.68, connector:"Fast", kw:22, available:true, rating:4.3, thumb:"Q", lat:-37.9558319, lng:145.2143234},
+      {id:218, title:"Charger in Deer Park", suburb:"Deer Park", price:6.31, connector:"Ultra-fast", kw:50, available:false, rating:4.2, thumb:"R", lat:-37.7686602, lng:144.7713077},
+      {id:219, title:"Charger in Derrimut", suburb:"Derrimut", price:6.31, connector:"Ultra-fast", kw:50, available:true, rating:4.2, thumb:"S", lat:-37.7987978, lng:144.776051},
+      {id:220, title:"Charger in Eltham", suburb:"Eltham", price:10.0, connector:"Standard", kw:7, available:true, rating:4.3, thumb:"T", lat:-37.713736, lng:145.147673},
+      {id:221, title:"Charger in Fawkner", suburb:"Fawkner", price:7.17, connector:"Fast", kw:22, available:true, rating:4.1, thumb:"U", lat:-37.7146535, lng:144.9605402},
+      {id:222, title:"Charger in Frankston", suburb:"Frankston", price:6.92, connector:"Ultra-fast", kw:50, available:true, rating:4.2, thumb:"V", lat:-38.150925, lng:145.142239},
+      {id:223, title:"Charger in Greensborough", suburb:"Greensborough", price:7.73, connector:"Standard", kw:7, available:true, rating:4.2, thumb:"W", lat:-37.7037383, lng:145.1079105},
+      {id:224, title:"Charger in Hampton", suburb:"Hampton", price:6.92, connector:"Ultra-fast", kw:50, available:true, rating:4.1, thumb:"X", lat:-37.9381127, lng:145.0014764},
+      {id:225, title:"Charger in Keilor Downs", suburb:"Keilor Downs", price:8.94, connector:"Ultra-fast", kw:50, available:true, rating:4.0, thumb:"Y", lat:-37.7205762, lng:144.8047614},
+      {id:226, title:"Charger in Malvern East", suburb:"Malvern East", price:7.27, connector:"Standard", kw:7, available:true, rating:4.2, thumb:"Z", lat:-37.876835, lng:145.0658739},
+      {id:227, title:"Charger in Oak Park", suburb:"Oak Park", price:6.72, connector:"Ultra-fast", kw:50, available:true, rating:4.1, thumb:"AA", lat:-37.7180181, lng:144.9215041},
+      {id:228, title:"Charger in Port Melbourne", suburb:"Port Melbourne", price:6.77, connector:"Fast", kw:22, available:false, rating:4.0, thumb:"AB", lat:-37.8333613, lng:144.9219203},
+      {id:229, title:"Charger in Ringwood", suburb:"Ringwood", price:6.92, connector:"Standard", kw:7, available:true, rating:4.2, thumb:"AC", lat:-37.8158726, lng:145.2291113},
+      {id:230, title:"Charger in South Melbourne", suburb:"South Melbourne", price:9.8, connector:"Standard", kw:7, available:true, rating:4.3, thumb:"AD", lat:-37.83344, lng:144.9570533},
+      {id:231, title:"Charger in Sunbury", suburb:"Sunbury", price:9.9, connector:"Standard", kw:7, available:true, rating:4.3, thumb:"AE", lat:-37.5791363, lng:144.7279832},
+      {id:232, title:"Charger in Sunshine West", suburb:"Sunshine West", price:9.85, connector:"Ultra-fast", kw:50, available:true, rating:4.2, thumb:"AF", lat:-37.7983442, lng:144.8110919},
+      {id:233, title:"Charger in Sydenham", suburb:"Sydenham", price:9.9, connector:"Ultra-fast", kw:50, available:true, rating:4.3, thumb:"AG", lat:-37.6997223, lng:144.7653295},
+      {id:234, title:"Charger in Wallan", suburb:"Wallan", price:9.9, connector:"Fast", kw:22, available:false, rating:4.1, thumb:"AH", lat:-37.5040691, lng:145.1090152},
+      {id:235, title:"Charger in Whittlesea", suburb:"Whittlesea", price:9.9, connector:"Standard", kw:7, available:false, rating:4.0, thumb:"AI", lat:-37.5121301, lng:145.1177321}
+    ];
+
+
+    const txHistory = JSON.parse(localStorage.getItem('txHistory')||'[]');
+    const $ = sel => document.querySelector(sel);
+    const $$ = sel => Array.from(document.querySelectorAll(sel));
+    const money = n => new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD'}).format(n);
+    function calcQuote(listing, start, end, promo){
+      const ms = (new Date(end) - new Date(start));
+      const hours = Math.max(0, ms/36e5);
+      if(!hours) return {hours:0, total:0, breakdown:''};
+      const base = hours * listing.price;
+      const dynamic = listing.kw >= 22 ? 0.10*base : 0; // surge for higher kW
+      const service = Math.max(0.5, 0.06*base);
+      let discount = 0;
+      if((promo||'').toUpperCase()==='SAVE10') discount = Math.min(10, base*0.1);
+      const total = Math.max(0, base + dynamic + service - discount);
+      const breakdown = `Hours: ${hours.toFixed(1)} · Base ${money(base)} + PowerAdj ${money(dynamic)} + Fee ${money(service)}${discount?` − Discount ${money(discount)}`:''}`;
+      return {hours, total, breakdown};
+    }
+
+    // Auth (shared)
+    const authModal = $('#authModal');
+    const authBtn = $('#authBtn');
+    function syncAuth(){
+      const me = JSON.parse(localStorage.getItem('me')||'null');
+      authBtn.textContent = me? me.email.split('@')[0] : 'Sign in';
+    }
+    authBtn.onclick = () => authModal.showModal();
+    $('#authSubmit').onclick = () => {
+      const email = $('#authEmail').value; if(!email) return;
+      localStorage.setItem('me', JSON.stringify({email}));
+      syncAuth();
+    };
+
+    // Tabs (shared)
+    const rentTab = $('#rentTab');
+    const hostTab = $('#hostTab');
+    function setMode(mode){
+      const isRent = mode==='rent';
+      $$('#rentMode').forEach(el=> el.hidden = !isRent);
+      $$('#hostMode').forEach(el=> el.hidden = isRent);
+      rentTab.setAttribute('aria-selected', isRent);
+      hostTab.setAttribute('aria-selected', !isRent);
+      const params = new URLSearchParams(location.search);
+      params.set('mode', isRent? 'rent':'host');
+      history.replaceState(null,'',`?${params.toString()}`);
+    }
+    rentTab.onclick = () => setMode('rent');
+    hostTab.onclick = () => setMode('host');
+    function initModeFromQuery(){
+      const params = new URLSearchParams(location.search);
+      if(params.get('mode')==='host') setMode('host'); else setMode('rent');
+    }
+    syncAuth(); initModeFromQuery();
+  </script>
+  
+  <script>
+    // Booking page specific
+    const cards = $('#cards');
+    const countBadge = $('#countBadge');
+    const bookingPanel = $('#bookingPanel');
+    const listingSummary = $('#listingSummary');
+    const bookingForm = $('#bookingForm');
+    const quoteEl = $('#quote');
+    const payment = $('#payment');
+    let activeListing = null;
+
+    function renderCards(list){
+      cards.innerHTML = '';
+      list.forEach(l => {
+        const card = document.createElement('article');
+        card.className = 'card';
+        card.innerHTML = `
+          <div class="thumb"><span class="chip">${l.connector} • ${l.kw}kW</span><span class="chip">${l.suburb}</span></div>
+          <div class="body">
+            <div class="split"><strong>${l.title}</strong><span class="price">${money(l.price)}/hr</span></div>
+            <div class="inline-help">★ ${l.rating.toFixed(1)} • ${l.available? 'Available':'Unavailable'}</div>
+            <div class="row" style="margin-top:.5rem">
+              <button class="btn" data-save>Save</button>
+              <button class="btn primary" data-book>Book</button>
+            </div>
+          </div>`;
+        card.querySelector('[data-save]').onclick = () => saveListing(l);
+        card.querySelector('[data-book]').onclick = () => openBooking(l);
+        cards.appendChild(card);
+
+        // Add marker to map
+        L.marker([l.lat, l.lng]).addTo(map)
+            .bindPopup(`
+                <b>${l.connector} - ${l.suburb}</b><br>
+                ${l.address}<br>
+                $${l.price}/hr<br>
+                Availability: ${l.available ? "Available" : "Occupied"}
+            `);
+      });
+      countBadge.textContent = `${list.length} result${list.length!==1?'s':''}`;
+    }
+
+    function saveListing(l){
+      const saved = JSON.parse(localStorage.getItem('saved')||'[]');
+      if(!saved.find(s=>s.id===l.id)) saved.push(l);
+      localStorage.setItem('saved', JSON.stringify(saved));
+      renderSaved();
+    }
+
+    function renderSaved(){
+      const saved = JSON.parse(localStorage.getItem('saved')||'[]');
+      const box = $('#savedList');
+      box.innerHTML='';
+      saved.forEach(s=>{
+        const d = document.createElement('div');
+        d.className='row';
+        d.innerHTML = `<span class="badge">#${s.id} ${s.suburb}</span><button class="btn icon" aria-label="remove">×</button>`;
+        d.querySelector('button').onclick = () => {
+          const arr = JSON.parse(localStorage.getItem('saved')||'[]').filter(x=>x.id!==s.id);
+          localStorage.setItem('saved', JSON.stringify(arr));
+          renderSaved();
+        }
+        box.appendChild(d);
+      })
+    }
+
+    function openBooking(l){
+      activeListing = l;
+      bookingPanel.hidden = false;
+      listingSummary.textContent = `#${l.id} • ${l.title} • ${l.suburb} • ${l.connector} ${l.kw}kW • ${money(l.price)}/hr`;
+      const params = new URLSearchParams(location.search);
+      const start = params.get('start')||''; const end = params.get('end')||'';
+      bookingForm.start.value = start; bookingForm.end.value = end;
+      quoteEl.textContent = '';
+      payment.hidden = true;
+      bookingForm.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+
+    function applyFilters(){
+      const loc = $('#qLocation').value.trim().toLowerCase();
+      const con = $('#qConnector').value;
+      const kw = +($('#qKw').value||0);
+      const maxP = $('#qMaxPrice').value ? +$('#qMaxPrice').value : Infinity; 
+      const onlyAvail = $('#qAvail').value==='1';
+      let results = mockListings.filter(l => (
+        (!loc || l.suburb.toLowerCase().includes(loc)) &&
+        (!con || l.connector===con) &&
+        (!kw || l.kw>=kw) &&
+        (l.price <= maxP) &&
+        (!onlyAvail || l.available)
+      ));
+      renderCards(results);
+    }
+
+    $('#applyFilters').onclick = applyFilters;
+    $('#resetBtn').onclick = () => { $$('#rentMode input, #rentMode select').forEach(e=>{ if(e.type==='select-one') e.selectedIndex=0; else e.value='';}); applyFilters(); };
+
+    $('#calcBtn').onclick = () => {
+      const data = Object.fromEntries(new FormData(bookingForm).entries());
+      if(!activeListing){ alert('No listing selected'); return; }
+      const {hours,total,breakdown} = calcQuote(activeListing, data.start, data.end, data.promo);
+      quoteEl.textContent = hours? `${breakdown} → Total ${money(total)}` : 'Please check your times';
+      payment.hidden = !hours;
+    };
+
+    bookingForm.onsubmit = (e)=>{
+      e.preventDefault();
+      if(!activeListing) return;
+      const data = Object.fromEntries(new FormData(bookingForm).entries());
+      const q = calcQuote(activeListing, data.start, data.end, data.promo);
+      if(!q.hours){alert('Set valid times');return}
+      $('#checkout').onclick = (ev)=>{
+        ev.preventDefault();
+        const tx = {id: Date.now(), type:'debit', listing: activeListing.id, amount:q.total, when:new Date().toISOString()};
+        txHistory.push(tx); localStorage.setItem('txHistory', JSON.stringify(txHistory));
+        alert('Stripe Checkout (mock) – paid ' + money(q.total));
+      };
+    };
+
+    $('#closeBooking').onclick = () => bookingPanel.hidden = true;
+
+    function updateTripSummary(){
+      const s = $('#qStart').value, e = $('#qEnd').value;
+      if(s && e){
+        const demo = mockListings[0];
+        const q = calcQuote(demo, s, e);
+        $('#tripSummary').textContent = `${new Date(s).toLocaleString()} → ${new Date(e).toLocaleString()} · Example estimate ${money(q.total)} (varies by listing)`;
+      }
+    }
+    $('#qStart').addEventListener('change', updateTripSummary);
+    $('#qEnd').addEventListener('change', updateTripSummary);
+
+    // Init
+    renderCards(mockListings);
+    updateMapPins(results);
+    renderSaved();
+    applyFilters();
+  </script>
+
+  <!-- AUTH MODAL -->
+  <dialog id="authModal">
+    <form method="dialog" class="grid" style="padding:1rem 1.25rem">
+      <h3 style="margin:0">Sign in</h3>
+      <p class="muted" style="margin:.25rem 0 .5rem">Mock authentication for demo</p>
+      <label><span>Email</span><input id="authEmail" type="email" placeholder="you@example.com" required></label>
+      <label><span>Password</span><input id="authPass" type="password" placeholder="••••••••" required></label>
+      <div class="row" style="justify-content:flex-end"><button class="btn">Cancel</button><button id="authSubmit" class="btn primary" value="confirm">Sign in</button></div>
+    </form>
+  </dialog>
+
+  
+</body>
+</html>
