@@ -1,0 +1,263 @@
+Charger ID,Charger Name,Address,Suburb,State,Postal Code,Power (kW),Usage Cost,Number of Points,Connection Types,latitude,longitude,Normalized Name,reliability_score
+MEL001,RMIT - City Campus,17-21 Cardigan Street,carlton,VIC,3053,"75, 22",AUD 0.30 per kWh,1.0,"33, 25",-37.8004228,144.9684343,rmit - city campus,68.57142857
+MEL002,100 St Kilda Rd,100 St Kilda Rd,southbank,AU-VIC,AU,,,,1,-37.8253618,144.9640203,100 st kilda rd,65.71428571
+MEL003,11 Nicholson Street,11 Nicholson Street,carlton,AU-VIC,AU,,,,1,-37.8004228,144.9684343,11 nicholson street,65.71428571
+MEL004,Lorbek Luxury Cars,30 Prohasky Street,port melbourne,Victoria,3207,11,$0.31/kWh,8.0,1036,-37.8333613,144.9219203,lorbek luxury cars,61.25714286
+MEL005,Tesla Supercharger South Melbourne,Clarendon Street,south melbourne,VIC,,250,,6.0,33,-37.83344,144.9570533,tesla supercharger south melbourne,88.57142857
+MEL006,Collingwood Library,13 Stanton St,abbotsford,VIC,3067,"50, 50, 50, 50",$0.40/kWh,2.0,"33, 2, 33, 2",-37.8045508,144.9988542,collingwood library,65.71428571
+MEL007,JET Charge Office,350 Bridge Street,port melbourne,VIC,3207,"80, 80, 22",AUD 0.60 per kWh,1.0,"2, 33, 1036",-37.8333613,144.9219203,jet charge office,69.14285714
+MEL008,Evie Richmond Library,Swan Street,richmond,VIC,,50,,1.0,33,-37.80745,144.9907213,evie richmond library,65.71428571
+MEL009,650 Church Street Building 5,Church Street,melbourne,Victoria,3121,120,AUD 0.42/kWh;other tariffs for older cars,4.0,33,-37.8142454,144.9631732,650 church street building 5,73.71428571
+MEL010,Woolworths Fishermans Bend,Plumber Street,fishermans bend,VIC,,50,,2.0,33,-37.8245644,144.922933,woolworths fishermans bend,65.71428571
+MEL011,Middy’s Port Melbourne,2 Thackray Road,port melbourne,Victoria,3207,"25, 25",$0.40 per kWh (at all times),1.0,"33, 2",-37.8333613,144.9219203,middy’s port melbourne,62.85714286
+MEL012,Ampcharge Barkly Square,Barkly Street,brunswick,VIC,,150,,8.0,33,-37.7664715,144.9613103,ampcharge barkly square,77.14285714
+MEL013,ENGIE - VIctoria Gardens,620 Victoria St,richmond,Vic,3121,"100, 100",AUD 0.54 per kWh (3pm-10am) AUD 0.37 per kWh (10am - 3pm),1.0,"2, 33",-37.80745,144.9907213,engie - victoria gardens,71.42857143
+MEL014,GET Electric Head Office,327 Plummer Street,port melbourne,Victoria,3207,11,$0.24/kWh,6.0,25,-37.8333613,144.9219203,get electric head office,61.25714286
+MEL015,Brunswick EV Hub,15 Edward Street,brunswick,Victoria,3056,"80, 7",Free,4.0,"33, 25",-37.7664715,144.9613103,brunswick ev hub,69.14285714
+MEL016,David Street Car Park,1 David St,brunswick,Victoria,3056,22,Free,2.0,25,-37.7664715,144.9613103,david street car park,62.51428571
+MEL017,RMIT Brunswick,25 Dawson St,brunswick,Victoria,3056,22,$0.30 per kWh,1.0,25,-37.7664715,144.9613103,rmit brunswick,62.51428571
+MEL018,Fleming Park,4 -6 Cross St,brunswick east,Victoria,3057,"7, 7",Free,2.0,"25, 25",-37.7688802,144.9776825,fleming park,60.8
+MEL019,The Parade Ascot Vale Car Park,66-68 The Parade,ascot vale,Victoria,3032,"50, 50, 50, 50",$0.40 per kWh parking overstay charges may apply.,2.0,"2, 33, 33, 2",-37.7753252,144.921825,the parade ascot vale car park,65.71428571
+MEL020,Moonee Ponds,Moonee Ponds,,,3039,120,AUD 0.42/kWh;other tariffs for older cars,6.0,33,-37.8688729,145.2126338,moonee ponds,73.71428571
+MEL021,Moonee Ponds Central,14 - 16 Hall St,moonee ponds,Victoria,3039,"22, 22",Free,1.0,"1, 25",-37.765935,144.9192614,moonee ponds central,62.51428571
+MEL022,St Kilda Town Hall,164 Carlisle Street,st kilda,Vic,3182,"3.5, 2.4",Free,2.0,"25, 29",-37.8638261,144.981637,st kilda town hall,60.4
+MEL023,Swinburne University - TC Building,Falmouth Street,hawthorn,Victoria,3122,"50, 50",Charging is free. Parking is free.,1.0,"33, 2",-37.8244246,145.0317207,swinburne university - tc building,65.71428571
+MEL024,City of Stonnington,290 Glenferrie Road,malvern,VIC,3144,"50, 50",AUD 0.45 per kWh,1.0,"33, 2",-37.8576088,145.0350666,city of stonnington,65.71428571
+MEL025,Malvern Central,122 Wattletree Rd,armadale,Victoria,3144,"50, 50, 50, 50",$0.40 per kWh. Parking overstay charges may apply,2.0,"33, 2, 33, 2",-37.8563442,145.0193207,malvern central,65.71428571
+MEL026,Coburg Civic Centre / Moreland City,90 Bell Street,coburg,Victoria,3058,"50, 22, 50",Free,4.0,"33, 25, 2",-37.7449752,144.9643314,coburg civic centre / moreland city,65.71428571
+MEL027,Coburg Town Hall / Moreland City,Bell Street,melbourne,Victoria,3058,7,Free,2.0,25,-37.8142454,144.9631732,coburg town hall / moreland city,60.8
+MEL028,Camberwell Supercharger,793 Burke Road,camberwell,VIC,3124,120,AUD 0.42/kWh;other tariffs for older cars,6.0,33,-37.8384623,145.0740767,camberwell supercharger,73.71428571
+MEL029,Monash Caufield,880 Dandenong Rd,malvern east,Vic,3145,"50, 50",Free,1.0,"33, 2",-37.876835,145.0658739,monash caufield,65.71428571
+MEL030,Bayside Gateway,301-307 Nepean Hwy,brighton east,Victoria,3186,"75, 75",55c/kWh,6.0,"2, 33",-37.9171728,145.0163663,bayside gateway,68.57142857
+MEL031,Austin Tower Carpark Level B1,145 Studley Road,heidelberg,Victoria,3084,"22, 22",$0.25 per kWh,4.0,"25, 25",-37.7524788,145.0701284,austin tower carpark level b1,62.51428571
+MEL032,Coburg North EV Fast Charge,11 Boundary Road,coburg north,Victoria,3058,"50, 50",Free to use for a 1 hour session.,1.0,"33, 2",-37.7272635,144.9678538,coburg north ev fast charge,65.71428571
+MEL033,Oak Park Sports & Aquatic Centre,563 Pascoe Vale Road,oak park,Victoria,3064,"22, 7", Free to use for 3 hour sessions,3.0,"25, 1",-37.7180181,144.9215041,oak park sports & aquatic centre,62.51428571
+MEL034,Bayside Willansby Ave,47 Willansby Ave,brighton,VIC,3186,"50, 50, 50, 50",$0.45 per kWh,2.0,"33, 2, 2, 33",-37.9081962,144.9957991,bayside willansby ave,65.71428571
+MEL035,Woolworths Heidelberg,451 Lower Heidelberg Road,heidelberg,Victoria,3084,"44, 44, 7, 7, 7, 7, 7, 7",Free,16.0,"33, 33, 25, 25, 25, 25, 25, 25",-37.7524788,145.0701284,woolworths heidelberg,65.02857143
+MEL036,Tesla Supercharger Brighton East,Hope Street,brighton east,Victoria,3186,250,$0.69/kWh,3.0,33,-37.9171728,145.0163663,tesla supercharger brighton east,88.57142857
+MEL037,Toyota Altona,Grieve Parade,altona,VIC,,"75, 75",,3.0,"33, 2",-37.8671503,144.8294637,toyota altona,68.57142857
+MEL038,CB Smith Reserve,99 Jukes Road,fawkner,Victoria,3060,"25, 25",Free,1.0,"33, 2",-37.7146535,144.9605402,cb smith reserve,62.85714286
+MEL039,Hobsons Bay Civic Centre,115 Civic Parade,altona,Victoria,3018,"50, 50",Free,1.0,"33, 2",-37.8671503,144.8294637,hobsons bay civic centre,65.71428571
+MEL040,Chargefox Airport West,29-35 Louis St,airport west,Victoria,3042,"50, 350, 50, 50, 50","$0.65 per kwH, discount for RACV members",6.0,"2, 33, 33, 33, 2",-37.7222576,144.8834942,chargefox airport west,65.71428571
+MEL041,Chadstone Shopping Centre,1341 Dandenong Rd,,Victoria,3148,"7, 7, 7, 7, 7, 7",Free,6.0,"25, 25, 25, 25, 25, 25",-37.8688729,145.2126338,chadstone shopping centre,60.8
+MEL042,ENGIE - Chadstone,1341 Dandenong Rd,chadstone,Victoria,3148,"100, 100",$0.45 per kWh,4.0,"33, 2",-37.8822799,145.1001365,engie - chadstone,71.42857143
+MEL043,ENGIE - Chadstone 2,Dandenong Road,chadstone,VIC,,120,,4.0,33,-37.8822799,145.1001365,engie - chadstone 2,73.71428571
+MEL044,Tesla Supercharger Campbellfield,Camp Road,campbellfield,Victoria,3060,250,69c / KwH,1.0,33,-37.6641298,144.959583,tesla supercharger campbellfield,88.57142857
+MEL045,Ampol Foodary Altona North,1 Horsburgh Drive,altona north,Victoria,3025,"180, 100",$0.60/kWh for pay-as-you-go charging.,4.0,"33, 2",-37.8378229,144.8342853,ampol foodary altona north,80.57142857
+MEL046,Bridge Street,Bridge Street,hampton,Victoria,3191,"180, 100",$0.60/kWh for pay-as-you-go charging.,1.0,"33, 2",-37.9381127,145.0014764,bridge street,80.57142857
+MEL047,Telsa Supercharger Box Hill,Ailsa Street,box hill south,Victoria,3128,250,,12.0,33,-37.8366236,145.1233644,telsa supercharger box hill,88.57142857
+MEL048,Evie Glen Gala Village,Fitzgerald Road,sunshine west,VIC,,"75, 50",,4.0,"33, 2",-37.7983442,144.8110919,evie glen gala village,68.57142857
+MEL049,Miller Grove,Miller Grove,,Victoria,3149,22,free,2.0,33,-37.8688729,145.2126338,miller grove,62.51428571
+MEL050,Keilor Central,80 Taylors Road,keilor downs,Victoria,3038,"50, 50, 50, 50",$0.50 per kWh,2.0,"33, 2, 33, 2",-37.7205762,144.8047614,keilor central,65.71428571
+MEL051,Tesla Supercharger Oakleigh Repair Centre,Huntingdale Road,oakleigh south,VIC,,250,Supercharger rates,6.0,33,-37.9248257,145.0921745,tesla supercharger oakleigh repair centre,88.57142857
+MEL052,Bayside Council,76 Royal Ave,sandringham,VIC,3191,"75, 75, 50, 50, 22, 22, 22",0.30c/kWh,1.0,"33, 33, 33, 2, 25, 25, 25",-37.9502592,145.0043868,bayside council,68.57142857
+MEL053,Jolt Cheltenham,Bay Road,cheltenham,VIC,,"50, 50",,1.0,"33, 2",-37.9670081,145.0546951,jolt cheltenham,65.71428571
+MEL054,Uni Hill Town Centre,19 Graduate Drive,bundoora,Victoria,3082,"50, 50, 50, 50",$0.40 / Kwh,2.0,"33, 2, 33, 2",-37.6982468,145.0596757,uni hill town centre,65.71428571
+MEL055,Greensborough Plaza,25 Main St,greensborough,Victoria,3088,"22, 22",Free,4.0,"1036, 25",-37.7037383,145.1079105,greensborough plaza,62.51428571
+MEL056,Watermarc Carpark (LG),Greensborough Walk,,Victoria,3088,11,0,3.0,25,-37.8688729,145.2126338,watermarc carpark (lg),61.25714286
+MEL057,Forest Hill Chase Shopping Centre,Pacific Way,forest hill,Victoria,3131,22,Free,2.0,25,-37.8362738,145.1690911,forest hill chase shopping centre,62.51428571
+MEL058,Brimbank Shopping Centre,28-72 Neale Road,deer park,Victoria,3023,22,Free,1.0,25,-37.7686602,144.7713077,brimbank shopping centre,62.51428571
+MEL059,Southland Medical Centre,50 Chesterville rd,cheltenham,Victoria,3192,,,1.0,,-37.9670081,145.0546951,southland medical centre,60.0
+MEL060,Research Way - N1 Carpark,Research Way,,Victoria,3800,"22, 50, 50",Free,2.0,"1036, 33, 2",-37.8688729,145.2126338,research way - n1 carpark,62.51428571
+MEL061,Ampol Derrimut,354a Robinsons Rd,derrimut,Vic,3026,"180, 100",$0.60/kWh for pay-as-you-go charging.,1.0,"33, 2",-37.7987978,144.776051,ampol derrimut,80.57142857
+MEL062,Jolt Black Rock,Balcolme Road,black rock,VIC,,"50, 50",,1.0,"33, 2",-37.9706564,145.0212822,jolt black rock,65.71428571
+MEL063,BP Northpoint,1 Scanlon Drive,epping,Victoria,3076,150,,8.0,33,-37.6523847,145.0315487,bp northpoint,77.14285714
+MEL064,Eltham Leisure Centre,40 Brougham Street,eltham,Victoria,3095,"7, 7",Free,4.0,"25, 25",-37.713736,145.147673,eltham leisure centre,60.8
+MEL065,Engie - The Glen,235 Springvale Rd,glen waverley,Vic,3150,"100, 100",AUD 0.45 per kWh,1.0,"33, 2",-37.8795908,145.1622405,engie - the glen,71.42857143
+MEL066,BP pulse Diamond Creek,274 Diamond Creek Road,diamond creek,Victoria,3090,"75, 75",55c/kWh,2.0,"2, 33",-37.6733272,145.1588075,bp pulse diamond creek,68.57142857
+MEL067,BP pulse Diamond Creek,274 Diamond Creek Road,diamond creek,Victoria,3090,"75, 75",55c/kWh,2.0,"2, 33",-37.6733272,145.1588075,bp pulse diamond creek,68.57142857
+MEL068,BP Pulse,Ballarat Road,caroline springs,VIC,,150,,8.0,33,-37.7340623,144.7370017,bp pulse,77.14285714
+MEL069,Shell Coles Express Taylors Lakes,410 Melton Highway,taylor lakes,Victoria,3038,"350, 350",$AU 0.60/kWh,2.0,"33, 2",,,shell coles express taylors lakes,100.0
+MEL070,Watergardens Shopping Centre,399 Melton Highway,sydenham,Victoria,3037,22,,3.0,25,-37.6997223,144.7653295,watergardens shopping centre,62.51428571
+MEL071,Point Cook Town Centre,Dunnings Road,point cook,Victoria,3030,7,Free,1.0,1036,-37.9064862,144.7533059,point cook town centre,60.8
+MEL072,Red Rooster Vermont,,ringwood,Victoria,3134,"50, 50, 50, 50",Payment Required $0.40 per kWh parking overstay charges may apply.,4.0,"33, 2, 33, 2",-37.8158726,145.2291113,red rooster vermont,65.71428571
+MEL073,Greenvale Woolworths,200 James Mirams Drive,roxburgh park,Victoria,3064,22,,2.0,25,-37.6381563,144.9353302,greenvale woolworths,62.51428571
+MEL074,Ampcharge Sandown,Princes Highway,sandown,VIC,,180,,2.0,33,-37.9503548,145.1665966,ampcharge sandown,80.57142857
+MEL075,Bunnings Tarneit,83 Leakes Rd,tarneit,,3029,22,Free,2.0,25,-37.8321522,144.69462,bunnings tarneit,62.51428571
+MEL076,EastLand Shopping Centre,Maroondah Highway,melbourne,Victoria,3134,22,,4.0,1036,-37.8142454,144.9631732,eastland shopping centre,62.51428571
+MEL077,diamond creek community bank stadium,Main Hurstbridge Road,diamond creek,Victoria,3089,22,currently free,1.0,25,-37.6733272,145.1588075,diamond creek community bank stadium,62.51428571
+MEL078,diamond creek community bank stadium,Main Hurstbridge Road,diamond creek,Victoria,3089,22,currently free,1.0,25,-37.6733272,145.1588075,diamond creek community bank stadium,62.51428571
+MEL079,Bay Trail,Bay Trail,moordialloc,Victoria,3195,"50, 50",,1.0,"33, 2",-38.0102322,145.0929673,bay trail,65.71428571
+MEL080,Bembit Bagrook Community Centre,61 Polly Parade,tarneit,Victoria,3029,"50, 50",Free,1.0,"33, 2",-37.8321522,144.69462,bembit bagrook community centre,65.71428571
+MEL081,Scorseby Engie,,,Victoria,3179,"100, 100",AUD 0.55 per kWh,2.0,"33, 2",-37.8688729,145.2126338,scorseby engie,71.42857143
+MEL082,Jolt Bayswster,Station Street,,Victoria,3153,"25, 25","First 7kWh free, then $0.40 per kWh thereafter. $5/hr idle time",1.0,"2, 33",-37.8688729,145.2126338,jolt bayswster,62.85714286
+MEL083,Stud Park Shopping Centre,cnr Fulham Road & Stud Road,rowville,Victoria,3178,"50, 50, 50, 50",$0.40 per kWh. Parking overstay charges may apply,2.0,"33, 2, 33, 2",-37.9239267,145.2447672,stud park shopping centre,65.71428571
+MEL084,Civic Centre,45 Princes Highway,werribee,Victoria,3030,"50, 50, 50",Free,4.0,"33, 33, 2",-37.907984,144.6416748,civic centre,65.71428571
+MEL085,Ampcharge Werribee,Cherry Street,werribee,VIC,,180,,1.0,33,-37.907984,144.6416748,ampcharge werribee,80.57142857
+MEL086,Devon Street Car Park,4 - 16 Devon Street,croydon,Victoria,3136,"7, 7",Free,4.0,"25, 25",-37.7955004,145.2801507,devon street car park,60.8
+MEL087,Ampcharge Cheltenham,Cheltenham Road,keysborough,VIC,,180,,2.0,33,-38.0053607,145.1674069,ampcharge cheltenham,80.57142857
+MEL088,Strata Equity – Hunter Werribee,22 Synnot Street,werribee,Victoria,3030,"22, 22, 22",Free,3.0,"25, 25, 25",-37.907984,144.6416748,strata equity – hunter werribee,62.51428571
+MEL089,Club Trillium,11/19 Trillium Boulevard,mickleham,Victoria,3064,,,1.0,1,-37.5344793,144.9120372,club trillium,0.0
+MEL090,bp pulse Dandenong North,Heatherton Rd & Stud Rd,dandenong north,Victoria,3802,75,55c/kWh,2.0,33,-37.9558319,145.2143234,bp pulse dandenong north,68.57142857
+MEL091,Heatherton Road,Heatherton Road,dandenong,Victoria,3175,"350, 350",$0.60 / kWh,2.0,"33, 2",-37.98749,145.2147923,heatherton road,100.0
+MEL092,Ampol Kilsyth,Canterbury & Gatwick Road,kilsyth south,Victoria,3153,"150, 125",$0.69/kWh for pay-as-you-go charging.,1.0,"33, 2",-37.8315054,145.3110008,ampol kilsyth,77.14285714
+MEL093,Evie Chelsea,1 Swansea Rd,chelsea,Victoria,3196,"50, 50, 50, 50",$0.40 per kWh. Parking overstay charges may apply,1.0,"33, 2, 33, 2",-38.0497386,145.121407,evie chelsea,65.71428571
+MEL094,Evie Chirnside Park,Fletcher Street,chirnside park,VIC,,"50, 50",,1.0,"33, 2",-37.9047634,144.6530424,evie chirnside park,65.71428571
+MEL095,bp pulse Merrifield,470 Donnybrook Road,mickleham,Victoria,3064,"75, 75",55c/kWh,4.0,"33, 33",-37.5344793,144.9120372,bp pulse merrifield,68.57142857
+MEL096,Marnong Estate,2335 Mickleham Road,mickleham,Victoria,3064,22,,4.0,25,-37.5344793,144.9120372,marnong estate,62.51428571
+MEL097,Lollypop Creek Community Centre,Shipwright Parade,harpley,VIC,,50,,2.0,33,-37.9110402,144.6113082,lollypop creek community centre,65.71428571
+MEL098,Hungry Jacks,27 Gap Road,sunbury,Victoria,3429,11,$0.25/kWh,2.0,25,-37.5791363,144.7279832,hungry jacks,61.25714286
+MEL099,Cobblebank Village,201 Ferris Road,,Victoria,3338,"22, 22",Free,1.0,"2, 33",-37.8688729,145.2126338,cobblebank village,62.51428571
+MEL100,Cobblebank Stadium,Cnr Astley Dr and Bridge Rd,cobblebank,Victoria,3338,"25, 25, 22",Free,3.0,"33, 2, 25",-37.7125512,144.6040773,cobblebank stadium,62.85714286
+MEL101,Yarra Valley Nissan,460 - 462 Maroondah Highway,lilydale,Victoria,3140,11,$0.31 per kWh,2.0,25,-37.7571582,145.3458656,yarra valley nissan,61.25714286
+MEL102,McDonald’s Melton South,179-253 Exford Road,weir views,Victoria,3338,"50, 50, 50, 50",$AU 0.40/kWh,2.0,"33, 2, 33, 2",-37.7323715,144.5708942,mcdonald’s melton south,65.71428571
+MEL103,Local Village Carrum Downs,1066 Frankston - Dandenong Rd,carrum downs,VIC,3201,"50, 50, 50, 50",$0.45 per kWh. Parking overstay charges may apply,2.0,"33, 2, 33, 2",-38.1003312,145.1788657,local village carrum downs,65.71428571
+MEL104,CTR Whittlesea,74A Church St,whittlesea,Vic,3757,"50, 50","0.40/kWh + While parked, not charging: 4.00/hr after 60 mins",1.0,"33, 2",-37.5121301,145.1177321,ctr whittlesea,65.71428571
+MEL105,City of Casey,Princes Highway,city of casey,Victoria,3805,7,Free,2.0,25,-38.0266156,145.3045626,city of casey,0.8
+MEL106,Lynbrook Village,75S Lynbrook Boulevard,lynbrook,Victoria,3975,"50, 50, 50, 50",$0.40 per kWh. Parking overstay charges may apply,2.0,"33, 2, 2, 33",-38.0558639,145.2561128,lynbrook village,65.71428571
+MEL107,ENGIE - Bayside Centre,15 Beach Street,frankston,VIC,3199,50,AUD 0.45 per kWh,1.0,33,-38.150925,145.142239,engie - bayside centre,65.71428571
+MEL108,Yarra Ranges Council,45 Bell St,yarra glen,Victoria,3775,"50, 50",Payment Required $0.40 per kWh (at all times),1.0,"33, 2",-37.6573475,145.3743964,yarra ranges council,65.71428571
+MEL109,Engie Monash University,McMahons Road,melbourne,Victoria,3199,"120, 120",,3.0,"2, 33",-37.8142454,144.9631732,engie monash university,73.71428571
+MEL110,Evie Cranbourne Homemaker Centre,South Gippsland Highway,cranbourne,Victoria,3977,"50, 50",,1.0,"33, 2",-38.0997308,145.2807256,evie cranbourne homemaker centre,65.71428571
+MEL111,St Huberts Winery,1/3 St Huberts Road,coldstream,Victoria,3770,11,$0.31/kWh,6.0,25,-37.7291014,145.378424,st huberts winery,61.25714286
+MEL112,BP Pulse Cranbourne,Cranbourne-Frankston Road,cranbourne west,Victoria,3977,"75, 75",$0.55/kWh,1.0,"33, 2",-38.102241,145.2517182,bp pulse cranbourne,68.57142857
+MEL113,Jolt Berwick Springs Hotel,Clyde Road,berwick,VIC,,"50, 50",,1.0,"33, 2",-38.0398297,145.3451089,jolt berwick springs hotel,65.71428571
+MEL114,Engie Cranbourne Park,Cranbourne Drive,,Victoria,3977,"120, 120",,3.0,"2, 33",-37.8688729,145.2126338,engie cranbourne park,73.71428571
+MEL115,Wallan,85 High Street,wallan,Victoria,3756,"50, 50",,1.0,"33, 2",-37.5040691,145.1090152,wallan,65.71428571
+MEL116,ClydeStone Square,Matterhorn Drive ,clyde north,VIC,3978,"50, 50",AUD 0.40 per kWh,1.0,"33, 2",-38.1028681,145.3302814,clydestone square,65.71428571
+MEL117,Evie Mornington,Cromwell Street,mornington,Victoria,3931,"50, 50, 50",,2.0,"33, 2, 33",-38.227699,145.0609375,evie mornington,65.71428571
+MEL118,Mornington Super Charger,Mornington-Tyabb Road,,Victoria,3931,250,,6.0,33,-37.8688729,145.2126338,mornington super charger,88.57142857
+MEL119,RACV Healsville,Healsville - Yarra Glen Road,healsville,VIC,,"7, 50",,7.0,"25, 33",-37.6635261,145.4817549,racv healsville,65.71428571
+MEL120,Evie Healsville,River Street,healsville,VIC,,"50, 50",,1.0,"33, 2",-37.6635261,145.4817549,evie healsville,65.71428571
+MEL121,North Bellarine Aquatic Centre,30 Peninsula Drive,curlewis,Victoria,3222,"50, 50, 50, 50",$0.45/kWh,2.0,"33, 2, 33, 2",-37.8148997,145.1062282,north bellarine aquatic centre,65.71428571
+MEL122,Victoria Street,Victoria Street,macedon,Victoria,3440,"50, 50",$0.45 per kWh,1.0,"33, 2",-37.7726251,145.1131159,victoria street,65.71428571
+MEL123,50 Learmonth Street,50 Learmonth Street,queenscliff,Victoria,3225,"50, 50, 50, 50",$0.45 per kWh,2.0,"33, 2, 33, 2",-38.3363033,144.7453366,50 learmonth street,65.71428571
+MEL124,Evie Yarra Juncion,Park Road,yarra junction,VIC,,"50, 50",,1.0,"33, 2",-37.7821693,145.6150255,evie yarra juncion,65.71428571
+MEL125,Kilmore Library,12 Sydney Street,kilmore,Victoria,3764,"25, 25",$0.40 per kWh,1.0,"33, 2",-37.6750485,144.9242188,kilmore library,65.71428571
+MEL126,Geelong Supercharger,470-510 Princes Highway,corio,Victoria,3214,250,$0.78/kWh,6.0,33,-37.9623312,145.1346687,geelong supercharger,65.71428571
+MEL127,Hastings,34 King Street,hastings,Victoria,3915,"50, 50",Payment Required $0.45 per kWh,1.0,"33, 2",-38.3056058,145.1859934,hastings,65.71428571
+MEL128,Kingston Village Square,Grubb Rd,ocean grove,Victoria,3226,"50, 50, 22",Payment Required $0.25 per kWh (at all times),3.0,"33, 2, 25",-38.170954,145.0972517,kingston village square,65.71428571
+MEL129,Sorrento ,860 Melbourne Rd,,Victoria,3943,"50, 50, 50, 50","0.40/kWh + While parked, not charging: 4.00/hr after 60 mins",2.0,"33, 2, 33, 33",-37.8688729,145.2126338,sorrento,65.71428571
+MEL130,Rosebud RSL,2 Dunsmuir Drive,,Victoria,3940,"None, 50, None",,2.0,"0, 2, 1",-37.8688729,145.2126338,rosebud rsl,65.71428571
+MEL131,bp pulse Rye,Cnr Weir St & Point Nepean Road,rye,Victoria,3941,75,55c/kWh,2.0,33,-38.3821684,144.8099264,bp pulse rye,65.71428571
+MEL132,High St Parking,124 High Street,woodend,Victoria,3442,"50, 50",$0.40 per kWh. Parking overstay charges may apply,2.0,"33, 2",-37.7934621,144.5595902,high st parking,65.71428571
+MEL133,Geelong West Veledrome,Weddell Road,geelong west,VIC,,22,,2.0,25,-37.8054508,144.879879,geelong west veledrome,65.71428571
+MEL134,Bru4U Geelong ,4/100 Barwon Terrace,geelong,Victoria,3220,22,free,1.0,1036,-37.8396934,145.008539,bru4u geelong,65.71428571
+MEL135,Broadford Library,113 High Street,broadford,Victoria,3658,"25, 25",$0.40 per kWh,1.0,"33, 2",-37.6362329,145.0265708,broadford library,65.71428571
+MEL136,RACV Solar Grovedale,8 Lewalan Street,grovedale,Victoria,3216,22,$0.25 per kWh,1.0,25,-37.8171289,145.0949242,racv solar grovedale,65.71428571
+MEL137,Blue Tongue Industries,8 Lewalan St,grovedale,Victoria,3216,22,$0.30 per kWh,1.0,25,-37.8171289,145.0949242,blue tongue industries,65.71428571
+MEL138,Evie Barabool Heights Plaza,Province Blvd,highton,VIC,,"50, 50",,4.0,"33, 2",-37.8163364,145.0687942,evie barabool heights plaza,65.71428571
+MEL139,Armstrong Creek East Community Hub,46 Central Boulevard,armstrong creek,Victoria,3217,"22, 22, 22",Free,6.0,"25, 25, 25",-37.6289691,145.8640385,armstrong creek east community hub,65.71428571
+MEL140,Leisurelink Aquatic & Recreation Centre,240 Pioneer Rd,waurn ponds,VIC,3216,"50, 50, 50, 50",$0.45 per kWh,2.0,"33, 2, 33, 2",,,leisurelink aquatic & recreation centre,65.71428571
+MEL141,Armstrong Creek Shopping Centre,540 Torquay Rd,armstrong creek,Victoria,3216,7,Free,2.0,25,-37.6289691,145.8640385,armstrong creek shopping centre,65.71428571
+MEL142,Deakin University Waurn Ponds,Carpark 1 Kings Way,,Victoria,3216,"22, 22",Free,4.0,"25, 25",-37.8688729,145.2126338,deakin university waurn ponds,65.71428571
+MEL143,Trentham Visitor Information Centre,Albert Street,trentham,Vic,,"50, 50",,2.0,"33, 2",-37.7000743,144.8908894,trentham visitor information centre,65.71428571
+MEL144,Evie Flinders,33 Cook St,flinders,VIC,3929,"50, 50",$0.45 per kWh,1.0,"33, 2",-38.473312,145.0187057,evie flinders,65.71428571
+MEL145,Evie Bannockburn,High Street,bannockburn,VIC,,"50, 50",,1.0,"33, 2",-37.732231,145.1014989,evie bannockburn,65.71428571
+MEL146,Evie Cowes,Chapel Street,cowes,Vic,,"50, 50",,4.0,"33, 2",-37.7092585,144.7872516,evie cowes,65.71428571
+MEL147,Kyneton,1 Hutton Street,kyneton,Victoria,3444,"50, 50",Payment Required $0.40 per kWh parking overstay charges may apply.,1.0,"33, 2",-37.718862,145.0231115,kyneton,65.71428571
+MEL148,Evie Meredith,12 Wallace St,meredith,VIC,3333,"50, 50",$0.45 per kWh,1.0,"33, 2",-37.7657176,145.1589446,evie meredith,65.71428571
+MEL149,Yea Supercharger,10 High St,yea,Victoria,3717,135,$0.78/kWh,4.0,33,-37.4927455,145.1572676,yea supercharger,65.71428571
+MEL150,Penguin Parade Car Park,995 Ventor Rd,summerlands,VIC,3922,"50, 50",AUD 0.37 per kWh,1.0,"33, 2",,,penguin parade car park,65.71428571
+MEL151,RACV Torquay Resort,1 Great Ocean Road,jan juc,Victoria,3223,"50, 50, 350, 350, 350, 350, 50, 50","Payment Required, Discount for NRMA/RACV members",7.0,"33, 2, 33, 2, 33, 2, 33, 2",,,racv torquay resort,65.71428571
+MEL152,Newling Reserve,Newling Drive,,Victoria,3240,7,,1.0,25,-37.8688729,145.2126338,newling reserve,65.71428571
+MEL153,Wine by Sam,69 Anzac Ave,seymour,Vic,3660,"25, 25",AUD 0.40 per kWh,1.0,"33, 2",-38.0021533,145.0974829,wine by sam,65.71428571
+MEL154,Daylesford Town Hall,76 Vincent St,daylesford, VIC,3460,"25, 25",Payment Required $0.35 per kWh (at all times),1.0,"33, 2",-37.627671,145.0254821,daylesford town hall,65.71428571
+MEL155,Hepburn Springs Bathhouse,1 Mineral Springs Reserve Road,hepburn springs,Victoria,3461,"50, 50",$0.45 per kWh,2.0,"33, 2",-37.7481414,144.739508,hepburn springs bathhouse,65.71428571
+MEL156,Shell Coles Express Warrenheip,9395 Western Highway,warrenheip,VIC ,3352,"350, 350",$0.60 per kWh. Parking overstay charges may apply,2.0,"2, 33",,,shell coles express warrenheip,65.71428571
+MEL157,Evie Warrigul,Queen Street,warragul,Victoria,3820,"50, 50",,1.0,"33, 2",-37.6694522,144.9350241,evie warrigul,65.71428571
+MEL158,Evie Alexandra,8 - 10 Webster Street,alexandra,Victoria,3714,"50, 50",$0.45 per kWh,1.0,"33, 2",-37.8212422,144.9736634,evie alexandra,65.71428571
+MEL159,Dindi Naturals,6572 Maroondah Highway,yarck,Victoria,3719,7,Free,1.0,25,-37.5772947,144.7161349,dindi naturals,65.71428571
+MEL160,Ampol Foodary,Princes Highway,winchelsea,Victoria,,"180, 100",$0.60/kWh for pay-as-you-go charging.,1.0,"33, 2",,,ampol foodary,65.71428571
+MEL161,RACV Ballarat,Davies Street,ballarat,Victoria,3350,350,,4.0,33,-37.8050281,144.9457629,racv ballarat,65.71428571
+MEL162,Heathcote Visitor Centre,126 High Street ,heathcote,Victoria ,3523,"50, 50",$0.50/kWh,1.0,"33, 2",-37.7326399,144.733868,heathcote visitor centre,65.71428571
+MEL163,Coles Sebastopol,Midland Highway,sebastopol,VIC,,22,,2.0,25,-37.8709314,145.0193037,coles sebastopol,65.71428571
+MEL164,CTR Korumburra,Commercial Street,korumburra,Victoria,3950,"50, 50",,1.0,"33, 2",,,ctr korumburra,65.71428571
+MEL165,Evie Korumburra,Mine Road,korumburra,Victoria,3950,"50, 50",,1.0,"33, 2",,,evie korumburra,65.71428571
+MEL166,Midlands Golf Club,330 Heinz Lane,invermay park,Victoria,3350,"22, 22, 22",$0.35 per kWh,6.0,"25, 25, 25",,,midlands golf club,65.71428571
+MEL167,Evie Caltex Jones Street,Jones Street,avenel,Victoria,3664,"350, 350",,1.0,"33, 2",-37.8958126,144.6304628,evie caltex jones street,65.71428571
+MEL168,Creswick Vicitors Information Centre,41-43 Albert Street,creswick,VIC,3363,"50, 50",AUD 0.45 per kWh,1.0,"33, 2",-37.8191777,145.0167539,creswick vicitors information centre,65.71428571
+MEL169,Gillies Street North,Gillies Street North,ballarat,City of Ballarat,3355,6.6,Free,2.0,1,-37.8050281,144.9457629,gillies street north,65.71428571
+MEL170,Ballarat Supercharger,333 Gillies St,ballarat,,3355,120,AUD 0.42/kWh;other tariffs for older cars,6.0,33,-37.8050281,144.9457629,ballarat supercharger,65.71428571
+MEL171,Castlemaine Market Building Car Park,33 Forest St,castlemaine,Victoria,3450,"50, 50",$0.40 per kWh parking overstay charges may apply.,2.0,"2, 33",-37.6303914,145.0273223,castlemaine market building car park,65.71428571
+MEL172,Tesla Supercharger Lucas,Lilburne Street,lucas,Victoria,,250,$0.78/kWh,10.0,33,,,tesla supercharger lucas,65.71428571
+MEL173,High Street,7 High Street,harcourt,Victoria,3453,"25, 25",$0.40 per kWh. Parking overstay charges may apply,1.0,"33, 2",-37.8374349,145.1115353,high street,65.71428571
+MEL174,The Cape Display Centre,17 Sunlight Boulevard,cape paterson,Victoria,3995,50,$0.40/kWh,2.0,33,,,the cape display centre,65.71428571
+MEL175,CTR Leongatha,Pern Lane,leongatha,Victoria,3953,"50, 50",,1.0,"2, 33",-38.1199326,145.3182716,ctr leongatha,65.71428571
+MEL176,Evie Leongatha,McCartin Street,leongatha,Victoria,3953,"50, 50",,1.0,"2, 33",-38.1199326,145.3182716,evie leongatha,65.71428571
+MEL177,Lorne Visitor Information Centre,15 Mountjoy Parade,lorne,VIC,3232,7,Free,1.0,1,-37.6734151,145.0272333,lorne visitor information centre,65.71428571
+MEL178,Chargefox Moe,Lloyd Street,moe,Victoria,3825,"50, 50, 350, 50, 50",40c/kWh,4.0,"2, 33, 33, 33, 2",-37.6132253,145.0980154,chargefox moe,65.71428571
+MEL179,CTR Meeniyan,Tompkins Road,meeniyan,VIC,,50,,2.0,33,,,ctr meeniyan,65.71428571
+MEL180,Bendigo Supercharger,Condon Street,bendigo,VIC,3550,120,AUD 0.42/kWh;other tariffs for older cars,6.0,33,-37.720574,145.047976,bendigo supercharger,65.71428571
+MEL181,Euroa Supercharger,46 Kirkland Ave,euroa,,,120,AUD 0.42/kWh;other tariffs for older cars,6.0,33,-37.7639651,144.8287004,euroa supercharger,65.71428571
+MEL182,Chargefox - Euroa,Euroa Service Centre,euroa,Vic,3666,"100, 350, 50, 50, 350, 350, 50, 350",,4.0,"2, 33, 2, 33, 33, 2, 33, 2",-37.7639651,144.8287004,chargefox - euroa,65.71428571
+MEL183,Bendigo Kangan Institute,62-104 Charleston Road,east bendigo,Victoria,3550,"80, None",$0.40/kWh,2.0,"33, 25",,,bendigo kangan institute,65.71428571
+MEL184,Bendigo Art Gallery,62 View Street,bendigo,Victoria,3550,"50, 50, 50, 50",$0.40 per kWh. Parking overstay charges may apply,2.0,"2, 33, 2, 33",-37.720574,145.047976,bendigo art gallery,65.71428571
+MEL185,Colac Supercharger,144-158 Bromfield Street,colac,Victoria,3250,250,$0.78/kWh,3.0,33,-38.0761008,145.1472438,colac supercharger,65.71428571
+MEL186,CTR Maryborough,Station St,maryborough,VIC,3465,"50, 50",Payment Required $0.40 per kWh parking overstay charges may apply.,2.0,"33, 2",-37.850401,144.5882783,ctr maryborough,65.71428571
+MEL187,NRMA Marong,32 High Street,marong,Victoria,3515,"180, 180",66c / 60c for members,4.0,"33, 2",-37.793821,144.5506713,nrma marong,65.71428571
+MEL188,CTR Foster,Station Road,foster,VIC,,50,,2.0,33,-37.5902461,144.9342136,ctr foster,65.71428571
+MEL189,Tesla Supercharger Traralgon,Grey Street,traralgon,Vic,,250,$0.66/kWh,4.0,33,,,tesla supercharger traralgon,65.71428571
+MEL190,Charging the Regions Traralgon,49 Breed St,,Victoria,3844,"50, 50",$0.45 per kWh,1.0,"33, 2",-37.8688729,145.2126338,charging the regions traralgon,65.71428571
+MEL191,Evie Traralgon,Princes Street,traralgon,Vic,,"50, 50",,2.0,"33, 2",,,evie traralgon,65.71428571
+MEL192,Evie Beaufort,19 Willoby St,beaufort,Vic,3373,"50, 50, 50",$0.45 per kWh. Parking overstay charges may apply,4.0,"33, 2, 33",-38.0067519,145.1779706,evie beaufort,65.71428571
+MEL193,Newbridge Public Hall,Cnr Burke St & Wimmera Hwy,newbridge,Victoria,3551,"25, 25",Payment Required $0.40 per kWh parking overstay charges may apply.,1.0,"2, 33",-37.9715559,145.124582,newbridge public hall,65.71428571
+MEL194,Evie Avoca,High Street,avoca,VIC,,50,,2.0,33,-37.6146532,145.0933095,evie avoca,65.71428571
+MEL195,Tatura,104 Hogan St,tatura,Victoria,3616,"25, 25",$0.40 per kWh (at all times),2.0,"2, 33",-38.1379689,145.1628252,tatura,65.71428571
+MEL196,Heyfield Apex Park,Davis St & George Street,heyfield,Victoria,3858,50,$0.40/kWh,2.0,33,-37.8237397,144.7132186,heyfield apex park,65.71428571
+MEL197,CTR Mooroopna,"77 Midland Hwy,",mooroopna,VIC,3629,"50, 50",$0.40 per kWh. Parking overstay charges may apply,2.0,"2, 33",-37.7852115,144.5605697,ctr mooroopna,65.71428571
+MEL198,Shepparton Observation Tower,"8 Fraser St, ",shepparton,VIC ,3630,"50, 50",$0.40 per kWh. Parking overstay charges may apply,2.0,"2, 33",-37.7884948,144.5582739,shepparton observation tower,65.71428571
+MEL199,Evie Camperdown,2 Bath Street,camperdown,Victoria,3260,"50, 50",$0.45 per kWh,1.0,"33, 2",-37.764834,144.8219857,evie camperdown,65.71428571
+MEL200,Evie Benalla,Denny Street,benalla,Victoria,3672,"50, 50",,1.0,"33, 2",-37.8059585,144.9432551,evie benalla,65.71428571
+MEL201,Inglewood Town Hall,Storm Lane,inglewood,Victoria,3517,"50, 50",$0.40 per kWh. Parking overstay charges may apply,1.0,"33, 2",-37.7924237,144.5498933,inglewood town hall,65.71428571
+MEL202,Chargefox Yarram,156 Grant Street,yarram,Victoria,3971,"50, 50",Payment Required $0.40 per kWh (at all times),1.0,"33, 2",-38.1353489,145.1666795,chargefox yarram,65.71428571
+MEL203,Evie Maffra,4 Purdy Ln,maffra,VIC,3860,"50, 50",$0.45 per kWh,1.0,"33, 2",-37.6601922,144.9408062,evie maffra,65.71428571
+MEL204,Port of Sale,Canal Road,sale,VIC,3850,"50, 50",$0.40 ,2.0,"2, 33",-37.87076,145.65249,port of sale,65.71428571
+MEL205,Mansi on Raymond,476 Raymond Street,sale,Victoria,3850,22,$0.40/kWh,1.0,25,-37.87076,145.65249,mansi on raymond,65.71428571
+MEL206,Queen Street,Queen Street,,Victoria,3377,22,,1.0,1036,-37.8688729,145.2126338,queen street,65.71428571
+MEL207,CTR Echuca [Evie],438 High Street,echuca,Victoria,3564,"50, 50, 25, 25",$0.40 ,1.0,"2, 33, 33, 2",-37.7821653,144.5503709,ctr echuca [evie],65.71428571
+MEL208,Elizabeth Park,62 High St,ararat,Victoria,3397,22.8,0,2.0,25,-38.0625563,145.5506248,elizabeth park,65.71428571
+MEL209,Evie Ararat,Western Highway,ararat,Victoria,3377,"50, 50",,1.0,"33, 2",-38.0625563,145.5506248,evie ararat,65.71428571
+MEL210,NRMA Ararat,Taylor Street,ararat,Victoria,3377,"150, 150",66c / 60c for members,4.0,"33, 2",-38.0625563,145.5506248,nrma ararat,65.71428571
+MEL211,Glenrowan South [bp pulse],Hume Freeway,glenrowan,Victoria,3675,"75, 75",55c/kWh,2.0,"2, 33",,,glenrowan south [bp pulse],65.71428571
+MEL212,Glenrowan North [bp pulse],Hume Freeway,glenrowan,Victoria,3675,"75, 75, 75",$0.55/kWh,4.0,"33, 33, 2",,,glenrowan north [bp pulse],65.71428571
+MEL213,CTR Wedderburn CV008,67 High St,wedderburn,Victoria,3518,"50, 50","0.40/kWh + While parked, not charging: 4.00/hr after 60 mins",2.0,"33, 2",-37.7917062,144.5494853,ctr wedderburn cv008,65.71428571
+MEL214,Evie St Arnaud,Golden Street,st arnaud,Vic,,"50, 50",,2.0,"33, 2",-37.792199,144.5486025,evie st arnaud,65.71428571
+MEL215,Evie Wangaratta,2 - 6 Docker St,wangaratta,Victoria,3676,"50, 50",$0.45 per kWh,1.0,"33, 2",-37.787905,144.5592084,evie wangaratta,65.71428571
+MEL216,Ovens Supercharger,4994 Great Alpine RD,ovens,,,120,AUD 0.42/kWh;other tariffs for older cars,4.0,33,-37.8119107,144.8154073,ovens supercharger,65.71428571
+MEL217,Evie Stawell,Skene Street,stawell,Victoria,3380,"50, 50",,1.0,"33, 2",-38.1087492,145.2895959,evie stawell,65.71428571
+MEL218,Tesla Superchargers Stawell,Church Street,stawell,Victoria,3380,250,$0.66/kWh,12.0,33,-38.1087492,145.2895959,tesla superchargers stawell,65.71428571
+MEL219,Feathertop Winery,6619 Great Alpine Road,porepunkah,Victoria,,22,Free,2.0,1036,-37.5979507,145.0753657,feathertop winery,65.71428571
+MEL220,Evie - Bright,24 Wills St,bright,Vic,3741,"50, 50",$0.45 per kWh,1.0,"33, 2",-37.6245646,145.0136597,evie - bright,65.71428571
+MEL221,Evie Yarrawonga,6 - 12 Hovell Street,yarrawonga,VIC,3730,"50, 50",$0.45 per kWh. Parking overstay charges may apply,1.0,"33, 2",-37.9133914,145.1301259,evie yarrawonga,65.71428571
+MEL222,The Sebel Silverwoods Yarrawong,40 Silverwoods Blvd,yarrawonga,Victoria,3730,"50, 50",$0.30 per kWh (at all times),1.0,"33, 2",-37.9133914,145.1301259,the sebel silverwoods yarrawong,65.71428571
+MEL223,Warnambool Supercharger,21-23 Gateway Road,warnambool,Victoria,3280,250,$0.78/kWh,3.0,33,,,warnambool supercharger,65.71428571
+MEL224,Warnambool Tourist Information Centre,91 Merri Street,warnambool,Victoria,2380,"50, 50",payment may be required,1.0,"2, 33",,,warnambool tourist information centre,65.71428571
+MEL225,Callaghan Motors,1165 Raglan Parade,warnambool,Victoria,3280,22,$0.50 per kWh,2.0,25,,,callaghan motors,65.71428571
+MEL226,Evie Dunkeld,83 Wills St,dunkeld,Victoria,3294,"50, 50",$0.45 per kWh,1.0,"33, 2",-37.766817,144.8245105,evie dunkeld,65.71428571
+MEL227,Gippsland Solar,35 Payne Street,bairnsdale,Vic,,22,$0.25 per kWh,1.0,25,,,gippsland solar,65.71428571
+MEL228,Evie Cohuna,King George St,cohuna,VIC,3568,"50, 50",$0.40 per kWh,1.0,"33, 2",-37.7062908,144.8039161,evie cohuna,65.71428571
+MEL229,Bairnsdale Chargefox,Nicholson Street Carpark,bairnsdale,Vic,,"50, 50",AUD 0.40 per kWh,1.0,"33, 2",,,bairnsdale chargefox,65.71428571
+MEL230,Bairnsdale,9 Francis Street,bairnsdale,Victoria,3875,"50, 50",$0.45 per kWh. Parking overstay charges may apply,1.0,"33, 2",,,bairnsdale,65.71428571
+MEL231,Coles Bairnsdale,35 Nicholson St,bairnsdale,Victoria,3875,250,0.70c/kwh,3.0,33,,,coles bairnsdale,65.71428571
+MEL232,Bairnsdale Coles,35 Nicholson Street,bairnsdale,Victoria,3875,250,$0.70 per kWh,3.0,33,,,bairnsdale coles,65.71428571
+MEL233,Yackandandah Community Development Company,16 Windham Street,yackandandah,Vic,3749,"50, 50",AUD 0.54 per kWh (3pm-10am) AUD 0.37 per kWh (10am - 3pm),2.0,"33, 2",,,yackandandah community development company,65.71428571
+MEL234,Omeo - Tongio Road,Tongio Road,omeo,Vic,3898,"50, 50",AUD 0.40 per kWh,2.0,"33, 2",-37.8800365,144.6170498,omeo - tongio road,65.71428571
+MEL235,Wycheproof,Fairview Street,wycheproof,Victoria,3527,"50, 50",$0.40 per kWh. Parking overstay charges may apply,2.0,"33, 2",-37.5432106,145.0085889,wycheproof,65.71428571
+MEL236,NRMA Wycheproof,361 Broadway,wycheproof,Victoria,3527,"150, 150",66c / 60c for members,4.0,"33, 2",-37.5432106,145.0085889,nrma wycheproof,65.71428571
+MEL237,Chargefox - Barnawartha North,Murray Valley Hwy,barnawartha north,Vic,3690,"50, 50, 100, 350, 350, 350, 50, 50",AUD 0.65/kWh,4.0,"2, 33, 2, 33, 33, 2, 33, 2",,,chargefox - barnawartha north,65.71428571
+MEL238,Evie Kerang,1 -3 Albert St,kerang,VIC,3579,"50, 50",$0.40 per kWh. Idle fee $4 per hour,1.0,"33, 2",-37.7200123,145.0271063,evie kerang,65.71428571
+MEL239,Foodworks Baranduda,34 Verbena Street,baranduda,Victoria,3691,11,$0.23/kWh,4.0,1036,,,foodworks baranduda,65.71428571
+MEL240,Deni RSL,72 End St,deniliquin,NSW,2710,22,FREE,8.0,25,,,deni rsl,65.71428571
+MEL241,Wodonga Supercharger,5-13 Havelock Street,wodonga,,3690,120,AUD 0.42/kWh;other tariffs for older cars,6.0,33,-37.6755673,144.9898056,wodonga supercharger,65.71428571
+MEL242,Evie Hamilton,Scoresby Street,hamilton,VIC,,"50, 50",,2.0,"33, 2",-37.8758579,145.1284529,evie hamilton,65.71428571
+MEL243,Tesla Supercharger Albury,Stanley Street,albury,New South Wales,2640,250,$0.69/kWh,12.0,33,-37.5442344,145.0076408,tesla supercharger albury,65.71428571
+MEL244,Albury Waste Management Centre,565 Mudge St,hamilton valley,New South Wales,2641,"50, 50",$0.15 per kWh (at all times) on the Chargefox network,1.0,"2, 33",,,albury waste management centre,65.71428571
+MEL245,Wuality Resort Siesta,422 Wagga Road,lavington,New South Wales,2641,"7, 7, 7, 7",Free,4.0,"25, 25, 25, 25",-37.603329,144.9253134,wuality resort siesta,65.71428571
+MEL246,Evie Lakes Entrance,2 Marine Pde,lakes entrance,VIC,3909,"50, 50",$0.45 per kWh. Parking overstay charges may apply,1.0,"33, 2",,,evie lakes entrance,65.71428571
+MEL247,Lakes Entrance RSL,221 The Esplanade,lakes entrance,Victoria,3909,22,30c/kWh,1.0,25,,,lakes entrance rsl,65.71428571
+MEL248,RACV - Horsham,126 Baillie St,horsham,Victoria,3400,"350, 50, 350, 50",,4.0,"33, 33, 2, 2",-38.102184,145.2949057,racv - horsham,65.71428571
+MEL249,Horsham Supercharger,126 Wilson St,horsham,,3400,250,AUD 0.42/kWh;other tariffs for older cars,3.0,33,-38.102184,145.2949057,horsham supercharger,65.71428571
+MEL250,NRMA Jerilderie,Powell Street,jerilderie,New South Wales,2716,"50, 50",FREE,1.0,"33, 2",-38.0097571,145.326648,nrma jerilderie,65.71428571
+MEL251,Evie Warracknabeal,18 - 20 Woolcock Street,warracknabeal,VIC,3393,"50, 50",$0.45 per kWh,1.0,"33, 2",-37.7853138,144.5406661,evie warracknabeal,65.71428571
+MEL252,Evie Portland,Henty Street,portland,VIC,,"50, 50",,2.0,"33, 2",-37.9359053,145.2051222,evie portland,65.71428571
+MEL253,Lochiel Street,Lochiel Street,dimboola,Victoria,3414,22,,1.0,25,-37.6804576,144.9123982,lochiel street,65.71428571
+MEL254,CTR Swan Hill CV002,135 Curlewis Street,swan hill,Victoria,3585,"50, 50",Payment Required $0.40 per kWh parking overstay charges may apply.,2.0,"33, 2",,,ctr swan hill cv002,65.71428571
+MEL255,Orbost Chargefox,Wolseley Street,orbost,Victoria,,"50, 50",AUD 0.40 per kWh,1.0,"33, 2",-37.8379885,145.2121845,orbost chargefox,65.71428571
+MEL256,Tesla Supercharger Holbrook,Swift Street,holbrook,New South Wales,2644,250,$0.69 / kWh,1.0,33,-37.7702694,144.9361781,tesla supercharger holbrook,65.71428571
+MEL257,Holbrook [NRMA],Submarine Park,holbrook,NSW,,"50, 50",,1.0,"33, 2",-37.7702694,144.9361781,holbrook [nrma],65.71428571
+MEL258,CTR Sea Lake,111 Best Street,sea lake,Victoria,3533,"50, 50",Payment Required $0.40 per kWh parking overstay charges may apply.,2.0,"2, 33",,,ctr sea lake,65.71428571
+MEL259,Evie Dartmoor,73 Greenham St,dartmoor,VIC,3304,"50, 50",$0.45 per kWh,1.0,"33, 2",-37.705345,144.6794568,evie dartmoor,65.71428571
+MEL260,Anzac Ave Parking,12 Anzac Ave,edenhope,VIC ,3318,"50, 50",Payment Required $0.40/kWh,1.0,"33, 2",-37.8054372,145.3280915,anzac ave parking,65.71428571
+MEL261,Nelson St Parking/Charging,111 Nelson St,nhill,Victoria,3418,22,Free,2.0,25,-37.6730847,144.9282577,nelson st parking/charging,65.71428571
+MEL262,Snowy River Ave Car Park,3 Snowy River Ave,jindabyne,NSW,2627,"50, 50",Chargers free of charge for now but will require you to be a member in the future or you will need to pay per charge.,2.0,"33, 2",-37.6403391,145.084278,snowy river ave car park,65.71428571
