@@ -1,0 +1,44 @@
+function onFormSubmit(e) {
+  try {
+    if (!e || !e.values) {
+      Logger.log("Missing event data");
+      return;
+    }
+
+    var formData = e.values;
+
+    var payload = {
+  timestamp: formData[0],
+  weekly_km: parseInt(formData[1]), // convert to integer
+  trip_length: formData[2],
+  driving_frequency: formData[3],
+  driving_type: formData[4],
+  road_trips: formData[5],
+  car_ownership: formData[6],
+  fuel_efficiency: parseFloat(formData[7]), // convert to float
+  monthly_fuel_spend: parseFloat(formData[8]), // convert to float
+  home_charging: formData[9],
+  solar_panels: formData[10],
+  charging_preference: formData[11],
+  budget: formData[12],
+  priorities: formData[13],
+  postcode: formData[14],
+};
+
+    Logger.log("Payload: " + JSON.stringify(payload));
+
+    var options = {
+      method: 'post',
+      contentType: 'application/json',
+      payload: JSON.stringify(payload)
+    };
+
+    var mongoWebhookURL = 'https://evat-pkbt.onrender.com/api/save';
+    var response = UrlFetchApp.fetch(mongoWebhookURL, options);
+
+    Logger.log("Webhook response: " + response.getContentText());
+
+  } catch (error) {
+    Logger.log("Error occurred: " + error.toString());
+  }
+}
