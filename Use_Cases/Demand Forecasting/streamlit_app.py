@@ -3,6 +3,7 @@
 #   streamlit run streamlit_app.py
 
 import os
+import json
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -182,7 +183,6 @@ def infer_freq_from_last_two(ts: pd.Series) -> pd.Timedelta:
         return ts.iloc[-1] - ts.iloc[-2]
     return pd.Timedelta(days=1)
 
-
 # ===================== LOAD DATA =====================
 hist_path = "cluster_history.csv"
 df_hist = load_history(hist_path)
@@ -194,7 +194,7 @@ if TARGET_COL not in df_hist.columns:
     st.stop()
 
 # ===================== SIDEBAR =====================
-st.sidebar.subheader("Cluster  ID")
+st.sidebar.subheader("Cluster")
 # Allow only 0..4 if present in data *and* artifacts actually exist
 allowed = {0, 1, 2, 3, 4}
 present = set(df_hist[CLUSTER_COL].unique().tolist()) & allowed
@@ -207,12 +207,10 @@ geo_cluster = st.sidebar.selectbox("Cluster (0–4)", clusters_present)
 
 # ---------- External factors (override) ----------
 st.sidebar.subheader("External factors (override)")
-# Show booleans to the user…
+# Booleans for UX; convert to 0/1 for model
 ph_flag = st.sidebar.checkbox("Public holiday", value=False)
 sh_flag = st.sidebar.checkbox("School holiday", value=False)
 we_flag = st.sidebar.checkbox("Weekend", value=False)
-
-# Convert to ints (0/1) for the model
 ph, sh, we = map(int, (ph_flag, sh_flag, we_flag))
 
 tavg = st.sidebar.slider("Avg_Temp (°C)",     -5.0, 45.0, 24.0, 0.5)
@@ -220,7 +218,6 @@ havg = st.sidebar.slider("Avg_Humidity (%)",   0.0, 100.0, 60.0, 1.0)
 wavg = st.sidebar.slider("Avg_Wind (m/s)",     0.0, 20.0,  3.0, 0.2)
 
 # --- Capacity & alert settings ---
-# sensible default: 90th percentile of the chosen cluster's last 60 days
 hist_cluster = df_hist[df_hist[CLUSTER_COL] == geo_cluster].sort_values(TIME_COL)
 default_cap = int(hist_cluster[TARGET_COL].tail(60).quantile(0.90)) if len(hist_cluster) else 1_000_000
 
@@ -257,9 +254,9 @@ if len(seed_raw) < SEQ_LEN:
     st.stop()
 
 # Override EXOG inside the input window using the sidebar controls
-seed_raw.loc[:, "public_holiday"] = int(ph)
-seed_raw.loc[:, "school_holiday"]  = int(sh)
-seed_raw.loc[:, "is_weekend"]      = int(we)
+seed_raw.loc[:, "public_holiday"] = ph
+seed_raw.loc[:, "school_holiday"]  = sh
+seed_raw.loc[:, "is_weekend"]      = we
 seed_raw.loc[:, "Avg_Temp"]        = float(tavg)
 seed_raw.loc[:, "Avg_Humidity"]    = float(havg)
 seed_raw.loc[:, "Avg_Wind"]        = float(wavg)
@@ -278,9 +275,9 @@ else:
     # Legacy one-step model: recursive roll-out using constant EXOG overrides
     last_row = seed_raw.tail(1).iloc[0]
     overrides = {
-        "public_holiday": int(ph),
-        "school_holiday": int(sh),
-        "is_weekend": int(we),
+        "public_holiday": ph,
+        "school_holiday": sh,
+        "is_weekend": we,
         "Avg_Temp": float(tavg),
         "Avg_Humidity": float(havg),
         "Avg_Wind": float(wavg),
@@ -299,6 +296,11 @@ hist_tail = (
 t0 = hist_tail[TIME_COL].iloc[-1]
 
 # To avoid a visual gap, use the spacing of the last two timestamps
+def infer_freq_from_last_two(ts: pd.Series) -> pd.Timedelta:
+    if len(ts) >= 2:
+        return ts.iloc[-1] - ts.iloc[-2]
+    return pd.Timedelta(days=1)
+
 freq = infer_freq_from_last_two(hist_tail[TIME_COL])
 future_times = [t0 + (i + 1) * freq for i in range(final_horizon)]
 
@@ -323,17 +325,14 @@ df_plot_fcst = pd.concat([
 
 df_plot = pd.concat([df_plot_hist, df_plot_fcst], ignore_index=True)
 
-# Figure showing above target
 # ---- Exceedance analysis on forecast ----
 fcst_only = df_plot_fcst.copy()
-
-# If you added a "join point" at t0, remove it safely (keep only future > t0)
-t0 = hist_tail[TIME_COL].iloc[-1]
+# keep only future > t0 (drop join point)
 fcst_only = fcst_only[fcst_only["timestamp"] > t0].copy()
 
 # Compute exceedance flags
 fcst_only["exceed"] = fcst_only["value"] > capacity
-fcst_only["capacity"] = capacity  # <-- make capacity a DATA FIELD for tooltips
+fcst_only["capacity"] = capacity  # tooltip field
 
 total_exceed = int(fcst_only["exceed"].sum())
 
@@ -343,16 +342,14 @@ for flag in fcst_only["exceed"].tolist():
     cur = cur + 1 if flag else 0
     max_streak = max(max_streak, cur)
 
-# peak overflow and date
+# peak overflow (no peak date shown)
 if total_exceed > 0:
     overflows = fcst_only.loc[fcst_only["exceed"], "value"] - capacity
-    idx = overflows.idxmax()
-    peak_overflow = float(overflows.loc[idx])
-    peak_time = fcst_only.loc[idx, "timestamp"]
+    peak_overflow = float(overflows.max())
 else:
-    peak_overflow, peak_time = 0.0, None
+    peak_overflow = 0.0
 
-# Base line chart
+# Base line chart with custom colors (Forecast = orange)
 base_chart = alt.Chart(df_plot).mark_line().encode(
     x=alt.X("timestamp:T", title="Time"),
     y=alt.Y("value:Q", title="Demand (kWh)"),
@@ -377,7 +374,7 @@ cap_rule = alt.Chart(pd.DataFrame({"y": [capacity]})).mark_rule(
     color="#d62728", strokeDash=[6, 4]
 ).encode(y="y:Q")
 
-# Red markers on exceedance days (use the 'capacity' FIELD in tooltip)
+# Red markers on exceedance days
 exceed_points = alt.Chart(fcst_only).transform_filter(
     alt.datum.exceed == True
 ).mark_point(color="#d62728", size=60, filled=True).encode(
@@ -398,13 +395,57 @@ if total_exceed > 0:
     if max_streak >= int(streak_req):
         msg += f" — longest streak {max_streak} days (≥ {int(streak_req)})."
     if peak_overflow > 0:
-        msg += f" Peak overflow {peak_overflow:,.0f} kWh on {peak_time:%b %d}."
+        msg += f" Peak overflow ~{peak_overflow:,.0f} kWh."
     st.error(msg)
 else:
     st.success("✅ No capacity exceedances in the forecast window.")
 
+# ===================== 🤖 AI Advisor (ChatGPT) =====================
+with st.expander("🤖 AI Advisor (ChatGPT)"):
+    st.markdown("Ask questions or request recommendations. The advisor sees the current cluster & capacity context.")
+    user_msg = st.text_area("Your question", placeholder="e.g., How to mitigate the exceedance risk next week?")
+    if st.button("Ask Advisor"):
+        api_key = st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY"))
+        if not api_key:
+            st.warning("Add OPENAI_API_KEY to your Streamlit secrets to enable the advisor.")
+        else:
+            try:
+                from openai import OpenAI
+                client = OpenAI(api_key=api_key)
 
-
+                context = {
+                    "cluster_id": int(geo_cluster),
+                    "capacity": int(capacity),
+                    "streak_req": int(streak_req),
+                    "total_exceed": int(total_exceed),
+                    "max_streak": int(max_streak),
+                    "peak_overflow": float(peak_overflow),
+                    "mean_forecast": float(np.mean(fcst_only["value"])) if len(fcst_only) else 0.0,
+                    "public_holiday": ph,
+                    "school_holiday": sh,
+                    "is_weekend": we,
+                }
+                sys = (
+                    "You are an expert EV-charging demand advisor. "
+                    "Use the provided context JSON to give short, practical recommendations. "
+                    "If risks are low, say so briefly. Avoid hallucinations; don't invent data."
+                )
+                prompt = (
+                    f"Context JSON:\n{json.dumps(context, default=str)}\n\n"
+                    f"User: {user_msg}\n"
+                    "Respond with bullet points when possible."
+                )
+                resp = client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=[
+                        {"role": "system", "content": sys},
+                        {"role": "user", "content": prompt},
+                    ],
+                    temperature=0.2,
+                )
+                st.write(resp.choices[0].message.content)
+            except Exception as e:
+                st.error(f"Advisor error: {e}")
 
 # ===================== EXPORT =====================
 with st.expander("Export"):
@@ -414,4 +455,3 @@ with st.expander("Export"):
         file_name=f"forecast_cluster_{geo_cluster}.csv",
         mime="text/csv"
     )
-
