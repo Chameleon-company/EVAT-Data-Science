@@ -1,0 +1,26 @@
+{
+  "name": "SoftBlue",
+  "background": "#F5F7FA",
+  "visualStyles": {
+    "*": {
+      "*": [
+        { "card": { "outlineWeight": 0, "dropShadow": true } },
+        { "title": { "fontSize": 12, "fontFamily": "Segoe UI Semibold", "color": "#2B3A67" } }
+      ]
+    },
+    "card": {
+      "*": [
+        { "general": { "transparency": 0 } },
+        { "calloutValue": { "fontSize": 24, "color": "#2B3A67" } },
+        { "categoryLabel": { "color": "#7A869A" } }
+      ]
+    },
+    "barChart": {
+      "*": [
+        { "dataLabels": { "show": true } },
+        { "categoryLabels": { "color": "#2B3A67" } }
+      ]
+    }
+  },
+  "colors": ["#2F80ED", "#56CCF2", "#6C8AE4", "#7ED1F5", "#86A8E7", "#91EAE4"]
+}
