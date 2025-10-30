@@ -1,0 +1,2472 @@
+{
+	"info": {
+		"_postman_id": "48078f26-46e3-4823-a62e-3ed17de5d96c",
+		"name": "EVAT-App-BE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6896389"
+	},
+	"item": [
+		{
+			"name": "auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"gtest@example.com\",\n  \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth/profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/auth/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gamification/profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gamification/leaderboard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/leaderboard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"leaderboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gamification/items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gamification/action",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"action_type\": \"check_in\",\n  \"session_id\": \"test-session-123\",\n  \"details\": {\n    \"station_id\": \"station-test-abc\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/action",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gamification/items/purchase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"itemId\": \"AVATAR_TSHIRT_STANDARD_LOGO\",\n  \"session_id\": \"test-session-123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/items/purchase",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"items",
+						"purchase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gamification/items/manage/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/items/manage/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"items",
+						"manage",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/items/manage/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"items",
+								"manage",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1583"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"62f-IYCOgIerexRLV5fcB/74awsf9ks\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 07:40:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"All virtual items retrieved successfully\",\n    \"data\": [\n        {\n            \"_id\": \"68ad805bd249257a4c8c23b8\",\n            \"item_id_string\": \"AVATAR_TSHIRT_STANDARD_LOGO\",\n            \"name\": \"Standard EVAT Logo T-Shirt\",\n            \"item_type\": \"AVATAR_CLOTHING\",\n            \"cost_points\": 500,\n            \"value_points\": 300,\n            \"rarity\": \"COMMON\",\n            \"asset_url\": \"/assets/items/tshirt_standard.glb\",\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"_id\": \"68ad805bd249257a4c8c23b9\",\n            \"item_id_string\": \"CAR_PAINT_RARE_ECO_GREEN\",\n            \"name\": \"Rare Eco-Green Car Paint\",\n            \"item_type\": \"CAR_PAINT\",\n            \"cost_points\": 5000,\n            \"value_points\": 4000,\n            \"rarity\": \"RARE\",\n            \"asset_url\": \"/assets/items/paint_eco_green.texture\",\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"_id\": \"68ad805bd249257a4c8c23ba\",\n            \"item_id_string\": \"CAR_WHEELS_EPIC_CYBER\",\n            \"name\": \"Epic Cyber Wheels\",\n            \"item_type\": \"CAR_ACCESSORY\",\n            \"cost_points\": 15000,\n            \"value_points\": 12000,\n            \"rarity\": \"EPIC\",\n            \"asset_url\": \"/assets/items/wheels_cyber.glb\",\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"_id\": \"68ad805bd249257a4c8c23bb\",\n            \"item_id_string\": \"HOME_FURNITURE_TROPHY_CABINET\",\n            \"name\": \"Trophy Display Cabinet\",\n            \"description\": \"Proudly showcase all your earned badges in your virtual home!\",\n            \"item_type\": \"HOME_DECORATION\",\n            \"cost_points\": 10000,\n            \"value_points\": 8000,\n            \"rarity\": \"RARE\",\n            \"asset_url\": \"/assets/items/trophy_cabinet.glb\",\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"_id\": \"68ad805bd249257a4c8c23bc\",\n            \"item_id_string\": \"CAR_STICKER_SUMMER_2025\",\n            \"name\": \"2025 Summer Challenge Commemorative Sticker\",\n            \"item_type\": \"CAR_STICKER\",\n            \"cost_points\": null,\n            \"value_points\": 1000,\n            \"rarity\": \"EVENT\",\n            \"asset_url\": \"/assets/items/sticker_summer_2025.png\",\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/items/manage/_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/items/manage/68b402d64506008396004f06",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"items",
+						"manage",
+						"68b402d64506008396004f06"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/items/manage/68ad805bd249257a4c8c23b9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"items",
+								"manage",
+								"68ad805bd249257a4c8c23b9"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "340"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"154-9f/epCNKlrn2GqzdFPSW8ITPgBM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 08:00:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Virtual item retrieved successfully\",\n    \"data\": {\n        \"_id\": \"68ad805bd249257a4c8c23b9\",\n        \"item_id_string\": \"CAR_PAINT_RARE_ECO_GREEN\",\n        \"name\": \"Rare Eco-Green Car Paint\",\n        \"item_type\": \"CAR_PAINT\",\n        \"cost_points\": 5000,\n        \"value_points\": 4000,\n        \"rarity\": \"RARE\",\n        \"asset_url\": \"/assets/items/paint_eco_green.texture\",\n        \"created_at\": \"2025-01-02T09:30:00.000Z\"\n    }\n}"
+				},
+				{
+					"name": "404",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/items/manage/68ad805bd249257a4c8c23b9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"items",
+								"manage",
+								"68ad805bd249257a4c8c23b9"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "37"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"25-mLP1N2rJsSfXEplq0QhKNnWPK3A\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 08:03:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Virtual item not found.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/items/manage/_id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cost_points\": 650,\n  \"description\": \"An updated, premium T-shirt for dedicated community members.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/items/manage/68b43ffdbacb78040b4407a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"items",
+						"manage",
+						"68b43ffdbacb78040b4407a3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"cost_points\": 750,\n  \"description\": \"An updated, premium T-shirt for dedicated community members.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/items/manage/68b402d64506008396004f06",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"items",
+								"manage",
+								"68b402d64506008396004f06"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "460"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1cc-9rI7KAcTg49oJowFxYPTvva5bak\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 08:10:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Virtual item updated successfully\",\n    \"data\": {\n        \"_id\": \"68b402d64506008396004f06\",\n        \"item_id_string\": \"AVATAR_TSHIRT_STANDARD_LOGO\",\n        \"name\": \"Standard EVAT Logo T-Shirt\",\n        \"description\": \"An updated, premium T-shirt for dedicated community members.\",\n        \"item_type\": \"AVATAR_CLOTHING\",\n        \"cost_points\": 750,\n        \"value_points\": 300,\n        \"rarity\": \"COMMON\",\n        \"asset_url\": \"/assets/items/tshirt_standard.glb\",\n        \"createdAt\": \"2025-08-31T08:07:50.979Z\",\n        \"updatedAt\": \"2025-08-31T08:10:19.222Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/items/manage/_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/items/manage/68b402d64506008396004f06",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"items",
+						"manage",
+						"68b402d64506008396004f06"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/items/manage/68ad805bd249257a4c8c23b9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"items",
+								"manage",
+								"68ad805bd249257a4c8c23b9"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2f-FDJxjqFOdZBwn1GOcJyGbkiLbeQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 08:00:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Virtual item deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/items/manage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"item_id_string\": \"AVATAR_TSHIRT_STANDARD_LOGO\",\n  \"name\": \"Standard EVAT Logo T-Shirt\",\n  \"description\": \"A classic T-shirt to show your support for the EVAT community.\",\n  \"item_type\": \"AVATAR_CLOTHING\",\n  \"cost_points\": 500,\n  \"value_points\": 300,\n  \"rarity\": \"COMMON\",\n  \"asset_url\": \"/assets/items/tshirt_standard.glb\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/items/manage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"items",
+						"manage"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"item_id_string\": \"AVATAR_TSHIRT_STANDARD_LOGO\",\n  \"name\": \"Standard EVAT Logo T-Shirt\",\n  \"description\": \"A classic T-shirt to show your support for the EVAT community.\",\n  \"item_type\": \"AVATAR_CLOTHING\",\n  \"cost_points\": 500,\n  \"value_points\": 300,\n  \"rarity\": \"COMMON\",\n  \"asset_url\": \"/assets/items/tshirt_standard.glb\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/items/manage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"items",
+								"manage"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "462"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1ce-Bfk50wvc+2P0myvBcOu6aX7bOxw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 08:07:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Virtual item created successfully\",\n    \"data\": {\n        \"item_id_string\": \"AVATAR_TSHIRT_STANDARD_LOGO\",\n        \"name\": \"Standard EVAT Logo T-Shirt\",\n        \"description\": \"A classic T-shirt to show your support for the EVAT community.\",\n        \"item_type\": \"AVATAR_CLOTHING\",\n        \"cost_points\": 500,\n        \"value_points\": 300,\n        \"rarity\": \"COMMON\",\n        \"asset_url\": \"/assets/items/tshirt_standard.glb\",\n        \"_id\": \"68b402d64506008396004f06\",\n        \"createdAt\": \"2025-08-31T08:07:50.979Z\",\n        \"updatedAt\": \"2025-08-31T08:07:50.979Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/badges/manage/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/badges/manage/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"badges",
+						"manage",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/badges/manage/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"badges",
+								"manage",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3200"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c80-A5axXbXPPuP3cMA/6siWyEdiaOY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 12:48:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"All badges retrieved\",\n    \"data\": [\n        {\n            \"_id\": \"68ad8057daaa5b0653080869\",\n            \"badge_id_string\": \"FIRST_FIRST_STATION_CHECKIN\",\n            \"name\": \"First Charging Station Check-In\",\n            \"description\": \"Welcome to the EVAT community! This is your first charging station check-in.\",\n            \"icon_url\": \"/assets/badges/first_station_checkin.png\",\n            \"criteria\": {\n                \"action_type\": \"check_in\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"_id\": \"68ad8057daaa5b065308086a\",\n            \"badge_id_string\": \"BLACK_SPOT_PIONEER\",\n            \"name\": \"Black Spot Pioneer\",\n            \"description\": \"Braving the unknown! Reported the first charging station in a 'black spot' area.\",\n            \"icon_url\": \"/assets/badges/black_spot_pioneer.png\",\n            \"criteria\": {\n                \"action_type\": \"discover_new_station_in_black_spot\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"_id\": \"68ad8057daaa5b065308086b\",\n            \"badge_id_string\": \"EARTH_DAY_CHAMPION_2025\",\n            \"name\": \"Earth Day Champion 2025\",\n            \"description\": \"On Earth Day 2025, you charged at a renewable-powered station and made a difference.\",\n            \"icon_url\": \"/assets/badges/earth_day_2025.png\",\n            \"criteria\": {\n                \"action_type\": \"charge_at_green_station\",\n                \"event_tag\": \"EARTH_DAY_2025\"\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"_id\": \"68ad8057daaa5b065308086c\",\n            \"badge_id_string\": \"AI_MASTER\",\n            \"name\": \"AI Master\",\n            \"description\": \"AI excels because of you! Completed 100 AI prediction validations.\",\n            \"icon_url\": \"/assets/badges/ai_master.png\",\n            \"criteria\": {\n                \"action_type\": \"validate_ai_prediction\",\n                \"count\": 100\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"_id\": \"68ad8057daaa5b065308086d\",\n            \"badge_id_string\": \"EVENT_SUMMER_TRIP_2025\",\n            \"name\": \"2025 Summer Road Trip\",\n            \"description\": \"During the 2025 summer challenge, completed a long-distance trip using the route planner.\",\n            \"icon_url\": \"/assets/badges/summer_trip_2025.png\",\n            \"criteria\": {\n                \"action_type\": \"complete_long_trip_with_planner\",\n                \"event_tag\": \"SUMMER_TRIP_2025\"\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"_id\": \"68ad8057daaa5b065308086e\",\n            \"badge_id_string\": \"AI_TRAINER_LV1\",\n            \"name\": \"AI Trainer\",\n            \"description\": \"Successfully completed 20 AI prediction validations to help our AI get smarter!\",\n            \"icon_url\": \"/assets/badges/ai_trainer_lv1.png\",\n            \"criteria\": {\n                \"action_type\": \"validate_ai_prediction\",\n                \"count\": 20\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"_id\": \"68ad8057daaa5b065308086f\",\n            \"badge_id_string\": \"STREAK_MASTER_14D\",\n            \"name\": \"Streak Master\",\n            \"description\": \"Persistence pays off! Completed daily check-in for 14 consecutive days.\",\n            \"icon_url\": \"/assets/badges/streak_master_14d.png\",\n            \"criteria\": {\n                \"metric\": \"current_streak\",\n                \"value\": 14\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"_id\": \"68ad8057daaa5b0653080870\",\n            \"badge_id_string\": \"STATION_CARTOGRAPHER\",\n            \"name\": \"Station Cartographer\",\n            \"description\": \"Thank you for expanding our map! Successfully added 5 new charging stations.\",\n            \"icon_url\": \"/assets/badges/station_cartographer.png\",\n            \"criteria\": {\n                \"action_type\": \"discover_new_station\",\n                \"count\": 5\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"_id\": \"68ad8057daaa5b0653080871\",\n            \"badge_id_string\": \"COMMUNITY_PILLAR\",\n            \"name\": \"Community Pillar\",\n            \"description\": \"You're the backbone of the community! Reported 50 charging station faults.\",\n            \"icon_url\": \"/assets/badges/community_pillar.png\",\n            \"criteria\": {\n                \"action_type\": \"report_fault\",\n                \"count\": 50\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/badges/manage/_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/badges/manage/68ad8057daaa5b0653080869",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"badges",
+						"manage",
+						"68ad8057daaa5b0653080869"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/badges/manage/68ad8057daaa5b0653080869",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"badges",
+								"manage",
+								"68ad8057daaa5b0653080869"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "395"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18b-pRaWN6tCi8pBhat8V8/r5m6m4Vg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 13:18:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Badge retrieved\",\n    \"data\": {\n        \"_id\": \"68ad8057daaa5b0653080869\",\n        \"badge_id_string\": \"FIRST_FIRST_STATION_CHECKIN\",\n        \"name\": \"First Charging Station Check-In\",\n        \"description\": \"Welcome to the EVAT community! This is your first charging station check-in.\",\n        \"icon_url\": \"/assets/badges/first_station_checkin.png\",\n        \"criteria\": {\n            \"action_type\": \"check_in\",\n            \"count\": 1\n        },\n        \"created_at\": \"2025-01-02T09:30:00.000Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/badges/manage/_id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"description\": \"A new, updated description for your first check-in!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/badges/manage/68ad8057daaa5b0653080869",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"badges",
+						"manage",
+						"68ad8057daaa5b0653080869"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"description\": \"A new, updated description for your first check-in!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/badges/manage/68ad8057daaa5b0653080869",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"badges",
+								"manage",
+								"68ad8057daaa5b0653080869"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "420"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a4-8tNByoCz/nlFMx+gC0cVZcaHf5c\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 13:20:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Badge updated successfully\",\n    \"data\": {\n        \"_id\": \"68ad8057daaa5b0653080869\",\n        \"badge_id_string\": \"FIRST_FIRST_STATION_CHECKIN\",\n        \"name\": \"First Charging Station Check-In\",\n        \"description\": \"A new, updated description for your first check-in!\",\n        \"icon_url\": \"/assets/badges/first_station_checkin.png\",\n        \"criteria\": {\n            \"action_type\": \"check_in\",\n            \"count\": 1\n        },\n        \"created_at\": \"2025-01-02T09:30:00.000Z\",\n        \"updatedAt\": \"2025-08-31T13:20:11.152Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/badges/manage/_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/badges/manage/68ad8057daaa5b0653080869",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"badges",
+						"manage",
+						"68ad8057daaa5b0653080869"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/badges/manage/68ad8057daaa5b0653080869",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"badges",
+								"manage",
+								"68ad8057daaa5b0653080869"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-KwzyIHnBD7brd5SU/evNfTaAb6w\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 13:21:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Badge deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/badges/manage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"badge_id_string\": \"FIRST_STATION_CHECKIN\",\n  \"name\": \"First Charging Station Check-In\",\n  \"description\": \"Welcome to the EVAT community! This is your first charging station check-in.\",\n  \"icon_url\": \"/assets/badges/first_station_checkin.png\",\n  \"criteria\": {\n    \"source\": \"contribution_summary\",\n    \"field\": \"total_check_ins\",\n    \"operator\": \">=\",\n    \"value\": 1\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/badges/manage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"badges",
+						"manage"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"badge_id_string\": \"FIRST_STATION_CHECKIN\",\n  \"name\": \"First Charging Station Check-In\",\n  \"description\": \"Welcome to the EVAT community! This is your first charging station check-in.\",\n  \"icon_url\": \"/assets/badges/first_station_checkin.png\",\n  \"criteria\": {\n    \"source\": \"contribution_summary\",\n    \"field\": \"total_check_ins\",\n    \"operator\": \">=\",\n    \"value\": 1\n  }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/badges/manage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"badges",
+								"manage"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "487"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e7-j4aKz1ROC6xeh7WXJ9uAauMcKKs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 13:23:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Badge created successfully\",\n    \"data\": {\n        \"badge_id_string\": \"FIRST_STATION_CHECKIN\",\n        \"name\": \"First Charging Station Check-In\",\n        \"description\": \"Welcome to the EVAT community! This is your first charging station check-in.\",\n        \"icon_url\": \"/assets/badges/first_station_checkin.png\",\n        \"criteria\": {\n            \"source\": \"contribution_summary\",\n            \"field\": \"total_check_ins\",\n            \"operator\": \">=\",\n            \"value\": 1\n        },\n        \"_id\": \"68b44cebbacb78040b4407bc\",\n        \"createdAt\": \"2025-08-31T13:23:55.370Z\",\n        \"updatedAt\": \"2025-08-31T13:23:55.370Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/quests/manage/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/quests/manage/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"quests",
+						"manage",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/quests/manage/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"quests",
+								"manage",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "10202"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27da-YlTrzbE78H5NKJ7/3Ci/FtGHK1A\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 14:02:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"All quests retrieved\",\n    \"data\": [\n        {\n            \"rewards\": {\n                \"points\": 100,\n                \"badge_id\": \"68ad8057daaa5b0653080869\"\n            },\n            \"_id\": \"68b30a708ac2c235272cc09d\",\n            \"quest_id_string\": \"TUTORIAL_FIRST_STATION_CHECKIN\",\n            \"name\": \"First Visit to Charging Station\",\n            \"description\": \"Welcome to the EVAT community! Complete your first charging station check-in.\",\n            \"quest_category\": \"TUTORIAL\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"check_in\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 200\n            },\n            \"_id\": \"68b30a708ac2c235272cc09e\",\n            \"quest_id_string\": \"TUTORIAL_FIRST_FAULT_REPORT\",\n            \"name\": \"Whistleblower\",\n            \"description\": \"Your report helps everyone! Successfully report a faulty charging station for the first time.\",\n            \"quest_category\": \"TUTORIAL\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"report_fault\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 150\n            },\n            \"_id\": \"68b30a708ac2c235272cc09f\",\n            \"quest_id_string\": \"TUTORIAL_FIRST_ROUTE_PLAN\",\n            \"name\": \"Plan Your Journey\",\n            \"description\": \"Say goodbye to range anxiety! Use EVAT's route planner to complete your first trip.\",\n            \"quest_category\": \"TUTORIAL\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"complete_long_trip_with_planner\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 100\n            },\n            \"_id\": \"68b30a708ac2c235272cc0a0\",\n            \"quest_id_string\": \"TUTORIAL_FIRST_CHATBOT_QUERY\",\n            \"name\": \"Talk to AI\",\n            \"description\": \"Our smart assistant is always ready! Ask the AI chatbot a question for the first time.\",\n            \"quest_category\": \"TUTORIAL\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"ask_chatbot_question\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 200\n            },\n            \"_id\": \"68b30a708ac2c235272cc0a1\",\n            \"quest_id_string\": \"TUTORIAL_FIRST_EGG_REDEMPTION\",\n            \"name\": \"Treasure Hunter\",\n            \"description\": \"Surprises are everywhere! Find and redeem a hidden Easter egg code for the first time.\",\n            \"quest_category\": \"TUTORIAL\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [],\n            \"completion_criteria\": {\n                \"action_type\": \"redeem_easter_egg\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 10\n            },\n            \"_id\": \"68b30a708ac2c235272cc0a2\",\n            \"quest_id_string\": \"DAILY_APP_LOGIN\",\n            \"name\": \"Daily Check-In\",\n            \"description\": \"Build good habits! Log into the app today to receive your reward.\",\n            \"quest_category\": \"DAILY\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"app_login\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 20\n            },\n            \"_id\": \"68b30a708ac2c235272cc0a3\",\n            \"quest_id_string\": \"DAILY_STATION_CHECKIN\",\n            \"name\": \"Daily Station Visit\",\n            \"description\": \"Out and about? Check in at any charging station today.\",\n            \"quest_category\": \"DAILY\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"check_in\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 50\n            },\n            \"_id\": \"68b30a708ac2c235272cc0a4\",\n            \"quest_id_string\": \"DAILY_FAULT_REPORT\",\n            \"name\": \"Daily Fault Report\",\n            \"description\": \"Help the community avoid broken stations! Report a fault today.\",\n            \"quest_category\": \"DAILY\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"report_fault\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 25\n            },\n            \"_id\": \"68b30a708ac2c235272cc0a5\",\n            \"quest_id_string\": \"DAILY_ROUTE_PLAN\",\n            \"name\": \"Daily Route Planning\",\n            \"description\": \"Plan your journey! Use the route planner today to arrange your trip.\",\n            \"quest_category\": \"DAILY\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"use_route_planner\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 20\n            },\n            \"_id\": \"68b30a708ac2c235272cc0a6\",\n            \"quest_id_string\": \"DAILY_CHATBOT_QUERY\",\n            \"name\": \"Daily AI Chat\",\n            \"description\": \"Got a question? Ask our AI chatbot today.\",\n            \"quest_category\": \"DAILY\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"ask_chatbot_question\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 100\n            },\n            \"_id\": \"68b30a708ac2c235272cc0a7\",\n            \"quest_id_string\": \"DAILY_EGG_HUNT\",\n            \"name\": \"Daily Treasure Hunt\",\n            \"description\": \"Stay alert! Find and redeem a hidden Easter egg code today.\",\n            \"quest_category\": \"DAILY\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [],\n            \"completion_criteria\": {\n                \"action_type\": \"redeem_easter_egg\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 75\n            },\n            \"_id\": \"68b30a708ac2c235272cc0a8\",\n            \"quest_id_string\": \"DAILY_AI_VALIDATION\",\n            \"name\": \"Daily AI Validation\",\n            \"description\": \"Help keep AI sharp! Complete a validation of AI usability prediction today.\",\n            \"quest_category\": \"DAILY\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [],\n            \"completion_criteria\": {\n                \"action_type\": \"validate_ai_prediction\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 20\n            },\n            \"_id\": \"68b30a708ac2c235272cc0a9\",\n            \"quest_id_string\": \"DAILY_QUIZ\",\n            \"name\": \"Daily Quiz\",\n            \"description\": \"Small knowledge, big rewards! Answer one fun quiz question correctly today.\",\n            \"quest_category\": \"DAILY\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"fun_quiz_correct\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 10\n            },\n            \"_id\": \"68b30a708ac2c235272cc0aa\",\n            \"quest_id_string\": \"REPEATABLE_STATION_CHECKIN\",\n            \"name\": \"Ongoing Station Visits\",\n            \"description\": \"Each check-in contributes valuable data.\",\n            \"quest_category\": \"REPEATABLE\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"check_in\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 15\n            },\n            \"_id\": \"68b30a708ac2c235272cc0ab\",\n            \"quest_id_string\": \"REPEATABLE_ROUTE_PLAN\",\n            \"name\": \"Ongoing Route Planning\",\n            \"description\": \"Every route plan helps us optimize the system.\",\n            \"quest_category\": \"REPEATABLE\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"use_route_planner\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 35\n            },\n            \"_id\": \"68b30a708ac2c235272cc0ac\",\n            \"quest_id_string\": \"REPEATABLE_AI_VALIDATION\",\n            \"name\": \"Ongoing AI Validation\",\n            \"description\": \"Each validation helps AI improve.\",\n            \"quest_category\": \"REPEATABLE\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [],\n            \"completion_criteria\": {\n                \"action_type\": \"validate_ai_prediction\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 120\n            },\n            \"_id\": \"68b30a708ac2c235272cc0ad\",\n            \"quest_id_string\": \"REPEATABLE_BLACK_SPOT_DISCOVERY\",\n            \"name\": \"Ongoing Black Spot Discovery\",\n            \"description\": \"Discovering new stations in black spots is a major contribution.\",\n            \"quest_category\": \"REPEATABLE\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [],\n            \"completion_criteria\": {\n                \"action_type\": \"discover_new_station_in_black_spot\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 50\n            },\n            \"_id\": \"68b30a708ac2c235272cc0ae\",\n            \"quest_id_string\": \"REPEATABLE_EGG_HUNT\",\n            \"name\": \"Ongoing Egg Hunt\",\n            \"description\": \"New surprises await you.\",\n            \"quest_category\": \"REPEATABLE\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [],\n            \"completion_criteria\": {\n                \"action_type\": \"redeem_easter_egg\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 500\n            },\n            \"_id\": \"68b30a708ac2c235272cc0af\",\n            \"quest_id_string\": \"MILESTONE_CHECKIN_MASTER\",\n            \"name\": \"Check-In Master\",\n            \"description\": \"You're a true explorer! Complete 50 charging station check-ins.\",\n            \"quest_category\": \"MILESTONE\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"check_in\",\n                \"count\": 50\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 2000,\n                \"badge_id\": \"68ad8057daaa5b065308086c\"\n            },\n            \"_id\": \"68b30a708ac2c235272cc0b0\",\n            \"quest_id_string\": \"MILESTONE_AI_TRAINER_MASTER\",\n            \"name\": \"AI Trainer Master\",\n            \"description\": \"AI excels because of you! Complete 100 AI prediction validations.\",\n            \"quest_category\": \"MILESTONE\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [],\n            \"completion_criteria\": {\n                \"action_type\": \"validate_ai_prediction\",\n                \"count\": 100\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 1200\n            },\n            \"_id\": \"68b30a708ac2c235272cc0b1\",\n            \"quest_id_string\": \"MILESTONE_FAULT_REPORTER_LEADER\",\n            \"name\": \"Community Leader\",\n            \"description\": \"You're the backbone of the community! Report 50 charging station faults.\",\n            \"quest_category\": \"MILESTONE\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [],\n            \"completion_criteria\": {\n                \"action_type\": \"report_fault\",\n                \"count\": 50\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 1500,\n                \"badge_id\": \"68ad8057daaa5b065308086a\"\n            },\n            \"_id\": \"68b30a708ac2c235272cc0b2\",\n            \"quest_id_string\": \"MILESTONE_BLACK_SPOT_PIONEER\",\n            \"name\": \"Black Spot Pioneer\",\n            \"description\": \"Hero of the map! Report 5 new stations in black spot areas.\",\n            \"quest_category\": \"MILESTONE\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [],\n            \"completion_criteria\": {\n                \"action_type\": \"discover_new_station_in_black_spot\",\n                \"count\": 5\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"rewards\": {\n                \"points\": 800\n            },\n            \"_id\": \"68b30a708ac2c235272cc0b3\",\n            \"quest_id_string\": \"MILESTONE_EGG_MASTER\",\n            \"name\": \"Egg Hunt Master\",\n            \"description\": \"Nothing escapes your eyes! Redeem 10 hidden Easter egg codes.\",\n            \"quest_category\": \"MILESTONE\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [],\n            \"completion_criteria\": {\n                \"action_type\": \"redeem_easter_egg\",\n                \"count\": 10\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"time_limit\": {\n                \"start_date\": \"2025-01-01T00:00:00.000Z\",\n                \"end_date\": \"2025-04-30T23:59:00.000Z\"\n            },\n            \"rewards\": {\n                \"points\": 1000,\n                \"virtual_item_id\": \"68ad805bd249257a4c8c23bc\"\n            },\n            \"_id\": \"68b30a708ac2c235272cc0b4\",\n            \"quest_id_string\": \"EVENT_SUMMER_TRIP_2025\",\n            \"name\": \"Summer Road Tripper\",\n            \"description\": \"During the summer challenge, complete a long trip using the route planner.\",\n            \"quest_category\": \"EVENT\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [\n                \"ALL\"\n            ],\n            \"completion_criteria\": {\n                \"action_type\": \"complete_long_trip_with_planner\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        },\n        {\n            \"time_limit\": {\n                \"start_date\": \"2025-04-22T00:00:00.000Z\",\n                \"end_date\": \"2025-04-22T23:59:00.000Z\"\n            },\n            \"rewards\": {\n                \"points\": 250,\n                \"badge_id\": \"68ad8057daaa5b065308086b\"\n            },\n            \"_id\": \"68b30a708ac2c235272cc0b5\",\n            \"quest_id_string\": \"EVENT_EARTH_DAY_2025\",\n            \"name\": \"Earth Day Contributor\",\n            \"description\": \"Charge for the planet! On Earth Day, complete a charge at a green energy station.\",\n            \"quest_category\": \"EVENT\",\n            \"status\": \"ACTIVE\",\n            \"target_personas\": [],\n            \"completion_criteria\": {\n                \"action_type\": \"charge_at_green_station\",\n                \"count\": 1\n            },\n            \"created_at\": \"2025-01-02T09:30:00.000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/quests/manage/_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/quests/manage/68bf5fd49d376129b881a033",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"quests",
+						"manage",
+						"68bf5fd49d376129b881a033"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/quests/manage/68b30a708ac2c235272cc09d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"quests",
+								"manage",
+								"68b30a708ac2c235272cc09d"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "491"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1eb-pB0DWo+8Tlr8kt0OIM9yzJx6QO4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 31 Aug 2025 14:02:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Quest retrieved\",\n    \"data\": {\n        \"rewards\": {\n            \"points\": 100,\n            \"badge_id\": \"68ad8057daaa5b0653080869\"\n        },\n        \"_id\": \"68b30a708ac2c235272cc09d\",\n        \"quest_id_string\": \"TUTORIAL_FIRST_STATION_CHECKIN\",\n        \"name\": \"First Visit to Charging Station\",\n        \"description\": \"Welcome to the EVAT community! Complete your first charging station check-in.\",\n        \"quest_category\": \"TUTORIAL\",\n        \"status\": \"ACTIVE\",\n        \"target_personas\": [\n            \"ALL\"\n        ],\n        \"completion_criteria\": {\n            \"action_type\": \"check_in\",\n            \"count\": 1\n        },\n        \"created_at\": \"2025-01-02T09:30:00.000Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/quests/manage/_id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"status\": \"ACTIVE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/quests/manage/68b30a708ac2c235272cc09d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"quests",
+						"manage",
+						"68b30a708ac2c235272cc09d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"status\": \"INACTIVE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/quests/manage/68b30a708ac2c235272cc09d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"quests",
+								"manage",
+								"68b30a708ac2c235272cc09d"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "543"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21f-H011oqP8VS8JjQSshagEwb3hqEo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Sep 2025 22:50:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Quest updated successfully\",\n    \"data\": {\n        \"rewards\": {\n            \"points\": 100,\n            \"badge_id\": \"68ad8057daaa5b0653080869\"\n        },\n        \"_id\": \"68b30a708ac2c235272cc09d\",\n        \"quest_id_string\": \"TUTORIAL_FIRST_STATION_CHECKIN\",\n        \"name\": \"First Visit to Charging Station\",\n        \"description\": \"Welcome to the EVAT community! Complete your first charging station check-in.\",\n        \"quest_category\": \"TUTORIAL\",\n        \"status\": \"INACTIVE\",\n        \"target_personas\": [\n            \"ALL\"\n        ],\n        \"completion_criteria\": {\n            \"action_type\": \"check_in\",\n            \"count\": 1\n        },\n        \"created_at\": \"2025-01-02T09:30:00.000Z\",\n        \"updatedAt\": \"2025-09-08T22:50:43.986Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/quests/manage/_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/quests/manage/68b30a708ac2c235272cc09d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"quests",
+						"manage",
+						"68b30a708ac2c235272cc09d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/quests/manage/68b30a708ac2c235272cc09d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"quests",
+								"manage",
+								"68b30a708ac2c235272cc09d"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-7rXh0POG8F6FXVapqWJpL3Ug558\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Sep 2025 22:59:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Quest deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/quests/manage/_id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"quest_id_string\": \"TUTORIAL_FIRST_STATION_CHECKIN\",\n  \"name\": \"First Visit to Charging Station\",\n  \"description\": \"Welcome to the EVAT community! Complete your first charging station check-in.\",\n  \"quest_category\": \"TUTORIAL\",\n  \"status\": \"ACTIVE\",\n  \"target_personas\": [\"ALL\"],\n  \"rewards\": {\n    \"points\": 100,\n    \"badge_id\": \"FIRST_STATION_CHECKIN\" \n  },\n  \"completion_criteria\": {\n    \"action_type\": \"check_in\",\n    \"count\": 1\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/quests/manage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"quests",
+						"manage"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"quest_id_string\": \"TUTORIAL_FIRST_STATION_CHECKIN\",\n  \"name\": \"First Visit to Charging Station\",\n  \"description\": \"Welcome to the EVAT community! Complete your first charging station check-in.\",\n  \"quest_category\": \"TUTORIAL\",\n  \"status\": \"ACTIVE\",\n  \"target_personas\": [\"ALL\"],\n  \"rewards\": {\n    \"points\": 100,\n    \"badge_id\": \"FIRST_STATION_CHECKIN\" \n  },\n  \"completion_criteria\": {\n    \"action_type\": \"check_in\",\n    \"count\": 1\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/quests/manage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"quests",
+								"manage"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "537"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"219-FxFIVeaG/o71tknlIEnm4A+0vhU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Sep 2025 22:59:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Quest created successfully\",\n    \"data\": {\n        \"quest_id_string\": \"TUTORIAL_FIRST_STATION_CHECKIN\",\n        \"name\": \"First Visit to Charging Station\",\n        \"description\": \"Welcome to the EVAT community! Complete your first charging station check-in.\",\n        \"quest_category\": \"TUTORIAL\",\n        \"status\": \"ACTIVE\",\n        \"target_personas\": [\n            \"ALL\"\n        ],\n        \"completion_criteria\": {\n            \"action_type\": \"check_in\",\n            \"count\": 1\n        },\n        \"rewards\": {\n            \"points\": 100,\n            \"badge_id\": \"FIRST_STATION_CHECKIN\"\n        },\n        \"_id\": \"68bf5fd49d376129b881a033\",\n        \"createdAt\": \"2025-09-08T22:59:32.367Z\",\n        \"updatedAt\": \"2025-09-08T22:59:32.367Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/profiles/manage/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/profiles/manage/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"profiles",
+						"manage",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/profiles/manage/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"profiles",
+								"manage",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "756"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2f4-Icm0Czdu3fmLHuEy+GZ1K+4wCs4\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Sep 2025 00:55:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"All game profiles retrieved\",\n    \"data\": [\n        {\n            \"gamification_profile\": {\n                \"persona\": \"ANXIOUS_NEWCOMER\",\n                \"points_balance\": 0,\n                \"net_worth\": 0\n            },\n            \"engagement_metrics\": {\n                \"current_app_login_streak\": 0,\n                \"longest_app_login_streak\": 0\n            },\n            \"contribution_summary\": {\n                \"total_check_ins\": 0,\n                \"total_fault_reports\": 0,\n                \"total_ai_validations\": 0,\n                \"total_black_spot_discoveries\": 0,\n                \"total_route_plans\": 0,\n                \"total_chatbot_questions\": 0,\n                \"total_quizzes_correct\": 0,\n                \"total_easter_eggs_redeemed\": 0,\n                \"total_virtual_items_purchased\": 0\n            },\n            \"inventory\": {\n                \"badges_earned\": [],\n                \"virtual_items\": []\n            },\n            \"_id\": \"68bf7ae0f5deffe2056c50ad\",\n            \"main_app_user_id\": \"68a29b607bc1b124162aa01a\",\n            \"active_quests\": [],\n            \"created_at\": \"2025-09-09T00:54:56.883Z\",\n            \"createdAt\": \"2025-09-09T00:54:56.883Z\",\n            \"updatedAt\": \"2025-09-09T00:54:56.883Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/profiles/manage/_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/profiles/manage/68b3f8994506008396004ecf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"profiles",
+						"manage",
+						"68b3f8994506008396004ecf"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/profiles/manage/68a29b607bc1b124162aa01a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"profiles",
+								"manage",
+								"68a29b607bc1b124162aa01a"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "749"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2ed-ogoD11Ie/VN/6MSi/vzlJlc+ti0\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Sep 2025 00:56:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Game profile retrieved\",\n    \"data\": {\n        \"gamification_profile\": {\n            \"persona\": \"ANXIOUS_NEWCOMER\",\n            \"points_balance\": 0,\n            \"net_worth\": 0\n        },\n        \"engagement_metrics\": {\n            \"current_app_login_streak\": 0,\n            \"longest_app_login_streak\": 0\n        },\n        \"contribution_summary\": {\n            \"total_check_ins\": 0,\n            \"total_fault_reports\": 0,\n            \"total_ai_validations\": 0,\n            \"total_black_spot_discoveries\": 0,\n            \"total_route_plans\": 0,\n            \"total_chatbot_questions\": 0,\n            \"total_quizzes_correct\": 0,\n            \"total_easter_eggs_redeemed\": 0,\n            \"total_virtual_items_purchased\": 0\n        },\n        \"inventory\": {\n            \"badges_earned\": [],\n            \"virtual_items\": []\n        },\n        \"_id\": \"68bf7ae0f5deffe2056c50ad\",\n        \"main_app_user_id\": \"68a29b607bc1b124162aa01a\",\n        \"active_quests\": [],\n        \"created_at\": \"2025-09-09T00:54:56.883Z\",\n        \"createdAt\": \"2025-09-09T00:54:56.883Z\",\n        \"updatedAt\": \"2025-09-09T00:54:56.883Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/profiles/manage/_id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"engagement_metrics\": \n  {\n     \"current_app_login_streak\": 100, \n     \"longest_app_login_streak\": 200 \n     }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/profiles/manage/68b3f8994506008396004ecf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"profiles",
+						"manage",
+						"68b3f8994506008396004ecf"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"contribution_summary\": {\n    \"total_fault_reports\": 49\n  },\n  \"gamification_profile\": {\n    \"points_balance\": 5000\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/profiles/manage/68a29b607bc1b124162aa01a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"profiles",
+								"manage",
+								"68a29b607bc1b124162aa01a"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "764"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2fc-jvuqFCyOrTD8aT9QRlkeRtu4jD4\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Sep 2025 00:58:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Game profile updated successfully\",\n    \"data\": {\n        \"gamification_profile\": {\n            \"persona\": \"ANXIOUS_NEWCOMER\",\n            \"net_worth\": 0,\n            \"points_balance\": 5000\n        },\n        \"engagement_metrics\": {\n            \"current_app_login_streak\": 0,\n            \"longest_app_login_streak\": 0\n        },\n        \"contribution_summary\": {\n            \"total_check_ins\": 0,\n            \"total_ai_validations\": 0,\n            \"total_black_spot_discoveries\": 0,\n            \"total_route_plans\": 0,\n            \"total_chatbot_questions\": 0,\n            \"total_quizzes_correct\": 0,\n            \"total_easter_eggs_redeemed\": 0,\n            \"total_virtual_items_purchased\": 0,\n            \"total_fault_reports\": 49\n        },\n        \"inventory\": {\n            \"badges_earned\": [],\n            \"virtual_items\": []\n        },\n        \"_id\": \"68bf7ae0f5deffe2056c50ad\",\n        \"main_app_user_id\": \"68a29b607bc1b124162aa01a\",\n        \"active_quests\": [],\n        \"created_at\": \"2025-09-09T00:54:56.883Z\",\n        \"createdAt\": \"2025-09-09T00:54:56.883Z\",\n        \"updatedAt\": \"2025-09-09T00:58:40.393Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/profiles/manage/_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/profiles/manage/68a29b607bc1b124162aa01a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"profiles",
+						"manage",
+						"68a29b607bc1b124162aa01a"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/profiles/manage/68a29b607bc1b124162aa01a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"profiles",
+								"manage",
+								"68a29b607bc1b124162aa01a"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2f-MGrKWX6hG2132onqEeegmtzxuDU\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Sep 2025 01:00:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Game profile deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/profiles/manage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"main_app_user_id\": \"68a29b607bc1b124162aa01a\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/profiles/manage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"profiles",
+						"manage"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"main_app_user_id\": \"68a29b607bc1b124162aa01a\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/profiles/manage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"profiles",
+								"manage"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "760"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2f8-1EEmE/673GjyvfEGyE/rnuBfgH0\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Sep 2025 00:54:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Game profile created successfully\",\n    \"data\": {\n        \"main_app_user_id\": \"68a29b607bc1b124162aa01a\",\n        \"gamification_profile\": {\n            \"persona\": \"ANXIOUS_NEWCOMER\",\n            \"points_balance\": 0,\n            \"net_worth\": 0\n        },\n        \"engagement_metrics\": {\n            \"current_app_login_streak\": 0,\n            \"longest_app_login_streak\": 0\n        },\n        \"contribution_summary\": {\n            \"total_check_ins\": 0,\n            \"total_fault_reports\": 0,\n            \"total_ai_validations\": 0,\n            \"total_black_spot_discoveries\": 0,\n            \"total_route_plans\": 0,\n            \"total_chatbot_questions\": 0,\n            \"total_quizzes_correct\": 0,\n            \"total_easter_eggs_redeemed\": 0,\n            \"total_virtual_items_purchased\": 0\n        },\n        \"inventory\": {\n            \"badges_earned\": [],\n            \"virtual_items\": []\n        },\n        \"active_quests\": [],\n        \"_id\": \"68bf7ae0f5deffe2056c50ad\",\n        \"created_at\": \"2025-09-09T00:54:56.883Z\",\n        \"createdAt\": \"2025-09-09T00:54:56.883Z\",\n        \"updatedAt\": \"2025-09-09T00:54:56.883Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/events/manage/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/events/manage/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"events",
+						"manage",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/events/manage/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"events",
+								"manage",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "432"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b0-1bA4UMVSzKQnN8pArROKvL/AjrA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Sep 2025 02:12:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"All events retrieved\",\n    \"data\": [\n        {\n            \"_id\": \"68bf8cc18e2a7cd655bd6770\",\n            \"user_id\": \"68a29b607bc1b124162aa01a\",\n            \"session_id\": \"test-session-manual-001\",\n            \"event_type\": \"ACTION_PERFORMED\",\n            \"action_type\": \"check_in\",\n            \"details\": {\n                \"station_id\": \"station-test-001\",\n                \"location\": {\n                    \"type\": \"Point\",\n                    \"coordinates\": [\n                        145.123,\n                        -37.987\n                    ]\n                }\n            },\n            \"timestamp\": \"2025-09-09T02:11:13.950Z\",\n            \"createdAt\": \"2025-09-09T02:11:13.950Z\",\n            \"updatedAt\": \"2025-09-09T02:11:13.950Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/events/manage/user/_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/events/manage/user/68a29b607bc1b124162aa01a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"events",
+						"manage",
+						"user",
+						"68a29b607bc1b124162aa01a"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/events/manage/user/68a29b607bc1b124162aa01a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"events",
+								"manage",
+								"user",
+								"68a29b607bc1b124162aa01a"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "822"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"336-nbvcLXXvwYFpK8y98Y+WTt6y9TM\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Sep 2025 02:15:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User events retrieved\",\n    \"data\": [\n        {\n            \"_id\": \"68bf8d8a8e2a7cd655bd6777\",\n            \"user_id\": \"68a29b607bc1b124162aa01a\",\n            \"session_id\": \"test-session-manual-001\",\n            \"event_type\": \"ACTION_PERFORMED\",\n            \"action_type\": \"check_in\",\n            \"details\": {\n                \"station_id\": \"station-test-001\",\n                \"location\": {\n                    \"type\": \"Point\",\n                    \"coordinates\": [\n                        145.123,\n                        -37.987\n                    ]\n                }\n            },\n            \"timestamp\": \"2025-09-09T02:14:34.622Z\",\n            \"createdAt\": \"2025-09-09T02:14:34.623Z\",\n            \"updatedAt\": \"2025-09-09T02:14:34.623Z\"\n        },\n        {\n            \"_id\": \"68bf8cc18e2a7cd655bd6770\",\n            \"user_id\": \"68a29b607bc1b124162aa01a\",\n            \"session_id\": \"test-session-manual-001\",\n            \"event_type\": \"ACTION_PERFORMED\",\n            \"action_type\": \"check_in\",\n            \"details\": {\n                \"station_id\": \"station-test-001\",\n                \"location\": {\n                    \"type\": \"Point\",\n                    \"coordinates\": [\n                        145.123,\n                        -37.987\n                    ]\n                }\n            },\n            \"timestamp\": \"2025-09-09T02:11:13.950Z\",\n            \"createdAt\": \"2025-09-09T02:11:13.950Z\",\n            \"updatedAt\": \"2025-09-09T02:11:13.950Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/events/manage/_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/events/manage/68bf8c918e2a7cd655bd676b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"events",
+						"manage",
+						"68bf8c918e2a7cd655bd676b"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/events/manage/68bf8c918e2a7cd655bd676b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"events",
+								"manage",
+								"68bf8c918e2a7cd655bd676b"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"36-QxbNEUqlGSM0QwMiAXNtf/Z6O04\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Sep 2025 02:10:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Event deleted successfully (for testing)\"\n}"
+				}
+			]
+		},
+		{
+			"name": "gamification/events/manage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user_id\": \"68a29b607bc1b124162aa01a\",\n  \"session_id\": \"test-session-manual-001\",\n  \"event_type\": \"ACTION_PERFORMED\",\n  \"action_type\": \"check_in\",\n  \"details\": {\n    \"station_id\": \"station-test-001\",\n    \"location\": { \"type\": \"Point\", \"coordinates\": [145.123, -37.987] }\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/gamification/events/manage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"gamification",
+						"events",
+						"manage"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"user_id\": \"68a29b607bc1b124162aa01a\",\n  \"session_id\": \"test-session-manual-001\",\n  \"event_type\": \"ACTION_PERFORMED\",\n  \"action_type\": \"check_in\",\n  \"details\": {\n    \"station_id\": \"station-test-001\",\n    \"location\": { \"type\": \"Point\", \"coordinates\": [145.123, -37.987] }\n  }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gamification/events/manage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gamification",
+								"events",
+								"manage"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "450"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c2-ytewPZq/yRdxxUpZmkWBLihkoxk\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Sep 2025 02:10:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Event created successfully (for testing)\",\n    \"data\": {\n        \"user_id\": \"68a29b607bc1b124162aa01a\",\n        \"session_id\": \"test-session-manual-001\",\n        \"event_type\": \"ACTION_PERFORMED\",\n        \"action_type\": \"check_in\",\n        \"details\": {\n            \"station_id\": \"station-test-001\",\n            \"location\": {\n                \"type\": \"Point\",\n                \"coordinates\": [\n                    145.123,\n                    -37.987\n                ]\n            }\n        },\n        \"_id\": \"68bf8c918e2a7cd655bd676b\",\n        \"timestamp\": \"2025-09-09T02:10:25.066Z\",\n        \"createdAt\": \"2025-09-09T02:10:25.066Z\",\n        \"updatedAt\": \"2025-09-09T02:10:25.066Z\"\n    }\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjNmODk5NDUwNjAwODM5NjAwNGVjZiIsImVtYWlsIjoiZ3Rlc3RAZXhhbXBsZS5jb20iLCJyb2xlIjoidXNlciIsImlhdCI6MTc1NzQ5NTc0NCwiZXhwIjoxNzU3NDk5MzQ0fQ.IfSJoydBROllwBVsKoK9f7NLeW7IRvRqb10_PQv-jJk",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
