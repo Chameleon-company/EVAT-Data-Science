@@ -1,0 +1,1 @@
+{"feature_cols": ["hour", "dayofweek", "is_weekend", "arrivals_lag1", "arrivals_lag2", "arrivals_lag4", "arrivals_ma4", "arrivals_ma8", "hod_sin", "hod_cos"], "seq_len": 16}
