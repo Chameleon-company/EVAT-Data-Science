@@ -1,0 +1,33 @@
+intent,example,notes
+get_congestion,how busy is the burwood charging station right now,location query
+get_congestion,is the cbd ev charger crowded at the moment,location query
+get_congestion,what is the congestion level at box hill station,location query
+get_congestion,are there many cars charging at chadstone,location query
+get_congestion,is there a long wait time at melbourne central chargers,wait time
+get_congestion,how crowded is the ev station near deakin university,campus area
+get_congestion,is the geelong charging station busy right now,regional query
+get_congestion,what is the congestion status of the docklands charger,status check
+get_congestion,are chargers available at burwood at the moment,availability
+get_congestion,how full is the ev charging station in the city,general city query
+
+compare_cost,how much will an ev trip cost for 100 km,distance based
+compare_cost,compare petrol and ev cost for a 150 km trip,comparison query
+compare_cost,is it cheaper to use an ev for 200 km,cost efficiency
+compare_cost,what is the ev vs petrol cost for 80 km,short distance
+compare_cost,how much money can i save using an ev for 120 km,savings query
+compare_cost,calculate ev and petrol cost for 50 km travel,cost calculation
+compare_cost,which is cheaper for 300 km ev or petrol,long trip
+compare_cost,trip cost comparison between ev and fuel car for 90 km,comparison query
+compare_cost,what is the charging cost for driving 140 km,charging focus
+compare_cost,tell me ev vs petrol expense for 110 km,distance based
+
+help,what can you do,general help
+help,how does this voice assistant work,system explanation
+help,what questions can i ask you,capability query
+help,can you help me with ev information,general capability
+help,i do not understand what to ask,confused user
+help,show me the available commands,command list
+help,what services do you provide,capabilities
+help,help me use this system,user guidance
+help,how do i check congestion,usage help
+help,how do i compare trip costs,usage help
