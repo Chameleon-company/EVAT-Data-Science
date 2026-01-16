@@ -43,3 +43,39 @@ This repository contains data and notebooks for exploring the relationship betwe
    - Engineers features from the raw datasets  
    - Builds a combined modelling table  
    - Trains and evaluates a regression model to predict traffic volume  
+
+### API
+
+1. **`api.py`**
+
+   #### How to run the API
+
+   1. Install dependencies  
+      ```bash
+      pip install fastapi uvicorn pandas joblib scikit-learn
+      ```
+
+   2. Run the API  
+      ```bash
+      python -m uvicorn api:app --reload
+      ```
+
+   3. Open the API in a browser  
+      - Base URL: `http://127.0.0.1:8000`
+      - Interactive docs (Swagger UI): `http://127.0.0.1:8000/docs`
+
+   4. Set input parameters
+      - Select `POST/predict`
+      - Enter values
+      Ex:
+     ```json
+     {
+       "Year": 2023,
+       "SHAPE_Length": 18.5,
+       "dist_to_nearest_ev_m": 120.0,
+       "ev_within_500m": 3,
+       "avg_temp": 9.4,
+       "total_prcp": 820.0
+     }
+     ```
+      - Select `Execute`
