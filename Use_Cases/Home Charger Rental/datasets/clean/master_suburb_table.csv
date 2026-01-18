@@ -1,0 +1,355 @@
+Suburb,Population,suburb_key,Dwellings,Income,Vehicles_per_Dwelling,Station_Count,Public_Chargers,Total_Points,latitude,longitude,Charger_to_Pop_Ratio,Stations_to_Pop_Ratio
+Abbotsford,10294,abbotsford,9364.0,2333.0,1.6,1,1,2.0,-37.8045508,144.9988542,9.714396735962697e-05,9.714396735962697e-05
+Airport West,8647,airport west,3890.0,1761.0,1.7,1,1,6.0,-37.7222576,144.8834942,0.00011564704521799469,0.00011564704521799469
+Albert Park,17184,albert park,53131.0,2076.0,1.1,0,0,0.0,,,0.0,0.0
+Alphington - Fairfield,9688,alphington fairfield,4214.0,2112.0,1.5,0,0,0.0,,,0.0,0.0
+Altona,14232,altona,40537.0,2123.0,1.8,2,2,4.0,-37.8671503,144.8294637,0.0001405283867341203,0.0001405283867341203
+Altona Meadows,18793,altona meadows,7778.0,1573.0,1.8,0,0,0.0,,,0.0,0.0
+Altona North,15914,altona north,6367.0,1740.0,1.7,1,1,4.0,-37.8378229,144.8342853,6.283775292195552e-05,6.283775292195552e-05
+Ardeer - Albion,7908,ardeer albion,3541.0,1366.0,1.4,0,0,0.0,,,0.0,0.0
+Armadale,9997,armadale,36279.0,1774.0,2.0,1,1,2.0,-37.8563442,145.0193207,0.00010003000900270081,0.00010003000900270081
+Ascot Vale,16154,ascot vale,7025.0,2192.0,1.5,1,1,2.0,-37.7753252,144.921825,6.19041723412158e-05,6.19041723412158e-05
+Ashburton,8403,ashburton,3681.0,2937.0,1.9,0,0,0.0,,,0.0,0.0
+Ashwood - Chadstone,20947,ashwood chadstone,8311.0,2011.0,1.7,0,0,0.0,,,0.0,0.0
+Aspendale Gardens - Waterways,9099,aspendale gardens waterways,3009.0,2348.0,2.2,0,0,0.0,,,0.0,0.0
+Avondale Heights,12822,avondale heights,4906.0,1587.0,1.8,0,0,0.0,,,0.0,0.0
+Balwyn,16966,balwyn,7082.0,2017.0,1.7,0,0,0.0,,,0.0,0.0
+Balwyn North,22325,balwyn north,7858.0,2350.0,2.0,0,0,0.0,,,0.0,0.0
+Bayswater,13305,bayswater,32142.0,1739.0,1.7,0,0,0.0,,,0.0,0.0
+Bayswater North,12043,bayswater north,4640.0,1800.0,2.0,0,0,0.0,,,0.0,0.0
+Beaconsfield - Officer,28367,beaconsfield officer,8397.0,2146.0,2.1,0,0,0.0,,,0.0,0.0
+Beaumaris,14422,beaumaris,5513.0,2622.0,2.0,0,0,0.0,,,0.0,0.0
+Belgrave - Selby,9991,belgrave selby,3706.0,2253.0,2.4,0,0,0.0,,,0.0,0.0
+Bentleigh East (North),17553,bentleigh east north,6387.0,2250.0,1.8,0,0,0.0,,,0.0,0.0
+Bentleigh East (South),14770,bentleigh east south,5620.0,2173.0,1.8,0,0,0.0,,,0.0,0.0
+Bentleigh - Mckinnon,26825,bentleigh mckinnon,10372.0,2240.0,1.7,0,0,0.0,,,0.0,0.0
+Berwick (North),23797,berwick north,9194.0,1885.0,2.0,0,0,0.0,,,0.0,0.0
+Berwick (South East),20002,berwick south east,5605.0,2361.0,2.2,0,0,0.0,,,0.0,0.0
+Berwick (South West),12791,berwick south west,3717.0,2175.0,2.1,0,0,0.0,,,0.0,0.0
+Blackburn,23471,blackburn,9134.0,2050.0,1.7,0,0,0.0,,,0.0,0.0
+Blackburn South,11079,blackburn south,4458.0,1861.0,1.7,0,0,0.0,,,0.0,0.0
+Boronia,24565,boronia,10160.0,1609.0,1.8,0,0,0.0,,,0.0,0.0
+Box Hill,26668,box hill,32648.0,1836.0,1.6,0,0,0.0,,,0.0,0.0
+Box Hill North,19435,box hill north,7484.0,1920.0,1.7,0,0,0.0,,,0.0,0.0
+Braeside,28,braeside,27.0,933.0,1.6,0,0,0.0,,,0.0,0.0
+Braybrook,20699,braybrook,8039.0,1686.0,1.6,0,0,0.0,,,0.0,0.0
+Brighton,24107,brighton,7532.0,1352.0,2.1,1,1,2.0,-37.9081962,144.9957991,4.148172729912474e-05,4.148172729912474e-05
+Brighton East,17261,brighton east,6447.0,2720.0,1.9,2,2,9.0,-37.9171728,145.0163663,0.00011586814205434216,0.00011586814205434216
+Broadmeadows,14786,broadmeadows,26625.0,1281.0,1.8,0,0,0.0,,,0.0,0.0
+Brookfield,10408,brookfield,16619.0,2821.0,2.1,0,0,0.0,,,0.0,0.0
+Brunswick East,14438,brunswick east,7125.0,2087.0,1.2,1,1,2.0,-37.7688802,144.9776825,6.926167059149467e-05,6.926167059149467e-05
+Brunswick (North),14595,brunswick north,6528.0,2062.0,1.2,0,0,0.0,,,0.0,0.0
+Brunswick (South),15190,brunswick south,7121.0,2126.0,1.1,0,0,0.0,,,0.0,0.0
+Brunswick West,15644,brunswick west,7651.0,1786.0,1.3,0,0,0.0,,,0.0,0.0
+Bulleen,11762,bulleen,28157.0,1816.0,1.8,0,0,0.0,,,0.0,0.0
+Bundoora (East),10240,bundoora east,3838.0,1705.0,1.9,0,0,0.0,,,0.0,0.0
+Bundoora (North),8005,bundoora north,2876.0,1833.0,2.0,0,0,0.0,,,0.0,0.0
+Bundoora (West),6742,bundoora west,2703.0,1423.0,1.8,0,0,0.0,,,0.0,0.0
+Burnside,6449,burnside,19605.0,2069.0,1.8,0,0,0.0,,,0.0,0.0
+Burnside Heights,6499,burnside heights,1808.0,2246.0,2.2,0,0,0.0,,,0.0,0.0
+Burwood,14918,burwood,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+Burwood East,12366,burwood east,4469.0,1610.0,1.7,0,0,0.0,,,0.0,0.0
+Cairnlea,10045,cairnlea,3012.0,2062.0,2.3,0,0,0.0,,,0.0,0.0
+Camberwell,22120,camberwell,8748.0,2472.0,1.8,1,1,6.0,-37.8384623,145.0740767,4.5207956600361664e-05,4.5207956600361664e-05
+Campbellfield - Coolaroo,16438,campbellfield coolaroo,5658.0,1104.0,1.8,0,0,0.0,,,0.0,0.0
+Carlton,23954,carlton,6451.0,1954.0,1.6,2,2,1.0,-37.8004228,144.9684343,8.349336227769892e-05,8.349336227769892e-05
+Carlton North - Princes Hill,8747,carlton north princes hill,4137.0,2355.0,1.3,0,0,0.0,,,0.0,0.0
+Carnegie,20903,carnegie,6041.0,1416.0,1.8,0,0,0.0,,,0.0,0.0
+Caroline Springs,21022,caroline springs,6851.0,2133.0,2.1,1,1,8.0,-37.7340623,144.7370017,4.756921320521359e-05,4.756921320521359e-05
+Carrum Downs,23342,carrum downs,9010.0,1658.0,1.9,1,1,2.0,-38.1003312,145.1788657,4.284123040013709e-05,4.284123040013709e-05
+Carrum - Patterson Lakes,12445,carrum patterson lakes,5462.0,1853.0,1.8,0,0,0.0,,,0.0,0.0
+Caulfield (North),24485,caulfield north,10397.0,2184.0,1.6,0,0,0.0,,,0.0,0.0
+Caulfield (South),18975,caulfield south,7549.0,2289.0,1.7,0,0,0.0,,,0.0,0.0
+Chelsea - Bonbeach,15882,chelsea bonbeach,7280.0,1718.0,1.6,0,0,0.0,,,0.0,0.0
+Chelsea Heights,5456,chelsea heights,2112.0,1867.0,1.9,0,0,0.0,,,0.0,0.0
+Chirnside Park,12506,chirnside park,4377.0,2084.0,2.1,1,1,1.0,-37.9047634,144.6530424,7.996161842315688e-05,7.996161842315688e-05
+Clarinda - Oakleigh South,11752,clarinda oakleigh south,4342.0,1659.0,1.9,0,0,0.0,,,0.0,0.0
+Clayton (Central),15034,clayton central,5005.0,1711.0,1.5,0,0,0.0,,,0.0,0.0
+Clayton (North) - Notting Hill,14143,clayton north notting hill,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+Clayton South,15138,clayton south,5559.0,1630.0,1.6,0,0,0.0,,,0.0,0.0
+Clifton Hill - Alphington,11292,clifton hill alphington,4471.0,2529.0,1.4,0,0,0.0,,,0.0,0.0
+Clyde North (North),13155,clyde north north,3253.0,2288.0,2.0,0,0,0.0,,,0.0,0.0
+Clyde North (South),24609,clyde north south,4529.0,2193.0,2.1,0,0,0.0,,,0.0,0.0
+Cobblebank - Strathtulloh,11760,cobblebank strathtulloh,2425.0,2056.0,2.0,0,0,0.0,,,0.0,0.0
+Coburg (East),13966,coburg east,5757.0,1944.0,1.4,0,0,0.0,,,0.0,0.0
+Coburg North,8935,coburg north,3521.0,1980.0,1.5,1,1,1.0,-37.7272635,144.9678538,0.0001119194180190263,0.0001119194180190263
+Coburg (West),14835,coburg west,5711.0,2186.0,1.5,0,0,0.0,,,0.0,0.0
+Collingwood,11145,collingwood,5648.0,2130.0,0.9,0,0,0.0,,,0.0,0.0
+Craigieburn (Central),8207,craigieburn central,2886.0,1523.0,2.0,0,0,0.0,,,0.0,0.0
+Craigieburn (North),12882,craigieburn north,3831.0,1958.0,2.1,0,0,0.0,,,0.0,0.0
+Craigieburn (North West),11198,craigieburn north west,2981.0,1876.0,1.8,0,0,0.0,,,0.0,0.0
+Craigieburn (South),24086,craigieburn south,6697.0,1835.0,2.1,0,0,0.0,,,0.0,0.0
+Craigieburn (West),14760,craigieburn west,4251.0,1752.0,1.8,0,0,0.0,,,0.0,0.0
+Cranbourne,22544,cranbourne,42108.0,1920.0,2.0,1,1,1.0,-38.0997308,145.2807256,4.435770049680625e-05,4.435770049680625e-05
+Cranbourne East (North),25149,cranbourne east north,7364.0,1931.0,2.0,0,0,0.0,,,0.0,0.0
+Cranbourne East (South),15112,cranbourne east south,4111.0,1958.0,1.9,0,0,0.0,,,0.0,0.0
+Cranbourne North (East),13678,cranbourne north east,3749.0,2184.0,2.1,0,0,0.0,,,0.0,0.0
+Cranbourne North (West),12329,cranbourne north west,4078.0,1686.0,2.1,0,0,0.0,,,0.0,0.0
+Cranbourne South,24578,cranbourne south,5947.0,2228.0,2.3,0,0,0.0,,,0.0,0.0
+Cranbourne West,24902,cranbourne west,7069.0,1903.0,2.0,1,1,1.0,-38.102241,145.2517182,4.015741707493374e-05,4.015741707493374e-05
+Croydon (East),17181,croydon east,7192.0,1566.0,1.7,0,0,0.0,,,0.0,0.0
+Croydon Hills - Warranwood,18391,croydon hills warranwood,6451.0,2377.0,2.2,0,0,0.0,,,0.0,0.0
+Croydon South,5140,croydon south,1937.0,1888.0,2.0,0,0,0.0,,,0.0,0.0
+Croydon (West),14828,croydon west,5970.0,1695.0,1.8,0,0,0.0,,,0.0,0.0
+Dandenong North,23300,dandenong north,8333.0,1436.0,1.9,1,1,2.0,-37.9558319,145.2143234,4.291845493562232e-05,4.291845493562232e-05
+Dandenong North,23300,dandenong north,8921.0,1208.0,1.5,1,1,2.0,-37.9558319,145.2143234,4.291845493562232e-05,4.291845493562232e-05
+Dandenong (North),23067,dandenong north,8333.0,1436.0,1.9,1,1,2.0,-37.9558319,145.2143234,4.3351974682446785e-05,4.3351974682446785e-05
+Dandenong (North),23067,dandenong north,8921.0,1208.0,1.5,1,1,2.0,-37.9558319,145.2143234,4.3351974682446785e-05,4.3351974682446785e-05
+Dandenong (South),10032,dandenong south,3331.0,1288.0,1.7,0,0,0.0,,,0.0,0.0
+Deer Park,18447,deer park,6590.0,1459.0,1.8,1,1,1.0,-37.7686602,144.7713077,5.420935653493793e-05,5.420935653493793e-05
+Delahey,8008,delahey,2921.0,1486.0,2.0,0,0,0.0,,,0.0,0.0
+Derrimut,8913,derrimut,2477.0,2271.0,2.2,1,1,1.0,-37.7987978,144.776051,0.00011219566924716706,0.00011219566924716706
+Diggers Rest,6967,diggers rest,2023.0,2016.0,1.9,0,0,0.0,,,0.0,0.0
+Dingley Village,10754,dingley village,4009.0,1981.0,2.1,0,0,0.0,,,0.0,0.0
+Docklands,18567,docklands,10826.0,1956.0,0.8,0,0,0.0,,,0.0,0.0
+Doncaster,27904,doncaster,11685.0,1595.0,1.6,0,0,0.0,,,0.0,0.0
+Doncaster East (North),16352,doncaster east north,5974.0,1934.0,2.0,0,0,0.0,,,0.0,0.0
+Doncaster East (South),16710,doncaster east south,6366.0,1656.0,1.7,0,0,0.0,,,0.0,0.0
+Donvale - Park Orchards,16778,donvale park orchards,5912.0,2284.0,2.2,0,0,0.0,,,0.0,0.0
+Doreen (North),17231,doreen north,5474.0,2173.0,2.1,0,0,0.0,,,0.0,0.0
+Doreen (South),11810,doreen south,3687.0,2120.0,2.0,0,0,0.0,,,0.0,0.0
+Doveton,12792,doveton,4657.0,1262.0,1.7,0,0,0.0,,,0.0,0.0
+Dromana,13785,dromana,8900.0,1398.0,1.9,0,0,0.0,,,0.0,0.0
+East Melbourne,5222,east melbourne,3458.0,2345.0,1.2,0,0,0.0,,,0.0,0.0
+Edithvale - Aspendale,14151,edithvale aspendale,5582.0,2223.0,1.8,0,0,0.0,,,0.0,0.0
+Elsternwick,12765,elsternwick,5784.0,2171.0,1.5,0,0,0.0,,,0.0,0.0
+Eltham,23554,eltham,22611.0,2302.0,2.1,1,1,4.0,-37.713736,145.147673,4.245563386261357e-05,4.245563386261357e-05
+Elwood,15961,elwood,8881.0,2093.0,1.3,0,0,0.0,,,0.0,0.0
+Emerald - Cockatoo,18958,emerald cockatoo,6751.0,2176.0,2.5,0,0,0.0,,,0.0,0.0
+Endeavour Hills (North),12150,endeavour hills north,4219.0,1823.0,2.2,0,0,0.0,,,0.0,0.0
+Endeavour Hills (South),13594,endeavour hills south,4747.0,1733.0,2.1,0,0,0.0,,,0.0,0.0
+Epping (East),13492,epping east,4687.0,1675.0,2.0,0,0,0.0,,,0.0,0.0
+Epping (South),8413,epping south,3172.0,1443.0,1.7,0,0,0.0,,,0.0,0.0
+Epping (West),12905,epping west,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+Essendon Airport,14,essendon airport,6041.0,1934.5,1.8,0,0,0.0,,,0.0,0.0
+Essendon (East),12946,essendon east,6272.0,2055.0,1.5,0,0,0.0,,,0.0,0.0
+Essendon (West) - Aberfeldie,17156,essendon west aberfeldie,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+Fawkner,14960,fawkner,5297.0,1436.0,1.6,1,1,1.0,-37.7146535,144.9605402,6.684491978609626e-05,6.684491978609626e-05
+Ferntree Gully (North),14530,ferntree gully north,6011.0,1606.0,1.8,0,0,0.0,,,0.0,0.0
+Ferntree Gully (South) - Upper Ferntree Gully,15600,ferntree gully south upper ferntree gully,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+Fitzroy,11984,fitzroy,552.0,1528.0,1.0,0,0,0.0,,,0.0,0.0
+Fitzroy North,13722,fitzroy north,6492.0,2300.0,1.2,0,0,0.0,,,0.0,0.0
+Flemington,10290,flemington,5167.0,1571.0,1.1,0,0,0.0,,,0.0,0.0
+Flemington Racecourse,78,flemington racecourse,37.0,2178.0,1.1,0,0,0.0,,,0.0,0.0
+Footscray,20756,footscray,38345.0,1738.0,1.5,0,0,0.0,,,0.0,0.0
+Forest Hill,11213,forest hill,24151.0,1833.0,1.8,1,1,2.0,-37.8362738,145.1690911,8.918219923303308e-05,8.918219923303308e-05
+Frankston,24792,frankston,58774.0,1653.0,1.9,1,1,1.0,-38.150925,145.142239,4.0335592126492416e-05,4.0335592126492416e-05
+Frankston North,19841,frankston north,8677.0,1313.0,1.6,0,0,0.0,,,0.0,0.0
+Frankston South,19214,frankston south,7393.0,2038.0,2.0,0,0,0.0,,,0.0,0.0
+Fraser Rise - Plumpton,20730,fraser rise plumpton,3247.0,2254.0,2.1,0,0,0.0,,,0.0,0.0
+Gladstone Park - Westmeadows,18264,gladstone park westmeadows,7111.0,1600.0,2.0,0,0,0.0,,,0.0,0.0
+Glen Iris (East),17537,glen iris east,6594.0,2914.0,1.9,0,0,0.0,,,0.0,0.0
+Glenroy (East),15735,glenroy east,6291.0,1526.0,1.6,0,0,0.0,,,0.0,0.0
+Glenroy (West),9575,glenroy west,3702.0,1869.0,1.5,0,0,0.0,,,0.0,0.0
+Glen Waverley (East),22689,glen waverley east,8072.0,1949.0,1.9,0,0,0.0,,,0.0,0.0
+Glen Waverley (West),23202,glen waverley west,8464.0,1890.0,1.8,0,0,0.0,,,0.0,0.0
+Gowanbrae,3189,gowanbrae,1200.0,2162.0,2.0,0,0,0.0,,,0.0,0.0
+Greensborough,21338,greensborough,8265.0,2078.0,1.9,1,1,4.0,-37.7037383,145.1079105,4.686474833630143e-05,4.686474833630143e-05
+Greenvale - Bulla,25723,greenvale bulla,7079.0,2250.0,2.4,0,0,0.0,,,0.0,0.0
+Hadfield,6654,hadfield,2610.0,1538.0,1.7,0,0,0.0,,,0.0,0.0
+Hallam,11944,hallam,3887.0,1496.0,2.0,0,0,0.0,,,0.0,0.0
+Hampton,19208,hampton,7874.0,2415.0,1.7,1,1,1.0,-37.9381127,145.0014764,5.2061640982923784e-05,5.2061640982923784e-05
+Hampton Park (East),13383,hampton park east,4070.0,1623.0,2.1,0,0,0.0,,,0.0,0.0
+Hampton Park (West),13768,hampton park west,4556.0,1462.0,2.0,0,0,0.0,,,0.0,0.0
+Hastings - Somers,23960,hastings somers,10861.0,1407.0,1.9,0,0,0.0,,,0.0,0.0
+Hawthorn East,17318,hawthorn east,8183.0,2228.0,1.5,0,0,0.0,,,0.0,0.0
+Hawthorn (North),10820,hawthorn north,4865.0,2300.0,1.4,0,0,0.0,,,0.0,0.0
+Hawthorn (South),13481,hawthorn south,6789.0,2055.0,1.3,0,0,0.0,,,0.0,0.0
+Heidelberg - Rosanna,16915,heidelberg rosanna,7063.0,2102.0,1.6,0,0,0.0,,,0.0,0.0
+Heidelberg West,16703,heidelberg west,7053.0,1618.0,1.5,0,0,0.0,,,0.0,0.0
+Highett (East) - Cheltenham,25866,highett east cheltenham,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+Highett (West) - Cheltenham,13098,highett west cheltenham,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+Hillside,16120,hillside,5274.0,2212.0,2.4,0,0,0.0,,,0.0,0.0
+Hoppers Crossing (North),18410,hoppers crossing north,6833.0,1705.0,2.1,0,0,0.0,,,0.0,0.0
+Hoppers Crossing (South),18967,hoppers crossing south,7135.0,1470.0,1.8,0,0,0.0,,,0.0,0.0
+Hughesdale,8088,hughesdale,3348.0,2057.0,1.6,0,0,0.0,,,0.0,0.0
+Hurstbridge,3540,hurstbridge,1307.0,2168.0,2.3,0,0,0.0,,,0.0,0.0
+Ivanhoe,13151,ivanhoe,29403.0,2055.0,1.7,0,0,0.0,,,0.0,0.0
+Ivanhoe East - Eaglemont,8100,ivanhoe east eaglemont,3142.0,2914.0,2.0,0,0,0.0,,,0.0,0.0
+Keilor,8701,keilor,25042.0,1935.0,1.9,0,0,0.0,,,0.0,0.0
+Keilor Downs,13068,keilor downs,4918.0,1553.0,2.0,1,1,2.0,-37.7205762,144.8047614,7.652280379553107e-05,7.652280379553107e-05
+Keilor East,15497,keilor east,5948.0,1913.0,1.9,0,0,0.0,,,0.0,0.0
+Kensington,11699,kensington,1959.0,1840.0,2.5,0,0,0.0,,,0.0,0.0
+Kew East,6780,kew east,2588.0,2485.0,1.8,0,0,0.0,,,0.0,0.0
+Kew (South),12352,kew south,4961.0,2577.0,1.8,0,0,0.0,,,0.0,0.0
+Kew (West),13675,kew west,5685.0,2459.0,1.7,0,0,0.0,,,0.0,0.0
+Keysborough (North),15095,keysborough north,5187.0,1525.0,2.0,0,0,0.0,,,0.0,0.0
+Keysborough (South),16874,keysborough south,4605.0,2493.0,2.3,0,0,0.0,,,0.0,0.0
+Kilsyth,10676,kilsyth,4170.0,1654.0,1.9,0,0,0.0,,,0.0,0.0
+Kingsbury,12508,kingsbury,4469.0,1727.0,1.7,0,0,0.0,,,0.0,0.0
+Kings Park,13931,kings park,6893.0,1753.0,1.5,0,0,0.0,,,0.0,0.0
+Knoxfield - Scoresby,17142,knoxfield scoresby,6270.0,1953.0,2.0,0,0,0.0,,,0.0,0.0
+Koo Wee Rup,12009,koo wee rup,1259.0,1763.0,2.1,0,0,0.0,,,0.0,0.0
+Kurunjang - Toolern Vale,12069,kurunjang toolern vale,4293.0,1556.0,2.2,0,0,0.0,,,0.0,0.0
+Lalor (East),10195,lalor east,4018.0,1224.0,1.7,0,0,0.0,,,0.0,0.0
+Lalor (West),13933,lalor west,4793.0,1450.0,1.9,0,0,0.0,,,0.0,0.0
+Langwarrin,25747,langwarrin,9504.0,1950.0,2.2,0,0,0.0,,,0.0,0.0
+Laverton,12754,laverton,379.0,966.0,1.4,0,0,0.0,,,0.0,0.0
+Lilydale - Coldstream,20533,lilydale coldstream,7930.0,1784.0,2.1,0,0,0.0,,,0.0,0.0
+Lynbrook - Lyndhurst,19435,lynbrook lyndhurst,5218.0,2330.0,2.2,0,0,0.0,,,0.0,0.0
+Lysterfield,6614,lysterfield,2144.0,2756.0,2.6,0,0,0.0,,,0.0,0.0
+Malvern East,23738,malvern east,9793.0,2386.0,1.7,1,1,1.0,-37.876835,145.0658739,4.2126548150644534e-05,4.2126548150644534e-05
+Malvern - Glen Iris,21680,malvern glen iris,9903.0,2364.0,1.6,0,0,0.0,,,0.0,0.0
+Manor Lakes - Quandong,12575,manor lakes quandong,3394.0,2309.0,1.7,0,0,0.0,,,0.0,0.0
+Maribyrnong,13818,maribyrnong,40427.0,1998.0,1.4,0,0,0.0,,,0.0,0.0
+Meadow Heights,14960,meadow heights,4788.0,1274.0,2.0,0,0,0.0,,,0.0,0.0
+Melbourne Airport,130,melbourne airport,32.0,1437.0,2.9,0,0,0.0,,,0.0,0.0
+Melbourne Cbd (East),13697,melbourne cbd east,7427.0,1511.0,0.4,0,0,0.0,,,0.0,0.0
+Melbourne Cbd (North),23579,melbourne cbd north,13175.0,1089.0,0.3,0,0,0.0,,,0.0,0.0
+Melbourne Cbd (West),21528,melbourne cbd west,13401.0,1446.0,0.4,0,0,0.0,,,0.0,0.0
+Melton,8046,melton,60338.0,1887.0,2.1,0,0,0.0,,,0.0,0.0
+Melton South - Weir Views,21758,melton south weir views,6151.0,1363.0,1.7,0,0,0.0,,,0.0,0.0
+Melton West,22691,melton west,7428.0,1621.0,2.0,0,0,0.0,,,0.0,0.0
+Mentone,13987,mentone,6339.0,1889.0,1.6,0,0,0.0,,,0.0,0.0
+Mernda (North),12038,mernda north,4167.0,1897.0,1.8,0,0,0.0,,,0.0,0.0
+Mernda (South),13526,mernda south,3918.0,2109.0,2.0,0,0,0.0,,,0.0,0.0
+Mickleham - Yuroke,35371,mickleham yuroke,7711.0,1982.0,2.1,0,0,0.0,,,0.0,0.0
+Mill Park (North),17706,mill park north,6485.0,1798.0,2.1,0,0,0.0,,,0.0,0.0
+Mill Park (South),11322,mill park south,4285.0,1647.0,2.0,0,0,0.0,,,0.0,0.0
+Mitcham,17472,mitcham,27143.0,1996.0,2.0,0,0,0.0,,,0.0,0.0
+Monbulk - Silvan,5834,monbulk silvan,2206.0,1872.0,2.5,0,0,0.0,,,0.0,0.0
+Montmorency - Briar Hill,16957,montmorency briar hill,6822.0,2068.0,1.9,0,0,0.0,,,0.0,0.0
+Montrose,6921,montrose,2516.0,2094.0,2.3,0,0,0.0,,,0.0,0.0
+Moonee Ponds,17823,moonee ponds,8081.0,2111.0,1.4,1,1,1.0,-37.765935,144.9192614,5.610727711384166e-05,5.610727711384166e-05
+Moorabbin Airport,26,moorabbin airport,6041.0,1934.5,1.8,0,0,0.0,,,0.0,0.0
+Moorabbin - Heatherton,9708,moorabbin heatherton,3828.0,2046.0,1.8,0,0,0.0,,,0.0,0.0
+Mooroolbark,24258,mooroolbark,8663.0,1992.0,2.1,0,0,0.0,,,0.0,0.0
+Mordialloc - Parkdale,22229,mordialloc parkdale,9088.0,2090.0,1.8,0,0,0.0,,,0.0,0.0
+Mornington (East),15111,mornington east,6226.0,1502.0,1.9,0,0,0.0,,,0.0,0.0
+Mornington (West),10843,mornington west,5704.0,1389.0,1.7,0,0,0.0,,,0.0,0.0
+Mount Dandenong - Olinda,9609,mount dandenong olinda,4056.0,2102.0,2.2,0,0,0.0,,,0.0,0.0
+Mount Eliza,19009,mount eliza,6880.0,2547.0,2.3,0,0,0.0,,,0.0,0.0
+Mount Evelyn,10032,mount evelyn,3570.0,2045.0,2.4,0,0,0.0,,,0.0,0.0
+Mount Martha,20166,mount martha,8480.0,2097.0,2.1,0,0,0.0,,,0.0,0.0
+Mount Waverley (North),17214,mount waverley north,6323.0,2049.0,1.9,0,0,0.0,,,0.0,0.0
+Mount Waverley (South),20581,mount waverley south,7554.0,2079.0,1.9,0,0,0.0,,,0.0,0.0
+Mulgrave,20981,mulgrave,24619.0,1647.0,1.9,0,0,0.0,,,0.0,0.0
+Murrumbeena,10045,murrumbeena,4269.0,2089.0,1.6,0,0,0.0,,,0.0,0.0
+Narre Warren North,8184,narre warren north,23767.0,1780.0,2.1,0,0,0.0,,,0.0,0.0
+Narre Warren (North East),13643,narre warren north east,4636.0,1920.0,2.2,0,0,0.0,,,0.0,0.0
+Narre Warren South (East),13030,narre warren south east,3906.0,2352.0,2.5,0,0,0.0,,,0.0,0.0
+Narre Warren (South West),15452,narre warren south west,5483.0,1615.0,1.9,0,0,0.0,,,0.0,0.0
+Narre Warren (South West),15452,narre warren south west,5007.0,2011.0,2.3,0,0,0.0,,,0.0,0.0
+Narre Warren South (West),17141,narre warren south west,5483.0,1615.0,1.9,0,0,0.0,,,0.0,0.0
+Narre Warren South (West),17141,narre warren south west,5007.0,2011.0,2.3,0,0,0.0,,,0.0,0.0
+Newport,19943,newport,5459.0,2607.0,2.1,0,0,0.0,,,0.0,0.0
+Niddrie - Essendon West,7925,niddrie essendon west,3095.0,2239.0,1.8,0,0,0.0,,,0.0,0.0
+Noble Park (East),13699,noble park east,5408.0,1359.0,1.6,0,0,0.0,,,0.0,0.0
+Noble Park North,7651,noble park north,2874.0,1453.0,1.8,0,0,0.0,,,0.0,0.0
+Noble Park (West),20330,noble park west,7179.0,1399.0,1.7,0,0,0.0,,,0.0,0.0
+Northcote (East),15920,northcote east,6855.0,2251.0,1.4,0,0,0.0,,,0.0,0.0
+Northcote (West),10953,northcote west,4847.0,2318.0,1.3,0,0,0.0,,,0.0,0.0
+North Melbourne,19221,north melbourne,9297.0,1718.0,0.9,0,0,0.0,,,0.0,0.0
+Nunawading,13230,nunawading,5080.0,1938.0,1.7,0,0,0.0,,,0.0,0.0
+Oakleigh - Huntingdale,25104,oakleigh huntingdale,9743.0,1956.0,1.7,0,0,0.0,,,0.0,0.0
+Oak Park,8488,oak park,3451.0,2204.0,1.6,1,1,3.0,-37.7180181,144.9215041,0.000117813383600377,0.000117813383600377
+Ormond - Glen Huntly,14736,ormond glen huntly,6329.0,1978.0,1.4,0,0,0.0,,,0.0,0.0
+Pakenham (North East),16379,pakenham north east,5916.0,1651.0,2.0,0,0,0.0,,,0.0,0.0
+Pakenham (North West),9658,pakenham north west,2676.0,1887.0,2.0,0,0,0.0,,,0.0,0.0
+Pakenham (South East),6706,pakenham south east,2937.0,1235.0,1.7,0,0,0.0,,,0.0,0.0
+Pakenham (South West),28217,pakenham south west,9281.0,1803.0,2.0,0,0,0.0,,,0.0,0.0
+Parkville,8293,parkville,2823.0,1885.0,1.2,0,0,0.0,,,0.0,0.0
+Pascoe Vale,18434,pascoe vale,34133.0,1947.0,1.6,0,0,0.0,,,0.0,0.0
+Pascoe Vale South,10869,pascoe vale south,4132.0,2245.0,1.8,0,0,0.0,,,0.0,0.0
+Pearcedale - Tooradin,8253,pearcedale tooradin,2999.0,1895.0,2.6,0,0,0.0,,,0.0,0.0
+Plenty - Yarrambat,9609,plenty yarrambat,3215.0,2554.0,2.6,0,0,0.0,,,0.0,0.0
+Point Cook (East),21519,point cook east,6694.0,2381.0,1.9,0,0,0.0,,,0.0,0.0
+Point Cook (North East),14817,point cook north east,4960.0,2185.0,1.9,0,0,0.0,,,0.0,0.0
+Point Cook (North West),10165,point cook north west,3158.0,2439.0,1.9,0,0,0.0,,,0.0,0.0
+Point Cook (South),20596,point cook south,6089.0,2522.0,1.8,0,0,0.0,,,0.0,0.0
+Point Nepean,20258,point nepean,20509.0,1430.0,1.9,0,0,0.0,,,0.0,0.0
+Port Melbourne,16884,port melbourne,8981.0,2347.0,1.3,4,4,16.0,-37.8333613,144.9219203,0.00023691068467187872,0.00023691068467187872
+Port Melbourne Industrial,2611,port melbourne industrial,1089.0,2407.0,1.2,0,0,0.0,,,0.0,0.0
+Prahran - Windsor,20928,prahran windsor,12206.0,2098.0,1.1,0,0,0.0,,,0.0,0.0
+Preston (East),22596,preston east,9976.0,1787.0,1.4,0,0,0.0,,,0.0,0.0
+Preston (West),13470,preston west,5501.0,1970.0,1.5,0,0,0.0,,,0.0,0.0
+Research - North Warrandyte,7034,research north warrandyte,2359.0,2831.0,2.6,0,0,0.0,,,0.0,0.0
+Reservoir (North East),15976,reservoir north east,6938.0,1544.0,1.5,0,0,0.0,,,0.0,0.0
+Reservoir (North West),9834,reservoir north west,3896.0,1442.0,1.8,0,0,0.0,,,0.0,0.0
+Reservoir (South East),13875,reservoir south east,6041.0,1401.0,1.4,0,0,0.0,,,0.0,0.0
+Reservoir (South West),15161,reservoir south west,6457.0,1743.0,1.5,0,0,0.0,,,0.0,0.0
+Richmond (North),15319,richmond north,8221.0,2009.0,1.1,0,0,0.0,,,0.0,0.0
+Richmond (South) - Cremorne,19230,richmond south cremorne,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+Ringwood,19633,ringwood,27664.0,1888.0,1.7,1,1,4.0,-37.8158726,145.2291113,5.093465084296847e-05,5.093465084296847e-05
+Ringwood East,21866,ringwood east,8512.0,1945.0,1.8,0,0,0.0,,,0.0,0.0
+Ringwood North,9803,ringwood north,3517.0,2330.0,2.1,0,0,0.0,,,0.0,0.0
+Rockbank - Mount Cottrell,31389,rockbank mount cottrell,5104.0,2123.0,2.0,0,0,0.0,,,0.0,0.0
+Rosebud - Mccrae,23281,rosebud mccrae,14611.0,1155.0,1.7,0,0,0.0,,,0.0,0.0
+Rowville (Central),15731,rowville central,5747.0,2083.0,2.2,0,0,0.0,,,0.0,0.0
+Rowville (North),7894,rowville north,2745.0,2285.0,2.2,0,0,0.0,,,0.0,0.0
+Rowville (South),10594,rowville south,3623.0,2363.0,2.3,0,0,0.0,,,0.0,0.0
+Roxburgh Park (North),15427,roxburgh park north,3921.0,1619.0,2.2,0,0,0.0,,,0.0,0.0
+Roxburgh Park (South) - Somerton,9731,roxburgh park south somerton,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+Royal Botanic Gardens Victoria,0,royal botanic gardens victoria,6041.0,1934.5,1.8,0,0,0.0,,,,
+Sandringham - Black Rock,18022,sandringham black rock,7703.0,2356.0,1.8,0,0,0.0,,,0.0,0.0
+Seabrook,4963,seabrook,1806.0,2042.0,2.0,0,0,0.0,,,0.0,0.0
+Seaford,18072,seaford,8180.0,1500.0,1.7,0,0,0.0,,,0.0,0.0
+Seddon - Kingsville,9782,seddon kingsville,4351.0,2364.0,1.3,0,0,0.0,,,0.0,0.0
+Skye - Sandhurst,13607,skye sandhurst,4673.0,2224.0,2.2,0,0,0.0,,,0.0,0.0
+Somerville,18972,somerville,7400.0,1781.0,2.2,0,0,0.0,,,0.0,0.0
+Southbank (East),19428,southbank east,12383.0,1880.0,0.7,0,0,0.0,,,0.0,0.0
+Southbank (West) - South Wharf,7866,southbank west south wharf,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+South Melbourne,12916,south melbourne,7475.0,2103.0,1.1,1,1,6.0,-37.83344,144.9570533,7.74233508826262e-05,7.74233508826262e-05
+South Morang (North),13070,south morang north,4056.0,2242.0,2.2,0,0,0.0,,,0.0,0.0
+South Morang (South),12889,south morang south,4446.0,1899.0,2.0,0,0,0.0,,,0.0,0.0
+South Yarra (North),13633,south yarra north,8446.0,2042.0,0.9,0,0,0.0,,,0.0,0.0
+South Yarra (South),10558,south yarra south,6516.0,2001.0,1.0,0,0,0.0,,,0.0,0.0
+South Yarra (West),6946,south yarra west,4258.0,2259.0,1.1,0,0,0.0,,,0.0,0.0
+Springvale,24111,springvale,8136.0,1401.0,1.7,0,0,0.0,,,0.0,0.0
+Springvale South,13139,springvale south,4073.0,1505.0,2.0,0,0,0.0,,,0.0,0.0
+St Albans (North),21002,st albans north,8119.0,1183.0,1.6,0,0,0.0,,,0.0,0.0
+St Albans (South),17764,st albans south,6333.0,1232.0,1.7,0,0,0.0,,,0.0,0.0
+St Kilda (Central),13725,st kilda central,8598.0,1788.0,1.0,0,0,0.0,,,0.0,0.0
+St Kilda East,17332,st kilda east,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+St Kilda (West),16059,st kilda west,9555.0,1849.0,1.0,0,0,0.0,,,0.0,0.0
+Strathmore,10457,strathmore,3786.0,2440.0,2.0,0,0,0.0,,,0.0,0.0
+Sunbury,14810,sunbury,26751.0,1812.0,2.0,1,1,2.0,-37.5791363,144.7279832,6.75219446320054e-05,6.75219446320054e-05
+Sunbury (South),16819,sunbury south,6041.0,1934.5,1.8,0,0,0.0,,,0.0,0.0
+Sunbury (West),11404,sunbury west,4296.0,1987.0,2.2,0,0,0.0,,,0.0,0.0
+Sunshine,10104,sunshine,177206.0,1574.0,2.0,0,0,0.0,,,0.0,0.0
+Sunshine North,12503,sunshine north,4390.0,1399.0,1.8,0,0,0.0,,,0.0,0.0
+Sunshine West,18790,sunshine west,7046.0,1416.0,1.8,1,1,4.0,-37.7983442,144.8110919,5.321979776476849e-05,5.321979776476849e-05
+Surrey Hills (East) - Mont Albert,10765,surrey hills east mont albert,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+Surrey Hills (West) - Canterbury,16231,surrey hills west canterbury,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+Sydenham,11972,sydenham,26554.0,2107.0,2.2,1,1,3.0,-37.6997223,144.7653295,8.35282325425994e-05,8.35282325425994e-05
+Tarneit (Central),29462,tarneit central,8349.0,2164.0,2.0,0,0,0.0,,,0.0,0.0
+Tarneit (North),13485,tarneit north,2215.0,2198.0,1.9,0,0,0.0,,,0.0,0.0
+Tarneit (South),11708,tarneit south,3503.0,1885.0,1.9,0,0,0.0,,,0.0,0.0
+Tarneit (West) - Mount Cottrell,17173,tarneit west mount cottrell,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+Taylors Hill,19856,taylors hill,16160.0,1867.0,1.3,0,0,0.0,,,0.0,0.0
+Taylors Lakes,16999,taylors lakes,5915.0,2167.0,2.4,0,0,0.0,,,0.0,0.0
+Templestowe,17467,templestowe,6310.0,2163.0,2.1,0,0,0.0,,,0.0,0.0
+Templestowe Lower,14612,templestowe lower,5504.0,1919.0,1.9,0,0,0.0,,,0.0,0.0
+The Basin,4345,the basin,1629.0,2049.0,2.2,0,0,0.0,,,0.0,0.0
+Thomastown,20538,thomastown,30354.0,1516.0,1.8,0,0,0.0,,,0.0,0.0
+Thornbury,19982,thornbury,9055.0,1978.0,1.4,0,0,0.0,,,0.0,0.0
+Toorak,13504,toorak,7257.0,2538.0,1.7,0,0,0.0,,,0.0,0.0
+Truganina (North),14287,truganina north,2646.0,2307.0,1.9,0,0,0.0,,,0.0,0.0
+Truganina (South East),10689,truganina south east,3045.0,2337.0,1.9,0,0,0.0,,,0.0,0.0
+Truganina (South West),20356,truganina south west,5666.0,1947.0,1.9,0,0,0.0,,,0.0,0.0
+Tullamarine,6710,tullamarine,68264.0,1658.0,2.0,0,0,0.0,,,0.0,0.0
+Upwey - Tecoma,9862,upwey tecoma,3776.0,2148.0,2.1,0,0,0.0,,,0.0,0.0
+Vermont,11353,vermont,4086.0,2042.0,1.9,0,0,0.0,,,0.0,0.0
+Vermont South,12275,vermont south,4443.0,1944.0,2.0,0,0,0.0,,,0.0,0.0
+Viewbank - Yallambie,19009,viewbank yallambie,7337.0,2025.0,1.8,0,0,0.0,,,0.0,0.0
+Wallan,28415,wallan,5217.0,1917.0,2.2,1,1,1.0,-37.5040691,145.1090152,3.5192679922576104e-05,3.5192679922576104e-05
+Wandin - Seville,7999,wandin seville,2876.0,2066.0,2.7,0,0,0.0,,,0.0,0.0
+Wantirna,14631,wantirna,5320.0,1883.0,2.0,0,0,0.0,,,0.0,0.0
+Wantirna South,18388,wantirna south,6927.0,1821.0,1.9,0,0,0.0,,,0.0,0.0
+Warrandyte - Wonga Park,10238,warrandyte wonga park,6041.0,1934.5,1.8,0,0,0.0,,,0.0,0.0
+Watsonia,9518,watsonia,3818.0,1961.0,1.8,0,0,0.0,,,0.0,0.0
+Wattle Glen - Diamond Creek,14803,wattle glen diamond creek,5012.0,2496.0,2.4,0,0,0.0,,,0.0,0.0
+Werribee (East),19124,werribee east,7727.0,1374.0,1.7,0,0,0.0,,,0.0,0.0
+Werribee (South),17937,werribee south,6876.0,1802.0,1.8,0,0,0.0,,,0.0,0.0
+Werribee (West),30552,werribee west,8439.0,1995.0,1.9,0,0,0.0,,,0.0,0.0
+West Footscray - Tottenham,12953,west footscray tottenham,5372.0,1988.0,1.4,0,0,0.0,,,0.0,0.0
+West Melbourne (Industrial),0,west melbourne industrial,6041.0,1934.5,1.8,0,0,0.0,,,,
+West Melbourne (Residential),9301,west melbourne residential,4782.0,1784.0,0.8,0,0,0.0,,,0.0,0.0
+Wheelers Hill,21285,wheelers hill,7945.0,1818.0,2.0,0,0,0.0,,,0.0,0.0
+Whittlesea,15811,whittlesea,82933.0,1768.0,1.9,1,1,1.0,-37.5121301,145.1177321,6.324710644488014e-05,6.324710644488014e-05
+Williamstown,16920,williamstown,32366.0,2315.0,1.6,0,0,0.0,,,0.0,0.0
+Wollert,33578,wollert,7989.0,1979.0,1.9,0,0,0.0,,,0.0,0.0
+Wyndham Vale (North),13138,wyndham vale north,3225.0,1862.0,1.7,0,0,0.0,,,0.0,0.0
+Wyndham Vale (South),14163,wyndham vale south,4699.0,1766.0,1.9,0,0,0.0,,,0.0,0.0
+Yarra Valley,17059,yarra valley,148.0,900.0,1.9,0,0,0.0,,,0.0,0.0
+Yarraville,16243,yarraville,6768.0,2483.0,1.5,0,0,0.0,,,0.0,0.0
