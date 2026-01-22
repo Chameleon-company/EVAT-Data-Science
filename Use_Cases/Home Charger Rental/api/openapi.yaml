@@ -1,0 +1,85 @@
+openapi: 3.0.3
+info:
+  title: Home Charger Rental API (Concept)
+  version: 0.1.0
+  description: >
+    Decision-support API for Home Charger Rental use case. Outputs are cluster summaries
+    and indicative pricing signals derived from analytics (not real-time pricing).
+
+servers:
+  - url: https://example.com
+
+paths:
+  /api/home-charger/suburb-summary:
+    get:
+      summary: Suburb cluster summary + pricing signal
+      parameters:
+        - in: query
+          name: suburb
+          schema: { type: string }
+          required: false
+          description: Suburb name (e.g., "Altona")
+        - in: query
+          name: lat
+          schema: { type: number, format: float }
+          required: false
+        - in: query
+          name: lon
+          schema: { type: number, format: float }
+          required: false
+      responses:
+        "200":
+          description: Summary response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuburbSummary"
+
+  /api/home-charger/cluster-overview:
+    get:
+      summary: Cluster overview for dashboards
+      responses:
+        "200":
+          description: List of clusters
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ClusterOverview"
+
+components:
+  schemas:
+    SuburbSummary:
+      type: object
+      properties:
+        suburb: { type: string }
+        cluster_id: { type: integer }
+        cluster_label: { type: string }
+        summary_metrics:
+          type: object
+          properties:
+            population: { type: integer }
+            income: { type: number }
+            vehicles_per_dwelling: { type: number }
+            public_chargers: { type: integer }
+            station_count: { type: integer }
+        pricing_signal:
+          type: object
+          properties:
+            indicative_price: { type: number }
+            pricing_basis: { type: string }
+
+    ClusterOverview:
+      type: object
+      properties:
+        cluster_id: { type: integer }
+        cluster_label: { type: string }
+        description: { type: string }
+        key_characteristics:
+          type: object
+          properties:
+            avg_population: { type: number }
+            avg_income: { type: number }
+            avg_vehicles_per_dwelling: { type: number }
+        business_recommendation: { type: string }
