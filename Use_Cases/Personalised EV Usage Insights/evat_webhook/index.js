@@ -25,6 +25,44 @@ async function connectClient() {
 }
 connectClient();
 
+// Secure GET endpoint for user-specific data
+app.get('/api/user-data', async (req, res) => {
+  try {
+    // 1️⃣ Extract logged-in user email from token
+    //    This requires an auth middleware that sets req.user
+    const userEmail = req.user?.email;
+    if (!userEmail) {
+      return res.status(401).json({ message: "Unauthorized: No email found" });
+    }
+
+    const db = client.db('EVAT');
+
+    // 2️⃣ Look for the user's Google Form submission
+    const submissionsCollection = db.collection('user_responses');
+    const userSubmission = await submissionsCollection.findOne({ email: userEmail });
+
+    if (!userSubmission) {
+      return res.status(404).json({ message: "No submission found for this user" });
+    }
+
+    // 3️⃣ (Optional) Merge extra info from users dataset
+    const usersCollection = db.collection('users'); // your auth/user dataset
+    const userProfile = await usersCollection.findOne({ email: userEmail });
+
+    // Merge submission + profile info
+    const response = {
+      submission: userSubmission,
+      profile: userProfile || null
+    };
+
+    res.status(200).json(response);
+
+  } catch (err) {
+    console.error('Error fetching user data:', err);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
 // POST /api/save webhook
 app.post('/api/save', async (req, res) => {
   console.log('Webhook triggered');
@@ -106,7 +144,8 @@ const keepAlivePredictService = async () => {
       charging_preference: "",
       budget: "",
       priorities: "",
-      postcode: ""
+      postcode: "",
+      email: ""
     }, { timeout: 10000 });
     console.log('Prediction service warmed up!');
   } catch (err) {
