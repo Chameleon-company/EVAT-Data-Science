@@ -23,6 +23,7 @@ function onFormSubmit(e) {
   budget: formData[12],
   priorities: formData[13],
   postcode: formData[14],
+  email: formData[15]
 };
 
     Logger.log("Payload: " + JSON.stringify(payload));
