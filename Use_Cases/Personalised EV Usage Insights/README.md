@@ -23,3 +23,6 @@ This section details the end-to-end workflow and technical methodology used to c
 11. A dashboard was developed from the cluster results. File: `Personalised EV Usage Insights.pbix`
 12. Dashboard was published and embedded to Sharepoint.
 
+## Updates
+1. Prediction model now incorporates user authentication via secure GET endpoint for user-specific data
+2. Posts data from MongoDB if user authentication is successful
