@@ -1,0 +1,261 @@
+Charger_Name,Address,Suburb,State,Postal_Code,Power_kW,Usage_Cost,Number_of_Points,Connection_Types,latitude,longitude
+RMIT - City Campus,17-21 Cardigan Street,Carlton,VIC,3053,,,1.0,"33, 25",-37.8004228,144.9684343
+100 St Kilda Rd,100 St Kilda Rd,Southbank,AU-VIC,AU,,,,1,-37.8253618,144.9640203
+11 Nicholson Street,11 Nicholson Street,Carlton,AU-VIC,AU,,,,1,-37.8004228,144.9684343
+Lorbek Luxury Cars,30 Prohasky Street,Port Melbourne,Victoria,3207,11.0,,8.0,1036,-37.8333613,144.9219203
+Tesla Supercharger South Melbourne,Clarendon Street,South Melbourne,VIC,nan,250.0,,6.0,33,-37.83344,144.9570533
+Collingwood Library,13 Stanton St,Abbotsford,VIC,3067,,,2.0,"33, 2, 33, 2",-37.8045508,144.9988542
+JET Charge Office,350 Bridge Street,Port Melbourne,VIC,3207,,,1.0,"2, 33, 1036",-37.8333613,144.9219203
+Evie Richmond Library,Swan Street,Richmond,VIC,nan,50.0,,1.0,33,-37.80745,144.9907213
+650 Church Street Building 5,Church Street,Melbourne,Victoria,3121,120.0,,4.0,33,-37.8142454,144.9631732
+Woolworths Fishermans Bend,Plumber Street,Fishermans Bend,VIC,nan,50.0,,2.0,33,-37.8245644,144.922933
+Middy’s Port Melbourne,2 Thackray Road,Port Melbourne,Victoria,3207,,,1.0,"33, 2",-37.8333613,144.9219203
+Ampcharge Barkly Square,Barkly Street,Brunswick,VIC,nan,150.0,,8.0,33,-37.7664715,144.9613103
+ENGIE - VIctoria Gardens,620 Victoria St,Richmond,Vic,3121,,,1.0,"2, 33",-37.80745,144.9907213
+GET Electric Head Office,327 Plummer Street,Port Melbourne,Victoria,3207,11.0,,6.0,25,-37.8333613,144.9219203
+Brunswick EV Hub,15 Edward Street,Brunswick,Victoria,3056,,,4.0,"33, 25",-37.7664715,144.9613103
+David Street Car Park,1 David St,Brunswick,Victoria,3056,22.0,,2.0,25,-37.7664715,144.9613103
+RMIT Brunswick,25 Dawson St,Brunswick,Victoria,3056,22.0,,1.0,25,-37.7664715,144.9613103
+Fleming Park,4 -6 Cross St,Brunswick East,Victoria,3057,,,2.0,"25, 25",-37.7688802,144.9776825
+The Parade Ascot Vale Car Park,66-68 The Parade,Ascot Vale,Victoria,3032,,,2.0,"2, 33, 33, 2",-37.7753252,144.921825
+Moonee Ponds,Moonee Ponds,Nan,,3039,120.0,,6.0,33,-37.8688729,145.2126338
+Moonee Ponds Central,14 - 16 Hall St,Moonee Ponds,Victoria,3039,,,1.0,"1, 25",-37.765935,144.9192614
+St Kilda Town Hall,164 Carlisle Street,St Kilda,Vic,3182,,,2.0,"25, 29",-37.8638261,144.981637
+Swinburne University - TC Building,Falmouth Street,Hawthorn,Victoria,3122,,,1.0,"33, 2",-37.8244246,145.0317207
+City of Stonnington,290 Glenferrie Road,Malvern,VIC,3144,,,1.0,"33, 2",-37.8576088,145.0350666
+Malvern Central,122 Wattletree Rd,Armadale,Victoria,3144,,,2.0,"33, 2, 33, 2",-37.8563442,145.0193207
+Coburg Civic Centre / Moreland City,90 Bell Street,Coburg,Victoria,3058,,,4.0,"33, 25, 2",-37.7449752,144.9643314
+Coburg Town Hall / Moreland City,Bell Street,Melbourne,Victoria,3058,7.0,,2.0,25,-37.8142454,144.9631732
+Camberwell Supercharger,793 Burke Road,Camberwell,VIC,3124,120.0,,6.0,33,-37.8384623,145.0740767
+Monash Caufield,880 Dandenong Rd,Malvern East,Vic,3145,,,1.0,"33, 2",-37.876835,145.0658739
+Bayside Gateway,301-307 Nepean Hwy,Brighton East,Victoria,3186,,,6.0,"2, 33",-37.9171728,145.0163663
+Austin Tower Carpark Level B1,145 Studley Road,Heidelberg,Victoria,3084,,,4.0,"25, 25",-37.7524788,145.0701284
+Coburg North EV Fast Charge,11 Boundary Road,Coburg North,Victoria,3058,,,1.0,"33, 2",-37.7272635,144.9678538
+Oak Park Sports & Aquatic Centre,563 Pascoe Vale Road,Oak Park,Victoria,3064,,,3.0,"25, 1",-37.7180181,144.9215041
+Bayside Willansby Ave,47 Willansby Ave,Brighton,VIC,3186,,,2.0,"33, 2, 2, 33",-37.9081962,144.9957991
+Woolworths Heidelberg,451 Lower Heidelberg Road,Heidelberg,Victoria,3084,,,16.0,"33, 33, 25, 25, 25, 25, 25, 25",-37.7524788,145.0701284
+Tesla Supercharger Brighton East,Hope Street,Brighton East,Victoria,3186,250.0,,3.0,33,-37.9171728,145.0163663
+Toyota Altona,Grieve Parade,Altona,VIC,nan,,,3.0,"33, 2",-37.8671503,144.8294637
+CB Smith Reserve,99 Jukes Road,Fawkner,Victoria,3060,,,1.0,"33, 2",-37.7146535,144.9605402
+Hobsons Bay Civic Centre,115 Civic Parade,Altona,Victoria,3018,,,1.0,"33, 2",-37.8671503,144.8294637
+Chargefox Airport West,29-35 Louis St,Airport West,Victoria,3042,,,6.0,"2, 33, 33, 33, 2",-37.7222576,144.8834942
+Chadstone Shopping Centre,1341 Dandenong Rd,Nan,Victoria,3148,,,6.0,"25, 25, 25, 25, 25, 25",-37.8688729,145.2126338
+ENGIE - Chadstone,1341 Dandenong Rd,Chadstone,Victoria,3148,,,4.0,"33, 2",-37.8822799,145.1001365
+ENGIE - Chadstone 2,Dandenong Road,Chadstone,VIC,nan,120.0,,4.0,33,-37.8822799,145.1001365
+Tesla Supercharger Campbellfield,Camp Road,Campbellfield,Victoria,3060,250.0,,1.0,33,-37.6641298,144.959583
+Ampol Foodary Altona North,1 Horsburgh Drive,Altona North,Victoria,3025,,,4.0,"33, 2",-37.8378229,144.8342853
+Bridge Street,Bridge Street,Hampton,Victoria,3191,,,1.0,"33, 2",-37.9381127,145.0014764
+Telsa Supercharger Box Hill,Ailsa Street,Box Hill South,Victoria,3128,250.0,,12.0,33,-37.8366236,145.1233644
+Evie Glen Gala Village,Fitzgerald Road,Sunshine West,VIC,nan,,,4.0,"33, 2",-37.7983442,144.8110919
+Miller Grove,Miller Grove,Nan,Victoria,3149,22.0,,2.0,33,-37.8688729,145.2126338
+Keilor Central,80 Taylors Road,Keilor Downs,Victoria,3038,,,2.0,"33, 2, 33, 2",-37.7205762,144.8047614
+Tesla Supercharger Oakleigh Repair Centre,Huntingdale Road,Oakleigh South,VIC,nan,250.0,,6.0,33,-37.9248257,145.0921745
+Bayside Council,76 Royal Ave,Sandringham,VIC,3191,,,1.0,"33, 33, 33, 2, 25, 25, 25",-37.9502592,145.0043868
+Jolt Cheltenham,Bay Road,Cheltenham,VIC,nan,,,1.0,"33, 2",-37.9670081,145.0546951
+Uni Hill Town Centre,19 Graduate Drive,Bundoora,Victoria,3082,,,2.0,"33, 2, 33, 2",-37.6982468,145.0596757
+Greensborough Plaza,25 Main St,Greensborough,Victoria,3088,,,4.0,"1036, 25",-37.7037383,145.1079105
+Watermarc Carpark (LG),Greensborough Walk,Nan,Victoria,3088,11.0,0.0,3.0,25,-37.8688729,145.2126338
+Forest Hill Chase Shopping Centre,Pacific Way,Forest Hill,Victoria,3131,22.0,,2.0,25,-37.8362738,145.1690911
+Brimbank Shopping Centre,28-72 Neale Road,Deer Park,Victoria,3023,22.0,,1.0,25,-37.7686602,144.7713077
+Southland Medical Centre,50 Chesterville rd,Cheltenham,Victoria,3192,,,1.0,,-37.9670081,145.0546951
+Research Way - N1 Carpark,Research Way,Nan,Victoria,3800,,,2.0,"1036, 33, 2",-37.8688729,145.2126338
+Ampol Derrimut,354a Robinsons Rd,Derrimut,Vic,3026,,,1.0,"33, 2",-37.7987978,144.776051
+Jolt Black Rock,Balcolme Road,Black Rock,VIC,nan,,,1.0,"33, 2",-37.9706564,145.0212822
+BP Northpoint,1 Scanlon Drive,Epping,Victoria,3076,150.0,,8.0,33,-37.6523847,145.0315487
+Eltham Leisure Centre,40 Brougham Street,Eltham,Victoria,3095,,,4.0,"25, 25",-37.713736,145.147673
+Engie - The Glen,235 Springvale Rd,Glen Waverley,Vic,3150,,,1.0,"33, 2",-37.8795908,145.1622405
+BP pulse Diamond Creek,274 Diamond Creek Road,Diamond Creek,Victoria,3090,,,2.0,"2, 33",-37.6733272,145.1588075
+BP Pulse,Ballarat Road,Caroline Springs,VIC,nan,150.0,,8.0,33,-37.7340623,144.7370017
+Shell Coles Express Taylors Lakes,410 Melton Highway,Taylor Lakes,Victoria,3038,,,2.0,"33, 2",,
+Watergardens Shopping Centre,399 Melton Highway,Sydenham,Victoria,3037,22.0,,3.0,25,-37.6997223,144.7653295
+Point Cook Town Centre,Dunnings Road,Point Cook,Victoria,3030,7.0,,1.0,1036,-37.9064862,144.7533059
+Red Rooster Vermont,,Ringwood,Victoria,3134,,,4.0,"33, 2, 33, 2",-37.8158726,145.2291113
+Greenvale Woolworths,200 James Mirams Drive,Roxburgh Park,Victoria,3064,22.0,,2.0,25,-37.6381563,144.9353302
+Ampcharge Sandown,Princes Highway,Sandown,VIC,nan,180.0,,2.0,33,-37.9503548,145.1665966
+Bunnings Tarneit,83 Leakes Rd,Tarneit,,3029,22.0,,2.0,25,-37.8321522,144.69462
+EastLand Shopping Centre,Maroondah Highway,Melbourne,Victoria,3134,22.0,,4.0,1036,-37.8142454,144.9631732
+diamond creek community bank stadium,Main Hurstbridge Road,Diamond Creek,Victoria,3089,22.0,,1.0,25,-37.6733272,145.1588075
+Bay Trail,Bay Trail,Moordialloc,Victoria,3195,,,1.0,"33, 2",-38.0102322,145.0929673
+Bembit Bagrook Community Centre,61 Polly Parade,Tarneit,Victoria,3029,,,1.0,"33, 2",-37.8321522,144.69462
+Scorseby Engie,,Nan,Victoria,3179,,,2.0,"33, 2",-37.8688729,145.2126338
+Jolt Bayswster,Station Street,Nan,Victoria,3153,,,1.0,"2, 33",-37.8688729,145.2126338
+Stud Park Shopping Centre,cnr Fulham Road & Stud Road,Rowville,Victoria,3178,,,2.0,"33, 2, 33, 2",-37.9239267,145.2447672
+Civic Centre,45 Princes Highway,Werribee,Victoria,3030,,,4.0,"33, 33, 2",-37.907984,144.6416748
+Ampcharge Werribee,Cherry Street,Werribee,VIC,nan,180.0,,1.0,33,-37.907984,144.6416748
+Devon Street Car Park,4 - 16 Devon Street,Croydon,Victoria,3136,,,4.0,"25, 25",-37.7955004,145.2801507
+Ampcharge Cheltenham,Cheltenham Road,Keysborough,VIC,nan,180.0,,2.0,33,-38.0053607,145.1674069
+Strata Equity – Hunter Werribee,22 Synnot Street,Werribee,Victoria,3030,,,3.0,"25, 25, 25",-37.907984,144.6416748
+Club Trillium,11/19 Trillium Boulevard,Mickleham,Victoria,3064,,,1.0,1,-37.5344793,144.9120372
+bp pulse Dandenong North,Heatherton Rd & Stud Rd,Dandenong North,Victoria,3802,75.0,,2.0,33,-37.9558319,145.2143234
+Heatherton Road,Heatherton Road,Dandenong,Victoria,3175,,,2.0,"33, 2",-37.98749,145.2147923
+Ampol Kilsyth,Canterbury & Gatwick Road,Kilsyth South,Victoria,3153,,,1.0,"33, 2",-37.8315054,145.3110008
+Evie Chelsea,1 Swansea Rd,Chelsea,Victoria,3196,,,1.0,"33, 2, 33, 2",-38.0497386,145.121407
+Evie Chirnside Park,Fletcher Street,Chirnside Park,VIC,nan,,,1.0,"33, 2",-37.9047634,144.6530424
+bp pulse Merrifield,470 Donnybrook Road,Mickleham,Victoria,3064,,,4.0,"33, 33",-37.5344793,144.9120372
+Marnong Estate,2335 Mickleham Road,Mickleham,Victoria,3064,22.0,,4.0,25,-37.5344793,144.9120372
+Lollypop Creek Community Centre,Shipwright Parade,Harpley,VIC,nan,50.0,,2.0,33,-37.9110402,144.6113082
+Hungry Jacks,27 Gap Road,Sunbury,Victoria,3429,11.0,,2.0,25,-37.5791363,144.7279832
+Cobblebank Village,201 Ferris Road,Nan,Victoria,3338,,,1.0,"2, 33",-37.8688729,145.2126338
+Cobblebank Stadium,Cnr Astley Dr and Bridge Rd,Cobblebank,Victoria,3338,,,3.0,"33, 2, 25",-37.7125512,144.6040773
+Yarra Valley Nissan,460 - 462 Maroondah Highway,Lilydale,Victoria,3140,11.0,,2.0,25,-37.7571582,145.3458656
+McDonald’s Melton South,179-253 Exford Road,Weir Views,Victoria,3338,,,2.0,"33, 2, 33, 2",-37.7323715,144.5708942
+Local Village Carrum Downs,1066 Frankston - Dandenong Rd,Carrum Downs,VIC,3201,,,2.0,"33, 2, 33, 2",-38.1003312,145.1788657
+CTR Whittlesea,74A Church St,Whittlesea,Vic,3757,,,1.0,"33, 2",-37.5121301,145.1177321
+City of Casey,Princes Highway,City Of Casey,Victoria,3805,7.0,,2.0,25,-38.0266156,145.3045626
+Lynbrook Village,75S Lynbrook Boulevard,Lynbrook,Victoria,3975,,,2.0,"33, 2, 2, 33",-38.0558639,145.2561128
+ENGIE - Bayside Centre,15 Beach Street,Frankston,VIC,3199,50.0,,1.0,33,-38.150925,145.142239
+Yarra Ranges Council,45 Bell St,Yarra Glen,Victoria,3775,,,1.0,"33, 2",-37.6573475,145.3743964
+Engie Monash University,McMahons Road,Melbourne,Victoria,3199,,,3.0,"2, 33",-37.8142454,144.9631732
+Evie Cranbourne Homemaker Centre,South Gippsland Highway,Cranbourne,Victoria,3977,,,1.0,"33, 2",-38.0997308,145.2807256
+St Huberts Winery,1/3 St Huberts Road,Coldstream,Victoria,3770,11.0,,6.0,25,-37.7291014,145.378424
+BP Pulse Cranbourne,Cranbourne-Frankston Road,Cranbourne West,Victoria,3977,,,1.0,"33, 2",-38.102241,145.2517182
+Jolt Berwick Springs Hotel,Clyde Road,Berwick,VIC,nan,,,1.0,"33, 2",-38.0398297,145.3451089
+Engie Cranbourne Park,Cranbourne Drive,Nan,Victoria,3977,,,3.0,"2, 33",-37.8688729,145.2126338
+Wallan,85 High Street,Wallan,Victoria,3756,,,1.0,"33, 2",-37.5040691,145.1090152
+ClydeStone Square,Matterhorn Drive ,Clyde North,VIC,3978,,,1.0,"33, 2",-38.1028681,145.3302814
+Evie Mornington,Cromwell Street,Mornington,Victoria,3931,,,2.0,"33, 2, 33",-38.227699,145.0609375
+Mornington Super Charger,Mornington-Tyabb Road,Nan,Victoria,3931,250.0,,6.0,33,-37.8688729,145.2126338
+RACV Healsville,Healsville - Yarra Glen Road,Healsville,VIC,nan,,,7.0,"25, 33",-37.6635261,145.4817549
+Evie Healsville,River Street,Healsville,VIC,nan,,,1.0,"33, 2",-37.6635261,145.4817549
+North Bellarine Aquatic Centre,30 Peninsula Drive,Curlewis,Victoria,3222,,,2.0,"33, 2, 33, 2",-37.8148997,145.1062282
+Victoria Street,Victoria Street,Macedon,Victoria,3440,,,1.0,"33, 2",-37.7726251,145.1131159
+50 Learmonth Street,50 Learmonth Street,Queenscliff,Victoria,3225,,,2.0,"33, 2, 33, 2",-38.3363033,144.7453366
+Evie Yarra Juncion,Park Road,Yarra Junction,VIC,nan,,,1.0,"33, 2",-37.7821693,145.6150255
+Kilmore Library,12 Sydney Street,Kilmore,Victoria,3764,,,1.0,"33, 2",-37.6750485,144.9242188
+Geelong Supercharger,470-510 Princes Highway,Corio,Victoria,3214,250.0,,6.0,33,-37.9623312,145.1346687
+Hastings,34 King Street,Hastings,Victoria,3915,,,1.0,"33, 2",-38.3056058,145.1859934
+Kingston Village Square,Grubb Rd,Ocean Grove,Victoria,3226,,,3.0,"33, 2, 25",-38.170954,145.0972517
+Sorrento ,860 Melbourne Rd,Nan,Victoria,3943,,,2.0,"33, 2, 33, 33",-37.8688729,145.2126338
+Rosebud RSL,2 Dunsmuir Drive,Nan,Victoria,3940,,,2.0,"0, 2, 1",-37.8688729,145.2126338
+bp pulse Rye,Cnr Weir St & Point Nepean Road,Rye,Victoria,3941,75.0,,2.0,33,-38.3821684,144.8099264
+High St Parking,124 High Street,Woodend,Victoria,3442,,,2.0,"33, 2",-37.7934621,144.5595902
+Geelong West Veledrome,Weddell Road,Geelong West,VIC,nan,22.0,,2.0,25,-37.8054508,144.879879
+Bru4U Geelong ,4/100 Barwon Terrace,Geelong,Victoria,3220,22.0,,1.0,1036,-37.8396934,145.008539
+Broadford Library,113 High Street,Broadford,Victoria,3658,,,1.0,"33, 2",-37.6362329,145.0265708
+RACV Solar Grovedale,8 Lewalan Street,Grovedale,Victoria,3216,22.0,,1.0,25,-37.8171289,145.0949242
+Blue Tongue Industries,8 Lewalan St,Grovedale,Victoria,3216,22.0,,1.0,25,-37.8171289,145.0949242
+Evie Barabool Heights Plaza,Province Blvd,Highton,VIC,nan,,,4.0,"33, 2",-37.8163364,145.0687942
+Armstrong Creek East Community Hub,46 Central Boulevard,Armstrong Creek,Victoria,3217,,,6.0,"25, 25, 25",-37.6289691,145.8640385
+Leisurelink Aquatic & Recreation Centre,240 Pioneer Rd,Waurn Ponds,VIC,3216,,,2.0,"33, 2, 33, 2",,
+Armstrong Creek Shopping Centre,540 Torquay Rd,Armstrong Creek,Victoria,3216,7.0,,2.0,25,-37.6289691,145.8640385
+Deakin University Waurn Ponds,Carpark 1 Kings Way,Nan,Victoria,3216,,,4.0,"25, 25",-37.8688729,145.2126338
+Trentham Visitor Information Centre,Albert Street,Trentham,Vic,nan,,,2.0,"33, 2",-37.7000743,144.8908894
+Evie Flinders,33 Cook St,Flinders,VIC,3929,,,1.0,"33, 2",-38.473312,145.0187057
+Evie Bannockburn,High Street,Bannockburn,VIC,nan,,,1.0,"33, 2",-37.732231,145.1014989
+Evie Cowes,Chapel Street,Cowes,Vic,nan,,,4.0,"33, 2",-37.7092585,144.7872516
+Kyneton,1 Hutton Street,Kyneton,Victoria,3444,,,1.0,"33, 2",-37.718862,145.0231115
+Evie Meredith,12 Wallace St,Meredith,VIC,3333,,,1.0,"33, 2",-37.7657176,145.1589446
+Yea Supercharger,10 High St,Yea,Victoria,3717,135.0,,4.0,33,-37.4927455,145.1572676
+Penguin Parade Car Park,995 Ventor Rd,Summerlands,VIC,3922,,,1.0,"33, 2",,
+RACV Torquay Resort,1 Great Ocean Road,Jan Juc,Victoria,3223,,,7.0,"33, 2, 33, 2, 33, 2, 33, 2",,
+Newling Reserve,Newling Drive,Nan,Victoria,3240,7.0,,1.0,25,-37.8688729,145.2126338
+Wine by Sam,69 Anzac Ave,Seymour,Vic,3660,,,1.0,"33, 2",-38.0021533,145.0974829
+Daylesford Town Hall,76 Vincent St,Daylesford, VIC,3460,,,1.0,"33, 2",-37.627671,145.0254821
+Hepburn Springs Bathhouse,1 Mineral Springs Reserve Road,Hepburn Springs,Victoria,3461,,,2.0,"33, 2",-37.7481414,144.739508
+Shell Coles Express Warrenheip,9395 Western Highway,Warrenheip,VIC ,3352,,,2.0,"2, 33",,
+Evie Warrigul,Queen Street,Warragul,Victoria,3820,,,1.0,"33, 2",-37.6694522,144.9350241
+Evie Alexandra,8 - 10 Webster Street,Alexandra,Victoria,3714,,,1.0,"33, 2",-37.8212422,144.9736634
+Dindi Naturals,6572 Maroondah Highway,Yarck,Victoria,3719,7.0,,1.0,25,-37.5772947,144.7161349
+Ampol Foodary,Princes Highway,Winchelsea,Victoria,nan,,,1.0,"33, 2",,
+RACV Ballarat,Davies Street,Ballarat,Victoria,3350,350.0,,4.0,33,-37.8050281,144.9457629
+Heathcote Visitor Centre,126 High Street ,Heathcote,Victoria ,3523,,,1.0,"33, 2",-37.7326399,144.733868
+Coles Sebastopol,Midland Highway,Sebastopol,VIC,nan,22.0,,2.0,25,-37.8709314,145.0193037
+CTR Korumburra,Commercial Street,Korumburra,Victoria,3950,,,1.0,"33, 2",,
+Evie Korumburra,Mine Road,Korumburra,Victoria,3950,,,1.0,"33, 2",,
+Midlands Golf Club,330 Heinz Lane,Invermay Park,Victoria,3350,,,6.0,"25, 25, 25",,
+Evie Caltex Jones Street,Jones Street,Avenel,Victoria,3664,,,1.0,"33, 2",-37.8958126,144.6304628
+Creswick Vicitors Information Centre,41-43 Albert Street,Creswick,VIC,3363,,,1.0,"33, 2",-37.8191777,145.0167539
+Gillies Street North,Gillies Street North,Ballarat,City of Ballarat,3355,6.6,,2.0,1,-37.8050281,144.9457629
+Ballarat Supercharger,333 Gillies St,Ballarat,,3355,120.0,,6.0,33,-37.8050281,144.9457629
+Castlemaine Market Building Car Park,33 Forest St,Castlemaine,Victoria,3450,,,2.0,"2, 33",-37.6303914,145.0273223
+Tesla Supercharger Lucas,Lilburne Street,Lucas,Victoria,nan,250.0,,10.0,33,,
+High Street,7 High Street,Harcourt,Victoria,3453,,,1.0,"33, 2",-37.8374349,145.1115353
+The Cape Display Centre,17 Sunlight Boulevard,Cape Paterson,Victoria,3995,50.0,,2.0,33,,
+CTR Leongatha,Pern Lane,Leongatha,Victoria,3953,,,1.0,"2, 33",-38.1199326,145.3182716
+Evie Leongatha,McCartin Street,Leongatha,Victoria,3953,,,1.0,"2, 33",-38.1199326,145.3182716
+Lorne Visitor Information Centre,15 Mountjoy Parade,Lorne,VIC,3232,7.0,,1.0,1,-37.6734151,145.0272333
+Chargefox Moe,Lloyd Street,Moe,Victoria,3825,,,4.0,"2, 33, 33, 33, 2",-37.6132253,145.0980154
+CTR Meeniyan,Tompkins Road,Meeniyan,VIC,nan,50.0,,2.0,33,,
+Bendigo Supercharger,Condon Street,Bendigo,VIC,3550,120.0,,6.0,33,-37.720574,145.047976
+Euroa Supercharger,46 Kirkland Ave,Euroa,,nan,120.0,,6.0,33,-37.7639651,144.8287004
+Chargefox - Euroa,Euroa Service Centre,Euroa,Vic,3666,,,4.0,"2, 33, 2, 33, 33, 2, 33, 2",-37.7639651,144.8287004
+Bendigo Kangan Institute,62-104 Charleston Road,East Bendigo,Victoria,3550,,,2.0,"33, 25",,
+Bendigo Art Gallery,62 View Street,Bendigo,Victoria,3550,,,2.0,"2, 33, 2, 33",-37.720574,145.047976
+Colac Supercharger,144-158 Bromfield Street,Colac,Victoria,3250,250.0,,3.0,33,-38.0761008,145.1472438
+CTR Maryborough,Station St,Maryborough,VIC,3465,,,2.0,"33, 2",-37.850401,144.5882783
+NRMA Marong,32 High Street,Marong,Victoria,3515,,,4.0,"33, 2",-37.793821,144.5506713
+CTR Foster,Station Road,Foster,VIC,nan,50.0,,2.0,33,-37.5902461,144.9342136
+Tesla Supercharger Traralgon,Grey Street,Traralgon,Vic,nan,250.0,,4.0,33,,
+Charging the Regions Traralgon,49 Breed St,Nan,Victoria,3844,,,1.0,"33, 2",-37.8688729,145.2126338
+Evie Traralgon,Princes Street,Traralgon,Vic,nan,,,2.0,"33, 2",,
+Evie Beaufort,19 Willoby St,Beaufort,Vic,3373,,,4.0,"33, 2, 33",-38.0067519,145.1779706
+Newbridge Public Hall,Cnr Burke St & Wimmera Hwy,Newbridge,Victoria,3551,,,1.0,"2, 33",-37.9715559,145.124582
+Evie Avoca,High Street,Avoca,VIC,nan,50.0,,2.0,33,-37.6146532,145.0933095
+Tatura,104 Hogan St,Tatura,Victoria,3616,,,2.0,"2, 33",-38.1379689,145.1628252
+Heyfield Apex Park,Davis St & George Street,Heyfield,Victoria,3858,50.0,,2.0,33,-37.8237397,144.7132186
+CTR Mooroopna,"77 Midland Hwy,",Mooroopna,VIC,3629,,,2.0,"2, 33",-37.7852115,144.5605697
+Shepparton Observation Tower,"8 Fraser St, ",Shepparton,VIC ,3630,,,2.0,"2, 33",-37.7884948,144.5582739
+Evie Camperdown,2 Bath Street,Camperdown,Victoria,3260,,,1.0,"33, 2",-37.764834,144.8219857
+Evie Benalla,Denny Street,Benalla,Victoria,3672,,,1.0,"33, 2",-37.8059585,144.9432551
+Inglewood Town Hall,Storm Lane,Inglewood,Victoria,3517,,,1.0,"33, 2",-37.7924237,144.5498933
+Chargefox Yarram,156 Grant Street,Yarram,Victoria,3971,,,1.0,"33, 2",-38.1353489,145.1666795
+Evie Maffra,4 Purdy Ln,Maffra,VIC,3860,,,1.0,"33, 2",-37.6601922,144.9408062
+Port of Sale,Canal Road,Sale,VIC,3850,,0.4,2.0,"2, 33",-37.87076,145.65249
+Mansi on Raymond,476 Raymond Street,Sale,Victoria,3850,22.0,,1.0,25,-37.87076,145.65249
+Queen Street,Queen Street,Nan,Victoria,3377,22.0,,1.0,1036,-37.8688729,145.2126338
+CTR Echuca [Evie],438 High Street,Echuca,Victoria,3564,,0.4,1.0,"2, 33, 33, 2",-37.7821653,144.5503709
+Elizabeth Park,62 High St,Ararat,Victoria,3397,22.8,0.0,2.0,25,-38.0625563,145.5506248
+Evie Ararat,Western Highway,Ararat,Victoria,3377,,,1.0,"33, 2",-38.0625563,145.5506248
+NRMA Ararat,Taylor Street,Ararat,Victoria,3377,,,4.0,"33, 2",-38.0625563,145.5506248
+Glenrowan South [bp pulse],Hume Freeway,Glenrowan,Victoria,3675,,,2.0,"2, 33",,
+Glenrowan North [bp pulse],Hume Freeway,Glenrowan,Victoria,3675,,,4.0,"33, 33, 2",,
+CTR Wedderburn CV008,67 High St,Wedderburn,Victoria,3518,,,2.0,"33, 2",-37.7917062,144.5494853
+Evie St Arnaud,Golden Street,St Arnaud,Vic,nan,,,2.0,"33, 2",-37.792199,144.5486025
+Evie Wangaratta,2 - 6 Docker St,Wangaratta,Victoria,3676,,,1.0,"33, 2",-37.787905,144.5592084
+Ovens Supercharger,4994 Great Alpine RD,Ovens,,nan,120.0,,4.0,33,-37.8119107,144.8154073
+Evie Stawell,Skene Street,Stawell,Victoria,3380,,,1.0,"33, 2",-38.1087492,145.2895959
+Tesla Superchargers Stawell,Church Street,Stawell,Victoria,3380,250.0,,12.0,33,-38.1087492,145.2895959
+Feathertop Winery,6619 Great Alpine Road,Porepunkah,Victoria,nan,22.0,,2.0,1036,-37.5979507,145.0753657
+Evie - Bright,24 Wills St,Bright,Vic,3741,,,1.0,"33, 2",-37.6245646,145.0136597
+Evie Yarrawonga,6 - 12 Hovell Street,Yarrawonga,VIC,3730,,,1.0,"33, 2",-37.9133914,145.1301259
+The Sebel Silverwoods Yarrawong,40 Silverwoods Blvd,Yarrawonga,Victoria,3730,,,1.0,"33, 2",-37.9133914,145.1301259
+Warnambool Supercharger,21-23 Gateway Road,Warnambool,Victoria,3280,250.0,,3.0,33,,
+Warnambool Tourist Information Centre,91 Merri Street,Warnambool,Victoria,2380,,,1.0,"2, 33",,
+Callaghan Motors,1165 Raglan Parade,Warnambool,Victoria,3280,22.0,,2.0,25,,
+Evie Dunkeld,83 Wills St,Dunkeld,Victoria,3294,,,1.0,"33, 2",-37.766817,144.8245105
+Gippsland Solar,35 Payne Street,Bairnsdale,Vic,nan,22.0,,1.0,25,,
+Evie Cohuna,King George St,Cohuna,VIC,3568,,,1.0,"33, 2",-37.7062908,144.8039161
+Bairnsdale Chargefox,Nicholson Street Carpark,Bairnsdale,Vic,nan,,,1.0,"33, 2",,
+Bairnsdale,9 Francis Street,Bairnsdale,Victoria,3875,,,1.0,"33, 2",,
+Coles Bairnsdale,35 Nicholson St,Bairnsdale,Victoria,3875,250.0,,3.0,33,,
+Bairnsdale Coles,35 Nicholson Street,Bairnsdale,Victoria,3875,250.0,,3.0,33,,
+Yackandandah Community Development Company,16 Windham Street,Yackandandah,Vic,3749,,,2.0,"33, 2",,
+Omeo - Tongio Road,Tongio Road,Omeo,Vic,3898,,,2.0,"33, 2",-37.8800365,144.6170498
+Wycheproof,Fairview Street,Wycheproof,Victoria,3527,,,2.0,"33, 2",-37.5432106,145.0085889
+NRMA Wycheproof,361 Broadway,Wycheproof,Victoria,3527,,,4.0,"33, 2",-37.5432106,145.0085889
+Chargefox - Barnawartha North,Murray Valley Hwy,Barnawartha North,Vic,3690,,,4.0,"2, 33, 2, 33, 33, 2, 33, 2",,
+Evie Kerang,1 -3 Albert St,Kerang,VIC,3579,,,1.0,"33, 2",-37.7200123,145.0271063
+Foodworks Baranduda,34 Verbena Street,Baranduda,Victoria,3691,11.0,,4.0,1036,,
+Deni RSL,72 End St,Deniliquin,NSW,2710,22.0,,8.0,25,,
+Wodonga Supercharger,5-13 Havelock Street,Wodonga,,3690,120.0,,6.0,33,-37.6755673,144.9898056
+Evie Hamilton,Scoresby Street,Hamilton,VIC,nan,,,2.0,"33, 2",-37.8758579,145.1284529
+Tesla Supercharger Albury,Stanley Street,Albury,New South Wales,2640,250.0,,12.0,33,-37.5442344,145.0076408
+Albury Waste Management Centre,565 Mudge St,Hamilton Valley,New South Wales,2641,,,1.0,"2, 33",,
+Wuality Resort Siesta,422 Wagga Road,Lavington,New South Wales,2641,,,4.0,"25, 25, 25, 25",-37.603329,144.9253134
+Evie Lakes Entrance,2 Marine Pde,Lakes Entrance,VIC,3909,,,1.0,"33, 2",,
+Lakes Entrance RSL,221 The Esplanade,Lakes Entrance,Victoria,3909,22.0,,1.0,25,,
+RACV - Horsham,126 Baillie St,Horsham,Victoria,3400,,,4.0,"33, 33, 2, 2",-38.102184,145.2949057
+Horsham Supercharger,126 Wilson St,Horsham,,3400,250.0,,3.0,33,-38.102184,145.2949057
+NRMA Jerilderie,Powell Street,Jerilderie,New South Wales,2716,,,1.0,"33, 2",-38.0097571,145.326648
+Evie Warracknabeal,18 - 20 Woolcock Street,Warracknabeal,VIC,3393,,,1.0,"33, 2",-37.7853138,144.5406661
+Evie Portland,Henty Street,Portland,VIC,nan,,,2.0,"33, 2",-37.9359053,145.2051222
+Lochiel Street,Lochiel Street,Dimboola,Victoria,3414,22.0,,1.0,25,-37.6804576,144.9123982
+CTR Swan Hill CV002,135 Curlewis Street,Swan Hill,Victoria,3585,,,2.0,"33, 2",,
+Orbost Chargefox,Wolseley Street,Orbost,Victoria,nan,,,1.0,"33, 2",-37.8379885,145.2121845
+Tesla Supercharger Holbrook,Swift Street,Holbrook,New South Wales,2644,250.0,,1.0,33,-37.7702694,144.9361781
+Holbrook [NRMA],Submarine Park,Holbrook,NSW,nan,,,1.0,"33, 2",-37.7702694,144.9361781
+CTR Sea Lake,111 Best Street,Sea Lake,Victoria,3533,,,2.0,"2, 33",,
+Evie Dartmoor,73 Greenham St,Dartmoor,VIC,3304,,,1.0,"33, 2",-37.705345,144.6794568
+Anzac Ave Parking,12 Anzac Ave,Edenhope,VIC ,3318,,,1.0,"33, 2",-37.8054372,145.3280915
+Nelson St Parking/Charging,111 Nelson St,Nhill,Victoria,3418,22.0,,2.0,25,-37.6730847,144.9282577
+Snowy River Ave Car Park,3 Snowy River Ave,Jindabyne,NSW,2627,,,2.0,"33, 2",-37.6403391,145.084278
