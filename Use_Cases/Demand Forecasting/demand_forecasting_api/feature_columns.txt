@@ -1,0 +1,1 @@
+Postcode,State,baseline_daily_kwh,day_of_week,is_weekend,month,day_of_year,quarter,year,is_holiday,temperature
