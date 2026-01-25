@@ -1,0 +1,181 @@
+﻿Scenario,Region,Vehicle Category,2025-26
+Slower Growth,NSW,Articulated Truck, -   
+Slower Growth,NSW,Bus, -   
+Slower Growth,NSW,Large Light Commercial, 124 
+Slower Growth,NSW,Large Residential," 6,069 "
+Slower Growth,NSW,Medium Light Commercial, 380 
+Slower Growth,NSW,Medium Residential," 18,641 "
+Slower Growth,NSW,Motorcycle, -   
+Slower Growth,NSW,Rigid Truck, -   
+Slower Growth,NSW,Small Light Commercial, 380 
+Slower Growth,NSW,Small Residential," 18,641 "
+Slower Growth,QLD,Articulated Truck, -   
+Slower Growth,QLD,Bus, -   
+Slower Growth,QLD,Large Light Commercial, 81 
+Slower Growth,QLD,Large Residential," 3,973 "
+Slower Growth,QLD,Medium Light Commercial, 249 
+Slower Growth,QLD,Medium Residential," 12,202 "
+Slower Growth,QLD,Motorcycle, -   
+Slower Growth,QLD,Rigid Truck, -   
+Slower Growth,QLD,Small Light Commercial, 249 
+Slower Growth,QLD,Small Residential," 12,202 "
+Slower Growth,SA,Articulated Truck, -   
+Slower Growth,SA,Bus, -   
+Slower Growth,SA,Large Light Commercial, 25 
+Slower Growth,SA,Large Residential," 1,201 "
+Slower Growth,SA,Medium Light Commercial, 75 
+Slower Growth,SA,Medium Residential," 3,687 "
+Slower Growth,SA,Motorcycle, -   
+Slower Growth,SA,Rigid Truck, -   
+Slower Growth,SA,Small Light Commercial, 75 
+Slower Growth,SA,Small Residential," 3,687 "
+Slower Growth,TAS,Articulated Truck, -   
+Slower Growth,TAS,Bus, -   
+Slower Growth,TAS,Large Light Commercial, 5 
+Slower Growth,TAS,Large Residential, 249 
+Slower Growth,TAS,Medium Light Commercial, 16 
+Slower Growth,TAS,Medium Residential, 763 
+Slower Growth,TAS,Motorcycle, -   
+Slower Growth,TAS,Rigid Truck, -   
+Slower Growth,TAS,Small Light Commercial, 16 
+Slower Growth,TAS,Small Residential, 763 
+Slower Growth,VIC,Articulated Truck, -   
+Slower Growth,VIC,Bus, -   
+Slower Growth,VIC,Large Light Commercial, 105 
+Slower Growth,VIC,Large Residential," 5,130 "
+Slower Growth,VIC,Medium Light Commercial, 322 
+Slower Growth,VIC,Medium Residential," 15,757 "
+Slower Growth,VIC,Motorcycle, -   
+Slower Growth,VIC,Rigid Truck, -   
+Slower Growth,VIC,Small Light Commercial, 322 
+Slower Growth,VIC,Small Residential," 15,757 "
+Slower Growth,WEM,Articulated Truck, -   
+Slower Growth,WEM,Bus, -   
+Slower Growth,WEM,Large Light Commercial, 40 
+Slower Growth,WEM,Large Residential," 1,966 "
+Slower Growth,WEM,Medium Light Commercial, 123 
+Slower Growth,WEM,Medium Residential," 6,039 "
+Slower Growth,WEM,Motorcycle, -   
+Slower Growth,WEM,Rigid Truck, -   
+Slower Growth,WEM,Small Light Commercial, 123 
+Slower Growth,WEM,Small Residential," 6,039 "
+Step Change,NSW,Articulated Truck, -   
+Step Change,NSW,Bus, -   
+Step Change,NSW,Large Light Commercial, 129 
+Step Change,NSW,Large Residential," 6,310 "
+Step Change,NSW,Medium Light Commercial, 396 
+Step Change,NSW,Medium Residential," 19,381 "
+Step Change,NSW,Motorcycle, -   
+Step Change,NSW,Rigid Truck, -   
+Step Change,NSW,Small Light Commercial, 396 
+Step Change,NSW,Small Residential," 19,381 "
+Step Change,QLD,Articulated Truck, -   
+Step Change,QLD,Bus, -   
+Step Change,QLD,Large Light Commercial, 85 
+Step Change,QLD,Large Residential," 4,147 "
+Step Change,QLD,Medium Light Commercial, 260 
+Step Change,QLD,Medium Residential," 12,737 "
+Step Change,QLD,Motorcycle, -   
+Step Change,QLD,Rigid Truck, -   
+Step Change,QLD,Small Light Commercial, 260 
+Step Change,QLD,Small Residential," 12,737 "
+Step Change,SA,Articulated Truck, -   
+Step Change,SA,Bus, -   
+Step Change,SA,Large Light Commercial, 25 
+Step Change,SA,Large Residential," 1,247 "
+Step Change,SA,Medium Light Commercial, 78 
+Step Change,SA,Medium Residential," 3,829 "
+Step Change,SA,Motorcycle, -   
+Step Change,SA,Rigid Truck, -   
+Step Change,SA,Small Light Commercial, 78 
+Step Change,SA,Small Residential," 3,829 "
+Step Change,TAS,Articulated Truck, -   
+Step Change,TAS,Bus, -   
+Step Change,TAS,Large Light Commercial, 5 
+Step Change,TAS,Large Residential, 258 
+Step Change,TAS,Medium Light Commercial, 16 
+Step Change,TAS,Medium Residential, 792 
+Step Change,TAS,Motorcycle, -   
+Step Change,TAS,Rigid Truck, -   
+Step Change,TAS,Small Light Commercial, 16 
+Step Change,TAS,Small Residential, 792 
+Step Change,VIC,Articulated Truck, -   
+Step Change,VIC,Bus, -   
+Step Change,VIC,Large Light Commercial, 109 
+Step Change,VIC,Large Residential," 5,342 "
+Step Change,VIC,Medium Light Commercial, 335 
+Step Change,VIC,Medium Residential," 16,409 "
+Step Change,VIC,Motorcycle, -   
+Step Change,VIC,Rigid Truck, -   
+Step Change,VIC,Small Light Commercial, 335 
+Step Change,VIC,Small Residential," 16,409 "
+Step Change,WEM,Articulated Truck, -   
+Step Change,WEM,Bus, -   
+Step Change,WEM,Large Light Commercial, 42 
+Step Change,WEM,Large Residential," 2,055 "
+Step Change,WEM,Medium Light Commercial, 129 
+Step Change,WEM,Medium Residential," 6,311 "
+Step Change,WEM,Motorcycle, -   
+Step Change,WEM,Rigid Truck, -   
+Step Change,WEM,Small Light Commercial, 129 
+Step Change,WEM,Small Residential," 6,311 "
+Accelerated Transition,NSW,Articulated Truck, -   
+Accelerated Transition,NSW,Bus, -   
+Accelerated Transition,NSW,Large Light Commercial, 134 
+Accelerated Transition,NSW,Large Residential," 6,551 "
+Accelerated Transition,NSW,Medium Light Commercial, 411 
+Accelerated Transition,NSW,Medium Residential," 20,120 "
+Accelerated Transition,NSW,Motorcycle, -   
+Accelerated Transition,NSW,Rigid Truck, -   
+Accelerated Transition,NSW,Small Light Commercial, 411 
+Accelerated Transition,NSW,Small Residential," 20,120 "
+Accelerated Transition,QLD,Articulated Truck, -   
+Accelerated Transition,QLD,Bus, -   
+Accelerated Transition,QLD,Large Light Commercial, 88 
+Accelerated Transition,QLD,Large Residential," 4,321 "
+Accelerated Transition,QLD,Medium Light Commercial, 271 
+Accelerated Transition,QLD,Medium Residential," 13,272 "
+Accelerated Transition,QLD,Motorcycle, -   
+Accelerated Transition,QLD,Rigid Truck, -   
+Accelerated Transition,QLD,Small Light Commercial, 271 
+Accelerated Transition,QLD,Small Residential," 13,272 "
+Accelerated Transition,SA,Articulated Truck, -   
+Accelerated Transition,SA,Bus, -   
+Accelerated Transition,SA,Large Light Commercial, 26 
+Accelerated Transition,SA,Large Residential," 1,293 "
+Accelerated Transition,SA,Medium Light Commercial, 81 
+Accelerated Transition,SA,Medium Residential," 3,970 "
+Accelerated Transition,SA,Motorcycle, -   
+Accelerated Transition,SA,Rigid Truck, -   
+Accelerated Transition,SA,Small Light Commercial, 81 
+Accelerated Transition,SA,Small Residential," 3,970 "
+Accelerated Transition,TAS,Articulated Truck, -   
+Accelerated Transition,TAS,Bus, -   
+Accelerated Transition,TAS,Large Light Commercial, 5 
+Accelerated Transition,TAS,Large Residential, 267 
+Accelerated Transition,TAS,Medium Light Commercial, 17 
+Accelerated Transition,TAS,Medium Residential, 820 
+Accelerated Transition,TAS,Motorcycle, -   
+Accelerated Transition,TAS,Rigid Truck, -   
+Accelerated Transition,TAS,Small Light Commercial, 17 
+Accelerated Transition,TAS,Small Residential, 820 
+Accelerated Transition,VIC,Articulated Truck, -   
+Accelerated Transition,VIC,Bus, -   
+Accelerated Transition,VIC,Large Light Commercial, 113 
+Accelerated Transition,VIC,Large Residential," 5,554 "
+Accelerated Transition,VIC,Medium Light Commercial, 348 
+Accelerated Transition,VIC,Medium Residential," 17,060 "
+Accelerated Transition,VIC,Motorcycle, -   
+Accelerated Transition,VIC,Rigid Truck, -   
+Accelerated Transition,VIC,Small Light Commercial, 348 
+Accelerated Transition,VIC,Small Residential," 17,060 "
+Accelerated Transition,WEM,Articulated Truck, -   
+Accelerated Transition,WEM,Bus, -   
+Accelerated Transition,WEM,Large Light Commercial, 44 
+Accelerated Transition,WEM,Large Residential," 2,143 "
+Accelerated Transition,WEM,Medium Light Commercial, 134 
+Accelerated Transition,WEM,Medium Residential," 6,582 "
+Accelerated Transition,WEM,Motorcycle, -   
+Accelerated Transition,WEM,Rigid Truck, -   
+Accelerated Transition,WEM,Small Light Commercial, 134 
+Accelerated Transition,WEM,Small Residential," 6,582 "
