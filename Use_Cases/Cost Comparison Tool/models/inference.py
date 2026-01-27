@@ -4,7 +4,7 @@ import pandas as pd
 
 EV_KWH_PER_KM = 0.15
 # model file sits alongside this module
-MODEL_PATH = Path(__file__).resolve().parent / "best_model.joblib"
+MODEL_PATH = Path(__file__).resolve().parent.parent / "artifacts" / "model.joblib"
 _model = None
 
 def load_model():
