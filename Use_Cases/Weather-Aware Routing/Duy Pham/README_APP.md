@@ -1,14 +1,14 @@
-# App.tsx Setup Complete! 🎉
+# App Setup
 
-## ✅ What's Been Done
+## Files
 
-1. **Created `App.tsx`** - Main application component
-2. **Imported `MapComponent`** - Ready to use
-3. **Set up API Key** - Environment variable support
-4. **Created `App.css`** - Basic styling
-5. **Created `.env.example`** - Template for API key
+- `App.tsx` - Main application component
+- `App.css` - Basic styling
+- `MapComponent.tsx` - Google Maps integration component
+- `apiClient.ts` - API client for backend
+- `useEVPrediction.ts` - React hook for predictions
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Step 1: Set Up Google Maps API Key
 
@@ -39,19 +39,7 @@ npm start
 
 The app should open in your browser and display the MapComponent!
 
-## 📁 File Structure
-
-```
-.
-├── App.tsx              # Main app component (mounts MapComponent)
-├── App.css              # Basic styling
-├── MapComponent.tsx     # Google Maps integration component
-├── apiClient.ts         # API client for backend
-├── useEVPrediction.ts   # Optional React hook
-└── .env                 # Your API key (create from .env.example)
-```
-
-## 🔑 Getting a Google Maps API Key
+## Getting a Google Maps API Key
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)
 2. Create a new project or select existing
@@ -59,13 +47,13 @@ The app should open in your browser and display the MapComponent!
 4. Go to "Credentials" → "Create Credentials" → "API Key"
 5. Copy the key and add it to `.env` or `App.tsx`
 
-## ⚠️ Important Notes
+## Important Notes
 
 - **Backend Server**: Make sure your Flask backend is running on port 5001
 - **CORS**: The backend should have CORS enabled (already configured in `api.py`)
 - **API Key Security**: Never commit your `.env` file to git!
 
-## 🎯 What You'll See
+## Usage
 
 When you run `npm start`:
 1. A header with the app title
@@ -78,7 +66,7 @@ When you run `npm start`:
 5. Click "Calculate Energy" to get predictions
 6. Results will appear in a card on the right
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Map Not Loading
 - Check that your Google Maps API key is correct
@@ -94,12 +82,9 @@ When you run `npm start`:
 - Make sure all dependencies are installed: `npm install`
 - Check that `apiClient.ts` exists and exports correctly
 
-## 📝 Next Steps
+## Next Steps
 
-1. ✅ App.tsx created and ready
-2. ⏭️ Add your Google Maps API key
-3. ⏭️ Start the backend server (`python3 api.py`)
-4. ⏭️ Run `npm start`
-5. ⏭️ Test the integration!
-
-Enjoy your new map component! 🗺️
+1. Add your Google Maps API key
+2. Start the backend server (`python3 api.py`)
+3. Run `npm start`
+4. Test the integration
