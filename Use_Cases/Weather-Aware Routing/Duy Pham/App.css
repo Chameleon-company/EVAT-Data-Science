@@ -1,0 +1,45 @@
+/* App.css - Basic styling for the App component */
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  flex-shrink: 0;
+}
+
+main {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Ensure map container takes full height */
+.map-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Loading and error states */
+.loading-container,
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.error-container {
+  color: #d93025;
+  background-color: #fce8e6;
+}
+
+.loading-container {
+  color: #666;
+  background-color: #f5f5f5;
+}
