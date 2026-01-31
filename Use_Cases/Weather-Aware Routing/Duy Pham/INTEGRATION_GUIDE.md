@@ -1,16 +1,10 @@
 # Google Maps Integration Guide
 
-## 📋 Overview
+## Overview
 
-I've created a complete React component (`MapComponent.tsx`) that integrates Google Maps with your EV Traffic & Weather Model API.
+This guide covers the React component (`MapComponent.tsx`) that integrates Google Maps with the EV Traffic & Weather Model API.
 
-## 🎯 Features Implemented
-
-### ✅ Phase 1: Auto-Discovery
-- **Status:** No existing React component found in this directory
-- **Action:** Created a new `MapComponent.tsx` from scratch
-
-### ✅ Phase 2: Integration Complete
+## Features
 
 1. **State Management:**
    - ✅ `predictionResult` state (initially null)
@@ -27,13 +21,13 @@ I've created a complete React component (`MapComponent.tsx`) that integrates Goo
    - ✅ UI Card displaying prediction result (kWh) and route insights
    - ✅ Loading and error states handled gracefully
 
-## 📁 Files Created
+## Files
 
-1. **`MapComponent.tsx`** - Main React component with Google Maps integration
-2. **`MapComponentUsage.tsx`** - Example usage component
-3. **`INTEGRATION_GUIDE.md`** - This guide
+- **`MapComponent.tsx`** - Main React component with Google Maps integration
+- **`apiClient.ts`** - TypeScript API client
+- **`useEVPrediction.ts`** - React hook for predictions
 
-## 🚀 Setup Instructions
+## Setup
 
 ### Step 1: Install Dependencies
 
@@ -81,7 +75,7 @@ function App() {
 export default App;
 ```
 
-## 🎨 Component Features
+## Component Features
 
 ### Map Interaction
 - Click anywhere on the map to set start location
@@ -113,7 +107,7 @@ export default App;
 - Error messages
 - Reset functionality
 
-## 🔧 Customization
+## Customization
 
 ### Change Default Map Center
 
@@ -121,8 +115,8 @@ Edit `defaultCenter` in `MapComponent.tsx`:
 
 ```tsx
 const defaultCenter = {
-  lat: -37.8136,  // Your latitude
-  lng: 144.9631,  // Your longitude
+  lat: -37.8136,
+  lng: 144.9631,
 };
 ```
 
@@ -132,7 +126,7 @@ Edit the `handlePredictEnergy` function:
 
 ```tsx
 const result = await predictEVTraffic({
-  year: 2026,  // Change this year
+  year: 2026,
   start_lat: startLocation.lat,
   start_lon: startLocation.lng,
 });
@@ -145,7 +139,7 @@ All styles are inline and can be easily modified. The component uses:
 - Material Design-inspired colors
 - Responsive sizing
 
-## 📊 API Response Structure
+## API Response Structure
 
 The component expects this response format (from `apiClient.ts`):
 
@@ -159,11 +153,11 @@ The component expects this response format (from `apiClient.ts`):
   avg_temp: number;
   total_prcp: number;
   used_SHAPE_Length: number;
-  prediction: number;  // Energy consumption in kWh
+  prediction: number;
 }
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Map Not Loading
 - Check Google Maps API key is correct
@@ -179,15 +173,7 @@ The component expects this response format (from `apiClient.ts`):
 - Ensure `@types/react` and `@types/react-dom` are installed
 - Check that `apiClient.ts` exports are correct
 
-## 📝 Next Steps
-
-1. ✅ Component created and ready to use
-2. ⏭️ Add to your React project
-3. ⏭️ Configure Google Maps API key
-4. ⏭️ Test with your backend (running on port 5001)
-5. ⏭️ Customize styling to match your app
-
-## 💡 Alternative: Using the Hook
+## Using the Hook
 
 If you prefer using the custom hook instead:
 
@@ -201,8 +187,7 @@ function MyComponent() {
     predict({ year: 2026, start_lat: -37.8136, start_lon: 144.9631 });
   };
   
-  // ... rest of component
 }
 ```
 
-The `MapComponent.tsx` uses the direct API client for more control, but both approaches work!
+The `MapComponent.tsx` uses the direct API client, but both approaches work.

@@ -10,16 +10,16 @@ def test_root():
     try:
         response = requests.get(f"{API_URL}/")
         if response.status_code == 200:
-            print(f"✅ 成功: {response.json()}")
+            print(f"Success: {response.json()}")
             return True
         else:
-            print(f"❌ 失敗: HTTP {response.status_code}")
+            print(f"Failed: HTTP {response.status_code}")
             return False
     except requests.exceptions.ConnectionError:
-        print("❌ 無法連接到伺服器。請確保伺服器正在運行。")
+        print("Cannot connect to server. Please ensure the server is running.")
         return False
     except Exception as e:
-        print(f"❌ 錯誤: {e}")
+        print(f"Error: {e}")
         return False
 
 def test_predict():
@@ -45,8 +45,8 @@ def test_predict():
             print(f"   ev_within_500m: {result.get('ev_within_500m')}")
             return True
         else:
-            print(f"❌ 失敗: HTTP {response.status_code}")
-            print(f"   錯誤訊息: {response.text}")
+            print(f"Failed: HTTP {response.status_code}")
+            print(f"   Error message: {response.text}")
             return False
     except requests.exceptions.ConnectionError:
         print("Cannot connect to server.")
