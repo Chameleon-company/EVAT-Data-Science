@@ -1,324 +1,432 @@
-# Weather-Aware Routing & EV Prediction - Handover Documentation
+# Weather-Aware Routing - Handover Documentation
 
-**Document Version:** 1.0  
+**Document Version:** 1.1  
 **Last Updated:** March 24, 2026  
-**Scope:** `Use_Cases/Weather-Aware Routing/`  
-**Primary Goal:** 
+**Scope:** `Use_Cases/Weather-Aware Routing/`
+
 ---
 
 ## Table of Contents
-1. [Executive Summary](#executive-summary)
-2. [Current State](#current-state)
-3. [System Architecture](#system-architecture)
-4. [Repository Map](#repository-map)
-5. [Key APIs](#key-apis)
-6. [Data Sources & Source-of-Truth Policy](#data-sources--source-of-truth-policy)
-7. [Dev Team Responsibilities (RACI)](#dev-team-responsibilities-raci)
-8. [Implementation Plan](#implementation-plan)
-9. [Deployment Guide (Global)](#deployment-guide-global)
-10. [Testing, Monitoring & Operations](#testing-monitoring--operations)
-11. [Risks, Gaps, and Decisions Needed](#risks-gaps-and-decisions-needed)
-12. [Runbook (Quick Start)](#runbook-quick-start)
-13. [Handover Checklist](#handover-checklist)
+1. [Primary Goal](#primary-goal)
+2. [Model Used](#model-used)
+3. [System Components](#system-components)
+4. [Dependencies](#dependencies)
+5. [External APIs](#external-apis)
+6. [Data Source](#data-source)
+7. [Data Requirements](#data-requirements)
+8. [Feature Engineering](#feature-engineering)
+9. [Model Performance](#model-performance)
+10. [Expected Output (UI Map)](#expected-output-ui-map)
+11. [Deployment Guide](#deployment-guide)
+12. [Execution Flow](#execution-flow)
+13. [Troubleshooting](#troubleshooting)
+14. [API Timeout - How to Solve](#api-timeout---how-to-solve)
+15. [Future Enhancements](#future-enhancements)
+16. [Appendix A - Complete Feature List](#appendix-a---complete-feature-list)
+17. [Appendix B - Sample API Responses](#appendix-b---sample-api-responses)
 
 ---
 
-## Executive Summary
+## Primary Goal
 
-This use case currently has **two complementary implementations**:
+The weather-aware routing workstream aims to combine **traffic + weather + EV charging station data** to improve EV mobility decisions, with a target outcome of **dynamic weather-aware route planning** for safer and more efficient travel.  
 
-- **Uday implementation**: route optimization prototype (graph + Dijkstra + weather/traffic penalties) exposed through FastAPI and demonstrated with Streamlit.
-- **Duy implementation**: Flask prediction API + React Google Maps frontend for coordinate-based inference and visualization.
-
-These tracks are **not yet unified** into a single production-grade deployment. The recommended path is:
-
-1. Keep Duy's React app pattern for frontend UX.
-2. Integrate Uday's route planning logic as the canonical routing service.
-3. Keep prediction endpoint as optional analytics feature.
-4. Establish a formal data source-of-truth and release process.
+- Uday track explicitly frames the objective as dynamic weather-aware routing for EV drivers.  
+- Duy track focuses on prediction and geospatial feature extraction that can support routing UX.
 
 ---
 
-## Current State
+## Model Used
 
-### What exists
-- Route planning API contract and routing engine prototype (Uday).
-- Prediction API contract and web-map UX (Duy).
-- Setup and integration guides for local execution.
+### 1) Duy track (`Use_Cases/Weather-Aware Routing/Duy Pham/`)
+- Production artifact loaded by API: `ev_model.pkl`.
+- Verified model class: **`sklearn.ensemble.RandomForestRegressor`**.
+- API feature input list in code:
+  - `Year`
+  - `SHAPE_Length`
+  - `dist_to_nearest_ev_m`
+  - `ev_within_500m`
+  - `avg_temp`
+  - `total_prcp`
 
-### What is missing
-- A single backend service exposing unified route + prediction APIs.
-- Production-grade environment configuration and service hardening.
-- Canonical, versioned, shared data source policy (beyond local CSV assumptions).
-- Ownership and SLA definitions.
+### 2) Uday track (`Use_Cases/Weather-Aware Routing/Uday kiran reddy Neerudu/`)
+- Routing runtime itself is **algorithmic pathfinding** (graph + weighted cost + Dijkstra), not a supervised model inference API.
+- README reports Sprint 3 used a **Random Forest regression** model for weather sensitivity scoring.
 
 ---
 
-## System Architecture
+## System Components
 
-```text
-┌───────────────────────────────────────────────────────────────────┐
-│                           Frontend (React)                       │
-│  - Google Maps UI                                                 │
-│  - API client + request validation                                │
-│  - Route and prediction result rendering                          │
-└───────────────────────────────┬───────────────────────────────────┘
-                                │ HTTPS/JSON
-                                ▼
-┌───────────────────────────────────────────────────────────────────┐
-│                         Backend API Layer                         │
-│  /v1/health   /v1/stations   /v1/route   /v1/predict             │
-│  - Request validation                                               │
-│  - Authentication (future)                                         │
-│  - CORS + rate limiting (prod)                                     │
-└───────────────────────────────┬───────────────────────────────────┘
-                                │
-             ┌──────────────────┴──────────────────┐
-             ▼                                     ▼
-┌────────────────────────────┐         ┌────────────────────────────┐
-│ Routing Engine             │         │ Prediction Engine          │
-│ - Node/edge construction   │         │ - Geospatial features      │
-│ - Weather/traffic weighting│         │ - ML model inference       │
-│ - Dijkstra + stop penalty  │         │ - Feature output           │
-└───────────────┬────────────┘         └───────────────┬────────────┘
-                │                                      │
-                ▼                                      ▼
-         Canonical data store                    Canonical model store
+## A) Uday Routing Stack
+1. **`engine sprint 4.py`**
+   - Dataset loading + fallback scoring
+   - Node construction
+   - Edge construction (KNN + EV range)
+   - Cost function (distance + weather + traffic)
+   - Dijkstra with stop/charge penalty
+2. **`main - sprint 4.py`**
+   - FastAPI wrapper with `/health`, `/stations`, `/route`
+3. **`adapters sprint 4.py`**
+   - Adapter scaffold for weather/traffic (currently fallback/default behavior)
+4. **`ui_app sprint 4.py`**
+   - Streamlit UI to call API and draw route map
+5. **`utils -sprint 4.py`**
+   - Haversine distance and normalization helpers
+
+## B) Duy Prediction + Web Stack
+1. **`api.py`**
+   - Flask API with `/` and `/predict`
+   - Geospatial feature generation from input coordinates
+   - Model inference via `ev_model.pkl`
+2. **`apiClient.ts`**
+   - Typed API client, validation, error handling
+3. **`MapComponent.tsx`**
+   - Google Maps click-to-select location
+   - Calls `/predict` and renders prediction + route insights panel
+4. **`App.tsx` / `src/index.tsx`**
+   - App shell and entry point
+5. **`useEVPrediction.ts`**
+   - Optional reusable hook for prediction workflow
+
+---
+
+## Dependencies
+
+## Python (backend)
+- `pandas`
+- `numpy`
+- `scikit-learn`
+- `joblib`
+- `flask`
+- `flask-cors` (optional fallback exists if unavailable)
+- `geopandas`
+- `shapely`
+- (Uday stack additionally uses `fastapi`, `pydantic`)
+
+## Frontend (React)
+- `react`
+- `react-dom`
+- `typescript`
+- `react-scripts`
+- `@react-google-maps/api`
+
+---
+
+## External APIs
+
+1. **Google Maps JavaScript API**
+   - Used by Duy frontend (`MapComponent.tsx`) for interactive map rendering.
+
+2. **Weather / Traffic live APIs**
+   - Not yet actively integrated in Uday adapter runtime; adapter currently returns defaults (scaffold for future live integration).
+
+---
+
+## Data Source
+
+Current local files used by code paths include:
+
+## Duy
+- `Traffic data.csv`
+- `EV stations data.csv`
+- `weather_by_station_2023.csv`
+- `ev_model.pkl`
+
+## Uday
+- Combined weather/traffic/EV datasets (e.g., processed combined CSVs)
+- Runtime path in API references `data/combined_data.csv`
+
+**Recommendation:** move to one canonical versioned storage source (object store/lake) and keep notebooks/Drive for collaboration only, not production truth.
+
+---
+
+## Data Requirements
+
+## 1) Input data
+
+## A) For `/predict` (Duy)
+**Required request body:**
+- `year` (integer)
+- `start_lat` (float, valid latitude)
+- `start_lon` (float, valid longitude)
+
+**Format:** JSON body over HTTP POST.  
+**Source:** frontend map click + user-selected context.
+
+## B) For `/route` (Uday)
+**Required request body:**
+- `start_idx` / `goal_idx`
+- Route tuning params (`ev_range_km`, `k_neighbors`, `alpha_weather`, `beta_traffic`, etc.)
+
+**Format:** JSON body over HTTP POST.  
+**Source:** UI controls (currently Streamlit; can be migrated to React).
+
+---
+
+## Feature Engineering
+
+## A) Duy feature engineering (runtime geospatial)
+From `start_lat`, `start_lon`, API derives:
+- nearest road segment length (`SHAPE_Length`)
+- nearest EV distance (meters)
+- EV count within 500m
+- nearest weather station aggregates (`avg_temp`, `total_prcp`)
+
+Method:
+- Convert geometries to metric CRS (EPSG:32755)
+- Use nearest-distance lookup for traffic/weather
+- Radius count for EV station proximity
+
+## B) Uday feature engineering (routing)
+- Builds `Weather_Sensitivity_Score` fallback from `TMAX`, `TMIN`, `PRCP` if missing
+- Normalizes weather score and traffic proxy
+- Creates graph edges via K-nearest neighbors + EV range filter
+- Computes weighted travel cost using weather/traffic coefficients
+
+---
+
+## Model Performance
+
+## A) Uday documented training/evaluation
+- README reports Sprint 3 Random Forest weather-sensitivity model achieved **R² ~ 1.0**.
+
+## B) Duy documented training/evaluation
+- `README.md` states notebook trains/evaluates a regression model for traffic volume, but no explicit metric values are listed in the repo-level readme.
+
+## Required next step for production handover
+- Add a formal model card for `ev_model.pkl` including:
+  - train/validation split method
+  - MAE/RMSE/R²
+  - data period
+  - known limitations
+
+---
+
+## Expected Output (UI Map)
+
+## Duy React map output
+After map click and predict:
+- marker at selected location
+- predicted value (kWh display)
+- route/environment insight card containing:
+  - distance to nearest EV station
+  - EV stations within 500m
+  - average temperature
+  - total precipitation
+  - road segment length
+
+## Uday Streamlit output
+After route request:
+- map with route polyline and step markers
+- route status/hint
+- total route cost (minutes)
+
+---
+
+## Deployment Guide
+
+## 1) Prerequisites
+- Python 3.10+
+- Node.js 18+
+- Access to model artifact and CSV data
+- Google Maps API key
+
+## 2) Install
+### Backend
+```bash
+pip install pandas numpy scikit-learn joblib flask flask-cors geopandas shapely fastapi uvicorn pydantic
 ```
 
+### Frontend
+```bash
+npm install
+```
+
+## 3) Config
+Set environment variables:
+- `REACT_APP_API_URL`
+- `REACT_APP_GOOGLE_MAPS_API_KEY`
+- `MODEL_PATH` (recommended)
+- `DATA_ROOT` (recommended)
+
+## 4) Output
+Expected deployed outputs:
+- backend API endpoints reachable
+- frontend map UI reachable
+- successful `/predict` and `/route` responses
+- UI renders prediction card and/or route polyline
+
 ---
 
-## Repository Map
+## Execution Flow
 
-### Uday track (routing-focused)
-- `main - sprint 4.py` - FastAPI endpoints and request schema.
-- `engine sprint 4.py` - route planning core.
-- `adapters sprint 4.py` - weather/traffic adapter scaffold.
-- `utils -sprint 4.py` - geospatial/math helpers.
-- `ui_app sprint 4.py` - Streamlit prototype UI.
+## A) Prediction flow
+1. User clicks map in React UI.
+2. Frontend captures `lat/lon`.
+3. Frontend calls `POST /predict`.
+4. Backend validates request.
+5. Backend derives geospatial/weather features.
+6. Model predicts result.
+7. Backend returns JSON.
+8. Frontend renders prediction and insights card.
 
-### Duy track (web app + prediction-focused)
-- `api.py` - Flask API + model inference.
-- `apiClient.ts` - typed frontend API client.
-- `MapComponent.tsx` - map click UX + prediction display.
-- `useEVPrediction.ts` - reusable hook abstraction.
-- `App.tsx` + `src/index.tsx` - application shell/entry point.
-- `README_APP.md`, `INTEGRATION_GUIDE.md`, `SETUP_GUIDE.md` - setup docs.
+## B) Routing flow
+1. User selects start/goal and route parameters.
+2. Frontend/Streamlit calls `POST /route`.
+3. Backend loads/prepares nodes and edges.
+4. Cost function applies weather + traffic weighting.
+5. Dijkstra computes best path with stop penalties.
+6. API returns path + total cost + status/hint.
+7. UI renders route polyline and markers.
 
 ---
 
-## Key APIs
+## Troubleshooting
 
-## 1) Routing API (target canonical)
+1. **Server not reachable**
+   - Confirm backend process is running.
+   - Check `API_BASE_URL` in frontend.
 
-### Endpoint
-`POST /v1/route`
+2. **CORS error**
+   - Ensure `flask-cors` is installed or proper CORS headers configured.
+   - Restrict to allowed production domains when deployed.
 
-### Purpose
-Compute weather-aware, traffic-aware EV route between selected nodes.
+3. **Model load failure**
+   - Verify `ev_model.pkl` path exists and is readable.
+   - Confirm scikit-learn compatibility version.
 
-### Request (based on Uday prototype)
+4. **Map not loading**
+   - Validate Google Maps API key and billing status.
+
+5. **No route found (`unreachable`)**
+   - Increase `ev_range_km` and/or `k_neighbors`.
+   - Choose closer start/goal indices.
+
+---
+
+## API Timeout - How to Solve
+
+1. Increase backend request timeout limits at gateway/load balancer.
+2. Add worker concurrency (Gunicorn/Uvicorn workers).
+3. Cache heavy geospatial lookups (nearest neighbor indices).
+4. Preload static dataframes/geodata at startup.
+5. Add async job mode for long computations.
+6. Add circuit-breaker/retry policy in frontend client.
+
+---
+
+## Future Enhancements
+
+1. Replace Uday fallback adapter with live weather/traffic providers.
+2. Merge routing + prediction into one versioned backend API.
+3. Add route-by-coordinate API (instead of index-only routes).
+4. Add authentication, rate limiting, and structured observability.
+5. Add model card + continuous evaluation pipeline.
+6. Add CI contract tests and e2e UI tests.
+
+---
+
+## Appendix A - Complete Feature List
+
+## A) Duy `FEATURES` (model input)
+| Feature | Description |
+|---|---|
+| `Year` | Request year |
+| `SHAPE_Length` | Nearest road segment length |
+| `dist_to_nearest_ev_m` | Distance to nearest EV station (m) |
+| `ev_within_500m` | Count of EV stations within 500m |
+| `avg_temp` | Average temperature from nearest station aggregate |
+| `total_prcp` | Total precipitation from nearest station aggregate |
+
+## B) Uday routing signals
+| Signal | Description |
+|---|---|
+| `Weather_Score_Norm` | Normalized weather sensitivity score |
+| `Traffic_Proxy_Norm` | Normalized traffic proxy |
+| `EV_RANGE_KM` | Max edge feasibility distance |
+| `K_NEIGHBORS` | Graph connectivity parameter |
+| `ALPHA_WEATHER` | Weather impact coefficient |
+| `BETA_TRAFFIC` | Traffic impact coefficient |
+| `CHARGE_TIME_MIN` | Stop/charge penalty per intermediate stop |
+
+---
+
+## Appendix B - Sample API Responses
+
+## 1) `GET /health` (routing service)
 ```json
 {
-  "start_idx": 0,
-  "goal_idx": 10,
-  "ev_range_km": 35.0,
-  "k_neighbors": 6,
-  "assumed_speed_kmh": 60.0,
-  "alpha_weather": 0.15,
-  "beta_traffic": 0.10,
-  "charge_penalty_min": 15.0,
-  "mode": "FALLBACK"
+  "status": "ok",
+  "nodes": 300
 }
 ```
 
-### Response (based on Uday engine)
+## 2) `GET /stations`
+```json
+[
+  {
+    "node_id": "A001",
+    "lat": -37.8123,
+    "lon": 144.9671,
+    "Weather_Score_Norm": 0.32,
+    "Traffic_Proxy_Norm": 0.55
+  }
+]
+```
+
+## 3) `POST /route` success
 ```json
 {
   "status": "ok",
   "hint": null,
-  "params": { "...": "..." },
-  "nodes_count": 123,
-  "edges_count": 456,
+  "params": {
+    "EV_RANGE_KM": 70,
+    "K_NEIGHBORS": 12,
+    "ASSUMED_SPEED_KMH": 60,
+    "ALPHA_WEATHER": 0.15,
+    "BETA_TRAFFIC": 0.1,
+    "CHARGE_TIME_MIN": 15,
+    "MODE": "FALLBACK"
+  },
+  "nodes_count": 300,
+  "edges_count": 1800,
   "path": [
-    { "step": 0, "node_index": 0, "node_id": "A", "lat": -37.81, "lon": 144.96 }
+    {"step": 0, "node_index": 0, "node_id": "A001", "lat": -37.81, "lon": 144.96},
+    {"step": 1, "node_index": 9, "node_id": "A010", "lat": -37.82, "lon": 144.98}
   ],
-  "total_cost_min": 42.5
+  "total_cost_min": 41.2
 }
 ```
 
-### Related endpoints
-- `GET /v1/stations` - station/node list.
-- `GET /v1/health` - service health.
-
----
-
-## 2) Prediction API (optional but recommended)
-
-### Endpoint
-`POST /v1/predict`
-
-### Purpose
-Given a coordinate + year, return predicted value and contributing geospatial/weather context.
-
-### Request (based on Duy API)
+## 4) `POST /route` unreachable
 ```json
 {
-  "year": 2026,
-  "start_lat": -37.8136,
-  "start_lon": 144.9631
+  "status": "unreachable",
+  "hint": "Increase ev_range_km or k_neighbors; or choose closer indices.",
+  "path": [],
+  "total_cost_min": null
 }
 ```
 
-### Response (based on Duy API)
+## 5) `POST /predict` success
 ```json
 {
   "year": 2026,
   "start_lat": -37.8136,
   "start_lon": 144.9631,
-  "dist_to_nearest_ev_m": 120.0,
+  "dist_to_nearest_ev_m": 120.3,
   "ev_within_500m": 3,
-  "avg_temp": 9.4,
-  "total_prcp": 820.0,
+  "avg_temp": 15.4,
+  "total_prcp": 812.0,
   "used_SHAPE_Length": 18.5,
   "prediction": 7.23
 }
 ```
 
----
-
-## 3) Error contract (recommended standard)
-
+## 6) `POST /predict` validation error
 ```json
 {
-  "error": {
-    "code": "INVALID_INPUT",
-    "message": "Missing required fields: year, start_lat, start_lon",
-    "details": {}
-  }
+  "error": "Missing required fields: year, start_lat, start_lon"
 }
 ```
-
-HTTP status:
-- 400 validation error
-- 404 resource not found
-- 429 rate-limited
-- 500 internal error
-
----
-
-## Data Sources & Source-of-Truth Policy
-
-## Current data usage
-- Traffic CSV
-- EV station CSV
-- Weather CSV (including weather-by-station aggregates)
-- Combined processed CSV for routing
-- Trained model artifact (`ev_model.pkl`)
-
-
----
-
-## Deployment Guide (Global)
-
-## Environment split
-- **Dev**: local containers, sample datasets.
-- **Staging**: production-like infra with masked/prod-like data.
-- **Prod**: auto-deploy from tagged release.
-
-## Deployment artifacts
-- Backend container image (API + routing/prediction modules).
-- Frontend static build artifact.
-- Model artifact bundle with explicit version.
-- Dataset manifest (immutable IDs/paths).
-
-## Required environment variables
-- `API_PORT`
-- `CORS_ALLOWED_ORIGINS`
-- `DATASET_ROOT_URI`
-- `MODEL_URI`
-- `REACT_APP_API_URL`
-- `REACT_APP_GOOGLE_MAPS_API_KEY`
-
-## Security
-- HTTPS only.
-- Secret management via platform vault.
-- Least-privilege access to data/model buckets.
-
----
-
-## Testing, Monitoring & Operations
-
-## Minimum tests
-1. API health tests.
-2. Contract tests for `/route`, `/stations`, `/predict`.
-3. Regression tests on fixed coordinate/node scenarios.
-4. Frontend e2e tests (map click -> API call -> render).
-
-## Monitoring
-- Latency p50/p95/p99 by endpoint.
-- Error rate by HTTP code.
-- Route success/unreachable ratios.
-- Prediction drift indicators (if labels available later).
-
-## Operational alerts
-- API 5xx spike.
-- p95 latency breach.
-- Model/data artifact load failure.
-- CORS/auth failures at scale.
-
----
-
-## Risks, Gaps, and Decisions Needed
-
-## Current risks
-- Two parallel stacks without unified contract.
-- Placeholder adapter logic for weather/traffic in routing path.
-- Local-file assumptions for data/model loading.
-- Potential mismatch between prediction and routing release cadence.
-
-## Decisions needed now
-1. Single-service vs multi-service backend architecture.
-2. Keep prediction endpoint in MVP or defer.
-3. Canonical data platform and versioning method.
-4. Release cadence ownership (who signs off backend/model/data changes).
-
----
-
-## Runbook (Quick Start)
-
-## Local backend smoke
-1. Install dependencies.
-2. Start backend service.
-3. `GET /health` and `GET /` checks.
-4. `POST /predict` test request.
-5. `POST /route` test request.
-
-## Local frontend smoke
-1. Set `REACT_APP_GOOGLE_MAPS_API_KEY`.
-2. Set `REACT_APP_API_URL`.
-3. Start app and click map.
-4. Verify request/response in browser dev tools.
-
----
-
-## Handover Checklist
-
-- [ ] API v1 contract approved and documented.
-- [ ] Backend service unified and deployable.
-- [ ] Frontend connected to final API endpoints.
-- [ ] Data/model source-of-truth policy implemented.
-- [ ] CI/CD and release process live.
-- [ ] Monitoring dashboards and alerts active.
-- [ ] Operational runbook tested by on-call engineer.
-- [ ] Knowledge transfer session completed and recorded.
-
----
-
-## Appendix A - Suggested Ownership by Existing Work
-
-- **Routing logic owner candidate:** contributor familiar with `engine sprint 4.py`.
-- **Frontend integration owner candidate:** contributor familiar with `MapComponent.tsx` and `apiClient.ts`.
-- **Prediction model owner candidate:** contributor maintaining `api.py` + model artifact.
-- **Platform owner:** DevOps/Platform team to own deployment and observability.
 
