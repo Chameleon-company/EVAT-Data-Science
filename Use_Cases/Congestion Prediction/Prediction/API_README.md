@@ -14,8 +14,15 @@ A FastAPI-based REST API for real-time EV charging station congestion forecastin
 ## Installation
 
 ### 1. Install Dependencies
-
+[USE A VENV!](https://docs.python.org/3/library/venv.html)
 ```bash
+# Create VENV
+python -m venv .venv
+# Bash
+source .venv/bin/activate
+# Windows CMD
+.venv\Scripts\activate.bat
+# Install dependencies
 pip install -r requirements_api.txt
 ```
 
@@ -23,9 +30,18 @@ pip install -r requirements_api.txt
 
 Place your trained `random_forest_model.pkl` in the same directory as `model_api.py`.
 
+### 3. Create and set a `.env` file
+Create a `.env` file in the same folder as the `model_api.py`.
+```env
+BE_SERVER="http://localhost:8080"
+ADMIN_AUTH="BE Admin Auth Code Here"
+NO_THREADS='5'
+```
+
 ## Usage
 
 ### Start the API Server
+Automatically begins predicting and sending full dataset to back-end server.
 
 ```bash
 # Development mode (auto-reload)
