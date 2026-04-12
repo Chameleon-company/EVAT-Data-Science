@@ -1,204 +1,188 @@
-# EVAT Voice Assistant – Trimester 3
+# EVAT Voice Assistant – Data Science Review and Enhancement Plan
 
-**Author:** Mohtashim Misbah 
-
-**Date:** Week 5  
+## Author
+Harshit Gaur  
+Data Science Team  
 
 ---
 
 ## Table of Contents
-- [1. Project Overview](#1-project-overview)  
-- [2. Voice Interaction Architecture](#2-voice-interaction-architecture)  
-- [3. In-Scope Functionality](#3-in-scope-functionality)  
-- [4. Out-of-Scope Functionality](#4-out-of-scope-functionality)  
-- [5. Deliverables](#5-deliverables)  
-- [6. Justification for Scope](#6-justification-for-scope)  
+- [Overview](#overview)
+- [Current System](#current-system)
+- [System Architecture](#system-architecture)
+- [Example Processing Flow](#example-processing-flow)
+- [Observations](#observations)
+- [Improvements That Can Be Implemented](#improvements-that-can-be-implemented)
+  - [Intent Classification](#intent-classification)
+  - [Entity Extraction](#entity-extraction)
+  - [Direct Model Integration](#direct-model-integration)
+  - [Response Improvement](#response-improvement)
+  - [Logging](#logging)
+  - [Expanding Query Types](#expanding-query-types)
+- [Future Scope](#future-scope)
+- [Conclusion](#conclusion)
 
 ---
 
-## 1. Project Overview
+## Overview
 
-In this trimester, I am working on building the EVAT Voice Assistant. The goal of this system is to help users access EV-related information more easily by asking simple, natural-language questions. Instead of navigating dashboards or searching through menus, users should be able to ask things like *“Is the charger busy?”* or *“How much would a 150 km EV trip cost?”* and get a quick answer.
+This document presents a technical review of the EVAT Voice Assistant and outlines practical improvements based on system evaluation and research.
 
-To keep the scope realistic, I decided to make the backend fully **text-based**, while the frontend team can optionally add the voice input and output. This way, the backend stays focused on the core intelligence of the assistant: intent detection, entity extraction, connecting to the EVAT models, and generating responses. This structure also aligns with how real voice assistants like Alexa or Google Assistant handle their backend systems.
+The assistant allows users to interact with EVAT services using voice input. The system converts speech into text on the frontend and sends it to the backend for processing. The backend then interprets the query and returns a response.
 
-This project is meant to create a strong foundation that future trimesters can expand into a full multi-turn conversational assistant.
+The focus of this document is to:
+- confirm what is currently working  
+- explain the system structure  
+- identify improvements that are easy to implement  
 
 ---
 
-## 2. Voice Interaction Architecture
+## Current System
 
-Even though this is called a “Voice Assistant,” the backend won’t process any audio. Instead, the workflow is simple and clean:
+The system is functioning end-to-end with a clear processing pipeline.
 
-1. **User speaks into the mobile or web app.**  
-   The app records the audio.
+### Voice Input
 
-2. **Frontend converts the speech to text.**  
-   They can use tools like:
-   - Web Speech API  
-   - Whisper  
-   - Google Speech-to-Text  
-   - Any STT the app team chooses  
+Voice is captured on the frontend using browser-based speech recognition. The recognised text appears in real time, allowing users to confirm their input before submitting.
 
-3. **The backend receives the text version of the query.**  
-   Example: “How busy is the Burwood charger?”
+### API Communication
 
-   Example request structure (placeholder):
+The recognised text is sent to the backend using a POST request:
 
 ```json
 {
-  "query": "<user text query>"
+  "query": "Is the charger busy?"
 }
-```
 
-4. **I process the text on the backend:**
-   - Detect the user’s intent  
-   - Extract important information (like location or distance)  
-   - Pass it to the correct EVAT use case  
-   - Generate a clear and helpful response  
+The backend processes this request and returns a response, which is displayed to the user.
 
-5. **The frontend displays the text response** or turns it back into audio if needed.
+Backend Design
 
-This architecture keeps things modular and avoids overcomplicating the backend. It also makes the system easier to test and scale later.
+The backend only processes text and does not handle audio. This keeps the system simple and modular. The main responsibilities of the backend include:
 
----
+understanding the query
+extracting useful information
+connecting to EVAT logic
+generating a response
+Model Integration
 
-## 3. In-Scope Functionality
+The assistant is designed to work with EVAT Data Science models. For example, the congestion prediction system uses a machine learning model to estimate charger usage and classify it as low, medium, or high.
 
-### 3.1 Intent Classification  
-I will build a simple intent classifier that can recognise the main types of questions users might ask. For now, I am focusing on three core intents:
+System Architecture
 
-- **Congestion Status Query**  
-  Example: “Is the Burwood charger busy right now?”
-  
-- **Trip Cost Comparison**  
-  Example: “How much would a 150 km EV trip cost?”
+The current system follows a simple pipeline:
 
-- **Help / Unsupported Query**  
-  Example: “What can you do?”
+User Voice Input
+        ↓
+Speech-to-Text (Frontend)
+        ↓
+Text Query
+        ↓
+POST /voice/query
+        ↓
+Intent Detection
+        ↓
+Entity Extraction
+        ↓
+EVAT Model (e.g., Congestion Prediction)
+        ↓
+Response Generation
+        ↓
+Frontend Display
 
-These cover the most important and realistic use cases for this trimester.
+This design separates concerns clearly:
 
----
+frontend handles voice
+backend handles logic
+data science layer handles predictions
+Example Processing Flow
 
-### 3.2 Entity Extraction  
-The system will pull out key information from user queries, such as:
+A simplified backend logic can be represented as:
 
-- Location names  
-- Distances  
-- Any values the models need to run  
+def process_query(query):
+    intent = detect_intent(query)
+    entities = extract_entities(query)
 
-This helps the assistant generate more accurate and personalised responses.
+    if intent == "congestion":
+        result = get_congestion(entities)
+        return f"The charger is currently {result}."
+    
+    elif intent == "cost":
+        result = calculate_cost(entities)
+        return f"Estimated trip cost is {result}."
+    
+    return "Sorry, I could not understand your query."
+Observations
 
----
+The system is working correctly but has some limitations:
 
-### 3.3 Integration with EVAT Use Cases  
-I will integrate the Voice Assistant with two EVAT models that are already well-developed:
+limited understanding of different query types
+no structured extraction of key information
+no support for follow-up queries
+responses are basic and not very descriptive
+Improvements That Can Be Implemented
+Intent Classification
 
-#### 1. Congestion Prediction  
-- Provides charger busyness  
-- Gives estimated wait times  
-- Helps users plan ahead  
+Add a simple intent detection layer using keyword matching or a lightweight model.
 
-#### 2. EV vs Petrol Trip Cost Comparison  
-- Calculates EV trip cost  
-- Calculates petrol cost  
-- Helps users compare both options quickly  
+def detect_intent(query):
+    q = query.lower()
+    if "busy" in q or "charger" in q:
+        return "congestion"
+    if "cost" in q or "km" in q:
+        return "cost"
+    return "unknown"
+Entity Extraction
 
-These use cases are mature enough to work reliably with natural-language inputs.
+Extract useful values such as location or distance.
 
----
+import re
 
-### 3.4 Response Generation  
-The assistant will return short, easy-to-understand answers.  
-Examples:
+def extract_distance(query):
+    match = re.search(r'(\d+)\s*km', query.lower())
+    return int(match.group(1)) if match else None
+Direct Model Integration
 
-- “The Burwood charger is moderately busy with a 5-minute wait.”  
-- “A 150 km trip would cost about $18 for EV and around $24 for petrol.”  
+Connect the assistant directly to EVAT models such as congestion prediction.
 
-My goal is to keep the responses simple and practical.
+def get_congestion(entities):
+    station = entities.get("station")
+    return "moderately busy"
+Response Improvement
 
----
+Improve how responses are generated so they sound clearer and more natural.
 
-### 3.5 Logging  
-To meet HD-level requirements, I will also implement logging for:
+Example:
 
-- Inputs  
-- Detected intents  
-- Extracted entities  
-- System responses  
+Instead of: "Busy"
+Use: "The selected charging station is currently experiencing moderate congestion."
+Logging
 
-This will help evaluate the performance in Week 8 and identify areas for improvement.
+Add logging to track system usage and performance.
 
----
+import logging
 
-## 4. Out-of-Scope Functionality
+logging.basicConfig(filename="assistant.log", level=logging.INFO)
 
-### 4.1 Additional EVAT Use Cases  
-At this stage, I am **not** integrating with the other EVAT use cases because their models aren’t fully ready or they require more complex logic. Examples include:
+def log_query(query, intent):
+    logging.info(f"{query} -> {intent}")
+Expanding Query Types
 
-- Environmental impact  
-- Gamification  
-- Charger rental  
-- Usage insights  
-- Weather-based routing  
-- Reliability scoring  
-- Site suitability  
-- Demand forecasting  
+Support more queries gradually, such as:
 
-These can be added in future trimesters.
+nearby charging stations
+EV vs petrol comparison
+general help queries
+Future Scope
 
----
+The assistant can later be extended to include:
 
-### 4.2 Audio Processing  
-The backend will not:
-- Process audio  
-- Handle speech recognition  
-- Convert text to speech  
+multi-turn conversations
+personalised recommendations
+integration into EVAT dashboards
+more advanced NLP models
+Conclusion
 
-All of this is handled by the frontend team.
+The EVAT Voice Assistant is already functional and follows a solid design. The system successfully converts voice input into meaningful responses using a structured pipeline.
 
----
-
-### 4.3 Multi-Turn Conversations  
-The assistant will not remember previous queries or support follow-up questions.  
-Each query is treated independently.
-
----
-
-### 4.4 UI Development  
-UI work is outside my scope.  
-The frontend team will manage:
-- Input boxes  
-- Voice buttons  
-- Display responses  
-
----
-
-## 5. Deliverables
-
-By Week 10, I plan to deliver:
-
-- A working Voice Assistant backend  
-- Intent classifier + entity extraction  
-- Integrated handlers for congestion and cost comparison  
-- A `/voice/query` production API  
-- Logging + evaluation results  
-- Full documentation (architecture, mapping, API details)  
-- A short demo for the mentor/panel  
-
----
-
-## 6. Justification for Scope
-
-I chose this scope because it is achievable within the trimester, avoids unnecessary complexity, and focuses on delivering real value. This setup:
-
-- Fits the 6-week timeline  
-- Uses EVAT models that are already stable  
-- Minimises dependencies on other teams  
-- Keeps the backend clean and realistic  
-- Sets up a strong base for future expansion  
-- Meets HD expectations by including logging, evaluation, and clear architecture  
-
-Overall, this scope gives the data team something functional and meaningful while keeping the workload manageable and focused.
-
+The next step is to improve how the system understands queries and connects to Data Science models. The suggested improvements are simple to implement and will significantly enhance the system without adding unnecessary complexity.
