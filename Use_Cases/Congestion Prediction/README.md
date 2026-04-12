@@ -1,7 +1,7 @@
-# EV Charging Station Congestion Prediction Model - Handover Documentation
+# EV Charging Station Congestion Prediction Model Documentation
 
-**Document Version:** 1.0  
-**Last Updated:** January 21, 2026  
+**Document Version:** 2.0  
+**Last Updated:** March 22, 2026  
 **Model Type:** RandomForest Regressor  
 **Purpose:** Real-time 3-hour arrival prediction for EV charging stations
 
@@ -31,7 +31,7 @@ This model predicts the number of EV arrivals at charging stations over the next
 - 3-hour forecast horizon
 - Integration with external APIs (weather, pedestrian counts)
 - Feature engineering pipeline for temporal and environmental factors
-- No historical data required for inference (lag features initialized to zero)
+- Uses recent station history for lag features when available, with statistical and default fallbacks
 
 **Use Cases:**
 - Station congestion management
@@ -51,7 +51,8 @@ This model predicts the number of EV arrivals at charging stations over the next
 ### Model Artifacts
 - **Model File:** `random_forest_model.pkl`
 - **Inference Notebook:** `predictions_notebook.ipynb`
-- **Output:** `prediction_results.csv`
+- **API Service:** `Prediction/model_api.py`
+- **Primary API Output:** Congestion class (`low`, `medium`, `high`)
 
 ### Key Characteristics
 - **Input Features:** 23 engineered features
@@ -79,7 +80,7 @@ This model predicts the number of EV arrivals at charging stations over the next
 │     - Pedestrian Counts (Melbourne Testbed)                  │
 │  4. Feature Engineering & Transformations                    │
 │  5. Model Inference (RandomForest)                           │
-│  6. Results Output (CSV)                                     │
+│  6. Results Output (API JSON / optional CSV)                 │
 │                                                              │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -178,11 +179,11 @@ stations = [
 #### Holiday Calendar
 **Library:** `holidays` (Python package)  
 **Region:** Victoria, Australia  
-**Years:** 2024-2026 (expand as needed)
+**Years:** 2024-2027 (expand as needed)
 
 **Implementation:**
 ```python
-vic_holidays = holidays.Australia(state='VIC', years=[2024, 2025, 2026])
+vic_holidays = holidays.Australia(state='VIC', years=[2024, 2025, 2026, 2027])
 ```
 
 #### Event Calendar
@@ -223,16 +224,16 @@ df['is_weekend'] = int(datetime.now().weekday() >= 5)
 #### 2. Lag Features (8 features)
 | Feature | Description | Inference Value |
 |---------|-------------|-----------------|
-| `arrivals_lag1` | Previous period arrivals | 0 (no history) |
-| `arrivals_lag2` | 2 periods ago | 0 |
-| `arrivals_lag4` | 4 periods ago | 0 |
-| `arrivals_ma4` | 4-period moving average | 0 |
-| `arrivals_ma8` | 8-period moving average | 0 |
-| `arrivals_pct_change` | Percentage change | 0 |
-| `arrivals_diff` | First difference | 0 |
-| `arrivals_ewma_4` | Exponential weighted MA | 0 |
+| `arrivals_lag1` | Previous period arrivals | Sampled from recent station history (fallbacks apply) |
+| `arrivals_lag2` | 2 periods ago | Sampled from recent station history (fallbacks apply) |
+| `arrivals_lag4` | 4 periods ago | Sampled from recent station history (fallbacks apply) |
+| `arrivals_ma4` | 4-period moving average | Sampled from recent station history (fallbacks apply) |
+| `arrivals_ma8` | 8-period moving average | Sampled from recent station history (fallbacks apply) |
+| `arrivals_pct_change` | Percentage change | Derived from recent history/statistical fallback |
+| `arrivals_diff` | First difference | Derived from recent history/statistical fallback |
+| `arrivals_ewma_4` | Exponential weighted MA | Sampled from recent station history (fallbacks apply) |
 
-**Note:** During inference, all lag features are initialized to **0** since no historical data is available. The model was trained to handle this scenario.
+**Note:** During inference, lag features are generated from `train_exogenous_3h.csv` by station when available. If unavailable, the API falls back to station/global statistics, then to default randomized ranges.
 
 #### 3. Cyclical Temporal Features (2 features)
 | Feature | Description | Formula |
@@ -296,14 +297,13 @@ required_features = [
 
 ### Expected Outputs
 
-**Prediction Range:** Typically 0-50 arrivals per 3-hour window  
-**Output Format:** Float (continuous predictions)
+**Prediction Range:** Internal model output is continuous (arrivals estimate), mapped to congestion classes  
+**API Output Format:** String category (`low`, `medium`, `high`)
 
 **Sample Output:**
 ```
 Station: 674f97ff3dc8e5d2ac00867a
-  Predicted arrivals (3h): 12.45
-  Conditions: 22.3°C, 0.0mm, pedestrians: 1250
+   Congestion level: high
 ```
 
 ### Performance Considerations
@@ -318,14 +318,24 @@ Station: 674f97ff3dc8e5d2ac00867a
 
 ## Deployment Guide
 
-### Prerequisites
+### Choose an Inference Mode
+
+Use one of the following tracks:
+
+1. **API Service (recommended for production integrations)**
+2. **Notebook Workflow (optional, for ad-hoc analysis/batch export)**
+
+### A) API Service Track
+
+#### Prerequisites
 
 1. **Python Environment:** Python 3.8+
-2. **Model File:** `random_forest_model.pkl` in working directory
-3. **Network Access:** Internet connection for API calls
-4. **Geographic Scope:** Melbourne, Victoria, Australia
+2. **Model File:** `random_forest_model.pkl`
+3. **Supporting Data Files:** `EVAT.chargers.csv`, `train_exogenous_3h.csv` (recommended)
+4. **Network Access:** Internet for weather/pedestrian API calls
+5. **Geographic Scope:** Melbourne, Victoria, Australia (default behavior)
 
-### Installation
+#### Installation
 
 ```bash
 # Create virtual environment
@@ -333,57 +343,83 @@ python -m venv evat_env
 source evat_env/bin/activate  # Linux/Mac
 # evat_env\Scripts\activate  # Windows
 
-# Install dependencies
-pip install pandas numpy scikit-learn joblib requests holidays
+# Install API dependencies
+pip install -r requirements_api.txt
 
-# Verify model file exists
-ls -la random_forest_model.pkl
+# Verify required files
+ls -la random_forest_model.pkl EVAT.chargers.csv train_exogenous_3h.csv
 ```
 
-### Configuration
+#### Configuration
 
-#### 1. Update Station IDs
-Edit the stations list in Cell 7:
-```python
-stations = [
-    'your_station_id_1',
-    'your_station_id_2',
-    'your_station_id_3'
-]
+1. Update `categorize_event()` in `model_api.py` for local major events if deploying outside Melbourne conventions.
+2. Ensure station IDs passed to `/predict` or `/predict/batch` exist in your station registry.
+3. Keep `EVAT.chargers.csv` current so station-specific coordinates are used instead of default CBD coordinates.
+
+#### Run Service
+
+```bash
+uvicorn model_api:app --reload --port 8000
+# Swagger docs: http://127.0.0.1:8000/docs
 ```
 
-#### 2. Update Geographic Coordinates (if needed)
-Edit Cell 9 if stations are outside Melbourne CBD:
-```python
-lat = YOUR_LATITUDE
-lon = YOUR_LONGITUDE
+#### API Output
+
+**Single prediction response:**
+
+```json
+{
+   "station_id": "674f97ff3dc8e5d2ac00867a",
+   "congestion_level": "high"
+}
 ```
 
-#### 3. Configure Event Calendar
-Update `categorize_event()` function in Cell 8 for local events
+**Batch prediction response:**
 
-### Running Predictions
+```json
+{
+   "predictions": [
+      {
+         "station_id": "674f97ff3dc8e5d2ac00867a",
+         "congestion_level": "high"
+      }
+   ],
+   "count": 1,
+   "timestamp": "2026-03-22T10:00:00"
+}
+```
 
-#### Jupyter Notebook
+### B) Notebook Workflow Track (optional)
+
+#### Prerequisites
+
+1. Jupyter environment available (`jupyter notebook` command works).
+2. `predictions_notebook.ipynb` in the working directory.
+3. Same model/data files as API mode when notebook cells rely on them.
+
+#### Configuration
+
+1. Update station IDs in the notebook stations list.
+2. Update coordinates if predicting for non-Melbourne locations.
+3. Update notebook event rules where local event calendars differ.
+
+#### Run Notebook
+
 ```bash
 jupyter notebook predictions_notebook.ipynb
 # Run all cells: Cell > Run All
 ```
 
-#### Python Script (if converted)
-```bash
-python predictions_notebook.py
-```
+#### Optional Scheduling
 
-#### Scheduled Execution
 ```bash
-# Cron job (every 3 hours)
+# Every 3 hours
 0 */3 * * * cd /path/to/notebook && jupyter nbconvert --to python --execute predictions_notebook.ipynb
 ```
 
-### Output
+#### Notebook/File Output
 
-**File:** `prediction_results.csv`
+**Output file:** `prediction_results.csv`
 
 **Schema:**
 ```csv
@@ -395,21 +431,23 @@ stationid,predicted_arrivals,hour,temp_avg_c,direction_1
 
 ## Inference Pipeline
 
-### Execution Flow
+### A) API Service Pipeline (`model_api.py`)
 
 ```
 1. INITIALIZATION
-   ├── Load model (random_forest_model.pkl)
-   ├── Define station IDs
-   └── Create scoring dataframe
+   ├── Load random_forest_model.pkl
+   ├── Load EVAT.chargers.csv (station coordinates)
+   └── Load train_exogenous_3h.csv (lag feature source/fallback stats)
 
 2. TEMPORAL FEATURES
    ├── Get current timestamp
    ├── Extract hour, dayofweek, is_weekend
-   └── Calculate hod_sin, hod_cos (initialized to 0)
+   └── Calculate hod_sin, hod_cos using cyclical encoding
 
 3. LAG FEATURES
-   └── Initialize all lag features to 0
+   ├── Load recent station history from train_exogenous_3h.csv when available
+   ├── Sample/derive lag features with constrained variation
+   └── Fallback to station/global statistics, then default ranges
 
 4. CALENDAR DATA
    ├── Check Victoria public holidays
@@ -417,9 +455,9 @@ stationid,predicted_arrivals,hour,temp_avg_c,direction_1
 
 5. EXTERNAL DATA FETCHING
    ├── Weather API (Open-Meteo)
-   │   └── Retry on failure with exponential backoff
+   │   └── Single request with default-value fallback on failure
    └── Pedestrian API (Melbourne Testbed)
-       └── Paginated retrieval (100 records/page)
+      └── Hour-filtered retrieval (limit 10) and averaging
 
 6. FEATURE ENGINEERING
    ├── Merge weather data by date
@@ -428,22 +466,48 @@ stationid,predicted_arrivals,hour,temp_avg_c,direction_1
 
 7. PREDICTION
    ├── Validate 23 features present
-   ├── Prepare feature matrix X_score
-   └── Run rf_model.predict(X_score)
+   ├── Prepare feature matrix X
+   └── Run MODEL.predict(X)
 
 8. OUTPUT
-   ├── Append predictions to dataframe
-   ├── Display results summary
-   └── Save to prediction_results.csv
+   ├── Convert arrivals estimate to congestion class
+   └── Return JSON response from /predict or /predict/batch
 ```
 
-### Execution Time
+### API Execution Time
 
 **Typical Runtime:** 3-5 seconds
 - Model loading: < 1 sec
 - Feature generation: < 0.5 sec
 - API calls: 1-3 sec (depends on network)
 - Prediction: < 0.1 sec
+
+### B) Notebook Pipeline (`predictions_notebook.ipynb`)
+
+```
+1. INITIALIZATION
+   ├── Load model artifact and notebook dependencies
+   └── Define stations and target scoring window
+
+2. FEATURE PREPARATION
+   ├── Build temporal, weather, event, and pedestrian features
+   ├── Prepare lag-related inputs per notebook logic
+   └── Validate feature schema and order
+
+3. PREDICTION
+   ├── Generate arrivals estimates
+   └── Build notebook result dataframe
+
+4. OUTPUT
+   ├── Display table in notebook
+   └── Save prediction_results.csv when export step is enabled
+```
+
+### Notebook Execution Time
+
+**Typical Runtime:** 5-20 seconds
+- Depends on cell execution scope and network response times
+- Additional time may be required when exporting files or re-running all cells
 
 ---
 
@@ -625,23 +689,23 @@ logging.info(f"Predictions completed: {predictions}")
 ### Project Structure
 ```
 EVAT-Data-Science/
-├── congestion-forecasting/
-│   ├── EVAT_Congestion_Model_without_baselines.ipynb  # Training
-│   ├── EVAT_Congestion_with_baselines_models.ipynb    # Training
-│   ├── artifacts_premium/
-│   │   ├── poisson_lstm_best.keras
-│   │   ├── predictions_3h_with_wait_times.csv
-│   │   └── evaluation_metrics_3h.json
-│   └── Use_Cases/Congestion Prediction/Prediction/
-│       ├── predictions_notebook.ipynb                 # INFERENCE (THIS NOTEBOOK)
-│       ├── random_forest_model.pkl                    # MODEL FILE
-│       └── MODEL_DOCUMENTATION.md                     # THIS FILE
+├── Use_Cases/Congestion Prediction/
+│   ├── README.md                                       # THIS DOCUMENT
+│   ├── EVAT_Congestion_Model_without_baselines.ipynb   # Training
+│   ├── EVAT_Congestion_with_baselines_models.ipynb     # Training
+│   └── Prediction/
+│       ├── model_api.py                                # FastAPI inference service
+│       ├── predictions_notebook.ipynb                  # Notebook inference
+│       ├── random_forest_model.pkl                     # Model file
+│       ├── EVAT.chargers.csv                           # Station coordinates
+│       └── train_exogenous_3h.csv                      # Lag feature source
 ```
 
 ### Version History
 
 | Version | Date | Changes | Author |
 |---------|------|---------|--------|
+| 1.1 | 2026-03-22 | Synced docs with current FastAPI behavior and paths | EVAT Data Science Team |
 | 1.0 | 2026-01-21 | Initial documentation | EVAT Data Science Team |
 
 ### Future Enhancements
@@ -673,11 +737,11 @@ For questions, issues, or suggestions regarding this model:
 | 1 | hour | Temporal | Hour of day (0-23) | System clock |
 | 2 | dayofweek | Temporal | Day of week (0=Mon, 6=Sun) | System clock |
 | 3 | is_weekend | Temporal | Weekend indicator (Sat/Sun) | Derived |
-| 4 | arrivals_lag1 | Lag | Previous period arrivals | Historical (0 in inference) |
-| 5 | arrivals_lag2 | Lag | 2 periods back | Historical (0 in inference) |
-| 6 | arrivals_lag4 | Lag | 4 periods back | Historical (0 in inference) |
-| 7 | arrivals_ma4 | Lag | 4-period moving average | Historical (0 in inference) |
-| 8 | arrivals_ma8 | Lag | 8-period moving average | Historical (0 in inference) |
+| 4 | arrivals_lag1 | Lag | Previous period arrivals | Historical/statistical fallback |
+| 5 | arrivals_lag2 | Lag | 2 periods back | Historical/statistical fallback |
+| 6 | arrivals_lag4 | Lag | 4 periods back | Historical/statistical fallback |
+| 7 | arrivals_ma4 | Lag | 4-period moving average | Historical/statistical fallback |
+| 8 | arrivals_ma8 | Lag | 8-period moving average | Historical/statistical fallback |
 | 9 | hod_sin | Cyclical | Sine of hour | Derived |
 | 10 | hod_cos | Cyclical | Cosine of hour | Derived |
 | 11 | is_holiday | Calendar | Public holiday indicator | Holidays library |
@@ -688,11 +752,11 @@ For questions, issues, or suggestions regarding this model:
 | 16 | precipitation_mm | Weather | Daily precipitation (mm) | Open-Meteo API |
 | 17 | wind_speed_kmh | Weather | Max wind speed (km/h) | Open-Meteo API |
 | 18 | direction_1 | Foot Traffic | Pedestrian count | Melbourne Testbed |
-| 19 | arrivals_pct_change | Lag | % change from previous | Historical (0 in inference) |
-| 20 | arrivals_diff | Lag | First difference | Historical (0 in inference) |
+| 19 | arrivals_pct_change | Lag | % change from previous | Historical/statistical fallback |
+| 20 | arrivals_diff | Lag | First difference | Historical/statistical fallback |
 | 21 | weekend_x_hour | Interaction | Weekend × Hour | Derived |
 | 22 | temp_x_precipitation | Interaction | Temperature × Rain | Derived |
-| 23 | arrivals_ewma_4 | Lag | Exponential weighted MA | Historical (0 in inference) |
+| 23 | arrivals_ewma_4 | Lag | Exponential weighted MA | Historical/statistical fallback |
 
 ### B. Sample API Responses
 
