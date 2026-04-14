@@ -1,0 +1,9 @@
+State,State_Full,Grid_Intensity_kg_per_kWh,Grid_Intensity_g_per_kWh,Year,Source,Notes
+NSW,New South Wales,0.790,790,2023,DCCEEW National Greenhouse Accounts Factors 2023,Dominated by coal and gas generation
+ACT,Australian Capital Territory,0.000,0,2023,DCCEEW National Greenhouse Accounts Factors 2023,100% renewable electricity purchase agreement
+VIC,Victoria,0.990,990,2023,DCCEEW National Greenhouse Accounts Factors 2023,High brown coal (lignite) dependency
+QLD,Queensland,0.810,810,2023,DCCEEW National Greenhouse Accounts Factors 2023,Mix of black coal and gas
+SA,South Australia,0.290,290,2023,DCCEEW National Greenhouse Accounts Factors 2023,High wind and solar penetration
+WA,Western Australia,0.650,650,2023,DCCEEW National Greenhouse Accounts Factors 2023,SWIS grid; gas-dominated with growing renewables
+TAS,Tasmania,0.130,130,2023,DCCEEW National Greenhouse Accounts Factors 2023,Predominantly hydro generation
+NT,Northern Territory,0.590,590,2023,DCCEEW National Greenhouse Accounts Factors 2023,Gas-dominated isolated grid

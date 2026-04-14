@@ -1,243 +1,259 @@
-# Environmental Impact Analysis — Integration Guide
+# Environmental Impact Analysis
 
-*T1 2026*
+**calvin-linardy | EVAT T1 2026**
 
----
-
-# 1. What this use case is trying to do
-
-The Environmental Impact Analysis use case estimates the CO₂ savings (in grams per kilometre) when replacing an Internal Combustion Engine (ICE) vehicle with an Electric Vehicle (EV). The model compares EV energy consumption against ICE fuel consumption and returns a predicted CO₂ saving value.
-
-The end goal is a feature within the EVAT platform where a user selects an EV and an ICE vehicle, and the system displays the estimated environmental benefit of switching — supporting informed decision-making around EV adoption.
-
-The model has been trained and tested locally. This document covers the current state of the use case, the integration gaps that remain, and the steps required to connect it to the EVAT backend and frontend.
+Estimates CO₂ savings (and financial savings) when replacing an ICE vehicle with an EV.
+Designed for integration into the EVAT platform as a user-facing feature.
 
 ---
 
-# 2. Current State
+## What this does
 
-The following table summarises what has been completed and what remains:
-
-| Area | Status | Notes |
-|------|--------|-------|
-| ML model | Complete | `co2_savings_model.pkl` trained and serialised |
-| Training pipeline | Complete | Clean, modular code in `Clean_Model_Code.ipynb` |
-| API schema | Documented | Input/output schema defined in `api_schema.md` |
-| FastAPI endpoint | Local only | Runs locally via uvicorn — not deployed to shared environment |
-| Backend integration | Not started | No endpoint registered in EVAT-App-BE |
-| Frontend integration | Not started | No UI component consuming this use case |
+A user picks an EV and an ICE vehicle. The system returns:
+- How many grams of CO₂ per km they would save (or emit extra, if the grid is dirty)
+- Annual and lifetime CO₂ impact
+- Annual running cost saving in AUD
+- How many trees that equates to per year
 
 ---
 
-# 3. Data Sources
+## Why this is different from the previous model
 
-The model was trained on the following datasets, located in `Environment_Analysis/Data/`:
+The previous implementation (Ruvinya-Ekanayake) had several critical flaws:
 
-| Dataset | Description | Used For |
-|---------|-------------|----------|
-| `Pure electric consumption.csv` | EV energy usage (Wh/km) | EV CO₂ calculation |
-| `Diesel consumption.csv` | Diesel ICE fuel consumption | ICE CO₂ baseline |
-| `petrol91RON consumption.csv` | Petrol 91 ICE consumption | ICE CO₂ baseline |
-| `petrol95RON consumption.csv` | Petrol 95 ICE consumption | ICE CO₂ baseline |
-| `petrol98RON consumption.csv` | Petrol 98 ICE consumption | ICE CO₂ baseline |
+| Problem | Impact |
+|---------|--------|
+| Hardcoded grid factor: 0.18 kg/kWh (SA's figure) | Overstated savings by 3–7× in NSW, VIC, QLD |
+| GradientBoost applied to deterministic arithmetic | ML was learning algebra, not real-world patterns |
+| 200-row datasets, Cartesian join, 4K sample | Unrealistic vehicle pairings |
+| Caller must pre-compute ICE CO₂ baseline | No documented standard — high error risk |
+| No lifecycle emissions | Incomplete picture |
 
-These are static datasets used for model training. They are not loaded at prediction time — the trained model (`co2_savings_model.pkl`) is loaded directly for inference.
-
----
-
-# 4. Core Calculations
-
-Understanding these calculations is important for backend developers, particularly for pre-computing the `ICE_CO2_Baseline` field required by the API.
-
-### EV Emissions
-```
-EV_gCO2_per_km = (EnergyConsumptionWh/km ÷ 1000) × 0.18 × 1000
-```
-
-### ICE Baseline
-```
-ICE_CO2_Baseline = FuelConsumptionCombined × EmissionFactor
-```
-
-### Emission Factors
-
-| Fuel Type | Emission Factor | Unit |
-|-----------|----------------|------|
-| Petrol (all grades) | 23.2 | kg CO₂ per L |
-| Diesel | 26.5 | kg CO₂ per L |
-| Electricity | 0.18 | kg CO₂ per kWh |
-
-These are fixed constants used during model training. They should be validated and potentially made configurable before production deployment.
-
-### CO₂ Saving (Target Variable)
-```
-CO2_saving = ICE_CO2_Baseline − EV_gCO2_per_km
-```
-
-A positive value means the EV emits less CO₂ per kilometre than the ICE vehicle.
-
-### Engineered Features
-
-| Feature | Description |
-|---------|-------------|
-| `EV_gCO2_per_km` | EV CO₂ emissions derived from energy consumption |
-| `ICE_CO2_Baseline` | ICE CO₂ emissions derived from fuel consumption |
-| `YearDiff` | EV model year minus ICE model year |
-| `CO2_saving` | Target variable — difference between ICE and EV emissions |
+This implementation fixes all of these.
 
 ---
 
-# 5. Model
+## Design
 
-Three models were evaluated using 5-fold cross-validation:
-
-| Model | Mean R² | Mean MAE | Outcome |
-|-------|---------|----------|---------|
-| Linear Regression | Low | Moderate | Underfitting — rejected |
-| Random Forest | Moderate | Good | Stable but not selected |
-| Gradient Boosting | Best | Lowest | Selected |
-
-**Final model:** `GradientBoostingRegressor` (scikit-learn)
-
-**Production pipeline steps:**
-1. Load and clean EV and ICE datasets
-2. Compute emission features for each dataset
-3. Combine EV and ICE using a Cartesian merge (sampled to 4,000 rows)
-4. Engineer `YearDiff` and `CO2_saving` features
-5. Encode categorical columns using `OneHotEncoder`
-6. Train `GradientBoostingRegressor` and export as `co2_savings_model.pkl`
+```
+User Input (EV + ICE + state + usage)
+          │
+          ▼
+ Vehicle Lookup (data/)
+ → EV: kWh/100km, battery kWh
+ → ICE: L/100km, fuel type
+          │
+          ▼
+ XGBoost Adjustment Model
+ → Predicts real-world deviation from WLTP
+   based on: temperature, driving style,
+             vehicle age, battery size
+          │
+          ▼
+ Physics Calculator (src/calculator.py)
+ ┌────────────────────────────────────┐
+ │ EV: kWh/100km × RW_factor         │
+ │   × grid_g_CO2/kWh (by state)     │
+ │   + battery mfg amortised         │
+ │                                    │
+ │ ICE: L/100km                       │
+ │   × fuel_g_CO2/L (DCCEEW 2023)    │
+ │                                    │
+ │ Savings = ICE − EV                 │
+ └────────────────────────────────────┘
+          │
+          ▼
+ Rich JSON Response
+ → CO₂ savings (g/km, kg/yr, t/lifetime)
+ → Financial savings (AUD/yr, AUD/lifetime)
+ → Equivalents (trees, petrol litres)
+```
 
 ---
 
-# 6. API Specification
+## Emission factors used
 
-### Endpoint
-```
-POST /predict
+All sourced from DCCEEW National Greenhouse Accounts Factors 2023.
+
+### Grid (electricity)
+
+| State | g CO₂/kWh |
+|-------|-----------|
+| NSW   | 790       |
+| ACT   | 0         |
+| VIC   | 990       |
+| QLD   | 810       |
+| SA    | 290       |
+| WA    | 650       |
+| TAS   | 130       |
+| NT    | 590       |
+
+### Fuel
+
+| Fuel    | kg CO₂/L |
+|---------|----------|
+| Petrol  | 2.289    |
+| Diesel  | 2.703    |
+| E10     | 2.195    |
+| LPG     | 1.542    |
+
+---
+
+## Quick start
+
+```bash
+pip install -r requirements.txt
+python train.py --evaluate       # train model, print example predictions
+uvicorn api.main:app --reload --port 8001
 ```
 
-### Request
+Full setup instructions: **SETUP_GUIDE.md**
+
+---
+
+## API
+
+```
+POST /api/environmental-impact/predict
+GET  /api/environmental-impact/vehicles/ev
+GET  /api/environmental-impact/vehicles/ev/{make}/models
+GET  /api/environmental-impact/vehicles/ice
+GET  /api/environmental-impact/vehicles/ice/{make}/models
+GET  /api/environmental-impact/health
+```
+
+Interactive docs: http://localhost:8001/api/environmental-impact/docs
+
+### Example request
 
 ```json
+POST /api/environmental-impact/predict
+
 {
-  "Make_EV": "Tesla",
-  "Make_ICE": "Toyota",
-  "BodyStyle_EV": "SUV",
-  "BodyStyle_ICE": "SUV",
-  "FuelType_ICE": "Petrol95",
-  "YearDiff": 5,
-  "ICE_CO2_Baseline": 220.4
+  "ev": {
+    "make": "Tesla",
+    "model": "Model 3",
+    "year": 2024
+  },
+  "ice": {
+    "make": "Toyota",
+    "model": "RAV4",
+    "year": 2024
+  },
+  "state": "NSW",
+  "usage": {
+    "annual_km": 13100,
+    "driving_style": "mixed",
+    "vehicle_age_years": 0
+  },
+  "include_lifecycle": true
 }
 ```
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `Make_EV` | string | Brand of the EV |
-| `Make_ICE` | string | Brand of the ICE vehicle |
-| `BodyStyle_EV` | string | EV body style (e.g. SUV, Sedan) |
-| `BodyStyle_ICE` | string | ICE body style |
-| `FuelType_ICE` | string | One of: `Petrol91`, `Petrol95`, `Petrol98`, `Diesel` |
-| `YearDiff` | number | EV model year minus ICE model year |
-| `ICE_CO2_Baseline` | number | Pre-calculated ICE CO₂ emissions (g/km) — must be computed by the caller |
-
-### Response
+**Or pass raw consumption directly (for any vehicle not in the database):**
 
 ```json
 {
-  "Predicted_CO2_Savings": 134.72
+  "ev": { "consumption_kwh_per_100km": 17.5, "battery_kwh": 75.0 },
+  "ice": { "consumption_l_per_100km": 8.5, "fuel_type": "Diesel" },
+  "state": "QLD"
 }
 ```
 
-This means the EV is predicted to emit 134.72 g/km less CO₂ than the ICE vehicle.
+### Example response (abbreviated)
 
----
-
-# 7. Integration Gaps
-
-The following issues must be resolved before this use case can be delivered end-to-end within the EVAT platform.
-
-## 7.1 Critical
-
-**No backend integration.** The EVAT-App-BE repository has no registered endpoint for this use case. The backend team needs to add a route that loads `co2_savings_model.pkl` and serves predictions via the EVAT API.
-
-**No frontend integration.** The EVAT-Website has no UI component for this feature. Users currently have no way to access environmental impact analysis through the platform.
-
-## 7.2 High Severity
-
-**Local deployment only.** The FastAPI prediction service runs locally via uvicorn and is not accessible from any shared environment. This blocks both backend and frontend integration until a deployment solution is agreed upon.
-
-**Hardcoded data paths.** `Clean_Model_Code.ipynb` references local absolute paths (e.g. `/content/Data/`). These must be updated to relative paths before the pipeline can be run consistently across team members.
-
-**`ICE_CO2_Baseline` must be pre-computed by the caller.** This field is a required API input but the calculation logic currently lives only in the training notebook. This logic needs to be either documented clearly for the backend team or moved into the API itself.
-
-## 7.3 Medium Severity
-
-- No input validation or error handling defined for the API endpoint beyond the base schema
-- String field values are case-sensitive — `"Petrol95"` is valid, `"petrol95"` will cause a prediction error
-- Unseen vehicle makes (not present in training data) will reduce prediction accuracy without warning
-- No batch prediction support — the API processes one EV–ICE pair per request
-
----
-
-# 8. Integration Plan
-
-### Step 1 — Resolve Local Dependencies
-- Update data paths in `Clean_Model_Code.ipynb` to use relative paths
-- Confirm `co2_savings_model.pkl` loads correctly from the expected directory
-
-### Step 2 — Backend Integration (EVAT-App-BE)
-- Register a new route: `POST /api/environmental-impact/predict`
-- Accept the input schema defined in Section 6
-- Load `co2_savings_model.pkl` and run inference
-- Return the `Predicted_CO2_Savings` value as JSON
-- Add input validation and error responses for malformed requests
-
-### Step 3 — Frontend Integration (EVAT-Website)
-- Build a UI component for EV and ICE vehicle selection
-- Send a `POST` request to the backend endpoint on form submission
-- Display the returned CO₂ savings value with appropriate context
-
-### Step 4 — End-to-End Testing
-- Validate the full flow: Frontend → Backend → Model → Backend → Frontend
-- Test with edge cases (unknown vehicle makes, missing or mistyped fields)
-- Confirm response values match locally tested results
-
----
-
-# 9. System Architecture
-
-```
-User (Frontend)
-    │
-    ▼
-EVAT-Website
-Vehicle selection form
-    │  POST /api/environmental-impact/predict
-    ▼
-EVAT-App-BE
-Route handler + input validation
-    │  Loads co2_savings_model.pkl
-    ▼
-Gradient Boosting Model
-Returns Predicted_CO2_Savings
-    │
-    ▼
-EVAT-App-BE
-Formats and returns JSON response
-    │
-    ▼
-EVAT-Website
-Displays CO₂ savings to user
+```json
+{
+  "savings": {
+    "co2_savings_g_per_km": 21.4,
+    "co2_savings_kg_per_year": 280.3,
+    "co2_savings_tonnes_lifetime": 4.2,
+    "percentage_reduction": 12.3
+  },
+  "financial": {
+    "cost_saving_aud_per_year": 1240.0,
+    "cost_saving_aud_lifetime": 18600.0
+  },
+  "equivalents": {
+    "trees_planted_equivalent_per_year": 13,
+    "petrol_litres_saved_per_year": 122.5
+  },
+  "state": "NSW",
+  "real_world_adjustment_factor": 1.082,
+  "include_lifecycle": true
+}
 ```
 
 ---
 
-# 10. Related Files
+## File structure
 
-| File | Description |
-|------|-------------|
-| `Ruvinya-Ekanayake/Clean_Model_Code.ipynb` | Production-ready model training pipeline |
-| `Ruvinya-Ekanayake/co2_savings_model.pkl` | Trained and serialised Gradient Boosting model |
-| `Ruvinya-Ekanayake/api_schema.md` | Input/output schema reference |
-| `Ruvinya-Ekanayake/README.md` | T3 2025 model documentation |
-| `Environment_Analysis/EVAT PROJECT ENVIRONMENTAL.ipynb` | Original model notebook (T2 2025) |
+```
+calvin-linardy/
+├── README.md
+├── SETUP_GUIDE.md
+├── requirements.txt
+├── train.py                    ← run this first
+├── data/
+│   ├── README.md               ← how to update datasets
+│   ├── ev_vehicles.csv         ← 58 EVs (Green Vehicle Guide 2024)
+│   ├── ice_vehicles.csv        ← 65 ICE vehicles (Green Vehicle Guide 2024)
+│   ├── grid_emission_factors.csv  ← DCCEEW 2023
+│   └── fuel_emission_factors.csv  ← DCCEEW 2023
+├── src/
+│   ├── config.py               ← emission factors, defaults, constants
+│   ├── data_loader.py          ← CSV loading, vehicle lookup functions
+│   ├── calculator.py           ← physics engine (deterministic)
+│   └── model.py                ← XGBoost training & inference
+├── api/
+│   ├── schemas.py              ← Pydantic request/response models
+│   └── main.py                 ← FastAPI app
+├── notebooks/
+│   ├── 01_Data_Exploration.ipynb
+│   └── 02_Model_Training_Evaluation.ipynb
+└── models/
+    └── rw_adjustment_xgb.pkl   ← generated by train.py
+```
+
+---
+
+## Integration plan (EVAT-App-BE + EVAT-Website)
+
+### Backend (EVAT-App-BE)
+
+Register one new route:
+
+```
+POST /api/environmental-impact/predict
+```
+
+Options:
+- **Option A (microservice):** Run this FastAPI app on port 8001 and proxy through EVAT-App-BE
+- **Option B (direct import):** Import `src.calculator` and `src.model` directly into the BE codebase — no second process needed
+
+The request/response schemas are in `api/schemas.py` (Pydantic v2).
+
+### Frontend (EVAT-Website)
+
+Minimum viable UI:
+1. Dropdown to select Australian state
+2. EV selector: make → model (populated from `GET /vehicles/ev` and `GET /vehicles/ev/{make}/models`)
+3. ICE selector: make → model (same pattern)
+4. Optional: annual km slider, driving style radio button
+5. Display result cards: CO₂ saving, annual cost saving, tree equivalent
+
+The vehicle dropdowns are powered by the vehicle listing endpoints so they always
+reflect what is in the database — no hardcoded lists needed on the frontend.
+
+---
+
+## Data update cadence
+
+| Data | Source | Update frequency |
+|------|--------|-----------------|
+| Grid factors | DCCEEW NGA Factors | Annually (August) |
+| Fuel factors | DCCEEW NGA Factors | Annually (August) |
+| EV vehicles | Green Vehicle Guide | As new models enter market |
+| ICE vehicles | Green Vehicle Guide | As new models enter market |
+
+See `data/README.md` for step-by-step update instructions.
