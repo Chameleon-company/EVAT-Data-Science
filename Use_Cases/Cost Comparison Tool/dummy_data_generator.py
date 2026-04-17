@@ -6,7 +6,7 @@ from typing import Optional, Tuple, List, Dict
 import pandas as pd
 
 
-EV_CSV = "test.ev_vehicles.csv"
+EV_CSV = "Datasets/test.ev_vehicles.csv"
 STATES = [
     ("NSW", "New South Wales"),
     ("VIC", "Victoria"),
@@ -238,7 +238,7 @@ def main():
     ap.add_argument("--runs", type=int, default=5, help="How many transcripts/records to generate.")
     ap.add_argument("--extreme-prob", type=float, default=0.15, help="Probability of extreme dummy values (0–1).")
     ap.add_argument("--fixed-distance", action="store_true", help="Use fixed 200 km for all runs.")
-    ap.add_argument("--out", default="/mnt/data/dummy_transcripts.txt", help="Output text file for transcripts.")
+    ap.add_argument("--out", default="dummy_transcripts.txt", help="Output text file for transcripts.")
     ap.add_argument("--csv-out", default=None, help="Optional CSV path to save structured results.")
     ap.add_argument("--xlsx-out", default=None, help="Optional Excel path to save structured results.")
     args = ap.parse_args()

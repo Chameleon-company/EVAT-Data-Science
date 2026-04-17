@@ -1,0 +1,1001 @@
+selected_ev,distance_km,electricity_price_per_kwh,ice_eff_l_per_100km,petrol_price_per_l,ev_trip_cost,ice_trip_cost,savings_ice_minus_ev,ev_co2_kg,ice_co2_kg,co2_saved_kg,state_elec,state_petrol,notes
+Kia  EV5 Standard Range 2WD,300.0,0.335,6.32,2.38,15.08,45.12,30.05,31.5,43.8,12.3,NSW,QLD,
+Toyota bZ4X FWD,150.0,0.07,10.11,1.98,1.58,30.03,28.45,15.75,35.03,19.28,WA,TAS,
+Audi Q8 Q8 e-tron quattro Sportback,250.0,0.278,10.71,1.9,10.43,50.87,40.45,26.25,61.85,35.6,WA,SA,ICE fetch failed; manual entry path simulated
+Audi Q8 Q8 e-tron quattro,500.0,0.404,7.34,2.2,30.3,80.74,50.44,52.5,84.78,32.28,QLD,NT,
+Polestar 4 200kW Long Range Single Motor,400.0,0.426,7.46,2.19,25.56,65.35,39.79,42.0,68.93,26.93,ACT,SA,
+Tesla  Model Y  AWD Long Range YL5NDB,200.0,0.6,6.56,1.93,18.0,25.32,7.32,21.0,30.31,9.31,ACT,QLD,ICE fetch failed; manual entry path simulated
+Mercedes-Benz EQE Class EQE 300,500.0,0.407,7.69,1.78,30.52,68.44,37.92,52.5,88.82,36.32,TAS,SA,
+Zeekr  X RWD,300.0,0.07,7.44,2.24,3.15,50.0,46.85,31.5,51.56,20.06,TAS,QLD,ICE fetch failed; manual entry path simulated
+Tesla  Model 3 RWD H6MRB,400.0,0.438,8.52,1.85,26.28,63.05,36.77,42.0,78.72,36.72,SA,SA,
+Kia  EV5 Standard Range 2WD,100.0,0.319,8.08,1.75,4.79,14.14,9.36,10.5,18.66,8.16,WA,NSW,
+Hyundai Ioniq 9 Calligraphy,250.0,0.07,7.23,0.01,2.63,0.18,-2.44,26.25,41.75,15.5,VIC,NSW,
+Tesla Model 3 Long Range H5LDB,150.0,0.385,7.7,189.74,8.66,2191.5,2182.83,15.75,26.68,10.93,VIC,TAS,
+Leapmotor  C10 BEV,150.0,0.335,8.57,1.68,7.54,21.6,14.06,15.75,29.7,13.95,NSW,SA,
+Volvo EX30 Single Motor RWD,400.0,0.6,6.38,2.18,36.0,55.63,19.63,42.0,58.95,16.95,QLD,VIC,
+Leapmotor  C10 BEV,250.0,0.321,10.95,0.01,12.04,0.27,-11.76,26.25,63.24,36.99,NT,SA,
+Kia  EV5 Standard Range 2WD,100.0,0.303,10.1,2.1,4.54,21.21,16.66,10.5,23.33,12.83,TAS,SA,
+Volvo XC40 Recharge Twin,300.0,0.348,7.65,1.95,15.66,44.75,29.09,31.5,53.01,21.51,VIC,QLD,
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,500.0,0.406,6.51,1.86,30.45,60.54,30.09,52.5,75.19,22.69,NSW,ACT,
+BMW 7 Series i7 M70 xDrive,150.0,0.275,10.55,2.03,6.19,32.12,25.94,15.75,36.56,20.81,ACT,VIC,
+"Cupra Born 77kWh 4 seat (19 Alloys)""",500.0,0.327,8.38,2.29,24.53,95.95,71.43,52.5,96.79,44.29,ACT,ACT,
+BMW X1 iX1 xDrive30,250.0,0.288,7.65,1.88,10.8,35.95,25.16,26.25,44.18,17.93,SA,SA,
+BYD SEAL PREMIUM,300.0,0.332,9.51,1.85,14.94,52.78,37.84,31.5,65.9,34.4,QLD,WA,
+Tesla Model 3 Long Range H5LDB,100.0,0.35,8.75,1.94,5.25,16.97,11.72,10.5,20.21,9.71,TAS,QLD,
+Audi Q8 Q8 e-tron quattro,400.0,0.306,6.5,1.96,18.36,50.96,32.6,42.0,60.06,18.06,TAS,SA,
+GWM Ora Standard Range,100.0,0.354,10.45,0.01,5.31,0.1,-5.21,10.5,24.14,13.64,WA,NT,
+Kia EV9 GT-Line AWD,300.0,0.31,7.27,2.2,13.95,47.98,34.03,31.5,50.38,18.88,QLD,VIC,
+Toyota bZ4X FWD,150.0,0.363,7.15,0.01,8.17,0.11,-8.06,15.75,24.77,9.02,QLD,SA,
+Zeekr  X RWD,300.0,0.339,8.0,1.87,15.26,44.88,29.62,31.5,55.44,23.94,SA,NT,ICE fetch failed; manual entry path simulated
+MG MG4 51kWh EV RWD ,300.0,0.362,0.5,1.77,16.29,2.66,-13.63,31.5,3.46,-28.03,ACT,SA,ICE fetch failed; manual entry path simulated
+Tesla  Model Y  AWD Long Range YL5NDB,400.0,0.378,7.34,189.74,22.68,5570.77,5548.09,42.0,67.82,25.82,NSW,SA,ICE fetch failed; manual entry path simulated
+Audi Q8 Q8 e-tron quattro Sportback,250.0,0.289,9.78,1.79,10.84,43.77,32.93,26.25,56.48,30.23,VIC,NT,
+Peugeot 2008 e2008 GT,150.0,0.352,9.03,1.84,7.92,24.92,17.0,15.75,31.29,15.54,QLD,ACT,ICE fetch failed; manual entry path simulated
+Zeekr  X RWD,100.0,0.4,10.35,1.83,6.0,18.94,12.94,10.5,23.91,13.41,SA,SA,
+BMW 7 Series i7 M70 xDrive,500.0,0.385,8.71,1.98,28.88,86.23,57.35,52.5,100.6,48.1,VIC,NT,ICE fetch failed; manual entry path simulated
+Polestar 4 200kW Long Range Single Motor,500.0,0.347,8.87,2.03,26.02,90.03,64.01,52.5,102.45,49.95,WA,NT,
+Zeekr  X RWD,500.0,0.363,8.65,1.95,27.22,84.34,57.11,52.5,99.91,47.41,NT,TAS,
+Zeekr  X RWD,200.0,0.301,6.73,2.14,9.03,28.8,19.77,21.0,31.09,10.09,TAS,NT,
+"Cupra Born 77kWh 4 seat (19 Alloys)""",250.0,0.07,9.37,1.83,2.63,42.87,40.24,26.25,54.11,27.86,ACT,VIC,
+Audi Q8 Q8 e-tron quattro,500.0,0.319,8.26,1.62,23.93,66.91,42.98,52.5,95.4,42.9,SA,WA,
+Xpeng G6 Standard 18 inch,150.0,0.251,8.85,1.99,5.65,26.42,20.77,15.75,30.67,14.92,ACT,QLD,
+Polestar 4 200kW Long Range Single Motor,150.0,0.41,6.35,189.74,9.22,1807.27,1798.05,15.75,22.0,6.25,SA,QLD,ICE fetch failed; manual entry path simulated
+Audi Q8 Q8 e-tron quattro Sportback,250.0,0.273,2018.0,2.08,10.24,10493.6,10483.36,26.25,11653.95,11627.7,WA,VIC,ICE fetch failed; manual entry path simulated
+BYD DOLPHIN PERFORMANCE,500.0,0.339,10.31,2.0,25.43,103.1,77.68,52.5,119.08,66.58,ACT,QLD,ICE fetch failed; manual entry path simulated
+Volvo C40 Recharge Twin,400.0,0.271,10.87,1.95,16.26,84.79,68.53,42.0,100.44,58.44,TAS,QLD,
+Peugeot 2008 e2008 GT,300.0,0.39,10.78,0.01,17.55,0.32,-17.23,31.5,74.71,43.21,QLD,QLD,
+Kia EV6 GT,100.0,0.358,9.49,2.01,5.37,19.07,13.7,10.5,21.92,11.42,SA,QLD,
+Mercedes-Benz EQS SUV EQS 450 4MATIC SUV,500.0,0.321,9.58,189.74,24.07,9088.55,9064.47,52.5,110.65,58.15,NT,SA,
+Peugeot 2008 e2008 GT,100.0,0.448,2018.0,1.99,6.72,4015.82,4009.1,10.5,4661.58,4651.08,NT,WA,ICE fetch failed; manual entry path simulated
+BMW 5 Series i5 eDrive40,100.0,0.6,7.47,2.08,9.0,15.54,6.54,10.5,17.26,6.76,ACT,NT,
+Lexus RZ 450e Coupe,150.0,0.326,9.46,1.83,7.33,25.97,18.63,15.75,32.78,17.03,QLD,NT,
+Kia EV6 GT,200.0,0.301,11.22,1.72,9.03,38.6,29.57,21.0,51.84,30.84,NT,NT,
+Volvo EX30 Single Motor RWD,100.0,0.35,9.33,1.97,5.25,18.38,13.13,10.5,21.55,11.05,VIC,SA,
+Xpeng G6 Standard 18 inch,100.0,0.323,9.26,0.01,4.84,0.09,-4.75,10.5,21.39,10.89,QLD,NT,ICE fetch failed; manual entry path simulated
+"Cupra Born 77kWh 4 seat (19 Alloys)""",250.0,0.308,6.59,2.07,11.55,34.1,22.55,26.25,38.06,11.81,TAS,TAS,
+Ford Mach-E GT 4P AWD,300.0,0.224,9.27,1.7,10.08,47.28,37.2,31.5,64.24,32.74,NT,TAS,
+Hyundai Ioniq 9 Calligraphy,200.0,0.378,7.49,0.01,11.34,0.15,-11.19,21.0,34.6,13.6,VIC,TAS,
+Rolls-Royce Spectre Coupe,300.0,0.37,7.45,2.04,16.65,45.59,28.94,31.5,51.63,20.13,ACT,TAS,
+Mercedes-Benz EQE SUV EQE 350 4MATIC SUV ,100.0,0.402,6.66,1.96,6.03,13.05,7.02,10.5,15.38,4.88,QLD,TAS,
+Hyundai Ioniq 9 Calligraphy,400.0,0.244,8.34,2.22,14.64,74.06,59.42,42.0,77.06,35.06,QLD,NSW,
+Toyota bZ4X FWD,500.0,0.316,5.8,1.94,23.7,56.26,32.56,52.5,66.99,14.49,NT,ACT,
+Xpeng G6 Standard 18 inch,250.0,0.422,10.92,2.21,15.82,60.33,44.51,26.25,63.06,36.81,ACT,NSW,
+Audi Q8 Q8 e-tron quattro,300.0,0.269,9.66,2.35,12.11,68.1,56.0,31.5,66.94,35.44,VIC,SA,
+Tesla Model 3 Long Range H5LDB,500.0,0.1,9.48,1.82,7.5,86.27,78.77,52.5,109.49,56.99,TAS,NSW,ICE fetch failed; manual entry path simulated
+Kia EV6 GT,100.0,0.275,11.3,1.99,4.12,22.49,18.36,10.5,26.1,15.6,QLD,SA,ICE fetch failed; manual entry path simulated
+Kia EV6 GT,250.0,0.354,9.68,1.9,13.27,45.98,32.7,26.25,55.9,29.65,TAS,NT,
+Peugeot 2008 e2008 GT,250.0,0.336,7.16,1.89,12.6,33.83,21.23,26.25,41.35,15.1,WA,TAS,
+Tesla  Model Y  AWD Long Range YL5NDB,100.0,0.327,8.9,2.32,4.91,20.65,15.74,10.5,20.56,10.06,QLD,ACT,ICE fetch failed; manual entry path simulated
+Peugeot Partner  ePARTNER PRO LONG,150.0,0.331,6.53,89.99,7.45,881.45,874.0,15.75,22.63,6.88,TAS,NT,ICE fetch failed; manual entry path simulated
+Ford Mach-E Premium LFP AWD,250.0,0.297,999.0,2.28,11.14,5694.3,5683.16,26.25,5769.23,5742.98,NSW,NSW,ICE fetch failed; manual entry path simulated
+Hyundai Ioniq 9 Calligraphy,100.0,0.273,7.79,2.22,4.1,17.29,13.2,10.5,17.99,7.49,QLD,ACT,
+Audi Q8 Q8 e-tron quattro Sportback,300.0,0.261,6.92,1.66,11.75,34.46,22.72,31.5,47.96,16.46,ACT,TAS,
+MG MG4 77kWh EV RWD,500.0,0.1,9.07,2.33,7.5,105.67,98.17,52.5,104.76,52.26,VIC,TAS,ICE fetch failed; manual entry path simulated
+Kia  EV5 Standard Range 2WD,300.0,0.358,9.29,2.0,16.11,55.74,39.63,31.5,64.38,32.88,QLD,ACT,ICE fetch failed; manual entry path simulated
+Kia EV9 GT-Line AWD,200.0,0.327,8.09,189.74,9.81,3069.99,3060.18,21.0,37.38,16.38,NT,NSW,
+Xpeng G6 Standard 18 inch,100.0,0.338,11.14,89.99,5.07,1002.49,997.42,10.5,25.73,15.23,TAS,NSW,
+Lexus RZ 450e Coupe,300.0,0.387,10.89,1.97,17.41,64.36,46.94,31.5,75.47,43.97,SA,WA,
+Zeekr  X RWD,150.0,0.405,9.18,2.12,9.11,29.19,20.08,15.75,31.81,16.06,QLD,NT,
+Mercedes-Benz EQE SUV EQE 300 SUV ,100.0,0.421,8.8,2.11,6.31,18.57,12.25,10.5,20.33,9.83,NSW,SA,ICE fetch failed; manual entry path simulated
+MG MG4 64kWh EV 4WD,300.0,0.268,6.89,2.0,12.06,41.34,29.28,31.5,47.75,16.25,ACT,NSW,
+GWM Ora Extended Range,300.0,0.1,8.89,2.03,4.5,54.14,49.64,31.5,61.61,30.11,WA,QLD,
+Volvo EX30 Single Motor RWD,150.0,0.427,8.08,189.74,9.61,2299.65,2290.04,15.75,28.0,12.25,NT,NT,
+Zeekr  X RWD,400.0,0.283,8.02,2.06,16.98,66.08,49.1,42.0,74.1,32.1,NT,WA,
+Rolls-Royce Spectre Coupe,250.0,0.38,6.04,1.97,14.25,29.75,15.5,26.25,34.88,8.63,WA,TAS,ICE fetch failed; manual entry path simulated
+Tesla Model 3 Long Range H5LDB,250.0,0.404,10.19,1.96,15.15,49.93,34.78,26.25,58.85,32.6,NT,TAS,
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,300.0,0.252,10.9,1.94,11.34,63.44,52.1,31.5,75.54,44.04,NSW,QLD,
+MG ZS EV 72kWh,400.0,0.07,7.37,89.99,4.2,2652.91,2648.71,42.0,68.1,26.1,WA,TAS,
+Ford Mach-E Premium 4P RWD,400.0,0.07,7.75,1.99,4.2,61.69,57.49,42.0,71.61,29.61,TAS,ACT,
+Audi Q8 Q8 e-tron quattro,400.0,0.1,9.21,1.99,6.0,73.31,67.31,42.0,85.1,43.1,NT,TAS,
+Kia EV9 GT-Line AWD,500.0,0.307,8.48,189.74,23.02,8044.98,8021.95,52.5,97.94,45.44,NSW,NT,
+"Kia EV9 Earth AWD 19"",0""",250.0,0.295,8.57,2.07,11.06,44.35,33.29,26.25,49.49,23.24,NT,SA,
+Peugeot 2008 e2008 GT,500.0,0.265,7.71,1.79,19.88,69.0,49.13,52.5,89.05,36.55,TAS,SA,
+Lexus RZ 450e Coupe,300.0,0.27,9.02,89.99,12.15,2435.13,2422.98,31.5,62.51,31.01,NT,ACT,
+MG MG4 77kWh EV RWD,400.0,0.329,7.85,0.01,19.74,0.31,-19.43,42.0,72.53,30.53,WA,NT,
+Kia  EV5 Standard Range 2WD,200.0,0.278,8.83,2.13,8.34,37.62,29.28,21.0,40.79,19.79,ACT,VIC,
+Peugeot 2008 e2008 GT,400.0,0.267,7.71,2.05,16.02,63.22,47.2,42.0,71.24,29.24,QLD,NSW,
+Kia EV9 Air RWD,300.0,0.342,8.73,1.79,15.39,46.88,31.49,31.5,60.5,29.0,NT,WA,
+Lexus RZ 450e Coupe,200.0,0.1,7.65,1.96,3.0,29.99,26.99,21.0,35.34,14.34,NT,QLD,
+Lexus UX 300e Coupe,250.0,0.334,10.2,0.01,12.53,0.26,-12.27,26.25,58.91,32.66,ACT,TAS,ICE fetch failed; manual entry path simulated
+"Cupra Born 77kWh 4 seat (19 Alloys)""",150.0,0.369,9.95,2.25,8.3,33.58,25.28,15.75,34.48,18.73,NT,QLD,
+GWM Ora Extended Range GT,300.0,0.3,11.7,1.85,13.5,64.93,51.43,31.5,81.08,49.58,ACT,NSW,
+Toyota bZ4X FWD,150.0,0.303,10.91,1.99,6.82,32.57,25.75,15.75,37.8,22.05,SA,WA,ICE fetch failed; manual entry path simulated
+MG MG4 64kWh EV RWD ,150.0,0.419,8.53,2.27,9.43,29.04,19.62,15.75,29.56,13.81,ACT,NT,
+Ford Mach-E Premium 4P AWD,200.0,0.6,9.75,2.16,18.0,42.12,24.12,21.0,45.05,24.05,NT,ACT,
+Hyundai Ioniq 9 Calligraphy,300.0,0.388,10.3,2.35,17.46,72.62,55.16,31.5,71.38,39.88,VIC,QLD,
+Rolls-Royce Spectre Coupe,400.0,0.275,10.02,2.03,16.5,81.36,64.86,42.0,92.58,50.58,VIC,WA,
+Peugeot 2008 e2008 GT,500.0,0.398,7.14,2.05,29.85,73.18,43.33,52.5,82.47,29.97,TAS,WA,
+Peugeot Partner  ePARTNER PRO LONG,150.0,0.29,8.39,1.83,6.52,23.03,16.51,15.75,29.07,13.32,SA,NT,ICE fetch failed; manual entry path simulated
+Audi Q8 Q8 e-tron quattro,100.0,0.364,7.25,2.24,5.46,16.24,10.78,10.5,16.75,6.25,ACT,VIC,
+BMW 5 Series i5 eDrive40,150.0,0.371,7.93,1.7,8.35,20.22,11.87,15.75,27.48,11.73,NT,WA,
+Kia  EV5 Standard Range 2WD,100.0,0.305,7.46,1.93,4.58,14.4,9.82,10.5,17.23,6.73,ACT,NSW,
+Zeekr  X RWD,250.0,0.382,11.35,1.78,14.33,50.51,36.18,26.25,65.55,39.3,VIC,WA,
+Kia EV9 Air RWD,500.0,0.23,6.5,2.11,17.25,68.58,51.33,52.5,75.08,22.58,QLD,NT,
+Leapmotor  C10 BEV,150.0,0.343,8.34,1.87,7.72,23.39,15.68,15.75,28.9,13.15,ACT,NT,
+Rolls-Royce Spectre Black Badge Coupe,100.0,0.28,9.53,1.87,4.2,17.82,13.62,10.5,22.01,11.51,ACT,TAS,
+Leapmotor  C10 BEV,100.0,0.308,8.67,1.99,4.62,17.25,12.63,10.5,20.03,9.53,NSW,NSW,
+BYD DOLPHIN Dynamic,300.0,0.428,7.98,189.74,19.26,4542.38,4523.12,31.5,55.3,23.8,SA,NT,
+Audi Q8 Q8 e-tron quattro Sportback,500.0,0.399,7.4,1.9,29.93,70.3,40.38,52.5,85.47,32.97,ACT,VIC,
+Xpeng G6 Standard 18 inch,400.0,0.401,6.99,2.2,24.06,61.51,37.45,42.0,64.59,22.59,NT,WA,ICE fetch failed; manual entry path simulated
+Rolls-Royce Spectre Coupe,250.0,0.1,6.92,189.74,3.75,3282.5,3278.75,26.25,39.96,13.71,NT,VIC,
+BYD SEAL PERFORMANCE,200.0,0.1,10.36,1.9,3.0,39.37,36.37,21.0,47.86,26.86,QLD,NSW,
+Rolls-Royce Spectre Coupe,250.0,0.316,10.57,1.65,11.85,43.6,31.75,26.25,61.04,34.79,TAS,QLD,
+Polestar 4 200kW Long Range Single Motor,400.0,0.1,10.7,1.88,6.0,80.46,74.46,42.0,98.87,56.87,VIC,WA,
+Peugeot 2008 e2008 GT,250.0,0.238,7.02,2.3,8.92,40.37,31.44,26.25,40.54,14.29,NT,NT,
+Leapmotor  C10 BEV,150.0,0.23,8.46,2.09,5.17,26.52,21.35,15.75,29.31,13.56,VIC,WA,
+MG MG4 64kWh EV RWD ,300.0,0.432,5.76,1.92,19.44,33.18,13.74,31.5,39.92,8.42,VIC,VIC,
+Audi Q8 Q8 e-tron quattro,100.0,0.341,7.73,2.0,5.12,15.46,10.35,10.5,17.86,7.36,WA,WA,ICE fetch failed; manual entry path simulated
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,300.0,0.07,10.36,0.01,3.15,0.31,-2.84,31.5,71.79,40.29,QLD,ACT,
+BYD SEAL PERFORMANCE,150.0,0.27,9.02,2.3,6.08,31.12,25.04,15.75,31.25,15.5,ACT,QLD,ICE fetch failed; manual entry path simulated
+BMW iX3 50 xDrive AWD,500.0,0.274,9.92,2.01,20.55,99.7,79.15,52.5,114.58,62.08,NSW,NSW,
+Kia  EV5 Standard Range 2WD,500.0,0.339,8.24,1.81,25.43,74.57,49.15,52.5,95.17,42.67,ACT,NSW,ICE fetch failed; manual entry path simulated
+Polestar 4 200kW Long Range Single Motor,200.0,0.288,9.49,1.94,8.64,36.82,28.18,21.0,43.84,22.84,NSW,SA,
+Peugeot Partner  ePARTNER PRO LONG,150.0,0.338,9.83,1.74,7.61,25.66,18.05,15.75,34.06,18.31,NT,TAS,
+Mercedes-Benz EQE SUV EQE 300 SUV ,500.0,0.414,9.68,2.05,31.05,99.22,68.17,52.5,111.8,59.3,QLD,NSW,
+Tesla Model 3 Long Range H5LDB,200.0,0.316,8.47,1.95,9.48,33.03,23.55,21.0,39.13,18.13,WA,NSW,ICE fetch failed; manual entry path simulated
+Leapmotor  C10 BEV,150.0,0.272,11.05,2.13,6.12,35.3,29.18,15.75,38.29,22.54,QLD,VIC,
+Hyundai Ioniq 9 Calligraphy,400.0,0.427,8.8,1.96,25.62,68.99,43.37,42.0,81.31,39.31,QLD,VIC,
+Leapmotor  C10 BEV,500.0,0.336,8.79,89.99,25.2,3955.06,3929.86,52.5,101.52,49.02,VIC,NT,
+MG MG4 77kWh EV RWD,150.0,0.274,8.18,1.93,6.17,23.68,17.52,15.75,28.34,12.59,SA,ACT,
+Kia  EV5 Standard Range 2WD,150.0,0.07,5.65,89.99,1.58,762.67,761.09,15.75,19.58,3.83,NT,TAS,
+Tesla  Model 3 RWD H6MRB,300.0,0.339,8.41,2.11,15.26,53.24,37.98,31.5,58.28,26.78,NSW,QLD,ICE fetch failed; manual entry path simulated
+Kia  EV5 Standard Range 2WD,100.0,0.311,9.6,189.74,4.67,1821.5,1816.84,10.5,22.18,11.68,WA,QLD,
+GWM Ora Extended Range,100.0,0.281,8.78,2.03,4.22,17.82,13.61,10.5,20.28,9.78,NT,TAS,ICE fetch failed; manual entry path simulated
+Kia EV9 GT-Line AWD,500.0,0.329,7.88,2.2,24.68,86.68,62.01,52.5,91.01,38.51,VIC,SA,
+Mercedes-Benz EQE 300,150.0,0.311,6.91,2.3,7.0,23.84,16.84,15.75,23.94,8.19,TAS,QLD,
+Lexus RZ 450e Coupe,250.0,0.323,10.36,1.79,12.11,46.36,34.25,26.25,59.83,33.58,NT,NT,
+Peugeot 2008 e2008 GT,300.0,0.327,8.06,2.28,14.71,55.13,40.42,31.5,55.86,24.36,NT,ACT,
+Polestar 4 200kW Long Range Single Motor,250.0,0.32,8.09,2.01,12.0,40.65,28.65,26.25,46.72,20.47,NSW,WA,ICE fetch failed; manual entry path simulated
+Rolls-Royce Spectre Coupe,150.0,0.352,10.18,1.92,7.92,29.32,21.4,15.75,35.27,19.52,TAS,WA,
+Leapmotor  C10 BEV,150.0,0.299,6.98,2.21,6.73,23.14,16.41,15.75,24.19,8.44,TAS,ACT,
+Tesla Model 3 Long Range H5LDB,400.0,0.352,9.64,2.15,21.12,82.9,61.78,42.0,89.07,47.07,SA,QLD,
+Polestar 4 200kW Long Range Single Motor,200.0,0.315,9.48,0.01,9.45,0.19,-9.26,21.0,43.8,22.8,TAS,NSW,
+Xpeng G6 Standard 18 inch,200.0,0.07,8.75,2.1,2.1,36.75,34.65,21.0,40.43,19.43,SA,SA,
+Leapmotor  C10 BEV,300.0,0.349,11.12,1.96,15.7,65.39,49.68,31.5,77.06,45.56,NSW,VIC,
+BMW 5 Series i5 M60 xDrive,150.0,0.284,8.28,1.75,6.39,21.73,15.34,15.75,28.69,12.94,QLD,VIC,
+Peugeot 2008 e2008 GT,200.0,0.388,7.94,89.99,11.64,1429.04,1417.4,21.0,36.68,15.68,NT,ACT,
+Tesla  Model Y  AWD Long Range YL5NDB,300.0,0.315,10.53,1.87,14.18,59.07,44.9,31.5,72.97,41.47,SA,WA,
+BMW X1 iX1 xDrive30,400.0,0.387,9.73,1.79,23.22,69.67,46.45,42.0,89.91,47.91,NT,NSW,ICE fetch failed; manual entry path simulated
+Polestar 4 200kW Long Range Single Motor,400.0,0.291,9.62,1.98,17.46,76.19,58.73,42.0,88.89,46.89,ACT,NT,
+MG ZS EV 72kWh,150.0,0.344,10.1,1.94,7.74,29.39,21.65,15.75,35.0,19.25,SA,SA,
+Zeekr  X RWD,150.0,0.318,6.4,89.99,7.16,863.9,856.75,15.75,22.18,6.43,TAS,NT,
+Tesla Model 3 RWD H6LRB,150.0,0.264,8.08,1.65,5.94,20.0,14.06,15.75,28.0,12.25,QLD,VIC,
+Volvo C40 Recharge Twin,200.0,0.323,10.03,2.08,9.69,41.72,32.03,21.0,46.34,25.34,ACT,SA,ICE fetch failed; manual entry path simulated
+BYD DOLPHIN PERFORMANCE,150.0,0.361,7.76,2.08,8.12,24.21,16.09,15.75,26.89,11.14,VIC,SA,
+Lexus RZ 450e Coupe,250.0,0.338,6.47,1.77,12.68,28.63,15.95,26.25,37.36,11.11,ACT,TAS,
+Volvo EX30 Single Motor RWD,250.0,0.242,9.4,1.9,9.07,44.65,35.58,26.25,54.29,28.04,WA,WA,ICE fetch failed; manual entry path simulated
+Leapmotor  C10 BEV,250.0,0.07,9.86,1.83,2.63,45.11,42.48,26.25,56.94,30.69,NSW,TAS,
+Zeekr  X RWD,400.0,0.313,6.14,2.02,18.78,49.61,30.83,42.0,56.73,14.73,NT,NT,
+Xpeng G6 Standard 18 inch,100.0,0.07,6.7,1.88,1.05,12.6,11.55,10.5,15.48,4.98,QLD,WA,ICE fetch failed; manual entry path simulated
+"Cupra Born 77kWh 4 seat (19 Alloys)""",400.0,0.357,50.0,2.0,21.42,400.0,378.58,42.0,462.0,420.0,WA,NSW,ICE fetch failed; manual entry path simulated
+Peugeot Partner  ePARTNER PRO LONG,100.0,0.325,7.72,1.69,4.88,13.05,8.17,10.5,17.83,7.33,SA,NT,ICE fetch failed; manual entry path simulated
+Lexus RZ 450e Coupe,200.0,0.31,11.34,1.77,9.3,40.14,30.84,21.0,52.39,31.39,TAS,ACT,
+Mercedes-Benz EQE SUV AMG EQE 53 4MATIC+ SUV,300.0,0.374,8.81,0.01,16.83,0.26,-16.57,31.5,61.05,29.55,ACT,WA,
+Volvo XC40 Recharge Twin,500.0,0.341,6.92,2.0,25.58,69.2,43.62,52.5,79.93,27.43,QLD,QLD,
+Hyundai Ioniq 9 Calligraphy,300.0,0.305,7.33,189.74,13.72,4172.38,4158.66,31.5,50.8,19.3,ACT,NSW,
+Zeekr  X RWD,100.0,0.282,9.86,2.31,4.23,22.78,18.55,10.5,22.78,12.28,WA,NT,
+Polestar 4 200kW Long Range Single Motor,500.0,0.343,10.37,1.88,25.73,97.48,71.75,52.5,119.77,67.27,ACT,WA,
+BYD DOLPHIN Dynamic,500.0,0.388,11.1,1.76,29.1,97.68,68.58,52.5,128.21,75.71,ACT,VIC,
+Kia EV3 Air SR ,400.0,0.248,7.76,1.71,14.88,53.08,38.2,42.0,71.7,29.7,NT,NSW,
+BMW 5 Series i5 M60 xDrive,250.0,0.324,9.5,1.97,12.15,46.79,34.64,26.25,54.86,28.61,WA,WA,ICE fetch failed; manual entry path simulated
+Tesla  Model Y  RWD YS6MRB,300.0,0.413,0.5,1.9,18.58,2.85,-15.73,31.5,3.46,-28.03,QLD,WA,ICE fetch failed; manual entry path simulated
+Hyundai Ioniq 9 Calligraphy,200.0,0.329,10.45,1.7,9.87,35.53,25.66,21.0,48.28,27.28,QLD,VIC,
+Kia EV6 GT,100.0,0.336,10.12,2.13,5.04,21.56,16.52,10.5,23.38,12.88,QLD,ACT,
+GWM Ora Extended Range GT,200.0,0.301,9.27,1.8,9.03,33.37,24.34,21.0,42.83,21.83,QLD,WA,
+"Cupra Born 77kWh 4 seat (19 Alloys)""",400.0,0.276,8.37,1.94,16.56,64.95,48.39,42.0,77.34,35.34,ACT,TAS,
+BMW iX3 50 xDrive AWD,200.0,0.309,10.5,1.73,9.27,36.33,27.06,21.0,48.51,27.51,QLD,NSW,ICE fetch failed; manual entry path simulated
+Lexus RZ 450e Coupe,200.0,0.269,7.99,1.75,8.07,27.96,19.89,21.0,36.91,15.91,ACT,QLD,ICE fetch failed; manual entry path simulated
+Xpeng G6 Standard 18 inch,500.0,0.372,8.1,2.14,27.9,86.67,58.77,52.5,93.56,41.06,NT,WA,
+Kia  EV5 Standard Range 2WD,250.0,0.1,9.84,2.31,3.75,56.83,53.08,26.25,56.83,30.58,QLD,VIC,
+Mercedes-Benz EQE 53 AMG 4MATIC+,500.0,0.328,7.99,1.92,24.6,76.7,52.1,52.5,92.28,39.78,QLD,NT,
+MG MG4 64kWh EV RWD ,500.0,0.342,5.82,2.02,25.65,58.78,33.13,52.5,67.22,14.72,NSW,NSW,
+Leapmotor  C10 BEV,500.0,0.326,8.77,1.77,24.45,77.61,53.16,52.5,101.29,48.79,NSW,NSW,
+Kia  EV5 Standard Range 2WD,500.0,0.359,10.68,1.78,26.92,95.05,68.13,52.5,123.35,70.85,WA,ACT,
+Rolls-Royce Spectre Coupe,150.0,0.305,9.39,1.87,6.86,26.34,19.48,15.75,32.54,16.79,NT,QLD,
+Ford Mach-E GT 4P AWD,200.0,0.393,7.26,1.85,11.79,26.86,15.07,21.0,33.54,12.54,SA,ACT,
+Kia EV3 Air SR ,400.0,0.305,8.13,2.13,18.3,69.27,50.97,42.0,75.12,33.12,NT,SA,
+Fiat 500e FWD 87 kW 42 kWh,150.0,0.296,9.31,1.76,6.66,24.58,17.92,15.75,32.26,16.51,SA,NT,
+BMW X1 iX1 xDrive30,250.0,0.1,8.55,2.05,3.75,43.82,40.07,26.25,49.38,23.13,ACT,NT,
+Polestar 4 200kW Long Range Single Motor,300.0,0.287,7.66,189.74,12.91,4360.23,4347.31,31.5,53.08,21.58,NSW,NT,
+Peugeot Partner  ePARTNER PRO LONG,250.0,0.378,7.26,1.84,14.18,33.4,19.22,26.25,41.93,15.68,WA,NT,
+Volvo XC40 Recharge,250.0,0.369,8.56,1.9,13.84,40.66,26.82,26.25,49.43,23.18,WA,ACT,ICE fetch failed; manual entry path simulated
+GWM Ora Extended Range GT,500.0,0.303,6.21,1.99,22.72,61.79,39.06,52.5,71.73,19.23,WA,QLD,
+Audi Q8 Q8 e-tron quattro Sportback,200.0,0.307,8.79,89.99,9.21,1582.02,1572.81,21.0,40.61,19.61,NSW,QLD,
+Toyota bZ4X FWD,250.0,0.308,9.31,2.04,11.55,47.48,35.93,26.25,53.77,27.52,ACT,ACT,
+Leapmotor  C10 BEV,100.0,0.1,7.7,2.07,1.5,15.94,14.44,10.5,17.79,7.29,QLD,VIC,
+MG ZS EV 72kWh,400.0,0.6,7.02,2.02,36.0,56.72,20.72,42.0,64.86,22.86,VIC,ACT,
+Ford Mach-E Premium LFP AWD,400.0,0.369,6.36,2.03,22.14,51.64,29.5,42.0,58.77,16.77,TAS,SA,ICE fetch failed; manual entry path simulated
+Leapmotor  C10 BEV,300.0,0.333,7.57,1.96,14.99,44.51,29.53,31.5,52.46,20.96,TAS,QLD,ICE fetch failed; manual entry path simulated
+Xpeng G6 Standard 18 inch,100.0,0.321,9.95,0.01,4.82,0.1,-4.72,10.5,22.98,12.48,NT,VIC,
+Hyundai Ioniq 9 Calligraphy,300.0,0.282,9.28,1.84,12.69,51.23,38.54,31.5,64.31,32.81,ACT,WA,
+Tesla  Model Y  RWD YS6MRB,200.0,0.369,8.3,1.94,11.07,32.2,21.13,21.0,38.35,17.35,TAS,QLD,
+Audi Q8 Q8 e-tron quattro,200.0,0.294,10.22,1.78,8.82,36.38,27.56,21.0,47.22,26.22,SA,TAS,ICE fetch failed; manual entry path simulated
+Lexus UX 300e Coupe,250.0,0.27,8.22,1.71,10.12,35.14,25.02,26.25,47.47,21.22,TAS,TAS,
+Lexus RZ 450e Coupe,500.0,0.421,7.07,1.83,31.57,64.69,33.12,52.5,81.66,29.16,NSW,NSW,
+Polestar 4 200kW Long Range Single Motor,250.0,0.328,9.46,2.01,12.3,47.54,35.24,26.25,54.63,28.38,VIC,WA,
+Cupra Born Born 77kWh 5 seat,400.0,0.394,6.53,0.01,23.64,0.26,-23.38,42.0,60.34,18.34,TAS,NSW,
+Kia EV9 Air RWD,300.0,0.231,8.15,1.91,10.4,46.7,36.3,31.5,56.48,24.98,VIC,ACT,
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,150.0,0.358,10.91,2.22,8.05,36.33,28.28,15.75,37.8,22.05,NSW,ACT,
+Volvo C40 Recharge Twin,200.0,0.367,7.79,2.04,11.01,31.78,20.77,21.0,35.99,14.99,TAS,NSW,ICE fetch failed; manual entry path simulated
+Ford Mach-E Premium 4P AWD,300.0,0.238,8.69,1.76,10.71,45.88,35.17,31.5,60.22,28.72,WA,WA,ICE fetch failed; manual entry path simulated
+Ford Mach-E Select LFP RWD,500.0,0.363,8.16,2.25,27.22,91.8,64.58,52.5,94.25,41.75,WA,ACT,
+Toyota bZ4X FWD,200.0,0.1,10.91,2.22,3.0,48.44,45.44,21.0,50.4,29.4,NT,ACT,ICE fetch failed; manual entry path simulated
+Tesla Model 3 Long Range H5LDB,300.0,0.329,6.86,1.67,14.81,34.37,19.56,31.5,47.54,16.04,VIC,TAS,
+Tesla  Model Y  AWD Long Range YL5NDB,250.0,0.406,9.49,2.09,15.23,49.59,34.36,26.25,54.8,28.55,NSW,NSW,
+Lexus UX 300e Coupe,300.0,0.435,11.54,1.94,19.57,67.16,47.59,31.5,79.97,48.47,WA,TAS,
+"Cupra Born 77kWh 4 seat (19 Alloys)""",200.0,0.373,10.84,1.87,11.19,40.54,29.35,21.0,50.08,29.08,VIC,TAS,
+BMW 5 Series i5 eDrive40,300.0,0.33,7.81,1.94,14.85,45.45,30.6,31.5,54.12,22.62,ACT,WA,
+Tesla  Model 3 RWD H6MRB,200.0,0.317,8.21,1.79,9.51,29.39,19.88,21.0,37.93,16.93,QLD,VIC,
+Volvo XC40 Recharge Twin,300.0,0.358,8.66,2.13,16.11,55.34,39.23,31.5,60.01,28.51,TAS,QLD,
+Xpeng G6 Standard 18 inch,400.0,0.244,11.58,1.92,14.64,88.93,74.29,42.0,107.0,65.0,NSW,NT,ICE fetch failed; manual entry path simulated
+Ford Mach-E Premium 4P AWD,200.0,0.304,8.77,2.22,9.12,38.94,29.82,21.0,40.52,19.52,TAS,ACT,ICE fetch failed; manual entry path simulated
+Ford Mach-E Select LFP RWD,150.0,0.07,9.56,2.03,1.58,29.11,27.54,15.75,33.13,17.38,SA,SA,
+BMW 5 Series i5 M60 xDrive,250.0,0.359,9.26,0.01,13.46,0.23,-13.23,26.25,53.48,27.23,SA,ACT,
+Tesla Model 3 Long Range H5LDB,200.0,0.291,10.17,1.98,8.73,40.27,31.54,21.0,46.99,25.99,NSW,WA,
+BYD SEAL PERFORMANCE,100.0,0.285,7.13,1.99,4.27,14.19,9.91,10.5,16.47,5.97,QLD,VIC,
+Fiat 500e FWD 87 kW 42 kWh,400.0,0.353,10.25,2.13,21.18,87.33,66.15,42.0,94.71,52.71,WA,SA,
+Toyota bZ4X FWD,300.0,0.294,8.76,2.15,13.23,56.5,43.27,31.5,60.71,29.21,TAS,VIC,
+Toyota bZ4X FWD,500.0,0.347,6.65,1.91,26.02,63.51,37.48,52.5,76.81,24.31,QLD,SA,ICE fetch failed; manual entry path simulated
+Toyota bZ4X FWD,150.0,0.07,8.48,2.06,1.58,26.2,24.63,15.75,29.38,13.63,NT,NT,
+Polestar 4 200kW Long Range Single Motor,300.0,0.354,8.63,2.29,15.93,59.29,43.36,31.5,59.81,28.31,TAS,SA,
+Kia EV3 Air SR ,200.0,0.392,6.93,1.96,11.76,27.17,15.41,21.0,32.02,11.02,NSW,VIC,ICE fetch failed; manual entry path simulated
+BYD DOLPHIN PERFORMANCE,250.0,0.348,2018.0,189.74,13.05,957238.3,957225.25,26.25,11653.95,11627.7,WA,VIC,ICE fetch failed; manual entry path simulated
+Cupra Born Born 77kWh 5 seat,500.0,0.6,10.52,2.18,45.0,114.67,69.67,52.5,121.51,69.01,QLD,TAS,
+Mercedes-Benz EQS SUV EQS 450 4MATIC SUV,150.0,0.6,6.92,2.07,13.5,21.49,7.99,15.75,23.98,8.23,TAS,WA,
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,250.0,0.305,10.13,2.27,11.44,57.49,46.05,26.25,58.5,32.25,TAS,QLD,
+Kia  EV5 Standard Range 2WD,200.0,0.432,10.54,1.66,12.96,34.99,22.03,21.0,48.69,27.69,NT,TAS,
+Tesla Model 3 Long Range H5LDB,500.0,0.326,8.68,1.89,24.45,82.03,57.58,52.5,100.25,47.75,TAS,NT,ICE fetch failed; manual entry path simulated
+Tesla Model 3 RWD H6LRB,500.0,0.07,9.59,1.98,5.25,94.94,89.69,52.5,110.76,58.26,QLD,QLD,
+BYD SEAL Dynamic,300.0,0.1,6.39,1.68,4.5,32.21,27.71,31.5,44.28,12.78,TAS,NSW,
+Tesla  Model 3 RWD H6MRB,150.0,0.372,9.33,1.95,8.37,27.29,18.92,15.75,32.33,16.58,QLD,VIC,
+Polestar 4 200kW Long Range Single Motor,400.0,0.366,8.15,189.74,21.96,6185.52,6163.56,42.0,75.31,33.31,NT,QLD,
+Peugeot Partner  ePARTNER PRO LONG,150.0,0.367,7.54,1.97,8.26,22.28,14.02,15.75,26.13,10.38,QLD,WA,ICE fetch failed; manual entry path simulated
+"Kia EV9 Earth AWD 20"",0""",300.0,0.07,6.09,1.81,3.15,33.07,29.92,31.5,42.2,10.7,ACT,VIC,
+BYD DOLPHIN Dynamic,200.0,0.345,9.5,1.95,10.35,37.05,26.7,21.0,43.89,22.89,VIC,VIC,
+Zeekr  X RWD,300.0,0.25,8.94,1.78,11.25,47.74,36.49,31.5,61.95,30.45,ACT,VIC,
+BYD DOLPHIN Dynamic,200.0,0.284,8.77,2.14,8.52,37.54,29.02,21.0,40.52,19.52,QLD,TAS,ICE fetch failed; manual entry path simulated
+Leapmotor  C10 BEV,500.0,0.1,10.15,0.01,7.5,0.51,-6.99,52.5,117.23,64.73,WA,NSW,
+BYD SEAL PERFORMANCE,500.0,0.354,7.79,2.01,26.55,78.29,51.74,52.5,89.97,37.47,QLD,VIC,
+BYD DOLPHIN Dynamic,250.0,0.1,8.65,1.91,3.75,41.3,37.55,26.25,49.95,23.7,QLD,QLD,
+Tesla  Model Y  RWD YS6MRB,400.0,0.403,9.96,2.32,24.18,92.43,68.25,42.0,92.03,50.03,NSW,WA,
+Kia EV9 Air RWD,300.0,0.356,10.06,0.01,16.02,0.3,-15.72,31.5,69.72,38.22,NSW,QLD,
+Leapmotor  C10 BEV,500.0,0.1,8.45,1.75,7.5,73.94,66.44,52.5,97.6,45.1,TAS,NSW,
+Ford Mach-E Premium LFP AWD,400.0,0.264,6.31,1.81,15.84,45.68,29.84,42.0,58.3,16.3,TAS,WA,
+Zeekr  X RWD,250.0,0.33,8.72,2.09,12.38,45.56,33.19,26.25,50.36,24.11,WA,NSW,
+Audi Q8 Q8 e-tron quattro Sportback,400.0,0.07,10.64,2.01,4.2,85.55,81.35,42.0,98.31,56.31,WA,ACT,
+Volvo XC40 Recharge,400.0,0.375,8.11,2.0,22.5,64.88,42.38,42.0,74.94,32.94,ACT,TAS,
+Hyundai Ioniq 9 Calligraphy,250.0,0.1,8.45,2.21,3.75,46.69,42.94,26.25,48.8,22.55,SA,NSW,
+Xpeng G6 Standard 18 inch,300.0,0.311,8.33,2.09,13.99,52.23,38.23,31.5,57.73,26.23,WA,ACT,
+GWM Ora Extended Range GT,100.0,0.1,999.0,2.07,1.5,2067.93,2066.43,10.5,2307.69,2297.19,TAS,SA,ICE fetch failed; manual entry path simulated
+Peugeot Partner  ePARTNER PRO LONG,150.0,0.253,11.73,89.99,5.69,1583.37,1577.68,15.75,40.64,24.89,SA,SA,ICE fetch failed; manual entry path simulated
+Audi Q8 Q8 e-tron quattro Sportback,500.0,0.359,10.29,2.06,26.92,105.99,79.06,52.5,118.85,66.35,SA,ACT,
+Volvo C40 Recharge Twin,100.0,0.241,8.16,0.01,3.61,0.08,-3.53,10.5,18.85,8.35,VIC,NT,
+BMW 7 Series i7 M70 xDrive,100.0,0.6,6.98,2.02,9.0,14.1,5.1,10.5,16.12,5.62,VIC,ACT,ICE fetch failed; manual entry path simulated
+BYD SEAL PERFORMANCE,100.0,0.365,9.76,1.85,5.47,18.06,12.58,10.5,22.55,12.05,NT,QLD,ICE fetch failed; manual entry path simulated
+Kia  EV5 Standard Range 2WD,250.0,0.317,11.08,189.74,11.89,5255.8,5243.91,26.25,63.99,37.74,TAS,NSW,
+Xpeng G6 Standard 18 inch,250.0,0.347,7.68,1.89,13.01,36.29,23.28,26.25,44.35,18.1,ACT,NT,
+Xpeng G6 Standard 18 inch,300.0,0.425,6.7,89.99,19.12,1808.8,1789.67,31.5,46.43,14.93,TAS,NT,
+Polestar 4 200kW Long Range Single Motor,250.0,0.318,8.25,2.1,11.93,43.31,31.39,26.25,47.64,21.39,SA,ACT,
+MG MG4 64kWh EV 4WD,250.0,0.1,8.16,1.83,3.75,37.33,33.58,26.25,47.12,20.87,WA,ACT,
+Mercedes-Benz EQE SUV EQE 500 4MATIC SUV,400.0,0.07,8.8,1.7,4.2,59.84,55.64,42.0,81.31,39.31,NT,NT,
+Hyundai Ioniq 9 Calligraphy,200.0,0.403,7.99,2.06,12.09,32.92,20.83,21.0,36.91,15.91,WA,TAS,
+Mercedes-Benz EQS 500 4MATIC,200.0,0.352,8.74,2.07,10.56,36.18,25.62,21.0,40.38,19.38,WA,ACT,
+Volvo EX30 Single Motor RWD,150.0,0.318,8.48,2.13,7.16,27.09,19.94,15.75,29.38,13.63,ACT,ACT,
+Peugeot Partner  ePARTNER PRO LONG,200.0,0.329,9.83,1.9,9.87,37.35,27.48,21.0,45.41,24.41,WA,TAS,ICE fetch failed; manual entry path simulated
+BMW 7 Series i7 M70 xDrive,400.0,0.357,9.72,1.95,21.42,75.82,54.4,42.0,89.81,47.81,NT,TAS,
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,300.0,0.6,5.84,1.91,27.0,33.46,6.46,31.5,40.47,8.97,WA,ACT,
+Hyundai Ioniq 9 Calligraphy,100.0,0.383,999.0,1.8,5.75,1798.2,1792.46,10.5,2307.69,2297.19,QLD,SA,ICE fetch failed; manual entry path simulated
+Kia EV9 GT-Line AWD,250.0,0.304,11.11,2.06,11.4,57.22,45.82,26.25,64.16,37.91,WA,QLD,
+MG MG4 64kWh EV RWD LUX ,400.0,0.1,8.54,1.87,6.0,63.88,57.88,42.0,78.91,36.91,VIC,SA,
+Audi Q8 Q8 e-tron quattro Sportback,250.0,0.351,9.03,1.96,13.16,44.25,31.08,26.25,52.15,25.9,SA,QLD,ICE fetch failed; manual entry path simulated
+Lexus UX 300e Coupe,100.0,0.242,10.81,2.23,3.63,24.11,20.48,10.5,24.97,14.47,QLD,NSW,ICE fetch failed; manual entry path simulated
+Leapmotor  C10 BEV,150.0,0.341,7.93,1.94,7.67,23.08,15.4,15.75,27.48,11.73,WA,SA,
+GWM Ora Extended Range,400.0,0.297,7.01,1.93,17.82,54.12,36.3,42.0,64.77,22.77,SA,NSW,ICE fetch failed; manual entry path simulated
+Rolls-Royce Spectre Coupe,150.0,0.276,7.0,1.75,6.21,18.38,12.17,15.75,24.26,8.51,WA,NSW,ICE fetch failed; manual entry path simulated
+Audi Q8 Q8 e-tron quattro Sportback,150.0,0.392,8.85,89.99,8.82,1194.62,1185.8,15.75,30.67,14.92,NSW,ACT,ICE fetch failed; manual entry path simulated
+Leapmotor  C10 BEV,200.0,0.07,8.68,1.99,2.1,34.55,32.45,21.0,40.1,19.1,NT,WA,
+Tesla Model 3 RWD H6LRB,100.0,0.323,9.51,1.99,4.84,18.92,14.08,10.5,21.97,11.47,TAS,NSW,
+"Kia EV9 Earth AWD 19"",0""",400.0,0.315,9.75,2.15,18.9,83.85,64.95,42.0,90.09,48.09,ACT,QLD,
+Xpeng G6 Standard 18 inch,200.0,0.1,9.63,1.9,3.0,36.59,33.59,21.0,44.49,23.49,TAS,NT,
+Tesla Model 3 RWD H6LRB,500.0,0.362,6.01,1.94,27.15,58.3,31.15,52.5,69.42,16.92,ACT,TAS,
+GWM Ora Extended Range,300.0,0.364,8.9,1.92,16.38,51.26,34.88,31.5,61.68,30.18,VIC,WA,ICE fetch failed; manual entry path simulated
+Ford Mach-E Premium 4P AWD,300.0,0.258,10.46,2.03,11.61,63.7,52.09,31.5,72.49,40.99,NSW,VIC,
+MG MG4 64kWh EV 4WD,250.0,0.304,8.27,1.86,11.4,38.46,27.06,26.25,47.76,21.51,NT,ACT,
+Ford Mach-E Premium 4P AWD,300.0,0.351,10.91,2.07,15.79,67.75,51.96,31.5,75.61,44.11,QLD,SA,
+Kia  EV5 Standard Range 2WD,300.0,0.401,10.13,1.68,18.05,51.06,33.01,31.5,70.2,38.7,TAS,NT,
+Tesla Model 3 RWD H6LRB,300.0,0.387,7.47,2.06,17.41,46.16,28.75,31.5,51.77,20.27,NT,QLD,
+"Cupra Born 77kWh 4 seat (20 Alloys)""",250.0,0.353,9.26,1.95,13.24,45.14,31.91,26.25,53.48,27.23,SA,TAS,ICE fetch failed; manual entry path simulated
+"Cupra Born 77kWh 4 seat (19 Alloys)""",400.0,0.355,6.4,1.76,21.3,45.06,23.76,42.0,59.14,17.14,TAS,NT,
+Audi Q8 Q8 e-tron quattro Sportback,200.0,0.289,7.85,2.12,8.67,33.28,24.61,21.0,36.27,15.27,ACT,NT,ICE fetch failed; manual entry path simulated
+Polestar 4 200kW Long Range Single Motor,100.0,0.308,9.43,1.92,4.62,18.11,13.49,10.5,21.78,11.28,NSW,TAS,
+Ford Mach-E Premium 4P RWD,400.0,0.257,8.2,2.01,15.42,65.93,50.51,42.0,75.77,33.77,VIC,WA,
+Zeekr  X RWD,150.0,0.324,8.33,1.98,7.29,24.74,17.45,15.75,28.86,13.11,WA,TAS,
+Kia  EV5 Standard Range 2WD,250.0,0.344,8.76,1.95,12.9,42.7,29.8,26.25,50.59,24.34,TAS,ACT,
+Ford Mach-E Premium 4P RWD,150.0,0.231,6.94,1.82,5.2,18.95,13.75,15.75,24.05,8.3,ACT,NT,ICE fetch failed; manual entry path simulated
+Polestar 4 200kW Long Range Single Motor,100.0,0.271,7.79,2.02,4.07,15.74,11.67,10.5,17.99,7.49,WA,QLD,
+Ford Mach-E Premium 4P AWD,250.0,0.28,9.48,2.14,10.5,50.72,40.22,26.25,54.75,28.5,VIC,NSW,ICE fetch failed; manual entry path simulated
+Zeekr  X RWD,250.0,0.327,6.06,0.01,12.26,0.15,-12.11,26.25,35.0,8.75,NT,SA,
+Kia EV9 GT-Line AWD,400.0,0.283,6.82,1.94,16.98,52.92,35.94,42.0,63.02,21.02,NT,SA,ICE fetch failed; manual entry path simulated
+MG ZS EV 72kWh,400.0,0.266,7.67,1.84,15.96,56.45,40.49,42.0,70.87,28.87,NSW,SA,
+Peugeot 2008 e2008 GT,200.0,0.286,8.67,2.06,8.58,35.72,27.14,21.0,40.06,19.06,WA,NT,
+"Cupra Born 77kWh 4 seat (20 Alloys)""",150.0,0.359,8.38,1.97,8.08,24.76,16.69,15.75,29.04,13.29,WA,SA,
+Leapmotor  C10 BEV,500.0,0.6,9.3,1.85,45.0,86.03,41.03,52.5,107.42,54.92,TAS,QLD,ICE fetch failed; manual entry path simulated
+Toyota bZ4X FWD,300.0,0.367,11.52,2.18,16.52,75.34,58.83,31.5,79.83,48.33,TAS,QLD,
+Leapmotor  C10 BEV,150.0,0.305,7.2,1.69,6.86,18.25,11.39,15.75,24.95,9.2,NT,WA,
+GWM Ora Extended Range,500.0,0.284,7.38,2.18,21.3,80.44,59.14,52.5,85.24,32.74,QLD,SA,ICE fetch failed; manual entry path simulated
+Audi Q8 Q8 e-tron quattro Sportback,300.0,0.299,6.32,2.39,13.46,45.31,31.86,31.5,43.8,12.3,NT,QLD,ICE fetch failed; manual entry path simulated
+Lexus UX 300e Coupe,500.0,0.318,11.13,2.08,23.85,115.75,91.9,52.5,128.55,76.05,VIC,NSW,
+"Kia EV9 Earth AWD 19"",0""",100.0,0.289,8.68,1.82,4.33,15.8,11.46,10.5,20.05,9.55,SA,NSW,
+"Cupra Born 77kWh 4 seat (20 Alloys)""",300.0,0.34,0.5,1.98,15.3,2.97,-12.33,31.5,3.46,-28.03,WA,SA,ICE fetch failed; manual entry path simulated
+Tesla Model 3 Long Range H5LDB,100.0,0.1,8.51,2.09,1.5,17.79,16.29,10.5,19.66,9.16,NSW,VIC,
+Leapmotor  C10 BEV,500.0,0.348,8.87,2.02,26.1,89.59,63.49,52.5,102.45,49.95,SA,QLD,
+"Cupra Born 77kWh 4 seat (19 Alloys)""",250.0,0.334,0.5,0.01,12.53,0.01,-12.51,26.25,2.89,-23.36,SA,TAS,ICE fetch failed; manual entry path simulated
+Leapmotor  C10 BEV,150.0,0.6,8.55,1.96,13.5,25.14,11.64,15.75,29.63,13.88,ACT,VIC,ICE fetch failed; manual entry path simulated
+MG MG4 64kWh EV 4WD,250.0,0.358,8.57,1.83,13.42,39.21,25.78,26.25,49.49,23.24,NSW,SA,ICE fetch failed; manual entry path simulated
+Peugeot Partner  ePARTNER PRO LONG,250.0,0.422,10.13,89.99,15.82,2279.0,2263.17,26.25,58.5,32.25,NSW,ACT,
+Rolls-Royce Spectre Coupe,150.0,0.361,7.08,1.88,8.12,19.97,11.84,15.75,24.53,8.78,TAS,NSW,
+Hyundai Ioniq 9 Calligraphy,150.0,0.305,9.95,0.01,6.86,0.15,-6.71,15.75,34.48,18.73,QLD,NT,
+Volvo EX30 Single Motor RWD,250.0,0.283,9.07,2.11,10.61,47.84,37.23,26.25,52.38,26.13,NT,NSW,ICE fetch failed; manual entry path simulated
+Toyota bZ4X FWD,250.0,0.1,10.42,1.89,3.75,49.23,45.48,26.25,60.18,33.93,NSW,SA,
+Polestar 4 200kW Long Range Single Motor,300.0,0.296,7.73,2.15,13.32,49.86,36.54,31.5,53.57,22.07,ACT,TAS,
+Xpeng G6 Standard 18 inch,150.0,0.31,9.66,2.12,6.97,30.72,23.74,15.75,33.47,17.72,TAS,TAS,
+Peugeot Partner  ePARTNER PRO LONG,250.0,0.366,10.94,89.99,13.72,2461.23,2447.5,26.25,63.18,36.93,ACT,TAS,
+Mercedes-Benz EQE 53 AMG 4MATIC+,200.0,0.337,8.37,1.86,10.11,31.14,21.03,21.0,38.67,17.67,NSW,VIC,ICE fetch failed; manual entry path simulated
+BYD SEAL PERFORMANCE,500.0,0.337,9.26,1.99,25.28,92.14,66.86,52.5,106.95,54.45,VIC,WA,
+BMW X1 iX1 xDrive30,400.0,0.342,8.25,2.01,20.52,66.33,45.81,42.0,76.23,34.23,NSW,NSW,
+GWM Ora Extended Range,150.0,0.281,9.6,2.19,6.32,31.54,25.21,15.75,33.26,17.51,ACT,WA,ICE fetch failed; manual entry path simulated
+Peugeot 2008 e2008 GT,250.0,0.42,8.62,2.0,15.75,43.1,27.35,26.25,49.78,23.53,QLD,NT,
+Zeekr  X RWD,250.0,0.391,8.87,89.99,14.66,1995.53,1980.87,26.25,51.22,24.97,QLD,ACT,
+BYD DOLPHIN Dynamic,250.0,0.326,9.98,1.94,12.22,48.4,36.18,26.25,57.63,31.38,NSW,NSW,
+Peugeot 2008 e2008 GT,300.0,0.308,0.5,1.94,13.86,2.91,-10.95,31.5,3.46,-28.03,NT,NT,ICE fetch failed; manual entry path simulated
+Peugeot Partner  ePARTNER PRO LONG,100.0,0.339,7.74,0.01,5.08,0.08,-5.01,10.5,17.88,7.38,ACT,SA,
+Leapmotor  C10 BEV,250.0,0.274,8.3,2.18,10.28,45.24,34.96,26.25,47.93,21.68,QLD,NSW,
+Xpeng G6 Standard 18 inch,500.0,0.326,8.79,1.82,24.45,79.99,55.54,52.5,101.52,49.02,TAS,QLD,
+Polestar 4 200kW Long Range Single Motor,200.0,0.6,8.08,2.09,18.0,33.77,15.77,21.0,37.33,16.33,NSW,NT,
+Hyundai Ioniq 9 Calligraphy,400.0,0.07,10.76,1.94,4.2,83.5,79.3,42.0,99.42,57.42,ACT,NT,ICE fetch failed; manual entry path simulated
+Lexus UX 300e Coupe,200.0,0.306,8.79,1.99,9.18,34.98,25.8,21.0,40.61,19.61,TAS,NT,
+Cupra Born Born 77kWh 5 seat,150.0,0.296,9.98,1.84,6.66,27.54,20.88,15.75,34.58,18.83,WA,SA,
+Audi Q8 Q8 e-tron quattro Sportback,250.0,0.296,9.61,1.88,11.1,45.17,34.07,26.25,55.5,29.25,QLD,SA,ICE fetch failed; manual entry path simulated
+Hyundai Ioniq 9 Calligraphy,500.0,0.375,8.72,2.02,28.12,88.07,59.95,52.5,100.72,48.22,QLD,WA,
+Hyundai Ioniq 9 Calligraphy,100.0,0.414,6.9,2.07,6.21,14.28,8.07,10.5,15.94,5.44,ACT,SA,
+Tesla Model 3 RWD H6LRB,250.0,0.351,7.63,0.01,13.16,0.19,-12.97,26.25,44.06,17.81,TAS,NT,ICE fetch failed; manual entry path simulated
+GWM Ora Extended Range,150.0,0.246,8.12,1.81,5.54,22.05,16.51,15.75,28.14,12.39,VIC,TAS,
+Peugeot Partner  ePARTNER PRO LONG,400.0,0.328,9.47,2.04,19.68,77.28,57.6,42.0,87.5,45.5,ACT,TAS,
+Zeekr  X RWD,200.0,0.6,8.57,2.31,18.0,39.59,21.59,21.0,39.59,18.59,ACT,SA,
+Kia  EV5 Standard Range 2WD,300.0,0.282,8.84,1.89,12.69,50.12,37.43,31.5,61.26,29.76,NSW,ACT,ICE fetch failed; manual entry path simulated
+Mercedes-Benz EQE 350 4MATIC,100.0,0.399,8.97,1.75,5.99,15.7,9.71,10.5,20.72,10.22,ACT,NSW,
+Mercedes-Benz EQS SUV EQS 450 4MATIC SUV,300.0,0.391,8.44,89.99,17.59,2278.55,2260.95,31.5,58.49,26.99,TAS,WA,
+Polestar 4 200kW Long Range Single Motor,250.0,0.295,6.36,2.36,11.06,37.52,26.46,26.25,36.73,10.48,NT,NT,
+Fiat 500e FWD 87 kW 42 kWh,300.0,0.362,8.54,189.74,16.29,4861.14,4844.85,31.5,59.18,27.68,VIC,TAS,
+Xpeng G6 Standard 18 inch,400.0,0.374,0.5,2.2,22.44,4.4,-18.04,42.0,4.62,-37.38,QLD,TAS,ICE fetch failed; manual entry path simulated
+Volvo XC40 Recharge Twin,250.0,0.367,7.68,0.01,13.76,0.19,-13.57,26.25,44.35,18.1,WA,ACT,
+Volvo EX30 Single Motor RWD,300.0,0.436,9.0,0.01,19.62,0.27,-19.35,31.5,62.37,30.87,WA,WA,
+Polestar 4 200kW Long Range Single Motor,500.0,0.363,7.67,1.94,27.22,74.4,47.17,52.5,88.59,36.09,TAS,TAS,
+GWM Ora Standard Range,400.0,0.293,9.89,1.9,17.58,75.16,57.58,42.0,91.38,49.38,QLD,ACT,ICE fetch failed; manual entry path simulated
+Lexus UX 300e Coupe,250.0,0.312,0.5,2.0,11.7,2.5,-9.2,26.25,2.89,-23.36,SA,QLD,ICE fetch failed; manual entry path simulated
+Volvo C40 Recharge,200.0,0.358,7.81,2.23,10.74,34.83,24.09,21.0,36.08,15.08,WA,QLD,ICE fetch failed; manual entry path simulated
+Peugeot Partner  ePARTNER PRO LONG,400.0,0.431,8.71,1.85,25.86,64.45,38.59,42.0,80.48,38.48,SA,WA,
+Lexus UX 300e Coupe,300.0,0.296,8.19,1.96,13.32,48.16,34.84,31.5,56.76,25.26,NT,WA,
+Kia EV6 GT,150.0,0.6,8.69,1.74,13.5,22.68,9.18,15.75,30.11,14.36,SA,TAS,
+Mercedes-Benz EQE Class EQE53 AMG 4MATIC+,300.0,0.282,9.41,2.05,12.69,57.87,45.18,31.5,65.21,33.71,TAS,VIC,
+Ford Mach-E Premium 4P RWD,250.0,0.6,8.61,1.93,22.5,41.54,19.04,26.25,49.72,23.47,WA,TAS,
+Ford Mach-E Select LFP RWD,400.0,0.307,7.43,2.16,18.42,64.2,45.78,42.0,68.65,26.65,TAS,SA,
+MG ZS EV 72kWh,500.0,0.319,8.37,2.08,23.93,87.05,63.12,52.5,96.67,44.17,ACT,NSW,
+Lexus UX 300e Coupe,300.0,0.364,9.64,1.95,16.38,56.39,40.01,31.5,66.81,35.31,WA,VIC,
+Fiat 500e FWD 87 kW 42 kWh,500.0,0.295,7.92,2.06,22.12,81.58,59.45,52.5,91.48,38.98,ACT,WA,
+Audi Q8 Q8 e-tron quattro,500.0,0.319,7.76,1.69,23.93,65.57,41.65,52.5,89.63,37.13,ACT,VIC,ICE fetch failed; manual entry path simulated
+Lexus UX 300e Coupe,400.0,0.323,10.43,2.03,19.38,84.69,65.31,42.0,96.37,54.37,NT,VIC,
+Leapmotor  C10 BEV,300.0,0.253,9.86,2.13,11.38,63.01,51.62,31.5,68.33,36.83,NT,NSW,
+Xpeng G6 Standard 18 inch,100.0,0.32,9.39,2.08,4.8,19.53,14.73,10.5,21.69,11.19,NSW,ACT,
+Kia  EV5 Standard Range 2WD,500.0,0.1,9.76,1.76,7.5,85.89,78.39,52.5,112.73,60.23,NSW,NT,
+Mercedes-Benz EQS SUV EQS 450 4MATIC SUV,500.0,0.346,9.92,1.86,25.95,92.26,66.31,52.5,114.58,62.08,WA,WA,
+Zeekr  X RWD,150.0,0.265,8.01,2.08,5.96,24.99,19.03,15.75,27.75,12.0,SA,NSW,
+Audi Q8 Q8 e-tron quattro,500.0,0.375,7.17,2.02,28.12,72.42,44.29,52.5,82.81,30.31,NT,VIC,ICE fetch failed; manual entry path simulated
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,300.0,0.374,10.2,1.87,16.83,57.22,40.39,31.5,70.69,39.19,WA,SA,
+Kia EV3 Air SR ,250.0,0.356,9.78,1.82,13.35,44.5,31.15,26.25,56.48,30.23,WA,WA,ICE fetch failed; manual entry path simulated
+GWM Ora Extended Range GT,100.0,0.277,8.39,2.16,4.16,18.12,13.97,10.5,19.38,8.88,NT,NT,
+Hyundai Ioniq 9 Calligraphy,100.0,0.319,10.62,1.91,4.79,20.28,15.5,10.5,24.53,14.03,NT,TAS,
+Lexus RZ 450e Coupe,300.0,0.351,6.75,89.99,15.79,1822.3,1806.5,31.5,46.78,15.28,VIC,WA,
+Fiat 500e FWD 87 kW 42 kWh,500.0,0.404,8.64,1.77,30.3,76.46,46.16,52.5,99.79,47.29,QLD,TAS,
+Tesla  Model 3 RWD H6MRB,500.0,0.337,7.73,2.06,25.28,79.62,54.34,52.5,89.28,36.78,NSW,TAS,ICE fetch failed; manual entry path simulated
+MG ZS EV 72kWh,400.0,0.353,9.2,1.82,21.18,66.98,45.8,42.0,85.01,43.01,QLD,ACT,
+"Cupra Born 77kWh 4 seat (19 Alloys)""",250.0,0.317,8.53,1.66,11.89,35.4,23.51,26.25,49.26,23.01,WA,QLD,
+Polestar 4 200kW Long Range Single Motor,500.0,0.322,5.89,0.01,24.15,0.29,-23.86,52.5,68.03,15.53,SA,TAS,
+GWM Ora Extended Range,500.0,0.328,9.13,1.96,24.6,89.47,64.87,52.5,105.45,52.95,ACT,WA,
+Kia  EV5 Standard Range 2WD,200.0,0.384,6.78,2.01,11.52,27.26,15.74,21.0,31.32,10.32,ACT,ACT,ICE fetch failed; manual entry path simulated
+Mercedes-Benz EQE 350 4MATIC,250.0,0.296,7.67,0.01,11.1,0.19,-10.91,26.25,44.29,18.04,NT,TAS,
+Rolls-Royce Spectre Black Badge Coupe,400.0,0.394,999.0,2.03,23.64,8111.88,8088.24,42.0,9230.76,9188.76,NT,VIC,ICE fetch failed; manual entry path simulated
+Kia EV6 GT,150.0,0.384,9.11,1.72,8.64,23.5,14.86,15.75,31.57,15.82,SA,VIC,
+Ford Mach-E Select LFP RWD,100.0,0.334,2018.0,2.19,5.01,4419.42,4414.41,10.5,4661.58,4651.08,TAS,NSW,ICE fetch failed; manual entry path simulated
+Kia EV6 GT,400.0,0.6,8.21,1.99,36.0,65.35,29.35,42.0,75.86,33.86,WA,TAS,
+MG ZS EV 72kWh,500.0,0.07,10.25,1.82,5.25,93.28,88.03,52.5,118.39,65.89,TAS,VIC,
+Polestar 4 200kW Long Range Single Motor,300.0,0.282,8.5,1.96,12.69,49.98,37.29,31.5,58.91,27.41,VIC,SA,ICE fetch failed; manual entry path simulated
+Mercedes-Benz EQE Class EQE53 AMG 4MATIC+,250.0,0.333,6.81,2.16,12.49,36.77,24.29,26.25,39.33,13.08,SA,VIC,
+"Cupra Born 77kWh 4 seat (19 Alloys)""",500.0,0.376,9.53,2.06,28.2,98.16,69.96,52.5,110.07,57.57,QLD,TAS,
+Fiat 500e FWD 87 kW 42 kWh,500.0,0.446,8.27,2.31,33.45,95.52,62.07,52.5,95.52,43.02,TAS,VIC,
+Kia  EV5 Standard Range 2WD,300.0,0.265,9.4,1.78,11.93,50.2,38.27,31.5,65.14,33.64,TAS,VIC,ICE fetch failed; manual entry path simulated
+Fiat 500e FWD 87 kW 42 kWh,400.0,0.6,999.0,2.31,36.0,9230.76,9194.76,42.0,9230.76,9188.76,TAS,WA,ICE fetch failed; manual entry path simulated
+Cupra Born Born 77kWh 5 seat,150.0,0.319,11.07,1.82,7.18,30.22,23.04,15.75,38.36,22.61,VIC,VIC,
+Tesla  Model 3 RWD H6MRB,150.0,0.388,7.16,2.08,8.73,22.34,13.61,15.75,24.81,9.06,SA,NT,
+MG MG4 77kWh EV RWD,150.0,0.07,6.21,2.21,1.58,20.59,19.01,15.75,21.52,5.77,NSW,TAS,
+GWM Ora Extended Range,150.0,0.6,7.75,2.25,13.5,26.16,12.66,15.75,26.85,11.1,VIC,TAS,
+Kia  EV5 Standard Range 2WD,400.0,0.345,8.61,1.96,20.7,67.5,46.8,42.0,79.56,37.56,ACT,QLD,ICE fetch failed; manual entry path simulated
+Kia  EV5 Standard Range 2WD,150.0,0.267,10.73,1.95,6.01,31.39,25.38,15.75,37.18,21.43,NT,SA,
+Zeekr  X RWD,400.0,0.258,8.71,1.96,15.48,68.29,52.81,42.0,80.48,38.48,ACT,NT,
+Tesla  Model 3 RWD H6MRB,150.0,0.333,10.04,1.84,7.49,27.71,20.22,15.75,34.79,19.04,ACT,ACT,
+Xpeng G6 Standard 18 inch,500.0,0.379,8.09,1.99,28.43,80.5,52.07,52.5,93.44,40.94,SA,ACT,ICE fetch failed; manual entry path simulated
+BMW 7 Series i7 M70 xDrive,200.0,0.396,9.99,2.25,11.88,44.95,33.07,21.0,46.15,25.15,TAS,WA,
+Mercedes-Benz EQS 500 4MATIC,250.0,0.329,8.11,189.74,12.34,3846.98,3834.64,26.25,46.84,20.59,WA,ACT,
+Peugeot Partner  ePARTNER PRO LONG,400.0,0.37,2018.0,1.91,22.2,15417.52,15395.32,42.0,18646.32,18604.32,NT,NSW,ICE fetch failed; manual entry path simulated
+"Cupra Born 77kWh 4 seat (19 Alloys)""",400.0,0.261,11.16,0.01,15.66,0.45,-15.21,42.0,103.12,61.12,WA,SA,
+Rolls-Royce Spectre Black Badge Coupe,300.0,0.352,11.11,2.09,15.84,69.66,53.82,31.5,76.99,45.49,SA,NSW,
+"Kia EV9 Earth AWD 20"",0""",500.0,0.353,8.49,1.81,26.47,76.83,50.36,52.5,98.06,45.56,NT,ACT,
+Leapmotor  C10 BEV,400.0,0.399,10.8,1.74,23.94,75.17,51.23,42.0,99.79,57.79,SA,QLD,
+Kia  EV5 Standard Range 2WD,250.0,0.289,7.98,1.67,10.84,33.32,22.48,26.25,46.08,19.83,TAS,NSW,
+Tesla Model 3 RWD H6LRB,100.0,0.38,6.69,2.09,5.7,13.98,8.28,10.5,15.45,4.95,QLD,QLD,ICE fetch failed; manual entry path simulated
+Mercedes-Benz EQE 350 4MATIC,100.0,0.372,9.2,1.88,5.58,17.3,11.72,10.5,21.25,10.75,NSW,TAS,
+Mercedes-Benz EQE SUV AMG EQE 53 4MATIC+ SUV,500.0,0.354,6.12,2.13,26.55,65.18,38.63,52.5,70.69,18.19,NSW,TAS,ICE fetch failed; manual entry path simulated
+Tesla Model 3 Long Range H5LDB,250.0,0.376,9.6,1.83,14.1,43.92,29.82,26.25,55.44,29.19,WA,SA,
+BYD DOLPHIN PERFORMANCE,300.0,0.6,7.39,1.97,27.0,43.67,16.67,31.5,51.21,19.71,NSW,TAS,
+Toyota bZ4X FWD,500.0,0.307,8.83,189.74,23.02,8377.02,8354.0,52.5,101.99,49.49,TAS,WA,
+GWM Ora Extended Range,300.0,0.33,8.03,2.08,14.85,50.11,35.26,31.5,55.65,24.15,VIC,WA,
+"Kia EV9 Earth AWD 19"",0""",300.0,0.361,10.54,2.03,16.25,64.19,47.94,31.5,73.04,41.54,QLD,NSW,
+MG ZS EV 72kWh,500.0,0.338,6.19,89.99,25.35,2785.19,2759.84,52.5,71.49,18.99,NT,NSW,
+Mercedes-Benz EQE Class EQE 300,250.0,0.31,7.98,1.89,11.62,37.71,26.08,26.25,46.08,19.83,ACT,TAS,
+Leapmotor  C10 BEV,100.0,0.296,9.07,1.82,4.44,16.51,12.07,10.5,20.95,10.45,NT,QLD,ICE fetch failed; manual entry path simulated
+Polestar 4 200kW Long Range Single Motor,300.0,0.325,8.58,1.79,14.62,46.07,31.45,31.5,59.46,27.96,WA,NSW,
+GWM Ora Extended Range GT,100.0,0.344,6.2,1.95,5.16,12.09,6.93,10.5,14.32,3.82,SA,TAS,ICE fetch failed; manual entry path simulated
+"Cupra Born 77kWh 4 seat (20 Alloys)""",250.0,0.254,10.41,1.71,9.53,44.5,34.98,26.25,60.12,33.87,VIC,VIC,ICE fetch failed; manual entry path simulated
+Rolls-Royce Spectre Coupe,250.0,0.356,8.62,2.13,13.35,45.9,32.55,26.25,49.78,23.53,TAS,TAS,
+Audi Q8 Q8 e-tron quattro Sportback,400.0,0.26,10.62,2.36,15.6,100.25,84.65,42.0,98.13,56.13,QLD,NT,
+Rolls-Royce Spectre Coupe,400.0,0.29,50.0,1.96,17.4,392.0,374.6,42.0,462.0,420.0,TAS,VIC,ICE fetch failed; manual entry path simulated
+Peugeot Partner  ePARTNER PRO LONG,100.0,0.31,8.83,1.71,4.65,15.1,10.45,10.5,20.4,9.9,TAS,ACT,
+Tesla  Model Y  RWD YS6MRB,200.0,0.32,9.45,2.15,9.6,40.63,31.03,21.0,43.66,22.66,NSW,WA,
+Tesla  Model 3 RWD H6MRB,150.0,0.338,8.66,89.99,7.61,1168.97,1161.37,15.75,30.01,14.26,SA,VIC,
+Lexus UX 300e Coupe,200.0,0.302,8.11,2.11,9.06,34.22,25.16,21.0,37.47,16.47,ACT,ACT,ICE fetch failed; manual entry path simulated
+Kia  EV5 Standard Range 2WD,400.0,0.424,9.84,2.06,25.44,81.08,55.64,42.0,90.92,48.92,TAS,VIC,
+Kia  EV5 Standard Range 2WD,150.0,0.07,8.81,189.74,1.58,2507.41,2505.84,15.75,30.53,14.78,VIC,NT,
+Kia EV6 GT,200.0,0.321,7.96,1.92,9.63,30.57,20.94,21.0,36.78,15.78,VIC,NT,
+Tesla  Model 3 RWD H6MRB,300.0,0.426,8.93,1.99,19.17,53.31,34.14,31.5,61.88,30.38,NT,VIC,
+Ford Mach-E Select LFP RWD,400.0,0.347,10.76,2.02,20.82,86.94,66.12,42.0,99.42,57.42,VIC,WA,ICE fetch failed; manual entry path simulated
+Mercedes-Benz EQE 300,250.0,0.342,7.77,1.9,12.83,36.91,24.08,26.25,44.87,18.62,ACT,TAS,
+GWM Ora Standard Range,400.0,0.321,10.47,1.75,19.26,73.29,54.03,42.0,96.74,54.74,QLD,ACT,
+Volvo EX30 Single Motor RWD,500.0,0.369,8.83,2.08,27.68,91.83,64.16,52.5,101.99,49.49,VIC,SA,
+Volvo C40 Recharge,150.0,0.397,8.59,89.99,8.93,1159.52,1150.59,15.75,29.76,14.01,QLD,TAS,
+"Cupra Born 77kWh 4 seat (20 Alloys)""",250.0,0.358,9.67,89.99,13.42,2175.51,2162.08,26.25,55.84,29.59,TAS,SA,
+Xpeng G6 Standard 18 inch,200.0,0.383,9.45,1.99,11.49,37.61,26.12,21.0,43.66,22.66,WA,ACT,ICE fetch failed; manual entry path simulated
+Kia  EV5 Standard Range 2WD,500.0,0.299,9.58,1.98,22.43,94.84,72.42,52.5,110.65,58.15,WA,NT,
+BMW X1 iX1 xDrive30,150.0,0.336,8.04,89.99,7.56,1085.28,1077.72,15.75,27.86,12.11,NSW,NT,
+Xpeng G6 Standard 18 inch,150.0,0.1,11.17,1.99,2.25,33.34,31.09,15.75,38.7,22.95,WA,TAS,
+Kia  EV5 Standard Range 2WD,300.0,0.364,10.05,1.83,16.38,55.17,38.79,31.5,69.65,38.15,SA,SA,
+"Kia EV9 Earth AWD 20"",0""",200.0,0.358,8.37,2.05,10.74,34.32,23.58,21.0,38.67,17.67,QLD,QLD,ICE fetch failed; manual entry path simulated
+Tesla  Model 3 RWD H6MRB,400.0,0.393,10.14,0.01,23.58,0.41,-23.17,42.0,93.69,51.69,VIC,TAS,
+Toyota bZ4X FWD,150.0,0.407,10.21,1.77,9.16,27.11,17.95,15.75,35.38,19.63,QLD,ACT,
+Rolls-Royce Spectre Coupe,200.0,0.374,8.12,1.91,11.22,31.02,19.8,21.0,37.51,16.51,SA,NSW,
+Polestar 4 200kW Long Range Single Motor,150.0,0.39,10.12,1.9,8.78,28.84,20.07,15.75,35.07,19.32,SA,VIC,
+Tesla  Model 3 RWD H6MRB,250.0,0.41,2018.0,1.74,15.37,8778.3,8762.92,26.25,11653.95,11627.7,WA,NT,ICE fetch failed; manual entry path simulated
+Hyundai Ioniq 9 Calligraphy,200.0,0.29,9.58,2.16,8.7,41.39,32.69,21.0,44.26,23.26,NT,VIC,
+Peugeot Partner  ePARTNER PRO LONG,150.0,0.6,8.06,1.83,13.5,22.12,8.62,15.75,27.93,12.18,NT,NT,
+Polestar 4 200kW Long Range Single Motor,500.0,0.33,10.58,189.74,24.75,10037.25,10012.5,52.5,122.2,69.7,SA,SA,
+Xpeng G6 Standard 18 inch,150.0,0.265,8.4,1.85,5.96,23.31,17.35,15.75,29.11,13.36,WA,SA,
+Peugeot 2008 e2008 GT,250.0,0.316,999.0,1.93,11.85,4820.18,4808.32,26.25,5769.23,5742.98,VIC,QLD,ICE fetch failed; manual entry path simulated
+Toyota bZ4X FWD,150.0,0.329,7.51,189.74,7.4,2137.42,2130.02,15.75,26.02,10.27,VIC,ACT,
+Zeekr  X RWD,300.0,0.271,7.67,2.22,12.2,51.08,38.89,31.5,53.15,21.65,VIC,WA,
+Leapmotor  C10 BEV,150.0,0.07,10.01,2.01,1.58,30.18,28.61,15.75,34.68,18.93,NT,WA,ICE fetch failed; manual entry path simulated
+Hyundai Ioniq 9 Calligraphy,500.0,0.381,8.23,189.74,28.57,7807.8,7779.23,52.5,95.06,42.56,TAS,NSW,
+Tesla Model 3 Long Range H5LDB,400.0,0.391,11.2,1.7,23.46,76.16,52.7,42.0,103.49,61.49,SA,TAS,
+"Cupra Born 77kWh 4 seat (19 Alloys)""",250.0,0.319,8.91,1.84,11.96,40.99,29.02,26.25,51.46,25.21,ACT,NSW,ICE fetch failed; manual entry path simulated
+Zeekr  X RWD,500.0,0.353,8.06,2.15,26.47,86.65,60.17,52.5,93.09,40.59,ACT,NT,
+BMW iX3 50 xDrive AWD,250.0,0.323,7.59,1.95,12.11,37.0,24.89,26.25,43.83,17.58,NSW,WA,
+Audi Q8 Q8 e-tron quattro,100.0,0.265,7.8,1.69,3.98,13.18,9.21,10.5,18.02,7.52,NT,TAS,ICE fetch failed; manual entry path simulated
+Audi Q8 Q8 e-tron quattro Sportback,250.0,0.6,9.55,2.16,22.5,51.57,29.07,26.25,55.15,28.9,VIC,VIC,
+Leapmotor  C10 BEV,200.0,0.394,6.34,2.29,11.82,29.04,17.22,21.0,29.29,8.29,NSW,QLD,
+Lexus RZ 450e Coupe,250.0,0.278,7.71,1.72,10.43,33.15,22.73,26.25,44.53,18.28,QLD,WA,ICE fetch failed; manual entry path simulated
+Kia  EV5 Standard Range 2WD,100.0,0.334,9.06,2.1,5.01,19.03,14.02,10.5,20.93,10.43,QLD,NSW,
+Polestar 4 200kW Long Range Single Motor,150.0,0.334,9.0,2.05,7.52,27.67,20.16,15.75,31.19,15.44,NT,QLD,
+BMW 7 Series i7 M70 xDrive,300.0,0.433,6.81,1.98,19.48,40.45,20.97,31.5,47.19,15.69,VIC,VIC,
+Polestar 4 200kW Long Range Single Motor,400.0,0.318,10.08,1.99,19.08,80.24,61.16,42.0,93.14,51.14,WA,QLD,
+Toyota bZ4X FWD,400.0,0.246,8.49,1.77,14.76,60.11,45.35,42.0,78.45,36.45,TAS,WA,
+Xpeng G6 Standard 18 inch,150.0,0.386,7.03,2.03,8.69,21.41,12.72,15.75,24.36,8.61,QLD,TAS,
+Cupra Born Born 77kWh 5 seat,250.0,0.362,6.46,189.74,13.57,3064.3,3050.73,26.25,37.31,11.06,TAS,VIC,ICE fetch failed; manual entry path simulated
+Zeekr  X RWD,150.0,0.268,7.35,2.17,6.03,23.92,17.89,15.75,25.47,9.72,ACT,QLD,
+Rolls-Royce Spectre Black Badge Coupe,300.0,0.393,7.34,2.19,17.69,48.22,30.54,31.5,50.87,19.37,SA,SA,
+Lexus UX 300e Coupe,500.0,0.353,7.71,1.91,26.47,73.63,47.16,52.5,89.05,36.55,NT,TAS,
+Hyundai Ioniq 9 Calligraphy,150.0,0.262,9.05,1.76,5.9,23.89,18.0,15.75,31.36,15.61,ACT,NT,
+Rolls-Royce Spectre Black Badge Coupe,500.0,0.378,9.43,2.18,28.35,102.79,74.44,52.5,108.92,56.42,NT,VIC,
+Tesla Model 3 Long Range H5LDB,200.0,0.07,9.59,1.95,2.1,37.4,35.3,21.0,44.31,23.31,NSW,ACT,
+Xpeng G6 Standard 18 inch,500.0,0.258,8.47,1.96,19.35,83.01,63.66,52.5,97.83,45.33,NT,TAS,
+Fiat 500e FWD 87 kW 42 kWh,100.0,0.326,7.77,1.9,4.89,14.76,9.87,10.5,17.95,7.45,QLD,NSW,ICE fetch failed; manual entry path simulated
+Kia EV6 GT,250.0,0.258,6.99,2.0,9.68,34.95,25.28,26.25,40.37,14.12,QLD,SA,
+Hyundai Ioniq 9 Calligraphy,250.0,0.238,10.66,1.91,8.92,50.9,41.98,26.25,61.56,35.31,NT,QLD,
+Ford Mach-E Premium 4P RWD,500.0,0.311,8.11,2.11,23.32,85.56,62.24,52.5,93.67,41.17,TAS,VIC,
+MG ZS EV 72kWh,250.0,0.319,9.26,2.37,11.96,54.87,42.9,26.25,53.48,27.23,SA,QLD,ICE fetch failed; manual entry path simulated
+Lexus RZ 450e Coupe,300.0,0.283,11.14,0.01,12.73,0.33,-12.4,31.5,77.2,45.7,QLD,ACT,
+Hyundai Ioniq 9 Calligraphy,250.0,0.289,8.68,1.87,10.84,40.58,29.74,26.25,50.13,23.88,SA,WA,ICE fetch failed; manual entry path simulated
+BMW X1 iX1 xDrive30,400.0,0.07,7.34,1.75,4.2,51.38,47.18,42.0,67.82,25.82,QLD,VIC,
+Polestar 4 200kW Long Range Single Motor,400.0,0.293,7.85,2.16,17.58,67.82,50.24,42.0,72.53,30.53,SA,NSW,
+Zeekr  X RWD,150.0,0.333,10.37,2.26,7.49,35.15,27.66,15.75,35.93,20.18,VIC,ACT,
+Kia  EV5 Standard Range 2WD,400.0,0.287,11.57,1.99,17.22,92.1,74.88,42.0,106.91,64.91,NSW,ACT,
+Leapmotor  C10 BEV,150.0,0.3,6.14,2.05,6.75,18.88,12.13,15.75,21.28,5.53,TAS,ACT,
+Kia  EV5 Standard Range 2WD,250.0,0.336,6.71,2.02,12.6,33.89,21.29,26.25,38.75,12.5,QLD,TAS,
+Toyota bZ4X FWD,100.0,0.282,9.32,1.96,4.23,18.27,14.04,10.5,21.53,11.03,NSW,TAS,ICE fetch failed; manual entry path simulated
+Hyundai Ioniq 9 Calligraphy,300.0,0.351,7.74,1.79,15.79,41.56,25.77,31.5,53.64,22.14,SA,VIC,
+Fiat 500e FWD 87 kW 42 kWh,100.0,0.341,7.75,2.14,5.12,16.59,11.47,10.5,17.9,7.4,ACT,VIC,
+Fiat 500e FWD 87 kW 42 kWh,400.0,0.345,9.58,1.85,20.7,70.89,50.19,42.0,88.52,46.52,NT,WA,ICE fetch failed; manual entry path simulated
+Tesla Model 3 Long Range H5LDB,400.0,0.6,6.44,2.04,36.0,52.55,16.55,42.0,59.51,17.51,SA,WA,
+Mercedes-Benz EQE Class EQE 350 4MATIC,500.0,0.318,7.22,2.0,23.85,72.2,48.35,52.5,83.39,30.89,WA,NSW,
+Leapmotor  C10 BEV,250.0,0.255,10.71,1.84,9.56,49.27,39.7,26.25,61.85,35.6,NSW,TAS,
+BMW 7 Series i7 M70 xDrive,100.0,0.367,7.19,2.01,5.5,14.45,8.95,10.5,16.61,6.11,NSW,NT,
+Rolls-Royce Spectre Black Badge Coupe,200.0,0.342,8.44,89.99,10.26,1519.03,1508.77,21.0,38.99,17.99,NSW,ACT,
+BYD DOLPHIN PERFORMANCE,100.0,0.293,7.71,2.02,4.39,15.57,11.18,10.5,17.81,7.31,QLD,SA,
+Audi Q8 Q8 e-tron quattro,200.0,0.1,10.69,0.01,3.0,0.21,-2.79,21.0,49.39,28.39,VIC,TAS,
+Hyundai Ioniq 9 Calligraphy,500.0,0.297,8.47,189.74,22.27,8035.49,8013.21,52.5,97.83,45.33,ACT,QLD,
+Mercedes-Benz EQE 53 AMG 4MATIC+,150.0,0.325,8.71,0.01,7.31,0.13,-7.18,15.75,30.18,14.43,NSW,NT,ICE fetch failed; manual entry path simulated
+Volvo C40 Recharge,200.0,0.1,9.53,0.01,3.0,0.19,-2.81,21.0,44.03,23.03,ACT,ACT,
+Ford Mach-E Premium 4P RWD,250.0,0.313,7.55,2.25,11.74,42.47,30.73,26.25,43.6,17.35,QLD,NT,
+Peugeot 2008 e2008 GT,100.0,0.261,9.18,1.85,3.92,16.98,13.07,10.5,21.21,10.71,SA,ACT,
+Xpeng G6 Standard 18 inch,400.0,0.334,8.83,1.86,20.04,65.7,45.66,42.0,81.59,39.59,QLD,NT,
+BYD DOLPHIN Dynamic,150.0,0.311,7.38,2.01,7.0,22.25,15.25,15.75,25.57,9.82,NSW,SA,ICE fetch failed; manual entry path simulated
+Fiat 500e FWD 87 kW 42 kWh,500.0,0.28,10.68,1.74,21.0,92.92,71.92,52.5,123.35,70.85,VIC,ACT,
+"Cupra Born 77kWh 4 seat (19 Alloys)""",300.0,0.4,6.72,1.88,18.0,37.9,19.9,31.5,46.57,15.07,NT,SA,
+Kia EV6 GT,150.0,0.07,10.11,1.95,1.58,29.57,28.0,15.75,35.03,19.28,WA,VIC,ICE fetch failed; manual entry path simulated
+Zeekr  X RWD,100.0,0.388,7.73,1.72,5.82,13.3,7.48,10.5,17.86,7.36,ACT,TAS,
+Zeekr  X RWD,300.0,0.247,9.55,1.97,11.12,56.44,45.33,31.5,66.18,34.68,TAS,TAS,ICE fetch failed; manual entry path simulated
+GWM Ora Standard Range,150.0,0.35,10.47,1.96,7.87,30.78,22.91,15.75,36.28,20.53,WA,QLD,
+Rolls-Royce Spectre Coupe,500.0,0.406,6.87,0.01,30.45,0.34,-30.11,52.5,79.35,26.85,QLD,NSW,
+"Cupra Born 77kWh 4 seat (20 Alloys)""",150.0,0.313,10.13,1.79,7.04,27.2,20.16,15.75,35.1,19.35,SA,NSW,
+Tesla  Model 3 RWD H6MRB,400.0,0.37,5.92,2.14,22.2,50.68,28.48,42.0,54.7,12.7,TAS,QLD,
+BYD SEAL Dynamic,100.0,0.325,9.49,1.89,4.88,17.94,13.06,10.5,21.92,11.42,WA,ACT,
+Ford Mach-E Premium LFP AWD,150.0,0.288,8.1,2.14,6.48,26.0,19.52,15.75,28.07,12.32,QLD,VIC,
+Tesla Model 3 RWD H6LRB,300.0,0.407,8.82,0.01,18.31,0.26,-18.05,31.5,61.12,29.62,NT,WA,
+BYD DOLPHIN Dynamic,150.0,0.333,6.46,1.85,7.49,17.93,10.43,15.75,22.38,6.63,NSW,NSW,
+Polestar 4 200kW Long Range Single Motor,100.0,0.353,7.0,189.74,5.29,1328.18,1322.89,10.5,16.17,5.67,NSW,VIC,
+Toyota bZ4X FWD,100.0,0.326,8.91,1.94,4.89,17.29,12.4,10.5,20.58,10.08,NSW,NSW,ICE fetch failed; manual entry path simulated
+Tesla  Model Y  AWD Long Range YL5NDB,150.0,0.318,10.82,2.09,7.16,33.92,26.77,15.75,37.49,21.74,TAS,SA,ICE fetch failed; manual entry path simulated
+Mercedes-Benz EQE SUV EQE 500 4MATIC SUV,400.0,0.281,6.78,1.78,16.86,48.27,31.41,42.0,62.65,20.65,NSW,QLD,
+Zeekr  X RWD,300.0,0.343,6.76,1.78,15.44,36.1,20.66,31.5,46.85,15.35,VIC,SA,
+MG ZS EV 72kWh,150.0,0.312,8.15,89.99,7.02,1100.13,1093.11,15.75,28.24,12.49,VIC,QLD,
+Zeekr  X RWD,250.0,0.294,10.5,2.35,11.02,61.69,50.66,26.25,60.64,34.39,ACT,WA,
+Leapmotor  C10 BEV,100.0,0.295,10.58,2.17,4.42,22.96,18.53,10.5,24.44,13.94,VIC,NSW,
+Audi Q8 Q8 e-tron quattro Sportback,100.0,0.271,7.37,1.94,4.07,14.3,10.23,10.5,17.02,6.52,NT,ACT,ICE fetch failed; manual entry path simulated
+Tesla  Model Y  AWD Long Range YL5NDB,200.0,0.342,8.23,2.25,10.26,37.04,26.78,21.0,38.02,17.02,SA,TAS,ICE fetch failed; manual entry path simulated
+Volvo XC40 Recharge,500.0,0.383,8.66,0.01,28.73,0.43,-28.29,52.5,100.02,47.52,NSW,SA,
+BYD DOLPHIN Dynamic,250.0,0.1,8.49,2.05,3.75,43.51,39.76,26.25,49.03,22.78,TAS,WA,
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,200.0,0.274,999.0,2.15,8.22,4295.7,4287.48,21.0,4615.38,4594.38,NT,NT,ICE fetch failed; manual entry path simulated
+Fiat 500e FWD 87 kW 42 kWh,400.0,0.314,7.25,2.2,18.84,63.8,44.96,42.0,66.99,24.99,NSW,TAS,
+Mercedes-Benz EQE Class EQE 300,150.0,0.347,10.21,2.16,7.81,33.08,25.27,15.75,35.38,19.63,WA,WA,
+BMW X1 iX1 xDrive30,100.0,0.375,8.0,2.06,5.62,16.48,10.86,10.5,18.48,7.98,SA,ACT,ICE fetch failed; manual entry path simulated
+Zeekr  X RWD,200.0,0.6,8.83,89.99,18.0,1589.22,1571.22,21.0,40.79,19.79,QLD,VIC,ICE fetch failed; manual entry path simulated
+Toyota bZ4X FWD,150.0,0.298,8.29,1.93,6.71,24.0,17.29,15.75,28.72,12.97,TAS,NT,
+GWM Ora Extended Range,200.0,0.6,8.67,1.96,18.0,33.99,15.99,21.0,40.06,19.06,NSW,TAS,
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,400.0,0.272,9.51,2.08,16.32,79.12,62.8,42.0,87.87,45.87,SA,NSW,
+Xpeng G6 Standard 18 inch,200.0,0.251,10.22,1.88,7.53,38.43,30.9,21.0,47.22,26.22,WA,TAS,
+Tesla Model 3 Long Range H5LDB,300.0,0.28,9.67,1.98,12.6,57.44,44.84,31.5,67.01,35.51,ACT,SA,ICE fetch failed; manual entry path simulated
+Hyundai Ioniq 9 Calligraphy,250.0,0.6,9.52,1.97,22.5,46.89,24.39,26.25,54.98,28.73,TAS,VIC,ICE fetch failed; manual entry path simulated
+Kia EV6 GT,400.0,0.281,8.04,2.35,16.86,75.58,58.72,42.0,74.29,32.29,QLD,QLD,
+Tesla  Model 3 RWD H6MRB,400.0,0.306,5.88,2.1,18.36,49.39,31.03,42.0,54.33,12.33,NSW,QLD,
+"Kia EV9 Earth AWD 20"",0""",100.0,0.333,11.08,2.16,5.0,23.93,18.94,10.5,25.59,15.09,TAS,NT,ICE fetch failed; manual entry path simulated
+Xpeng G6 Standard 18 inch,200.0,0.352,10.08,2.04,10.56,41.13,30.57,21.0,46.57,25.57,ACT,ACT,
+Tesla  Model 3 RWD H6MRB,300.0,0.6,9.27,1.71,27.0,47.56,20.56,31.5,64.24,32.74,TAS,ACT,
+Zeekr  X RWD,300.0,0.315,7.72,2.25,14.18,52.11,37.93,31.5,53.5,22.0,WA,SA,
+Audi Q8 Q8 e-tron quattro Sportback,400.0,0.393,7.79,2.01,23.58,62.63,39.05,42.0,71.98,29.98,SA,WA,ICE fetch failed; manual entry path simulated
+Volvo C40 Recharge,250.0,0.274,9.14,2.33,10.28,53.24,42.97,26.25,52.78,26.53,NSW,TAS,ICE fetch failed; manual entry path simulated
+Lexus UX 300e Coupe,100.0,0.28,6.59,1.94,4.2,12.78,8.58,10.5,15.22,4.72,NSW,NT,
+GWM Ora Extended Range,200.0,0.432,8.05,1.95,12.96,31.4,18.44,21.0,37.19,16.19,ACT,SA,
+Ford Mach-E Select LFP RWD,300.0,0.324,8.57,2.32,14.58,59.65,45.07,31.5,59.39,27.89,WA,SA,
+Volvo C40 Recharge Twin,400.0,0.339,7.91,0.01,20.34,0.32,-20.02,42.0,73.09,31.09,VIC,NSW,
+Xpeng G6 Standard 18 inch,100.0,0.318,6.71,1.89,4.77,12.68,7.91,10.5,15.5,5.0,TAS,NSW,
+Peugeot 2008 e2008 GT,100.0,0.299,9.11,1.96,4.48,17.86,13.37,10.5,21.04,10.54,QLD,NSW,ICE fetch failed; manual entry path simulated
+BYD SEAL PERFORMANCE,250.0,0.07,8.14,1.89,2.63,38.46,35.84,26.25,47.01,20.76,TAS,SA,
+Kia EV9 GT-Line AWD,300.0,0.29,9.2,2.23,13.05,61.55,48.5,31.5,63.76,32.26,NT,WA,ICE fetch failed; manual entry path simulated
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,500.0,0.323,8.13,2.15,24.23,87.4,63.17,52.5,93.9,41.4,VIC,NSW,
+Tesla  Model Y  RWD YS6MRB,250.0,0.267,6.99,1.97,10.01,34.43,24.41,26.25,40.37,14.12,SA,QLD,ICE fetch failed; manual entry path simulated
+Tesla  Model Y  RWD YS6MRB,300.0,0.283,7.73,1.93,12.73,44.76,32.02,31.5,53.57,22.07,VIC,ACT,
+GWM Ora Standard Range,300.0,0.346,9.11,2.0,15.57,54.66,39.09,31.5,63.13,31.63,NSW,QLD,ICE fetch failed; manual entry path simulated
+Lexus RZ 450e Coupe,300.0,0.327,8.91,2.2,14.71,58.81,44.09,31.5,61.75,30.25,TAS,ACT,
+Hyundai Ioniq 9 Calligraphy,200.0,0.267,8.88,1.64,8.01,29.13,21.12,21.0,41.03,20.03,VIC,WA,ICE fetch failed; manual entry path simulated
+Ford Mach-E Premium LFP AWD,150.0,0.269,8.05,2.05,6.05,24.75,18.7,15.75,27.89,12.14,TAS,NSW,
+Lexus RZ 450e Coupe,150.0,0.355,9.03,0.01,7.99,0.14,-7.85,15.75,31.29,15.54,QLD,SA,
+Kia EV3 Air SR ,300.0,0.355,7.02,0.01,15.97,0.21,-15.76,31.5,48.65,17.15,QLD,TAS,ICE fetch failed; manual entry path simulated
+BYD SEAL PERFORMANCE,100.0,0.225,7.56,2.03,3.38,15.35,11.97,10.5,17.46,6.96,NSW,QLD,
+BYD DOLPHIN PERFORMANCE,100.0,0.1,8.68,1.84,1.5,15.97,14.47,10.5,20.05,9.55,NSW,NSW,ICE fetch failed; manual entry path simulated
+Tesla  Model Y  RWD YS6MRB,150.0,0.289,6.9,189.74,6.5,1963.81,1957.31,15.75,23.91,8.16,VIC,VIC,ICE fetch failed; manual entry path simulated
+Volvo C40 Recharge,100.0,0.39,10.31,0.01,5.85,0.1,-5.75,10.5,23.82,13.32,NSW,ACT,
+Rolls-Royce Spectre Coupe,100.0,0.269,10.02,2.0,4.04,20.04,16.0,10.5,23.15,12.65,VIC,QLD,
+Polestar 4 200kW Long Range Single Motor,300.0,0.299,2018.0,2.08,13.46,12592.32,12578.86,31.5,13984.74,13953.24,VIC,TAS,ICE fetch failed; manual entry path simulated
+Peugeot 2008 e2008 GT,100.0,0.346,7.1,2.07,5.19,14.7,9.51,10.5,16.4,5.9,SA,WA,ICE fetch failed; manual entry path simulated
+BMW 5 Series i5 M60 xDrive,400.0,0.32,8.87,2.06,19.2,73.09,53.89,42.0,81.96,39.96,QLD,QLD,ICE fetch failed; manual entry path simulated
+BYD DOLPHIN PERFORMANCE,300.0,0.316,6.68,2.08,14.22,41.68,27.46,31.5,46.29,14.79,ACT,QLD,
+Tesla  Model Y  AWD Long Range YL5NDB,250.0,0.402,8.47,189.74,15.08,4017.74,4002.67,26.25,48.91,22.66,ACT,VIC,ICE fetch failed; manual entry path simulated
+Cupra Born Born 77kWh 5 seat,300.0,0.33,9.24,1.97,14.85,54.61,39.76,31.5,64.03,32.53,VIC,NSW,
+Leapmotor  C10 BEV,150.0,0.355,7.12,2.09,7.99,22.32,14.33,15.75,24.67,8.92,TAS,VIC,ICE fetch failed; manual entry path simulated
+Mercedes-Benz EQE Class EQE 350 4MATIC,200.0,0.1,10.3,1.92,3.0,39.55,36.55,21.0,47.59,26.59,ACT,ACT,
+Zeekr  X RWD,200.0,0.383,8.18,189.74,11.49,3104.15,3092.66,21.0,37.79,16.79,SA,SA,
+Zeekr  X RWD,250.0,0.381,11.54,2.14,14.29,61.74,47.45,26.25,66.64,40.39,NSW,NSW,
+BYD SEAL Dynamic,100.0,0.6,8.17,2.07,9.0,16.91,7.91,10.5,18.87,8.37,TAS,ACT,
+Mercedes-Benz EQE Class EQE 300,150.0,0.264,6.87,1.79,5.94,18.45,12.51,15.75,23.8,8.05,SA,VIC,ICE fetch failed; manual entry path simulated
+Peugeot 2008 e2008 GT,150.0,0.394,7.19,1.89,8.87,20.38,11.52,15.75,24.91,9.16,QLD,NSW,
+Hyundai Ioniq 9 Calligraphy,150.0,0.303,7.05,89.99,6.82,951.64,944.83,15.75,24.43,8.68,NSW,NT,
+Tesla Model 3 RWD H6LRB,250.0,0.295,9.32,1.89,11.06,44.04,32.97,26.25,53.82,27.57,QLD,SA,ICE fetch failed; manual entry path simulated
+Lexus RZ 450e Coupe,150.0,0.373,10.58,2.0,8.39,31.74,23.35,15.75,36.66,20.91,SA,NT,ICE fetch failed; manual entry path simulated
+Ford Mach-E GT 4P AWD,500.0,0.37,9.23,2.08,27.75,95.99,68.24,52.5,106.61,54.11,SA,NSW,
+Xpeng G6 Standard 18 inch,500.0,0.6,8.75,2.29,45.0,100.19,55.19,52.5,101.06,48.56,NT,NSW,
+Polestar 4 200kW Long Range Single Motor,150.0,0.265,7.13,2.15,5.96,22.99,17.03,15.75,24.71,8.96,VIC,QLD,
+Tesla Model 3 Long Range H5LDB,500.0,0.368,6.63,1.96,27.6,64.97,37.37,52.5,76.58,24.08,VIC,TAS,
+Mercedes-Benz EQS SUV EQS 450 4MATIC SUV,400.0,0.6,9.09,1.72,36.0,62.54,26.54,42.0,83.99,41.99,QLD,SA,
+Kia EV3 Air SR ,500.0,0.306,11.41,2.33,22.95,132.93,109.98,52.5,131.79,79.29,TAS,NT,
+MG ZS EV 72kWh,150.0,0.6,6.18,2.13,13.5,19.75,6.25,15.75,21.41,5.66,QLD,TAS,
+Tesla  Model Y  RWD YS6MRB,300.0,0.319,10.19,0.01,14.36,0.31,-14.05,31.5,70.62,39.12,QLD,TAS,
+BYD DOLPHIN PERFORMANCE,500.0,0.342,11.07,1.69,25.65,93.54,67.89,52.5,127.86,75.36,VIC,ACT,
+Volvo C40 Recharge Twin,250.0,0.264,6.86,1.81,9.9,31.04,21.14,26.25,39.62,13.37,NSW,NSW,
+Tesla Model 3 Long Range H5LDB,100.0,0.1,10.7,1.93,1.5,20.65,19.15,10.5,24.72,14.22,NSW,VIC,
+Xpeng G6 Standard 18 inch,500.0,0.07,10.1,2.0,5.25,101.0,95.75,52.5,116.65,64.15,SA,VIC,ICE fetch failed; manual entry path simulated
+Peugeot Partner  ePARTNER PRO LONG,100.0,0.369,9.64,2.11,5.54,20.34,14.81,10.5,22.27,11.77,WA,NT,ICE fetch failed; manual entry path simulated
+Hyundai Ioniq 9 Calligraphy,300.0,0.292,8.93,2.08,13.14,55.72,42.58,31.5,61.88,30.38,ACT,VIC,
+Tesla Model 3 RWD H6LRB,150.0,0.312,6.12,89.99,7.02,826.11,819.09,15.75,21.21,5.46,SA,WA,
+Kia EV9 GT-Line AWD,150.0,0.353,8.29,2.05,7.94,25.49,17.55,15.75,28.72,12.97,NT,QLD,
+Peugeot Partner  ePARTNER PRO LONG,500.0,0.6,8.26,1.94,45.0,80.12,35.12,52.5,95.4,42.9,ACT,WA,
+Hyundai Ioniq 9 Calligraphy,150.0,0.379,50.0,1.88,8.53,141.0,132.47,15.75,173.25,157.5,NT,NSW,ICE fetch failed; manual entry path simulated
+Xpeng G6 Standard 18 inch,250.0,0.286,6.6,2.17,10.72,35.8,25.08,26.25,38.12,11.87,SA,QLD,
+Mercedes-Benz EQS 500 4MATIC,250.0,0.274,9.32,189.74,10.28,4420.94,4410.67,26.25,53.82,27.57,WA,NT,
+Polestar 4 200kW Long Range Single Motor,300.0,0.07,9.42,1.64,3.15,46.35,43.2,31.5,65.28,33.78,QLD,SA,
+BYD DOLPHIN PERFORMANCE,250.0,0.358,11.31,2.2,13.42,62.21,48.78,26.25,65.32,39.07,QLD,NT,
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,150.0,0.258,11.5,1.71,5.8,29.5,23.69,15.75,39.85,24.1,WA,VIC,
+"Cupra Born 77kWh 4 seat (20 Alloys)""",500.0,0.375,6.28,1.9,28.12,59.66,31.54,52.5,72.53,20.03,VIC,NSW,ICE fetch failed; manual entry path simulated
+MG ZS EV 72kWh,150.0,0.256,9.59,1.86,5.76,26.76,21.0,15.75,33.23,17.48,NT,ACT,
+GWM Ora Extended Range GT,200.0,0.6,10.35,2.17,18.0,44.92,26.92,21.0,47.82,26.82,QLD,NT,
+Toyota bZ4X FWD,200.0,0.07,8.75,2.26,2.1,39.55,37.45,21.0,40.43,19.43,NSW,SA,
+Ford Mach-E GT 4P AWD,300.0,0.327,7.0,2.03,14.71,42.63,27.92,31.5,48.51,17.01,QLD,QLD,
+Kia EV9 Air RWD,250.0,0.276,9.57,1.98,10.35,47.37,37.02,26.25,55.27,29.02,SA,NT,
+Tesla  Model Y  RWD YS6MRB,200.0,0.37,9.2,0.01,11.1,0.18,-10.92,21.0,42.5,21.5,NSW,NSW,ICE fetch failed; manual entry path simulated
+Volvo EX30 Single Motor RWD,300.0,0.402,11.72,89.99,18.09,3164.05,3145.96,31.5,81.22,49.72,VIC,NSW,
+Peugeot Partner  ePARTNER PRO LONG,500.0,0.321,7.46,1.97,24.07,73.48,49.41,52.5,86.16,33.66,NSW,NSW,
+Rolls-Royce Spectre Black Badge Coupe,200.0,0.6,7.43,0.01,18.0,0.15,-17.85,21.0,34.33,13.33,VIC,ACT,
+BYD DOLPHIN PERFORMANCE,100.0,0.07,8.63,89.99,1.05,776.61,775.56,10.5,19.94,9.44,QLD,VIC,ICE fetch failed; manual entry path simulated
+Polestar 4 200kW Long Range Single Motor,500.0,0.362,7.61,1.78,27.15,67.73,40.58,52.5,87.9,35.4,SA,ACT,
+Xpeng G6 Standard 18 inch,150.0,0.268,8.56,1.86,6.03,23.88,17.85,15.75,29.66,13.91,NT,VIC,
+Volvo C40 Recharge Twin,150.0,0.334,7.38,2.0,7.52,22.14,14.62,15.75,25.57,9.82,QLD,QLD,
+Rolls-Royce Spectre Black Badge Coupe,100.0,0.401,11.04,89.99,6.02,993.49,987.47,10.5,25.5,15.0,QLD,TAS,
+Peugeot 2008 e2008 GT,100.0,0.442,6.76,1.84,6.63,12.44,5.81,10.5,15.62,5.12,NT,WA,
+Zeekr  X RWD,150.0,0.248,7.96,2.12,5.58,25.31,19.73,15.75,27.58,11.83,NSW,QLD,
+BYD DOLPHIN Dynamic,250.0,0.319,9.67,1.81,11.96,43.76,31.79,26.25,55.84,29.59,QLD,TAS,
+Kia  EV5 Standard Range 2WD,400.0,0.6,8.43,1.81,36.0,61.03,25.03,42.0,77.89,35.89,QLD,ACT,
+MG MG4 64kWh EV RWD LUX ,500.0,0.308,9.85,2.01,23.1,98.99,75.89,52.5,113.77,61.27,NSW,VIC,
+Audi Q8 Q8 e-tron quattro Sportback,300.0,0.273,6.91,1.98,12.29,41.05,28.76,31.5,47.89,16.39,NT,SA,
+Kia  EV5 Standard Range 2WD,300.0,0.1,11.74,2.03,4.5,71.5,67.0,31.5,81.36,49.86,NSW,WA,
+Toyota bZ4X FWD,200.0,0.6,7.64,2.03,18.0,31.02,13.02,21.0,35.3,14.3,QLD,SA,
+Peugeot 2008 e2008 GT,150.0,0.412,8.31,2.13,9.27,26.55,17.28,15.75,28.79,13.04,NSW,VIC,
+Ford Mach-E Premium 4P RWD,150.0,0.327,999.0,2.07,7.36,3101.89,3094.54,15.75,3461.53,3445.78,NT,ACT,ICE fetch failed; manual entry path simulated
+Tesla  Model 3 RWD H6MRB,250.0,0.1,9.67,1.82,3.75,44.0,40.25,26.25,55.84,29.59,NT,TAS,ICE fetch failed; manual entry path simulated
+BYD DOLPHIN Dynamic,150.0,0.349,10.25,1.89,7.85,29.06,21.21,15.75,35.52,19.77,NSW,ACT,ICE fetch failed; manual entry path simulated
+Kia EV9 Air RWD,100.0,0.07,7.21,2.29,1.05,16.51,15.46,10.5,16.66,6.16,ACT,SA,
+Zeekr  X RWD,300.0,0.274,10.16,1.89,12.33,57.61,45.28,31.5,70.41,38.91,VIC,WA,
+Rolls-Royce Spectre Black Badge Coupe,400.0,0.36,8.86,1.96,21.6,69.46,47.86,42.0,81.87,39.87,VIC,NSW,
+BYD SEAL PREMIUM,250.0,0.6,8.78,1.93,22.5,42.36,19.86,26.25,50.7,24.45,TAS,ACT,
+Volvo XC40 Recharge Twin,150.0,0.26,10.89,1.99,5.85,32.51,26.66,15.75,37.73,21.98,VIC,TAS,
+Hyundai Ioniq 9 Calligraphy,500.0,0.317,50.0,189.74,23.77,47435.0,47411.22,52.5,577.5,525.0,SA,WA,ICE fetch failed; manual entry path simulated
+Xpeng G6 Standard 18 inch,100.0,0.322,8.39,89.99,4.83,755.02,750.19,10.5,19.38,8.88,NT,ACT,
+Audi Q8 Q8 e-tron quattro Sportback,100.0,0.297,8.73,1.88,4.46,16.41,11.96,10.5,20.17,9.67,TAS,QLD,
+BMW X1 iX1 xDrive30,200.0,0.07,7.43,2.0,2.1,29.72,27.62,21.0,34.33,13.33,QLD,QLD,
+Toyota bZ4X FWD,400.0,0.315,9.43,2.13,18.9,80.34,61.44,42.0,87.13,45.13,NSW,SA,ICE fetch failed; manual entry path simulated
+BMW iX3 50 xDrive AWD,250.0,0.322,7.08,2.18,12.08,38.59,26.51,26.25,40.89,14.64,WA,ACT,ICE fetch failed; manual entry path simulated
+Toyota bZ4X FWD,100.0,0.1,9.71,1.98,1.5,19.23,17.73,10.5,22.43,11.93,VIC,VIC,
+Audi Q8 Q8 e-tron quattro,100.0,0.282,6.34,1.96,4.23,12.43,8.2,10.5,14.65,4.15,TAS,WA,
+Lexus UX 300e Coupe,500.0,0.36,8.02,189.74,27.0,7608.57,7581.57,52.5,92.63,40.13,VIC,ACT,
+MG ZS EV 72kWh,250.0,0.322,7.63,2.2,12.08,41.97,29.89,26.25,44.06,17.81,NT,WA,ICE fetch failed; manual entry path simulated
+Tesla Model 3 RWD H6LRB,100.0,0.07,6.76,1.9,1.05,12.84,11.79,10.5,15.62,5.12,ACT,WA,ICE fetch failed; manual entry path simulated
+GWM Ora Extended Range,400.0,0.305,10.94,2.27,18.3,99.34,81.04,42.0,101.09,59.09,NT,VIC,ICE fetch failed; manual entry path simulated
+Leapmotor  C10 BEV,200.0,0.6,7.5,0.01,18.0,0.15,-17.85,21.0,34.65,13.65,SA,WA,
+Mercedes-Benz EQS 500 4MATIC,500.0,0.374,8.02,1.88,28.05,75.39,47.34,52.5,92.63,40.13,TAS,VIC,
+"Kia EV9 Earth AWD 19"",0""",500.0,0.365,8.95,1.91,27.38,85.47,58.1,52.5,103.37,50.87,ACT,ACT,ICE fetch failed; manual entry path simulated
+Rolls-Royce Spectre Black Badge Coupe,500.0,0.411,9.13,1.95,30.82,89.02,58.19,52.5,105.45,52.95,WA,VIC,
+Fiat 500e FWD 87 kW 42 kWh,100.0,0.352,0.5,2.06,5.28,1.03,-4.25,10.5,1.16,-9.35,VIC,ACT,ICE fetch failed; manual entry path simulated
+Rolls-Royce Spectre Coupe,300.0,0.308,7.21,1.96,13.86,42.39,28.53,31.5,49.97,18.47,WA,NSW,
+Lexus RZ 450e Coupe,200.0,0.338,7.89,2.11,10.14,33.3,23.16,21.0,36.45,15.45,TAS,NT,
+Ford Mach-E GT 4P AWD,400.0,0.1,6.71,89.99,6.0,2415.33,2409.33,42.0,62.0,20.0,TAS,NT,
+Zeekr  X RWD,250.0,0.375,8.17,2.26,14.06,46.16,32.1,26.25,47.18,20.93,QLD,SA,
+Ford Mach-E Premium 4P RWD,100.0,0.339,7.9,1.94,5.08,15.33,10.24,10.5,18.25,7.75,TAS,TAS,
+Kia EV3 Air SR ,100.0,0.241,8.97,1.8,3.61,16.15,12.53,10.5,20.72,10.22,ACT,QLD,
+Rolls-Royce Spectre Coupe,300.0,0.343,9.04,2.0,15.44,54.24,38.8,31.5,62.65,31.15,WA,NT,ICE fetch failed; manual entry path simulated
+Zeekr  X RWD,100.0,0.342,7.79,1.8,5.13,14.02,8.89,10.5,17.99,7.49,VIC,NT,
+MG ZS EV 72kWh,100.0,0.345,10.73,2.16,5.17,23.18,18.0,10.5,24.79,14.29,NT,VIC,ICE fetch failed; manual entry path simulated
+Kia  EV5 Standard Range 2WD,400.0,0.366,8.7,1.86,21.96,64.73,42.77,42.0,80.39,38.39,VIC,SA,
+Ford Mach-E Premium 4P AWD,150.0,0.352,10.71,1.95,7.92,31.33,23.41,15.75,37.11,21.36,SA,TAS,
+MG MG4 64kWh EV RWD LUX ,400.0,0.33,9.15,2.12,19.8,77.59,57.79,42.0,84.55,42.55,WA,QLD,
+Toyota bZ4X FWD,250.0,0.366,8.59,2.12,13.72,45.53,31.8,26.25,49.61,23.36,QLD,TAS,
+Ford Mach-E Premium 4P AWD,400.0,0.28,9.13,2.06,16.8,75.23,58.43,42.0,84.36,42.36,VIC,NSW,
+"Cupra Born 77kWh 4 seat (20 Alloys)""",150.0,0.383,7.97,89.99,8.62,1075.83,1067.21,15.75,27.62,11.87,TAS,VIC,
+"Cupra Born 77kWh 4 seat (20 Alloys)""",200.0,0.307,8.16,2.31,9.21,37.7,28.49,21.0,37.7,16.7,SA,TAS,
+Toyota bZ4X FWD,150.0,0.38,7.36,2.0,8.55,22.08,13.53,15.75,25.5,9.75,ACT,SA,
+Hyundai Ioniq 9 Calligraphy,200.0,0.6,7.67,2.14,18.0,32.83,14.83,21.0,35.44,14.44,NSW,WA,ICE fetch failed; manual entry path simulated
+"Cupra Born 77kWh 4 seat (19 Alloys)""",300.0,0.342,9.37,1.98,15.39,55.66,40.27,31.5,64.93,33.43,WA,ACT,
+Kia  EV5 Standard Range 2WD,150.0,0.6,7.56,2.13,13.5,24.15,10.65,15.75,26.2,10.45,TAS,VIC,ICE fetch failed; manual entry path simulated
+Lexus RZ 450e Coupe,150.0,0.1,8.97,2.07,2.25,27.85,25.6,15.75,31.08,15.33,NT,ACT,ICE fetch failed; manual entry path simulated
+Peugeot Partner  ePARTNER PRO LONG,400.0,0.325,8.47,2.12,19.5,71.83,52.33,42.0,78.26,36.26,QLD,NSW,ICE fetch failed; manual entry path simulated
+Hyundai Ioniq 9 Calligraphy,200.0,0.439,6.33,2.03,13.17,25.7,12.53,21.0,29.24,8.24,ACT,WA,
+BMW 7 Series i7 M70 xDrive,400.0,0.317,7.98,1.76,19.02,56.18,37.16,42.0,73.74,31.74,TAS,NSW,
+Mercedes-Benz EQS SUV EQS 450 4MATIC SUV,150.0,0.1,0.5,2.01,2.25,1.51,-0.74,15.75,1.73,-14.02,SA,WA,ICE fetch failed; manual entry path simulated
+GWM Ora Extended Range GT,400.0,0.286,7.31,189.74,17.16,5548.0,5530.84,42.0,67.54,25.54,ACT,ACT,
+MG MG4 64kWh EV RWD LUX ,250.0,0.07,8.36,2.05,2.63,42.84,40.22,26.25,48.28,22.03,VIC,NT,
+MG MG4 64kWh EV RWD ,250.0,0.348,10.88,0.01,13.05,0.27,-12.78,26.25,62.83,36.58,ACT,TAS,
+Peugeot Partner  ePARTNER PRO LONG,200.0,0.4,9.29,1.9,12.0,35.3,23.3,21.0,42.92,21.92,QLD,TAS,
+Tesla Model 3 Long Range H5LDB,400.0,0.439,9.17,0.01,26.34,0.37,-25.97,42.0,84.73,42.73,QLD,NSW,
+BMW 7 Series i7 M70 xDrive,250.0,0.258,7.93,2.33,9.68,46.19,36.52,26.25,45.8,19.55,ACT,TAS,
+Zeekr  X RWD,500.0,0.297,10.49,1.97,22.27,103.33,81.05,52.5,121.16,68.66,QLD,NT,
+Volvo C40 Recharge Twin,150.0,0.272,10.26,2.14,6.12,32.93,26.81,15.75,35.55,19.8,NT,ACT,
+Lexus UX 300e Coupe,500.0,0.6,7.45,1.86,45.0,69.28,24.28,52.5,86.05,33.55,NT,ACT,
+Rolls-Royce Spectre Black Badge Coupe,200.0,0.342,999.0,189.74,10.26,379100.52,379090.26,21.0,4615.38,4594.38,NSW,SA,ICE fetch failed; manual entry path simulated
+Tesla  Model 3 RWD H6MRB,500.0,0.255,8.11,2.36,19.12,95.7,76.57,52.5,93.67,41.17,ACT,ACT,
+Xpeng G6 Standard 18 inch,300.0,0.349,8.8,1.79,15.7,47.26,31.55,31.5,60.98,29.48,SA,TAS,ICE fetch failed; manual entry path simulated
+Audi Q8 Q8 e-tron quattro,300.0,0.1,11.57,2.03,4.5,70.46,65.96,31.5,80.18,48.68,NSW,NSW,
+Mercedes-Benz EQS SUV EQS 450 4MATIC SUV,200.0,0.255,10.71,0.01,7.65,0.21,-7.44,21.0,49.48,28.48,QLD,SA,
+Polestar 4 200kW Long Range Single Motor,500.0,0.284,7.42,1.76,21.3,65.3,44.0,52.5,85.7,33.2,WA,WA,
+Lexus RZ 450e Coupe,150.0,0.251,11.05,2.21,5.65,36.63,30.98,15.75,38.29,22.54,WA,WA,
+Kia  EV5 Standard Range 2WD,250.0,0.378,8.08,1.87,14.18,37.77,23.6,26.25,46.66,20.41,NT,SA,
+BMW X1 iX1 xDrive30,400.0,0.346,10.9,2.23,20.76,97.23,76.47,42.0,100.72,58.72,QLD,SA,ICE fetch failed; manual entry path simulated
+BMW 5 Series i5 eDrive40,300.0,0.6,11.07,1.87,27.0,62.1,35.1,31.5,76.72,45.22,QLD,VIC,
+Cupra Born Born 77kWh 5 seat,200.0,0.327,10.3,2.23,9.81,45.94,36.13,21.0,47.59,26.59,QLD,WA,
+Kia  EV5 Standard Range 2WD,250.0,0.353,11.74,2.08,13.24,61.05,47.81,26.25,67.8,41.55,SA,NSW,
+Ford Mach-E Select LFP RWD,200.0,0.278,7.09,1.73,8.34,24.53,16.19,21.0,32.76,11.76,ACT,WA,
+Tesla Model 3 RWD H6LRB,150.0,0.292,7.67,1.94,6.57,22.32,15.75,15.75,26.58,10.83,SA,ACT,
+Mercedes-Benz EQS SUV EQS 450 4MATIC SUV,200.0,0.292,7.1,2.11,8.76,29.96,21.2,21.0,32.8,11.8,SA,SA,
+MG ZS EV 72kWh,300.0,0.405,6.78,2.03,18.23,41.29,23.07,31.5,46.99,15.49,WA,QLD,
+Rolls-Royce Spectre Black Badge Coupe,200.0,0.341,8.32,1.63,10.23,27.12,16.89,21.0,38.44,17.44,NT,ACT,
+Tesla Model 3 Long Range H5LDB,400.0,0.284,7.27,89.99,17.04,2616.91,2599.87,42.0,67.17,25.17,QLD,SA,
+Mercedes-Benz EQE 53 AMG 4MATIC+,250.0,0.297,9.81,2.17,11.14,53.22,42.08,26.25,56.65,30.4,NSW,SA,
+Hyundai Ioniq 9 Calligraphy,150.0,0.6,9.4,1.81,13.5,25.52,12.02,15.75,32.57,16.82,TAS,NSW,ICE fetch failed; manual entry path simulated
+Volvo EX30 Single Motor RWD,200.0,0.296,8.59,2.04,8.88,35.05,26.17,21.0,39.69,18.69,SA,TAS,
+Lexus UX 300e Coupe,500.0,0.298,9.93,2.04,22.35,101.29,78.94,52.5,114.69,62.19,NT,SA,ICE fetch failed; manual entry path simulated
+Xpeng G6 Standard 18 inch,250.0,0.404,7.74,2.02,15.15,39.09,23.94,26.25,44.7,18.45,TAS,QLD,
+Tesla Model 3 Long Range H5LDB,500.0,0.308,10.45,1.95,23.1,101.89,78.79,52.5,120.7,68.2,NSW,TAS,
+Kia EV9 Air RWD,100.0,0.361,10.91,2.08,5.42,22.69,17.28,10.5,25.2,14.7,ACT,NT,
+Volvo XC40 Recharge Twin,500.0,0.337,6.0,1.88,25.28,56.4,31.12,52.5,69.3,16.8,NT,VIC,
+BYD DOLPHIN Dynamic,100.0,0.328,7.75,2.22,4.92,17.21,12.29,10.5,17.9,7.4,SA,SA,
+Lexus RZ 450e Coupe,100.0,0.323,9.43,189.74,4.84,1789.25,1784.4,10.5,21.78,11.28,QLD,WA,
+Mercedes-Benz EQE Class EQE 300,200.0,0.1,7.64,2.12,3.0,32.39,29.39,21.0,35.3,14.3,NSW,ACT,
+Kia  EV5 Standard Range 2WD,150.0,0.394,6.92,1.69,8.87,17.54,8.68,15.75,23.98,8.23,NT,SA,ICE fetch failed; manual entry path simulated
+Ford Mach-E Premium 4P AWD,200.0,0.327,7.38,189.74,9.81,2800.56,2790.75,21.0,34.1,13.1,ACT,ACT,
+Lexus RZ 450e Coupe,400.0,0.252,7.8,1.99,15.12,62.09,46.97,42.0,72.07,30.07,TAS,SA,
+Tesla  Model Y  RWD YS6MRB,100.0,0.07,8.35,2.05,1.05,17.12,16.07,10.5,19.29,8.79,NSW,NSW,
+Tesla Model 3 Long Range H5LDB,300.0,0.275,8.84,1.98,12.38,52.51,40.13,31.5,61.26,29.76,VIC,ACT,ICE fetch failed; manual entry path simulated
+Polestar 4 200kW Long Range Single Motor,150.0,0.336,8.2,2.29,7.56,28.17,20.61,15.75,28.41,12.66,NSW,TAS,
+Ford Mach-E Select LFP RWD,200.0,0.273,7.5,2.17,8.19,32.55,24.36,21.0,34.65,13.65,QLD,VIC,ICE fetch failed; manual entry path simulated
+Polestar 4 200kW Long Range Single Motor,250.0,0.352,11.29,89.99,13.2,2539.97,2526.77,26.25,65.2,38.95,WA,ACT,
+BYD DOLPHIN PERFORMANCE,400.0,0.35,7.33,1.84,21.0,53.95,32.95,42.0,67.73,25.73,NSW,ACT,
+BMW X1 iX1 xDrive30,150.0,0.395,9.79,2.28,8.89,33.48,24.59,15.75,33.92,18.17,NSW,NSW,
+Volvo C40 Recharge Twin,150.0,0.319,9.33,2.07,7.18,28.97,21.79,15.75,32.33,16.58,TAS,WA,
+Kia EV3 Air SR ,100.0,0.351,10.23,1.93,5.26,19.74,14.48,10.5,23.63,13.13,QLD,TAS,ICE fetch failed; manual entry path simulated
+BMW 5 Series i5 M60 xDrive,150.0,0.33,2018.0,2.26,7.43,6841.02,6833.59,15.75,6992.37,6976.62,SA,VIC,ICE fetch failed; manual entry path simulated
+GWM Ora Standard Range,100.0,0.303,6.76,1.92,4.54,12.98,8.43,10.5,15.62,5.12,QLD,ACT,
+Kia EV3 Air SR ,400.0,0.364,10.71,1.83,21.84,78.4,56.56,42.0,98.96,56.96,WA,ACT,
+Volvo EX30 Single Motor RWD,500.0,0.434,9.52,1.99,32.55,94.72,62.17,52.5,109.96,57.46,NT,NT,
+GWM Ora Extended Range,200.0,0.364,8.75,1.89,10.92,33.07,22.15,21.0,40.43,19.43,NSW,QLD,ICE fetch failed; manual entry path simulated
+Leapmotor  C10 BEV,200.0,0.393,8.33,89.99,11.79,1499.23,1487.44,21.0,38.48,17.48,WA,VIC,
+BMW iX3 50 xDrive AWD,500.0,0.344,9.99,2.18,25.8,108.89,83.09,52.5,115.38,62.88,NSW,NSW,
+Tesla Model 3 Long Range H5LDB,150.0,0.278,8.75,2.11,6.26,27.69,21.44,15.75,30.32,14.57,VIC,NT,
+Ford Mach-E Premium LFP AWD,400.0,0.308,10.56,1.86,18.48,78.57,60.09,42.0,97.57,55.57,VIC,SA,
+Rolls-Royce Spectre Coupe,250.0,0.315,9.15,0.01,11.81,0.23,-11.58,26.25,52.84,26.59,ACT,ACT,
+Polestar 4 200kW Long Range Single Motor,500.0,0.331,10.52,1.95,24.83,102.57,77.75,52.5,121.51,69.01,NSW,TAS,ICE fetch failed; manual entry path simulated
+MG MG4 64kWh EV RWD LUX ,400.0,0.07,7.86,2.1,4.2,66.02,61.82,42.0,72.63,30.63,QLD,WA,
+Hyundai Ioniq 9 Calligraphy,500.0,0.337,9.2,1.99,25.28,91.54,66.27,52.5,106.26,53.76,NT,NSW,
+BMW iX3 50 xDrive AWD,250.0,0.335,10.85,2.17,12.56,58.86,46.3,26.25,62.66,36.41,TAS,TAS,
+GWM Ora Standard Range,300.0,0.392,7.47,89.99,17.64,2016.68,1999.04,31.5,51.77,20.27,NSW,SA,
+MG MG4 64kWh EV RWD LUX ,300.0,0.424,7.68,1.89,19.08,43.55,24.47,31.5,53.22,21.72,VIC,SA,
+"Cupra Born 77kWh 4 seat (19 Alloys)""",100.0,0.446,7.07,1.92,6.69,13.57,6.88,10.5,16.33,5.83,SA,SA,
+MG ZS EV 72kWh,250.0,0.363,9.96,1.7,13.61,42.33,28.72,26.25,57.52,31.27,QLD,ACT,
+Hyundai Ioniq 9 Calligraphy,250.0,0.268,9.53,1.85,10.05,44.08,34.03,26.25,55.04,28.79,SA,VIC,
+Kia EV3 Air SR ,250.0,0.428,8.91,1.94,16.05,43.21,27.16,26.25,51.46,25.21,WA,ACT,
+Tesla  Model Y  RWD YS6MRB,300.0,0.1,5.96,2.08,4.5,37.19,32.69,31.5,41.3,9.8,VIC,NSW,
+"Cupra Born 77kWh 4 seat (20 Alloys)""",500.0,0.351,10.05,89.99,26.32,4522.0,4495.67,52.5,116.08,63.58,TAS,NT,
+Rolls-Royce Spectre Coupe,150.0,0.283,6.56,1.72,6.37,16.92,10.56,15.75,22.73,6.98,SA,TAS,
+Audi Q8 Q8 e-tron quattro,150.0,0.281,8.91,1.67,6.32,22.32,16.0,15.75,30.87,15.12,NT,SA,
+Zeekr  X RWD,150.0,0.368,7.56,2.16,8.28,24.49,16.21,15.75,26.2,10.45,WA,WA,
+Rolls-Royce Spectre Coupe,150.0,0.275,9.27,2.27,6.19,31.56,25.38,15.75,32.12,16.37,ACT,VIC,
+Zeekr  X RWD,300.0,0.308,7.33,2.01,13.86,44.2,30.34,31.5,50.8,19.3,SA,VIC,ICE fetch failed; manual entry path simulated
+Audi Q8 Q8 e-tron quattro,300.0,0.255,10.93,2.01,11.47,65.91,54.43,31.5,75.74,44.24,VIC,SA,
+Xpeng G6 Standard 18 inch,500.0,0.338,8.92,1.97,25.35,87.86,62.51,52.5,103.03,50.53,VIC,WA,
+MG MG4 77kWh EV RWD,500.0,0.371,10.49,189.74,27.82,9951.86,9924.04,52.5,121.16,68.66,VIC,ACT,
+Audi Q8 Q8 e-tron quattro Sportback,200.0,0.282,6.71,2.03,8.46,27.24,18.78,21.0,31.0,10.0,WA,SA,
+Polestar 4 200kW Long Range Single Motor,250.0,0.1,8.02,2.03,3.75,40.7,36.95,26.25,46.32,20.07,QLD,NSW,ICE fetch failed; manual entry path simulated
+Lexus UX 300e Coupe,100.0,0.324,7.69,1.73,4.86,13.3,8.44,10.5,17.76,7.26,WA,NT,ICE fetch failed; manual entry path simulated
+MG MG4 51kWh EV RWD ,200.0,0.257,8.57,2.01,7.71,34.45,26.74,21.0,39.59,18.59,SA,SA,
+Lexus UX 300e Coupe,300.0,0.329,8.03,1.95,14.81,46.98,32.17,31.5,55.65,24.15,NSW,WA,
+Tesla Model 3 RWD H6LRB,500.0,0.301,7.24,2.12,22.57,76.74,54.17,52.5,83.62,31.12,SA,NSW,ICE fetch failed; manual entry path simulated
+Ford Mach-E Select LFP RWD,150.0,0.327,7.58,2.24,7.36,25.47,18.11,15.75,26.26,10.51,NSW,VIC,
+Toyota bZ4X FWD,300.0,0.344,8.5,2.0,15.48,51.0,35.52,31.5,58.91,27.41,ACT,VIC,
+Toyota bZ4X FWD,100.0,0.07,9.55,1.93,1.05,18.43,17.38,10.5,22.06,11.56,NSW,TAS,
+Kia  EV5 Standard Range 2WD,150.0,0.396,6.19,2.0,8.91,18.57,9.66,15.75,21.45,5.7,VIC,WA,
+Peugeot 2008 e2008 GT,250.0,0.319,8.91,1.83,11.96,40.76,28.8,26.25,51.46,25.21,NSW,NT,
+Toyota bZ4X FWD,150.0,0.39,7.95,2.27,8.78,27.07,18.29,15.75,27.55,11.8,NSW,NT,ICE fetch failed; manual entry path simulated
+GWM Ora Extended Range GT,100.0,0.294,10.79,1.93,4.41,20.82,16.41,10.5,24.92,14.42,VIC,NSW,
+Lexus RZ 450e Coupe,400.0,0.324,0.5,1.84,19.44,3.68,-15.76,42.0,4.62,-37.38,WA,TAS,ICE fetch failed; manual entry path simulated
+Lexus UX 300e Coupe,500.0,0.333,8.04,2.12,24.98,85.22,60.25,52.5,92.86,40.36,SA,ACT,
+Polestar 4 200kW Long Range Single Motor,100.0,0.391,10.41,1.82,5.87,18.95,13.08,10.5,24.05,13.55,QLD,TAS,
+Rolls-Royce Spectre Coupe,500.0,0.289,8.38,2.19,21.67,91.76,70.09,52.5,96.79,44.29,WA,VIC,ICE fetch failed; manual entry path simulated
+Audi Q8 Q8 e-tron quattro,500.0,0.303,9.58,1.78,22.72,85.26,62.54,52.5,110.65,58.15,SA,ACT,
+Kia  EV5 Standard Range 2WD,250.0,0.6,10.65,2.06,22.5,54.85,32.35,26.25,61.5,35.25,ACT,SA,
+Polestar 4 200kW Long Range Single Motor,500.0,0.38,8.92,1.94,28.5,86.52,58.02,52.5,103.03,50.53,SA,QLD,
+BMW X1 iX1 xDrive30,150.0,0.308,8.88,1.78,6.93,23.71,16.78,15.75,30.77,15.02,WA,ACT,
+Lexus RZ 450e Coupe,500.0,0.278,7.12,189.74,20.85,6754.74,6733.89,52.5,82.24,29.74,VIC,VIC,
+Mercedes-Benz EQE SUV EQE 500 4MATIC SUV,400.0,0.235,8.36,1.88,14.1,62.87,48.77,42.0,77.25,35.25,SA,NSW,
+Ford Mach-E Select LFP RWD,400.0,0.314,8.45,189.74,18.84,6413.21,6394.37,42.0,78.08,36.08,NT,WA,
+Kia  EV5 Standard Range 2WD,150.0,0.356,7.46,1.91,8.01,21.37,13.36,15.75,25.85,10.1,NT,TAS,
+Tesla Model 3 Long Range H5LDB,500.0,0.336,10.71,2.32,25.2,124.24,99.04,52.5,123.7,71.2,NSW,NSW,
+Zeekr  X RWD,500.0,0.426,9.19,2.17,31.95,99.71,67.76,52.5,106.14,53.64,SA,ACT,ICE fetch failed; manual entry path simulated
+Volvo EX30 Single Motor RWD,250.0,0.283,6.73,2.29,10.61,38.53,27.92,26.25,38.87,12.62,QLD,QLD,
+Leapmotor  C10 BEV,100.0,0.339,7.33,1.84,5.08,13.49,8.4,10.5,16.93,6.43,VIC,NT,
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,500.0,0.334,10.19,189.74,25.05,9667.25,9642.2,52.5,117.69,65.19,NSW,SA,
+Fiat 500e FWD 87 kW 42 kWh,150.0,0.408,8.64,2.03,9.18,26.31,17.13,15.75,29.94,14.19,TAS,QLD,
+Polestar 4 200kW Long Range Single Motor,500.0,0.331,6.99,89.99,24.83,3145.15,3120.33,52.5,80.73,28.23,NT,VIC,
+Kia EV6 GT,200.0,0.324,8.76,2.0,9.72,35.04,25.32,21.0,40.47,19.47,WA,QLD,
+GWM Ora Standard Range,250.0,0.408,8.77,1.65,15.3,36.18,20.88,26.25,50.65,24.4,WA,NT,ICE fetch failed; manual entry path simulated
+Toyota bZ4X FWD,500.0,0.318,8.0,1.85,23.85,74.0,50.15,52.5,92.4,39.9,VIC,NT,
+Polestar 4 200kW Long Range Single Motor,100.0,0.378,6.46,1.69,5.67,10.92,5.25,10.5,14.92,4.42,SA,QLD,
+Leapmotor  C10 BEV,250.0,0.278,7.4,2.07,10.43,38.3,27.87,26.25,42.74,16.49,WA,ACT,
+Polestar 4 200kW Long Range Single Motor,100.0,0.337,11.13,0.01,5.06,0.11,-4.94,10.5,25.71,15.21,ACT,WA,
+BYD DOLPHIN PERFORMANCE,200.0,0.295,6.93,1.79,8.85,24.81,15.96,21.0,32.02,11.02,WA,ACT,
+Audi Q8 Q8 e-tron quattro,100.0,0.371,8.54,2.0,5.56,17.08,11.51,10.5,19.73,9.23,ACT,TAS,ICE fetch failed; manual entry path simulated
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,400.0,0.283,8.94,2.04,16.98,72.95,55.97,42.0,82.61,40.61,TAS,TAS,
+Peugeot 2008 e2008 GT,200.0,0.6,6.22,2.01,18.0,25.0,7.0,21.0,28.74,7.74,NT,TAS,ICE fetch failed; manual entry path simulated
+Audi Q8 Q8 e-tron quattro Sportback,150.0,0.321,50.0,1.74,7.22,130.5,123.28,15.75,173.25,157.5,ACT,VIC,ICE fetch failed; manual entry path simulated
+BYD DOLPHIN PERFORMANCE,200.0,0.287,11.17,1.78,8.61,39.77,31.16,21.0,51.61,30.61,QLD,TAS,ICE fetch failed; manual entry path simulated
+Kia  EV5 Standard Range 2WD,150.0,0.6,8.35,89.99,13.5,1127.12,1113.62,15.75,28.93,13.18,QLD,WA,
+Rolls-Royce Spectre Black Badge Coupe,250.0,0.392,10.25,2.11,14.7,54.07,39.37,26.25,59.19,32.94,QLD,VIC,
+Hyundai Ioniq 9 Calligraphy,400.0,0.351,7.75,2.17,21.06,67.27,46.21,42.0,71.61,29.61,SA,ACT,
+Zeekr  X RWD,400.0,0.299,9.49,1.91,17.94,72.5,54.56,42.0,87.69,45.69,QLD,NT,
+Xpeng G6 Standard 18 inch,400.0,0.394,10.17,2.03,23.64,82.58,58.94,42.0,93.97,51.97,NT,ACT,ICE fetch failed; manual entry path simulated
+Peugeot Partner  ePARTNER PRO LONG,100.0,0.1,7.66,1.89,1.5,14.48,12.98,10.5,17.69,7.19,VIC,ACT,ICE fetch failed; manual entry path simulated
+Fiat 500e FWD 87 kW 42 kWh,300.0,0.315,9.63,2.22,14.18,64.14,49.96,31.5,66.74,35.24,TAS,TAS,ICE fetch failed; manual entry path simulated
+BMW X1 iX1 xDrive30,200.0,0.07,9.19,1.94,2.1,35.66,33.56,21.0,42.46,21.46,SA,QLD,
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,250.0,0.296,11.19,1.79,11.1,50.08,38.98,26.25,64.62,38.37,SA,TAS,ICE fetch failed; manual entry path simulated
+BYD DOLPHIN PERFORMANCE,500.0,0.418,2018.0,1.81,31.35,18262.9,18231.55,52.5,23307.9,23255.4,VIC,ACT,ICE fetch failed; manual entry path simulated
+Zeekr  X RWD,400.0,0.27,8.39,189.74,16.2,6367.67,6351.47,42.0,77.52,35.52,VIC,QLD,
+Lexus UX 300e Coupe,100.0,0.1,8.52,89.99,1.5,766.71,765.21,10.5,19.68,9.18,WA,ACT,
+Polestar 4 200kW Long Range Single Motor,150.0,0.1,2018.0,1.89,2.25,5721.03,5718.78,15.75,6992.37,6976.62,VIC,NSW,ICE fetch failed; manual entry path simulated
+BMW iX3 50 xDrive AWD,300.0,0.1,10.74,2.02,4.5,65.08,60.58,31.5,74.43,42.93,VIC,SA,
+Peugeot Partner  ePARTNER PRO LONG,250.0,0.409,2018.0,1.95,15.34,9837.75,9822.41,26.25,11653.95,11627.7,SA,WA,ICE fetch failed; manual entry path simulated
+Zeekr  X RWD,200.0,0.432,9.93,2.01,12.96,39.92,26.96,21.0,45.88,24.88,NSW,TAS,
+GWM Ora Extended Range GT,250.0,0.321,9.89,2.08,12.04,51.43,39.39,26.25,57.11,30.86,ACT,SA,
+Cupra Born Born 77kWh 5 seat,150.0,0.295,9.0,2.01,6.64,27.13,20.5,15.75,31.19,15.44,WA,ACT,
+Rolls-Royce Spectre Coupe,250.0,0.377,10.32,1.74,14.14,44.89,30.75,26.25,59.6,33.35,NT,SA,
+Polestar 4 200kW Long Range Single Motor,300.0,0.336,6.59,1.98,15.12,39.14,24.02,31.5,45.67,14.17,ACT,QLD,
+Audi Q8 Q8 e-tron quattro,100.0,0.32,9.73,89.99,4.8,875.6,870.8,10.5,22.48,11.98,VIC,NT,ICE fetch failed; manual entry path simulated
+Lexus RZ 450e Coupe,200.0,0.353,8.31,1.98,10.59,32.91,22.32,21.0,38.39,17.39,NSW,ACT,
+BYD SEAL PERFORMANCE,500.0,0.384,8.64,1.9,28.8,82.08,53.28,52.5,99.79,47.29,SA,WA,
+Kia  EV5 Standard Range 2WD,100.0,0.351,8.97,189.74,5.26,1701.97,1696.7,10.5,20.72,10.22,ACT,TAS,
+Xpeng G6 Standard 18 inch,250.0,0.293,8.47,189.74,10.99,4017.74,4006.76,26.25,48.91,22.66,VIC,TAS,
+Rolls-Royce Spectre Coupe,150.0,0.405,8.88,2.11,9.11,28.11,18.99,15.75,30.77,15.02,NT,WA,
+MG MG4 64kWh EV RWD LUX ,500.0,0.6,6.75,2.11,45.0,71.21,26.21,52.5,77.96,25.46,NT,NT,ICE fetch failed; manual entry path simulated
+BMW 5 Series i5 M60 xDrive,300.0,0.252,10.11,2.08,11.34,63.09,51.75,31.5,70.06,38.56,NT,QLD,ICE fetch failed; manual entry path simulated
+Ford Mach-E Premium 4P AWD,200.0,0.372,8.62,1.75,11.16,30.17,19.01,21.0,39.82,18.82,QLD,VIC,ICE fetch failed; manual entry path simulated
+Xpeng G6 Standard 18 inch,250.0,0.417,9.09,2.06,15.64,46.81,31.18,26.25,52.49,26.24,ACT,WA,
+BMW 5 Series i5 eDrive40,250.0,0.38,10.37,1.96,14.25,50.81,36.56,26.25,59.89,33.64,SA,ACT,
+BYD SEAL PERFORMANCE,300.0,0.428,7.92,89.99,19.26,2138.16,2118.9,31.5,54.89,23.39,QLD,ACT,
+Peugeot Partner  ePARTNER PRO LONG,300.0,0.1,9.85,1.64,4.5,48.46,43.96,31.5,68.26,36.76,SA,NT,
+Tesla Model 3 RWD H6LRB,250.0,0.379,6.14,2.22,14.21,34.08,19.86,26.25,35.46,9.21,ACT,NT,
+Tesla  Model 3 RWD H6MRB,400.0,0.07,6.99,1.82,4.2,50.89,46.69,42.0,64.59,22.59,VIC,VIC,
+Tesla Model 3 RWD H6LRB,400.0,0.348,7.55,2.19,20.88,66.14,45.26,42.0,69.76,27.76,TAS,NSW,
+Hyundai Ioniq 9 Calligraphy,500.0,0.392,7.51,1.98,29.4,74.35,44.95,52.5,86.74,34.24,VIC,TAS,
+Xpeng G6 Standard 18 inch,200.0,0.301,9.31,189.74,9.03,3532.96,3523.93,21.0,43.01,22.01,WA,QLD,
+"Cupra Born 77kWh 4 seat (20 Alloys)""",500.0,0.408,10.27,2.15,30.6,110.4,79.8,52.5,118.62,66.12,VIC,VIC,
+BMW 5 Series i5 eDrive40,500.0,0.368,6.17,89.99,27.6,2776.19,2748.59,52.5,71.26,18.76,TAS,WA,
+Polestar 4 200kW Long Range Single Motor,150.0,0.07,7.58,2.11,1.58,23.99,22.42,15.75,26.26,10.51,ACT,NSW,
+Leapmotor  C10 BEV,100.0,0.37,9.63,1.84,5.55,17.72,12.17,10.5,22.25,11.75,VIC,ACT,
+Rolls-Royce Spectre Coupe,500.0,0.312,8.96,2.12,23.4,94.98,71.58,52.5,103.49,50.99,ACT,SA,
+Volvo EX30 Single Motor RWD,200.0,0.354,8.79,89.99,10.62,1582.02,1571.4,21.0,40.61,19.61,ACT,WA,
+Toyota bZ4X FWD,300.0,0.328,9.46,2.14,14.76,60.73,45.97,31.5,65.56,34.06,ACT,ACT,
+BMW iX3 50 xDrive AWD,250.0,0.354,9.07,1.92,13.27,43.54,30.26,26.25,52.38,26.13,WA,VIC,
+Leapmotor  C10 BEV,400.0,0.1,6.52,2.1,6.0,54.77,48.77,42.0,60.24,18.24,QLD,VIC,ICE fetch failed; manual entry path simulated
+Ford Mach-E Premium 4P AWD,400.0,0.345,8.46,1.93,20.7,65.31,44.61,42.0,78.17,36.17,QLD,NT,
+Zeekr  X RWD,200.0,0.324,5.69,2.05,9.72,23.33,13.61,21.0,26.29,5.29,WA,VIC,
+Audi Q8 Q8 e-tron quattro Sportback,150.0,0.355,7.51,1.94,7.99,21.85,13.87,15.75,26.02,10.27,ACT,SA,ICE fetch failed; manual entry path simulated
+BYD DOLPHIN PERFORMANCE,400.0,0.321,8.85,1.64,19.26,58.06,38.8,42.0,81.77,39.77,TAS,TAS,
+Audi Q8 Q8 e-tron quattro Sportback,500.0,0.6,8.85,1.77,45.0,78.32,33.32,52.5,102.22,49.72,TAS,WA,
+MG ZS EV 72kWh,150.0,0.289,11.16,2.01,6.5,33.65,27.14,15.75,38.67,22.92,WA,ACT,ICE fetch failed; manual entry path simulated
+Hyundai Ioniq 9 Calligraphy,200.0,0.316,10.4,2.12,9.48,44.1,34.62,21.0,48.05,27.05,TAS,TAS,
+Audi Q8 Q8 e-tron quattro,300.0,0.07,7.11,2.15,3.15,45.86,42.71,31.5,49.27,17.77,WA,ACT,ICE fetch failed; manual entry path simulated
+Kia  EV5 Standard Range 2WD,100.0,0.6,7.8,1.95,9.0,15.21,6.21,10.5,18.02,7.52,QLD,QLD,
+Lexus UX 300e Coupe,500.0,0.363,11.11,2.09,27.22,116.1,88.87,52.5,128.32,75.82,NSW,ACT,
+"Cupra Born 77kWh 4 seat (19 Alloys)""",500.0,0.1,7.44,2.18,7.5,81.1,73.6,52.5,85.93,33.43,WA,NT,
+Lexus RZ 450e Coupe,250.0,0.317,9.44,1.9,11.89,44.84,32.95,26.25,54.52,28.27,SA,NSW,ICE fetch failed; manual entry path simulated
+BMW 5 Series i5 eDrive40,500.0,0.6,8.71,2.0,45.0,87.1,42.1,52.5,100.6,48.1,TAS,NSW,ICE fetch failed; manual entry path simulated
+BYD SEAL Dynamic,150.0,0.304,8.94,1.7,6.84,22.8,15.96,15.75,30.98,15.23,SA,TAS,ICE fetch failed; manual entry path simulated
+Zeekr  X RWD,400.0,0.29,7.39,1.76,17.4,52.03,34.63,42.0,68.28,26.28,NT,SA,
+Hyundai Ioniq 9 Calligraphy,400.0,0.36,9.16,2.01,21.6,73.65,52.05,42.0,84.64,42.64,SA,SA,
+BYD DOLPHIN Dynamic,200.0,0.337,9.47,89.99,10.11,1704.41,1694.3,21.0,43.75,22.75,SA,ACT,ICE fetch failed; manual entry path simulated
+Rolls-Royce Spectre Black Badge Coupe,250.0,0.4,11.21,2.1,15.0,58.85,43.85,26.25,64.74,38.49,WA,VIC,
+Toyota bZ4X FWD,300.0,0.261,7.32,1.93,11.75,42.38,30.64,31.5,50.73,19.23,NT,SA,
+Toyota bZ4X FWD,200.0,0.273,2018.0,1.96,8.19,7910.56,7902.37,21.0,9323.16,9302.16,WA,QLD,ICE fetch failed; manual entry path simulated
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,300.0,0.311,8.25,2.11,13.99,52.22,38.23,31.5,57.17,25.67,SA,WA,ICE fetch failed; manual entry path simulated
+Xpeng G6 Standard 18 inch,400.0,0.337,8.46,0.01,20.22,0.34,-19.88,42.0,78.17,36.17,NT,VIC,
+Hyundai Ioniq 9 Calligraphy,200.0,0.396,8.32,2.07,11.88,34.44,22.56,21.0,38.44,17.44,SA,ACT,
+BYD DOLPHIN PERFORMANCE,100.0,0.261,9.83,2.27,3.92,22.31,18.4,10.5,22.71,12.21,SA,NSW,
+Tesla Model 3 Long Range H5LDB,150.0,0.326,10.21,2.35,7.33,35.99,28.66,15.75,35.38,19.63,NT,SA,
+Lexus RZ 450e Coupe,200.0,0.33,10.43,89.99,9.9,1877.19,1867.29,21.0,48.19,27.19,WA,NT,ICE fetch failed; manual entry path simulated
+Volvo C40 Recharge Twin,100.0,0.24,6.86,1.62,3.6,11.11,7.51,10.5,15.85,5.35,NSW,WA,
+Leapmotor  C10 BEV,100.0,0.1,10.35,1.89,1.5,19.56,18.06,10.5,23.91,13.41,TAS,SA,
+Toyota bZ4X FWD,500.0,0.33,7.89,1.78,24.75,70.22,45.47,52.5,91.13,38.63,SA,VIC,
+Toyota bZ4X FWD,100.0,0.341,6.66,189.74,5.12,1263.67,1258.55,10.5,15.38,4.88,WA,NT,
+Xpeng G6 Standard 18 inch,100.0,0.319,8.17,2.11,4.79,17.24,12.45,10.5,18.87,8.37,TAS,WA,
+Peugeot Partner  ePARTNER PRO LONG,500.0,0.242,9.03,2.06,18.15,93.01,74.86,52.5,104.3,51.8,SA,TAS,
+GWM Ora Extended Range,200.0,0.305,6.47,189.74,9.15,2455.24,2446.09,21.0,29.89,8.89,VIC,NSW,ICE fetch failed; manual entry path simulated
+Xpeng G6 Standard 18 inch,500.0,0.306,10.85,2.08,22.95,112.84,89.89,52.5,125.32,72.82,NSW,NSW,
+Leapmotor  C10 BEV,250.0,0.351,999.0,2.32,13.16,5794.2,5781.04,26.25,5769.23,5742.98,VIC,VIC,ICE fetch failed; manual entry path simulated
+Mercedes-Benz EQE SUV AMG EQE 53 4MATIC+ SUV,400.0,0.275,7.87,2.07,16.5,65.16,48.66,42.0,72.72,30.72,ACT,TAS,ICE fetch failed; manual entry path simulated
+Tesla Model 3 RWD H6LRB,200.0,0.6,7.33,1.96,18.0,28.73,10.73,21.0,33.86,12.86,NSW,TAS,
+Tesla Model 3 Long Range H5LDB,300.0,0.365,6.8,2.0,16.43,40.8,24.38,31.5,47.12,15.62,WA,QLD,
+Polestar 4 200kW Long Range Single Motor,100.0,0.338,10.88,1.98,5.07,21.54,16.47,10.5,25.13,14.63,NT,NT,
+"Cupra Born 77kWh 4 seat (20 Alloys)""",250.0,0.07,10.85,1.75,2.63,47.47,44.84,26.25,62.66,36.41,TAS,QLD,
+Zeekr  X RWD,100.0,0.333,8.68,89.99,5.0,781.11,776.12,10.5,20.05,9.55,SA,NT,
+Peugeot Partner  ePARTNER PRO LONG,500.0,0.366,9.8,2.26,27.45,110.74,83.29,52.5,113.19,60.69,ACT,TAS,
+Kia  EV5 Standard Range 2WD,400.0,0.339,10.95,1.91,20.34,83.66,63.32,42.0,101.18,59.18,WA,ACT,
+Audi Q8 Q8 e-tron quattro Sportback,400.0,0.399,7.15,2.0,23.94,57.2,33.26,42.0,66.07,24.07,TAS,NSW,
+Audi Q8 Q8 e-tron quattro Sportback,400.0,0.279,8.97,2.28,16.74,81.81,65.07,42.0,82.88,40.88,NT,NT,ICE fetch failed; manual entry path simulated
+MG ZS EV 72kWh,250.0,0.401,10.39,2.12,15.04,55.07,40.03,26.25,60.0,33.75,NT,NT,
+Zeekr  X RWD,200.0,0.378,8.18,2.06,11.34,33.7,22.36,21.0,37.79,16.79,QLD,VIC,
+Kia EV3 Air SR ,400.0,0.425,0.5,1.85,25.5,3.7,-21.8,42.0,4.62,-37.38,VIC,NSW,ICE fetch failed; manual entry path simulated
+Tesla Model 3 Long Range H5LDB,100.0,0.248,7.2,2.31,3.72,16.63,12.91,10.5,16.63,6.13,NSW,TAS,
+Volvo XC40 Recharge Twin,100.0,0.317,9.73,1.76,4.75,17.12,12.37,10.5,22.48,11.98,NT,VIC,
+Ford Mach-E GT 4P AWD,250.0,0.381,7.36,1.85,14.29,34.04,19.75,26.25,42.5,16.25,SA,QLD,
+MG MG4 77kWh EV RWD,250.0,0.281,7.05,1.98,10.54,34.9,24.36,26.25,40.71,14.46,ACT,WA,
+BMW 5 Series i5 M60 xDrive,400.0,0.373,9.02,1.71,22.38,61.7,39.32,42.0,83.34,41.34,VIC,WA,
+GWM Ora Standard Range,150.0,0.317,9.81,2.05,7.13,30.17,23.03,15.75,33.99,18.24,ACT,NT,
+Tesla  Model 3 RWD H6MRB,250.0,0.07,9.29,1.89,2.63,43.9,41.27,26.25,53.65,27.4,TAS,QLD,
+Toyota bZ4X FWD,250.0,0.325,10.76,0.01,12.19,0.27,-11.92,26.25,62.14,35.89,SA,TAS,
+Rolls-Royce Spectre Coupe,400.0,0.383,10.12,1.88,22.98,76.1,53.12,42.0,93.51,51.51,WA,SA,ICE fetch failed; manual entry path simulated
+Cupra Born Born 77kWh 5 seat,100.0,0.1,6.34,2.31,1.5,14.65,13.15,10.5,14.65,4.15,SA,ACT,
+"Cupra Born 77kWh 4 seat (20 Alloys)""",500.0,0.314,8.19,0.01,23.55,0.41,-23.14,52.5,94.59,42.09,QLD,TAS,
+MG MG4 64kWh EV 4WD,200.0,0.287,11.49,2.02,8.61,46.42,37.81,21.0,53.08,32.08,NSW,QLD,
+Ford Mach-E GT 4P AWD,500.0,0.318,10.95,2.37,23.85,129.76,105.91,52.5,126.47,73.97,TAS,SA,
+MG MG4 64kWh EV 4WD,300.0,0.349,9.97,1.95,15.7,58.32,42.62,31.5,69.09,37.59,WA,QLD,
+Mercedes-Benz EQE Class EQE53 AMG 4MATIC+,400.0,0.318,8.4,89.99,19.08,3023.66,3004.58,42.0,77.62,35.62,QLD,TAS,
+Mercedes-Benz EQS 500 4MATIC,300.0,0.395,9.51,2.16,17.78,61.62,43.85,31.5,65.9,34.4,VIC,TAS,
+Ford Mach-E Premium LFP AWD,300.0,0.301,9.47,2.12,13.54,60.23,46.68,31.5,65.63,34.13,NT,SA,
+Toyota bZ4X FWD,150.0,0.288,0.5,0.01,6.48,0.01,-6.47,15.75,1.73,-14.02,SA,SA,ICE fetch failed; manual entry path simulated
+Polestar 4 200kW Long Range Single Motor,100.0,0.375,9.73,2.07,5.62,20.14,14.52,10.5,22.48,11.98,NSW,WA,
+Fiat 500e Abarth 500e 113.7 kW 42 kWh FWD ELECTRIC,200.0,0.296,8.23,2.24,8.88,36.87,27.99,21.0,38.02,17.02,ACT,QLD,
+Xpeng G6 Standard 18 inch,250.0,0.253,10.8,89.99,9.49,2429.73,2420.24,26.25,62.37,36.12,NSW,QLD,
+Audi Q8 Q8 e-tron quattro Sportback,400.0,0.291,7.77,1.69,17.46,52.53,35.07,42.0,71.79,29.79,NT,ACT,
+Lexus UX 300e Coupe,250.0,0.342,8.02,189.74,12.83,3804.29,3791.46,26.25,46.32,20.07,SA,VIC,
+Toyota bZ4X FWD,500.0,0.07,7.65,2.05,5.25,78.41,73.16,52.5,88.36,35.86,NSW,TAS,ICE fetch failed; manual entry path simulated
+GWM Ora Standard Range,100.0,0.281,6.7,1.66,4.22,11.12,6.91,10.5,15.48,4.98,NT,ACT,ICE fetch failed; manual entry path simulated
+Hyundai Ioniq 9 Calligraphy,400.0,0.28,10.33,1.83,16.8,75.62,58.82,42.0,95.45,53.45,SA,WA,
+GWM Ora Extended Range,500.0,0.324,8.51,2.16,24.3,91.91,67.61,52.5,98.29,45.79,ACT,TAS,
+Rolls-Royce Spectre Black Badge Coupe,400.0,0.6,9.15,1.96,36.0,71.74,35.74,42.0,84.55,42.55,TAS,SA,
+Mercedes-Benz EQE 53 AMG 4MATIC+,300.0,0.6,6.73,2.29,27.0,46.24,19.24,31.5,46.64,15.14,QLD,WA,ICE fetch failed; manual entry path simulated
+Tesla  Model Y  AWD Long Range YL5NDB,250.0,0.276,9.45,2.02,10.35,47.72,37.37,26.25,54.57,28.32,VIC,WA,
+BYD DOLPHIN PERFORMANCE,400.0,0.321,9.39,2.17,19.26,81.51,62.25,42.0,86.76,44.76,WA,TAS,
+Mercedes-Benz EQE 300,200.0,0.07,9.58,2.01,2.1,38.51,36.41,21.0,44.26,23.26,NSW,VIC,
+Tesla Model 3 Long Range H5LDB,500.0,0.07,10.07,1.71,5.25,86.1,80.85,52.5,116.31,63.81,NSW,NSW,ICE fetch failed; manual entry path simulated
+Peugeot Partner  ePARTNER PRO LONG,100.0,0.319,7.16,2.12,4.79,15.18,10.39,10.5,16.54,6.04,ACT,TAS,
+Toyota bZ4X FWD,300.0,0.369,9.18,1.92,16.61,52.88,36.27,31.5,63.62,32.12,ACT,TAS,
+Fiat 500e FWD 87 kW 42 kWh,400.0,0.315,6.28,1.87,18.9,46.97,28.07,42.0,58.03,16.03,VIC,ACT,
+Peugeot 2008 e2008 GT,100.0,0.07,7.32,2.1,1.05,15.37,14.32,10.5,16.91,6.41,TAS,TAS,
+"Cupra Born 77kWh 4 seat (20 Alloys)""",100.0,0.362,9.23,2.09,5.43,19.29,13.86,10.5,21.32,10.82,SA,NT,ICE fetch failed; manual entry path simulated
+Kia EV9 Air RWD,250.0,0.37,10.03,2.21,13.88,55.42,41.54,26.25,57.92,31.67,SA,NSW,
+Peugeot Partner  ePARTNER PRO LONG,200.0,0.6,9.26,2.23,18.0,41.3,23.3,21.0,42.78,21.78,TAS,ACT,
+Polestar 4 200kW Long Range Single Motor,500.0,0.376,7.28,1.76,28.2,64.06,35.86,52.5,84.08,31.58,NT,ACT,
+Leapmotor  C10 BEV,150.0,0.405,6.1,1.95,9.11,17.84,8.73,15.75,21.14,5.39,VIC,SA,
+MG MG4 64kWh EV RWD ,150.0,0.3,5.9,1.68,6.75,14.87,8.12,15.75,20.44,4.69,WA,NT,
+Tesla  Model Y  AWD Long Range YL5NDB,500.0,0.319,8.22,2.16,23.93,88.78,64.85,52.5,94.94,42.44,NSW,QLD,ICE fetch failed; manual entry path simulated
+MG ZS EV 72kWh,500.0,0.269,8.8,1.69,20.18,74.36,54.19,52.5,101.64,49.14,ACT,TAS,ICE fetch failed; manual entry path simulated
+Leapmotor  C10 BEV,200.0,0.401,2018.0,1.84,12.03,7426.24,7414.21,21.0,9323.16,9302.16,ACT,SA,ICE fetch failed; manual entry path simulated
+Toyota bZ4X FWD,250.0,0.384,7.33,2.09,14.4,38.3,23.9,26.25,42.33,16.08,VIC,WA,
+Volvo XC40 Recharge Twin,400.0,0.354,6.74,2.1,21.24,56.62,35.38,42.0,62.28,20.28,QLD,QLD,ICE fetch failed; manual entry path simulated
+Kia  EV5 Standard Range 2WD,100.0,0.355,8.02,1.86,5.32,14.92,9.59,10.5,18.53,8.03,WA,WA,
+Peugeot Partner  ePARTNER PRO LONG,300.0,0.317,8.91,2.21,14.27,59.07,44.81,31.5,61.75,30.25,QLD,SA,
+BMW iX3 50 xDrive AWD,200.0,0.364,999.0,2.12,10.92,4235.76,4224.84,21.0,4615.38,4594.38,SA,WA,ICE fetch failed; manual entry path simulated
+Peugeot 2008 e2008 GT,250.0,0.07,9.38,1.93,2.63,45.26,42.63,26.25,54.17,27.92,WA,ACT,
+BMW 5 Series i5 M60 xDrive,200.0,0.07,9.86,2.12,2.1,41.81,39.71,21.0,45.55,24.55,VIC,QLD,
+BYD SEAL PREMIUM,400.0,0.369,9.75,2.06,22.14,80.34,58.2,42.0,90.09,48.09,ACT,WA,
+MG MG4 77kWh EV RWD,400.0,0.229,11.15,2.29,13.74,102.13,88.39,42.0,103.03,61.03,ACT,SA,
+Leapmotor  C10 BEV,400.0,0.316,8.39,1.88,18.96,63.09,44.13,42.0,77.52,35.52,QLD,SA,ICE fetch failed; manual entry path simulated
+Cupra Born Born 77kWh 5 seat,250.0,0.345,8.28,2.21,12.94,45.75,32.81,26.25,47.82,21.57,TAS,NT,
+Zeekr  X RWD,100.0,0.322,9.3,2.13,4.83,19.81,14.98,10.5,21.48,10.98,ACT,QLD,
+Leapmotor  C10 BEV,300.0,0.354,6.81,89.99,15.93,1838.5,1822.57,31.5,47.19,15.69,NSW,VIC,
+GWM Ora Extended Range,150.0,0.292,7.9,1.98,6.57,23.46,16.89,15.75,27.37,11.62,VIC,VIC,
+Kia  EV5 Standard Range 2WD,300.0,0.39,9.17,1.94,17.55,53.37,35.82,31.5,63.55,32.05,NT,NSW,ICE fetch failed; manual entry path simulated
+GWM Ora Extended Range,300.0,0.351,6.94,1.69,15.79,35.19,19.39,31.5,48.09,16.59,ACT,NT,
+Audi Q8 Q8 e-tron quattro,100.0,0.6,999.0,2.06,9.0,2057.94,2048.94,10.5,2307.69,2297.19,TAS,WA,ICE fetch failed; manual entry path simulated
+Rolls-Royce Spectre Coupe,150.0,0.306,9.91,1.94,6.88,28.84,21.95,15.75,34.34,18.59,TAS,NSW,ICE fetch failed; manual entry path simulated
+MG ZS EV 72kWh,300.0,0.401,6.99,1.93,18.05,40.47,22.43,31.5,48.44,16.94,NSW,QLD,
