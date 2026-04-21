@@ -38,10 +38,11 @@ def get_suitability_by_area(sa2_name: str):
         "rank": int(row["rank"])
     }
 
+# now returns lat and lon to match the frontend requirement
 @app.get("/suitability/top")
 def get_top_sites(n: int = 10):
     top_sites = df.sort_values("suitability_score", ascending=False).head(n)
-    return top_sites[["sa2", "rank", "suitability_score"]].to_dict(orient="records")
+    return top_sites[["sa2", "rank", "suitability_score", "lat", "lon"]].to_dict(orient="records")
 
 @app.get("/suitability/coords")
 def get_suitability_by_coords(lat: float, lng: float):
