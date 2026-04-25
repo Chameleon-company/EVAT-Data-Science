@@ -2,9 +2,13 @@ import streamlit as st
 import pandas as pd
 import requests
 from datetime import datetime
+import time
 from geopy.geocoders import Nominatim
 from geopy.distance import geodesic
+from geopy.exc import GeocoderTimedOut, GeocoderUnavailable, GeocoderServiceError
 import folium
+
+from app_config import API_BASE_URL, STATIONS_DATA_PATH
 
 st.set_page_config(layout="wide")
 
@@ -24,28 +28,57 @@ if 'zoom_start' not in st.session_state:
 st.sidebar.header("Location")
 postcode = st.sidebar.text_input("Enter an Australian Postcode", "3000")
 radius = 5  # 5 km
+GEOCODE_TIMEOUT_SECONDS = 10
+GEOCODE_RETRY_COUNT = 3
 
-@st.cache_data
 def geocode_postcode(postcode):
-    """Geocodes a postcode to get latitude and longitude."""
-    try:
-        geolocator = Nominatim(user_agent="ev_dashboard")
-        location = geolocator.geocode(f"{postcode}, Australia")
-        if location:
-            return location.latitude, location.longitude
-        else:
-            st.sidebar.error("Could not find location for the entered postcode.")
-            return None, None
-    except Exception as e:
-        st.sidebar.error(f"Geocoding error: {e}")
-        return None, None
+    """Geocode a postcode with retry logic for transient network timeouts."""
+    normalized_postcode = str(postcode).strip()
+    if not normalized_postcode:
+        return None, None, "Please enter a postcode."
+
+    geolocator = Nominatim(user_agent="evat_dashboard", timeout=GEOCODE_TIMEOUT_SECONDS)
+    queries = [
+        f"{normalized_postcode}, Australia",
+        f"postcode {normalized_postcode}, Australia",
+        f"{normalized_postcode}, VIC, Australia",
+    ]
+
+    last_error = None
+
+    for query in queries:
+        for attempt in range(1, GEOCODE_RETRY_COUNT + 1):
+            try:
+                location = geolocator.geocode(
+                    query,
+                    country_codes="au",
+                    addressdetails=False,
+                    exactly_one=True,
+                )
+                if location:
+                    return float(location.latitude), float(location.longitude), None
+                break
+            except (GeocoderTimedOut, GeocoderUnavailable, GeocoderServiceError) as exc:
+                last_error = exc
+                if attempt < GEOCODE_RETRY_COUNT:
+                    time.sleep(attempt)
+            except Exception as exc:
+                last_error = exc
+                break
+
+    if last_error:
+        return None, None, (
+            "Geocoding service timed out or is unavailable right now. "
+            "Please retry in a few seconds."
+        )
+    return None, None, "Could not find location for the entered postcode."
 
 # --- Data Loading ---
 @st.cache_data
 def load_station_data():
     """Loads charging station data, renaming columns for map compatibility."""
     try:
-        data = pd.read_csv('EVAT.chargers.csv')
+        data = pd.read_csv(STATIONS_DATA_PATH)
         data.rename(columns={'latitude': 'lat', 'longitude': 'lon'}, inplace=True)
         
         # Filter for stations within Australia
@@ -59,13 +92,15 @@ def load_station_data():
         ]
         return data
     except FileNotFoundError:
-        st.error("Charging station data not found. Please check the file path.")
+        st.error(f"Charging station data not found at {STATIONS_DATA_PATH}.")
         return pd.DataFrame()
 
 all_stations_df = load_station_data()
 
 if st.sidebar.button("Find Stations"):
-    lat, lon = geocode_postcode(postcode)
+    lat, lon, geocode_error = geocode_postcode(postcode)
+    if geocode_error:
+        st.sidebar.error(geocode_error)
     if lat is not None and lon is not None:
         st.session_state.center_lat, st.session_state.center_lon = lat, lon
         st.session_state.zoom_start = 12
@@ -89,7 +124,7 @@ if not st.session_state.stations_df.empty:
     prediction_time = st.sidebar.time_input("Select a time", datetime.now().time())
 
     if st.sidebar.button("Predict Congestion for All Stations"):
-        api_url = "http://localhost:8000/predict"
+        api_url = f"{API_BASE_URL}/predict"
         
         progress_bar = st.sidebar.progress(0)
         total_stations = len(st.session_state.stations_df)

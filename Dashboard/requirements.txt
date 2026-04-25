@@ -9,3 +9,6 @@ holidays
 python-multipart
 pydantic
 numpy
+geopy
+folium
+python-dotenv
