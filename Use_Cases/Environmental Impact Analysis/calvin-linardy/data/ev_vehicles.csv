@@ -1,0 +1,61 @@
+Make,Model,Year,Variant,BodyStyle,Segment,Battery_kWh,Range_km_WLTP,Consumption_kWh_per_100km,Charge_Speed_kW_AC,Charge_Speed_kW_DC,Source
+Tesla,Model 3,2024,Standard Range RWD,Sedan,Medium Car,57.5,491,14.9,11,170,Green Vehicle Guide 2024
+Tesla,Model 3,2024,Long Range AWD,Sedan,Medium Car,75.0,629,15.1,11,250,Green Vehicle Guide 2024
+Tesla,Model 3,2024,Performance AWD,Sedan,Medium Car,75.0,547,16.3,11,250,Green Vehicle Guide 2024
+Tesla,Model Y,2024,Long Range AWD,SUV,Large SUV,75.0,533,17.5,11,250,Green Vehicle Guide 2024
+Tesla,Model Y,2024,Performance AWD,SUV,Large SUV,75.0,514,18.5,11,250,Green Vehicle Guide 2024
+Tesla,Model S,2023,Long Range AWD,Sedan,Large Car,100.0,637,19.9,22,250,Green Vehicle Guide 2023
+Tesla,Model X,2023,Long Range AWD,SUV,Large SUV,100.0,543,21.8,22,250,Green Vehicle Guide 2023
+BYD,Atto 3,2024,Extended Range,SUV,Small SUV,60.5,420,17.5,7,80,Green Vehicle Guide 2024
+BYD,Dolphin,2024,Standard Range,Hatchback,Small Car,44.9,340,14.3,7,60,Green Vehicle Guide 2024
+BYD,Dolphin,2024,Extended Range,Hatchback,Small Car,60.4,427,14.9,7,88,Green Vehicle Guide 2024
+BYD,Seal,2024,Standard Range RWD,Sedan,Medium Car,61.4,460,16.2,11,150,Green Vehicle Guide 2024
+BYD,Seal,2024,Long Range AWD,Sedan,Medium Car,82.6,570,17.8,11,150,Green Vehicle Guide 2024
+BYD,Tang,2024,AWD,SUV,Large SUV,108.8,400,21.9,11,110,Green Vehicle Guide 2024
+Hyundai,IONIQ 5,2024,Long Range AWD,SUV,Medium SUV,77.4,454,17.2,11,220,Green Vehicle Guide 2024
+Hyundai,IONIQ 5,2024,Long Range RWD,SUV,Medium SUV,77.4,481,17.4,11,220,Green Vehicle Guide 2024
+Hyundai,IONIQ 5,2024,Standard Range RWD,SUV,Medium SUV,58.0,360,16.8,11,220,Green Vehicle Guide 2024
+Hyundai,IONIQ 6,2024,Long Range AWD,Sedan,Medium Car,77.4,519,14.5,11,220,Green Vehicle Guide 2024
+Hyundai,IONIQ 6,2024,Long Range RWD,Sedan,Medium Car,77.4,614,14.3,11,220,Green Vehicle Guide 2024
+Hyundai,IONIQ 6,2024,Standard Range RWD,Sedan,Medium Car,53.0,429,13.9,11,220,Green Vehicle Guide 2024
+Kia,EV6,2024,Long Range AWD,SUV,Medium SUV,77.4,506,17.2,11,233,Green Vehicle Guide 2024
+Kia,EV6,2024,Long Range RWD,SUV,Medium SUV,77.4,547,17.0,11,233,Green Vehicle Guide 2024
+Kia,EV6,2024,Standard Range RWD,SUV,Medium SUV,58.0,394,16.5,11,233,Green Vehicle Guide 2024
+Kia,EV9,2024,Long Range AWD,SUV,Large SUV,99.8,505,23.9,11,240,Green Vehicle Guide 2024
+Kia,EV9,2024,Long Range RWD,SUV,Large SUV,99.8,563,22.3,11,240,Green Vehicle Guide 2024
+MG,MG4 Excite,2024,Standard Range,Hatchback,Small Car,51.0,350,15.3,11,140,Green Vehicle Guide 2024
+MG,MG4 Essence,2024,Long Range,Hatchback,Small Car,64.0,435,16.2,11,150,Green Vehicle Guide 2024
+MG,ZS EV,2024,Standard Range,SUV,Small SUV,51.1,320,15.9,11,76,Green Vehicle Guide 2024
+MG,ZS EV,2024,Long Range,SUV,Small SUV,72.6,440,17.5,11,150,Green Vehicle Guide 2024
+Polestar,2,2024,Long Range Single Motor,Fastback,Medium Car,82.0,635,17.1,11,205,Green Vehicle Guide 2024
+Polestar,2,2024,Long Range Dual Motor,Fastback,Medium Car,82.0,592,18.1,11,205,Green Vehicle Guide 2024
+BMW,iX1,2024,xDrive30,SUV,Small SUV,64.7,417,19.8,11,130,Green Vehicle Guide 2024
+BMW,i4,2024,eDrive35,Sedan,Medium Car,70.2,477,17.0,11,200,Green Vehicle Guide 2024
+BMW,i4,2024,M50 xDrive,Sedan,Medium Car,83.9,510,21.2,11,205,Green Vehicle Guide 2024
+BMW,iX,2024,xDrive50,SUV,Large SUV,105.2,630,23.0,22,200,Green Vehicle Guide 2024
+BMW,iX3,2024,M Sport,SUV,Medium SUV,74.0,458,18.5,11,150,Green Vehicle Guide 2024
+Mercedes-Benz,EQA,2024,250+,SUV,Small SUV,70.5,560,19.4,11,100,Green Vehicle Guide 2024
+Mercedes-Benz,EQB,2024,300 4MATIC,SUV,Medium SUV,69.7,423,20.5,11,100,Green Vehicle Guide 2024
+Mercedes-Benz,EQC,2023,400 4MATIC,SUV,Large SUV,80.0,411,21.5,11,110,Green Vehicle Guide 2023
+Mercedes-Benz,EQS,2024,450+,Sedan,Large Car,107.8,770,19.9,22,200,Green Vehicle Guide 2024
+Mercedes-Benz,EQE,2024,350+,Sedan,Medium Car,90.6,669,17.9,22,170,Green Vehicle Guide 2024
+Volkswagen,ID.4,2024,Pro,SUV,Medium SUV,77.0,522,18.6,11,170,Green Vehicle Guide 2024
+Volkswagen,ID.4,2024,Pro 4MOTION,SUV,Medium SUV,77.0,500,19.0,11,170,Green Vehicle Guide 2024
+Audi,Q4 e-tron,2024,45 quattro,SUV,Medium SUV,82.0,520,19.0,11,175,Green Vehicle Guide 2024
+Audi,e-tron GT,2024,RS e-tron GT,Sedan,Large Car,93.4,598,22.5,22,270,Green Vehicle Guide 2024
+Porsche,Taycan,2024,4S Sport Turismo,Wagon,Large Car,93.4,559,23.6,22,270,Green Vehicle Guide 2024
+Porsche,Macan,2024,EV 4S,SUV,Medium SUV,100.0,613,21.0,22,270,Green Vehicle Guide 2024
+Volvo,EX40,2024,Recharge Single Motor,SUV,Small SUV,69.0,423,19.5,11,150,Green Vehicle Guide 2024
+Volvo,EX40,2024,Recharge Twin Motor,SUV,Small SUV,78.0,438,21.0,11,150,Green Vehicle Guide 2024
+Volvo,EC40,2024,Recharge Single Motor,SUV,Small SUV,69.0,432,18.9,11,150,Green Vehicle Guide 2024
+Nissan,Leaf,2024,e+ 62kWh,Hatchback,Small Car,62.0,385,16.5,6.6,100,Green Vehicle Guide 2024
+Nissan,Ariya,2024,63kWh FWD,SUV,Medium SUV,63.0,403,17.8,22,130,Green Vehicle Guide 2024
+Nissan,Ariya,2024,87kWh FWD,SUV,Medium SUV,87.0,533,19.0,22,130,Green Vehicle Guide 2024
+GWM,Ora,2024,Standard Range,Hatchback,Small Car,49.8,310,15.3,6.6,80,Green Vehicle Guide 2024
+GWM,Tank 500 PHEV,2024,PHEV,SUV,Large SUV,42.0,100,28.5,6.6,40,Green Vehicle Guide 2024
+Chery,Omoda E5,2024,Standard Range,SUV,Small SUV,61.0,430,17.5,11,80,Green Vehicle Guide 2024
+Zeekr,001,2024,AWD Performance,Wagon,Large Car,100.0,590,21.0,11,200,Green Vehicle Guide 2024
+Rivian,R1T,2023,Adventure,Ute,Large Ute,135.0,505,30.1,11,220,Green Vehicle Guide 2023
+Lexus,RZ,2024,450e AWD,SUV,Medium SUV,71.4,440,18.5,11,150,Green Vehicle Guide 2024
+Toyota,bZ4X,2024,AWD,SUV,Medium SUV,71.4,447,17.9,11,150,Green Vehicle Guide 2024
+Subaru,Solterra,2024,AWD,SUV,Medium SUV,71.4,447,17.9,11,150,Green Vehicle Guide 2024
