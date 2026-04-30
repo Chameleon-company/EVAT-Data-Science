@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en">
+	<Esri>
+		<CreaDate>20260422</CreaDate>
+		<CreaTime>10224600</CreaTime>
+		<ArcGISFormat>1.0</ArcGISFormat>
+		<SyncOnce>TRUE</SyncOnce>
+		<DataProperties>
+			<itemProps/>
+		</DataProperties>
+	</Esri>
+	<mdLang>
+		<languageCode value="eng">
+		</languageCode>
+		<countryCode value="AU">
+		</countryCode>
+	</mdLang>
+	<mdChar>
+		<CharSetCd value="004">
+		</CharSetCd>
+	</mdChar>
+	<mdHrLv>
+		<ScopeCd value="005">
+		</ScopeCd>
+	</mdHrLv>
+	<mdHrLvName>Feature layer</mdHrLvName>
+	<mdContact>
+		<role>
+			<RoleCd value="002">
+			</RoleCd>
+		</role>
+		<rpOrgName>Australian Bureau of Statistics</rpOrgName>
+		<rpCntInfo>
+			<cntAddress>
+				<eMailAdd>geography@abs.gov.au</eMailAdd>
+			</cntAddress>
+		</rpCntInfo>
+	</mdContact>
+	<mdStanName>ArcGIS Metadata</mdStanName>
+	<mdStanVer>1.0</mdStanVer>
+	<dataIdInfo>
+		<idCitation>
+			<resTitle>ABS ASGS Ed3 SA2 2021 Projected relative pop change by year (2022 to 2032) Nov2024</resTitle>
+			<resAltTitle>ABS_SA2_proj_pop_cby_2232</resAltTitle>
+			<citRespParty>
+				<role>
+					<RoleCd value="002">
+					</RoleCd>
+				</role>
+				<rpOrgName>Australian Bureau of Statistics</rpOrgName>
+				<rpCntInfo>
+					<cntAddress>
+						<eMailAdd>geography@abs.gov.au</eMailAdd>
+					</cntAddress>
+				</rpCntInfo>
+			</citRespParty>
+		</idCitation>
+		<idAbs>&lt;div align="left"&gt;
+&lt;p&gt;These population projections were prepared by the Australian Bureau of Statistics (ABS) for Geoscience Australia. The projections are not official ABS data and are owned by Geoscience Australia.&lt;/p&gt;
+&lt;p&gt;These projections are for &lt;a href="https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/main-structure-and-greater-capital-city-statistical-areas/statistical-area-level-2" target="_blank"&gt;Statistical Areas Level 2 (SA2s)&lt;/a&gt; and are projected out from a base population as of 30 June 2022. Projections are for 30 June 2023 to 2032.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Method &lt;/b&gt;&lt;br&gt;
+The cohort-component method was used for these projections. In this method, the base population is projected forward annually by calculating the effect of births, deaths and migration (the components) according to the specified fertility, mortality and overseas and internal migration assumptions. &lt;/p&gt;
+&lt;p&gt;The projected usual resident population by single year was produced in four successive stages – national, state/territory, capital city/rest of state, and finally SA2s. Assumptions were made for each level and the resulting projected components and population are constrained to the geographic level above for each year.  &lt;/p&gt;
+&lt;p&gt;These projections were derived from a combination of assumptions published in &lt;a href="https://www.abs.gov.au/statistics/people/population/population-projections-australia/2022-base-2071" target="_blank"&gt;Population Projections, Australia, 2022 (base) to 2071&lt;/a&gt; on 23 November 2023, and historical patterns observed within each state/territory.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Projections – capital city/rest of state regions &lt;/b&gt;&lt;br&gt;
+The &lt;b&gt;base population&lt;/b&gt; is 30 June 2022 Estimated Resident Population (ERP) as published in &lt;a href="https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/jun-2022"" target="_blank"&gt;National, state and territory population, June 2022&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For &lt;b&gt;fertility&lt;/b&gt;, the total fertility rate (at the national level) is based on the medium assumption used in &lt;i&gt;Population Projections, Australia, 2022 (base) to 2071&lt;/i&gt;, of 1.6 babies per woman being phased in from 2022 levels over five years to 2027, before remaining steady for the remainder of the projection span. Observed state/territory, and greater capital city level fertility differentials were applied to the national data so that established trends in the state and capital city/rest of state relativities were preserved.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Mortality&lt;/b&gt; rates are based on the medium assumption used in &lt;i&gt;Population Projections, Australia, 2022 (base) to 2071&lt;/i&gt;, and assume that mortality rates will continue to decline across Australia with state/territory differentials persisting. State/territory and capital city/rest of state differentials were used to ensure projected deaths are consistent with the historical trend.&lt;/p&gt;
+&lt;p&gt;Annual &lt;b&gt;net overseas migration&lt;/b&gt; (NOM) is based on the medium assumption used in &lt;i&gt;Population Projections, Australia, 2022 (base) to 2071&lt;/i&gt;, with an assumed gain (at the national level) of 400,000 in 2022-23, increasing to 315,000 in 2023-24, then declining to 225,000 in 2026-27, after which NOM is assumed to remain constant. State and capital city/rest of state shares are based on a weighted average of NOM data from 2010 to 2019 at the state and territory level to account for the impact of COVID-19.&lt;/p&gt;
+&lt;p&gt;For&lt;b&gt; internal migration&lt;/b&gt;, net gains and losses from states and territories and capital city/rest of state regions are based on the medium assumption used in &lt;i&gt;Population Projections, Australia, 2022 (base) to 2071&lt;/i&gt;, and assume that net interstate migration will trend towards long-term historic average flows.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Projections – Statistical Areas Level 2&lt;/b&gt;&lt;br&gt;
+The &lt;b&gt;base population&lt;/b&gt; for each SA2 is the estimated resident population in each area by single year, at 30 June 2022, as published in &lt;a href="https://www.abs.gov.au/statistics/people/population/regional-population-age-and-sex/2022" target="_blank"&gt;Regional population by age and sex, 2022&lt;/a&gt; on 28 September 2023.&lt;/p&gt;
+&lt;p&gt;The SA2-level &lt;b&gt;fertility&lt;/b&gt; and &lt;b&gt;mortality&lt;/b&gt; assumptions were derived by combining the medium scenario state/territory assumptions from &lt;i&gt;Population Projections, Australia, 2022 (base) to 2071&lt;/i&gt;, with recent fertility and mortality trends in each SA2 based on annual births (by sex) and deaths (by age and sex) published in &lt;a href="https://www.abs.gov.au/statistics/people/population/regional-population/2021-22" target="_blank"&gt;Regional Population, 2021-22&lt;/a&gt; and &lt;i&gt;Regional Population by Age and Sex, 2022&lt;/i&gt;.&lt;/p&gt;
+&lt;p&gt;Assumed &lt;b&gt;overseas&lt;/b&gt; and &lt;b&gt;internal migration&lt;/b&gt; for each SA2 is based on SA2-specific annual overseas and internal arrivals and departures estimates published in &lt;i&gt;Regional Population, 2021-22&lt;/i&gt; and &lt;i&gt;Regional Population by Age and Sex, 2022&lt;/i&gt;. The internal migration data was strengthened with SA2-specific data from the 2021 Census, based on the usual residence one year before Census night question. Assumptions were applied by SA2, age and sex.&lt;/p&gt;
+&lt;p&gt;Assumptions were adjusted for some SA2s, to provide more plausible future population levels, and age and sex distribution changes, including areas where populations may not age over time, for example due to significant resident student and defence force populations. Most assumption adjustments were made via the internal migration component. For some SA2s with zero or a very small population base, but where significant population growth is expected, replacement migration age/sex profiles were applied.&lt;/p&gt;
+&lt;p&gt;All SA2-level components and projected projections are constrained to the medium series of capital city/rest of state data in &lt;i&gt;Population Projections, Australia, 2022 (base) to 2071&lt;/i&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Nature of projections and considerations for usage&lt;/b&gt;&lt;br&gt;
+The nature of the projection method and inherent fluctuations in population dynamics mean that care should be taken when using and interpreting the projection results. The projections are not forecasts but rather illustrate future changes which would occur if the stated assumptions were to apply over the projection period.&lt;/p&gt;
+&lt;p&gt;These projections do not attempt to allow for non-demographic factors such as major government policy decisions, economic factors, catastrophes, wars and pandemics, which may affect future demographic behaviour.&lt;/p&gt;
+&lt;p&gt;To illustrate a range of possible outcomes, alternative projection series for national, state/territory and capital city/rest of state areas, using different combinations of fertility, mortality, overseas and internal migration assumptions, are prepared. Alternative series are published in &lt;i&gt;Population Projections, Australia, 2022 (base) to 2071&lt;/i&gt;. Only one series of SA2-level projections was prepared for this product.&lt;/p&gt;
+&lt;p&gt;Population projections can take account of planning and other decisions by governments known at the time the projections were derived, including sub-state projections published by each state and territory government. The ABS generally does not have access to the policies or decisions of commonwealth, state and local governments and businesses that assist in accurately forecasting small area populations.&lt;/p&gt;
+&lt;p&gt;Migration, especially internal migration, accounts for the majority of projected population change for most SA2s. Volatile and unpredictable small area migration trends, especially in the short-term, can have a significant effect on longer-term projection results. Care therefore should be taken with SA2s with small total populations.&lt;/p&gt;
+&lt;p&gt;With the exception of areas with high planned population growth, SA2s with a base total population of less than 500 have generally been held constant for the projection period in this product as their populations are too small to be reliably projected at all. These SA2s are listed in the &lt;a href="https://statmaps.abs.gov.au/portal/home/item.html?id=c97c85d758b74a6a88220cc7c1a8c6ed" target="_blank"&gt;appendix&lt;/a&gt;.
+&lt;p&gt;The base (2022) SA2 population estimates and post-2022 projections include small artificial cells, including 1s and 2s. These are the result of a confidentialisation process and forced additivity, to control SA2 and capital city/rest of state totals, being applied to their original values.&lt;/p&gt;
+&lt;p&gt;SA2s in this product are based on the Australian Statistical Geography Standard (ASGS) boundaries as at the 2021 Census (ASGS Edition 3). For further information, see &lt;a href="https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026" target="_blank"&gt;Australian Statistical Geography Standard (ASGS) Edition 3&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;Data and geography references &lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Source data publication: &lt;a href="https://www.abs.gov.au/statistics/people/population/population-projections-australia/2022-base-2071" target="_blank"&gt;Population Projections, Australia, 2022 (base) to 2071&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Geographic boundary information: &lt;a href="https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026" target="_blank"&gt;Australian Statistical Geography Standard (ASGS) Edition 3&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Further information: &lt;a href="https://www.abs.gov.au/methodologies/population-projections-australia-methodology/2022-base-2071" target="_blank"&gt;Population Projections, Australia methodology&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Source: &lt;a href="https://www.abs.gov.au/" target="_blank"&gt;Australian Bureau of Statistics (ABS)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;Made possible by the Digital Atlas of Australia&lt;/b&gt; 
+&lt;br&gt;
+The &lt;a href="https://digital.atlas.gov.au/" target="_blank"&gt;Digital Atlas of Australia&lt;/a&gt; is a key Australian Government initiative being led by Geoscience Australia, highlighted in the &lt;a href="https://www.dataanddigital.gov.au/" target="_blank"&gt;Data and Digital Government Strategy&lt;/a&gt;. It brings together trusted datasets from across government in an interactive, secure, and easy-to-use geospatial platform. The Australian Bureau of Statistics (ABS) is working in partnership with Geoscience Australia to establish a set of web services to make ABS data available in the Digital Atlas of Australia. 
+&lt;/p&gt;	
+&lt;p&gt;
+&lt;b&gt;Contact the Australian Bureau of Statistics&lt;/b&gt;
+&lt;ul&gt; 
+	&lt;li&gt;Email &lt;a href="mailto:geography@abs.gov.au"&gt;geography@abs.gov.au&lt;/a&gt; if you have any questions or feedback about this web service.
+	&lt;li&gt;&lt;a href="https://www.subscribe.abs.gov.au/geospatialnews" target="_blank"&gt;Subscribe&lt;/a&gt; to get updates on ABS web services and geospatial products.
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;Privacy at the Australian Bureau of Statistics&lt;/b&gt;
+&lt;br&gt;Read how the ABS manages personal information - &lt;a href="https://www.abs.gov.au/about/legislation-and-policy/privacy/privacy-abs" target="_blank"&gt;ABS privacy policy&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/div&gt;</idAbs>
+		<idPurp>This dataset shows the projected population growth relative to the 2022 base year by year by SA2 (Statistical Area Level 2) projected to 2032.</idPurp>
+		<idCredit>Australian Bureau of Statistics (ABS)</idCredit>
+		<idPoC>
+			<role>
+				<RoleCd value="002">
+				</RoleCd>
+			</role>
+			<rpOrgName>Australian Bureau of Statistics</rpOrgName>
+			<rpCntInfo>
+				<cntAddress>
+					<eMailAdd>geography@abs.gov.au</eMailAdd>
+				</cntAddress>
+			</rpCntInfo>
+		</idPoC>
+		<resMaint>
+			<maintFreq>
+				<MaintFreqCd value="011">
+				</MaintFreqCd>
+			</maintFreq>
+			<maintCont>
+				<role>
+					<RoleCd value="002">
+					</RoleCd>
+				</role>
+				<rpOrgName>Australian Bureau of Statistics</rpOrgName>
+				<rpCntInfo>
+					<cntAddress>
+						<eMailAdd>geography@abs.gov.au</eMailAdd>
+					</cntAddress>
+				</rpCntInfo>
+			</maintCont>
+		</resMaint>
+		<otherKeys>
+			<keyword>ABS</keyword>
+			<keyword>Australian Bureau of Statistics</keyword>
+			<keyword>Population</keyword>
+			<keyword>Projections</keyword>
+			<keyword>People</keyword>
+			<keyword>ERP</keyword>
+			<keyword>Statistical Area Level 2</keyword>
+			<keyword>SA2</keyword>
+		</otherKeys>
+		<searchKeys>
+			<keyword>ABS</keyword>
+			<keyword>Australian Bureau of Statistics</keyword>
+			<keyword>Population</keyword>
+			<keyword>Projections</keyword>
+			<keyword>People</keyword>
+			<keyword>ERP</keyword>
+			<keyword>Statistical Area Level 2</keyword>
+			<keyword>SA2</keyword>
+		</searchKeys>
+		<resConst>
+			<Consts>
+				<useLimit>&lt;p&gt;Copyright and creative commons of CC BY 4.0: &lt;a href="https://www.abs.gov.au/website-privacy-copyright-and-disclaimer" target="_blank"&gt;Website privacy, copyright and disclaimer ABS copyright&lt;/a&gt; &lt;br /&gt;
+Legal Authority: &lt;a href="https://www.abs.gov.au/about/legislation-and-policy/legislative-framework" target="_blank"&gt;Census and Statistics Act 1905&lt;/a&gt; &lt;br /&gt;
+Security Classification: Official &lt;br /&gt;
+No sensitive data &lt;/p&gt;</useLimit>
+			</Consts>
+		</resConst>
+		<spatRpType>
+			<SpatRepTypCd value="001">
+			</SpatRepTypCd>
+		</spatRpType>
+		<tpCat>
+			<TopicCatCd value="016">
+			</TopicCatCd>
+		</tpCat>
+		<dataExt>
+			<geoEle>
+				<GeoBndBox>
+					<exTypeCode>true</exTypeCode>
+					<westBL>96.816951630000005</westBL>
+					<eastBL>167.99803924</eastBL>
+					<southBL>-43.740496569999998</southBL>
+					<northBL>-9.1421625199999994</northBL>
+				</GeoBndBox>
+			</geoEle>
+			<tempEle>
+				<TempExtent>
+					<exTemp>
+						<TM_Instant>
+							<tmPosition>30/06/2022 to 30/06/2032</tmPosition>
+						</TM_Instant>
+					</exTemp>
+				</TempExtent>
+			</tempEle>
+		</dataExt>
+		<dataLang>
+			<languageCode value="eng">
+			</languageCode>
+			<countryCode value="AU">
+			</countryCode>
+		</dataLang>
+		<dataChar>
+			<CharSetCd value="004">
+			</CharSetCd>
+		</dataChar>
+	</dataIdInfo>
+	<mdMaint>
+		<maintFreq>
+			<MaintFreqCd value="011">
+			</MaintFreqCd>
+		</maintFreq>
+	</mdMaint>
+	<mdConst>
+		<Consts>
+			<useLimit>&lt;p&gt;Copyright and creative commons of CC BY 4.0: &lt;a href="https://www.abs.gov.au/website-privacy-copyright-and-disclaimer" target="_blank"&gt;Website privacy, copyright and disclaimer ABS copyright&lt;/a&gt; &lt;br /&gt;
+Legal Authority: &lt;a href="https://www.abs.gov.au/about/legislation-and-policy/legislative-framework" target="_blank"&gt;Census and Statistics Act 1905&lt;/a&gt; &lt;br /&gt;
+Security Classification: Official &lt;br /&gt;
+No sensitive data &lt;/p&gt;</useLimit>
+		</Consts>
+	</mdConst>
+	<dqInfo>
+		<dataLineage>
+			<statement>https://www.abs.gov.au/methodologies/population-projections-australia-methodology/2022-base-2071</statement>
+		</dataLineage>
+		<dqScope>
+			<scpLvl>
+				<ScopeCd value="005">
+				</ScopeCd>
+			</scpLvl>
+		</dqScope>
+	</dqInfo>
+	<refSysInfo>
+		<RefSystem>
+			<refSysID>
+				<identCode code="7844">
+				</identCode>
+				<idCodeSpace>EPSG</idCodeSpace>
+			</refSysID>
+		</RefSystem>
+	</refSysInfo>
+	<contInfo>
+		<ERROR>MD_FeatureCatalogue</ERROR>
+	</contInfo>
+	<distInfo>
+		<distFormat>
+			<formatName Sync="TRUE">File Geodatabase Feature Class</formatName>
+		</distFormat>
+	</distInfo>
+	<spatRepInfo>
+		<VectSpatRep>
+			<geometObjs>
+                                ABS_SA2_proj_pop_cby_2232
+
+                
+                <geoObjTyp>
+					<GeoObjTypCd Sync="TRUE" value="002">
+					</GeoObjTypCd>
+				</geoObjTyp>
+				<geoObjCnt Sync="TRUE">2473</geoObjCnt>
+			</geometObjs>
+			<topLvl>
+				<TopoLevCd Sync="TRUE" value="001">
+				</TopoLevCd>
+			</topLvl>
+		</VectSpatRep>
+	</spatRepInfo>
+	<spdoinfo>
+		<ptvctinf>
+			<esriterm>
+                                ABS_SA2_proj_pop_cby_2232
+
+                
+                <efeatyp Sync="TRUE">Simple</efeatyp>
+				<efeageom Sync="TRUE" code="4">
+				</efeageom>
+				<esritopo Sync="TRUE">FALSE</esritopo>
+				<efeacnt Sync="TRUE">2473</efeacnt>
+				<spindex Sync="TRUE">TRUE</spindex>
+				<linrefer Sync="TRUE">FALSE</linrefer>
+			</esriterm>
+		</ptvctinf>
+	</spdoinfo>
+	<eainfo>
+		<detailed>
+                        ABS_SA2_proj_pop_cby_2232
+
+            
+            <enttyp>
+				<enttypl Sync="TRUE">ABS_SA2_proj_pop_cby_2232</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt>
+				<enttypc Sync="TRUE">2473</enttypc>
+				<enttypd>ABS_SA2_proj_pop_cby_2232</enttypd>
+				<enttypds>Australian Bureau of Statistics</enttypds>
+			</enttyp>
+			<attr>
+				<attrlabl Sync="TRUE">SA2_CODE_2021</attrlabl>
+				<attalias Sync="TRUE">Statistical Areas Level 2 2021 code</attalias>
+				<attrdef Sync="TRUE">2021 Statistical Areas Level 2 (SA2) codes from the Australian Statistical Geography Standard (ASGS), Edition 3. SA2s are medium-sized general purpose areas built to represent communities that interact together socially and economically. </attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">SA2_NAME_2021</attrlabl>
+				<attalias Sync="TRUE">Statistical Areas Level 2 2021 name</attalias>
+				<attrdef Sync="TRUE">2021 Statistical Areas Level 2 (SA2) names from the Australian Statistical Geography Standard (ASGS), Edition 3. SA2s are medium-sized general purpose areas built to represent communities that interact together socially and economically. </attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">AREA_ALBERS_SQKM</attrlabl>
+				<attalias Sync="TRUE">Area in square kilometres</attalias>
+				<attrdef Sync="TRUE">The area of a region in square kilometres, based on the Albers equal area conic projection.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ASGS_LOCI_URI_2021</attrlabl>
+				<attalias Sync="TRUE">Uniform Resource Identifier</attalias>
+				<attrdef Sync="TRUE">A uniform resource identifier can be used in web linked applications for data integration. </attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PRJ_PERSONS_22</attrlabl>
+				<attalias Sync="TRUE">The base year for projected persons (2022)</attalias>
+				<attrdef Sync="TRUE">The base year for projected persons (2022).</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PRJ_PERSONS_23</attrlabl>
+				<attalias Sync="TRUE">Projected persons (2023)</attalias>
+				<attrdef Sync="TRUE">The projected persons for 2023.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PRJ_PERSONS_24</attrlabl>
+				<attalias Sync="TRUE">Projected persons (2024)</attalias>
+				<attrdef Sync="TRUE">The projected persons for 2024.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PRJ_PERSONS_25</attrlabl>
+				<attalias Sync="TRUE">Projected persons (2025)</attalias>
+				<attrdef Sync="TRUE">The projected persons for 2025.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PRJ_PERSONS_26</attrlabl>
+				<attalias Sync="TRUE">Projected persons (2026)</attalias>
+				<attrdef Sync="TRUE">The projected persons for 2026.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PRJ_PERSONS_27</attrlabl>
+				<attalias Sync="TRUE">Projected persons (2027)</attalias>
+				<attrdef Sync="TRUE">The projected persons for 2027.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PRJ_PERSONS_28</attrlabl>
+				<attalias Sync="TRUE">Projected persons (2028)</attalias>
+				<attrdef Sync="TRUE">The projected persons for 2028.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PRJ_PERSONS_29</attrlabl>
+				<attalias Sync="TRUE">Projected persons (2029)</attalias>
+				<attrdef Sync="TRUE">The projected persons for 2029.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PRJ_PERSONS_30</attrlabl>
+				<attalias Sync="TRUE">Projected persons (2030)</attalias>
+				<attrdef Sync="TRUE">The projected persons for 2030.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PRJ_PERSONS_31</attrlabl>
+				<attalias Sync="TRUE">Projected persons (2031)</attalias>
+				<attrdef Sync="TRUE">The projected persons for 2031.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PRJ_PERSONS_32</attrlabl>
+				<attalias Sync="TRUE">Projected persons (2032)</attalias>
+				<attrdef Sync="TRUE">The projected persons for 2032.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_ANNUAL_22</attrlabl>
+				<attalias Sync="TRUE">The base year for annual population change (2022)</attalias>
+				<attrdef Sync="TRUE">The base year for annual population change (2022).</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_ANNUAL_23</attrlabl>
+				<attalias Sync="TRUE">Annual population change (2023)</attalias>
+				<attrdef Sync="TRUE">The annual population change for 2023 since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_ANNUAL_24</attrlabl>
+				<attalias Sync="TRUE">Annual population change (2024)</attalias>
+				<attrdef Sync="TRUE">The annual population change for 2024 since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_ANNUAL_25</attrlabl>
+				<attalias Sync="TRUE">Annual population change (2025)</attalias>
+				<attrdef Sync="TRUE">The annual population change for 2025 since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_ANNUAL_26</attrlabl>
+				<attalias Sync="TRUE">Annual population change (2026)</attalias>
+				<attrdef Sync="TRUE">The annual population change for 2026 since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_ANNUAL_27</attrlabl>
+				<attalias Sync="TRUE">Annual population change (2027)</attalias>
+				<attrdef Sync="TRUE">The annual population change for 2027 since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_ANNUAL_28</attrlabl>
+				<attalias Sync="TRUE">Annual population change (2028)</attalias>
+				<attrdef Sync="TRUE">The annual population change for 2028 since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_ANNUAL_29</attrlabl>
+				<attalias Sync="TRUE">Annual population change (2029)</attalias>
+				<attrdef Sync="TRUE">The annual population change for 2029 since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_ANNUAL_30</attrlabl>
+				<attalias Sync="TRUE">Annual population change (2030)</attalias>
+				<attrdef Sync="TRUE">The annual population change for 2030 since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_ANNUAL_31</attrlabl>
+				<attalias Sync="TRUE">Annual population change (2031)</attalias>
+				<attrdef Sync="TRUE">The annual population change for 2031 since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_ANNUAL_32</attrlabl>
+				<attalias Sync="TRUE">Annual population change (2032)</attalias>
+				<attrdef Sync="TRUE">The annual population change for 2032 since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_BASE_22</attrlabl>
+				<attalias Sync="TRUE">The base year for population change (2022)</attalias>
+				<attrdef Sync="TRUE">The base year for population change (2022).</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_BASE_23</attrlabl>
+				<attalias Sync="TRUE">Relative population change (2023)</attalias>
+				<attrdef Sync="TRUE">The population change for 2023 relative to the 2022 base year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_BASE_24</attrlabl>
+				<attalias Sync="TRUE">Relative population change (2024)</attalias>
+				<attrdef Sync="TRUE">The population change for 2024 relative to the 2022 base year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_BASE_25</attrlabl>
+				<attalias Sync="TRUE">Relative population change (2025)</attalias>
+				<attrdef Sync="TRUE">The population change for 2025 relative to the 2022 base year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_BASE_26</attrlabl>
+				<attalias Sync="TRUE">Relative population change (2026)</attalias>
+				<attrdef Sync="TRUE">The population change for 2026 relative to the 2022 base year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_BASE_27</attrlabl>
+				<attalias Sync="TRUE">Relative population change (2027)</attalias>
+				<attrdef Sync="TRUE">The population change for 2027 relative to the 2022 base year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_BASE_28</attrlabl>
+				<attalias Sync="TRUE">Relative population change (2028)</attalias>
+				<attrdef Sync="TRUE">The population change for 2028 relative to the 2022 base year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_BASE_29</attrlabl>
+				<attalias Sync="TRUE">Relative population change (2029)</attalias>
+				<attrdef Sync="TRUE">The population change for 2029 relative to the 2022 base year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_BASE_30</attrlabl>
+				<attalias Sync="TRUE">Relative population change (2030)</attalias>
+				<attrdef Sync="TRUE">The population change for 2030 relative to the 2022 base year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_BASE_31</attrlabl>
+				<attalias Sync="TRUE">Relative population change (2031)</attalias>
+				<attrdef Sync="TRUE">The population change for 2031 relative to the 2022 base year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CHG_BASE_32</attrlabl>
+				<attalias Sync="TRUE">Relative population change (2032)</attalias>
+				<attrdef Sync="TRUE">The population change for 2032 relative to the 2022 base year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_ANNUAL_22</attrlabl>
+				<attalias Sync="TRUE">The base year for percentage annual population change (2022)</attalias>
+				<attrdef Sync="TRUE">The base year for annual population change (2022) as a percentage.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_ANNUAL_23</attrlabl>
+				<attalias Sync="TRUE">Percentage annual population change (2023)</attalias>
+				<attrdef Sync="TRUE">The annual population change (2023) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_ANNUAL_24</attrlabl>
+				<attalias Sync="TRUE">Percentage annual population change (2024)</attalias>
+				<attrdef Sync="TRUE">The annual population change (2024) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_ANNUAL_25</attrlabl>
+				<attalias Sync="TRUE">Percentage annual population change (2025)</attalias>
+				<attrdef Sync="TRUE">The annual population change (2025) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_ANNUAL_26</attrlabl>
+				<attalias Sync="TRUE">Percentage annual population change (2026)</attalias>
+				<attrdef Sync="TRUE">The annual population change (2026) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_ANNUAL_27</attrlabl>
+				<attalias Sync="TRUE">Percentage annual population change (2027)</attalias>
+				<attrdef Sync="TRUE">The annual population change (2027) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_ANNUAL_28</attrlabl>
+				<attalias Sync="TRUE">Percentage annual population change (2028)</attalias>
+				<attrdef Sync="TRUE">The annual population change (2028) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_ANNUAL_29</attrlabl>
+				<attalias Sync="TRUE">Percentage annual population change (2029)</attalias>
+				<attrdef Sync="TRUE">The annual population change (2029) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_ANNUAL_30</attrlabl>
+				<attalias Sync="TRUE">Percentage annual population change (2030)</attalias>
+				<attrdef Sync="TRUE">The annual population change (2030) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_ANNUAL_31</attrlabl>
+				<attalias Sync="TRUE">Percentage annual population change (2031)</attalias>
+				<attrdef Sync="TRUE">The annual population change (2031) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_ANNUAL_32</attrlabl>
+				<attalias Sync="TRUE">Percentage annual population change (2032)</attalias>
+				<attrdef Sync="TRUE">The annual population change (2032) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_BASE_22</attrlabl>
+				<attalias Sync="TRUE">The base year for percentage relative population change (2022)</attalias>
+				<attrdef Sync="TRUE">The base year for relative population change (2022) as a percentage.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_BASE_23</attrlabl>
+				<attalias Sync="TRUE">Percentage relative population change (2023)</attalias>
+				<attrdef Sync="TRUE">The relative population change (2023) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_BASE_24</attrlabl>
+				<attalias Sync="TRUE">Percentage relative population change (2024)</attalias>
+				<attrdef Sync="TRUE">The relative population change (2024) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_BASE_25</attrlabl>
+				<attalias Sync="TRUE">Percentage relative population change (2025)</attalias>
+				<attrdef Sync="TRUE">The relative population change (2025) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_BASE_26</attrlabl>
+				<attalias Sync="TRUE">Percentage relative population change (2026)</attalias>
+				<attrdef Sync="TRUE">The relative population change (2026) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_BASE_27</attrlabl>
+				<attalias Sync="TRUE">Percentage relative population change (2027)</attalias>
+				<attrdef Sync="TRUE">The relative population change (2027) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_BASE_28</attrlabl>
+				<attalias Sync="TRUE">Percentage relative population change (2028)</attalias>
+				<attrdef Sync="TRUE">The relative population change (2028) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_BASE_29</attrlabl>
+				<attalias Sync="TRUE">Percentage relative population change (2029)</attalias>
+				<attrdef Sync="TRUE">The relative population change (2029) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_BASE_30</attrlabl>
+				<attalias Sync="TRUE">Percentage relative population change (2030)</attalias>
+				<attrdef Sync="TRUE">The relative population change (2030) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_BASE_31</attrlabl>
+				<attalias Sync="TRUE">Percentage relative population change (2031)</attalias>
+				<attrdef Sync="TRUE">The relative population change (2031) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PCT_CHG_BASE_32</attrlabl>
+				<attalias Sync="TRUE">Percentage relative population change (2032)</attalias>
+				<attrdef Sync="TRUE">The relative population change (2032) as a percentage since the last year.</attrdef>
+				<attrdefs Sync="TRUE">Australian Bureau of Statistics</attrdefs>
+			</attr>
+		</detailed>
+	</eainfo>
+	<mdDateSt Sync="TRUE">2025-05-13</mdDateSt>
+</metadata>
