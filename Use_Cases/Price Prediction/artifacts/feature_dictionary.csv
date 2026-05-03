@@ -1,0 +1,30 @@
+column,dtype,source,missing_pct,description
+Car ID,int64,original_dataset,0.0,
+Brand,str,original_dataset,0.0,
+Year,Int64,original_dataset,0.0,
+Engine Size,float64,original_dataset,0.0,
+Fuel Type,str,original_dataset,0.0,
+Transmission,str,original_dataset,0.0,
+Mileage,int64,original_dataset,0.0,
+Condition,str,original_dataset,0.0,
+Price,float64,original_dataset,0.0,
+Model,str,original_dataset,0.0,
+Log_Price,float64,original_dataset,0.0,
+car_age,int64,engineered_internal,0.0,Vehicle age in years from reference year.
+age_squared,int64,engineered_internal,0.0,Non-linear age signal.
+log_mileage,float64,engineered_internal,0.0,Log-scaled mileage.
+mileage_per_year,float64,engineered_internal,0.0,Mileage normalized by age.
+condition_score,int64,engineered_internal,0.0,"Ordinal condition score: Used=1, Like New=2, New=3."
+brand_model,str,derived,0.0,
+fuel_transmission,str,derived,0.0,
+mileage_bin,str,derived,0.0,
+engine_size_bin,str,derived,0.0,
+condition_mileage_bin,str,derived,0.0,
+new_high_mileage_flag,int64,engineered_internal,0.0,1 when condition is New and mileage > 50000.
+ev_engine_size_mismatch_flag,int64,engineered_internal,0.0,1 when electric vehicle has non-trivial engine size.
+manual_ev_flag,int64,engineered_internal,0.0,1 when electric vehicle has manual transmission.
+weather_temp_avg_c,float64,internet_enrichment,0.0,Yearly average temperature proxy (Open-Meteo).
+weather_precip_total_mm,float64,internet_enrichment,0.0,Yearly total precipitation proxy (Open-Meteo).
+brent_oil_usd_per_barrel,float64,internet_enrichment,0.0,Yearly average Brent oil price proxy (FRED).
+au_cpi_index,float64,internet_enrichment,0.0,Australia CPI index proxy (World Bank).
+energy_pressure_index,float64,internet_enrichment,0.0,Composite z-score of cost pressure proxies.
