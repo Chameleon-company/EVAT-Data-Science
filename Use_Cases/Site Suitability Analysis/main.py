@@ -3,7 +3,7 @@ import pandas as pd
 from geopy.distance import geodesic
 
 # Load the dataset
-df = pd.read_csv("priority_sites_version2.csv")
+df = pd.read_csv("priority_sites.csv")
 
 app = FastAPI(title="EVAT Site Suitability API")
 
