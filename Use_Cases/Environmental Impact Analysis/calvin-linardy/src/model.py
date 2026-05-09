@@ -187,9 +187,9 @@ def train(n_samples: int = 8_000, seed: int = 42) -> dict:
 
     print("\nTraining CatBoost model...")
     model = CatBoostRegressor(
-        iterations=400,
-        depth=5,
-        learning_rate=0.05,
+        iterations=500,
+        depth=4,
+        learning_rate=0.08,
         l2_leaf_reg=1.0,
         random_seed=seed,
         verbose=0,
