@@ -2,15 +2,43 @@
 data_loader.py
 --------------
 Utilities for loading and validating the vehicle and emission-factor datasets.
-All paths are relative so the module works regardless of where the repo is cloned.
+
+Data source: MongoDB Atlas (EVAT database) when MONGO_URI env var is set.
+Falls back to local CSV files when MONGO_URI is not set, so train.py and
+local development work without a database connection.
+
+MongoDB collections used:
+  environmental_impact_ev_vehicles
+  environmental_impact_ice_vehicles
+  grid_emission_factors
+  fuel_emission_factors
 """
 
+import os
 from pathlib import Path
+
 import pandas as pd
 
-# Root of the calvin-linardy package (two levels up from this file: src/ → root)
 _PKG_ROOT = Path(__file__).resolve().parent.parent
 _DATA_DIR = _PKG_ROOT / "data"
+_MONGO_URI = os.getenv("MONGO_URI")
+_DB_NAME = "EVAT"
+
+_mongo_client = None
+
+
+def _get_db():
+    global _mongo_client
+    if _mongo_client is None:
+        from pymongo import MongoClient
+        _mongo_client = MongoClient(_MONGO_URI)
+    return _mongo_client[_DB_NAME]
+
+
+def _load_from_mongo(collection: str) -> pd.DataFrame:
+    db = _get_db()
+    docs = list(db[collection].find({}, {"_id": 0}))
+    return pd.DataFrame(docs)
 
 
 def _load_csv(filename: str) -> pd.DataFrame:
@@ -18,9 +46,15 @@ def _load_csv(filename: str) -> pd.DataFrame:
     if not path.exists():
         raise FileNotFoundError(
             f"Dataset not found: {path}\n"
-            "Run the project from its root directory or check SETUP_GUIDE.md."
+            "Set MONGO_URI env var or check SETUP_GUIDE.md."
         )
     return pd.read_csv(path)
+
+
+def _load(mongo_collection: str, csv_filename: str) -> pd.DataFrame:
+    if _MONGO_URI:
+        return _load_from_mongo(mongo_collection)
+    return _load_csv(csv_filename)
 
 
 def load_ev_vehicles() -> pd.DataFrame:
@@ -32,7 +66,7 @@ def load_ev_vehicles() -> pd.DataFrame:
     Make, Model, Year, Variant, BodyStyle, Segment,
     Battery_kWh, Range_km_WLTP, Consumption_kWh_per_100km
     """
-    df = _load_csv("ev_vehicles.csv")
+    df = _load("environmental_impact_ev_vehicles", "ev_vehicles.csv")
     df["Consumption_kWh_per_100km"] = pd.to_numeric(
         df["Consumption_kWh_per_100km"], errors="coerce"
     )
@@ -50,7 +84,7 @@ def load_ice_vehicles() -> pd.DataFrame:
     Make, Model, Year, Variant, FuelType, BodyStyle, Segment,
     Consumption_Combined_L100km, CO2_Combined_gkm
     """
-    df = _load_csv("ice_vehicles.csv")
+    df = _load("environmental_impact_ice_vehicles", "ice_vehicles.csv")
     df["Consumption_Combined_L100km"] = pd.to_numeric(
         df["Consumption_Combined_L100km"], errors="coerce"
     )
@@ -60,12 +94,12 @@ def load_ice_vehicles() -> pd.DataFrame:
 
 def load_grid_factors() -> pd.DataFrame:
     """Return state-level grid emission factors as a DataFrame."""
-    return _load_csv("grid_emission_factors.csv")
+    return _load("grid_emission_factors", "grid_emission_factors.csv")
 
 
 def load_fuel_factors() -> pd.DataFrame:
     """Return fuel-type emission factors as a DataFrame."""
-    return _load_csv("fuel_emission_factors.csv")
+    return _load("fuel_emission_factors", "fuel_emission_factors.csv")
 
 
 def get_ev_vehicle(make: str, model: str, year: int = None, variant: str = None) -> pd.Series | None:
