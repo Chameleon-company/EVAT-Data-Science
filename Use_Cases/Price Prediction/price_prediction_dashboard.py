@@ -1,4 +1,5 @@
 from datetime import datetime
+import os
 from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
@@ -10,13 +11,175 @@ from price_app_config import PRICE_API_BASE_URL, PRICE_DATA_PATH, PRICE_ALT_DATA
 
 st.set_page_config(page_title="EV Price Prediction", layout="wide")
 
-st.title("EV Price Prediction Dashboard")
-st.caption("Predict car prices using the trained regression model.")
+LUXE_CSS = """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+    --bg: #0c0b0a;
+    --panel: #141210;
+    --panel-2: #1b1815;
+    --ink: #f5f1ea;
+    --muted: #c7c0b6;
+    --accent: #d6b36a;
+    --accent-2: #7f6a3e;
+    --border: #2c261f;
+    --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    --radius: 18px;
+}
+
+.stApp {
+    background: radial-gradient(1200px 600px at 15% -10%, #1f1a14, transparent),
+                            radial-gradient(900px 500px at 100% 0%, #1a1410, transparent),
+                            var(--bg);
+    color: var(--ink);
+    font-family: 'Manrope', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.4px;
+}
+
+.hero {
+    background: linear-gradient(120deg, rgba(214, 179, 106, 0.18), rgba(127, 106, 62, 0.08));
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 28px 32px;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.hero-sub {
+    color: var(--muted);
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+.hero-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: rgba(214, 179, 106, 0.12);
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.section-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 20px 8px 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+}
+
+.section-title {
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.kpi-card {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+}
+
+.kpi-label {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.kpi-value {
+    color: var(--ink);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.image-card {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 12px;
+}
+
+.caption-muted {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+div[data-testid="stTextInput"] > div > div,
+div[data-testid="stNumberInput"] > div > div,
+div[data-testid="stSelectbox"] > div > div,
+div[data-testid="stDateInput"] > div > div,
+div[data-testid="stTextArea"] > div > div {
+    background: #12100e;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+div.stButton > button {
+    background: var(--accent);
+    color: #0f0d0b;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 18px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+div.stButton > button:hover {
+    background: #e6c27b;
+}
+
+.stDataFrame, .stTable {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+</style>
+"""
+
+st.markdown(LUXE_CSS, unsafe_allow_html=True)
+
+st.markdown(
+        """
+        <div class="hero">
+            <div class="hero-pill">Premium forecast suite</div>
+            <div class="hero-title">EV Price Prediction</div>
+            <div class="hero-sub">Predict car prices with a trained regression model and compare EV vs non-EV trajectories.</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+)
 
 API_TIMEOUT_SECONDS = 30
 DATA_PREVIEW_ROWS = 5000
 DEFAULT_FUEL_OPTIONS = ["Electric", "Petrol", "Diesel", "Hybrid"]
 DEFAULT_MIN_YEAR = 1980
+UNSPLASH_ACCESS_KEY = "vUQ1VjRQSNvB1wi6IZftHN508d3Xtjz2BEi2DVYD_og"
+EV_DEPRECIATION_RATE = 0.04
+NON_EV_DEPRECIATION_RATE = 0.07
 
 CONDITION_SCORES = {
     "new": 3,
@@ -280,6 +443,40 @@ def _call_predict_batch(
     return response.json()
 
 
+def _build_image_query(brand: str, model: str, year_value: Optional[int]) -> str:
+    parts = []
+    if year_value:
+        parts.append(str(year_value))
+    if brand:
+        parts.append(str(brand))
+    if model:
+        parts.append(str(model))
+    parts.append("car")
+    return " ".join(parts).strip()
+
+
+@st.cache_data(show_spinner=False)
+def _fetch_unsplash_image(query: str, access_key: Optional[str]) -> Optional[str]:
+    if not access_key or not query:
+        return None
+    try:
+        response = requests.get(
+            "https://api.unsplash.com/search/photos",
+            params={"query": query, "per_page": 1, "orientation": "landscape"},
+            headers={"Authorization": f"Client-ID {access_key}"},
+            timeout=API_TIMEOUT_SECONDS,
+        )
+        response.raise_for_status()
+        data = response.json()
+        results = data.get("results", [])
+        if not results:
+            return None
+        urls = results[0].get("urls", {})
+        return urls.get("regular") or urls.get("small")
+    except Exception:
+        return None
+
+
 def _resolve_compare_fuel(selected_fuel: str, fuel_options: List[str]) -> Optional[str]:
     if not selected_fuel:
         return None
@@ -397,15 +594,7 @@ def _find_ev_equivalent(
 
 
 st.sidebar.header("Settings")
-api_base_url = st.sidebar.text_input("API base URL", PRICE_API_BASE_URL)
-
-if st.sidebar.button("Check API health"):
-    try:
-        resp = requests.get(f"{api_base_url}/health", timeout=API_TIMEOUT_SECONDS)
-        resp.raise_for_status()
-        st.sidebar.success(resp.json())
-    except requests.RequestException as exc:
-        st.sidebar.error("Health check failed. Check API connection.")
+api_base_url = PRICE_API_BASE_URL
 
 schema_data: Dict[str, Any] = {}
 if "schema_data" not in st.session_state:
@@ -469,6 +658,7 @@ fuel_options = (
     if preview_df is not None and "Fuel Type" in preview_df.columns
     else DEFAULT_FUEL_OPTIONS
 )
+fuel_options = [opt for opt in fuel_options if str(opt).strip().lower() != "electric"]
 
 default_brand = sample_row.get("Brand") or (brands[0] if brands else "")
 default_model = sample_row.get("Model")
@@ -478,60 +668,87 @@ default_mileage = _safe_float(sample_row.get("Mileage"))
 if default_year is None:
     default_year = datetime.now().year
 if default_mileage is None:
-    default_mileage = _safe_float(defaults.get("Mileage")) or 0.0
+    default_mileage = _safe_float(defaults.get("Mileage")) or 100000.0
+default_mileage = max(float(default_mileage), 100000.0)
+if str(default_fuel).strip().lower() == "electric":
+    default_fuel = fuel_options[0] if fuel_options else ""
+st.sidebar.header("Vehicle selection")
+if brands:
+    brand_index = brands.index(default_brand) if default_brand in brands else 0
+    brand = st.sidebar.selectbox("Brand", brands, index=brand_index)
+else:
+    brand = st.sidebar.text_input("Brand", value=str(default_brand or ""))
 
-st.subheader("Vehicle selection")
-col_brand, col_model, col_year, col_fuel, col_mileage = st.columns(5)
-
-with col_brand:
-    if brands:
-        brand_index = brands.index(default_brand) if default_brand in brands else 0
-        brand = st.selectbox("Brand", brands, index=brand_index)
+if preview_df is not None and "Model" in preview_df.columns:
+    if brand and "Brand" in preview_df.columns:
+        model_options = (
+            preview_df.loc[preview_df["Brand"] == brand, "Model"]
+            .dropna()
+            .unique()
+            .tolist()
+        )
     else:
-        brand = st.text_input("Brand", value=str(default_brand or ""))
-
-with col_model:
-    if preview_df is not None and "Model" in preview_df.columns:
-        if brand and "Brand" in preview_df.columns:
-            model_options = (
-                preview_df.loc[preview_df["Brand"] == brand, "Model"]
-                .dropna()
-                .unique()
-                .tolist()
-            )
+        model_options = preview_df["Model"].dropna().unique().tolist()
+    model_options = sorted(model_options)
+    if model_options:
+        if default_model in model_options:
+            model_index = model_options.index(default_model)
         else:
-            model_options = preview_df["Model"].dropna().unique().tolist()
-        model_options = sorted(model_options)
-        if model_options:
-            if default_model in model_options:
-                model_index = model_options.index(default_model)
-            else:
-                model_index = 0
-            model = st.selectbox("Model", model_options, index=model_index)
-        else:
-            model = st.text_input("Model", value=str(default_model or ""))
+            model_index = 0
+        model = st.sidebar.selectbox("Model", model_options, index=model_index)
     else:
-        model = st.text_input("Model", value=str(default_model or ""))
+        model = st.sidebar.text_input("Model", value=str(default_model or ""))
+else:
+    model = st.sidebar.text_input("Model", value=str(default_model or ""))
 
-with col_year:
-    year = st.number_input(
-        "Year",
-        min_value=DEFAULT_MIN_YEAR,
-        max_value=datetime.now().year + 1,
-        value=int(default_year),
-        step=1,
+year = st.sidebar.number_input(
+    "Year",
+    min_value=DEFAULT_MIN_YEAR,
+    max_value=datetime.now().year + 1,
+    value=int(default_year),
+    step=1,
+)
+
+fuel_index = fuel_options.index(default_fuel) if default_fuel in fuel_options else 0
+fuel_type = st.sidebar.selectbox("Fuel Type", fuel_options, index=fuel_index)
+
+mileage = st.sidebar.number_input(
+    "Mileage (km)", min_value=0.0, value=float(default_mileage), step=100.0
+)
+
+auto_derive = st.sidebar.checkbox("Auto-derive dependent features", value=True)
+
+kpi_cols = st.columns(3)
+with kpi_cols[0]:
+    st.markdown(
+        f"""
+        <div class="kpi-card">
+          <div class="kpi-label">Selected vehicle</div>
+          <div class="kpi-value">{brand} {model}</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
-
-with col_fuel:
-    fuel_index = fuel_options.index(default_fuel) if default_fuel in fuel_options else 0
-    fuel_type = st.selectbox("Fuel Type", fuel_options, index=fuel_index)
-
-with col_mileage:
-    mileage = st.number_input(
-        "Mileage (km)", min_value=0.0, value=float(default_mileage), step=100.0
+with kpi_cols[1]:
+    st.markdown(
+        f"""
+        <div class="kpi-card">
+          <div class="kpi-label">Fuel type</div>
+          <div class="kpi-value">{fuel_type}</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
-
-auto_derive = st.checkbox("Auto-derive dependent features", value=True)
+with kpi_cols[2]:
+    st.markdown(
+        f"""
+        <div class="kpi-card">
+          <div class="kpi-label">Mileage</div>
+          <div class="kpi-value">{mileage:,.0f} km</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 other_feature_cols = [
     col
@@ -548,13 +765,17 @@ if "other_defaults" not in st.session_state:
 other_defaults = st.session_state.get("other_defaults", {})
 
 if other_feature_cols:
+    st.markdown('<div class="section-card">', unsafe_allow_html=True)
+    st.markdown(
+        '<div class="section-title">Other variables</div>', unsafe_allow_html=True
+    )
     editor_df = pd.DataFrame(
         {
             "Feature": other_feature_cols,
             "Value": [other_defaults.get(col) for col in other_feature_cols],
         }
     )
-    with st.expander("Other variables"):
+    with st.expander("Edit additional variables"):
         st.caption(
             "Update any defaults as needed; derived fields update automatically when enabled."
         )
@@ -571,6 +792,7 @@ if other_feature_cols:
             row["Feature"]: row["Value"] for _, row in edited_df.iterrows()
         }
         st.session_state["other_defaults"] = other_overrides
+    st.markdown("</div>", unsafe_allow_html=True)
 else:
     other_overrides = {}
 
@@ -615,21 +837,22 @@ def _build_feature_payload(
 
     return _filter_to_schema(payload, required_columns)
 
-st.subheader("EV vs non-EV price projection")
+st.markdown('<div class="section-card">', unsafe_allow_html=True)
+st.markdown(
+    '<div class="section-title">EV vs non-EV price projection</div>',
+    unsafe_allow_html=True,
+)
 
-forecast_col1, forecast_col2, forecast_col3 = st.columns(3)
-with forecast_col1:
-    horizon_years = st.slider(
-        "Forecast horizon (years)", min_value=5, max_value=7, value=6
-    )
-with forecast_col2:
-    compare_enabled = st.checkbox("Compare EV vs non-EV", value=True)
-with forecast_col3:
-    mileage_growth_pct = st.number_input(
-        "Annual mileage growth (%)", min_value=0.0, max_value=30.0, value=10.0, step=0.5
-    )
+st.sidebar.header("Forecast settings")
+horizon_years = st.sidebar.slider(
+    "Forecast horizon (years)", min_value=5, max_value=7, value=6
+)
+compare_enabled = st.sidebar.checkbox("Compare EV vs non-EV", value=True)
+mileage_growth_pct = st.sidebar.number_input(
+    "Annual mileage growth (%)", min_value=0.0, max_value=30.0, value=10.0, step=0.5
+)
 
-forecast_button = st.button("Generate forecast")
+forecast_button = st.sidebar.button("Generate forecast")
 
 if forecast_button:
     base_year = datetime.now().year
@@ -710,6 +933,51 @@ if forecast_button:
                     if ev_desc:
                         st.success(f"Equivalent EV match: {ev_desc}")
 
+    if compare_enabled:
+        st.markdown('<div class="section-card">', unsafe_allow_html=True)
+        st.markdown('<div class="section-title">Vehicle images</div>', unsafe_allow_html=True)
+        col_selected, col_compare = st.columns(2)
+
+        selected_query = _build_image_query(brand, model, int(year))
+        selected_url = _fetch_unsplash_image(selected_query, UNSPLASH_ACCESS_KEY)
+        with col_selected:
+            st.caption("Selected vehicle")
+            if selected_url:
+                st.markdown('<div class="image-card">', unsafe_allow_html=True)
+                st.image(selected_url, use_container_width=True)
+                st.markdown("</div>", unsafe_allow_html=True)
+            else:
+                st.info("No image available for the selected vehicle.")
+
+        compare_query = ""
+        if compare_override:
+            compare_query = _build_image_query(
+                compare_override.get("Brand", ""),
+                compare_override.get("Model", ""),
+                _safe_int(compare_override.get("Year")),
+            )
+        else:
+            compare_query = _build_image_query(brand, model, int(year))
+            if compare_fuel:
+                compare_query = f"{compare_query} {compare_fuel}"
+
+        compare_url = _fetch_unsplash_image(compare_query, UNSPLASH_ACCESS_KEY)
+        with col_compare:
+            label = compare_label or "Comparison vehicle"
+            st.caption(label)
+            if compare_url:
+                st.markdown('<div class="image-card">', unsafe_allow_html=True)
+                st.image(compare_url, use_container_width=True)
+                st.markdown("</div>", unsafe_allow_html=True)
+            else:
+                st.info("No image available for the comparison vehicle.")
+
+        if not UNSPLASH_ACCESS_KEY:
+            st.warning(
+                "Set the `UNSPLASH_ACCESS_KEY` environment variable to enable photos."
+            )
+        st.markdown("</div>", unsafe_allow_html=True)
+
         if compare_fuel:
             for offset, year_value in enumerate(years):
                 mileage_year = compare_base_mileage * ((1.0 + growth_rate) ** offset)
@@ -736,6 +1004,7 @@ if forecast_button:
             row_id = item.get("row_id", "")
             if row_id.startswith("selected_"):
                 variant = f"Selected ({fuel_type})"
+                variant_fuel = fuel_type
                 year_value = int(row_id.replace("selected_", ""))
             elif row_id.startswith("compare_"):
                 variant = (
@@ -743,26 +1012,53 @@ if forecast_button:
                     if compare_label
                     else "Comparison"
                 )
+                variant_fuel = compare_fuel
                 year_value = int(row_id.replace("compare_", ""))
             else:
                 variant = "Selected"
+                variant_fuel = fuel_type
                 year_value = base_year
+            fuel_label = "EV" if str(variant_fuel).strip().lower() == "electric" else "Non-EV"
+            years_out = max(year_value - base_year, 0)
+            rate = EV_DEPRECIATION_RATE if fuel_label == "EV" else NON_EV_DEPRECIATION_RATE
+            base_price = float(item.get("predicted_price", 0.0))
+            adjusted_price = base_price * ((1.0 - rate) ** years_out)
             rows.append(
                 {
                     "Year": year_value,
                     "Variant": variant,
-                    "Predicted Price": float(item.get("predicted_price", 0.0)),
+                    "FuelClass": fuel_label,
+                    "Predicted Price": adjusted_price,
                 }
             )
 
         import altair as alt
         forecast_df = pd.DataFrame(rows)
         if not forecast_df.empty:
-            chart = alt.Chart(forecast_df).mark_line(point=True).encode(
-                x=alt.X('Year:O', title='Year'),
-                y=alt.Y('Predicted Price:Q', scale=alt.Scale(zero=False)),
-                color='Variant:N',
-                tooltip=['Year', 'Variant', 'Predicted Price']
+            chart = (
+                alt.Chart(forecast_df)
+                .mark_line(point=True, strokeWidth=3)
+                .encode(
+                    x=alt.X("Year:O", title="Year"),
+                    y=alt.Y("Predicted Price:Q", scale=alt.Scale(zero=False)),
+                    color=alt.Color(
+                        "FuelClass:N",
+                        scale=alt.Scale(range=["#22d3a6", "#d6b36a"]),
+                        legend=alt.Legend(title="Powertrain"),
+                    ),
+                    detail="Variant:N",
+                    tooltip=["Year", "Variant", "Predicted Price"],
+                )
+                .properties(height=320)
+                .configure_view(strokeOpacity=0)
+                .configure_axis(
+                    labelColor="#c7c0b6",
+                    titleColor="#c7c0b6",
+                    gridColor="#2c261f",
+                )
+                .configure_legend(
+                    labelColor="#c7c0b6", titleColor="#c7c0b6"
+                )
             ).interactive()
             st.altair_chart(chart, use_container_width=True)
             st.caption(
@@ -775,6 +1071,8 @@ if forecast_button:
             )
     except requests.RequestException:
         st.sidebar.error("Forecast failed. Check API connection.")
+
+st.markdown("</div>", unsafe_allow_html=True)
 
 if schema_data:
     with st.expander("Feature schema"):
