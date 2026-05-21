@@ -29,15 +29,16 @@ def predict(req: TripRequest):
     start = (leg["start_location"]["lat"], leg["start_location"]["lng"])
     end   = (leg["end_location"]["lat"], leg["end_location"]["lng"])
     weather = get_weather(start[0], start[1])
-    result  = predict_trip(leg["steps"], elevations, weather)
+
+    # pass ac_on through to physics model (bug 1 fix)
+    result = predict_trip(leg["steps"], elevations, weather, ac_on=req.ac_on)
 
     # real-time traffic durations
     duration_normal_s  = leg["duration"]["value"]
     duration_traffic_s = leg.get("duration_in_traffic", {}).get("value", duration_normal_s)
 
-    # adjust energy predictions based on traffic
+    # apply traffic factor only to adjusted energy and SOC — keep nominal clean (bug 2 fix)
     factor = traffic_energy_factor(duration_normal_s, duration_traffic_s)
-    result["energy_nominal_kwh"]       = round(result["energy_nominal_kwh"] * factor, 3)
     result["energy_with_ac_kwh"]       = round(result["energy_with_ac_kwh"] * factor, 3)
     result["soc_needed_pct"]           = round(result["soc_needed_pct"] * factor, 1)
     result["soc_with_contingency_pct"] = round(result["soc_with_contingency_pct"] * factor, 1)
