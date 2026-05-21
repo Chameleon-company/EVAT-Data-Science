@@ -1,0 +1,11 @@
+model,val_rmse,best_params
+SVR,26368.80182124549,"{""C"": 0.2422315386294973, ""epsilon"": 0.35445799713354254, ""gamma"": 0.0005440522949986034}"
+XGBoost,27112.867097920247,"{""colsample_bytree"": 0.7012165922971707, ""learning_rate"": 0.012555935566382383, ""max_depth"": 3.0, ""min_child_weight"": 0.24379375323724536, ""n_estimators"": 250.0, ""reg_alpha"": 0.9627549985316267, ""reg_lambda"": 0.17709202628393075, ""subsample"": 0.9561108770491097}"
+GradientBoosting,27161.87081942159,"{""learning_rate"": 0.04151960499529325, ""max_depth"": 2, ""max_features"": ""sqrt"", ""min_samples_leaf"": 4.0, ""min_samples_split"": 10.0, ""n_estimators"": 175.0, ""subsample"": 0.7978402967642961}"
+RandomForest,27166.756754724112,"{""bootstrap"": true, ""max_depth"": 4, ""max_features"": null, ""min_samples_leaf"": 5.0, ""min_samples_split"": 6.0, ""n_estimators"": 375.0}"
+Lasso,27243.31642189476,"{""alpha"": 0.008013435956877863}"
+ElasticNet,27250.36923812002,"{""alpha"": 0.025280510730854546, ""l1_ratio"": 0.3600259141883796}"
+LightGBM,27345.104852617736,"{""colsample_bytree"": 0.6065760397460757, ""learning_rate"": 0.010405925487893576, ""min_child_samples"": 45.0, ""n_estimators"": 200.0, ""num_leaves"": 29.0, ""subsample"": 0.8295072584830219}"
+Ridge,27415.289201639112,"{""alpha"": 98.1808820968703}"
+LinearRegression,27461.85819626928,"{""fit_intercept"": true, ""positive"": false}"
+KNN,27902.07191840866,"{""n_neighbors"": 21.0, ""p"": 2, ""weights"": ""distance""}"

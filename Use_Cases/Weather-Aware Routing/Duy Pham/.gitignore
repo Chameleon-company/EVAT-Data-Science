@@ -1,9 +1,0 @@
-node_modules/
-*.log
-server.log
-server_output.log
-.env
-__pycache__/
-*.pyc
-*.pkl
-.DS_Store
