@@ -1,85 +1,126 @@
 # EV Charging Station Dashboard with Congestion Prediction
 
-This document provides instructions on how to set up and run the EV charging station dashboard, which includes a congestion prediction feature.
+This dashboard now runs with a Dashboard-local congestion API runtime and centralized generic folders so additional use cases can be integrated under the same structure.
+
+## Generic Folder Layout
+
+```text
+Dashboard/
+  apis/
+    congestion_prediction/
+      app.py
+  data/
+    EVAT.chargers.csv
+    congestion_prediction/
+      train_exogenous_3h.csv
+  models/
+    congestion_prediction/
+      random_forest_model.pkl
+  app_config.py
+  dashboard.py
+  run_stack.py
+  requirements.txt
+```
 
 ## Prerequisites
 
-Before you begin, ensure you have Python installed on your system.
+Before you begin, ensure Python is installed.
 
 ### Step 1: Create and Activate a Virtual Environment
 
-It is recommended to use a virtual environment to manage the dependencies for this project.
+1. Navigate to the Dashboard directory:
 
-1.  **Navigate to the `Dashboard` directory:**
-    Open a terminal and navigate to the project's `Dashboard` folder:
-    ```bash
-    cd Dashboard
-    ```
+```bash
+cd Dashboard
+```
 
-2.  **Create a virtual environment:**
-    ```bash
-    python -m venv venv
-    ```
+2. Create a virtual environment:
 
-3.  **Activate the virtual environment:**
-    *   **On Windows:**
-        ```bash
-        venv\Scripts\activate
-        ```
-    *   **On macOS and Linux:**
-        ```bash
-        source venv/bin/activate
-        ```
+```bash
+python -m venv venv
+```
+
+3. Activate the virtual environment:
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+macOS/Linux:
+
+```bash
+source venv/bin/activate
+```
 
 ### Step 2: Install Dependencies
-
-Once the virtual environment is activated, install the required packages from the `requirements.txt` file:
 
 ```bash
 pip install -r requirements.txt
 ```
 
+## Configuration (Optional)
+
+You can run with defaults, or configure ports and paths through a local .env file.
+
+```bash
+cp .env.example .env
+```
+
+Supported variables:
+
+- EVAT_API_HOST
+- EVAT_API_PORT
+- EVAT_DASHBOARD_PORT
+- EVAT_API_BASE_URL
+- EVAT_STATIONS_DATA_PATH
+- EVAT_CONGESTION_MODEL_PATH
+- EVAT_CONGESTION_TRAIN_DATA_PATH
+
 ## How to Run
 
-The system consists of two main components that need to be run from the `Dashboard` directory in separate terminals.
+### Preferred: One Command (API + Dashboard)
 
-1.  **Congestion Prediction API:** A FastAPI server that provides real-time congestion predictions.
-2.  **Streamlit Dashboard:** An interactive web application for visualizing charging stations and their predicted congestion.
+From Dashboard directory:
 
-### Step 1: Start the Congestion Prediction API
+```bash
+python run_stack.py
+```
 
-1.  **Open a terminal** and navigate to the `Use_Cases/Congestion Prediction/Prediction` directory with your virtual environment activated.
-    ```bash
-    cd ../Use_Cases/Congestion\ Prediction/Prediction
-    ```
+This starts:
 
-2.  **Start the FastAPI server:**
-    ```bash
-    uvicorn model_api:app --reload --port 8000
-    ```
-    Keep this terminal running. You should see output indicating that the server is running.
+1. Congestion API (FastAPI)
+2. Dashboard UI (Streamlit)
 
-### Step 2: Run the Streamlit Dashboard
+### Alternative: Run Components Separately
 
-1.  **Open a new terminal** and make sure you are in the `Dashboard` directory with your virtual environment activated.
+Terminal 1:
 
-2.  **Run the Streamlit application:**
-    ```bash
-    streamlit run dashboard.py
-    ```
-    This will automatically open a new tab in your web browser with the dashboard.
+```bash
+uvicorn apis.congestion_prediction.app:app --reload --port 8000
+```
+
+Terminal 2:
+
+```bash
+streamlit run dashboard.py
+```
 
 ## Using the Dashboard
 
-Once the dashboard is running, you can use the sidebar to:
+1. Enter a postcode and click Find Stations.
+2. Select prediction date/time.
+3. Click Predict Congestion for All Stations.
 
-1.  **Select a charging station** from the dropdown menu.
-2.  **Choose a date** for the prediction.
-3.  Click the **"Predict Congestion"** button.
+Marker colors:
 
-The dashboard will then display the predicted congestion level for the selected station and update the map with a color-coded marker:
+- Green: Low congestion
+- Yellow: Medium congestion
+- Red: High congestion
+- Blue: Initial station state
+- Grey: Unknown
 
-*   **Green:** Low congestion
-*   **Yellow:** Medium congestion
-*   **Red:** High congestion
-*   **Blue:** Default color for unselected stations
+## Migration Note
+
+Congestion API code and required runtime datasets/models are now available directly under Dashboard. Legacy files under Use_Cases/Congestion Prediction remain unchanged for transition safety.

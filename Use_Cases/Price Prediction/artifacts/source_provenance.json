@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-04-22T14:21:27",
+  "rows": 2500,
+  "columns": 29,
+  "files": {
+    "versioned_enriched_csv": "/home/bala/Documents/EVAT/EVAT-Data-Science/Use_Cases/Price Prediction/artifacts/car_price_enriched_20260422_142127.csv",
+    "latest_enriched_csv": "/home/bala/Documents/EVAT/EVAT-Data-Science/Use_Cases/Price Prediction/artifacts/car_price_enriched_latest.csv",
+    "feature_dictionary_csv": "/home/bala/Documents/EVAT/EVAT-Data-Science/Use_Cases/Price Prediction/artifacts/feature_dictionary.csv",
+    "provenance_json": "/home/bala/Documents/EVAT/EVAT-Data-Science/Use_Cases/Price Prediction/artifacts/source_provenance.json"
+  },
+  "external_sources": [
+    {
+      "name": "Open-Meteo Archive API",
+      "url": "https://archive-api.open-meteo.com/v1/archive",
+      "columns": [
+        "weather_temp_avg_c",
+        "weather_precip_total_mm"
+      ]
+    },
+    {
+      "name": "FRED Brent Oil Series",
+      "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
+      "columns": [
+        "brent_oil_usd_per_barrel"
+      ]
+    },
+    {
+      "name": "World Bank AU CPI Indicator",
+      "url": "https://api.worldbank.org/v2/country/AUS/indicator/FP.CPI.TOTL",
+      "columns": [
+        "au_cpi_index"
+      ]
+    }
+  ],
+  "merge_diagnostics": {
+    "Open-Meteo yearly weather": {
+      "rows": 2500,
+      "matched_rows": 2500,
+      "coverage_pct": 100.0,
+      "new_columns": [
+        "weather_temp_avg_c",
+        "weather_precip_total_mm"
+      ]
+    },
+    "FRED Brent oil yearly": {
+      "rows": 2500,
+      "matched_rows": 0,
+      "coverage_pct": 0.0,
+      "new_columns": [
+        "brent_oil_usd_per_barrel"
+      ]
+    },
+    "World Bank AU CPI yearly": {
+      "rows": 2500,
+      "matched_rows": 2500,
+      "coverage_pct": 100.0,
+      "new_columns": [
+        "au_cpi_index"
+      ]
+    }
+  }
+}
