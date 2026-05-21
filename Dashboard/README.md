@@ -1,6 +1,6 @@
 # EV Charging Station Dashboard with Congestion Prediction
 
-This dashboard now runs with a Dashboard-local congestion API runtime and centralized generic folders so additional use cases can be integrated under the same structure.
+This dashboard now runs with Dashboard-local congestion and price APIs plus centralized generic folders so additional use cases can be integrated under the same structure.
 
 ## Generic Folder Layout
 
@@ -8,6 +8,8 @@ This dashboard now runs with a Dashboard-local congestion API runtime and centra
 Dashboard/
   apis/
     congestion_prediction/
+      app.py
+    price_prediction/
       app.py
   data/
     EVAT.chargers.csv
@@ -77,6 +79,13 @@ Supported variables:
 - EVAT_STATIONS_DATA_PATH
 - EVAT_CONGESTION_MODEL_PATH
 - EVAT_CONGESTION_TRAIN_DATA_PATH
+- PRICE_API_HOST
+- PRICE_API_PORT
+- PRICE_API_BASE_URL
+- PRICE_MODEL_PATH
+- PRICE_DATA_PATH
+- PRICE_ALT_DATA_PATH
+- PRICE_FEATURE_DICT_PATH
 
 ## How to Run
 
@@ -91,7 +100,8 @@ python run_stack.py
 This starts:
 
 1. Congestion API (FastAPI)
-2. Dashboard UI (Streamlit)
+2. Price Prediction API (FastAPI)
+3. Dashboard UI (Streamlit)
 
 ### Alternative: Run Components Separately
 
@@ -99,6 +109,8 @@ Terminal 1:
 
 ```bash
 uvicorn apis.congestion_prediction.app:app --reload --port 8000
+
+uvicorn apis.price_prediction.app:app --reload --port 8001
 ```
 
 Terminal 2:

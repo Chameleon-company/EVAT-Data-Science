@@ -12,3 +12,4 @@ numpy
 geopy
 folium
 python-dotenv
+altair
