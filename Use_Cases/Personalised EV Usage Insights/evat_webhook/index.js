@@ -159,6 +159,42 @@ keepAlivePredictService();
 // Optional: keep alive every 15 minutes
 setInterval(keepAlivePredictService, 15 * 60 * 1000);
 
+// GET all user responses for Power BI
+app.get('/api/powerbi/user-responses', async (req, res) => {
+  try {
+    const db = client.db('EVAT');
+    const collection = db.collection('user_responses');
+
+    const data = await collection.find({}).toArray();
+
+    const cleanedData = data.map(item => ({
+      id: item._id?.toString() || "",
+      timestamp: item.timestamp || "",
+      weekly_km: Number(item.weekly_km) || 0,
+      fuel_efficiency: Number(item.fuel_efficiency) || 0,
+      monthly_fuel_spend: Number(item.monthly_fuel_spend) || 0,
+      trip_length: item.trip_length || "",
+      driving_frequency: item.driving_frequency || "",
+      driving_type: item.driving_type || "",
+      road_trips: item.road_trips || "",
+      car_ownership: item.car_ownership || "",
+      home_charging: item.home_charging || "",
+      solar_panels: item.solar_panels || "",
+      charging_preference: item.charging_preference || "",
+      budget: item.budget || "",
+      priorities: item.priorities || "",
+      postcode: item.postcode || "",
+      email: item.email || "",
+      cluster: item.cluster !== undefined ? Number(item.cluster) : null
+    }));
+
+    res.status(200).json(cleanedData);
+  } catch (err) {
+    console.error('Power BI data fetch error:', err);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
