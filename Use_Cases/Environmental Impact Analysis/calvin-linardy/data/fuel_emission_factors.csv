@@ -1,0 +1,7 @@
+FuelType,FuelType_Display,Emission_Factor_kg_per_L,Emission_Factor_g_per_L,Year,Source,Notes
+Petrol,Petrol (Regular 91 RON),2.289,2289,2023,DCCEEW National Greenhouse Accounts Factors 2023,Scope 1 direct combustion emissions
+Petrol95,Petrol (Premium 95 RON),2.289,2289,2023,DCCEEW National Greenhouse Accounts Factors 2023,Same emission factor as regular petrol
+Petrol98,Petrol (Premium 98 RON),2.289,2289,2023,DCCEEW National Greenhouse Accounts Factors 2023,Same emission factor as regular petrol
+E10,Petrol E10 (10% Ethanol),2.195,2195,2023,DCCEEW National Greenhouse Accounts Factors 2023,Lower factor due to biogenic ethanol content
+Diesel,Diesel,2.703,2703,2023,DCCEEW National Greenhouse Accounts Factors 2023,Higher carbon content than petrol per litre
+LPG,Liquefied Petroleum Gas,1.542,1542,2023,DCCEEW National Greenhouse Accounts Factors 2023,Lower carbon intensity than petrol or diesel

@@ -1,28 +1,184 @@
-# Personalised EV Usage Insights – Data & Dashboard Prototype
-The Personalised EV Usage Insights project provides drivers with tailored insights based on their driving patterns and behaviours. It allows drivers to see how their fuel consumption and spending compare with similar drivers, and highlights the potential cost savings of switching to an electric vehicle (EV).
+# Personalised EV Usage Insights Documentation
 
-By making these comparisons transparent, the project helps drivers understand their current fuel expenditure, identify opportunities to reduce costs, and consider the environmental benefits of lowering fuel emissions through EV adoption.
+**Document Version:** 1.0  
+**Last Updated:** April 2026  
+**System Type:** Data Pipeline + Clustering + Dashboard  
+**Purpose:** Provide personalised EV insights based on user driving behaviour  
 
-The project combines data collection, data-driven clustering, dynamic integration along with PowerBI dashboard development.
+---
 
-Visit: https://deakin365.sharepoint.com/sites/Chameleon2/SitePages/Personalized-EV-Usage-Insights.aspx for a detailed workflow.
+##  Table of Contents
 
-## Workflow
-This section details the end-to-end workflow and technical methodology used to collect, process, analyse, and visualise personalised EV usage data, highlighting the tools, algorithms, and integrations that enable real-time insights for users.
+1. [Executive Summary](#1-executive-summary)  
+2. [System Overview](#2-system-overview)  
+3. [Technical Architecture](#3-technical-architecture)  
+4. [Local Setup & Execution](#4-local-setup--execution)  
+   - 4.1 [Backend Setup](#41-backend-setup-nodejs)  
+   - 4.2 [Clustering Service Setup](#42-clustering-service-setup-python)  
+   - 4.3 [Environment Configuration](#43-environment-configuration)  
+5. [API Testing](#5-api-testing)  
+6. [Machine Learning Integration](#6-machine-learning-integration)  
+7. [Database Structure](#7-database-structure)  
+8. [Dashboard (Power BI)](#8-dashboard-power-bi)  
+9. [Important Observations](#9-important-observations)  
+10. [System Workflow](#10-system-workflow)  
+11. [Limitations](#11-limitations)  
+12. [Conclusion](#12-conclusion)  
 
-1. User inputs data to the following Google Form: https://docs.google.com/forms/d/e/1FAIpQLScLn9syI05fYg5-6o7CZNj0DS_M0HYoQ1uCe_ZPUws4d8hXDg/viewform.
-2. Responses can be viewed at: https://docs.google.com/spreadsheets/d/1gvyLh86Qsm9FNa_ihCf496818rh5dN-9GBnMVO5ud_A/edit?usp=sharing.
-3. The **'dataset'** folder contains the synthetic data file created via **Mockaroo** to simulate real Australian driver behaviour.
-4. Copy **'evat_webhook'** files to your Git and deploy to Render as a web service (Node.js/Express Webhook API). Ensure you change the **'mongoWebhookURL'** to the URL provided by Render.
-5. Use **UpTimeRobot** to keep your Web Service live (e.g. ping web service every 10 minutes).
-6. The **'Google Form Apps Script.txt'** file in the repository can be copied to Google Apps Script to push data to the EVAT MongoDB database via the Web Service in Render.
-7. K-Prototype algorithm was used in Google Colab (Python) to train the data. Python code available here: https://colab.research.google.com/drive/17DO_OOCeumWVqrowVK3hI_G5Nr5PcyCK?usp=sharing
-8. This generated 4 distinct User Segments which was downloaded and saved in the **'dataset'** folder.
-9. To ensure future user responses are clustered automatically based on the trained data, copy **'evat_cluster_service'** files to Git and deploy to Render as a web service (Python Flask microservice). The Node.js/Express backend communicates with the Flask service via Axios calls, allowing new user submissions to be assigned to clusters in real time.
-10. Each submission is stored in MongoDB with an automatically attached cluster label.
-11. A dashboard was developed from the cluster results. File: `Personalised EV Usage Insights.pbix`
-12. Dashboard was published and embedded to Sharepoint.
+---
 
-## Updates
-1. Prediction model now incorporates user authentication via secure GET endpoint for user-specific data
-2. Posts data from MongoDB if user authentication is successful
+## 1. Executive Summary
+
+The Personalised EV Usage Insights system analyses user driving patterns and provides insights into fuel consumption, cost savings, and EV adoption potential.
+
+The system integrates:
+- Data collection (user inputs)
+- Backend processing (Node.js API)
+- Machine learning clustering (Python Flask service)
+- Data storage (MongoDB)
+- Visualisation (Power BI dashboard)
+
+---
+
+## 2. System Overview
+
+### Key Capabilities
+
+- Accepts user driving data via API  
+- Assigns users to behavioural clusters  
+- Stores processed data in MongoDB  
+- Provides EV savings insights  
+- Visualises insights through Power BI  
+
+---
+
+## 3. Technical Architecture
+User Input (Thunder Client / Form)
+        ↓
+Node.js Backend (Webhook API)
+        ↓
+Python Flask Service (Clustering)
+        ↓
+MongoDB (Data Storage)
+        ↓
+Power BI Dashboard (Visualisation)
+
+
+---
+
+## 4. Local Setup & Execution
+
+### 4.1 Backend Setup (Node.js)
+Navigate to `evat_webhook/`, then run:
+```bash
+npm install
+node index.js
+```
+Server runs on: `http://localhost:3000`
+
+### 4.2 Clustering Service Setup (Python)
+Navigate to `evat_cluster_service/`, then run:
+```bash
+pip install -r requirements.txt
+python app.py
+```
+Service runs on: `http://127.0.0.1:8000`
+
+### 4.3 Environment Configuration
+`.env` file:
+```env
+MONGO_URI=your_mongodb_connection
+PORT=3000
+PREDICT_URL=http://127.0.0.1:8000/predict
+```
+
+---
+
+## 5. API Testing
+
+**Endpoint:** `POST /api/save`
+
+**Sample Input:**
+```json
+{
+  "weekly_km": 250,
+  "fuel_efficiency": 8.5,
+  "monthly_fuel_spend": 320,
+  "trip_length": "Medium",
+  "driving_frequency": "Daily",
+  "driving_type": "City",
+  "road_trips": "Occasionally",
+  "car_ownership": "Own",
+  "home_charging": "No",
+  "solar_panels": "No",
+  "charging_preference": "Home",
+  "budget": "Medium",
+  "priorities": "Cost Savings",
+  "postcode": "3000",
+  "email": "test@example.com"
+}
+```
+
+**Observed Behaviour:**  Request received →  Sent to clustering →  Cluster assigned →  Stored in MongoDB
+
+---
+
+## 6. Machine Learning Integration
+-  Algorithm: K-Prototypes
+-  Handles numerical and categorical data
+-  Generates 4 user segments
+-  Flask API exposes `/predict` endpoint
+
+---
+
+## 7. Database Structure
+
+**Database:** `EVAT` | **Collection:** `user_responses`
+
+```json
+{
+  "weekly_km": 93,
+  "fuel_efficiency": 8.5,
+  "monthly_fuel_spend": 51.96,
+  "driving_type": "City",
+  "email": "test@example.com",
+  "cluster": 3
+}
+```
+
+---
+
+## 8. Dashboard (Power BI)
+Provides:  Driving statistics ·  Cluster segmentation ·  EV savings estimation ·  Driver comparisons
+
+**Key Visuals:** Fuel efficiency · Monthly spend · Weekly distance · Profile classification
+
+---
+
+## 9. Important Observations
+-  Backend and clustering work in real-time
+-  MongoDB stores processed user data
+-  Power BI uses a preloaded dataset (not live)
+-  Dashboard reflects expected analytical insights
+
+---
+
+## 10. System Workflow
+```
+User submits data → Backend processes → Clustering assigns segment → MongoDB stores → Dashboard visualises
+```
+
+---
+
+## 11. Limitations
+-  Power BI not connected to live MongoDB
+-  Authentication not fully tested
+-  Dashboard uses static dataset
+-  Real-time dashboard integration not implemented
+
+---
+
+## 12. Conclusion
+The system successfully integrates backend APIs, machine learning clustering, and data visualisation for personalised EV insights.
+
+ End-to-end data flow works ·  Clustering correctly applied ·  Insights logically represented

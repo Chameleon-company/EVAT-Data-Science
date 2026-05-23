@@ -1,0 +1,71 @@
+Make,Model,Year,Variant,FuelType,BodyStyle,Segment,Engine_L,Cylinders,Consumption_City_L100km,Consumption_Highway_L100km,Consumption_Combined_L100km,CO2_Combined_gkm,Source
+Toyota,Corolla,2024,Ascent Hatchback,Petrol,Hatchback,Small Car,2.0,4,7.0,5.3,6.0,140,Green Vehicle Guide 2024
+Toyota,Corolla,2024,Ascent Sedan,Petrol,Sedan,Small Car,2.0,4,7.0,5.3,6.0,140,Green Vehicle Guide 2024
+Toyota,Corolla,2024,GR Sport,Petrol,Hatchback,Small Car,2.0,4,7.4,5.6,6.3,148,Green Vehicle Guide 2024
+Toyota,RAV4,2024,GX Petrol AWD,Petrol,SUV,Medium SUV,2.5,4,8.4,6.4,7.2,166,Green Vehicle Guide 2024
+Toyota,RAV4,2024,GX Diesel AWD,Diesel,SUV,Medium SUV,2.0,4,6.9,5.6,6.1,160,Green Vehicle Guide 2024
+Toyota,HiLux,2024,SR5 Diesel 4x4,Diesel,Ute,Large Ute,2.8,4,9.2,7.6,8.2,215,Green Vehicle Guide 2024
+Toyota,HiLux,2024,WorkMate 4x2,Diesel,Ute,Large Ute,2.4,4,8.5,7.0,7.6,199,Green Vehicle Guide 2024
+Toyota,Camry,2024,Ascent Petrol,Petrol,Sedan,Large Car,2.5,4,8.6,6.4,7.4,170,Green Vehicle Guide 2024
+Toyota,LandCruiser 300,2024,GX Diesel,Diesel,SUV,Large SUV,3.3,6,9.8,8.2,8.8,232,Green Vehicle Guide 2024
+Toyota,LandCruiser 70,2024,Wagon Diesel,Diesel,SUV,Large SUV,4.5,6,13.5,11.0,12.0,316,Green Vehicle Guide 2024
+Toyota,Yaris,2024,Ascent,Petrol,Hatchback,Small Car,1.5,3,5.8,4.5,5.0,115,Green Vehicle Guide 2024
+Toyota,Prado,2024,GX Diesel,Diesel,SUV,Large SUV,2.8,4,9.6,8.0,8.7,228,Green Vehicle Guide 2024
+Mazda,CX-5,2024,Maxx Petrol AWD,Petrol,SUV,Medium SUV,2.5,4,8.8,6.8,7.6,173,Green Vehicle Guide 2024
+Mazda,CX-5,2024,Maxx Diesel AWD,Diesel,SUV,Medium SUV,2.2,4,7.0,5.7,6.2,162,Green Vehicle Guide 2024
+Mazda,CX-60,2024,G40e Petrol AWD,Petrol,SUV,Large SUV,3.3,6,9.4,7.5,8.3,190,Green Vehicle Guide 2024
+Mazda,3,2024,G20 Evolve Hatch,Petrol,Hatchback,Small Car,2.0,4,7.4,5.5,6.3,144,Green Vehicle Guide 2024
+Mazda,CX-3,2024,Maxx Petrol,Petrol,SUV,Small SUV,2.0,4,7.8,5.9,6.7,154,Green Vehicle Guide 2024
+Mazda,BT-50,2024,XT Diesel,Diesel,Ute,Large Ute,3.0,4,9.1,7.3,8.0,210,Green Vehicle Guide 2024
+Honda,Civic,2024,VTi-S Turbo,Petrol,Sedan,Small Car,1.5,4,7.0,5.5,6.1,142,Green Vehicle Guide 2024
+Honda,CR-V,2024,Vi Turbo,Petrol,SUV,Medium SUV,1.5,4,7.8,6.2,6.9,159,Green Vehicle Guide 2024
+Honda,Jazz,2024,Vibe,Petrol,Hatchback,Small Car,1.5,4,5.4,4.8,5.0,116,Green Vehicle Guide 2024
+Mitsubishi,Triton,2024,GLX+ Diesel 4x4,Diesel,Ute,Large Ute,2.4,4,9.3,7.4,8.2,215,Green Vehicle Guide 2024
+Mitsubishi,Outlander,2024,ES Petrol AWD,Petrol,SUV,Large SUV,2.5,4,9.2,7.3,8.1,186,Green Vehicle Guide 2024
+Mitsubishi,ASX,2024,MR Petrol,Petrol,SUV,Small SUV,2.0,4,8.1,6.3,7.0,160,Green Vehicle Guide 2024
+Mitsubishi,Eclipse Cross,2024,Aspire Petrol AWD,Petrol,SUV,Small SUV,1.5,4,7.9,6.2,6.9,158,Green Vehicle Guide 2024
+Nissan,Navara,2024,ST-X Diesel 4x4,Diesel,Ute,Large Ute,2.3,4,8.3,6.5,7.2,189,Green Vehicle Guide 2024
+Nissan,X-Trail,2024,ST-L Petrol AWD,Petrol,SUV,Large SUV,1.5,3,8.9,7.0,7.8,181,Green Vehicle Guide 2024
+Nissan,Patrol,2024,Ti Petrol,Petrol,SUV,Large SUV,5.6,8,18.1,13.0,15.1,352,Green Vehicle Guide 2024
+Nissan,Qashqai,2024,ST Petrol,Petrol,SUV,Small SUV,1.3,4,7.8,5.9,6.7,155,Green Vehicle Guide 2024
+Subaru,Outback,2024,AWD Petrol,Petrol,Wagon,Large Car,2.5,4,8.6,6.4,7.3,168,Green Vehicle Guide 2024
+Subaru,Forester,2024,2.5i AWD,Petrol,SUV,Medium SUV,2.5,4,8.4,6.5,7.3,168,Green Vehicle Guide 2024
+Subaru,Impreza,2024,2.0i-S AWD,Petrol,Hatchback,Small Car,2.0,4,7.3,5.8,6.4,148,Green Vehicle Guide 2024
+Subaru,WRX,2024,AWD Manual,Petrol,Sedan,Medium Car,2.4,4,10.4,7.3,8.6,198,Green Vehicle Guide 2024
+Ford,Ranger,2024,XLS Diesel 4x4,Diesel,Ute,Large Ute,2.0,4,8.6,6.7,7.5,197,Green Vehicle Guide 2024
+Ford,Ranger,2024,Raptor V6 Diesel,Diesel,Ute,Large Ute,3.0,6,11.2,9.5,10.2,268,Green Vehicle Guide 2024
+Ford,Everest,2024,Trend Diesel AWD,Diesel,SUV,Large SUV,3.0,6,9.6,8.2,8.8,231,Green Vehicle Guide 2024
+Ford,Puma,2024,ST-Line Petrol,Petrol,SUV,Small SUV,1.0,3,6.5,5.1,5.7,130,Green Vehicle Guide 2024
+Ford,Focus,2024,Active Petrol,Petrol,Hatchback,Small Car,1.5,3,6.7,5.1,5.8,133,Green Vehicle Guide 2024
+Volkswagen,Golf,2024,Life Petrol,Petrol,Hatchback,Small Car,1.5,4,6.5,5.1,5.7,130,Green Vehicle Guide 2024
+Volkswagen,Tiguan,2024,Life Petrol,Petrol,SUV,Medium SUV,1.5,4,8.0,6.2,6.9,158,Green Vehicle Guide 2024
+Volkswagen,Amarok,2024,TDI600 V6 Diesel,Diesel,Ute,Large Ute,3.0,6,10.2,8.6,9.2,241,Green Vehicle Guide 2024
+BMW,3 Series,2024,320i Sedan,Petrol,Sedan,Medium Car,2.0,4,7.3,5.4,6.2,141,Green Vehicle Guide 2024
+BMW,5 Series,2024,520i Sedan,Petrol,Sedan,Large Car,2.0,4,7.8,5.8,6.6,150,Green Vehicle Guide 2024
+BMW,X5,2024,xDrive40i Petrol,Petrol,SUV,Large SUV,3.0,6,12.2,9.5,10.7,243,Green Vehicle Guide 2024
+BMW,X3,2024,xDrive20i Petrol,Petrol,SUV,Medium SUV,2.0,4,8.8,6.5,7.5,170,Green Vehicle Guide 2024
+Audi,A4,2024,40 TFSI Sedan,Petrol,Sedan,Medium Car,2.0,4,7.5,5.8,6.5,149,Green Vehicle Guide 2024
+Audi,Q5,2024,45 TFSI Petrol,Petrol,SUV,Medium SUV,2.0,4,8.5,6.4,7.3,167,Green Vehicle Guide 2024
+Audi,Q7,2024,55 TFSI Petrol,Petrol,SUV,Large SUV,3.0,6,11.1,8.7,9.7,221,Green Vehicle Guide 2024
+Mercedes-Benz,C-Class,2024,C 200 Sedan,Petrol,Sedan,Medium Car,1.5,4,6.7,5.3,5.9,135,Green Vehicle Guide 2024
+Mercedes-Benz,E-Class,2024,E 200 Sedan,Petrol,Sedan,Large Car,2.0,4,7.1,5.5,6.2,141,Green Vehicle Guide 2024
+Mercedes-Benz,GLC,2024,300 4MATIC Petrol,Petrol,SUV,Medium SUV,2.0,4,9.0,6.7,7.7,176,Green Vehicle Guide 2024
+Mercedes-Benz,GLE,2024,450 4MATIC Petrol,Petrol,SUV,Large SUV,3.0,6,11.0,8.7,9.6,219,Green Vehicle Guide 2024
+Hyundai,i30,2024,Active Petrol,Petrol,Hatchback,Small Car,2.0,4,8.0,6.0,6.9,160,Green Vehicle Guide 2024
+Hyundai,Tucson,2024,Active Petrol AWD,Petrol,SUV,Medium SUV,2.5,4,9.0,6.9,7.8,180,Green Vehicle Guide 2024
+Hyundai,Santa Fe,2024,Elite Diesel AWD,Diesel,SUV,Large SUV,2.2,4,7.2,5.8,6.3,165,Green Vehicle Guide 2024
+Hyundai,Kona,2024,Active Petrol,Petrol,SUV,Small SUV,2.0,4,8.5,6.4,7.3,168,Green Vehicle Guide 2024
+Kia,Cerato,2024,Sport Petrol,Petrol,Sedan,Small Car,2.0,4,7.9,5.8,6.7,154,Green Vehicle Guide 2024
+Kia,Sportage,2024,Sport Petrol AWD,Petrol,SUV,Medium SUV,2.0,4,8.7,6.9,7.6,175,Green Vehicle Guide 2024
+Kia,Sorento,2024,Sport+ Diesel AWD,Diesel,SUV,Large SUV,2.2,4,7.6,6.5,6.9,181,Green Vehicle Guide 2024
+Jeep,Wrangler,2024,Rubicon Petrol,Petrol,SUV,Large SUV,2.0,4,11.5,9.5,10.3,241,Green Vehicle Guide 2024
+Land Rover,Defender,2024,110 D300 Diesel,Diesel,SUV,Large SUV,3.0,6,10.6,9.1,9.7,254,Green Vehicle Guide 2024
+Land Rover,Discovery,2024,D300 SE Diesel,Diesel,SUV,Large SUV,3.0,6,9.9,8.5,9.1,238,Green Vehicle Guide 2024
+Volvo,XC60,2024,B5 Petrol AWD,Petrol,SUV,Medium SUV,2.0,4,8.2,6.2,7.1,162,Green Vehicle Guide 2024
+Volvo,XC90,2024,B6 Petrol AWD,Petrol,SUV,Large SUV,2.0,4,10.6,8.1,9.2,210,Green Vehicle Guide 2024
+Isuzu,D-Max,2024,LS-U Diesel 4x4,Diesel,Ute,Large Ute,3.0,4,9.5,7.8,8.5,223,Green Vehicle Guide 2024
+Mitsubishi,Pajero Sport,2024,GLS Diesel AWD,Diesel,SUV,Large SUV,2.4,4,9.5,8.0,8.6,226,Green Vehicle Guide 2024
+Lexus,NX,2024,350 F Sport AWD,Petrol,SUV,Medium SUV,2.4,4,9.2,7.6,8.2,188,Green Vehicle Guide 2024
+Lexus,RX,2024,350 F Sport AWD,Petrol,SUV,Large SUV,2.4,4,9.5,7.7,8.4,193,Green Vehicle Guide 2024
+Porsche,Cayenne,2024,S Petrol,Petrol,SUV,Large SUV,2.9,6,12.3,9.7,10.8,246,Green Vehicle Guide 2024
+Porsche,911,2024,Carrera S,Petrol,Coupe,Sports Car,3.0,6,10.0,8.0,8.8,200,Green Vehicle Guide 2024
