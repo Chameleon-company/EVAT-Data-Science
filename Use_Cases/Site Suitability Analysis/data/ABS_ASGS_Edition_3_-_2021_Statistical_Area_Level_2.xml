@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?><MD_Metadata xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:xalan="http://xml.apache.org/xalan" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xmlns="http://www.isotc211.org/2005/gmd">
+    <fileIdentifier>
+        <gco:CharacterString>97614ed98fc0419f8cb3fc1a0fa1b701</gco:CharacterString>
+    </fileIdentifier>
+    <characterSet>
+        <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+    </characterSet>
+    <hierarchyLevel>
+        <MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+    </hierarchyLevel>
+    <hierarchyLevelName>
+        <gco:CharacterString>dataset</gco:CharacterString>
+    </hierarchyLevelName>
+    <contact gco:nilReason="missing"/>
+    <dateStamp gco:nilReason="missing"/>
+    <metadataStandardName>
+        <gco:CharacterString>ISO 19139 Geographic Information - Metadata - Implementation Specification</gco:CharacterString>
+    </metadataStandardName>
+    <metadataStandardVersion>
+        <gco:CharacterString>2007</gco:CharacterString>
+    </metadataStandardVersion>
+    <identificationInfo>
+        <MD_DataIdentification>
+            <citation>
+                <CI_Citation>
+                    <title>
+                        <gco:CharacterString>ABS ASGS Edition 3 - 2021 Statistical Area Level 2</gco:CharacterString>
+                    </title>
+                    <date>
+                        <CI_Date>
+                            <date>
+                                <gco:DateTime>2023-06-08T22:53:57</gco:DateTime>
+                            </date>
+                            <dateType>
+                                <CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation" codeSpace="ISOTC211/19115">creation</CI_DateTypeCode>
+                            </dateType>
+                        </CI_Date>
+                    </date>
+                    <date>
+                        <CI_Date>
+                            <date>
+                                <gco:DateTime>2024-11-12T06:04:27</gco:DateTime>
+                            </date>
+                            <dateType>
+                                <CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" codeSpace="ISOTC211/19115">revision</CI_DateTypeCode>
+                            </dateType>
+                        </CI_Date>
+                    </date>
+                    <citedResponsibleParty>
+                        <CI_ResponsibleParty>
+                            <organisationName>
+                                <gco:CharacterString>Australian Bureau of Statistics</gco:CharacterString>
+                            </organisationName>
+                            <contactInfo>
+                                <CI_Contact>
+                                    <address>
+                                        <CI_Address>
+                                            <postalCode>
+                                                <gco:CharacterString>004</gco:CharacterString>
+                                            </postalCode>
+                                        </CI_Address>
+                                    </address>
+                                </CI_Contact>
+                            </contactInfo>
+                            <role>
+                                <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="custodian" codeSpace="ISOTC211/19115">custodian</CI_RoleCode>
+                            </role>
+                        </CI_ResponsibleParty>
+                    </citedResponsibleParty>
+                </CI_Citation>
+            </citation>
+            <abstract>
+                <gco:CharacterString>*** The beta release of this web service provides a preview of the capability that will be delivered through the Digital Atlas of Australia. Availability of this dataset through this web service is not guaranteed and the data may be subject to change. *** 
+
+2021 Statistical Areas Level 2 (SA2) are part of the Main Structure of the Australian Statistical Geography Standard (ASGS) Edition 3.
+
+SA2s are medium-sized general purpose areas built to represent communities that interact together socially and economically. Most SA2s have a population range of 3,000 to 25,000 people. SA2s are built from whole Statistical Areas Level 1 (SA1), while whole SA2s aggregate to form Statistical Areas Level 3 (SA3) in the ASGS Main Structure. 
+
+The ASGS is a classification of Australia into a hierarchy of statistical areas. It is a social geography, developed to reflect the location of people and communities. It is used for the publication and analysis of official statistics and other data. The ASGS is updated every 5 years to account for growth and change in Australia’s population, economy and infrastructure. 
+
+Currency:
+	Date modified: 20 July 2021
+	Update frequency:  Not planned.
+Data Extent:
+	Spatial Extent:
+		West longitude: 96.816941
+		South latitude: -43.740510
+		East longitude: 167.998035
+		North latitude: -9.142176
+
+Made possible by the Digital Atlas of Australia
+The Digital Atlas of Australia is an Australian Government initiative being led by Geoscience Australia. It will bring together trusted datasets from across government in an interactive, secure, and easy-to-use geospatial platform.
+	
+The Australian Bureau of Statistics is working in partnership with Geoscience Australia to establish a set of web services to make 2021 Census data available in the Digital Atlas.
+		
+The Digital Atlas of Australia beta will be available by mid-2023.
+		
+Contact the Australian Bureau of Statistics (ABS)
+If you have questions, feedback or would like to receive updates about this web services, please email geography@abs.gov.au. For information about how the ABS manages any personal information you provide view the ABS privacy policy. 
+
+Data and geography references
+	Source data publication: Australian Statistical Geography Standard (ASGS) Edition 3
+	Source web service: ASGS2021/SA2 (MapServer) 
+	Data services and APIs source: ASGS geospatial web service links 
+Source: Australian Bureau of Statistics (ABS)</gco:CharacterString>
+            </abstract>
+            <purpose>
+                <gco:CharacterString>2021 Statistical Areas Level 2 (SA2) from the Australian Statistical Geography Standard (ASGS) Edition 3.</gco:CharacterString>
+            </purpose>
+            <credit>
+                <gco:CharacterString>Australian Bureau of Statistics (ABS)</gco:CharacterString>
+            </credit>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>ABS</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>ASGS</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>BOUNDARIES</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>-</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Statistical</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>STATISTICAL</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>GEOGRAPHY</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Statistical Areas Level 2</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>SA2</gco:CharacterString>
+                    </keyword>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <resourceConstraints>
+                <MD_Constraints>
+                    <useLimitation>
+                        <gco:CharacterString>Copyright and creative commons of CC BY 4.0: Website privacy, copyright and disclaimer ABS copyright  
+Legal Authority: Census and Statistics Act 1905
+Security Classification: Official 
+No sensitive data  
+Source data is retained in National Archives</gco:CharacterString>
+                    </useLimitation>
+                </MD_Constraints>
+            </resourceConstraints>
+            <language gco:nilReason="missing"/>
+            <characterSet>
+                <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+            </characterSet>
+            <extent>
+                <EX_Extent/>
+            </extent>
+        </MD_DataIdentification>
+    </identificationInfo>
+    <distributionInfo>
+        <MD_Distribution>
+            <distributionFormat>
+                <MD_Format>
+                    <name>
+                        <gco:CharacterString>Feature Service</gco:CharacterString>
+                    </name>
+                    <version gco:nilReason="missing"/>
+                </MD_Format>
+            </distributionFormat>
+            <transferOptions>
+                <MD_DigitalTransferOptions>
+                    <onLine>
+                        <CI_OnlineResource>
+                            <linkage>
+                                <URL>https://geo.abs.gov.au/arcgis/rest/services/ASGS2021/SA2/MapServer/0</URL>
+                            </linkage>
+                        </CI_OnlineResource>
+                    </onLine>
+                </MD_DigitalTransferOptions>
+            </transferOptions>
+        </MD_Distribution>
+    </distributionInfo>
+</MD_Metadata>
