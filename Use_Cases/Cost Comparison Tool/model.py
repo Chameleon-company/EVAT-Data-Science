@@ -15,10 +15,13 @@ from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 from sklearn.linear_model import LinearRegression, Ridge
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 
+import joblib
+from pathlib import Path
+
 # -----------------------------
 # 1) Load data
 # -----------------------------
-DATA_PATH = "dummy_data.csv"   # change if needed
+DATA_PATH = "Datasets/dummy_data.csv"   # change if needed
 df = pd.read_csv(DATA_PATH)
 
 # -----------------------------
@@ -145,7 +148,8 @@ models = {
 # -----------------------------
 def evaluate(y_true, y_pred, label):
     r2 = r2_score(y_true, y_pred)
-    rmse = mean_squared_error(y_true, y_pred, squared=False)
+    # rmse = mean_squared_error(y_true, y_pred, squared=False)
+    rmse = np.sqrt(mean_squared_error(y_true, y_pred))
     mae = mean_absolute_error(y_true, y_pred)
     return {"Model": label, "R2": r2, "RMSE": rmse, "MAE": mae}
 
@@ -168,6 +172,15 @@ print(score_df.to_string(index=False))
 best_name = score_df.iloc[0]["Model"]
 best_model = trained[best_name]
 print(f"\nBest model: {best_name}")
+
+
+ARTIFACT_DIR = Path(__file__).parent / "artifacts"
+ARTIFACT_DIR.mkdir(exist_ok=True)
+
+MODEL_PATH = ARTIFACT_DIR / "model.joblib"
+
+joblib.dump(best_model, MODEL_PATH                                                                                          )
+print(f"✅ Model saved to {MODEL_PATH}")
 
 # Parity plot for the best model
 y_pred_best = best_model.predict(X_test)
