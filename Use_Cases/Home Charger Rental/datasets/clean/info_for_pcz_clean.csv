@@ -1,0 +1,351 @@
+Suburb,Dwellings,Income,Vehicles_per_Dwelling
+Abbotsford,9364.0,2333.0,1.6
+Airport West,3890.0,1761.0,1.7
+Albert Park,53131.0,2076.0,1.1
+Alphington (Fairfield),4214.0,2112.0,1.5
+Altona,40537.0,2123.0,1.8
+Altona Meadows,7778.0,1573.0,1.8
+Altona North,6367.0,1740.0,1.7
+Ardeer (Albion),3541.0,1366.0,1.4
+Armadale,36279.0,1774.0,2.0
+Ascot Vale,7025.0,2192.0,1.5
+Ashburton,3681.0,2937.0,1.9
+Ashwood (Chadstone),8311.0,2011.0,1.7
+Aspendale Gardens (Waterways),3009.0,2348.0,2.2
+Avondale Heights,4906.0,1587.0,1.8
+Balwyn,7082.0,2017.0,1.7
+Balwyn North,7858.0,2350.0,2.0
+Bayswater,32142.0,1739.0,1.7
+Bayswater North,4640.0,1800.0,2.0
+Beaconsfield (Officer),8397.0,2146.0,2.1
+Beaumaris,5513.0,2622.0,2.0
+Belgrave (Selby),3706.0,2253.0,2.4
+Bentleigh East (North),6387.0,2250.0,1.8
+Bentleigh East (South),5620.0,2173.0,1.8
+Bentleigh (Mckinnon),10372.0,2240.0,1.7
+Berwick (North),9194.0,1885.0,2.0
+Berwick (South East),5605.0,2361.0,2.2
+Berwick (South West),3717.0,2175.0,2.1
+Blackburn,9134.0,2050.0,1.7
+Blackburn South,4458.0,1861.0,1.7
+Boronia,10160.0,1609.0,1.8
+Box Hill,32648.0,1836.0,1.6
+Box Hill North,7484.0,1920.0,1.7
+Braeside,27.0,933.0,1.6
+Braybrook,8039.0,1686.0,1.6
+Brighton,7532.0,1352.0,2.1
+Brighton East,6447.0,2720.0,1.9
+Broadmeadows,26625.0,1281.0,1.8
+Brookfield,16619.0,2821.0,2.1
+Brunswick East,7125.0,2087.0,1.2
+Brunswick (North),6528.0,2062.0,1.2
+Brunswick (South),7121.0,2126.0,1.1
+Brunswick West,7651.0,1786.0,1.3
+Bulleen,28157.0,1816.0,1.8
+Bundoora (East),3838.0,1705.0,1.9
+Bundoora (North),2876.0,1833.0,2.0
+Bundoora (West),2703.0,1423.0,1.8
+Burnside,19605.0,2069.0,1.8
+Burnside Heights,1808.0,2246.0,2.2
+Burwood,16160.0,1867.0,1.3
+Burwood East,4469.0,1610.0,1.7
+Cairnlea,3012.0,2062.0,2.3
+Camberwell,8748.0,2472.0,1.8
+Campbellfield (Coolaroo),5658.0,1104.0,1.8
+Carlton,6451.0,1954.0,1.6
+Carlton North (Princes Hill),4137.0,2355.0,1.3
+Carnegie,6041.0,1416.0,
+Caroline Springs,6851.0,2133.0,2.1
+Carrum Downs,9010.0,1658.0,1.9
+Carrum (Patterson Lakes),5462.0,1853.0,1.8
+Caulfield (North),10397.0,2184.0,1.6
+Caulfield (South),7549.0,2289.0,1.7
+Chelsea (Bonbeach),7280.0,1718.0,1.6
+Chelsea Heights,2112.0,1867.0,1.9
+Chirnside Park,4377.0,2084.0,2.1
+Clarinda (Oakleigh South),4342.0,1659.0,1.9
+Clayton (Central),5005.0,1711.0,1.5
+Clayton (North (Notting Hill),16160.0,1867.0,1.3
+Clayton South,5559.0,1630.0,1.6
+Clifton Hill (Alphington),4471.0,2529.0,1.4
+Clyde North (North),3253.0,2288.0,2.0
+Clyde North (South),4529.0,2193.0,2.1
+Cobblebank (Strathtulloh),2425.0,2056.0,2.0
+Coburg (East),5757.0,1944.0,1.4
+Coburg North,3521.0,1980.0,1.5
+Coburg (West),5711.0,2186.0,1.5
+Collingwood,5648.0,2130.0,0.9
+Craigieburn (Central),2886.0,1523.0,2.0
+Craigieburn (North),3831.0,1958.0,2.1
+Craigieburn (North West),2981.0,1876.0,1.8
+Craigieburn (South),6697.0,1835.0,2.1
+Craigieburn (West),4251.0,1752.0,1.8
+Cranbourne,42108.0,1920.0,2.0
+Cranbourne East (North),7364.0,1931.0,2.0
+Cranbourne East (South),4111.0,1958.0,1.9
+Cranbourne North (East),3749.0,2184.0,2.1
+Cranbourne North (West),4078.0,1686.0,2.1
+Cranbourne South,5947.0,2228.0,2.3
+Cranbourne West,7069.0,1903.0,2.0
+Croydon (East),7192.0,1566.0,1.7
+Croydon Hills (Warranwood),6451.0,2377.0,2.2
+Croydon South,1937.0,1888.0,2.0
+Croydon (West),5970.0,1695.0,1.8
+Dandenong North,8333.0,1436.0,1.9
+Dandenong (North),8921.0,1208.0,1.5
+Dandenong (South),3331.0,1288.0,1.7
+Deer Park,6590.0,1459.0,1.8
+Delahey,2921.0,1486.0,2.0
+Derrimut,2477.0,2271.0,2.2
+Diggers Rest,2023.0,2016.0,1.9
+Dingley Village,4009.0,1981.0,2.1
+Docklands,10826.0,1956.0,0.8
+Doncaster,11685.0,1595.0,1.6
+Doncaster East (North),5974.0,1934.0,2.0
+Doncaster East (South),6366.0,1656.0,1.7
+Donvale (Park Orchards),5912.0,2284.0,2.2
+Doreen (North),5474.0,2173.0,2.1
+Doreen (South),3687.0,2120.0,2.0
+Doveton,4657.0,1262.0,1.7
+Dromana,8900.0,1398.0,1.9
+East Melbourne,3458.0,2345.0,1.2
+Edithvale (Aspendale),5582.0,2223.0,1.8
+Elsternwick,5784.0,2171.0,1.5
+Eltham,22611.0,2302.0,2.1
+Elwood,8881.0,2093.0,1.3
+Emerald (Cockatoo),6751.0,2176.0,2.5
+Endeavour Hills (North),4219.0,1823.0,2.2
+Endeavour Hills (South),4747.0,1733.0,2.1
+Epping (East),4687.0,1675.0,2.0
+Epping (South),3172.0,1443.0,1.7
+Epping (West),16160.0,1867.0,1.3
+Essendon Airport,6041.0,1934.5,
+Essendon (East),6272.0,2055.0,1.5
+Essendon (West (Aberfeldie),16160.0,1867.0,1.3
+Fawkner,5297.0,1436.0,1.6
+Ferntree Gully (North),6011.0,1606.0,1.8
+Ferntree Gully (South (Upper Ferntree Gully),16160.0,1867.0,1.3
+Fitzroy,552.0,1528.0,1.0
+Fitzroy North,6492.0,2300.0,1.2
+Flemington,5167.0,1571.0,1.1
+Flemington Racecourse,37.0,2178.0,1.1
+Footscray,38345.0,1738.0,1.5
+Forest Hill,24151.0,1833.0,1.8
+Frankston,58774.0,1653.0,1.9
+Frankston North,8677.0,1313.0,1.6
+Frankston South,7393.0,2038.0,2.0
+Fraser Rise (Plumpton),3247.0,2254.0,2.1
+Gladstone Park (Westmeadows),7111.0,1600.0,2.0
+Glen Iris (East),6594.0,2914.0,1.9
+Glenroy (East),6291.0,1526.0,1.6
+Glenroy (West),3702.0,1869.0,1.5
+Glen Waverley (East),8072.0,1949.0,1.9
+Glen Waverley (West),8464.0,1890.0,1.8
+Gowanbrae,1200.0,2162.0,2.0
+Greensborough,8265.0,2078.0,1.9
+Greenvale (Bulla),7079.0,2250.0,2.4
+Hadfield,2610.0,1538.0,1.7
+Hallam,3887.0,1496.0,2.0
+Hampton,7874.0,2415.0,1.7
+Hampton Park (East),4070.0,1623.0,2.1
+Hampton Park (West),4556.0,1462.0,2.0
+Hastings (Somers),10861.0,1407.0,1.9
+Hawthorn East,8183.0,2228.0,1.5
+Hawthorn (North),4865.0,2300.0,1.4
+Hawthorn (South),6789.0,2055.0,1.3
+Heidelberg (Rosanna),7063.0,2102.0,1.6
+Heidelberg West,7053.0,1618.0,1.5
+Highett (East (Cheltenham),16160.0,1867.0,1.3
+Highett (West (Cheltenham),16160.0,1867.0,1.3
+Hillside,5274.0,2212.0,2.4
+Hoppers Crossing (North),6833.0,1705.0,2.1
+Hoppers Crossing (South),7135.0,1470.0,1.8
+Hughesdale,3348.0,2057.0,1.6
+Hurstbridge,1307.0,2168.0,2.3
+Ivanhoe,29403.0,2055.0,1.7
+Ivanhoe East (Eaglemont),3142.0,2914.0,2.0
+Keilor,25042.0,1935.0,1.9
+Keilor Downs,4918.0,1553.0,2.0
+Keilor East,5948.0,1913.0,1.9
+Kensington,1959.0,1840.0,2.5
+Kew East,2588.0,2485.0,1.8
+Kew (South),4961.0,2577.0,1.8
+Kew (West),5685.0,2459.0,1.7
+Keysborough (North),5187.0,1525.0,2.0
+Keysborough (South),4605.0,2493.0,2.3
+Kilsyth,4170.0,1654.0,1.9
+Kingsbury,4469.0,1727.0,1.7
+Kings Park,6893.0,1753.0,1.5
+Knoxfield (Scoresby),6270.0,1953.0,2.0
+Koo Wee Rup,1259.0,1763.0,2.1
+Kurunjang (Toolern Vale),4293.0,1556.0,2.2
+Lalor (East),4018.0,1224.0,1.7
+Lalor (West),4793.0,1450.0,1.9
+Langwarrin,9504.0,1950.0,2.2
+Laverton,379.0,966.0,1.4
+Lilydale (Coldstream),7930.0,1784.0,2.1
+Lynbrook (Lyndhurst),5218.0,2330.0,2.2
+Lysterfield,2144.0,2756.0,2.6
+Malvern East,9793.0,2386.0,1.7
+Malvern (Glen Iris),9903.0,2364.0,1.6
+Manor Lakes (Quandong),3394.0,2309.0,1.7
+Maribyrnong,40427.0,1998.0,1.4
+Meadow Heights,4788.0,1274.0,2.0
+Melbourne Airport,32.0,1437.0,2.9
+Melbourne Cbd (East),7427.0,1511.0,0.4
+Melbourne Cbd (North),13175.0,1089.0,0.3
+Melbourne Cbd (West),13401.0,1446.0,0.4
+Melton,60338.0,1887.0,2.1
+Melton South (Weir Views),6151.0,1363.0,1.7
+Melton West,7428.0,1621.0,2.0
+Mentone,6339.0,1889.0,1.6
+Mernda (North),4167.0,1897.0,1.8
+Mernda (South),3918.0,2109.0,2.0
+Mickleham (Yuroke),7711.0,1982.0,2.1
+Mill Park (North),6485.0,1798.0,2.1
+Mill Park (South),4285.0,1647.0,2.0
+Mitcham,27143.0,1996.0,2.0
+Monbulk (Silvan),2206.0,1872.0,2.5
+Montmorency (Briar Hill),6822.0,2068.0,1.9
+Montrose,2516.0,2094.0,2.3
+Moonee Ponds,8081.0,2111.0,1.4
+Moorabbin Airport,6041.0,1934.5,
+Moorabbin (Heatherton),3828.0,2046.0,1.8
+Mooroolbark,8663.0,1992.0,2.1
+Mordialloc (Parkdale),9088.0,2090.0,1.8
+Mornington (East),6226.0,1502.0,1.9
+Mornington (West),5704.0,1389.0,1.7
+Mount Dandenong (Olinda),4056.0,2102.0,2.2
+Mount Eliza,6880.0,2547.0,2.3
+Mount Evelyn,3570.0,2045.0,2.4
+Mount Martha,8480.0,2097.0,2.1
+Mount Waverley (North),6323.0,2049.0,1.9
+Mount Waverley (South),7554.0,2079.0,1.9
+Mulgrave,24619.0,1647.0,1.9
+Murrumbeena,4269.0,2089.0,1.6
+Narre Warren North,23767.0,1780.0,2.1
+Narre Warren (North East),4636.0,1920.0,2.2
+Narre Warren South (East),3906.0,2352.0,2.5
+Narre Warren (South West),5483.0,1615.0,1.9
+Narre Warren South (West),5007.0,2011.0,2.3
+Newport,5459.0,2607.0,2.1
+Niddrie (Essendon West),3095.0,2239.0,1.8
+Noble Park (East),5408.0,1359.0,1.6
+Noble Park North,2874.0,1453.0,1.8
+Noble Park (West),7179.0,1399.0,1.7
+Northcote (East),6855.0,2251.0,1.4
+Northcote (West),4847.0,2318.0,1.3
+North Melbourne,9297.0,1718.0,0.9
+Nunawading,5080.0,1938.0,1.7
+Oakleigh (Huntingdale),9743.0,1956.0,1.7
+Oak Park,3451.0,2204.0,1.6
+Ormond (Glen Huntly),6329.0,1978.0,1.4
+Pakenham (North East),5916.0,1651.0,2.0
+Pakenham (North West),2676.0,1887.0,2.0
+Pakenham (South East),2937.0,1235.0,1.7
+Pakenham (South West),9281.0,1803.0,2.0
+Parkville,2823.0,1885.0,1.2
+Pascoe Vale,34133.0,1947.0,1.6
+Pascoe Vale South,4132.0,2245.0,1.8
+Pearcedale (Tooradin),2999.0,1895.0,2.6
+Plenty (Yarrambat),3215.0,2554.0,2.6
+Point Cook (East),6694.0,2381.0,1.9
+Point Cook (North East),4960.0,2185.0,1.9
+Point Cook (North West),3158.0,2439.0,1.9
+Point Cook (South),6089.0,2522.0,1.8
+Point Nepean,20509.0,1430.0,1.9
+Port Melbourne,8981.0,2347.0,1.3
+Port Melbourne Industrial,1089.0,2407.0,1.2
+Prahran (Windsor),12206.0,2098.0,1.1
+Preston (East),9976.0,1787.0,1.4
+Preston (West),5501.0,1970.0,1.5
+Research (North Warrandyte),2359.0,2831.0,2.6
+Reservoir (North East),6938.0,1544.0,1.5
+Reservoir (North West),3896.0,1442.0,1.8
+Reservoir (South East),6041.0,1401.0,1.4
+Reservoir (South West),6457.0,1743.0,1.5
+Richmond (North),8221.0,2009.0,1.1
+Richmond (South (Cremorne),16160.0,1867.0,1.3
+Ringwood,27664.0,1888.0,1.7
+Ringwood East,8512.0,1945.0,1.8
+Ringwood North,3517.0,2330.0,2.1
+Rockbank (Mount Cottrell),5104.0,2123.0,2.0
+Rosebud (Mccrae),14611.0,1155.0,1.7
+Rowville (Central),5747.0,2083.0,2.2
+Rowville (North),2745.0,2285.0,2.2
+Rowville (South),3623.0,2363.0,2.3
+Roxburgh Park (North),3921.0,1619.0,2.2
+Roxburgh Park (South (Somerton),16160.0,1867.0,1.3
+Royal Botanic Gardens Victoria,6041.0,1934.5,
+Sandringham (Black Rock),7703.0,2356.0,1.8
+Seabrook,1806.0,2042.0,2.0
+Seaford,8180.0,1500.0,1.7
+Seddon (Kingsville),4351.0,2364.0,1.3
+Skye (Sandhurst),4673.0,2224.0,2.2
+Somerville,7400.0,1781.0,2.2
+Southbank (East),12383.0,1880.0,0.7
+Southbank (West (South Wharf),16160.0,1867.0,1.3
+South Melbourne,7475.0,2103.0,1.1
+South Morang (North),4056.0,2242.0,2.2
+South Morang (South),4446.0,1899.0,2.0
+South Yarra (North),8446.0,2042.0,0.9
+South Yarra (South),6516.0,2001.0,1.0
+South Yarra (West),4258.0,2259.0,1.1
+Springvale,8136.0,1401.0,1.7
+Springvale South,4073.0,1505.0,2.0
+St Albans (North),8119.0,1183.0,1.6
+St Albans (South),6333.0,1232.0,1.7
+St Kilda (Central),8598.0,1788.0,1.0
+St Kilda East,16160.0,1867.0,1.3
+St Kilda (West),9555.0,1849.0,1.0
+Strathmore,3786.0,2440.0,2.0
+Sunbury,26751.0,1812.0,2.0
+Sunbury (South),6041.0,1934.5,
+Sunbury (West),4296.0,1987.0,2.2
+Sunshine,177206.0,1574.0,2.0
+Sunshine North,4390.0,1399.0,1.8
+Sunshine West,7046.0,1416.0,1.8
+Surrey Hills (East (Mont Albert),16160.0,1867.0,1.3
+Surrey Hills (West (Canterbury),16160.0,1867.0,1.3
+Sydenham,26554.0,2107.0,2.2
+Tarneit (Central),8349.0,2164.0,2.0
+Tarneit (North),2215.0,2198.0,1.9
+Tarneit (South),3503.0,1885.0,1.9
+Tarneit (West (Mount Cottrell),16160.0,1867.0,1.3
+Taylors Hill,16160.0,1867.0,1.3
+Taylors Lakes,5915.0,2167.0,2.4
+Templestowe,6310.0,2163.0,2.1
+Templestowe Lower,5504.0,1919.0,1.9
+The Basin,1629.0,2049.0,2.2
+Thomastown,30354.0,1516.0,1.8
+Thornbury,9055.0,1978.0,1.4
+Toorak,7257.0,2538.0,1.7
+Truganina (North),2646.0,2307.0,1.9
+Truganina (South East),3045.0,2337.0,1.9
+Truganina (South West),5666.0,1947.0,1.9
+Tullamarine,68264.0,1658.0,2.0
+Upwey (Tecoma),3776.0,2148.0,2.1
+Vermont,4086.0,2042.0,1.9
+Vermont South,4443.0,1944.0,2.0
+Viewbank (Yallambie),7337.0,2025.0,1.8
+Wallan,5217.0,1917.0,2.2
+Wandin (Seville),2876.0,2066.0,2.7
+Wantirna,5320.0,1883.0,2.0
+Wantirna South,6927.0,1821.0,1.9
+Warrandyte (Wonga Park),6041.0,1934.5,
+Watsonia,3818.0,1961.0,1.8
+Wattle Glen (Diamond Creek),5012.0,2496.0,2.4
+Werribee (East),7727.0,1374.0,1.7
+Werribee (South),6876.0,1802.0,1.8
+Werribee (West),8439.0,1995.0,1.9
+West Footscray (Tottenham),5372.0,1988.0,1.4
+West Melbourne (Industrial),6041.0,1934.5,
+West Melbourne (Residential),4782.0,1784.0,0.8
+Wheelers Hill,7945.0,1818.0,2.0
+Whittlesea,82933.0,1768.0,1.9
+Williamstown,32366.0,2315.0,1.6
+Wollert,7989.0,1979.0,1.9
+Wyndham Vale (North),3225.0,1862.0,1.7
+Wyndham Vale (South),4699.0,1766.0,1.9
+Yarra Valley,148.0,900.0,1.9
+Yarraville,6768.0,2483.0,1.5

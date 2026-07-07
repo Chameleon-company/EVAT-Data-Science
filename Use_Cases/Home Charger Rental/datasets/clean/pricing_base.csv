@@ -1,0 +1,355 @@
+Suburb,Cluster,Cluster_Label,Population,Income,Vehicles_per_Dwelling,Public_Chargers,Station_Count,Avg_Congestion,Demand_Index,Supply_Index,Demand_Supply_Ratio
+Abbotsford,2,EV-Ready Suburbs,10294,2333.0,1.6,1,1,0.0,0.6258059858579641,2,0.20860199528598802
+Airport West,2,EV-Ready Suburbs,8647,1761.0,1.7,1,1,0.0,0.5585344260924742,2,0.18617814203082472
+Albert Park,1,High Population – Infrastructure Gap,17184,2076.0,1.1,0,0,0.0,0.7182117657787049,0,0.7182117657787049
+Alphington - Fairfield,0,Affluent Car-Dependent (High Potential),9688,2112.0,1.5,0,0,0.0,0.5521549316645579,0,0.5521549316645579
+Altona,2,EV-Ready Suburbs,14232,2123.0,1.8,2,2,0.0,0.9733611462572239,4,0.19467222925144478
+Altona Meadows,1,High Population – Infrastructure Gap,18793,1573.0,1.8,0,0,0.0,1.2852990459255207,0,1.2852990459255207
+Altona North,2,EV-Ready Suburbs,15914,1740.0,1.7,1,1,0.0,1.0279307108633784,2,0.3426435702877928
+Ardeer - Albion,1,High Population – Infrastructure Gap,7908,1366.0,1.4,0,0,0.0,0.4206590751062932,0,0.4206590751062932
+Armadale,2,EV-Ready Suburbs,9997,1774.0,2.0,1,1,0.0,0.7596879785095768,2,0.25322932616985894
+Ascot Vale,2,EV-Ready Suburbs,16154,2192.0,1.5,1,1,0.0,0.9206761732152423,2,0.3068920577384141
+Ashburton,0,Affluent Car-Dependent (High Potential),8403,2937.0,1.9,0,0,0.0,0.6066295067765506,0,0.6066295067765506
+Ashwood - Chadstone,1,High Population – Infrastructure Gap,20947,2011.0,1.7,0,0,0.0,1.3530265552629879,0,1.3530265552629879
+Aspendale Gardens - Waterways,0,Affluent Car-Dependent (High Potential),9099,2348.0,2.2,0,0,0.0,0.7605922784939986,0,0.7605922784939986
+Avondale Heights,1,High Population – Infrastructure Gap,12822,1587.0,1.8,0,0,0.0,0.8769278117840167,0,0.8769278117840167
+Balwyn,1,High Population – Infrastructure Gap,16966,2017.0,1.7,0,0,0.0,1.095882395407068,0,1.095882395407068
+Balwyn North,0,Affluent Car-Dependent (High Potential),22325,2350.0,2.0,0,0,0.0,1.69651236573235,0,1.69651236573235
+Bayswater,1,High Population – Infrastructure Gap,13305,1739.0,1.7,0,0,0.0,0.8594079494807874,0,0.8594079494807874
+Bayswater North,0,Affluent Car-Dependent (High Potential),12043,1800.0,2.0,0,0,0.0,0.9151667825538496,0,0.9151667825538496
+Beaconsfield - Officer,1,High Population – Infrastructure Gap,28367,2146.0,2.1,0,0,0.0,2.2634362639492074,0,2.2634362639492074
+Beaumaris,0,Affluent Car-Dependent (High Potential),14422,2622.0,2.0,0,0,0.0,1.0959507878428647,0,1.0959507878428647
+Belgrave - Selby,0,Affluent Car-Dependent (High Potential),9991,2253.0,2.4,0,0,0.0,0.9110784347251194,0,0.9110784347251194
+Bentleigh East (North),0,Affluent Car-Dependent (High Potential),17553,2250.0,1.8,0,0,0.0,1.2004924255377356,0,1.2004924255377356
+Bentleigh East (South),0,Affluent Car-Dependent (High Potential),14770,2173.0,1.8,0,0,0.0,1.0101562767157952,0,1.0101562767157952
+Bentleigh - Mckinnon,1,High Population – Infrastructure Gap,26825,2240.0,1.7,0,0,0.0,1.7327033630080513,0,1.7327033630080513
+Berwick (North),1,High Population – Infrastructure Gap,23797,1885.0,2.0,0,0,0.0,1.8083719940574574,0,1.8083719940574574
+Berwick (South East),0,Affluent Car-Dependent (High Potential),20002,2361.0,2.2,0,0,0.0,1.6719822787599692,0,1.6719822787599692
+Berwick (South West),0,Affluent Car-Dependent (High Potential),12791,2175.0,2.1,0,0,0.0,1.0206089206533757,0,1.0206089206533757
+Blackburn,1,High Population – Infrastructure Gap,23471,2050.0,1.7,0,0,0.0,1.5160589238830184,0,1.5160589238830184
+Blackburn South,0,Affluent Car-Dependent (High Potential),11079,1861.0,1.7,0,0,0.0,0.7156242519577334,0,0.7156242519577334
+Boronia,1,High Population – Infrastructure Gap,24565,1609.0,1.8,0,0,0.0,1.680060185343501,0,1.680060185343501
+Box Hill,1,High Population – Infrastructure Gap,26668,1836.0,1.6,0,0,0.0,1.6212350913988913,0,1.6212350913988913
+Box Hill North,1,High Population – Infrastructure Gap,19435,1920.0,1.7,0,0,0.0,1.2553621569454418,0,1.2553621569454418
+Braeside,1,High Population – Infrastructure Gap,28,933.0,1.6,0,0,0.0,0.0017022117353820668,0,0.0017022117353820668
+Braybrook,1,High Population – Infrastructure Gap,20699,1686.0,1.6,0,0,0.0,1.2583600253811928,0,1.2583600253811928
+Brighton,2,EV-Ready Suburbs,24107,1352.0,2.1,1,1,0.0,1.923525858040101,2,0.6411752860133669
+Brighton East,2,EV-Ready Suburbs,17261,2720.0,1.9,2,2,0.0,1.2461063806343018,4,0.24922127612686035
+Broadmeadows,1,High Population – Infrastructure Gap,14786,1281.0,1.8,0,0,0.0,1.011250555688541,0,1.011250555688541
+Brookfield,0,Affluent Car-Dependent (High Potential),10408,2821.0,2.1,0,0,0.0,0.8304665503995259,0,0.8304665503995259
+Brunswick East,2,EV-Ready Suburbs,14438,2087.0,1.2,1,1,0.0,0.6582999920208825,2,0.2194333306736275
+Brunswick (North),1,High Population – Infrastructure Gap,14595,2062.0,1.2,0,0,0.0,0.6654584003009267,0,0.6654584003009267
+Brunswick (South),1,High Population – Infrastructure Gap,15190,2126.0,1.1,0,0,0.0,0.6348717831807803,0,0.6348717831807803
+Brunswick West,1,High Population – Infrastructure Gap,15644,1786.0,1.3,0,0,0.0,0.7727281362681286,0,0.7727281362681286
+Bulleen,1,High Population – Infrastructure Gap,11762,1816.0,1.8,0,0,0.0,0.8044318298396197,0,0.8044318298396197
+Bundoora (East),0,Affluent Car-Dependent (High Potential),10240,1705.0,1.9,0,0,0.0,0.7392462393659261,0,0.7392462393659261
+Bundoora (North),0,Affluent Car-Dependent (High Potential),8005,1833.0,2.0,0,0,0.0,0.6083127206131002,0,0.6083127206131002
+Bundoora (West),1,High Population – Infrastructure Gap,6742,1423.0,1.8,0,0,0.0,0.46110180214068325,0,0.46110180214068325
+Burnside,0,Affluent Car-Dependent (High Potential),6449,2069.0,1.8,0,0,0.0,0.4410628184522792,0,0.4410628184522792
+Burnside Heights,0,Affluent Car-Dependent (High Potential),6499,2246.0,2.2,0,0,0.0,0.5432563158514668,0,0.5432563158514668
+Burwood,1,High Population – Infrastructure Gap,14918,1867.0,1.3,0,0,0.0,0.736867702432111,0,0.736867702432111
+Burwood East,1,High Population – Infrastructure Gap,12366,1610.0,1.7,0,0,0.0,0.7987552576685018,0,0.7987552576685018
+Cairnlea,0,Affluent Car-Dependent (High Potential),10045,2062.0,2.3,0,0,0.0,0.8778359113482048,0,0.8778359113482048
+Camberwell,2,EV-Ready Suburbs,22120,2472.0,1.8,1,1,0.0,1.5128406798208118,2,0.5042802266069373
+Campbellfield - Coolaroo,1,High Population – Infrastructure Gap,16438,1104.0,1.8,0,0,0.0,1.1242348596245255,0,1.1242348596245255
+Carlton,2,EV-Ready Suburbs,23954,1954.0,1.6,2,2,0.0,1.4562421396193581,4,0.2912484279238716
+Carlton North - Princes Hill,0,Affluent Car-Dependent (High Potential),8747,2355.0,1.3,0,0,0.0,0.43205401482596023,0,0.43205401482596023
+Carnegie,1,High Population – Infrastructure Gap,20903,1416.0,1.8,0,0,0.0,1.4296070854563485,0,1.4296070854563485
+Caroline Springs,2,EV-Ready Suburbs,21022,2133.0,2.1,1,1,0.0,1.6773700828688347,2,0.5591233609562782
+Carrum Downs,2,EV-Ready Suburbs,23342,1658.0,1.9,1,1,0.0,1.6851060272733838,2,0.5617020090911279
+Carrum - Patterson Lakes,0,Affluent Car-Dependent (High Potential),12445,1853.0,1.8,0,0,0.0,0.8511438634886982,0,0.8511438634886982
+Caulfield (North),1,High Population – Infrastructure Gap,24485,2184.0,1.6,0,0,0.0,1.488523369315354,0,1.488523369315354
+Caulfield (South),0,Affluent Car-Dependent (High Potential),18975,2289.0,1.7,0,0,0.0,1.2256494431715852,0,1.2256494431715852
+Chelsea - Bonbeach,1,High Population – Infrastructure Gap,15882,1718.0,1.6,0,0,0.0,0.9655188136192138,0,0.9655188136192138
+Chelsea Heights,0,Affluent Car-Dependent (High Potential),5456,1867.0,1.9,0,0,0.0,0.3938796369121575,0,0.3938796369121575
+Chirnside Park,2,EV-Ready Suburbs,12506,2084.0,2.1,1,1,0.0,0.997868435751006,2,0.332622811917002
+Clarinda - Oakleigh South,1,High Population – Infrastructure Gap,11752,1659.0,1.9,0,0,0.0,0.8484005668973013,0,0.8484005668973013
+Clayton (Central),1,High Population – Infrastructure Gap,15034,1711.0,1.5,0,0,0.0,0.8568432331384149,0,0.8568432331384149
+Clayton (North) - Notting Hill,1,High Population – Infrastructure Gap,14143,1867.0,1.3,0,0,0.0,0.6985869362848469,0,0.6985869362848469
+Clayton South,1,High Population – Infrastructure Gap,15138,1630.0,1.6,0,0,0.0,0.9202886160790618,0,0.9202886160790618
+Clifton Hill - Alphington,0,Affluent Car-Dependent (High Potential),11292,2529.0,1.4,0,0,0.0,0.6006679661229467,0,0.6006679661229467
+Clyde North (North),0,Affluent Car-Dependent (High Potential),13155,2288.0,2.0,0,0,0.0,0.9996694365603165,0,0.9996694365603165
+Clyde North (South),0,Affluent Car-Dependent (High Potential),24609,2193.0,2.1,0,0,0.0,1.9635810279383101,0,1.9635810279383101
+Cobblebank - Strathtulloh,0,Affluent Car-Dependent (High Potential),11760,2056.0,2.0,0,0,0.0,0.893661161075585,0,0.893661161075585
+Coburg (East),1,High Population – Infrastructure Gap,13966,1944.0,1.4,0,0,0.0,0.7429090342608107,0,0.7429090342608107
+Coburg North,2,EV-Ready Suburbs,8935,1980.0,1.5,1,1,0.0,0.5092386782021907,2,0.1697462260673969
+Coburg (West),0,Affluent Car-Dependent (High Potential),14835,2186.0,1.5,0,0,0.0,0.8455014875354786,0,0.8455014875354786
+Collingwood,1,High Population – Infrastructure Gap,11145,2130.0,0.9,0,0,0.0,0.38111684847655847,0,0.38111684847655847
+Craigieburn (Central),0,Affluent Car-Dependent (High Potential),8207,1523.0,2.0,0,0,0.0,0.6236630228696706,0,0.6236630228696706
+Craigieburn (North),0,Affluent Car-Dependent (High Potential),12882,1958.0,2.1,0,0,0.0,1.0278699175871149,0,1.0278699175871149
+Craigieburn (North West),0,Affluent Car-Dependent (High Potential),11198,1876.0,1.8,0,0,0.0,0.7658584960503368,0,0.7658584960503368
+Craigieburn (South),1,High Population – Infrastructure Gap,24086,1835.0,2.1,0,0,0.0,1.9218502433630842,0,1.9218502433630842
+Craigieburn (West),1,High Population – Infrastructure Gap,14760,1752.0,1.8,0,0,0.0,1.0094723523578293,0,1.0094723523578293
+Cranbourne,2,EV-Ready Suburbs,22544,1920.0,2.0,1,1,0.0,1.713154525109523,2,0.571051508369841
+Cranbourne East (North),1,High Population – Infrastructure Gap,25149,1931.0,2.0,0,0,0.0,1.9111126309430178,0,1.9111126309430178
+Cranbourne East (South),0,Affluent Car-Dependent (High Potential),15112,1958.0,1.9,0,0,0.0,1.0909657391892458,0,1.0909657391892458
+Cranbourne North (East),0,Affluent Car-Dependent (High Potential),13678,2184.0,2.1,0,0,0.0,1.0913836929635583,0,1.0913836929635583
+Cranbourne North (West),0,Affluent Car-Dependent (High Potential),12329,1686.0,2.1,0,0,0.0,0.9837453977590079,0,0.9837453977590079
+Cranbourne South,0,Affluent Car-Dependent (High Potential),24578,2228.0,2.3,0,0,0.0,2.147879644511317,0,2.147879644511317
+Cranbourne West,2,EV-Ready Suburbs,24902,1903.0,2.0,1,1,0.0,1.8923427068966172,2,0.6307809022988724
+Croydon (East),1,High Population – Infrastructure Gap,17181,1566.0,1.7,0,0,0.0,1.1097698594535446,0,1.1097698594535446
+Croydon Hills - Warranwood,0,Affluent Car-Dependent (High Potential),18391,2377.0,2.2,0,0,0.0,1.537317572676462,0,1.537317572676462
+Croydon South,0,Affluent Car-Dependent (High Potential),5140,1888.0,2.0,0,0,0.0,0.39059679999392066,0,0.39059679999392066
+Croydon (West),1,High Population – Infrastructure Gap,14828,1695.0,1.8,0,0,0.0,1.014123037991998,0,1.014123037991998
+Dandenong North,2,EV-Ready Suburbs,23300,1436.0,1.9,1,1,0.0,1.6820739626197343,2,0.5606913208732448
+Dandenong North,2,EV-Ready Suburbs,23300,1208.0,1.5,1,1,0.0,1.3279531283840005,2,0.4426510427946668
+Dandenong (North),2,EV-Ready Suburbs,23067,1436.0,1.9,1,1,0.0,1.6652532229935368,2,0.5550844076645123
+Dandenong (North),2,EV-Ready Suburbs,23067,1208.0,1.5,1,1,0.0,1.3146735971001606,2,0.4382245323667202
+Dandenong (South),1,High Population – Infrastructure Gap,10032,1288.0,1.7,0,0,0.0,0.6479955316941945,0,0.6479955316941945
+Deer Park,2,EV-Ready Suburbs,18447,1459.0,1.8,1,1,0.0,1.2616352631398968,2,0.42054508771329896
+Delahey,0,Affluent Car-Dependent (High Potential),8008,1486.0,2.0,0,0,0.0,0.6085406953990888,0,0.6085406953990888
+Derrimut,2,EV-Ready Suburbs,8913,2271.0,2.2,1,1,0.0,0.7450443980895713,2,0.24834813269652378
+Diggers Rest,0,Affluent Car-Dependent (High Potential),6967,2016.0,1.9,0,0,0.0,0.5029617724279695,0,0.5029617724279695
+Dingley Village,0,Affluent Car-Dependent (High Potential),10754,1981.0,2.1,0,0,0.0,0.8580742969827537,0,0.8580742969827537
+Docklands,1,High Population – Infrastructure Gap,18567,1956.0,0.8,0,0,0.0,0.5643743801935506,0,0.5643743801935506
+Doncaster,1,High Population – Infrastructure Gap,27904,1595.0,1.6,0,0,0.0,1.6963755808607568,0,1.6963755808607568
+Doncaster East (North),0,Affluent Car-Dependent (High Potential),16352,1934.0,2.0,0,0,0.0,1.2426145668289088,0,1.2426145668289088
+Doncaster East (South),1,High Population – Infrastructure Gap,16710,1656.0,1.7,0,0,0.0,1.0793466242633565,0,1.0793466242633565
+Donvale - Park Orchards,0,Affluent Car-Dependent (High Potential),16778,2284.0,2.2,0,0,0.0,1.40248568508323,0,1.40248568508323
+Doreen (North),0,Affluent Car-Dependent (High Potential),17231,2173.0,2.1,0,0,0.0,1.3748817380797684,0,1.3748817380797684
+Doreen (South),0,Affluent Car-Dependent (High Potential),11810,2120.0,2.0,0,0,0.0,0.897460740842063,0,0.897460740842063
+Doveton,1,High Population – Infrastructure Gap,12792,1262.0,1.7,0,0,0.0,0.8262718143373342,0,0.8262718143373342
+Dromana,1,High Population – Infrastructure Gap,13785,1398.0,1.9,0,0,0.0,0.9951669345370402,0,0.9951669345370402
+East Melbourne,0,Affluent Car-Dependent (High Potential),5222,2345.0,1.2,0,0,0.0,0.23809686648656658,0,0.23809686648656658
+Edithvale - Aspendale,0,Affluent Car-Dependent (High Potential),14151,2223.0,1.8,0,0,0.0,0.9678213589576993,0,0.9678213589576993
+Elsternwick,0,Affluent Car-Dependent (High Potential),12765,2171.0,1.5,0,0,0.0,0.7275245357863419,0,0.7275245357863419
+Eltham,2,EV-Ready Suburbs,23554,2302.0,2.1,1,1,0.0,1.8794013382119938,2,0.6264671127373312
+Elwood,1,High Population – Infrastructure Gap,15961,2093.0,1.3,0,0,0.0,0.7883862044857839,0,0.7883862044857839
+Emerald - Cockatoo,0,Affluent Car-Dependent (High Potential),18958,2176.0,2.5,0,0,0.0,1.8008108303221664,0,1.8008108303221664
+Endeavour Hills (North),0,Affluent Car-Dependent (High Potential),12150,1823.0,2.2,0,0,0.0,1.0156276715795234,0,1.0156276715795234
+Endeavour Hills (South),0,Affluent Car-Dependent (High Potential),13594,1733.0,2.1,0,0,0.0,1.0846812342554915,0,1.0846812342554915
+Epping (East),1,High Population – Infrastructure Gap,13492,1675.0,2.0,0,0,0.0,1.025278604186377,0,1.025278604186377
+Epping (South),1,High Population – Infrastructure Gap,8413,1443.0,1.7,0,0,0.0,0.5434196977814254,0,0.5434196977814254
+Epping (West),1,High Population – Infrastructure Gap,12905,1867.0,1.3,0,0,0.0,0.6374364995231527,0,0.6374364995231527
+Essendon Airport,0,Affluent Car-Dependent (High Potential),14,1934.5,1.8,0,0,0.0,0.0009574941011524125,0,0.0009574941011524125
+Essendon (East),1,High Population – Infrastructure Gap,12946,2055.0,1.5,0,0,0.0,0.7378403948523292,0,0.7378403948523292
+Essendon (West) - Aberfeldie,1,High Population – Infrastructure Gap,17156,1867.0,1.3,0,0,0.0,0.8474126761580169,0,0.8474126761580169
+Fawkner,2,EV-Ready Suburbs,14960,1436.0,1.6,1,1,0.0,0.9094674129041328,2,0.3031558043013776
+Ferntree Gully (North),1,High Population – Infrastructure Gap,14530,1606.0,1.8,0,0,0.0,0.9937420921246111,0,0.9937420921246111
+Ferntree Gully (South) - Upper Ferntree Gully,1,High Population – Infrastructure Gap,15600,1867.0,1.3,0,0,0.0,0.7705547766417035,0,0.7705547766417035
+Fitzroy,1,High Population – Infrastructure Gap,11984,1528.0,1.0,0,0,0.0,0.4553416392147029,0,0.4553416392147029
+Fitzroy North,1,High Population – Infrastructure Gap,13722,2300.0,1.2,0,0,0.0,0.625654002667305,0,0.625654002667305
+Flemington,1,High Population – Infrastructure Gap,10290,1571.0,1.1,0,0,0.0,0.43007443376762533,0,0.43007443376762533
+Flemington Racecourse,0,Affluent Car-Dependent (High Potential),78,2178.0,1.1,0,0,0.0,0.003260039439637976,0,0.003260039439637976
+Footscray,1,High Population – Infrastructure Gap,20756,1738.0,1.5,0,0,0.0,1.1829611644952067,0,1.1829611644952067
+Forest Hill,2,EV-Ready Suburbs,11213,1833.0,1.8,1,1,0.0,0.7668843825872859,2,0.2556281275290953
+Frankston,2,EV-Ready Suburbs,24792,1653.0,1.9,1,1,0.0,1.7897844498398476,2,0.5965948166132825
+Frankston North,1,High Population – Infrastructure Gap,19841,1313.0,1.6,0,0,0.0,1.2061993943469853,0,1.2061993943469853
+Frankston South,0,Affluent Car-Dependent (High Potential),19214,2038.0,2.0,0,0,0.0,1.4601025126620997,0,1.4601025126620997
+Fraser Rise - Plumpton,0,Affluent Car-Dependent (High Potential),20730,2254.0,2.1,0,0,0.0,1.6540710597407928,0,1.6540710597407928
+Gladstone Park - Westmeadows,1,High Population – Infrastructure Gap,18264,1600.0,2.0,0,0,0.0,1.3879104970990208,0,1.3879104970990208
+Glen Iris (East),0,Affluent Car-Dependent (High Potential),17537,2914.0,1.9,0,0,0.0,1.2660313769297116,0,1.2660313769297116
+Glenroy (East),1,High Population – Infrastructure Gap,15735,1526.0,1.6,0,0,0.0,0.956582202008458,0,0.956582202008458
+Glenroy (West),1,High Population – Infrastructure Gap,9575,1869.0,1.5,0,0,0.0,0.5457146439603779,0,0.5457146439603779
+Glen Waverley (East),1,High Population – Infrastructure Gap,22689,1949.0,1.9,0,0,0.0,1.6379646411106932,0,1.6379646411106932
+Glen Waverley (West),1,High Population – Infrastructure Gap,23202,1890.0,1.8,0,0,0.0,1.586841295352734,0,1.586841295352734
+Gowanbrae,0,Affluent Car-Dependent (High Potential),3189,2162.0,2.0,0,0,0.0,0.24233719750595586,0,0.24233719750595586
+Greensborough,2,EV-Ready Suburbs,21338,2078.0,1.9,1,1,0.0,1.540433228084974,2,0.5134777426949914
+Greenvale - Bulla,0,Affluent Car-Dependent (High Potential),25723,2250.0,2.4,0,0,0.0,2.3456781679946195,0,2.3456781679946195
+Hadfield,1,High Population – Infrastructure Gap,6654,1538.0,1.7,0,0,0.0,0.42980086402443884,0,0.42980086402443884
+Hallam,1,High Population – Infrastructure Gap,11944,1496.0,2.0,0,0,0.0,0.9076436146162234,0,0.9076436146162234
+Hampton,2,EV-Ready Suburbs,19208,2415.0,1.7,1,1,0.0,1.240699578626604,2,0.41356652620886797
+Hampton Park (East),1,High Population – Infrastructure Gap,13383,1623.0,2.1,0,0,0.0,1.067845296310228,0,1.067845296310228
+Hampton Park (West),1,High Population – Infrastructure Gap,13768,1462.0,2.0,0,0,0.0,1.0462522844973345,0,1.0462522844973345
+Hastings - Somers,1,High Population – Infrastructure Gap,23960,1407.0,1.9,0,0,0.0,1.7297206928913664,0,1.7297206928913664
+Hawthorn East,1,High Population – Infrastructure Gap,17318,2228.0,1.5,0,0,0.0,0.9870168359379453,0,0.9870168359379453
+Hawthorn (North),0,Affluent Car-Dependent (High Potential),10820,2300.0,1.4,0,0,0.0,0.5755603430260612,0,0.5755603430260612
+Hawthorn (South),1,High Population – Infrastructure Gap,13481,2055.0,1.3,0,0,0.0,0.6658877528145387,0,0.6658877528145387
+Heidelberg - Rosanna,1,High Population – Infrastructure Gap,16915,2102.0,1.6,0,0,0.0,1.0283182679995593,0,1.0283182679995593
+Heidelberg West,1,High Population – Infrastructure Gap,16703,1618.0,1.5,0,0,0.0,0.9519657125921872,0,0.9519657125921872
+Highett (East) - Cheltenham,1,High Population – Infrastructure Gap,25866,1867.0,1.3,0,0,0.0,1.2776390931163013,0,1.2776390931163013
+Highett (West) - Cheltenham,1,High Population – Infrastructure Gap,13098,1867.0,1.3,0,0,0.0,0.6469696451572456,0,0.6469696451572456
+Hillside,0,Affluent Car-Dependent (High Potential),16120,2212.0,2.4,0,0,0.0,1.469981420054942,0,1.469981420054942
+Hoppers Crossing (North),1,High Population – Infrastructure Gap,18410,1705.0,2.1,0,0,0.0,1.4689555335179931,0,1.4689555335179931
+Hoppers Crossing (South),1,High Population – Infrastructure Gap,18967,1470.0,1.8,0,0,0.0,1.297199329754129,0,1.297199329754129
+Hughesdale,0,Affluent Car-Dependent (High Potential),8088,2057.0,1.6,0,0,0.0,0.4916960184203628,0,0.4916960184203628
+Hurstbridge,0,Affluent Car-Dependent (High Potential),3540,2168.0,2.3,0,0,0.0,0.3093617845866247,0,0.3093617845866247
+Ivanhoe,1,High Population – Infrastructure Gap,13151,2055.0,1.7,0,0,0.0,0.8494606496521484,0,0.8494606496521484
+Ivanhoe East - Eaglemont,0,Affluent Car-Dependent (High Potential),8100,2914.0,2.0,0,0,0.0,0.615531922169408,0,0.615531922169408
+Keilor,0,Affluent Car-Dependent (High Potential),8701,1935.0,1.9,0,0,0.0,0.628142727414348,0,0.628142727414348
+Keilor Downs,2,EV-Ready Suburbs,13068,1553.0,2.0,1,1,0.0,0.993058167766645,2,0.33101938925554836
+Keilor East,0,Affluent Car-Dependent (High Potential),15497,1913.0,1.9,0,0,0.0,1.118759665181031,0,1.118759665181031
+Kensington,0,Affluent Car-Dependent (High Potential),11699,1840.0,2.5,0,0,0.0,1.1112820922006026,0,1.1112820922006026
+Kew East,0,Affluent Car-Dependent (High Potential),6780,2485.0,1.8,0,0,0.0,0.4637007147009541,0,0.4637007147009541
+Kew (South),0,Affluent Car-Dependent (High Potential),12352,2577.0,1.8,0,0,0.0,0.8447833669596143,0,0.8447833669596143
+Kew (West),0,Affluent Car-Dependent (High Potential),13675,2459.0,1.7,0,0,0.0,0.8833073062119329,0,0.8833073062119329
+Keysborough (North),1,High Population – Infrastructure Gap,15095,1525.0,2.0,0,0,0.0,1.1470931314996562,0,1.1470931314996562
+Keysborough (South),0,Affluent Car-Dependent (High Potential),16874,2493.0,2.3,0,0,0.0,1.4746245065295778,0,1.4746245065295778
+Kilsyth,1,High Population – Infrastructure Gap,10676,1654.0,1.9,0,0,0.0,0.7707219581514284,0,0.7707219581514284
+Kingsbury,1,High Population – Infrastructure Gap,12508,1727.0,1.7,0,0,0.0,0.8079274432247794,0,0.8079274432247794
+Kings Park,1,High Population – Infrastructure Gap,13931,1753.0,1.5,0,0,0.0,0.7939791859020392,0,0.7939791859020392
+Knoxfield - Scoresby,0,Affluent Car-Dependent (High Potential),17142,1953.0,2.0,0,0,0.0,1.3026479271392586,0,1.3026479271392586
+Koo Wee Rup,0,Affluent Car-Dependent (High Potential),12009,1763.0,2.1,0,0,0.0,0.9582122217282769,0,0.9582122217282769
+Kurunjang - Toolern Vale,0,Affluent Car-Dependent (High Potential),12069,1556.0,2.2,0,0,0.0,1.0088568204356598,0,1.0088568204356598
+Lalor (East),1,High Population – Infrastructure Gap,10195,1224.0,1.7,0,0,0.0,0.6585241672271047,0,0.6585241672271047
+Lalor (West),1,High Population – Infrastructure Gap,13933,1450.0,1.9,0,0,0.0,1.0058513528403759,0,1.0058513528403759
+Langwarrin,1,High Population – Infrastructure Gap,25747,1950.0,2.2,0,0,0.0,2.152211165445102,0,2.152211165445102
+Laverton,1,High Population – Infrastructure Gap,12754,966.0,1.4,0,0,0.0,0.6784377647832149,0,0.6784377647832149
+Lilydale - Coldstream,1,High Population – Infrastructure Gap,20533,1784.0,2.1,0,0,0.0,1.638352198246874,0,1.638352198246874
+Lynbrook - Lyndhurst,0,Affluent Car-Dependent (High Potential),19435,2330.0,2.2,0,0,0.0,1.624586320752925,0,1.624586320752925
+Lysterfield,0,Affluent Car-Dependent (High Potential),6614,2756.0,2.6,0,0,0.0,0.6533909349625932,0,0.6533909349625932
+Malvern East,2,EV-Ready Suburbs,23738,2386.0,1.7,1,1,0.0,1.5333052164430614,2,0.5111017388143538
+Malvern - Glen Iris,1,High Population – Infrastructure Gap,21680,2364.0,1.6,0,0,0.0,1.317998229395829,0,1.317998229395829
+Manor Lakes - Quandong,0,Affluent Car-Dependent (High Potential),12575,2309.0,1.7,0,0,0.0,0.8122551645787975,0,0.8122551645787975
+Maribyrnong,1,High Population – Infrastructure Gap,13818,1998.0,1.4,0,0,0.0,0.7350363049846685,0,0.7350363049846685
+Meadow Heights,1,High Population – Infrastructure Gap,14960,1274.0,2.0,0,0,0.0,1.136834266130166,0,1.136834266130166
+Melbourne Airport,0,Affluent Car-Dependent (High Potential),130,1437.0,2.9,0,0,0.0,0.01432441571962141,0,0.01432441571962141
+Melbourne Cbd (East),1,High Population – Infrastructure Gap,13697,1511.0,0.4,0,0,0.0,0.20817137624578724,0,0.20817137624578724
+Melbourne Cbd (North),1,High Population – Infrastructure Gap,23579,1089.0,0.3,0,0,0.0,0.2687708739413421,0,0.2687708739413421
+Melbourne Cbd (West),1,High Population – Infrastructure Gap,21528,1446.0,0.4,0,0,0.0,0.3271894128509387,0,0.3271894128509387
+Melton,1,High Population – Infrastructure Gap,8046,1887.0,2.1,0,0,0.0,0.6419997948226926,0,0.6419997948226926
+Melton South - Weir Views,1,High Population – Infrastructure Gap,21758,1363.0,1.7,0,0,0.0,1.4054113615034176,0,1.4054113615034176
+Melton West,1,High Population – Infrastructure Gap,22691,1621.0,2.0,0,0,0.0,1.7243252896229677,0,1.7243252896229677
+Mentone,1,High Population – Infrastructure Gap,13987,1889.0,1.6,0,0,0.0,0.850315555099606,0,0.850315555099606
+Mernda (North),0,Affluent Car-Dependent (High Potential),12038,1897.0,1.8,0,0,0.0,0.8233081421194816,0,0.8233081421194816
+Mernda (South),0,Affluent Car-Dependent (High Potential),13526,2109.0,2.0,0,0,0.0,1.027862318427582,0,1.027862318427582
+Mickleham - Yuroke,1,High Population – Infrastructure Gap,35371,1982.0,2.1,0,0,0.0,2.822293654321832,0,2.822293654321832
+Mill Park (North),1,High Population – Infrastructure Gap,17706,1798.0,2.1,0,0,0.0,1.4127825462503847,0,1.4127825462503847
+Mill Park (South),0,Affluent Car-Dependent (High Potential),11322,1647.0,2.0,0,0,0.0,0.8603768423212393,0,0.8603768423212393
+Mitcham,1,High Population – Infrastructure Gap,17472,1996.0,2.0,0,0,0.0,1.3277251535980121,0,1.3277251535980121
+Monbulk - Silvan,0,Affluent Car-Dependent (High Potential),5834,1872.0,2.5,0,0,0.0,0.5541687089407911,0,0.5541687089407911
+Montmorency - Briar Hill,0,Affluent Car-Dependent (High Potential),16957,2068.0,1.9,0,0,0.0,1.2241600079031258,0,1.2241600079031258
+Montrose,0,Affluent Car-Dependent (High Potential),6921,2094.0,2.3,0,0,0.0,0.60482850596724,0,0.60482850596724
+Moonee Ponds,2,EV-Ready Suburbs,17823,2111.0,1.4,1,1,0.0,0.9480787424910803,2,0.31602624749702674
+Moorabbin Airport,0,Affluent Car-Dependent (High Potential),26,1934.5,1.8,0,0,0.0,0.0017782033307116234,0,0.0017782033307116234
+Moorabbin - Heatherton,0,Affluent Car-Dependent (High Potential),9708,2046.0,1.8,0,0,0.0,0.6639537667134014,0,0.6639537667134014
+Mooroolbark,1,High Population – Infrastructure Gap,24258,1992.0,2.1,0,0,0.0,1.935574325479602,0,1.935574325479602
+Mordialloc - Parkdale,1,High Population – Infrastructure Gap,22229,2090.0,1.8,0,0,0.0,1.5202954553226413,0,1.5202954553226413
+Mornington (East),1,High Population – Infrastructure Gap,15111,1502.0,1.9,0,0,0.0,1.0908935471736827,0,1.0908935471736827
+Mornington (West),1,High Population – Infrastructure Gap,10843,1389.0,1.7,0,0,0.0,0.7003803379346244,0,0.7003803379346244
+Mount Dandenong - Olinda,0,Affluent Car-Dependent (High Potential),9609,2102.0,2.2,0,0,0.0,0.8032235634738798,0,0.8032235634738798
+Mount Eliza,0,Affluent Car-Dependent (High Potential),19009,2547.0,2.3,0,0,0.0,1.6612028709624715,0,1.6612028709624715
+Mount Evelyn,0,Affluent Car-Dependent (High Potential),10032,2045.0,2.4,0,0,0.0,0.9148172212153335,0,0.9148172212153335
+Mount Martha,0,Affluent Car-Dependent (High Potential),20166,2097.0,2.1,0,0,0.0,1.6090688369866295,0,1.6090688369866295
+Mount Waverley (North),0,Affluent Car-Dependent (High Potential),17214,2049.0,1.9,0,0,0.0,1.2427133559028372,0,1.2427133559028372
+Mount Waverley (South),1,High Population – Infrastructure Gap,20581,2079.0,1.9,0,0,0.0,1.4857838723037233,0,1.4857838723037233
+Mulgrave,1,High Population – Infrastructure Gap,20981,1647.0,1.9,0,0,0.0,1.514660678528955,0,1.514660678528955
+Murrumbeena,0,Affluent Car-Dependent (High Potential),10045,2089.0,1.6,0,0,0.0,0.6106684600683164,0,0.6106684600683164
+Narre Warren North,0,Affluent Car-Dependent (High Potential),8184,1780.0,2.1,0,0,0.0,0.6530109769859455,0,0.6530109769859455
+Narre Warren (North East),0,Affluent Car-Dependent (High Potential),13643,1920.0,2.2,0,0,0.0,1.1404286685892542,0,1.1404286685892542
+Narre Warren South (East),0,Affluent Car-Dependent (High Potential),13030,2352.0,2.5,0,0,0.0,1.2377131089301523,0,1.2377131089301523
+Narre Warren (South West),1,High Population – Infrastructure Gap,15452,1615.0,1.9,0,0,0.0,1.1155110244806925,0,1.1155110244806925
+Narre Warren (South West),0,Affluent Car-Dependent (High Potential),15452,2011.0,2.3,0,0,0.0,1.3503554506871538,0,1.3503554506871538
+Narre Warren South (West),1,High Population – Infrastructure Gap,17141,1615.0,1.9,0,0,0.0,1.2374433387667323,0,1.2374433387667323
+Narre Warren South (West),0,Affluent Car-Dependent (High Potential),17141,2011.0,2.3,0,0,0.0,1.497957725875518,0,1.497957725875518
+Newport,0,Affluent Car-Dependent (High Potential),19943,2607.0,2.1,0,0,0.0,1.5912754049402138,0,1.5912754049402138
+Niddrie - Essendon West,0,Affluent Car-Dependent (High Potential),7925,2239.0,1.8,0,0,0.0,0.5420100536880621,0,0.5420100536880621
+Noble Park (East),1,High Population – Infrastructure Gap,13699,1359.0,1.6,0,0,0.0,0.8328070915356762,0,0.8328070915356762
+Noble Park North,1,High Population – Infrastructure Gap,7651,1453.0,1.8,0,0,0.0,0.5232705262797934,0,0.5232705262797934
+Noble Park (West),1,High Population – Infrastructure Gap,20330,1399.0,1.7,0,0,0.0,1.313172763092402,0,1.313172763092402
+Northcote (East),1,High Population – Infrastructure Gap,15920,2251.0,1.4,0,0,0.0,0.8468503383525781,0,0.8468503383525781
+Northcote (West),0,Affluent Car-Dependent (High Potential),10953,2318.0,1.3,0,0,0.0,0.5410183633690113,0,0.5410183633690113
+North Melbourne,1,High Population – Infrastructure Gap,19221,1718.0,0.9,0,0,0.0,0.657285504223233,0,0.657285504223233
+Nunawading,1,High Population – Infrastructure Gap,13230,1938.0,1.7,0,0,0.0,0.8545634852785281,0,0.8545634852785281
+Oakleigh - Huntingdale,1,High Population – Infrastructure Gap,25104,1956.0,1.7,0,0,0.0,1.6215390577802096,0,1.6215390577802096
+Oak Park,2,EV-Ready Suburbs,8488,2204.0,1.6,1,1,0.0,0.5160133289258207,2,0.1720044429752736
+Ormond - Glen Huntly,1,High Population – Infrastructure Gap,14736,1978.0,1.4,0,0,0.0,0.7838685041434417,0,0.7838685041434417
+Pakenham (North East),1,High Population – Infrastructure Gap,16379,1651.0,2.0,0,0,0.0,1.2446663399028068,0,1.2446663399028068
+Pakenham (North West),0,Affluent Car-Dependent (High Potential),9658,1887.0,2.0,0,0,0.0,0.7339268276928572,0,0.7339268276928572
+Pakenham (South East),1,High Population – Infrastructure Gap,6706,1235.0,1.7,0,0,0.0,0.4331596925380053,0,0.4331596925380053
+Pakenham (South West),1,High Population – Infrastructure Gap,28217,1803.0,2.0,0,0,0.0,2.1442548454140975,0,2.1442548454140975
+Parkville,1,High Population – Infrastructure Gap,8293,1885.0,1.2,0,0,0.0,0.37811898004080746,0,0.37811898004080746
+Pascoe Vale,1,High Population – Infrastructure Gap,18434,1947.0,1.6,0,0,0.0,1.1206632546440365,0,1.1206632546440365
+Pascoe Vale South,0,Affluent Car-Dependent (High Potential),10869,2245.0,1.8,0,0,0.0,0.7433573846732552,0,0.7433573846732552
+Pearcedale - Tooradin,0,Affluent Car-Dependent (High Potential),8253,1895.0,2.6,0,0,0.0,0.8153062271312792,0,0.8153062271312792
+Plenty - Yarrambat,0,Affluent Car-Dependent (High Potential),9609,2554.0,2.6,0,0,0.0,0.9492642113782216,0,0.9492642113782216
+Point Cook (East),0,Affluent Car-Dependent (High Potential),21519,2381.0,1.9,0,0,0.0,1.5534999829018912,0,1.5534999829018912
+Point Cook (North East),0,Affluent Car-Dependent (High Potential),14817,2185.0,1.9,0,0,0.0,1.0696690945981375,0,1.0696690945981375
+Point Cook (North West),0,Affluent Car-Dependent (High Potential),10165,2439.0,1.9,0,0,0.0,0.7338318381986952,0,0.7338318381986952
+Point Cook (South),0,Affluent Car-Dependent (High Potential),20596,2522.0,1.8,0,0,0.0,1.4086106076667921,0,1.4086106076667921
+Point Nepean,1,High Population – Infrastructure Gap,20258,1430.0,1.9,0,0,0.0,1.462465851276849,0,1.462465851276849
+Port Melbourne,2,EV-Ready Suburbs,16884,2347.0,1.3,4,4,0.0,0.8339773621037513,8,0.09266415134486125
+Port Melbourne Industrial,0,Affluent Car-Dependent (High Potential),2611,2407.0,1.2,0,0,0.0,0.11904843324328329,0,0.11904843324328329
+Prahran - Windsor,1,High Population – Infrastructure Gap,20928,2098.0,1.1,0,0,0.0,0.8746936588813278,0,0.8746936588813278
+Preston (East),1,High Population – Infrastructure Gap,22596,1787.0,1.4,0,0,0.0,1.2019742616466618,0,1.2019742616466618
+Preston (West),1,High Population – Infrastructure Gap,13470,1970.0,1.5,0,0,0.0,0.767705091816845,0,0.767705091816845
+Research - North Warrandyte,0,Affluent Car-Dependent (High Potential),7034,2831.0,2.6,0,0,0.0,0.6948823460125311,0,0.6948823460125311
+Reservoir (North East),1,High Population – Infrastructure Gap,15976,1544.0,1.5,0,0,0.0,0.9105312952387465,0,0.9105312952387465
+Reservoir (North West),1,High Population – Infrastructure Gap,9834,1442.0,1.8,0,0,0.0,0.6725712136237733,0,0.6725712136237733
+Reservoir (South East),1,High Population – Infrastructure Gap,13875,1401.0,1.4,0,0,0.0,0.7380683696383179,0,0.7380683696383179
+Reservoir (South West),1,High Population – Infrastructure Gap,15161,1743.0,1.5,0,0,0.0,0.8640814325935551,0,0.8640814325935551
+Richmond (North),1,High Population – Infrastructure Gap,15319,2009.0,1.1,0,0,0.0,0.6402633868694122,0,0.6402633868694122
+Richmond (South) - Cremorne,1,High Population – Infrastructure Gap,19230,1867.0,1.3,0,0,0.0,0.949856945821792,0,0.949856945821792
+Ringwood,2,EV-Ready Suburbs,19633,1888.0,1.7,1,1,0.0,1.268151542439406,2,0.42271718081313536
+Ringwood East,1,High Population – Infrastructure Gap,21866,1945.0,1.8,0,0,0.0,1.4954690011284753,0,1.4954690011284753
+Ringwood North,0,Affluent Car-Dependent (High Potential),9803,2330.0,2.1,0,0,0.0,0.7821928894664251,0,0.7821928894664251
+Rockbank - Mount Cottrell,1,High Population – Infrastructure Gap,31389,2123.0,2.0,0,0,0.0,2.3853001857994505,0,2.3853001857994505
+Rosebud - Mccrae,1,High Population – Infrastructure Gap,23281,1155.0,1.7,0,0,0.0,1.503786281237295,0,1.503786281237295
+Rowville (Central),0,Affluent Car-Dependent (High Potential),15731,2083.0,2.2,0,0,0.0,1.3149661647421798,0,1.3149661647421798
+Rowville (North),0,Affluent Car-Dependent (High Potential),7894,2285.0,2.2,0,0,0.0,0.6598654188846714,0,0.6598654188846714
+Rowville (South),0,Affluent Car-Dependent (High Potential),10594,2363.0,2.3,0,0,0.0,0.9258132050595204,0,0.9258132050595204
+Roxburgh Park (North),1,High Population – Infrastructure Gap,15427,1619.0,2.2,0,0,0.0,1.2895545752639759,0,1.2895545752639759
+Roxburgh Park (South) - Somerton,1,High Population – Infrastructure Gap,9731,1867.0,1.3,0,0,0.0,0.4806582391987446,0,0.4806582391987446
+Royal Botanic Gardens Victoria,0,Affluent Car-Dependent (High Potential),0,1934.5,1.8,0,0,0.0,0.0,0,0.0
+Sandringham - Black Rock,0,Affluent Car-Dependent (High Potential),18022,2356.0,1.8,0,0,0.0,1.2325684779263413,0,1.2325684779263413
+Seabrook,0,Affluent Car-Dependent (High Potential),4963,2042.0,2.0,0,0,0.0,0.3771462876205892,0,0.3771462876205892
+Seaford,1,High Population – Infrastructure Gap,18072,1500.0,1.7,0,0,0.0,1.167322094176384,0,1.167322094176384
+Seddon - Kingsville,0,Affluent Car-Dependent (High Potential),9782,2364.0,1.3,0,0,0.0,0.4831773605839194,0,0.4831773605839194
+Skye - Sandhurst,0,Affluent Car-Dependent (High Potential),13607,2224.0,2.2,0,0,0.0,1.1374194014142036,0,1.1374194014142036
+Somerville,1,High Population – Infrastructure Gap,18972,1781.0,2.2,0,0,0.0,1.5858838012515817,0,1.5858838012515817
+Southbank (East),1,High Population – Infrastructure Gap,19428,1880.0,0.7,0,0,0.0,0.5167276499219186,0,0.5167276499219186
+Southbank (West) - South Wharf,1,High Population – Infrastructure Gap,7866,1867.0,1.3,0,0,0.0,0.38853742776048966,0,0.38853742776048966
+South Melbourne,2,EV-Ready Suburbs,12916,2103.0,1.1,1,1,0.0,0.5398290949021038,2,0.1799430316340346
+South Morang (North),0,Affluent Car-Dependent (High Potential),13070,2242.0,2.2,0,0,0.0,1.0925311660530346,0,1.0925311660530346
+South Morang (South),0,Affluent Car-Dependent (High Potential),12889,1899.0,2.0,0,0,0.0,0.9794556722026544,0,0.9794556722026544
+South Yarra (North),1,High Population – Infrastructure Gap,13633,2042.0,0.9,0,0,0.0,0.46619703860753003,0,0.46619703860753003
+South Yarra (South),1,High Population – Infrastructure Gap,10558,2001.0,1.0,0,0,0.0,0.401159631744729,0,0.401159631744729
+South Yarra (West),0,Affluent Car-Dependent (High Potential),6946,2259.0,1.1,0,0,0.0,0.2903106916375049,0,0.2903106916375049
+Springvale,1,High Population – Infrastructure Gap,24111,1401.0,1.7,0,0,0.0,1.5573983517422973,0,1.5573983517422973
+Springvale South,1,High Population – Infrastructure Gap,13139,1505.0,2.0,0,0,0.0,0.9984535710350436,0,0.9984535710350436
+St Albans (North),1,High Population – Infrastructure Gap,21002,1183.0,1.6,0,0,0.0,1.2767803880890776,0,1.2767803880890776
+St Albans (South),1,High Population – Infrastructure Gap,17764,1232.0,1.7,0,0,0.0,1.147427494519106,0,1.147427494519106
+St Kilda (Central),1,High Population – Infrastructure Gap,13725,1788.0,1.0,0,0,0.0,0.5214923229490819,0,0.5214923229490819
+St Kilda East,1,High Population – Infrastructure Gap,17332,1867.0,1.3,0,0,0.0,0.8561061146637182,0,0.8561061146637182
+St Kilda (West),1,High Population – Infrastructure Gap,16059,1849.0,1.0,0,0,0.0,0.6101745146986743,0,0.6101745146986743
+Strathmore,0,Affluent Car-Dependent (High Potential),10457,2440.0,2.0,0,0,0.0,0.7946441123611729,0,0.7946441123611729
+Sunbury,2,EV-Ready Suburbs,14810,1812.0,2.0,1,1,0.0,1.1254355268307326,2,0.3751451756102442
+Sunbury (South),1,High Population – Infrastructure Gap,16819,1934.5,1.8,0,0,0.0,1.1502923776630305,0,1.1502923776630305
+Sunbury (West),0,Affluent Car-Dependent (High Potential),11404,1987.0,2.2,0,0,0.0,0.9532689684520892,0,0.9532689684520892
+Sunshine,1,High Population – Infrastructure Gap,10104,1574.0,2.0,0,0,0.0,0.7678190792098394,0,0.7678190792098394
+Sunshine North,1,High Population – Infrastructure Gap,12503,1399.0,1.8,0,0,0.0,0.855110624764901,0,0.855110624764901
+Sunshine West,2,EV-Ready Suburbs,18790,1416.0,1.8,1,1,0.0,1.2850938686181308,2,0.42836462287271027
+Surrey Hills (East) - Mont Albert,1,High Population – Infrastructure Gap,10765,1867.0,1.3,0,0,0.0,0.5317321904197396,0,0.5317321904197396
+Surrey Hills (West) - Canterbury,1,High Population – Infrastructure Gap,16231,1867.0,1.3,0,0,0.0,0.8017227294661211,0,0.8017227294661211
+Sydenham,2,EV-Ready Suburbs,11972,2107.0,2.2,1,1,0.0,1.0007485172139963,2,0.33358283907133207
+Tarneit (Central),1,High Population – Infrastructure Gap,29462,2164.0,2.0,0,0,0.0,2.238864381599395,0,2.238864381599395
+Tarneit (North),0,Affluent Car-Dependent (High Potential),13485,2198.0,1.9,0,0,0.0,0.9735093298681167,0,0.9735093298681167
+Tarneit (South),0,Affluent Car-Dependent (High Potential),11708,1885.0,1.9,0,0,0.0,0.8452241182125257,0,0.8452241182125257
+Tarneit (West) - Mount Cottrell,1,High Population – Infrastructure Gap,17173,1867.0,1.3,0,0,0.0,0.8482523832864085,0,0.8482523832864085
+Taylors Hill,1,High Population – Infrastructure Gap,19856,1867.0,1.3,0,0,0.0,0.9807779259613887,0,0.9807779259613887
+Taylors Lakes,0,Affluent Car-Dependent (High Potential),16999,2167.0,2.4,0,0,0.0,1.5501373548085582,0,1.5501373548085582
+Templestowe,0,Affluent Car-Dependent (High Potential),17467,2163.0,2.1,0,0,0.0,1.3937124554024327,0,1.3937124554024327
+Templestowe Lower,0,Affluent Car-Dependent (High Potential),14612,1919.0,1.9,0,0,0.0,1.0548697314077062,0,1.0548697314077062
+The Basin,0,Affluent Car-Dependent (High Potential),4345,2049.0,2.2,0,0,0.0,0.3632018298776156,0,0.3632018298776156
+Thomastown,1,High Population – Infrastructure Gap,20538,1516.0,1.8,0,0,0.0,1.4046438463905893,0,1.4046438463905893
+Thornbury,1,High Population – Infrastructure Gap,19982,1978.0,1.4,0,0,0.0,1.0629248405126392,0,1.0629248405126392
+Toorak,0,Affluent Car-Dependent (High Potential),13504,2538.0,1.7,0,0,0.0,0.8722619278307818,0,0.8722619278307818
+Truganina (North),0,Affluent Car-Dependent (High Potential),14287,2307.0,1.9,0,0,0.0,1.0314073263497057,0,1.0314073263497057
+Truganina (South East),0,Affluent Car-Dependent (High Potential),10689,2337.0,1.9,0,0,0.0,0.7716604543537485,0,0.7716604543537485
+Truganina (South West),1,High Population – Infrastructure Gap,20356,1947.0,1.9,0,0,0.0,1.4695406688020305,0,1.4695406688020305
+Tullamarine,1,High Population – Infrastructure Gap,6710,1658.0,2.0,0,0,0.0,0.5099036046613244,0,0.5099036046613244
+Upwey - Tecoma,0,Affluent Car-Dependent (High Potential),9862,2148.0,2.1,0,0,0.0,0.786900568797091,0,0.786900568797091
+Vermont,0,Affluent Car-Dependent (High Potential),11353,2042.0,1.9,0,0,0.0,0.8195959526876327,0,0.8195959526876327
+Vermont South,0,Affluent Car-Dependent (High Potential),12275,1944.0,2.0,0,0,0.0,0.9327968326703068,0,0.9327968326703068
+Viewbank - Yallambie,1,High Population – Infrastructure Gap,19009,2025.0,1.8,0,0,0.0,1.3000718120575865,0,1.3000718120575865
+Wallan,2,EV-Ready Suburbs,28415,1917.0,2.2,1,1,0.0,2.3752312994182843,2,0.7917437664727615
+Wandin - Seville,0,Affluent Car-Dependent (High Potential),7999,2066.0,2.7,0,0,0.0,0.8206066409055159,0,0.8206066409055159
+Wantirna,0,Affluent Car-Dependent (High Potential),14631,1883.0,2.0,0,0,0.0,1.111833031266742,0,1.111833031266742
+Wantirna South,1,High Population – Infrastructure Gap,18388,1821.0,1.9,0,0,0.0,1.3274667821738915,0,1.3274667821738915
+Warrandyte - Wonga Park,0,Affluent Car-Dependent (High Potential),10238,1934.5,1.8,0,0,0.0,0.7002017576856,0,0.7002017576856
+Watsonia,0,Affluent Car-Dependent (High Potential),9518,1961.0,1.8,0,0,0.0,0.6509592039120473,0,0.6509592039120473
+Wattle Glen - Diamond Creek,0,Affluent Car-Dependent (High Potential),14803,2496.0,2.4,0,0,0.0,1.3498843027961107,0,1.3498843027961107
+Werribee (East),1,High Population – Infrastructure Gap,19124,1374.0,1.7,0,0,0.0,1.2352737787200736,0,1.2352737787200736
+Werribee (South),1,High Population – Infrastructure Gap,17937,1802.0,1.8,0,0,0.0,1.2267551208836303,0,1.2267551208836303
+Werribee (West),1,High Population – Infrastructure Gap,30552,1995.0,1.9,0,0,0.0,2.205610459483181,0,2.205610459483181
+West Footscray - Tottenham,1,High Population – Infrastructure Gap,12953,1988.0,1.4,0,0,0.0,0.689023394012622,0,0.689023394012622
+West Melbourne (Industrial),0,Affluent Car-Dependent (High Potential),0,1934.5,1.8,0,0,0.0,0.0,0,0.0
+West Melbourne (Residential),1,High Population – Infrastructure Gap,9301,1784.0,0.8,0,0,0.0,0.2827191312640822,0,0.2827191312640822
+Wheelers Hill,1,High Population – Infrastructure Gap,21285,1818.0,2.0,0,0,0.0,1.617481106589611,0,1.617481106589611
+Whittlesea,2,EV-Ready Suburbs,15811,1768.0,1.9,1,1,0.0,1.1414279580678377,2,0.38047598602261257
+Williamstown,1,High Population – Infrastructure Gap,16920,2315.0,1.6,0,0,0.0,1.0286222343808775,0,1.0286222343808775
+Wollert,1,High Population – Infrastructure Gap,33578,1979.0,1.9,0,0,0.0,2.4240634985770573,0,2.4240634985770573
+Wyndham Vale (North),1,High Population – Infrastructure Gap,13138,1862.0,1.7,0,0,0.0,0.8486209425237567,0,0.8486209425237567
+Wyndham Vale (South),1,High Population – Infrastructure Gap,14163,1766.0,1.9,0,0,0.0,1.022455516419884,0,1.022455516419884
+Yarra Valley,1,High Population – Infrastructure Gap,17059,900.0,1.9,0,0,0.0,1.23152359349056,0,1.23152359349056
+Yarraville,0,Affluent Car-Dependent (High Potential),16243,2483.0,1.5,0,0,0.0,0.9257486122034901,0,0.9257486122034901

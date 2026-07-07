@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_90df9da6fe4583873a48ef4281248516 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_90df9da6fe4583873a48ef4281248516" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_90df9da6fe4583873a48ef4281248516 = L.map(
+                "map_90df9da6fe4583873a48ef4281248516",
+                {
+                    center: [-37.8158726, 144.9957991],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_01b72fd56e767d461e9a2f4981fc43cf = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_01b72fd56e767d461e9a2f4981fc43cf.addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+            var circle_marker_e9a463f3cdd8b72a4b9793a6e38274a8 = L.circleMarker(
+                [-37.8045508, 144.9988542],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_8973f390643d9757f9786ab07391aee0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d01efab1a6d57dc153131a0dc4ff8392 = $(`<div id="html_d01efab1a6d57dc153131a0dc4ff8392" style="width: 100.0%; height: 100.0%;">     <b>Abbotsford</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 10294<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_8973f390643d9757f9786ab07391aee0.setContent(html_d01efab1a6d57dc153131a0dc4ff8392);
+            
+        
+
+        circle_marker_e9a463f3cdd8b72a4b9793a6e38274a8.bindPopup(popup_8973f390643d9757f9786ab07391aee0)
+        ;
+
+        
+    
+    
+            var circle_marker_55c97f0f70e478a7039c040ed61bbf0e = L.circleMarker(
+                [-37.7222576, 144.8834942],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_d67e075c9d01cd9b029e81259ffb2ffb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9feda1dfac4069f87565e1b9d26ee9d2 = $(`<div id="html_9feda1dfac4069f87565e1b9d26ee9d2" style="width: 100.0%; height: 100.0%;">     <b>Airport West</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 8647<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_d67e075c9d01cd9b029e81259ffb2ffb.setContent(html_9feda1dfac4069f87565e1b9d26ee9d2);
+            
+        
+
+        circle_marker_55c97f0f70e478a7039c040ed61bbf0e.bindPopup(popup_d67e075c9d01cd9b029e81259ffb2ffb)
+        ;
+
+        
+    
+    
+            var circle_marker_c5dc3e039d456012c9f9014beb1dc1a4 = L.circleMarker(
+                [-37.8671503, 144.8294637],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_67d3474d650ee32f6fde143410e6c0aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7dc171200762f4d5f2d485284836529d = $(`<div id="html_7dc171200762f4d5f2d485284836529d" style="width: 100.0%; height: 100.0%;">     <b>Altona</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 14232<br>     Public Chargers: 2<br>     Stations: 2     </div>`)[0];
+                popup_67d3474d650ee32f6fde143410e6c0aa.setContent(html_7dc171200762f4d5f2d485284836529d);
+            
+        
+
+        circle_marker_c5dc3e039d456012c9f9014beb1dc1a4.bindPopup(popup_67d3474d650ee32f6fde143410e6c0aa)
+        ;
+
+        
+    
+    
+            var circle_marker_a1641f75856c810daa7b0ff920377e2e = L.circleMarker(
+                [-37.8378229, 144.8342853],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_a7de02d6677afa62eebfed8a9f5abcb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32a9a687b38c67f40f1ffb3203f565c2 = $(`<div id="html_32a9a687b38c67f40f1ffb3203f565c2" style="width: 100.0%; height: 100.0%;">     <b>Altona North</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 15914<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_a7de02d6677afa62eebfed8a9f5abcb7.setContent(html_32a9a687b38c67f40f1ffb3203f565c2);
+            
+        
+
+        circle_marker_a1641f75856c810daa7b0ff920377e2e.bindPopup(popup_a7de02d6677afa62eebfed8a9f5abcb7)
+        ;
+
+        
+    
+    
+            var circle_marker_804569de0711db43b7e59fd7234e8a83 = L.circleMarker(
+                [-37.8563442, 145.0193207],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_9c8d71d5bfd014aad46ba144a2075d3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36059f1471e81174b76205105ad471ea = $(`<div id="html_36059f1471e81174b76205105ad471ea" style="width: 100.0%; height: 100.0%;">     <b>Armadale</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 9997<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_9c8d71d5bfd014aad46ba144a2075d3f.setContent(html_36059f1471e81174b76205105ad471ea);
+            
+        
+
+        circle_marker_804569de0711db43b7e59fd7234e8a83.bindPopup(popup_9c8d71d5bfd014aad46ba144a2075d3f)
+        ;
+
+        
+    
+    
+            var circle_marker_ab519ec2c8cdfd2593d7380255e170bb = L.circleMarker(
+                [-37.7753252, 144.921825],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_eec9b09faa50f73647250e9f46427735 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45e8b9e307ed4df7903e20f8f7d9e3fd = $(`<div id="html_45e8b9e307ed4df7903e20f8f7d9e3fd" style="width: 100.0%; height: 100.0%;">     <b>Ascot Vale</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 16154<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_eec9b09faa50f73647250e9f46427735.setContent(html_45e8b9e307ed4df7903e20f8f7d9e3fd);
+            
+        
+
+        circle_marker_ab519ec2c8cdfd2593d7380255e170bb.bindPopup(popup_eec9b09faa50f73647250e9f46427735)
+        ;
+
+        
+    
+    
+            var circle_marker_8dec4fa3155a6dbcdeb65013e1b5d990 = L.circleMarker(
+                [-37.9081962, 144.9957991],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_6973cfd2d27599e7ceb18ce9746ddeac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1b3f677178b9a7aa1f6f532107a14037 = $(`<div id="html_1b3f677178b9a7aa1f6f532107a14037" style="width: 100.0%; height: 100.0%;">     <b>Brighton</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 24107<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_6973cfd2d27599e7ceb18ce9746ddeac.setContent(html_1b3f677178b9a7aa1f6f532107a14037);
+            
+        
+
+        circle_marker_8dec4fa3155a6dbcdeb65013e1b5d990.bindPopup(popup_6973cfd2d27599e7ceb18ce9746ddeac)
+        ;
+
+        
+    
+    
+            var circle_marker_dcfaaddf2f1d5687fe9822c71792be67 = L.circleMarker(
+                [-37.9171728, 145.0163663],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_7996d7be4ba7af62e5731a56b7b4849f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b936b341ed8d250f038bd6c6b27103a = $(`<div id="html_2b936b341ed8d250f038bd6c6b27103a" style="width: 100.0%; height: 100.0%;">     <b>Brighton East</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 17261<br>     Public Chargers: 2<br>     Stations: 2     </div>`)[0];
+                popup_7996d7be4ba7af62e5731a56b7b4849f.setContent(html_2b936b341ed8d250f038bd6c6b27103a);
+            
+        
+
+        circle_marker_dcfaaddf2f1d5687fe9822c71792be67.bindPopup(popup_7996d7be4ba7af62e5731a56b7b4849f)
+        ;
+
+        
+    
+    
+            var circle_marker_eec948d34304feae48c395b6fa9bf8a5 = L.circleMarker(
+                [-37.7688802, 144.9776825],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_d337a2eee4c084110c61fad4f243c684 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52861f8ff91ae730edb60dc156f186b6 = $(`<div id="html_52861f8ff91ae730edb60dc156f186b6" style="width: 100.0%; height: 100.0%;">     <b>Brunswick East</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 14438<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_d337a2eee4c084110c61fad4f243c684.setContent(html_52861f8ff91ae730edb60dc156f186b6);
+            
+        
+
+        circle_marker_eec948d34304feae48c395b6fa9bf8a5.bindPopup(popup_d337a2eee4c084110c61fad4f243c684)
+        ;
+
+        
+    
+    
+            var circle_marker_46a194ce50d4dd6af89b79b4c57734b8 = L.circleMarker(
+                [-37.8384623, 145.0740767],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_2cb700a2750fcb79e9e7f02fe865fc15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3724bb92a9901125e8059d002a39c692 = $(`<div id="html_3724bb92a9901125e8059d002a39c692" style="width: 100.0%; height: 100.0%;">     <b>Camberwell</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 22120<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_2cb700a2750fcb79e9e7f02fe865fc15.setContent(html_3724bb92a9901125e8059d002a39c692);
+            
+        
+
+        circle_marker_46a194ce50d4dd6af89b79b4c57734b8.bindPopup(popup_2cb700a2750fcb79e9e7f02fe865fc15)
+        ;
+
+        
+    
+    
+            var circle_marker_bc19f71b993bd1462e1f36681cb1ea21 = L.circleMarker(
+                [-37.8004228, 144.9684343],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_9eca61bc44e123f40f2868a2871c5a19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab6907e072305b041afea1898a7eda40 = $(`<div id="html_ab6907e072305b041afea1898a7eda40" style="width: 100.0%; height: 100.0%;">     <b>Carlton</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 23954<br>     Public Chargers: 2<br>     Stations: 2     </div>`)[0];
+                popup_9eca61bc44e123f40f2868a2871c5a19.setContent(html_ab6907e072305b041afea1898a7eda40);
+            
+        
+
+        circle_marker_bc19f71b993bd1462e1f36681cb1ea21.bindPopup(popup_9eca61bc44e123f40f2868a2871c5a19)
+        ;
+
+        
+    
+    
+            var circle_marker_3cafae58fcafaf00934ccf6b3463d655 = L.circleMarker(
+                [-37.7340623, 144.7370017],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_df76a10a3a42093e7e7354f7632182ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae1ce9671223467268c7416cca1453e3 = $(`<div id="html_ae1ce9671223467268c7416cca1453e3" style="width: 100.0%; height: 100.0%;">     <b>Caroline Springs</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 21022<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_df76a10a3a42093e7e7354f7632182ec.setContent(html_ae1ce9671223467268c7416cca1453e3);
+            
+        
+
+        circle_marker_3cafae58fcafaf00934ccf6b3463d655.bindPopup(popup_df76a10a3a42093e7e7354f7632182ec)
+        ;
+
+        
+    
+    
+            var circle_marker_051fc5e016732e1f868b078b47f9ba64 = L.circleMarker(
+                [-38.1003312, 145.1788657],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_eef961747c9abe28924be125e8edd596 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_215e80912665bd0d2630a8f8858972ac = $(`<div id="html_215e80912665bd0d2630a8f8858972ac" style="width: 100.0%; height: 100.0%;">     <b>Carrum Downs</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 23342<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_eef961747c9abe28924be125e8edd596.setContent(html_215e80912665bd0d2630a8f8858972ac);
+            
+        
+
+        circle_marker_051fc5e016732e1f868b078b47f9ba64.bindPopup(popup_eef961747c9abe28924be125e8edd596)
+        ;
+
+        
+    
+    
+            var circle_marker_c723e6e8ee12b2891f58fd5b8398e176 = L.circleMarker(
+                [-37.9047634, 144.6530424],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_50958f19b5e6f70f7056311523f63421 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b2f4234204354e917acdfec8bdb3e0b9 = $(`<div id="html_b2f4234204354e917acdfec8bdb3e0b9" style="width: 100.0%; height: 100.0%;">     <b>Chirnside Park</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 12506<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_50958f19b5e6f70f7056311523f63421.setContent(html_b2f4234204354e917acdfec8bdb3e0b9);
+            
+        
+
+        circle_marker_c723e6e8ee12b2891f58fd5b8398e176.bindPopup(popup_50958f19b5e6f70f7056311523f63421)
+        ;
+
+        
+    
+    
+            var circle_marker_8328a2d5bd455d75c5c799c33ebcee6f = L.circleMarker(
+                [-37.7272635, 144.9678538],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_2dcbe09298a311bbd47370d4b6ce1886 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bedbc6a20dd50b58bc792797928c51bd = $(`<div id="html_bedbc6a20dd50b58bc792797928c51bd" style="width: 100.0%; height: 100.0%;">     <b>Coburg North</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 8935<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_2dcbe09298a311bbd47370d4b6ce1886.setContent(html_bedbc6a20dd50b58bc792797928c51bd);
+            
+        
+
+        circle_marker_8328a2d5bd455d75c5c799c33ebcee6f.bindPopup(popup_2dcbe09298a311bbd47370d4b6ce1886)
+        ;
+
+        
+    
+    
+            var circle_marker_738e259c86c9015a125bed635229df7e = L.circleMarker(
+                [-38.0997308, 145.2807256],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_fa97b08139d7c9e649035f0aaad88dc9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_26156d623973291444f91028ca06bd4b = $(`<div id="html_26156d623973291444f91028ca06bd4b" style="width: 100.0%; height: 100.0%;">     <b>Cranbourne</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 22544<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_fa97b08139d7c9e649035f0aaad88dc9.setContent(html_26156d623973291444f91028ca06bd4b);
+            
+        
+
+        circle_marker_738e259c86c9015a125bed635229df7e.bindPopup(popup_fa97b08139d7c9e649035f0aaad88dc9)
+        ;
+
+        
+    
+    
+            var circle_marker_d5dd9207932555e4c2bbbd6ee9d264b7 = L.circleMarker(
+                [-38.102241, 145.2517182],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_eacae62bb1f98fd1dfc5202c7325e945 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4a913ad23d9b3b8a3f01e58ed005e03 = $(`<div id="html_f4a913ad23d9b3b8a3f01e58ed005e03" style="width: 100.0%; height: 100.0%;">     <b>Cranbourne West</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 24902<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_eacae62bb1f98fd1dfc5202c7325e945.setContent(html_f4a913ad23d9b3b8a3f01e58ed005e03);
+            
+        
+
+        circle_marker_d5dd9207932555e4c2bbbd6ee9d264b7.bindPopup(popup_eacae62bb1f98fd1dfc5202c7325e945)
+        ;
+
+        
+    
+    
+            var circle_marker_34fb94c97223da187fe0a71a3cfcc51f = L.circleMarker(
+                [-37.9558319, 145.2143234],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_1dd93a8789092658a6da651902f588f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07ffe1178e7a1675bd5856994b150f29 = $(`<div id="html_07ffe1178e7a1675bd5856994b150f29" style="width: 100.0%; height: 100.0%;">     <b>Dandenong North</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 23300<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_1dd93a8789092658a6da651902f588f2.setContent(html_07ffe1178e7a1675bd5856994b150f29);
+            
+        
+
+        circle_marker_34fb94c97223da187fe0a71a3cfcc51f.bindPopup(popup_1dd93a8789092658a6da651902f588f2)
+        ;
+
+        
+    
+    
+            var circle_marker_50be69f364b9822ce4fa8633d1ac22b3 = L.circleMarker(
+                [-37.9558319, 145.2143234],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_6a45858e698aeefaee90fe7942ad27ce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_658e4738e9aa107f0d87778380d96215 = $(`<div id="html_658e4738e9aa107f0d87778380d96215" style="width: 100.0%; height: 100.0%;">     <b>Dandenong North</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 23300<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_6a45858e698aeefaee90fe7942ad27ce.setContent(html_658e4738e9aa107f0d87778380d96215);
+            
+        
+
+        circle_marker_50be69f364b9822ce4fa8633d1ac22b3.bindPopup(popup_6a45858e698aeefaee90fe7942ad27ce)
+        ;
+
+        
+    
+    
+            var circle_marker_c67a18101c80ab74011524436530c385 = L.circleMarker(
+                [-37.9558319, 145.2143234],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_a2c65e3da44011aa2cd77331be620fac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ac02316050fc2f86ff88050c5d7f508 = $(`<div id="html_7ac02316050fc2f86ff88050c5d7f508" style="width: 100.0%; height: 100.0%;">     <b>Dandenong (North)</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 23067<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_a2c65e3da44011aa2cd77331be620fac.setContent(html_7ac02316050fc2f86ff88050c5d7f508);
+            
+        
+
+        circle_marker_c67a18101c80ab74011524436530c385.bindPopup(popup_a2c65e3da44011aa2cd77331be620fac)
+        ;
+
+        
+    
+    
+            var circle_marker_bd57e218f62137ba2d258c01f3b7e345 = L.circleMarker(
+                [-37.9558319, 145.2143234],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_9b1b1672f64e7f282cf3a34dd8c64d9d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa3f10b79b105b6841b46d7d81215575 = $(`<div id="html_fa3f10b79b105b6841b46d7d81215575" style="width: 100.0%; height: 100.0%;">     <b>Dandenong (North)</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 23067<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_9b1b1672f64e7f282cf3a34dd8c64d9d.setContent(html_fa3f10b79b105b6841b46d7d81215575);
+            
+        
+
+        circle_marker_bd57e218f62137ba2d258c01f3b7e345.bindPopup(popup_9b1b1672f64e7f282cf3a34dd8c64d9d)
+        ;
+
+        
+    
+    
+            var circle_marker_a0d14c9300f2a87e5273f4a92bf8048b = L.circleMarker(
+                [-37.7686602, 144.7713077],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_c82653401c3ddef3340128bad7fb57e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58f31d67a5c51023bcd327f0db9b9016 = $(`<div id="html_58f31d67a5c51023bcd327f0db9b9016" style="width: 100.0%; height: 100.0%;">     <b>Deer Park</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 18447<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_c82653401c3ddef3340128bad7fb57e8.setContent(html_58f31d67a5c51023bcd327f0db9b9016);
+            
+        
+
+        circle_marker_a0d14c9300f2a87e5273f4a92bf8048b.bindPopup(popup_c82653401c3ddef3340128bad7fb57e8)
+        ;
+
+        
+    
+    
+            var circle_marker_1f98479118116157a96d27989a57260d = L.circleMarker(
+                [-37.7987978, 144.776051],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_aa1eea402383cc55d8c2a2c0ed101634 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_34750a0ff713999fb2d5c7d3b4080e67 = $(`<div id="html_34750a0ff713999fb2d5c7d3b4080e67" style="width: 100.0%; height: 100.0%;">     <b>Derrimut</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 8913<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_aa1eea402383cc55d8c2a2c0ed101634.setContent(html_34750a0ff713999fb2d5c7d3b4080e67);
+            
+        
+
+        circle_marker_1f98479118116157a96d27989a57260d.bindPopup(popup_aa1eea402383cc55d8c2a2c0ed101634)
+        ;
+
+        
+    
+    
+            var circle_marker_4c191101b176039f39ce680326527c76 = L.circleMarker(
+                [-37.713736, 145.147673],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_00f86cb6339bd9673a118e050d18d48b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0974222705e37921beec9cb3f857896a = $(`<div id="html_0974222705e37921beec9cb3f857896a" style="width: 100.0%; height: 100.0%;">     <b>Eltham</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 23554<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_00f86cb6339bd9673a118e050d18d48b.setContent(html_0974222705e37921beec9cb3f857896a);
+            
+        
+
+        circle_marker_4c191101b176039f39ce680326527c76.bindPopup(popup_00f86cb6339bd9673a118e050d18d48b)
+        ;
+
+        
+    
+    
+            var circle_marker_e1c80c5ecb703c7df6f134a0274f53db = L.circleMarker(
+                [-37.7146535, 144.9605402],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_33f9176833d3f394accf86b0c8efaa98 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e6b8a93cb428a1ddb6ef1ce1a0f692c = $(`<div id="html_2e6b8a93cb428a1ddb6ef1ce1a0f692c" style="width: 100.0%; height: 100.0%;">     <b>Fawkner</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 14960<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_33f9176833d3f394accf86b0c8efaa98.setContent(html_2e6b8a93cb428a1ddb6ef1ce1a0f692c);
+            
+        
+
+        circle_marker_e1c80c5ecb703c7df6f134a0274f53db.bindPopup(popup_33f9176833d3f394accf86b0c8efaa98)
+        ;
+
+        
+    
+    
+            var circle_marker_5c53ddffc16d4a052229135481801e18 = L.circleMarker(
+                [-37.8362738, 145.1690911],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_88e824a520402b1d0079fbddbc8c3946 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b1421e997f5178d89582e37e65930d76 = $(`<div id="html_b1421e997f5178d89582e37e65930d76" style="width: 100.0%; height: 100.0%;">     <b>Forest Hill</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 11213<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_88e824a520402b1d0079fbddbc8c3946.setContent(html_b1421e997f5178d89582e37e65930d76);
+            
+        
+
+        circle_marker_5c53ddffc16d4a052229135481801e18.bindPopup(popup_88e824a520402b1d0079fbddbc8c3946)
+        ;
+
+        
+    
+    
+            var circle_marker_efc4bf74f53765d819a1d64fb685ddf0 = L.circleMarker(
+                [-38.150925, 145.142239],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_8e7397df99acc214da6d0372ac99e4ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_806a9ff710430854c0481c1c9a8dfc12 = $(`<div id="html_806a9ff710430854c0481c1c9a8dfc12" style="width: 100.0%; height: 100.0%;">     <b>Frankston</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 24792<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_8e7397df99acc214da6d0372ac99e4ba.setContent(html_806a9ff710430854c0481c1c9a8dfc12);
+            
+        
+
+        circle_marker_efc4bf74f53765d819a1d64fb685ddf0.bindPopup(popup_8e7397df99acc214da6d0372ac99e4ba)
+        ;
+
+        
+    
+    
+            var circle_marker_ecc2608f01d14a5c61068e5620061714 = L.circleMarker(
+                [-37.7037383, 145.1079105],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_a702f9137bdc49f49954b390f88443c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a0215badc4e261c387618b1071b3f78 = $(`<div id="html_4a0215badc4e261c387618b1071b3f78" style="width: 100.0%; height: 100.0%;">     <b>Greensborough</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 21338<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_a702f9137bdc49f49954b390f88443c8.setContent(html_4a0215badc4e261c387618b1071b3f78);
+            
+        
+
+        circle_marker_ecc2608f01d14a5c61068e5620061714.bindPopup(popup_a702f9137bdc49f49954b390f88443c8)
+        ;
+
+        
+    
+    
+            var circle_marker_8947161c90b004dc9c14cb2b37609739 = L.circleMarker(
+                [-37.9381127, 145.0014764],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_f1c414801611d1f34b8736e786ab42d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_77ee650a8e6fd75e361ec064368575c8 = $(`<div id="html_77ee650a8e6fd75e361ec064368575c8" style="width: 100.0%; height: 100.0%;">     <b>Hampton</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 19208<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_f1c414801611d1f34b8736e786ab42d8.setContent(html_77ee650a8e6fd75e361ec064368575c8);
+            
+        
+
+        circle_marker_8947161c90b004dc9c14cb2b37609739.bindPopup(popup_f1c414801611d1f34b8736e786ab42d8)
+        ;
+
+        
+    
+    
+            var circle_marker_a4fe44df31aa782b5cfd87df42d80e10 = L.circleMarker(
+                [-37.7205762, 144.8047614],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_a03f7efb20eb6359467bebf1b16ab2c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2efa29fba2965a0035478e45d26d109 = $(`<div id="html_a2efa29fba2965a0035478e45d26d109" style="width: 100.0%; height: 100.0%;">     <b>Keilor Downs</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 13068<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_a03f7efb20eb6359467bebf1b16ab2c2.setContent(html_a2efa29fba2965a0035478e45d26d109);
+            
+        
+
+        circle_marker_a4fe44df31aa782b5cfd87df42d80e10.bindPopup(popup_a03f7efb20eb6359467bebf1b16ab2c2)
+        ;
+
+        
+    
+    
+            var circle_marker_0389f01a8378565d6a3210ec78331f09 = L.circleMarker(
+                [-37.876835, 145.0658739],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_c9097ab266bb9f596f6e3215d64574b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_335dc3f88cf181965b6cd1a29e4f53a9 = $(`<div id="html_335dc3f88cf181965b6cd1a29e4f53a9" style="width: 100.0%; height: 100.0%;">     <b>Malvern East</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 23738<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_c9097ab266bb9f596f6e3215d64574b4.setContent(html_335dc3f88cf181965b6cd1a29e4f53a9);
+            
+        
+
+        circle_marker_0389f01a8378565d6a3210ec78331f09.bindPopup(popup_c9097ab266bb9f596f6e3215d64574b4)
+        ;
+
+        
+    
+    
+            var circle_marker_db9fefc7ee59a3064ea142dab1cbc6fd = L.circleMarker(
+                [-37.765935, 144.9192614],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_bc3c9b941b135189d6d5e43af0a09235 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b689ba65bb12afe8644788181fdba0a8 = $(`<div id="html_b689ba65bb12afe8644788181fdba0a8" style="width: 100.0%; height: 100.0%;">     <b>Moonee Ponds</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 17823<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_bc3c9b941b135189d6d5e43af0a09235.setContent(html_b689ba65bb12afe8644788181fdba0a8);
+            
+        
+
+        circle_marker_db9fefc7ee59a3064ea142dab1cbc6fd.bindPopup(popup_bc3c9b941b135189d6d5e43af0a09235)
+        ;
+
+        
+    
+    
+            var circle_marker_2f789c31999a6e8f79a02a5b6e52d4c2 = L.circleMarker(
+                [-37.7180181, 144.9215041],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_4bbb2f282217b98f080e3f154c2781a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1530215696cdf56b4091d4b767eef4bb = $(`<div id="html_1530215696cdf56b4091d4b767eef4bb" style="width: 100.0%; height: 100.0%;">     <b>Oak Park</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 8488<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_4bbb2f282217b98f080e3f154c2781a9.setContent(html_1530215696cdf56b4091d4b767eef4bb);
+            
+        
+
+        circle_marker_2f789c31999a6e8f79a02a5b6e52d4c2.bindPopup(popup_4bbb2f282217b98f080e3f154c2781a9)
+        ;
+
+        
+    
+    
+            var circle_marker_7e5463c62e8ce79202e29042a912422a = L.circleMarker(
+                [-37.8333613, 144.9219203],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_ee1c24a3c0dd6d2824537b4d1b8243d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d88a5718fa21c27740209bd5c64d5822 = $(`<div id="html_d88a5718fa21c27740209bd5c64d5822" style="width: 100.0%; height: 100.0%;">     <b>Port Melbourne</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 16884<br>     Public Chargers: 4<br>     Stations: 4     </div>`)[0];
+                popup_ee1c24a3c0dd6d2824537b4d1b8243d0.setContent(html_d88a5718fa21c27740209bd5c64d5822);
+            
+        
+
+        circle_marker_7e5463c62e8ce79202e29042a912422a.bindPopup(popup_ee1c24a3c0dd6d2824537b4d1b8243d0)
+        ;
+
+        
+    
+    
+            var circle_marker_09d6d8c4a4c462bf6a78dcdf5b959ae4 = L.circleMarker(
+                [-37.8158726, 145.2291113],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_86f83ab937fda4956c0f67dee9a45341 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78bc5bb9c14eb1b104130cb6fcff6cf2 = $(`<div id="html_78bc5bb9c14eb1b104130cb6fcff6cf2" style="width: 100.0%; height: 100.0%;">     <b>Ringwood</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 19633<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_86f83ab937fda4956c0f67dee9a45341.setContent(html_78bc5bb9c14eb1b104130cb6fcff6cf2);
+            
+        
+
+        circle_marker_09d6d8c4a4c462bf6a78dcdf5b959ae4.bindPopup(popup_86f83ab937fda4956c0f67dee9a45341)
+        ;
+
+        
+    
+    
+            var circle_marker_f092f4c07a33cfa6e95bd7a38a2f39da = L.circleMarker(
+                [-37.83344, 144.9570533],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_b4104193e8c1933349f2c6923aaa301e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f9811ac609a2caa500a273b56e0841e = $(`<div id="html_7f9811ac609a2caa500a273b56e0841e" style="width: 100.0%; height: 100.0%;">     <b>South Melbourne</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 12916<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_b4104193e8c1933349f2c6923aaa301e.setContent(html_7f9811ac609a2caa500a273b56e0841e);
+            
+        
+
+        circle_marker_f092f4c07a33cfa6e95bd7a38a2f39da.bindPopup(popup_b4104193e8c1933349f2c6923aaa301e)
+        ;
+
+        
+    
+    
+            var circle_marker_faa6f629bd71dfb5f453644d1c89aa4e = L.circleMarker(
+                [-37.5791363, 144.7279832],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_dd418c566b957a641a12125bef86c64e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bdc74b5dcdeec9c3e3fbb38766452d1c = $(`<div id="html_bdc74b5dcdeec9c3e3fbb38766452d1c" style="width: 100.0%; height: 100.0%;">     <b>Sunbury</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 14810<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_dd418c566b957a641a12125bef86c64e.setContent(html_bdc74b5dcdeec9c3e3fbb38766452d1c);
+            
+        
+
+        circle_marker_faa6f629bd71dfb5f453644d1c89aa4e.bindPopup(popup_dd418c566b957a641a12125bef86c64e)
+        ;
+
+        
+    
+    
+            var circle_marker_87b497201c89b0977abf2dae7dd98a59 = L.circleMarker(
+                [-37.7983442, 144.8110919],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_6a5228b49c76014c14c74eb2298c61da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f151d70944d0bebedcbdd661def5ee1 = $(`<div id="html_3f151d70944d0bebedcbdd661def5ee1" style="width: 100.0%; height: 100.0%;">     <b>Sunshine West</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 18790<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_6a5228b49c76014c14c74eb2298c61da.setContent(html_3f151d70944d0bebedcbdd661def5ee1);
+            
+        
+
+        circle_marker_87b497201c89b0977abf2dae7dd98a59.bindPopup(popup_6a5228b49c76014c14c74eb2298c61da)
+        ;
+
+        
+    
+    
+            var circle_marker_7a3cd696128aa968f4088118379ac4a3 = L.circleMarker(
+                [-37.6997223, 144.7653295],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_7b67fb2732ddbe87639bcf4324e9cb2f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ae1c4220a191419e5df09bbdd342056 = $(`<div id="html_1ae1c4220a191419e5df09bbdd342056" style="width: 100.0%; height: 100.0%;">     <b>Sydenham</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 11972<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_7b67fb2732ddbe87639bcf4324e9cb2f.setContent(html_1ae1c4220a191419e5df09bbdd342056);
+            
+        
+
+        circle_marker_7a3cd696128aa968f4088118379ac4a3.bindPopup(popup_7b67fb2732ddbe87639bcf4324e9cb2f)
+        ;
+
+        
+    
+    
+            var circle_marker_257b4d8d1aca69a59e641be3f0dd0dca = L.circleMarker(
+                [-37.5040691, 145.1090152],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_431084881b890ba7bd8192c36c6124cf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_123261f764932ec236947338e19e94ae = $(`<div id="html_123261f764932ec236947338e19e94ae" style="width: 100.0%; height: 100.0%;">     <b>Wallan</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 28415<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_431084881b890ba7bd8192c36c6124cf.setContent(html_123261f764932ec236947338e19e94ae);
+            
+        
+
+        circle_marker_257b4d8d1aca69a59e641be3f0dd0dca.bindPopup(popup_431084881b890ba7bd8192c36c6124cf)
+        ;
+
+        
+    
+    
+            var circle_marker_bfe129d4448e085390a845cd1d302ab5 = L.circleMarker(
+                [-37.5121301, 145.1177321],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_90df9da6fe4583873a48ef4281248516);
+        
+    
+        var popup_388055e1e397d0f275888852ab235f09 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61c4665286c9d7d321b5902fb902cf90 = $(`<div id="html_61c4665286c9d7d321b5902fb902cf90" style="width: 100.0%; height: 100.0%;">     <b>Whittlesea</b><br>     Cluster: 2<br>     Label: EV-Ready Suburbs<br>     Population: 15811<br>     Public Chargers: 1<br>     Stations: 1     </div>`)[0];
+                popup_388055e1e397d0f275888852ab235f09.setContent(html_61c4665286c9d7d321b5902fb902cf90);
+            
+        
+
+        circle_marker_bfe129d4448e085390a845cd1d302ab5.bindPopup(popup_388055e1e397d0f275888852ab235f09)
+        ;
+
+        
+    
+</script>
+</html>

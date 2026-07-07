@@ -1,0 +1,229 @@
+Charger Name,Suburb,State_clean,Postal_clean,Power_clean,Usage_Cost_clean,Number_of_Points_clean,Connection_Types_count,latitude,longitude
+RMIT - City Campus,carlton,VIC,3053.0,75.0,0.3,1,2,-37.8004228,144.9684343
+100 St Kilda Rd,southbank,VIC,,,,1,1,-37.8253618,144.9640203
+11 Nicholson Street,carlton,VIC,,,,1,1,-37.8004228,144.9684343
+Lorbek Luxury Cars,port melbourne,VIC,3207.0,11.0,0.31,8,1,-37.8333613,144.9219203
+Tesla Supercharger South Melbourne,south melbourne,VIC,,250.0,,6,1,-37.83344,144.9570533
+Collingwood Library,abbotsford,VIC,3067.0,50.0,0.4,2,4,-37.8045508,144.9988542
+JET Charge Office,port melbourne,VIC,3207.0,80.0,0.6,1,3,-37.8333613,144.9219203
+Evie Richmond Library,richmond,VIC,,50.0,,1,1,-37.80745,144.9907213
+650 Church Street Building 5,melbourne,VIC,3121.0,120.0,0.42,4,1,-37.8142454,144.9631732
+Woolworths Fishermans Bend,fishermans bend,VIC,,50.0,,2,1,-37.8245644,144.922933
+Middy’s Port Melbourne,port melbourne,VIC,3207.0,25.0,0.4,1,2,-37.8333613,144.9219203
+Ampcharge Barkly Square,brunswick,VIC,,150.0,,8,1,-37.7664715,144.9613103
+ENGIE - VIctoria Gardens,richmond,VIC,3121.0,100.0,0.54,1,2,-37.80745,144.9907213
+GET Electric Head Office,port melbourne,VIC,3207.0,11.0,0.24,6,1,-37.8333613,144.9219203
+Brunswick EV Hub,brunswick,VIC,3056.0,80.0,,4,2,-37.7664715,144.9613103
+David Street Car Park,brunswick,VIC,3056.0,22.0,,2,1,-37.7664715,144.9613103
+RMIT Brunswick,brunswick,VIC,3056.0,22.0,0.3,1,1,-37.7664715,144.9613103
+Fleming Park,brunswick east,VIC,3057.0,7.0,,2,2,-37.7688802,144.9776825
+The Parade Ascot Vale Car Park,ascot vale,VIC,3032.0,50.0,0.4,2,4,-37.7753252,144.921825
+Moonee Ponds,,VIC,3039.0,120.0,0.42,6,1,-37.8688729,145.2126338
+Moonee Ponds Central,moonee ponds,VIC,3039.0,22.0,,1,2,-37.765935,144.9192614
+St Kilda Town Hall,st kilda,VIC,3182.0,3.5,,2,2,-37.8638261,144.981637
+Swinburne University - TC Building,hawthorn,VIC,3122.0,50.0,,1,2,-37.8244246,145.0317207
+City of Stonnington,malvern,VIC,3144.0,50.0,0.45,1,2,-37.8576088,145.0350666
+Malvern Central,armadale,VIC,3144.0,50.0,0.4,2,4,-37.8563442,145.0193207
+Coburg Civic Centre / Moreland City,coburg,VIC,3058.0,50.0,,4,3,-37.7449752,144.9643314
+Coburg Town Hall / Moreland City,melbourne,VIC,3058.0,7.0,,2,1,-37.8142454,144.9631732
+Camberwell Supercharger,camberwell,VIC,3124.0,120.0,0.42,6,1,-37.8384623,145.0740767
+Monash Caufield,malvern east,VIC,3145.0,50.0,,1,2,-37.876835,145.0658739
+Bayside Gateway,brighton east,VIC,3186.0,75.0,55.0,6,2,-37.9171728,145.0163663
+Austin Tower Carpark Level B1,heidelberg,VIC,3084.0,22.0,0.25,4,2,-37.7524788,145.0701284
+Coburg North EV Fast Charge,coburg north,VIC,3058.0,50.0,1.0,1,2,-37.7272635,144.9678538
+Oak Park Sports & Aquatic Centre,oak park,VIC,3064.0,22.0,3.0,3,2,-37.7180181,144.9215041
+Bayside Willansby Ave,brighton,VIC,3186.0,50.0,0.45,2,4,-37.9081962,144.9957991
+Woolworths Heidelberg,heidelberg,VIC,3084.0,44.0,,16,8,-37.7524788,145.0701284
+Tesla Supercharger Brighton East,brighton east,VIC,3186.0,250.0,0.69,3,1,-37.9171728,145.0163663
+Toyota Altona,altona,VIC,,75.0,,3,2,-37.8671503,144.8294637
+CB Smith Reserve,fawkner,VIC,3060.0,25.0,,1,2,-37.7146535,144.9605402
+Hobsons Bay Civic Centre,altona,VIC,3018.0,50.0,,1,2,-37.8671503,144.8294637
+Chargefox Airport West,airport west,VIC,3042.0,350.0,0.65,6,5,-37.7222576,144.8834942
+Chadstone Shopping Centre,,VIC,3148.0,7.0,,6,6,-37.8688729,145.2126338
+ENGIE - Chadstone,chadstone,VIC,3148.0,100.0,0.45,4,2,-37.8822799,145.1001365
+ENGIE - Chadstone 2,chadstone,VIC,,120.0,,4,1,-37.8822799,145.1001365
+Tesla Supercharger Campbellfield,campbellfield,VIC,3060.0,250.0,69.0,1,1,-37.6641298,144.959583
+Ampol Foodary Altona North,altona north,VIC,3025.0,180.0,0.6,4,2,-37.8378229,144.8342853
+Bridge Street,hampton,VIC,3191.0,180.0,0.6,1,2,-37.9381127,145.0014764
+Telsa Supercharger Box Hill,box hill south,VIC,3128.0,250.0,,12,1,-37.8366236,145.1233644
+Evie Glen Gala Village,sunshine west,VIC,,75.0,,4,2,-37.7983442,144.8110919
+Miller Grove,,VIC,3149.0,22.0,,2,1,-37.8688729,145.2126338
+Keilor Central,keilor downs,VIC,3038.0,50.0,0.5,2,4,-37.7205762,144.8047614
+Tesla Supercharger Oakleigh Repair Centre,oakleigh south,VIC,,250.0,,6,1,-37.9248257,145.0921745
+Bayside Council,sandringham,VIC,3191.0,75.0,0.3,1,7,-37.9502592,145.0043868
+Jolt Cheltenham,cheltenham,VIC,,50.0,,1,2,-37.9670081,145.0546951
+Uni Hill Town Centre,bundoora,VIC,3082.0,50.0,0.4,2,4,-37.6982468,145.0596757
+Greensborough Plaza,greensborough,VIC,3088.0,22.0,,4,2,-37.7037383,145.1079105
+Watermarc Carpark (LG),,VIC,3088.0,11.0,0.0,3,1,-37.8688729,145.2126338
+Forest Hill Chase Shopping Centre,forest hill,VIC,3131.0,22.0,,2,1,-37.8362738,145.1690911
+Brimbank Shopping Centre,deer park,VIC,3023.0,22.0,,1,1,-37.7686602,144.7713077
+Southland Medical Centre,cheltenham,VIC,3192.0,,,1,0,-37.9670081,145.0546951
+Research Way - N1 Carpark,,VIC,3800.0,50.0,,2,3,-37.8688729,145.2126338
+Ampol Derrimut,derrimut,VIC,3026.0,180.0,0.6,1,2,-37.7987978,144.776051
+Jolt Black Rock,black rock,VIC,,50.0,,1,2,-37.9706564,145.0212822
+BP Northpoint,epping,VIC,3076.0,150.0,,8,1,-37.6523847,145.0315487
+Eltham Leisure Centre,eltham,VIC,3095.0,7.0,,4,2,-37.713736,145.147673
+Engie - The Glen,glen waverley,VIC,3150.0,100.0,0.45,1,2,-37.8795908,145.1622405
+BP pulse Diamond Creek,diamond creek,VIC,3090.0,75.0,55.0,2,2,-37.6733272,145.1588075
+BP pulse Diamond Creek,diamond creek,VIC,3090.0,75.0,55.0,2,2,-37.6733272,145.1588075
+BP Pulse,caroline springs,VIC,,150.0,,8,1,-37.7340623,144.7370017
+Watergardens Shopping Centre,sydenham,VIC,3037.0,22.0,,3,1,-37.6997223,144.7653295
+Point Cook Town Centre,point cook,VIC,3030.0,7.0,,1,1,-37.9064862,144.7533059
+Red Rooster Vermont,ringwood,VIC,3134.0,50.0,0.4,4,4,-37.8158726,145.2291113
+Greenvale Woolworths,roxburgh park,VIC,3064.0,22.0,,2,1,-37.6381563,144.9353302
+Ampcharge Sandown,sandown,VIC,,180.0,,2,1,-37.9503548,145.1665966
+Bunnings Tarneit,tarneit,VIC,3029.0,22.0,,2,1,-37.8321522,144.69462
+EastLand Shopping Centre,melbourne,VIC,3134.0,22.0,,4,1,-37.8142454,144.9631732
+diamond creek community bank stadium,diamond creek,VIC,3089.0,22.0,,1,1,-37.6733272,145.1588075
+diamond creek community bank stadium,diamond creek,VIC,3089.0,22.0,,1,1,-37.6733272,145.1588075
+Bay Trail,moordialloc,VIC,3195.0,50.0,,1,2,-38.0102322,145.0929673
+Bembit Bagrook Community Centre,tarneit,VIC,3029.0,50.0,,1,2,-37.8321522,144.69462
+Scorseby Engie,,VIC,3179.0,100.0,0.55,2,2,-37.8688729,145.2126338
+Jolt Bayswster,,VIC,3153.0,25.0,7.0,1,2,-37.8688729,145.2126338
+Stud Park Shopping Centre,rowville,VIC,3178.0,50.0,0.4,2,4,-37.9239267,145.2447672
+Civic Centre,werribee,VIC,3030.0,50.0,,4,3,-37.907984,144.6416748
+Ampcharge Werribee,werribee,VIC,,180.0,,1,1,-37.907984,144.6416748
+Devon Street Car Park,croydon,VIC,3136.0,7.0,,4,2,-37.7955004,145.2801507
+Ampcharge Cheltenham,keysborough,VIC,,180.0,,2,1,-38.0053607,145.1674069
+Strata Equity – Hunter Werribee,werribee,VIC,3030.0,22.0,,3,3,-37.907984,144.6416748
+Club Trillium,mickleham,VIC,3064.0,,,1,1,-37.5344793,144.9120372
+bp pulse Dandenong North,dandenong north,VIC,3802.0,75.0,55.0,2,1,-37.9558319,145.2143234
+Heatherton Road,dandenong,VIC,3175.0,350.0,0.6,2,2,-37.98749,145.2147923
+Ampol Kilsyth,kilsyth south,VIC,3153.0,150.0,0.69,1,2,-37.8315054,145.3110008
+Evie Chelsea,chelsea,VIC,3196.0,50.0,0.4,1,4,-38.0497386,145.121407
+Evie Chirnside Park,chirnside park,VIC,,50.0,,1,2,-37.9047634,144.6530424
+bp pulse Merrifield,mickleham,VIC,3064.0,75.0,55.0,4,2,-37.5344793,144.9120372
+Marnong Estate,mickleham,VIC,3064.0,22.0,,4,1,-37.5344793,144.9120372
+Lollypop Creek Community Centre,harpley,VIC,,50.0,,2,1,-37.9110402,144.6113082
+Hungry Jacks,sunbury,VIC,3429.0,11.0,0.25,2,1,-37.5791363,144.7279832
+Cobblebank Village,,VIC,3338.0,22.0,,1,2,-37.8688729,145.2126338
+Cobblebank Stadium,cobblebank,VIC,3338.0,25.0,,3,3,-37.7125512,144.6040773
+Yarra Valley Nissan,lilydale,VIC,3140.0,11.0,0.31,2,1,-37.7571582,145.3458656
+McDonald’s Melton South,weir views,VIC,3338.0,50.0,0.4,2,4,-37.7323715,144.5708942
+Local Village Carrum Downs,carrum downs,VIC,3201.0,50.0,0.45,2,4,-38.1003312,145.1788657
+CTR Whittlesea,whittlesea,VIC,3757.0,50.0,0.4,1,2,-37.5121301,145.1177321
+City of Casey,city of casey,VIC,3805.0,7.0,,2,1,-38.0266156,145.3045626
+Lynbrook Village,lynbrook,VIC,3975.0,50.0,0.4,2,4,-38.0558639,145.2561128
+ENGIE - Bayside Centre,frankston,VIC,3199.0,50.0,0.45,1,1,-38.150925,145.142239
+Yarra Ranges Council,yarra glen,VIC,3775.0,50.0,0.4,1,2,-37.6573475,145.3743964
+Engie Monash University,melbourne,VIC,3199.0,120.0,,3,2,-37.8142454,144.9631732
+Evie Cranbourne Homemaker Centre,cranbourne,VIC,3977.0,50.0,,1,2,-38.0997308,145.2807256
+St Huberts Winery,coldstream,VIC,3770.0,11.0,0.31,6,1,-37.7291014,145.378424
+BP Pulse Cranbourne,cranbourne west,VIC,3977.0,75.0,0.55,1,2,-38.102241,145.2517182
+Jolt Berwick Springs Hotel,berwick,VIC,,50.0,,1,2,-38.0398297,145.3451089
+Engie Cranbourne Park,,VIC,3977.0,120.0,,3,2,-37.8688729,145.2126338
+Wallan,wallan,VIC,3756.0,50.0,,1,2,-37.5040691,145.1090152
+ClydeStone Square,clyde north,VIC,3978.0,50.0,0.4,1,2,-38.1028681,145.3302814
+Evie Mornington,mornington,VIC,3931.0,50.0,,2,3,-38.227699,145.0609375
+Mornington Super Charger,,VIC,3931.0,250.0,,6,1,-37.8688729,145.2126338
+RACV Healsville,healsville,VIC,,50.0,,7,2,-37.6635261,145.4817549
+Evie Healsville,healsville,VIC,,50.0,,1,2,-37.6635261,145.4817549
+North Bellarine Aquatic Centre,curlewis,VIC,3222.0,50.0,0.45,2,4,-37.8148997,145.1062282
+Victoria Street,macedon,VIC,3440.0,50.0,0.45,1,2,-37.7726251,145.1131159
+50 Learmonth Street,queenscliff,VIC,3225.0,50.0,0.45,2,4,-38.3363033,144.7453366
+Evie Yarra Juncion,yarra junction,VIC,,50.0,,1,2,-37.7821693,145.6150255
+Kilmore Library,kilmore,VIC,3764.0,25.0,0.4,1,2,-37.6750485,144.9242188
+Geelong Supercharger,corio,VIC,3214.0,250.0,0.78,6,1,-37.9623312,145.1346687
+Hastings,hastings,VIC,3915.0,50.0,0.45,1,2,-38.3056058,145.1859934
+Kingston Village Square,ocean grove,VIC,3226.0,50.0,0.25,3,3,-38.170954,145.0972517
+Sorrento ,,VIC,3943.0,50.0,0.4,2,4,-37.8688729,145.2126338
+Rosebud RSL,,VIC,3940.0,50.0,,2,3,-37.8688729,145.2126338
+bp pulse Rye,rye,VIC,3941.0,75.0,55.0,2,1,-38.3821684,144.8099264
+High St Parking,woodend,VIC,3442.0,50.0,0.4,2,2,-37.7934621,144.5595902
+Geelong West Veledrome,geelong west,VIC,,22.0,,2,1,-37.8054508,144.879879
+Bru4U Geelong ,geelong,VIC,3220.0,22.0,,1,1,-37.8396934,145.008539
+Broadford Library,broadford,VIC,3658.0,25.0,0.4,1,2,-37.6362329,145.0265708
+RACV Solar Grovedale,grovedale,VIC,3216.0,22.0,0.25,1,1,-37.8171289,145.0949242
+Blue Tongue Industries,grovedale,VIC,3216.0,22.0,0.3,1,1,-37.8171289,145.0949242
+Evie Barabool Heights Plaza,highton,VIC,,50.0,,4,2,-37.8163364,145.0687942
+Armstrong Creek East Community Hub,armstrong creek,VIC,3217.0,22.0,,6,3,-37.6289691,145.8640385
+Armstrong Creek Shopping Centre,armstrong creek,VIC,3216.0,7.0,,2,1,-37.6289691,145.8640385
+Deakin University Waurn Ponds,,VIC,3216.0,22.0,,4,2,-37.8688729,145.2126338
+Trentham Visitor Information Centre,trentham,VIC,,50.0,,2,2,-37.7000743,144.8908894
+Evie Flinders,flinders,VIC,3929.0,50.0,0.45,1,2,-38.473312,145.0187057
+Evie Bannockburn,bannockburn,VIC,,50.0,,1,2,-37.732231,145.1014989
+Evie Cowes,cowes,VIC,,50.0,,4,2,-37.7092585,144.7872516
+Kyneton,kyneton,VIC,3444.0,50.0,0.4,1,2,-37.718862,145.0231115
+Evie Meredith,meredith,VIC,3333.0,50.0,0.45,1,2,-37.7657176,145.1589446
+Yea Supercharger,yea,VIC,3717.0,135.0,0.78,4,1,-37.4927455,145.1572676
+Newling Reserve,,VIC,3240.0,7.0,,1,1,-37.8688729,145.2126338
+Wine by Sam,seymour,VIC,3660.0,25.0,0.4,1,2,-38.0021533,145.0974829
+Daylesford Town Hall,daylesford,VIC,3460.0,25.0,0.35,1,2,-37.627671,145.0254821
+Hepburn Springs Bathhouse,hepburn springs,VIC,3461.0,50.0,0.45,2,2,-37.7481414,144.739508
+Evie Warrigul,warragul,VIC,3820.0,50.0,,1,2,-37.6694522,144.9350241
+Evie Alexandra,alexandra,VIC,3714.0,50.0,0.45,1,2,-37.8212422,144.9736634
+Dindi Naturals,yarck,VIC,3719.0,7.0,,1,1,-37.5772947,144.7161349
+RACV Ballarat,ballarat,VIC,3350.0,350.0,,4,1,-37.8050281,144.9457629
+Heathcote Visitor Centre,heathcote,VIC,3523.0,50.0,0.5,1,2,-37.7326399,144.733868
+Coles Sebastopol,sebastopol,VIC,,22.0,,2,1,-37.8709314,145.0193037
+Evie Caltex Jones Street,avenel,VIC,3664.0,350.0,,1,2,-37.8958126,144.6304628
+Creswick Vicitors Information Centre,creswick,VIC,3363.0,50.0,0.45,1,2,-37.8191777,145.0167539
+Gillies Street North,ballarat,CITY OF BALLARAT,3355.0,6.6,,2,1,-37.8050281,144.9457629
+Ballarat Supercharger,ballarat,VIC,3355.0,120.0,0.42,6,1,-37.8050281,144.9457629
+Castlemaine Market Building Car Park,castlemaine,VIC,3450.0,50.0,0.4,2,2,-37.6303914,145.0273223
+High Street,harcourt,VIC,3453.0,25.0,0.4,1,2,-37.8374349,145.1115353
+CTR Leongatha,leongatha,VIC,3953.0,50.0,,1,2,-38.1199326,145.3182716
+Evie Leongatha,leongatha,VIC,3953.0,50.0,,1,2,-38.1199326,145.3182716
+Lorne Visitor Information Centre,lorne,VIC,3232.0,7.0,,1,1,-37.6734151,145.0272333
+Chargefox Moe,moe,VIC,3825.0,350.0,40.0,4,5,-37.6132253,145.0980154
+Bendigo Supercharger,bendigo,VIC,3550.0,120.0,0.42,6,1,-37.720574,145.047976
+Euroa Supercharger,euroa,VIC,,120.0,0.42,6,1,-37.7639651,144.8287004
+Chargefox - Euroa,euroa,VIC,3666.0,350.0,,4,8,-37.7639651,144.8287004
+Bendigo Art Gallery,bendigo,VIC,3550.0,50.0,0.4,2,4,-37.720574,145.047976
+Colac Supercharger,colac,VIC,3250.0,250.0,0.78,3,1,-38.0761008,145.1472438
+CTR Maryborough,maryborough,VIC,3465.0,50.0,0.4,2,2,-37.850401,144.5882783
+NRMA Marong,marong,VIC,3515.0,180.0,66.0,4,2,-37.793821,144.5506713
+CTR Foster,foster,VIC,,50.0,,2,1,-37.5902461,144.9342136
+Charging the Regions Traralgon,,VIC,3844.0,50.0,0.45,1,2,-37.8688729,145.2126338
+Evie Beaufort,beaufort,VIC,3373.0,50.0,0.45,4,3,-38.0067519,145.1779706
+Newbridge Public Hall,newbridge,VIC,3551.0,25.0,0.4,1,2,-37.9715559,145.124582
+Evie Avoca,avoca,VIC,,50.0,,2,1,-37.6146532,145.0933095
+Tatura,tatura,VIC,3616.0,25.0,0.4,2,2,-38.1379689,145.1628252
+Heyfield Apex Park,heyfield,VIC,3858.0,50.0,0.4,2,1,-37.8237397,144.7132186
+CTR Mooroopna,mooroopna,VIC,3629.0,50.0,0.4,2,2,-37.7852115,144.5605697
+Shepparton Observation Tower,shepparton,VIC,3630.0,50.0,0.4,2,2,-37.7884948,144.5582739
+Evie Camperdown,camperdown,VIC,3260.0,50.0,0.45,1,2,-37.764834,144.8219857
+Evie Benalla,benalla,VIC,3672.0,50.0,,1,2,-37.8059585,144.9432551
+Inglewood Town Hall,inglewood,VIC,3517.0,50.0,0.4,1,2,-37.7924237,144.5498933
+Chargefox Yarram,yarram,VIC,3971.0,50.0,0.4,1,2,-38.1353489,145.1666795
+Evie Maffra,maffra,VIC,3860.0,50.0,0.45,1,2,-37.6601922,144.9408062
+Port of Sale,sale,VIC,3850.0,50.0,0.4,2,2,-37.87076,145.65249
+Mansi on Raymond,sale,VIC,3850.0,22.0,0.4,1,1,-37.87076,145.65249
+Queen Street,,VIC,3377.0,22.0,,1,1,-37.8688729,145.2126338
+CTR Echuca [Evie],echuca,VIC,3564.0,50.0,0.4,1,4,-37.7821653,144.5503709
+Elizabeth Park,ararat,VIC,3397.0,22.8,0.0,2,1,-38.0625563,145.5506248
+Evie Ararat,ararat,VIC,3377.0,50.0,,1,2,-38.0625563,145.5506248
+NRMA Ararat,ararat,VIC,3377.0,150.0,66.0,4,2,-38.0625563,145.5506248
+CTR Wedderburn CV008,wedderburn,VIC,3518.0,50.0,0.4,2,2,-37.7917062,144.5494853
+Evie St Arnaud,st arnaud,VIC,,50.0,,2,2,-37.792199,144.5486025
+Evie Wangaratta,wangaratta,VIC,3676.0,50.0,0.45,1,2,-37.787905,144.5592084
+Ovens Supercharger,ovens,VIC,,120.0,0.42,4,1,-37.8119107,144.8154073
+Evie Stawell,stawell,VIC,3380.0,50.0,,1,2,-38.1087492,145.2895959
+Tesla Superchargers Stawell,stawell,VIC,3380.0,250.0,0.66,12,1,-38.1087492,145.2895959
+Feathertop Winery,porepunkah,VIC,,22.0,,2,1,-37.5979507,145.0753657
+Evie - Bright,bright,VIC,3741.0,50.0,0.45,1,2,-37.6245646,145.0136597
+Evie Yarrawonga,yarrawonga,VIC,3730.0,50.0,0.45,1,2,-37.9133914,145.1301259
+The Sebel Silverwoods Yarrawong,yarrawonga,VIC,3730.0,50.0,0.3,1,2,-37.9133914,145.1301259
+Evie Dunkeld,dunkeld,VIC,3294.0,50.0,0.45,1,2,-37.766817,144.8245105
+Evie Cohuna,cohuna,VIC,3568.0,50.0,0.4,1,2,-37.7062908,144.8039161
+Omeo - Tongio Road,omeo,VIC,3898.0,50.0,0.4,2,2,-37.8800365,144.6170498
+Wycheproof,wycheproof,VIC,3527.0,50.0,0.4,2,2,-37.5432106,145.0085889
+NRMA Wycheproof,wycheproof,VIC,3527.0,150.0,66.0,4,2,-37.5432106,145.0085889
+Evie Kerang,kerang,VIC,3579.0,50.0,0.4,1,2,-37.7200123,145.0271063
+Wodonga Supercharger,wodonga,VIC,3690.0,120.0,0.42,6,1,-37.6755673,144.9898056
+Evie Hamilton,hamilton,VIC,,50.0,,2,2,-37.8758579,145.1284529
+Tesla Supercharger Albury,albury,NSW,2640.0,250.0,0.69,12,1,-37.5442344,145.0076408
+Wuality Resort Siesta,lavington,NSW,2641.0,7.0,,4,4,-37.603329,144.9253134
+RACV - Horsham,horsham,VIC,3400.0,350.0,,4,4,-38.102184,145.2949057
+Horsham Supercharger,horsham,VIC,3400.0,250.0,0.42,3,1,-38.102184,145.2949057
+NRMA Jerilderie,jerilderie,NSW,2716.0,50.0,,1,2,-38.0097571,145.326648
+Evie Warracknabeal,warracknabeal,VIC,3393.0,50.0,0.45,1,2,-37.7853138,144.5406661
+Evie Portland,portland,VIC,,50.0,,2,2,-37.9359053,145.2051222
+Lochiel Street,dimboola,VIC,3414.0,22.0,,1,1,-37.6804576,144.9123982
+Orbost Chargefox,orbost,VIC,,50.0,0.4,1,2,-37.8379885,145.2121845
+Tesla Supercharger Holbrook,holbrook,NSW,2644.0,250.0,0.69,1,1,-37.7702694,144.9361781
+Holbrook [NRMA],holbrook,NSW,,50.0,,1,2,-37.7702694,144.9361781
+Evie Dartmoor,dartmoor,VIC,3304.0,50.0,0.45,1,2,-37.705345,144.6794568
+Anzac Ave Parking,edenhope,VIC,3318.0,50.0,0.4,1,2,-37.8054372,145.3280915
+Nelson St Parking/Charging,nhill,VIC,3418.0,22.0,,2,1,-37.6730847,144.9282577
+Snowy River Ave Car Park,jindabyne,NSW,2627.0,50.0,,2,2,-37.6403391,145.084278
